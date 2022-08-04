@@ -14,14 +14,8 @@
 
 									<h1 class="heading heading__lvl1 stillforce-heading-blue-medium" >
 
-										<span class="stillforce-heading-blue-medium">L’aide à domicile </span>  
-										<span class="stillforce-heading-red-medium ">sur- mesure </span>  
-										<span class="stillforce-heading-blue-medium">pour les </span> 
-										<span class="stillforce-heading-red-medium">personnes âgées</span> 
-										<span class="stillforce-heading-blue-medium">, en situation</span> 
-										<span class="stillforce-heading-red-medium">d'handicap </span>  
-										<span class="stillforce-heading-blue-medium">ou en </span>
-										<span class="stillforce-heading-red-medium">perte d’autonomie </span>     
+									<h1 class="heading heading__lvl1 stillforce-heading-blue" style="">L'aide à domicile</h1>
+									<h1 class="heading heading__lvl1" style="color: #E84347; font-weight:700; font-size:70px; line-height:59.5px;">Sur-mesure</h1>
 									
 									</h1>
 									
@@ -29,14 +23,13 @@
 								
 								<div style="margin-bottom:30px;">
 									
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Vivre serein chez-soi</p>
+									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aaide à domicile pour :</p>
 									
 									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
 										
-										<li class="text"><b>Repas :</b> Courses, préparation, prise</li>
-										<li class="text"><b>Ménage : </b> Ménage, repassage, lessive</li>
-										<li class="text"><b>Accompagnements :</b> Courses, proménades, sorties</li>
-										<li class="text"><b>Aide à l’autonomie :</b> Lever, coucher, toilette, présence de nuit</li>
+										<li class="text"><b>Les personnes âgées</b> </li>
+										<li class="text"><b>Les personnes âgées en situation handicap  </b> </li>
+										<li class="text"><b>Les personnes âgées en perte d’autonomie   </b> </li>
 										
 									</ul>
 								</div>
@@ -81,7 +74,41 @@
 								 <span>Expliquez-nous votre situation en 3 clics</span>
 							</h4>
 							
-							<img src="{{  asset('_next/static/media/steps.png') }}" style=" display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+							<form id="regForm" action="/action_page.php">
+
+								<!-- One "tab" for each step in the form: -->
+								<div class="tab">Name:
+									<p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+									<p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+								</div>
+								<div class="tab">Contact Info:
+									<p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+									<p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+								</div>
+								<div class="tab">Birthday:
+									<p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+									<p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+									<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+								</div>
+								<div class="tab">Login Info:
+									<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+									<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+								</div>
+								<div style="overflow:auto;">
+									<div style="float:right;">
+										<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+										<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+									</div>
+								</div>
+								<!-- Circles which indicates the steps of the form: -->
+								<div style="text-align:center;margin-top:40px;">
+									<span class="step"></span>
+									<span class="step"></span>
+									<span class="step"></span>
+									<span class="step"></span>
+								</div>
+							</form>
+						
 								
 								<ul class="margin-top-lg cards-steps__list" style="margin-left:120px">
 									
