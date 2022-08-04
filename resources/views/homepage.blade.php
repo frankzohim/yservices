@@ -11,20 +11,32 @@
 							<div class="main-intro-all__content">
 								
 								<div style="margin-bottom:55px;">
-									<h1 class="heading heading__lvl1 stillforce-heading-blue" style="">L'aide à domicile</h1>
-									<h1 class="heading heading__lvl1" style="color: #E84347; font-weight:700; font-size:70px; line-height:59.5px;">Sur-mesure</h1>
+
+									<h1 class="heading heading__lvl1 stillforce-heading-blue-medium" >
+
+										<span class="stillforce-heading-blue-medium">L’aide à domicile </span>  
+										<span class="stillforce-heading-red-medium ">sur- mesure </span>  
+										<span class="stillforce-heading-blue-medium">pour les </span> 
+										<span class="stillforce-heading-red-medium">personnes âgées</span> 
+										<span class="stillforce-heading-blue-medium">, en situation</span> 
+										<span class="stillforce-heading-red-medium">d'handicap </span>  
+										<span class="stillforce-heading-blue-medium">ou en </span>
+										<span class="stillforce-heading-red-medium">perte d’autonomie </span>     
+									
+									</h1>
+									
 								</div>
 								
 								<div style="margin-bottom:30px;">
 									
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Réseau national d’aide à domicile pour :</p>
+									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Vivre serein chez-soi</p>
 									
 									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
 										
-										<li class="text"><b>Repas</b> Lorem ipsum dolor sit</li>
-										<li class="text"><b>Ménage</b> consectetur adipiscing elit</li>
-										<li class="text"><b>Accompagnements</b> sed do eiusmod</li>
-										<li class="text"><b>Présence de nuit</b> Ut enim ad minim veniam</li>
+										<li class="text"><b>Repas :</b> Courses, préparation, prise</li>
+										<li class="text"><b>Ménage : </b> Ménage, repassage, lessive</li>
+										<li class="text"><b>Accompagnements :</b> Courses, proménades, sorties</li>
+										<li class="text"><b>Aide à l’autonomie :</b> Lever, coucher, toilette, présence de nuit</li>
 										
 									</ul>
 								</div>
