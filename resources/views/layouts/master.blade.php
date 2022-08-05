@@ -95,13 +95,17 @@ input.invalid {
   display: none;
 }
 
-button {
+.button {
   background-color: #04AA6D;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
   font-size: 17px;
   font-family: Raleway;
+  cursor: pointer;
+}
+
+#chkbox{
   cursor: pointer;
 }
 
