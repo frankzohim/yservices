@@ -79,25 +79,11 @@
 }
 
 //starting css for assistant
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-}
-
 #regForm {
 
 }
 
-input {
-  padding: 10px;
-  width: 100%;
-  font-size: 17px;
-  font-family: Raleway;
-  border: 1px solid #aaaaaa;
-}
+
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
