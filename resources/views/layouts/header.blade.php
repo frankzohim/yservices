@@ -163,7 +163,7 @@
 							
 						</div>
 							
-						<div class="header__right" style="margin-left: 80px;">
+						<div class="header__right" style="margin-left: 10px;">
 
 								<img class="search-icon" src="_next/static/media/icones/search.svg" alt="">
 						
