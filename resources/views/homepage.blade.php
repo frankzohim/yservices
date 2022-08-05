@@ -77,27 +77,117 @@
 							<form id="regForm" action="/action_page.php">
 
 								<!-- One "tab" for each step in the form: -->
-								<div class="tab">Name:
-									<p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-									<p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+								<div class="tab">
+													
+									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+											
+													<img src="{{  asset('_next/static/media/icones/menage.png') }} " alt="" style="height: 120px"/>
+													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
+												</div>
+											  
+										</li>
+										
+										
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/handicape.png') }} " alt="" style="height: 120px" />
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											<div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Service handicap </label>
+												</div>
+										</li>
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/autonomie.png') }} " alt=""  style="height: 120px"/>
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Aide à l’autonomie </label>
+												</div>
+										</li>
+									
+										
+									</ul>
+
+									<ul class="margin-top-lg cards-steps__list" style="margin-left:0%">
+										
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												
+												<img src="{{  asset('_next/static/media/icones/accompagnement.png') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											 <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Accompagnements </label>
+												</div>
+										</li>
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/hopital.png') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
+												</div>
+										</li>
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											<div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
+												</div>
+										</li>
+										
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
+											</div>
+											 <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
+												</div>
+										</li>
+									
+										
+									</ul>
+
 								</div>
-								<div class="tab">Contact Info:
-									<p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-									<p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+
+								<div class="tab">
+									<img src="/_next/static/media/step2.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
 								</div>
-								<div class="tab">Birthday:
-									<p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-									<p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-									<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+
+								<div class="tab">
+									<img src="/_next/static/media/step3.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									
 								</div>
-								<div class="tab">Login Info:
-									<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-									<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-								</div>
+
+							
+				
 								<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-										<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+										<button type="button" class="margin-top-default button button_w-m-full"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
 									</div>
 								</div>
 								<!-- Circles which indicates the steps of the form: -->
@@ -105,61 +195,9 @@
 									<span class="step"></span>
 									<span class="step"></span>
 									<span class="step"></span>
-									<span class="step"></span>
 								</div>
 							</form>
 						
-								
-								<ul class="margin-top-lg cards-steps__list" style="margin-left:120px">
-									
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-										
-											   <img src="{{  asset('_next/static/media/intimite.svg') }} " alt="" />
-											   <img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										
-										<h3 class="margin-top-xs heading heading__lvl3">Intimité</h3>
-									</li>
-									
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											
-											<img src="{{  asset('_next/static/media/repas.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										
-										<h3 class="margin-top-xs heading heading__lvl3">Repas</h3>
-									</li>
-									
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/menage.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Ménage</h3>
-									</li>
-									
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Accompagnements</h3>
-									</li>
-									
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/presence.svg') }} " alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Présence</h3>
-									</li>
-								
-									
-								</ul>
-								<a href="#" class="margin-top-default button button_w-m-full" style=" display: block; margin-left: auto; margin-right: auto; width: 20%;" id="target-action-main-intro-all">
-									Etape suivante
-								</a>
 							<div class="main-promo-six-months-free__circle">
 							</div>
 							
