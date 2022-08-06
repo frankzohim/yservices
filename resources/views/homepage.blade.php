@@ -175,11 +175,156 @@
 
 								<div class="tab">
 									<img src="/_next/static/media/step2.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									
+									<div class="when">
+										<label class="heading margin-top-sm" style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> A Partir de quand </label>
+										<select name="begining" id="" class="classic">
+											<option value="" selected>Sélectionner dans la liste *</option>
+											<option value="Immédiatement" >Immédiatement</option>
+											<option value="Dans 1 mois" >Dans 1 mois</option>
+											<option value="Dans 2 mois" >Dans 2 mois</option>
+											<option value="Dans 3 mois" >Dans 3 mois</option>
+											<option value="Dans plus de 3 mois" >Dans plus de 3 mois</option>
+										</select>
+									</div>
+								
+									<div class="when">
+										<label class="heading margin-top-sm" style="color: #fff; font-weight:700; font-size:25px;"> 
+											Cliquez pour sélectionner vos horaires 
+										</label>
+										
+									</div>
+
+									<table class="TimetableDesign PFTimetableDesktop">
+										<thead>
+											<tr>
+												<th></th>
+												<th>Lundi</th>
+												<th>Mardi</th>
+												<th>Mercredi</th>
+												<th>Jeudi</th>
+												<th>Vendredi</th>
+												<th>Samedi</th>
+												<th>Dimanche</th>
+												<th class="allDays">Tous les jours</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="inJourney">
+												<th>Matin</th>
+												<td class="inJourney" data-time="Lundi - Matin"></td>
+												<td class="inJourney" data-time="Mardi - Matin"></td>
+												<td class="inJourney" data-time="Mercredi - Matin"></td>
+												<td class="inJourney" data-time="Jeudi - Matin"></td>
+												<td class="inJourney" data-time="Vendredi - Matin"></td>
+												<td class="inJourney" data-time="Samedi - Matin"></td>
+												<td class="inJourney" data-time="Dimanche - Matin"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Midi</th>
+												<td class="inJourney" data-time="Lundi - Midi"></td>
+												<td class="inJourney" data-time="Mardi - Midi"></td>
+												<td class="inJourney" data-time="Mercredi - Midi"></td>
+												<td class="inJourney" data-time="Jeudi - Midi"></td>
+												<td class="inJourney" data-time="Vendredi - Midi"></td>
+												<td class="inJourney" data-time="Samedi - Midi"></td>
+												<td class="inJourney" data-time="Dimanche - Midi"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Après-Midi</th>
+												<td class="inJourney" data-time="Lundi - Après-midi"></td>
+												<td class="inJourney" data-time="Mardi - Après-midi"></td>
+												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
+												<td class="inJourney" data-time="Jeudi - Après-midi"></td>
+												<td class="inJourney" data-time="Vendredi - Après-midi"></td>
+												<td class="inJourney" data-time="Samedi - Après-midi"></td>
+												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Soir</th>
+												<td class="inJourney" data-time="Lundi - Soir"></td>
+												<td class="inJourney" data-time="Mardi - Soir"></td>
+												<td class="inJourney" data-time="Mercredi - Soir"></td>
+												<td class="inJourney" data-time="Jeudi - Soir"></td>
+												<td class="inJourney" data-time="Vendredi - Soir"></td>
+												<td class="inJourney" data-time="Samedi - Soir"></td>
+												<td class="inJourney" data-time="Dimanche - Soir"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="allJourney">
+												<th>Journée entière (8h > 20h)</th>
+												<td class="allJourney" data-time="Lundi - Journée"></td>
+												<td class="allJourney" data-time="Mardi - Journée"></td>
+												<td class="allJourney" data-time="Mercredi - Journée"></td>
+												<td class="allJourney" data-time="Jeudi - Journée"></td>
+												<td class="allJourney" data-time="Vendredi - Journée"></td>
+												<td class="allJourney" data-time="Samedi - Journée"></td>
+												<td class="allJourney" data-time="Dimanche - Journée"></td>
+												<td class="allDays allJourney"></td>
+											</tr>
+											<tr>
+												<th>Nuit (20h > 8h)</th>
+												<td data-time="Lundi - Nuit"></td>
+												<td data-time="Mardi - Nuit"></td>
+												<td data-time="Mercredi - Nuit"></td>
+												<td data-time="Jeudi - Nuit"></td>
+												<td data-time="Vendredi - Nuit"></td>
+												<td data-time="Samedi - Nuit"></td>
+												<td data-time="Dimanche - Nuit"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="allDay">
+												<th>24h/24</th>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay allDays"></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 
 								<div class="tab">
 									<img src="/_next/static/media/step3.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									<div class="when">
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> 
+										C'est presque terminé ! </p>
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:15px;"> 
+											Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!
+									</p>
+									<br>
+										<select name="begining" id="" class="classic">
+											<option value="" selected>À qui est destinée notre aide ? *</option>
+											<option value="Vous recherchez une aide pour vous" >Vous recherchez une aide pour vous</option>
+											<option value="Vous recherchez une aide pour quelqu’un d’autre" >Vous recherchez une aide pour quelqu’un d’autre</option>
+										</select>
+
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> 
+										À propos de vous! </p>
+                                        <br>
+										
+										<select name="begining" id="" class="classic">
+												<option value="" selected>Vous êtes ? *</option>
+												<option value="un homme" >Un homme</option>
+												<option value="une femme" >Une femme</option>
+											</select>
 									
+
+										<input type="text" placeholder="Votre Nom" class="firstname">
+										<input type="text" placeholder="Votre Prénom" class="lastname">
+										<input type="email" placeholder="Email" class="email">
+										
+									</div>
 								</div>
 
 							
@@ -212,7 +357,7 @@
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 							<div class="lp-banking-track-cashflow__image-wrap image">
 								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+								<img src="{{  asset('_next/static/media/women.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
 								</picture>
 							</div>
 							<div class="lp-banking-track-cashflow__content">
@@ -276,7 +421,7 @@
 									
 									<picture class="picture__image-container ">
 																		
-										<img src="{{  asset('_next/static/media/fonctionnement.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
+										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
 									</picture>
 									
 								</div>
