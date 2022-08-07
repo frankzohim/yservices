@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class worktime extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'day',
+        'schedule',
+        'moment'
+    ];
 }

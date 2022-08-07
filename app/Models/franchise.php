@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class franchise extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'personnal_contribution',
+        'project_info'
+    ];
 }
