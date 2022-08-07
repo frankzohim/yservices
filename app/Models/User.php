@@ -4,9 +4,12 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\franchise;
+use App\Models\information;
 
 class User extends Authenticatable
 {
@@ -41,4 +44,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function franchises(): HasMany
+    {
+        return $this->hasMany(franchise::class);
+    }
+
+    public function informations(): HasMany
+    {
+        return $this->hasMany(information::class);
+    }
 }
