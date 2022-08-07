@@ -10,6 +10,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\franchise;
 use App\Models\information;
+use App\Models\need;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Authenticatable
 {
@@ -53,5 +55,10 @@ class User extends Authenticatable
     public function informations(): HasMany
     {
         return $this->hasMany(information::class);
+    }
+
+    public function needs(): BelongsToMany
+    {
+        return $this->belongsToMany(need::class);
     }
 }
