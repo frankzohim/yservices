@@ -322,6 +322,8 @@
 
 										<input type="text" placeholder="Votre Nom" class="firstname">
 										<input type="text" placeholder="Votre Prénom" class="lastname">
+										<input type="text" placeholder="Votre Nom" class="firstname">
+										<input type="text" placeholder="Votre Prénom" class="lastname">
 										<input type="email" placeholder="Email" class="email">
 										
 									</div>
