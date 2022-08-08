@@ -322,7 +322,7 @@
 
 										<input type="text" placeholder="Votre Nom *" name="firstname" class="firstname" required>
 										<input type="text" placeholder="Votre Prénom *" name="lastname" class="lastname" required>
-										<input type="number" placeholder="Votre Code Postal *" name="postal-code" class="firstname" required>
+										<input type="number" placeholder="Votre Code Postal *" name="postal_code" class="firstname" required>
 										<input type="text" placeholder="Votre Ville *" name="town" class="lastname" required>
 										<input type="email" placeholder="Votre Email *" name="email" class="firstname" required>
 										<input type="number" placeholder="Votre Téléphone *" name="phone" class="lastname" required>

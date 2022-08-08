@@ -16,7 +16,7 @@ use App\Http\controllers\NeedController;
 
 Route::get('/', function () {
     return view('homepage');
-});
+})->name('homepage');
 
 Route::get('about', function () {
     return view('about');

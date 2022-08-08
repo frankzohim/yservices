@@ -72,7 +72,7 @@
 						<div class="header__left">
 
 							<div class="header__logo-wrap">
-								<a class="" aria-label="Youdom" data-inner-link="true" href="index.html">
+								<a class="" aria-label="Youdom" data-inner-link="true" href="{{ route('homepage') }}">
 									<img src="{{  asset('_next/static/media/logo.png') }}"   />
 								</a>
 							</div>
