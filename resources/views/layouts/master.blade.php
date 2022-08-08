@@ -66,7 +66,7 @@
 }
 
 .stillforce-heading-red-medium {
-	color: #E84347; font-weight:400; font-size:30px; 
+	color: #E84347; font-weight:400; font-size:30px;
 }
 
 .stillforce-heading-red-small {
@@ -123,7 +123,7 @@ button:hover {
   width: 15px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border: none;  
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -152,6 +152,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-image: url(_next/static/media/2439de6e657b497a29d37bdd5c158e8b.svg);
     background-color: initial;
 }
+
+
 
 
 </style>
@@ -213,25 +215,25 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 </svg></div>
 
 	@include('layouts.header')
-		
+
 		<main id="main" class="main">
-		
+
 				@yield('content')
-		
+
 		</main>
-		
+
 		 @include('layouts.footer')
-		
+
 		<div class="cookie-info cookie-info_hidden" data-test="cookie-info">
-				
+
 				<aside class="cookie-info__card-full cookie-info_hidden" data-test="cookie-info-full">
-					
+
 					<div class="cookie-info__card-full-content">
 						<p class="heading cookie-info__heading" data-inner-html="Gestion cookies"></p><p class="text text_sm" data-inner-html="FINOM uses cookies 🍪 to ensure correct functioning and security of the website, to improve and personalise your experience with us. Some cookies require your consent. By clicking Accept you agree to the use of cookies in this way. You can change your cookie settings anytime. For more information please read out &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://finom.co/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Cookie Policy&lt;/a&gt;."></p><ul class="cookie-info__control-list"><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_disabled checkbox-switch_theme_blue checkbox-switch_on checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_essential" data-test="cookie-info-full-essential"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control disabled checked" disabled="" checked="" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Essential cookies" data-inner-html="Essential cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are strictly necessary to make our website usable by enabling basic functions like page navigation, website security or support via chat. You can&#x27;t decline the usage of these cookies."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_analytics" data-test="cookie-info-full-analytics"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Analytics cookies" data-inner-html="Analytics cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies help us to count visits and traffic sources in order to monitor, optimize communication and improve the performance of our website. We get information about how visitors move through pages of the website. If you don&#x27;t allow these cookies, we will not know when you visited our site."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_marketing" data-test="cookie-info-full-marketing"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Marketing cookies" data-inner-html="Marketing cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are used to serve ads that are relevant to you and to limit the number of times an ad is shown. We also share information about your use of our website with our social media partners. This data may be combined with other information about you."></p></li></ul><div class="cookie-info__buttons-wrap"><button class="cookie-info__btn" type="button" data-inner-html="Accept all" data-test="cookie-info-full-accept-all"></button><button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Confirm selection" data-accept-cookie="true" data-test="cookie-info-full-confirm-selection"></button></div>
 					</div>
-					
+
 				</aside>
-				
+
 				<aside class="cookie-info__card" data-test="cookie-info-card">
 						<div class="cookie-info__card-top">
 							<div class=" hide-mobile" aria-label="Finom">
@@ -240,30 +242,30 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 							<button class="button-clear link link_underline text_sm" data-accept-cookie="true" data-test="cookie-info-card-continue-without-accepting" data-inner-html="Continuer sans accepter">
 							</button>
 						</div>
-						
+
 						<p class="text text_sm" data-inner-html="Youdom Services uses cookies 🍪 pour assurer le bon fonctionnement et la sécurité du site Web, pour améliorer et personnaliser votre expérience avec nous. Certains cookies nécessitent votre consentement. En cliquant sur Accepter, vous acceptez l'utilisation de cookies de cette manière. Vous pouvez modifier vos paramètres de cookies à tout moment. Pour plus d'informations, veuillez lire notre &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://finom.co/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Politique Cookies&lt;/a&gt;.">
 						</p>
-						
+
 						<div class="cookie-info__buttons-wrap">
 							<button class="cookie-info__btn" type="button" data-inner-html="Tout Accepter" data-test="cookie-info-card-accept-all">
 							</button>
-							
+
 							<button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Gérer les  cookies" data-test="cookie-info-card-manage-cookies"></button>
 						</div>
 				</aside>
 		</div>
-		
+
 	</div>
-	
+
 	<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
 	</script>
-	
+
 	<script defer="" src="http://finom.co/api/config/?buildId=4680" type="text/javascript">
 	</script>
-	
+
 	<script defer="" src="_next/static/chunks/UWd0_aoUPydEnjwz1DTpB-src-pages--locale--index-client.js" type="text/javascript">
 	</script>
-	
+
 	<script>
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
