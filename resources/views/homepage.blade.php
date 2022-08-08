@@ -322,7 +322,11 @@
 
 										<input type="text" placeholder="Votre Nom" class="firstname">
 										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="email" placeholder="Email" class="email">
+										<input type="text" placeholder="Votre adresse" class="email">
+										<input type="text" placeholder="Votre Nom" class="firstname">
+										<input type="text" placeholder="Votre Code Postal" class="lastname">
+										<input type="text" placeholder="Votre Ville" class="firstname">
+										<input type="text" placeholder="Votre Téléphone" class="lastname">
 										
 									</div>
 								</div>

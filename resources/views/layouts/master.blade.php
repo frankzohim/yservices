@@ -143,7 +143,7 @@ select.classic {
     5px 5px,
     2.5em 2.5em;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 80%;
 }
 .search-icon {
 	height: 25px;
@@ -161,18 +161,18 @@ select.classic {
   padding-top: 10px;
   padding-bottom: 10px;
   color: gray;
-  width:100%
+  width:80%
 }
 
 .firstname{
 font-size: 15px;
 margin-top: 10px;
-margin-right: 10px;
+margin-right: 0px;
 margin-bottom: 20px;
 border-width: 1px;
 border-style: solid;
 padding-left: 20px;
-width: 50%;
+width: 40%;
 padding-top: 10px;
 padding-bottom: 10px;
 color: gray;
@@ -184,7 +184,7 @@ margin-right: 10px;
 border-width: 1px;
 border-style: solid;
 padding-left: 20px;
-width: 45%;
+width: 40%;
 padding-top: 10px;
 padding-bottom: 10px;
 color: gray;
