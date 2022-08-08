@@ -384,7 +384,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   document.querySelectorAll('.inJourney').forEach((item)=>{
       item.addEventListener('click',()=>{
-        console.log(item.getAttribute('data-time'));
+       
         if(item.style.backgroundColor == 'blue')
           item.style.backgroundColor = 'white';
         else
@@ -399,7 +399,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   document.querySelectorAll('.allDays').forEach((item)=>{
       item.addEventListener('click',()=>{
         //console.log(item.getAttribute('data-time'));
-        let parent = item.parentElement;
+        //let parent = item.parentElement;
         console.log(parent);
         if(item.style.backgroundColor == 'blue')
           item.style.backgroundColor = 'white';
@@ -459,6 +459,7 @@ function nextPrev(n) {
 
 function validateForm() {
 
+  let dataTimes;
   //checking if at least one checkbox if checked
   if(currentTab == 0){
      const form = document.querySelector('#regForm');
@@ -482,6 +483,23 @@ function validateForm() {
 
      return valid;
   }
+
+  if(currentTab==1){
+    const items = document.getElementsByTagName('td');
+    let dataTimes = document.getElementById('dataTimes');
+
+    const betterItems = [...items];
+
+    betterItems.forEach(function(item){
+      if(item.style.backgroundColor=="blue")
+       dataTimes.value += " "+ item.getAttribute('data-time');
+    });
+
+    console.log(dataTimes.value);
+     //console.log(item.getAttribute('data-time'));
+  }
+
+
  
 
   // This function deals with validation of the form fields

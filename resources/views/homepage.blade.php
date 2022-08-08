@@ -178,7 +178,7 @@
 									
 									<div class="when">
 										<label class="heading margin-top-sm" style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> A Partir de quand </label>
-										<select name="begining" id="" class="classic">
+										<select name="start_at" id="" class="classic">
 											<option value="Immédiatement" >Immédiatement</option>
 											<option value="Dans 1 mois" >Dans 1 mois</option>
 											<option value="Dans 2 mois" >Dans 2 mois</option>
@@ -288,6 +288,7 @@
 											</tr>
 										</tbody>
 									</table>
+									<input type="hidden" name="data_times" id ="dataTimes" value="" >
 								</div>
 
 								<div class="tab">
@@ -301,7 +302,7 @@
 											Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!
 									</p>
 									<br>
-										<select name="begining" id="" class="classic">
+										<select name="for_who" id="" class="classic">
 											<option value="" selected>À qui est destinée notre aide ? *</option>
 											<option value="Vous recherchez une aide pour vous" >Vous recherchez une aide pour vous</option>
 											<option value="Vous recherchez une aide pour quelqu’un d’autre" >Vous recherchez une aide pour quelqu’un d’autre</option>
@@ -312,7 +313,7 @@
 										À propos de vous! </p>
                                         <br>
 										
-										<select name="you-are" id="" class="classic">
+										<select name="gender" id="" class="classic">
 												<option value="" selected>Vous êtes ? *</option>
 												<option value="un homme" >Un homme</option>
 												<option value="une femme" >Une femme</option>

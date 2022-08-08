@@ -34,7 +34,7 @@ class NeedController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->services);
+        dd($request->dataTimes);
     }
 
     /**

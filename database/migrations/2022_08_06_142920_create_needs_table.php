@@ -15,7 +15,18 @@ return new class extends Migration
     {
         Schema::create('needs', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
+            $table->string('services');
+            $table->string('start_at');
+            $table->string('data_times');
+            $table->string('for_who');
+            $table->string('gender');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->string('postal_code');
+            $table->string('town');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('address');
             $table->timestamps();
         });
     }
