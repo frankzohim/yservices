@@ -554,7 +554,7 @@ section[id] {
 .button {
     position: relative;
     display: inline-flex;
-    text-decoration: none;
+    decoration: none;
     justify-content: center;
     align-items: center;
     padding: 18px 40px;
@@ -1023,6 +1023,7 @@ only screen and (min-width:1201px) {
 
 .container_card {
     max-width: 1360px;
+    max-height: 5px;
 }
 .container_cardh {
     height: 20px;
@@ -1031,7 +1032,8 @@ only screen and (min-width:1201px) {
 @media only screen and (min-width:1200px) and (max-width:1400px) {
     .container_card {
         padding-left: 20px;
-        padding-right: 20px
+        padding-right: 20px;
+       
     }
 }
 
