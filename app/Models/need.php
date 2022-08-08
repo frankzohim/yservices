@@ -12,8 +12,8 @@ class need extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'type'
+    protected $guarded = [
+        '_token'
     ];
 
     public function users(): BelongsToMany

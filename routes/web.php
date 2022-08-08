@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\controllers\NeedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +16,32 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage');
+})->name('homepage');
+
+Route::get('about', function () {
+    return view('about');
 });
+
+<<<<<<< HEAD
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+   Route::resources([
+        'need' => NeedController::class,
+    ]);
+
 require __DIR__ . '/auth.php';
+=======
+Route::group(['prefix' => 'clients'], function () {
+
+	Route::get("fanchise", function () {
+		return view('clients/franchise');
+	});
+	Route::get('rejoindre', function () {
+		return view("clients/rejoindre");
+
+	});
+});
+>>>>>>> imagicBranch

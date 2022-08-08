@@ -36,7 +36,7 @@
 								<a href="#" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
 									En Savoir Plus
 								</a>
-								
+
 								<a href="#" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
 									Nous Rejoindre
 								</a>
@@ -74,22 +74,22 @@
 								 <span>Expliquez-nous votre situation en 3 clics</span>
 							</h4>
 							
-							<form id="regForm" action="/action_page.php">
-
+							<form id="regForm" method="post" action="{{ route('need.store') }}">
+								@csrf
 								<!-- One "tab" for each step in the form: -->
 								<div class="tab">
-													
+									<input type="hidden" name="service" id="serviceForm" value="">
 									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
 									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 											
-													<img src="{{  asset('_next/static/media/icones/menage.png') }} " alt="" style="height: 120px"/>
+													<img src="{{  asset('_next/static/media/icones/menage.PNG') }} " alt="" style="height: 120px"/>
 													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="Bike">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
 												</div>
 											  
@@ -99,21 +99,21 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/handicape.png') }} " alt="" style="height: 120px" />
+												<img src="{{  asset('_next/static/media/icones/handicape.PNG') }} " alt="" style="height: 120px" />
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="service-handicap">
   											    <label for="vehicle1" style="white-space: nowrap"> Service handicap </label>
 												</div>
 										</li>
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/autonomie.png') }} " alt=""  style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/autonomie.PNG') }} " alt=""  style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="aide-autonomie">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide à l’autonomie </label>
 												</div>
 										</li>
@@ -127,43 +127,43 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												
-												<img src="{{  asset('_next/static/media/icones/accompagnement.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/accompagnement.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="accompagnement">
   											    <label for="vehicle1" style="white-space: nowrap"> Accompagnements </label>
 												</div>
 										</li>
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/hopital.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/hopital.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="retour-hospitalisation">
   											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
 												</div>
 										</li>
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/garde.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="gardes-non-medicalisées">
   											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
 												</div>
 										</li>
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/administration.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="assistance-administrative">
   											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
 												</div>
 										</li>
@@ -175,11 +175,160 @@
 
 								<div class="tab">
 									<img src="/_next/static/media/step2.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									
+									<div class="when">
+										<label class="heading margin-top-sm" style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> A Partir de quand </label>
+										<select name="start_at" id="" class="classic">
+											<option value="Immédiatement" >Immédiatement</option>
+											<option value="Dans 1 mois" >Dans 1 mois</option>
+											<option value="Dans 2 mois" >Dans 2 mois</option>
+											<option value="Dans 3 mois" >Dans 3 mois</option>
+											<option value="Dans plus de 3 mois" >Dans plus de 3 mois</option>
+										</select>
+									</div>
+								
+									<div class="when">
+										<label class="heading margin-top-sm" style="color: #fff; font-weight:700; font-size:25px;"> 
+											Cliquez pour sélectionner vos horaires 
+										</label>
+										
+									</div>
+
+									<table class="TimetableDesign PFTimetableDesktop">
+										<thead>
+											<tr>
+												<th></th>
+												<th>Lundi</th>
+												<th>Mardi</th>
+												<th>Mercredi</th>
+												<th>Jeudi</th>
+												<th>Vendredi</th>
+												<th>Samedi</th>
+												<th>Dimanche</th>
+												<th class="allDays">Tous les jours</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="inJourney">
+												<th>Matin</th>
+												<td class="inJourney" data-time="Lundi - Matin"></td>
+												<td class="inJourney" data-time="Mardi - Matin"></td>
+												<td class="inJourney" data-time="Mercredi - Matin"></td>
+												<td class="inJourney" data-time="Jeudi - Matin"></td>
+												<td class="inJourney" data-time="Vendredi - Matin"></td>
+												<td class="inJourney" data-time="Samedi - Matin"></td>
+												<td class="inJourney" data-time="Dimanche - Matin"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Midi</th>
+												<td class="inJourney" data-time="Lundi - Midi"></td>
+												<td class="inJourney" data-time="Mardi - Midi"></td>
+												<td class="inJourney" data-time="Mercredi - Midi"></td>
+												<td class="inJourney" data-time="Jeudi - Midi"></td>
+												<td class="inJourney" data-time="Vendredi - Midi"></td>
+												<td class="inJourney" data-time="Samedi - Midi"></td>
+												<td class="inJourney" data-time="Dimanche - Midi"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Après-Midi</th>
+												<td class="inJourney" data-time="Lundi - Après-midi"></td>
+												<td class="inJourney" data-time="Mardi - Après-midi"></td>
+												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
+												<td class="inJourney" data-time="Jeudi - Après-midi"></td>
+												<td class="inJourney" data-time="Vendredi - Après-midi"></td>
+												<td class="inJourney" data-time="Samedi - Après-midi"></td>
+												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="inJourney">
+												<th>Soir</th>
+												<td class="inJourney" data-time="Lundi - Soir"></td>
+												<td class="inJourney" data-time="Mardi - Soir"></td>
+												<td class="inJourney" data-time="Mercredi - Soir"></td>
+												<td class="inJourney" data-time="Jeudi - Soir"></td>
+												<td class="inJourney" data-time="Vendredi - Soir"></td>
+												<td class="inJourney" data-time="Samedi - Soir"></td>
+												<td class="inJourney" data-time="Dimanche - Soir"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="allJourney">
+												<th>Journée entière (8h > 20h)</th>
+												<td class="allJourney" data-time="Lundi - Journée"></td>
+												<td class="allJourney" data-time="Mardi - Journée"></td>
+												<td class="allJourney" data-time="Mercredi - Journée"></td>
+												<td class="allJourney" data-time="Jeudi - Journée"></td>
+												<td class="allJourney" data-time="Vendredi - Journée"></td>
+												<td class="allJourney" data-time="Samedi - Journée"></td>
+												<td class="allJourney" data-time="Dimanche - Journée"></td>
+												<td class="allDays allJourney"></td>
+											</tr>
+											<tr>
+												<th>Nuit (20h > 8h)</th>
+												<td data-time="Lundi - Nuit"></td>
+												<td data-time="Mardi - Nuit"></td>
+												<td data-time="Mercredi - Nuit"></td>
+												<td data-time="Jeudi - Nuit"></td>
+												<td data-time="Vendredi - Nuit"></td>
+												<td data-time="Samedi - Nuit"></td>
+												<td data-time="Dimanche - Nuit"></td>
+												<td class="allDays"></td>
+											</tr>
+											<tr class="allDay">
+												<th>24h/24</th>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay allDays"></td>
+											</tr>
+										</tbody>
+									</table>
+									<input type="hidden" name="data_times" id ="dataTimes" value="" >
 								</div>
 
 								<div class="tab">
 									<img src="/_next/static/media/step3.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									<div class="when">
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> 
+										C'est presque terminé ! </p>
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:15px;"> 
+											Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!
+									</p>
+									<br>
+										<select name="for_who" id="" class="classic">
+											<option value="" selected>À qui est destinée notre aide ? *</option>
+											<option value="Vous recherchez une aide pour vous" >Vous recherchez une aide pour vous</option>
+											<option value="Vous recherchez une aide pour quelqu’un d’autre" >Vous recherchez une aide pour quelqu’un d’autre</option>
+										</select>
+
+										<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> 
+										À propos de vous! </p>
+                                        <br>
+										
+										<select name="gender" id="" class="classic">
+												<option value="" selected>Vous êtes ? *</option>
+												<option value="un homme" >Un homme</option>
+												<option value="une femme" >Une femme</option>
+											</select>
 									
+
+										<input type="text" placeholder="Votre Nom *" name="firstname" class="firstname" required>
+										<input type="text" placeholder="Votre Prénom *" name="lastname" class="lastname" required>
+										<input type="number" placeholder="Votre Code Postal *" name="postal_code" class="firstname" required>
+										<input type="text" placeholder="Votre Ville *" name="town" class="lastname" required>
+										<input type="email" placeholder="Votre Email *" name="email" class="firstname" required>
+										<input type="number" placeholder="Votre Téléphone *" name="phone" class="lastname" required>
+										<input type="text" placeholder="Votre Adresse *" name="address" class="email">
+										
+									</div>
 								</div>
 
 							
@@ -212,7 +361,7 @@
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 							<div class="lp-banking-track-cashflow__image-wrap image">
 								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+								<img src="{{  asset('_next/static/media/women.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
 								</picture>
 							</div>
 							<div class="lp-banking-track-cashflow__content">
@@ -276,7 +425,7 @@
 									
 									<picture class="picture__image-container ">
 																		
-										<img src="{{  asset('_next/static/media/fonctionnement.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
+										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
 									</picture>
 									
 								</div>
