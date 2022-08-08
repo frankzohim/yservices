@@ -5,19 +5,11 @@
 
 <section class="main-intro-all">
 					<div class="container">
-<<<<<<< HEAD
 						
 						<div class="section-body padding-top-sm main-intro-all__body">
 							
 							<div class="main-intro-all__content">
 								
-=======
-
-						<div class="section-body padding-top-sm main-intro-all__body">
-
-							<div class="main-intro-all__content">
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 								<div style="margin-bottom:55px;">
 
 									<h1 class="heading heading__lvl1 stillforce-heading-blue-medium" >
@@ -44,7 +36,6 @@
 								<a href="#" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
 									En Savoir Plus
 								</a>
-<<<<<<< HEAD
 								
 								<a href="#" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
 									Nous Rejoindre
@@ -75,38 +66,6 @@
 					<div class="container container_card">
 						<div class="section-body section-body_card section-body_card_blue section-body_card_margin-top color_white main-promo-six-months-free__body">
 							
-=======
-
-								<a href="#" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
-									Nous Rejoindre
-								</a>
-
-
-							</div>
-
-							<div class="main-intro-all__simg-wrap">
-
-							<picture class="picture__image-container ">
-
-								<img src="{{  asset('_next/static/media/old.png') }}"   />
-
-
-							</picture>
-
-							</div>
-						</div>
-
-					</div>
-
-
-				</section>
-
-				<section class="main-promo-six-months-free" id="main-promo-six-months-free">
-
-					<div class="container container_card">
-						<div class="section-body section-body_card section-body_card_blue section-body_card_margin-top color_white main-promo-six-months-free__body">
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 							<h2 class="heading heading__lvl1 main-promo-six-months-free__heading" style="text-align: center;">
 								 <span>Quels sont vos besoins d'aide à domicile ?</span>
 							</h2>
@@ -114,16 +73,11 @@
 							<h4 class="heading  main-promo-six-months-free__heading" style="text-align: center;">
 								 <span>Expliquez-nous votre situation en 3 clics</span>
 							</h4>
-<<<<<<< HEAD
 							
-=======
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 							<form id="regForm" action="/action_page.php">
 
 								<!-- One "tab" for each step in the form: -->
 								<div class="tab">
-<<<<<<< HEAD
 													
 									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
 									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
@@ -131,15 +85,6 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 											
-=======
-
-									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
-									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
-
-										<li style="margin-right: 30px;">
-											<div class="cards-steps__icons-wrap color_red">
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 													<img src="{{  asset('_next/static/media/icones/menage.png') }} " alt="" style="height: 120px"/>
 													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
@@ -147,19 +92,11 @@
 														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
 												</div>
-<<<<<<< HEAD
 											  
 										</li>
 										
 										
 										
-=======
-
-										</li>
-
-
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/icones/handicape.png') }} " alt="" style="height: 120px" />
@@ -209,11 +146,7 @@
   											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
 												</div>
 										</li>
-<<<<<<< HEAD
 										
-=======
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" style="height: 120px"/>
@@ -224,11 +157,7 @@
   											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
 												</div>
 										</li>
-<<<<<<< HEAD
 										
-=======
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
@@ -238,13 +167,8 @@
   											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
 												</div>
 										</li>
-<<<<<<< HEAD
 									
 										
-=======
-
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 									</ul>
 
 								</div>
@@ -398,11 +322,7 @@
 
 										<input type="text" placeholder="Votre Nom" class="firstname">
 										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="text" placeholder="Votre adresse" class="email">
-										<input type="text" placeholder="Votre Nom" class="firstname">
-										<input type="text" placeholder="Votre Code Postal" class="lastname">
-										<input type="text" placeholder="Votre Ville" class="firstname">
-										<input type="text" placeholder="Votre Téléphone" class="lastname">
+										<input type="email" placeholder="Email" class="email">
 										
 									</div>
 								</div>
@@ -454,7 +374,6 @@
 						</div>
 					</div>
 				</section>
-<<<<<<< HEAD
 				
 				
 				
@@ -505,58 +424,6 @@
 										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
 									</picture>
 									
-=======
-
-
-
-				<section class="main-invoicing">
-
-					<div class="container container_card">
-
-						<div class="section-body section-body_card section-body_card_pink section-body_card_margin-top main-invoicing__body">
-
-							<h2 class="heading heading__lvl1 color_blue">Notre Fonctionnement
-							</h2>
-							<p class="margin-top-xs text text_lg">Chez Youdom Services le fonctionnement est très simple. <span class="stillforce-heading-red-small"> Un service sur-mesure et un interlocuteur unique.</span></b></p>
-
-							<div class="margin-top-lg main-invoicing__content-wrap">
-
-								<div class="main-invoicing__info">
-
-									<ul class="main-invoicing__list">
-
-										<li><div class="main-invoicing__list-icon-wrap">
-											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg></div><p class="margin-top-xs text">Lorem ipsum <b>Lorem ipsum</b> Lorem ipsum Lorem ipsum <b>Lorem ipsum</b> Lorem ipsum</p>
-										</li>
-
-										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#link_ver-2"></use></svg></div><p class="margin-top-xs text">Lorem ipsum dolor sit amet, consectetur adipiscing eli <b>sint occaecat</b></p>
-										</li>
-
-										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#idea"></use></svg></div><p class="margin-top-xs text">Aboris<b>nisi ut aliquip ex ea </b> commodo consequat. Duis</p>
-										</li>
-
-										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#invoice"></use></svg></div><p class="margin-top-xs text">Excepteur sint occaecat cupidatat non proident <b>officia</b></p>
-										</li>
-
-									</ul>
-
-									<div class="main-invoicing__btn-wrap button_margin-default">
-										<a href="#" class="button button_secondary button_w-m-full" id="target-action-main-invoicing-business">Créer un compte</a><div><a class="link link_underline link_blue-bright main-invoicing__btn-learn-more" data-inner-link="true" data-test="header_nav__main-invoicing-learn-more" href="#">En Savoir Plus</a></div>
-									</div>
-
-								</div>
-
-								<div class="main-invoicing__simg-wrap">
-
-									<picture class="picture__image-container ">
-
-										<img src="{{  asset('_next/static/media/fonctionnement.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
-									</picture>
-
->>>>>>> 1380fc1f995ae50ae838ae306e499c17ee014adc
 								</div>
 							</div>
 					    </div>
@@ -723,68 +590,68 @@
 					</div>
 				</section>
 
-
+				
 				<section class="lp-banking-support-team color_white"><div class="container container_card">
 					<div class="lp-banking-support-team__body section-body section-body_card section-body_card_blue section-body_card_margin-top">
 						<h2 class="heading heading__lvl1">Bénéficiez d'une assistance premium rapide et professionnelle de la part de notre service client !</h2>
-
+						
 						<div class="lp-banking-support-team__content margin-top-default">
-
+							
 							<div class="lp-banking-support-team__content-image-wrap">
-
+							
 								<picture class="picture__image-container ">
-
-
+									
+									
 									<img src="{{  asset('_next/static/media/lp-banking-support-team__team_it%401x.36f5a763.png') }} " srcSet="/_next/static/media/lp-banking-support-team__team_it@2x.5c133c0b.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
-
+									
 								</picture>
-
+								
 							</div>
 							<div class="lp-banking-support-team__content-message">
-
+								
 								<ul class="lp-banking-support-team__content-list">
 									<li class="lp-banking-support-team__content-item">
 										<svg class="icon icon_sm"><use href="#clock"></use></svg><span class="text">Temps de réponse inférieur à 1 minute en utilisant notre application WhatsApp ou Chat</span>
 									</li>
-
+									
 									<li class="lp-banking-support-team__content-item">
 										<svg class="icon icon_sm"><use href="#check-circle"></use></svg><span class="text">Assistance téléphonique ou vidéo dédiée à l'heure qui vous convient</span>
 									</li>
-
+									
 									<li class="lp-banking-support-team__content-item">
 										<svg class="icon icon_sm"><use href="#eye"></use></svg><span class="text">Demandez une démonstration de produit à l'un de nos spécialistes</span>
 									</li>
-
+									
 									<li class="lp-banking-support-team__content-item">
 										<svg class="icon icon_sm"><use href="#date-recurring"></use></svg><span class="text">Centre d'aide interactif disponible 24 heures sur 24 </span>
 									</li>
 								</ul>
-
+								
 								<div class="lp-banking-support-team__content-contact margin-top-lg"><button class="button button_w-m-full lp-banking-support-team-contact-us__button" id="target-action-lp-banking-support-team-chat" disabled="">Ouvrir le chat</button><a class="button button_w-m-full button_white lp-banking-support-team-contact-us__button" href="https://api.whatsapp.com/send?phone=33687263865" target="_blank" rel="noreferrer"><img src="http://finom.co/_next/static/media/whatsapp.ed0dbc2b.svg" alt="" /><span>Discussion WhatsApp</span></a><div class="lp-banking-support-team-contact-us__email-wrap"><span class="text">ou contactez-nous <span class='no-wrap'>e-mail</span>:info@youdom.services</span><br /><a href="#" class="link link_inherit link_hover_underline heading heading__lvl3"></a></div></div>
 							</div>
-
+							
 						</div>
 					</div></div>
 				</section>
-
-
-
+				
+				
+				
 				<section class="main-about-us">
 					<div class="container container_card">
-
+					
 					<div class="section-body section-body_card section-body_card_blue-light main-about-us__body section-body_card_margin-top">
-
+						
 						<div class="hide-tablet-lg hide-desktop">
 							<p class="text caps color_red">About us</p>
-
+							
 							<ul class="margin-top-sm main-about-us__list">
 								<li>
 									<div class="main-about-us__card">
-
+										
 										<div class="main-about-us__card-content">
 											<svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">We’re specialists in the fintech market and serial entrepreneurs. We decided to make things pure and more intuitive. It’s essential to spend time on your business, family and friends. Everything else is just a waste of time like being engaged in paper administrative routines.</p><h3 class="margin-top-xs heading heading heading__lvl1 main-about-us__heading">Antonio la Mura</h3><p class="margin-top-xs text text_lg">Head of business in Italy</p><p class="margin-top-xs text">6 years of experience in fintech and business development. Entrepreneur: farm in southern Italy. Milan, Ital.</p>
 										</div>
-
+										
 										<div class="main-about-us__person main-about-us__person_1">
 											<div class="main-about-us__person-bg">
 												<div class="main-about-us__person-bg-rect"></div>
