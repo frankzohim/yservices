@@ -11,6 +11,7 @@ use Laravel\Sanctum\HasApiTokens;
 use App\Models\franchise;
 use App\Models\information;
 use App\Models\need;
+use App\Models\agency;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class User extends Authenticatable
@@ -61,4 +62,14 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(need::class);
     }
+    /**
+     * Get the agency that owns the User
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function agency(): BelongsTo
+    {
+        return $this->belongsTo(agency::class);
+    }
+
 }
