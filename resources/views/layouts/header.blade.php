@@ -29,7 +29,7 @@
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
 
-									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="/clients/rejoindre">Nous Rejoindre</a>
+									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Rejoindre</a>
 									</li>
 
 								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Contacter</a>
@@ -76,7 +76,7 @@
 
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__about" href="#"><span class="header-nav__name">Qui Sommes Nous?</span></a></li>
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__community" href="#"><span class="header-nav__name">Intervenants</span></a></li>
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="clients/franchise"><span class="header-nav__name">Franchises</span></a></li>
+												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="#"><span class="header-nav__name">Franchises</span></a></li>
 
 											</ul><div class="dropdown__drop-arrow"></div>
 

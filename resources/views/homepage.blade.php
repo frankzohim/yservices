@@ -77,27 +77,117 @@
 							<form id="regForm" action="/action_page.php">
 
 								<!-- One "tab" for each step in the form: -->
-								<div class="tab">Name:
-									<p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-									<p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+								<div class="tab">
+
+									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+
+													<img src="{{  asset('_next/static/media/icones/menage.png') }} " alt="" style="height: 120px"/>
+													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
+												</div>
+
+										</li>
+
+
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/handicape.png') }} " alt="" style="height: 120px" />
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											<div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Service handicap </label>
+												</div>
+										</li>
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/autonomie.png') }} " alt=""  style="height: 120px"/>
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Aide à l’autonomie </label>
+												</div>
+										</li>
+
+
+									</ul>
+
+									<ul class="margin-top-lg cards-steps__list" style="margin-left:0%">
+
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+
+												<img src="{{  asset('_next/static/media/icones/accompagnement.png') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											 <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Accompagnements </label>
+												</div>
+										</li>
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/hopital.png') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											  <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
+												</div>
+										</li>
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" style="height: 120px"/>
+												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+											</div>
+											<div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
+												</div>
+										</li>
+
+										<li style="margin-right: 30px;">
+											<div class="cards-steps__icons-wrap color_red">
+												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
+											</div>
+											 <div style="white-space: nowrap">
+														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+  											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
+												</div>
+										</li>
+
+
+									</ul>
+
 								</div>
-								<div class="tab">Contact Info:
-									<p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-									<p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+
+								<div class="tab">
+									<img src="/_next/static/media/step2.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
 								</div>
-								<div class="tab">Birthday:
-									<p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-									<p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-									<p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+
+								<div class="tab">
+									<img src="/_next/static/media/step3.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
+
 								</div>
-								<div class="tab">Login Info:
-									<p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-									<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-								</div>
+
+
+
 								<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-										<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+										<button type="button" class="margin-top-default button button_w-m-full"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
 									</div>
 								</div>
 								<!-- Circles which indicates the steps of the form: -->
@@ -105,61 +195,9 @@
 									<span class="step"></span>
 									<span class="step"></span>
 									<span class="step"></span>
-									<span class="step"></span>
 								</div>
 							</form>
 
-
-								<ul class="margin-top-lg cards-steps__list" style="margin-left:120px">
-
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-
-											   <img src="{{  asset('_next/static/media/intimite.svg') }} " alt="" />
-											   <img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-
-										<h3 class="margin-top-xs heading heading__lvl3">Intimité</h3>
-									</li>
-
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-
-											<img src="{{  asset('_next/static/media/repas.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-
-										<h3 class="margin-top-xs heading heading__lvl3">Repas</h3>
-									</li>
-
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/menage.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Ménage</h3>
-									</li>
-
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" />
-											<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Accompagnements</h3>
-									</li>
-
-									<li>
-										<div class="cards-steps__icons-wrap color_red">
-											<img src="{{  asset('_next/static/media/presence.svg') }} " alt="" />
-										</div>
-										<h3 class="margin-top-xs heading heading__lvl3">Présence</h3>
-									</li>
-
-
-								</ul>
-								<a href="#" class="margin-top-default button button_w-m-full" style=" display: block; margin-left: auto; margin-right: auto; width: 20%;" id="target-action-main-intro-all">
-									Etape suivante
-								</a>
 							<div class="main-promo-six-months-free__circle">
 							</div>
 
@@ -174,7 +212,7 @@
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 							<div class="lp-banking-track-cashflow__image-wrap image">
 								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old.png') }} " srcSet="/_next/static/media/image1.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+								<img src="{{  asset('_next/static/media/old.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
 								</picture>
 							</div>
 							<div class="lp-banking-track-cashflow__content">
@@ -238,7 +276,7 @@
 
 									<picture class="picture__image-container ">
 
-										<img src="{{  asset('_next/static/media/fonctionnement.png') }} " srcSet="_next/static/media/image2.png 2x" alt="" class="picture__image " loading="lazy" />
+										<img src="{{  asset('_next/static/media/fonctionnement.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
 									</picture>
 
 								</div>
@@ -260,7 +298,7 @@
 								<picture class="picture__image-container ">
 
 
-									<img  src="{{  asset('_next/static/media/why-us.png') }} " srcSet="/_next/static/media/image3.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
+									<img  src="{{  asset('_next/static/media/why-us.png') }} " srcSet="/_next/static/media/lp-banking-support-team__team_it@2x.5c133c0b.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
 
 								</picture>
 
@@ -309,7 +347,7 @@
 							<div class="image lp-banking-track-cashflow__image-wrap">
 								<picture class="picture__image-container ">
 
-									<img src="{{  asset('_next/static/media/lp-banking-track-cashflow__simg_1_fr.def2e41c.webp') }} " srcSet="/_next/static/media/image4.png 2x" alt="" class="picture__image " loading="eager" />
+									<img src="{{  asset('_next/static/media/lp-banking-track-cashflow__simg_1_fr.def2e41c.webp') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_fr@2x.de21b672.png 2x" alt="" class="picture__image " loading="eager" />
 								</picture>
 							</div><div class="lp-banking-track-cashflow__content"><h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading">Suivez vos flux financiers actuels et futurs à l&#x27;aide du nouveau tableau de bord intelligent</h2><p class="margin-top-default text text_lg">Recherchez, catégorisez et filtrez toutes vos factures:</p><ul class="margin-top-default list list_10px list_bullet-color_blue"><li><h4 class="heading heading__lvl4">Par type</h4><span class="text">(logistique, marketing, personnel, un projet spécifique, etc.)</span></li><li><h4 class="heading heading__lvl4">Sur n&#x27;importe quelle période</h4></li><li><h4 class="heading heading__lvl4">Pour un client ou un fournisseur spécifique</h4></li></ul></div>
 						</div>
@@ -360,7 +398,7 @@
 
 
 
-								<img src="{{  asset('_next/static/media/join-us.png') }}" srcSet="_next/static/media/image8.png 2x" alt="" class="picture__image " width="592" />
+								<img src="{{  asset('_next/static/media/join-us.png') }}" srcSet="_next/static/media/main-ecard__simg_ver-2_visa@2x.e3f90129.png 2x" alt="" class="picture__image " width="592" />
 
 							</picture>
 
@@ -377,8 +415,8 @@
 							<div class="image lp-banking-invite-team__img-wrap">
 								<picture class="picture__image-container ">
 
-								<img src="{{  asset('_next/static/media/lp-banking-invite-team__simg_ver-2_fr.301d3092.webp') }} " srcSet="/_next/static/media/image5.png 2x" alt="" class="picture__image " loading="eager" /></picture>
-							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte YOUDOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p><a href="https://app.finom.co/fr/signup/" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
+								<img src="{{  asset('_next/static/media/lp-banking-invite-team__simg_ver-2_fr.301d3092.webp') }} " srcSet="/_next/static/media/lp-banking-invite-team__simg_ver-2_fr@2x.7788242e.png 2x" alt="" class="picture__image " loading="eager" /></picture>
+							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte FINOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p><a href="https://app.finom.co/fr/signup/" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
 						</div>
 					</div>
 				</section>
@@ -386,25 +424,23 @@
 				<section class="lp-banking-dont-waste-time">
 					<div class="container container_card">
 						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
-                            <div class="image lp-banking-dont-waste-time__image-wrap">
-								<picture class="picture__image-container ">
-
-									<img src="{{  asset('_next/static/media/image6.png') }} " srcSet="_next/static/media/image6.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div>
-
-                            <div class="lp-banking-dont-waste-time__content">
+							<div class="lp-banking-dont-waste-time__content">
 
 								<h2 class="heading heading__lvl1 color_white lp-banking-dont-waste-time__heading">Gagnez du temps grâce à l&#x27;automatisation et aux fonctions intelligentes</h2>
 									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
-										<li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Reliez votre compte bancaire professionnel ou personnel à YOUDOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Consultez toutes vos transactions sur le tableau de bord YOUDOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Associez facilement vos factures aux paiements entrants</p></li>
+										<li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Reliez votre compte bancaire professionnel ou personnel à FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Consultez toutes vos transactions sur le tableau de bord FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Associez facilement vos factures aux paiements entrants</p></li>
 									</ul>
 
 									<a href="#" class="button _xlarge button_blue lp-banking-dont-waste-time__button" id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
 									Essayer gratuitement</a>
 							</div>
 
+							<div class="image lp-banking-dont-waste-time__image-wrap">
+								<picture class="picture__image-container ">
 
+									<img src="{{  asset('_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.webp') }} " srcSet="_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.png 2x" alt="" class="picture__image " loading="eager" />
+								</picture>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -421,7 +457,7 @@
 								<picture class="picture__image-container ">
 
 
-									<img src="{{  asset('_next/static/media/image7.png') }} " srcSet="/_next/static/media/image7.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
+									<img src="{{  asset('_next/static/media/lp-banking-support-team__team_it%401x.36f5a763.png') }} " srcSet="/_next/static/media/lp-banking-support-team__team_it@2x.5c133c0b.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
 
 								</picture>
 
