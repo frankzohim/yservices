@@ -85,7 +85,7 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 											
-													<img src="{{  asset('_next/static/media/icones/menage.png') }} " alt="" style="height: 120px"/>
+													<img src="{{  asset('_next/static/media/icones/menage.PNG') }} " alt="" style="height: 120px"/>
 													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
@@ -99,7 +99,7 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/handicape.png') }} " alt="" style="height: 120px" />
+												<img src="{{  asset('_next/static/media/icones/handicape.PNG') }} " alt="" style="height: 120px" />
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
@@ -110,7 +110,7 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/autonomie.png') }} " alt=""  style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/autonomie.PNG') }} " alt=""  style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="aide-autonomie">
@@ -127,7 +127,7 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												
-												<img src="{{  asset('_next/static/media/icones/accompagnement.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/accompagnement.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											 <div style="white-space: nowrap">
@@ -138,7 +138,7 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/hopital.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/hopital.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
@@ -149,7 +149,7 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/accompagnement.svg') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/garde.PNG') }} " alt="" style="height: 120px"/>
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
@@ -160,7 +160,7 @@
 										
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
-												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
+												<img src="{{  asset('_next/static/media/icones/administration.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											 <div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="assistance-administrative">
