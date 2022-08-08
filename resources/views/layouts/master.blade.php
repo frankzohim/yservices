@@ -227,7 +227,7 @@ button:hover {
 }
 
 #prevBtn {
-  background-color: #bbbbbb;
+  background-color: #1b138a;
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -266,6 +266,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-color: initial;
 }
 
+.styleDone{
+  background-color: #04AA6D;
+}
 
 </style>
 
@@ -378,10 +381,44 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 	</script>
 	
 	<script>
+
+  document.querySelectorAll('.inJourney').forEach((item)=>{
+      item.addEventListener('click',()=>{
+        console.log(item.getAttribute('data-time'));
+        if(item.style.backgroundColor == 'blue')
+          item.style.backgroundColor = 'white';
+        else
+          item.style.backgroundColor = 'blue'
+        
+        
+      });
+    }
+
+  )
+
+  document.querySelectorAll('.allDays').forEach((item)=>{
+      item.addEventListener('click',()=>{
+        //console.log(item.getAttribute('data-time'));
+        let parent = item.parentElement;
+        console.log(parent);
+        if(item.style.backgroundColor == 'blue')
+          item.style.backgroundColor = 'white';
+        else
+          item.style.backgroundColor = 'blue'
+        
+        
+      });
+    }
+
+  )
+
+
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
+
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
@@ -392,7 +429,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Valider";
+    document.getElementById("nextBtn").innerHTML = "Valider ma demande";
   } else {
     document.getElementById("nextBtn").innerHTML = "Suivant";
   }
@@ -401,6 +438,7 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
+  
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
@@ -420,6 +458,32 @@ function nextPrev(n) {
 }
 
 function validateForm() {
+
+  //checking if at least one checkbox if checked
+  if(currentTab == 0){
+     const form = document.querySelector('#regForm');
+     const checkboxes = form.querySelectorAll('input[type=checkbox]');
+     const checkboxLength = checkboxes.length;
+     const firstCheckbox = checkboxLength > 0 ? checkboxes[0] : null;
+     const service = document.getElementById('serviceForm');
+     //console.log(service);
+     let getTrue = false;
+     for (let i = 0; i < checkboxLength; i++) {
+              if (checkboxes[i].checked) {
+                  valid = true;
+                  getTrue = true
+                  break;
+              }
+              
+          }
+
+     if(!getTrue)
+       valid = false;
+
+     return valid;
+  }
+ 
+
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
   x = document.getElementsByClassName("tab");
@@ -434,10 +498,12 @@ function validateForm() {
       valid = false;
     }
   }
+
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
   }
+
   return valid; // return the valid status
 }
 

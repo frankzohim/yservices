@@ -74,11 +74,11 @@
 								 <span>Expliquez-nous votre situation en 3 clics</span>
 							</h4>
 							
-							<form id="regForm" action="/action_page.php">
-
+							<form id="regForm" method="post" action="{{ route('need.store') }}">
+								@csrf
 								<!-- One "tab" for each step in the form: -->
 								<div class="tab">
-													
+									<input type="hidden" name="service" id="serviceForm" value="">
 									<img src="/_next/static/media/step1.png" style=" display: block; margin-left: 28%; margin-right: auto; width: 30%;"/>
 									<ul class="margin-top-lg cards-steps__list" style="margin-left:20%">
 										
@@ -89,7 +89,7 @@
 													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="Bike">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
 												</div>
 											  
@@ -103,7 +103,7 @@
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="service-handicap">
   											    <label for="vehicle1" style="white-space: nowrap"> Service handicap </label>
 												</div>
 										</li>
@@ -113,7 +113,7 @@
 												<img src="{{  asset('_next/static/media/icones/autonomie.png') }} " alt=""  style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="aide-autonomie">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide à l’autonomie </label>
 												</div>
 										</li>
@@ -131,7 +131,7 @@
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="accompagnement">
   											    <label for="vehicle1" style="white-space: nowrap"> Accompagnements </label>
 												</div>
 										</li>
@@ -142,7 +142,7 @@
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="retour-hospitalisation">
   											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
 												</div>
 										</li>
@@ -153,7 +153,7 @@
 												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="gardes-non-medicalisées">
   											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
 												</div>
 										</li>
@@ -163,7 +163,7 @@
 												<img src="{{  asset('_next/static/media/icones/administration.png') }} " alt="" style="height: 120px"/>
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="vehicle1" value="Bike">
+														<input type="checkbox" id="chkbox" name="services[]" value="assistance-administrative">
   											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
 												</div>
 										</li>
@@ -179,7 +179,6 @@
 									<div class="when">
 										<label class="heading margin-top-sm" style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> A Partir de quand </label>
 										<select name="begining" id="" class="classic">
-											<option value="" selected>Sélectionner dans la liste *</option>
 											<option value="Immédiatement" >Immédiatement</option>
 											<option value="Dans 1 mois" >Dans 1 mois</option>
 											<option value="Dans 2 mois" >Dans 2 mois</option>
@@ -313,18 +312,20 @@
 										À propos de vous! </p>
                                         <br>
 										
-										<select name="begining" id="" class="classic">
+										<select name="you-are" id="" class="classic">
 												<option value="" selected>Vous êtes ? *</option>
 												<option value="un homme" >Un homme</option>
 												<option value="une femme" >Une femme</option>
 											</select>
 									
 
-										<input type="text" placeholder="Votre Nom" class="firstname">
-										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="text" placeholder="Votre Nom" class="firstname">
-										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="email" placeholder="Email" class="email">
+										<input type="text" placeholder="Votre Nom *" name="firstname" class="firstname" required>
+										<input type="text" placeholder="Votre Prénom *" name="lastname" class="lastname" required>
+										<input type="number" placeholder="Votre Code Postal *" name="postal-code" class="firstname" required>
+										<input type="text" placeholder="Votre Ville *" name="town" class="lastname" required>
+										<input type="email" placeholder="Votre Email *" name="email" class="firstname" required>
+										<input type="number" placeholder="Votre Téléphone *" name="phone" class="lastname" required>
+										<input type="text" placeholder="Votre Adresse *" name="address" class="email">
 										
 									</div>
 								</div>
