@@ -281,6 +281,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   background-color: #04AA6D;
 }
 
+
+
 </style>
 
 <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
