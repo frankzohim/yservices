@@ -34,29 +34,13 @@
 
 								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Contacter</a>
 									</li>
-                                @if (Route::has('login'))
-                                    @auth
-                                            <li class="header-nav__item">
-                                                <a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ url('/dashboard') }}">
-                                                    Dashboard
-                                                </a>
 
-                                            </li>
-                                        @else
-                                            <li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-                                                <a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ route('login') }}">Connexion</a>
-                                            </li>
+									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
+										Connexion
+									</li>
 
-                                            @if(Route::has('register'))
-                                                <li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ route('register') }}">Inscription</a>
-
-                                                </li>
-                                            @endif
-
-                                    @endauth
-                                @endif
-
-
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="blog/index.html">Inscription</a>
+									</li>
 								</ul>
 						</nav>
 
@@ -179,7 +163,7 @@
 
 						</div>
 
-						<div class="header__right" style="margin-left: 10px;">
+						<div class="header__right" style="margin-left: 80px;">
 
 								<img class="search-icon" src="_next/static/media/icones/search.svg" alt="">
 
