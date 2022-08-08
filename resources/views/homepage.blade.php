@@ -322,9 +322,9 @@
 
 										<input type="text" placeholder="Votre Nom" class="firstname">
 										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="text" placeholder="Votre Nom" class="firstname">
-										<input type="text" placeholder="Votre Prénom" class="lastname">
-										<input type="email" placeholder="Email" class="email">
+										<input type="text" placeholder="Votre Email" class="firstname">
+										<input type="text" placeholder="Votre Téléphone" class="lastname">
+										<input type="email" placeholder="Votre adresse" class="email">
 										
 									</div>
 								</div>
