@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('agencies', function (Blueprint $table) {
             $table->id();
-            $table->string('agency');
+            $table->string('name');
             $table->string('adress');
             $table->string('phone_number');
             $table->timestamps();

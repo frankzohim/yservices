@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\need;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -14,15 +15,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::disableForeignKeyConstraints();
-        Schema::create('franchises', function (Blueprint $table) {
+        Schema::create('users_needs', function (Blueprint $table) {
             $table->id();
+
             $table->foreignIdFor(User::class)
                 ->constrained()
-                ->onUpdate('restrict')
-                ->onDelete('restrict');
-            $table->string('personnal_contribution');
-            $table->string('project_info');
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->foreignIdFor(need::class)
+                ->constrained()
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -34,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('franchises');
+        Schema::dropIfExists('users_needs');
     }
 };
