@@ -302,8 +302,10 @@
 											Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!
 									</p>
 									<br>
+									<p class="heading margin-top-sm" 
+									style="margin-right: 20px color: #fff; font-weight:700; font-size:25px;"> 
+									À qui est destinée notre aide ? * </p>
 										<select name="for_who" id="" class="classic">
-											<option value="" selected>À qui est destinée notre aide ? *</option>
 											<option value="Vous recherchez une aide pour vous" >Vous recherchez une aide pour vous</option>
 											<option value="Vous recherchez une aide pour quelqu’un d’autre" >Vous recherchez une aide pour quelqu’un d’autre</option>
 										</select>
