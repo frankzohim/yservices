@@ -23,17 +23,17 @@
 								
 								<div style="margin-bottom:30px;">
 									
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aaide à domicile pour :</p>
+									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aide à domicile pour :</p>
 									
 									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
 										
 										<li class="text"><b>Les personnes âgées</b> </li>
-										<li class="text"><b>Les personnes âgées en situation handicap  </b> </li>
-										<li class="text"><b>Les personnes âgées en perte d’autonomie   </b> </li>
+										<li class="text"><b>Les personnes en situation handicap  </b> </li>
+										<li class="text"><b>Les personnes en perte d’autonomie   </b> </li>
 										
 									</ul>
 								</div>
-								<a href="#" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
+								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
 									En Savoir Plus
 								</a>
 
