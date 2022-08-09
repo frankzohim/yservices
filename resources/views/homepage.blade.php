@@ -36,7 +36,7 @@
 								<a href="#" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
 									En Savoir Plus
 								</a>
-								
+
 								<a href="#" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
 									Nous Rejoindre
 								</a>
