@@ -44,4 +44,3 @@ Route::group(['prefix' => 'clients'], function () {
 
 	});
 });
->>>>>>> imagicBranch
