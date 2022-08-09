@@ -29,34 +29,15 @@
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
 
-									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Rejoindre</a>
+									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Trouver un emploi  </a>
 									</li>
 
-								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Contacter</a>
+								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Devenez partenaire</a>
 									</li>
-                                @if (Route::has('login'))
-                                    @auth
-                                            <li class="header-nav__item">
-                                                <a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ url('/dashboard') }}">
-                                                    Dashboard
-                                                </a>
 
-                                            </li>
-                                        @else
-                                            <li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-                                                <a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ route('login') }}">Connexion</a>
-                                            </li>
-
-                                            @if(Route::has('register'))
-                                                <li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="{{ route('register') }}">Inscription</a>
-
-                                                </li>
-                                            @endif
-
-                                    @endauth
-                                @endif
-
-
+									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
+										Nous rejoindre  
+									</li>
 								</ul>
 						</nav>
 
@@ -80,95 +61,24 @@
 							<nav class="header__nav header-nav">
 								<ul class="header-nav__list">
 
-
-									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__company">
-										Entreprise
-
-										<svg class="icon dropdown__arrow"><use href="#arrow-down-alt"></use></svg>
-
-										<div class="dropdown__drop">
-
-											<ul class="dropdown__list" data-test="dropdown-list__company">
-
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__about" href="#"><span class="header-nav__name">Qui Sommes Nous?</span></a></li>
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__community" href="#"><span class="header-nav__name">Intervenants</span></a></li>
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="#"><span class="header-nav__name">Franchises</span></a></li>
-
-											</ul><div class="dropdown__drop-arrow"></div>
-
-										</div>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('homepage') }}">Accueil</a>
 									</li>
-
-
-									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__company">
-										Nos Services
-
-										<svg class="icon dropdown__arrow"><use href="#arrow-down-alt"></use></svg>
-
-										<div class="dropdown__drop">
-
-											<ul class="dropdown__list" data-test="dropdown-list__company">
-
-													<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__community" href="#">
-														<span class="header-nav__name">Aide-ménagère</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Service handicap</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__about" href="#">
-														<span class="header-nav__name">Aide à l’autonomie</span>
-													</a>
-												</li>
-
-
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Accompagnements</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Retour d’hospitalisation</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Gardes non médicalisées</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Assistance administrative</span>
-													</a>
-												</li>
-
-											</ul><div class="dropdown__drop-arrow"></div>
-
-										</div>
+									
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="#">Nos Services</a>
 									</li>
-
+									
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
-										Notre Fonctionnement
+										Fonctionnement
 
 									</li>
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Formations</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('about') }}">Qui sommes-nous ?</a>
 									</li>
 
-
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Contact</a>
+									</li>
 
 
 
@@ -179,7 +89,7 @@
 
 						</div>
 
-						<div class="header__right" style="margin-left: 10px;">
+						<div class="header__right" style="margin-left: 80px;">
 
 								<img class="search-icon" src="_next/static/media/icones/search.svg" alt="">
 
