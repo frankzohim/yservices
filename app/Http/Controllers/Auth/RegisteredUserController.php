@@ -37,11 +37,13 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'agency_id' => ['required', 'exists:App\Models\Agency,id'],
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'agency_id' => $request->agency_id,
             'password' => Hash::make($request->password),
         ]);
 

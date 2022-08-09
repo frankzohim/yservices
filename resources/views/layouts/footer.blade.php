@@ -63,7 +63,7 @@
 							<div class="dropdown dropdown_hover-drop language-dropdown dropdown_theme_arrow">
 								<div class="language-dropdown__head">
 									<span class="language-dropdown__left text text_md">
-											<img src="http://finom.co/_next/static/media/flag-italiano.a87e28c1.svg" alt="" class="language-dropdown__icon-flag" loading="lazy" />
+											<img src="{{ asset('_next/static/media/flag-italiano.a87e28c1.svg') }}" alt="" class="language-dropdown__icon-flag" loading="lazy" />
 											EN
 									</span>
 									<svg class="icon dropdown__arrow icon_sm"><use href="#chevron"></use></svg>

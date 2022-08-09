@@ -38,9 +38,6 @@
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
 										Nous rejoindre  
 									</li>
-
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="blog/index.html">Demandez un devis</a>
-									</li>
 								</ul>
 						</nav>
 
@@ -67,65 +64,9 @@
 									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('homepage') }}">Accueil</a>
 									</li>
 									
-
-									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__company">
-										Nos Services
-
-										<svg class="icon dropdown__arrow"><use href="#arrow-down-alt"></use></svg>
-
-										<div class="dropdown__drop">
-
-											<ul class="dropdown__list" data-test="dropdown-list__company">
-
-													<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__community" href="#">
-														<span class="header-nav__name">Aide-ménagère</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Service handicap</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__about" href="#">
-														<span class="header-nav__name">Aide à l’autonomie</span>
-													</a>
-												</li>
-
-
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Accompagnements</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Retour d’hospitalisation</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Gardes non médicalisées</span>
-													</a>
-												</li>
-
-												<li class="dropdown__item">
-													<a class="link_inherit" data-test="header_nav__partnership" href="#">
-														<span class="header-nav__name">Assistance administrative</span>
-													</a>
-												</li>
-
-											</ul><div class="dropdown__drop-arrow"></div>
-
-										</div>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="#">Nos Services</a>
 									</li>
-
+									
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
 										Fonctionnement
