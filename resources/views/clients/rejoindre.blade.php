@@ -5,7 +5,7 @@
     <section class="lp-banking-track-cashflow">
         <div class="container">
             <div
-                class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
+            class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 
                 <div class="lp-banking-track-cashflow__content">
                     <h3 class="heading heading__lvl1 stillforce-heading-blue" style="color:#E84347;">Venez exercez votre
