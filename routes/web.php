@@ -22,8 +22,6 @@ Route::get('about', function () {
     return view('about');
 });
 
-<<<<<<< HEAD
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -33,11 +31,12 @@ Route::get('/dashboard', function () {
     ]);
 
 require __DIR__ . '/auth.php';
-=======
+
+
 Route::group(['prefix' => 'clients'], function () {
 
-	Route::get("fanchise", function () {
-		return view('clients/franchise');
+	Route::get('franchise', function () {
+		return view("clients/franchise");
 	});
 	Route::get('rejoindre', function () {
 		return view("clients/rejoindre");
