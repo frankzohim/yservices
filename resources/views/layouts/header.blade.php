@@ -29,17 +29,14 @@
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
 
-									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="/clients/rejoindre">Nous Rejoindre</a>
+									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Rejoindre</a>
 									</li>
 
-								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Contacter</a>
+								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Devenez partenaire</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										Connexion
-									</li>
-
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" style="color:#272854" href="blog/index.html">Inscription</a>
+										Nous rejoindre  
 									</li>
 								</ul>
 						</nav>
@@ -76,7 +73,7 @@
 
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__about" href="#"><span class="header-nav__name">Qui Sommes Nous?</span></a></li>
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__community" href="#"><span class="header-nav__name">Intervenants</span></a></li>
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="/clients/franchise"><span class="header-nav__name">Franchises</span></a></li>
+												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="#"><span class="header-nav__name">Franchises</span></a></li>
 
 											</ul><div class="dropdown__drop-arrow"></div>
 
@@ -148,11 +145,8 @@
 
 									</li>
 
-
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Formations</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Contact</a>
 									</li>
-
-
 
 
 

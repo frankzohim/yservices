@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\controllers\NeedController;
+use App\Http\Controllers\NeedController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +20,7 @@ Route::get('/', function () {
 
 Route::get('about', function () {
     return view('about');
-});
-
+})->name('about');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -31,8 +30,6 @@ Route::get('/dashboard', function () {
     ]);
 
 require __DIR__ . '/auth.php';
-
-
 Route::group(['prefix' => 'clients'], function () {
 
 	Route::get('franchise', function () {

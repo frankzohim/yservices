@@ -1,17 +1,37 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+<section class="main-intro-all">
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
+				
+				<section class="lp-banking-invite-team">
+					<div class="container ">
+						<div class="section-body section-body_card section-body_card_pink section-body_margin-top lp-banking-invite-team__body ">
+						
+                        <section class="main-cards color_white"><div class="container container_card">
+				
+						
+					
+						<div style="color: blue; font-size:25px; font-weight:bold"><br>
+                        <p style="padding-right:45%;">
+                            Vous êtes maintenant connecté
+                        </p>
+                        
             </div>
-        </div>
-    </div>
-</x-app-layout>
+					
+
+                        
+						
+					<!-- </div> -->
+				</div>                            
+
+				</section>
+                    
+                        </div>
+					</div>
+				</section>
+
+               
+
+               
+				</section>
+
+@endsection
+

@@ -23,17 +23,17 @@
 								
 								<div style="margin-bottom:30px;">
 									
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aaide à domicile pour :</p>
+									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aide à domicile pour :</p>
 									
 									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
 										
 										<li class="text"><b>Les personnes âgées</b> </li>
-										<li class="text"><b>Les personnes âgées en situation handicap  </b> </li>
-										<li class="text"><b>Les personnes âgées en perte d’autonomie   </b> </li>
+										<li class="text"><b>Les personnes en situation handicap  </b> </li>
+										<li class="text"><b>Les personnes en perte d’autonomie   </b> </li>
 										
 									</ul>
 								</div>
-								<a href="#" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
+								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
 									En Savoir Plus
 								</a>
 
@@ -302,8 +302,11 @@
 											Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!
 									</p>
 									<br>
+									<p class="heading margin-top-sm" 
+										style="margin-right: 20px color: #fff; font-weight:700; font-size:15px;"> 
+											À qui est destinée notre aide ? *
+									</p>
 										<select name="for_who" id="" class="classic">
-											<option value="" selected>À qui est destinée notre aide ? *</option>
 											<option value="Vous recherchez une aide pour vous" >Vous recherchez une aide pour vous</option>
 											<option value="Vous recherchez une aide pour quelqu’un d’autre" >Vous recherchez une aide pour quelqu’un d’autre</option>
 										</select>
