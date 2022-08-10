@@ -23,7 +23,7 @@
 			<aside class="popup popup-promo" style="margin-left:-85px; font-family:Montserrat, sans-serif; font-size:14px; background-color:white;"
 			data-test="popup-promo">
 
-				<div class="container">
+				<div class="container" style="margin-left: 55%">
 					<div class="">
 
 								<nav class="header__nav header-nav" >
