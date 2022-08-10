@@ -36,10 +36,10 @@
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										Nous rejoindre  
+										Nous rejoindre
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										Demandez un devis 
+										Demandez un devis
 									</li>
 
 									@auth
@@ -56,7 +56,7 @@
 										<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('login') }}">Mon Compte</a>
 									</li>
 									@endguest
-                  
+
 								</ul>
 						</nav>
 
@@ -90,7 +90,7 @@
 
 											<ul class="dropdown__list" data-test="dropdown-list__company">
 
-												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__about" href="#"><span class="header-nav__name">Qui Sommes Nous?</span></a></li>
+												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__about" href="{{ route('about') }}"><span class="header-nav__name">Qui Sommes Nous?</span></a></li>
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__community" href="#"><span class="header-nav__name">Intervenants</span></a></li>
 												<li class="dropdown__item"><a class="link_inherit" data-test="header_nav__partnership" href="#"><span class="header-nav__name">Franchises</span></a></li>
 
