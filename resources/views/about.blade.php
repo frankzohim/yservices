@@ -91,7 +91,7 @@
             <div class="margin-80-top lp-banking-manage-your-taxes__cards">
                 <div class="ta-c lp-banking-manage-your-taxes__card">
                     <img src="{{ asset('assets/img/les-personnes-agees.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top">
+                    <p class="heading heading__lvl4 margin-20-top mt-3">
                         Un accompagnement personnalisé
                     </p>
 
@@ -99,13 +99,13 @@
 
                 <div class="ta-c lp-banking-manage-your-taxes__card">
                     <img src="{{ asset('assets/img/retour-dinformation.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top">
+                    <p class="heading heading__lvl4 margin-20-top mt-3">
                         Service de qualité
                         </p>
                 </div>
                 <div class="ta-c lp-banking-manage-your-taxes__card">
                     <img src="{{ asset('assets/img/satisfaction-du-client.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top">
+                    <p class="heading heading__lvl4 margin-20-top mt-2">
                         Assurer la fidélité de nos salariés pour vous satisfaire
                         </p>
                     </div>
