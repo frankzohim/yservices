@@ -35,7 +35,7 @@ return new class extends Migration
             $table->string('cv');
             $table->string('file_diploma');
             $table->timestamps();
-        });h
+        });
     }
     /**
      * Reverse the migrations.
