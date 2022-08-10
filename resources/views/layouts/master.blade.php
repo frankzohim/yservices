@@ -100,7 +100,7 @@
 }
 
 .when{
-  margin-left: 15%; 
+  margin-left: 15%;
   margin-right: auto;
   margin-bottom: 25px;
   margin-top: 20px;
@@ -118,7 +118,7 @@
 
   /* reset */
 
-  margin: 0;      
+  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -281,7 +281,58 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   background-color: #04AA6D;
 }
 
+.section-template-gamma {
+    position: relative;
+    overflow: hidden;
+    background-color: #00042e;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1120px;
+  }
+  .section-body_sm {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .color-white {
+    color: #fff;
+  }
+  .heading__lvl2 {
+    font-size: 48px;
+    line-height: 1.15;
+  }
 
+  .ta-c {
+    text-align: center;
+  }
+  .lp-banking-manage-your-taxes__cards {
+    grid-template-columns: 6fr 6fr 6fr;
+    column-gap: 24px;
+  }
+  .lp-banking-manage-your-taxes__cards {
+    display: grid;
+    gap: 16px;
+
+  }
+
+  .section-template-gamma::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url();
+  }
+
+  .margin-80-top {
+    margin-top: 80px;
+  }
 
 </style>
 
@@ -399,13 +450,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   document.querySelectorAll('.inJourney').forEach((item)=>{
       item.addEventListener('click',()=>{
-       
+
         if(item.style.backgroundColor == 'blue')
           item.style.backgroundColor = 'white';
         else
           item.style.backgroundColor = 'blue'
-        
-        
+
+
       });
     }
 
@@ -420,8 +471,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
           item.style.backgroundColor = 'white';
         else
           item.style.backgroundColor = 'blue'
-        
-        
+
+
       });
     }
 
@@ -453,7 +504,7 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
-  
+
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
@@ -490,7 +541,7 @@ function validateForm() {
                   getTrue = true
                   break;
               }
-              
+
           }
 
      if(!getTrue)
@@ -515,7 +566,7 @@ function validateForm() {
   }
 
 
- 
+
 
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
