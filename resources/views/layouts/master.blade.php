@@ -303,7 +303,79 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-size: 48px;
     line-height: 1.15;
   }
-
+  .list {
+    display: grid;
+    list-style: none;
+  }
+  .list {
+    gap: 18px;
+  }
+  .margin-40-top {
+    margin-top: 40px;
+  }
+  .list li .icon {
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+  .icon_normal {
+    width: 20px;
+    height: 20px;
+  }
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  svg {
+    fill: currentColor;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  .customer-support-with-care__buttons {
+    grid-template-columns: auto auto;
+    justify-content: start;
+  }
+  .customer-support-with-care__buttons {
+    display: grid;
+    gap: 8px;
+  }
+  .button {
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+  .button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 14px;
+    line-height: 1.4;
+    text-align: center;
+    font-family: DMSans,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00042e;
+    border: 2px solid #0000;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: 0;
+    transition: .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+  .button_secondary {
+    color: #00042e;
+    background-color: initial;
+    border-color: #00042e;
+  }
+  .button {
+    padding: 13px 20px;
+    font-size: 16px;
+  }
   .ta-c {
     text-align: center;
   }
@@ -327,9 +399,58 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url();
+
+  }
+  .margin-32-top{
+    margin-top:32px;
   }
 
+  .finom-card_vertical .finom-card-content {
+    min-height: 226px;
+  }
+  .finom-card_vertical .finom-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .finom-card-content_space-between {
+    justify-content: space-between;
+  }
+  .finom-card_bg .finom-card-content {
+    margin: 3px;
+  }
+  .finom-card-content {
+    display: flex;
+    padding: 16px;
+    background: #fff;
+
+  }
+
+  .finom-card-content {
+    padding: 40px;
+    border-radius: 12px;
+  }
+  .finom-card_bg .finom-card-content {
+    margin: 3px;
+  }
+  .section-body_sm {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .finom-card_vertical {
+    grid-template-columns: 6fr 6fr;
+  }
+  .finom-card_bg {
+    border-radius: 14px;
+  }
+    .finom-card_bg {
+    background: #00042e;
+
+  }
+  .finom-card {
+    display: grid;
+    overflow: hidden;
+
+  }
   .margin-80-top {
     margin-top: 80px;
   }
@@ -372,6 +493,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
             main.insertBefore(banner, main.firstChild);
         });
     }
+
     function setupRoutine(removeNoJS, checkIE, showIEWarning, toggleAuthorizedClass) {
         return function() {
             toggleAuthorizedClass();
@@ -423,7 +545,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 							</button>
 						</div>
 
-						<p class="text text_sm" data-inner-html="Youdom Services uses cookies 🍪 pour assurer le bon fonctionnement et la sécurité du site Web, pour améliorer et personnaliser votre expérience avec nous. Certains cookies nécessitent votre consentement. En cliquant sur Accepter, vous acceptez l'utilisation de cookies de cette manière. Vous pouvez modifier vos paramètres de cookies à tout moment. Pour plus d'informations, veuillez lire notre &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://finom.co/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Politique Cookies&lt;/a&gt;.">
+						<p class="text text_sm" data-inner-html="Youdom Services uses cookies 🍪 pour assurer le bon fonctionnement et la sécurité du site Web, pour améliorer et personnaliser votre expérience avec nous. Certains cookies nécessitent votre consentement. En cliquant sur Accepter, vous acceptez l'utilisation de cookies de cette manière. Vous pouvez modifier vos paramètres de cookies à tout -moment. Pour plus d'informations, veuillez lire notre &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://finom.co/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Politique Cookies&lt;/a&gt;.">
 						</p>
 
 						<div class="cookie-info__buttons-wrap">
@@ -602,7 +724,7 @@ function fixStepIndicator(n) {
 }
 </script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+
 </body>
 
 </html>
-

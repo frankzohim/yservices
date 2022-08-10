@@ -94,7 +94,9 @@
                     <p class="heading heading__lvl4 margin-20-top">
                         Un accompagnement personnalisé
                     </p>
+
                 </div>
+
                 <div class="ta-c lp-banking-manage-your-taxes__card">
                     <img src="{{ asset('assets/img/retour-dinformation.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
                     <p class="heading heading__lvl4 margin-20-top">
@@ -108,11 +110,65 @@
                         </p>
                     </div>
                 </div>
+
                 </div>
 
             </div>
         </div>
     </section>
+
+    <div class="container margin-80-top ">
+
+
+            <h2 class="heading heading__lvl2 ta-c">
+                La qualité au cœur de toutes nos prestations
+            </h2>
+            <p class="subheading ta-c margin-32-top">
+                Choisir YOUDOM-CARE , c’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients
+            </p>
+
+    </div>
+    <div class="container">
+        <div class="section-body_sm">
+            <article class="finom-card finom-card_bg finom-card_bg-2 finom-card_vertical">
+                <div class="finom-card-content finom-card-content_space-between">
+                    <h2 class="heading heading__lvl2 text-center">
+                        NOTRE CHARTE QUALITÉ
+                    </h2><ul class="list margin-40-top">
+                        <li>
+                            <svg class="icon icon_normal">
+                                <use href="#check">
+                                </use>
+                            </svg>Accueil. Disponibilité. Réactivité
+                        </li>
+                        <li>
+                            <svg class="icon icon_normal">
+                                <use href="#check">
+                                </use>
+                            </svg>
+                            Clarté. Rigueur. Transparence
+                        </li><li><svg class="icon icon_normal">
+                            <use href="#check"></use>
+                        </svg>Personnalisation. Écoute. Suivi
+                    </li>
+                </ul>
+                <div class="margin-40-top customer-support-with-care__buttons button_block">
+                    <button class="button button_block" data-intercom="chat" aria-label="Open chat" id="target-action-customer-support-with-care-team-chat">
+                        Nous contactez
+                    </button>
+                    <a href="https://api.whatsapp.com/send?phone=7365278290" class="button button_secondary" id="customer-support-with-care-start-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-test="customer-support-with-care__whatsapp">
+                    <svg class="icon icon_normal" width="18" height="18">
+                        <use href="#whatsapp">
+                        </use>
+                    </svg>
+                    <span>
+                        Démarrer Whatsapp
+                    </span></a></div>
+                   </div>
+                            <div class="finom-card-decoration finom-card-decoration_padding d-flex align-items-center d-flex justify-content-center">
+
+                                <img src="{{ asset('_next/static/media/image15.png') }}" alt="">
+                            </div>
 
 
 </section>
