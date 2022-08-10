@@ -167,7 +167,7 @@
                    </div>
                             <div class="finom-card-decoration finom-card-decoration_padding d-flex align-items-center d-flex justify-content-center">
 
-                                <img src="{{ asset('_next/static/media/image15.png') }}" alt="">
+                                <img src="{{ asset('assets/img/pngegg.png') }}" alt="" style="width: 300px">
                             </div>
 
 
