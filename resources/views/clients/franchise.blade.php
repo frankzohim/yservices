@@ -5,8 +5,7 @@
 
 <section class="lp-banking-track-cashflow">
     <div class="container">
-        <div
-        class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
+        <div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 
             <div class="lp-banking-track-cashflow__content">
                 <h1 class="heading heading__lvl1 stillforce-heading-blue color_blue-3" style="">Devenez franchisé Youdom </h1>
@@ -21,7 +20,7 @@
             </div>
         </div>
         <div class=" gap-2   ">
-            <a href="#" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
+            <a href="clients/formfranchise" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
         </div>
     </div>
 </section>
