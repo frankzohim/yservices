@@ -100,7 +100,7 @@
 }
 
 .when{
-  margin-left: 15%; 
+  margin-left: 15%;
   margin-right: auto;
   margin-bottom: 25px;
   margin-top: 20px;
@@ -118,7 +118,7 @@
 
   /* reset */
 
-  margin: 0;      
+  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -399,13 +399,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   document.querySelectorAll('.inJourney').forEach((item)=>{
       item.addEventListener('click',()=>{
-       
+
         if(item.style.backgroundColor == 'blue')
           item.style.backgroundColor = 'white';
         else
           item.style.backgroundColor = 'blue'
-        
-        
+
+
       });
     }
 
@@ -420,8 +420,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
           item.style.backgroundColor = 'white';
         else
           item.style.backgroundColor = 'blue'
-        
-        
+
+
       });
     }
 
@@ -453,7 +453,7 @@ function showTab(n) {
 }
 
 function nextPrev(n) {
-  
+
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
   // Exit the function if any field in the current tab is invalid:
@@ -490,7 +490,7 @@ function validateForm() {
                   getTrue = true
                   break;
               }
-              
+
           }
 
      if(!getTrue)
@@ -515,7 +515,7 @@ function validateForm() {
   }
 
 
- 
+
 
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
