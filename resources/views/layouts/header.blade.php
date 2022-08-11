@@ -159,7 +159,7 @@
 									</li>
 
 
-									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
+									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help" href="clients/fonctionement">
 										Notre Fonctionnement
 
 									</li>

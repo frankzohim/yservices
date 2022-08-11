@@ -85,6 +85,9 @@ color_blue-10{
     color: rgb(246, 160, 0);
 }
 
+color_1{
+    color:#f26522;
+}
 .button1{
     position:relative;
     display:inline-flex;
@@ -869,7 +872,7 @@ progress {
 
 .col-4 {
     flex: 0 0 auto;
-    width: 33.33333333%
+    width: 50%
 }
 
 .col-5 {
@@ -889,7 +892,7 @@ progress {
 
 .col-8 {
     flex: 0 0 auto;
-    width: 66.66666667%
+    width: 10%
 }
 
 .col-9 {
@@ -1088,8 +1091,8 @@ progress {
 
     .col-sm-6 {
         flex: 0 0 auto;
-        width: 50%;
-        background-color:#ff5762;
+        width: 75%;
+        background-color:#ffffff;
     }
 
     .col-sm-7 {
@@ -5079,7 +5082,7 @@ fieldset:disabled .btn {
     align-items: center;
     width: 100%;
     padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 1rem;
+    font-size: 3rem;
     color: var(--bs-accordion-btn-color);
     text-align: left;
     background-color: var(--bs-accordion-btn-bg);
@@ -8731,6 +8734,9 @@ fieldset:disabled .btn {
     margin-top: 3rem !important
 }
 
+.mt-6 {
+    margin-top: 4rem !important
+}
 .mt-auto {
     margin-top: auto !important
 }
