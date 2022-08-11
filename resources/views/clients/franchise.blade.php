@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section class="lp-banking-track-cashflow" style="margin-top:-5%">
+<section class="lp-banking-track-cashflow" >
     <div class="container">
         <div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 
@@ -13,6 +13,10 @@
                 <br>
                 <h2 class="text heading__lvl1 stillforce-heading-blue" style="">Youdom Services est un réseau national d’agences de services à la personne spécialisées dans l’aide à domicile pour les personnes âgées. </h2>
                 <h2 class=" stillforce-heading-blue color_red "  style="">Rejoignez un réseau de plus de 220 agences ! </h2>
+
+                <div class=" gap-2   " style=" margin-top:30px;">
+                    <a href="{{ route('partner_form') }}" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
+                </div>
             </div>
             <div class="lp-banking-track-cashflow__image-wrap image">
                 <picture class="picture__image-container ">
@@ -21,13 +25,11 @@
                 </picture>
             </div>
         </div>
-        <div class=" gap-2   " style="margin-top: -10%; margin-bottom:20px;">
-            <a href="clients/formfranchise" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
-        </div>
+       
     </div>
 </section>
 
-<section class="lp-banking-track-cashflow " ">
+<section class="lp-banking-track-cashflow " >
     <div class="container decou" style="background: rgb(53, 91, 161)">
         <div
         class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
@@ -47,7 +49,7 @@
     </div>
 </section>
 
-<section class="lp-banking-track-cashflow" style="margin-top:-5%">
+<section class="lp-banking-track-cashflow" style="margin-top:-20px">
     <div class="container">
         <div
         class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">

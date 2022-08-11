@@ -9,7 +9,8 @@
 						
 						<ul class="margin-top-default social footer__social">
 
-							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon_sm"><use href="#facebook"></use></svg></a>
+							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon_sm">
+								<use href="#facebook"></use></svg></a>
 							</li>
 
 							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon icon_sm"><use href="#instagram"></use></svg></a>
