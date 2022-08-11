@@ -14,9 +14,9 @@
 		</div>
 		<div class="popup__close popup__close_white" data-test="popup-promo__close">
 		</div>
-		
+
 	</div>
-	
+
 </div>
 </aside>
 
@@ -93,7 +93,7 @@
 
 									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('about') }}">Qui Sommes-nous</a>
 									</li>
-								
+
 
 									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Contact</a>
 									</li>

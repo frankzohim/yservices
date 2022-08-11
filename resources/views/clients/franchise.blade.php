@@ -70,27 +70,56 @@
     </div>
 </section>
 
-<section class="fdb-block">
-  <div class="container" style="margin-left: 25%">
-    <div class="row align-items-center">
-     
-      <div class="col-12 col-md-12 m-auto ml-lg-auto mr-lg-0 col-lg-12 pt-5 pt-lg-0">
-        <img alt="image" class="img-fluid" src="{{ asset('_next/static/media/documentation.png') }}">
-      </div>
-    </div>
 
-    <div class="row align-items-center">
-      <div class="col-12 col-md-12 col-lg-12 col-xl-12">
-        <h1>Demandez une documentation</h1>
-        <p class="lead mb-5">Vous voulez devenir franchisé Youdom Care ? Contactez Laurent Wattez, notre Directeur du développement.</p>
+<section class="lp-banking-track-cashflow " ">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <picture class="picture__image-container ">
+                    <img src="{{ asset('_next/static/media/image15.png') }} " srcSet="/_next/static/media/image15.png 2x"
+                        alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+                </picture>
+                <div class="card-body">
+                  <h2 class="card-title color_red">Nos franchisé∙e∙s témoignent</h2>
+                  <p class="card-text color_blue-3">« Youdom Services m’a séduit par son nom, pour son business model et par les rencontres que j’ai pu y faire. C’est un réseau jeune et dynamique. Les quatre semaines de formation m’ont permis de découvrir tous les aspects du métier de l’aide à domicile. L’équipe de Youdom Services nous donne de nombreux coups de main pour que tout soit bien en place au sein de notre agence. Cela m’a notamment permis d’être très vite au-dessus des prévisions que je m’étais fixées en termes d’activité et de rentabilité. »</p>
+                </div>
+                <div class="card-footer" style="background: cornflowerblue">
+                  <small class="text-muted2 ">Yves Jacquemard Franchisé à Montrouge</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <picture class="picture__image-container ">
+                    <img src="{{ asset('_next/static/media/image15.png') }} " srcSet="/_next/static/media/image15.png 2x"
+                        alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+                </picture>
+                <div class="card-body">
+                  <h2 class="card-title color_red">Nos franchisé∙e∙s témoignent</h2>
+                  <p class="card-text color_blue-3">« Le réseau Youdom Services a des valeurs humaines fortes. Un feeling s’est très vite crée. Ils m’ont beaucoup aidé pour préparer mon projet de franchise. Aujourd’hui encore, ils continuent à me soutenir en répondant à l’ensemble de mes questions sur la coordination ou le recrutement. Il arrive que l’équipe d’animation passe à mon agence pour voir quel est mon fonctionnement, pour me conseiller. C’est un vrai accompagnement au quotidien. J’apprécie également le fait de pouvoir partager mon expérience avec les autres franchisés du réseau. »</p>
+                </div>
+                <div class="card-footer" style="background: cornflowerblue">
+                  <small class="text-muted2 ">Elodie Gey Franchisée à Bordeaux Le Bouscat et Mérignac</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <picture class="picture__image-container ">
+                    <img src="{{ asset('_next/static/media/image15.png') }} " srcSet="/_next/static/media/image15.png 2x"
+                        alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+                </picture>
+                <div class="card-body">
+                  <h2 class="card-title color color_red">Nos franchisé∙e∙s témoignent</h2>
+                  <p class="card-text color_blue-3">« Ce qui m’a avant tout attiré chez Youdom Services c'est son nom. Il véhicule à lui seul toutes les valeurs que je souhaite transmettre dans mon activité de service aux personnes dépendantes. La franchise a aussi été un moyen d’accéder à des ressources importantes tout en me faisant gagner deux à trois ans d’activité. Sans oublier l’image de marque. Avec Youdom Services, soyez rassurés, nos valeurs familiales ne s’appliquent pas qu’à nos clients, vous serez réellement épaulés. »</p>
+                </div>
+                <div class="card-footer" style="background: cornflowerblue">
+                  <small class="text-muted2 ">Simon FlévaudFranchisé à Nantes et Couëron </small>
+                </div>
+              </div>
+            </div>
+          </div>
 
-       <a href="clients/formfranchise" class="button2  button_w-m-full color_blue-3 "  id="target-action-main-invoicing-business">Contactez Nous </a>
-      </div>
-      
-    </div>
-
-
-  </div>
 </section>
 
 
