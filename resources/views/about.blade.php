@@ -78,100 +78,89 @@
 					</div>
 
 				</section>
+                <div class="container mt-5">
+					<h1 class="text-center ">NOTRE CHARTE QUALITÉ</h1>
+                    <p class="text-center">La qualité au cœur de toutes nos prestations</p>
+					<div class="container overflow-hidden text-center mt-5 ">
+						<div class="row gy-5">
+						    <div class="col-6">
+                                <div class="p-3   mt-3">
+                                    <img src="{{ asset('assets/img/satisfaction-du-client.png') }}" class="w-25" />
+                                    <div class="container mt-4">
+                                        <h3>YOUDOM-CARE</h3>
+                                        <p style="text-align: justify">Choisir YOUDOM-CARE , c’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients </p>
+                                    </div>
 
-
-
-<section class="section-template-gamma lp-banking-manage-your-taxes">
-    <div class="container">
-        <div class="color-white section-body_sm">
-            <h2 class="heading heading__lvl2 ta-c">
-                Nos Engagements</span>
-                    de Services vers la quete de vos Satisfactions.
-            </h2>
-            <div class="margin-80-top lp-banking-manage-your-taxes__cards">
-                <div class="ta-c lp-banking-manage-your-taxes__card">
-                    <img src="{{ asset('assets/img/les-personnes-agees.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top mt-3">
-                        Un accompagnement personnalisé
-                    </p>
-
-                </div>
-
-                <div class="ta-c lp-banking-manage-your-taxes__card">
-                    <img src="{{ asset('assets/img/retour-dinformation.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top mt-3">
-                        Service de qualité
-                        </p>
-                </div>
-                <div class="ta-c lp-banking-manage-your-taxes__card">
-                    <img src="{{ asset('assets/img/satisfaction-du-client.png') }}" alt="" loading="lazy" class="lp-banking-manage-your-taxes__card-icon" width="48" height="48">
-                    <p class="heading heading__lvl4 margin-20-top mt-2">
-                        Assurer la fidélité de nos salariés pour vous satisfaire
-                        </p>
-                    </div>
-                </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <div class="container margin-80-top ">
-
-
-            <h2 class="heading heading__lvl2 ta-c">
-                La qualité au cœur de toutes nos prestations
-            </h2>
-            <p class="subheading ta-c margin-32-top">
-                Choisir YOUDOM-CARE , c’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients
-            </p>
-
-    </div>
-    <div class="container">
-        <div class="section-body_sm">
-            <article class="finom-card finom-card_bg finom-card_bg-2 finom-card_vertical">
-                <div class="finom-card-content finom-card-content_space-between">
-                    <h2 class="heading heading__lvl2 text-center">
-                        NOTRE CHARTE QUALITÉ
-                    </h2><ul class="list margin-40-top">
-                        <li>
-                            <svg class="icon icon_normal">
-                                <use href="#check">
-                                </use>
-                            </svg>Accueil. Disponibilité. Réactivité
-                        </li>
-                        <li>
-                            <svg class="icon icon_normal">
-                                <use href="#check">
-                                </use>
-                            </svg>
-                            Clarté. Rigueur. Transparence
-                        </li><li><svg class="icon icon_normal">
-                            <use href="#check"></use>
-                        </svg>Personnalisation. Écoute. Suivi
-                    </li>
-                </ul>
-                <div class="margin-40-top customer-support-with-care__buttons button_block">
-                    <button class="button button_block" data-intercom="chat" aria-label="Open chat" id="target-action-customer-support-with-care-team-chat">
-                        Nous contactez
-                    </button>
-                    <a href="https://api.whatsapp.com/send?phone=7365278290" class="button button_secondary" id="customer-support-with-care-start-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-test="customer-support-with-care__whatsapp">
-                    <svg class="icon icon_normal" width="18" height="18">
-                        <use href="#whatsapp">
-                        </use>
-                    </svg>
-                    <span>
-                        Démarrer Whatsapp
-                    </span></a></div>
-                   </div>
-                            <div class="finom-card-decoration finom-card-decoration_padding d-flex align-items-center d-flex justify-content-center">
-
-                                <img src="{{ asset('assets/img/pngegg.png') }}" alt="" style="width: 300px">
                             </div>
+						</div>
+						<div class="col-6">
+							<div class="p-3  ">
+                                <img src="{{ asset('assets/img/solidarity-help-svgrepo-com.svg') }}" class="w-25" />
+
+                                <div class="container mt-4">
+                                    <h4>L’HUMAIN AU CŒUR DE L’ENTREPRISE</h4>
+                                    <p style="text-align: justify">Nous mettons en place des pratiques de management valorisant le travail exécuté et la personne elle-même.
+                                        Youdom-care  motive ses collaborateurs à aller toujours plus loin dans l’excellence.</p>
+                                </div>
+                            </div>
+						  </div>
+
+                          <div class="container overflow-hidden text-center ">
+                            <div class="row gx-5">
+                              <div class="col">
+                                <div class="p-3  ">
+                                    <img src="{{ asset('assets/img/key-svgrepo-com.svg') }}" class="w-25" />
+
+                                    <div class="container mt-4">
+                                        <h4>Confidentialité. Respect. Discrétion.</h4>
+                                        <p style="text-align: justify">Nous Respectons la vie privée du client inscrit sur Youdom tout en faisant évoluer les pratiques pour améliorer leur satisfaction</p>
+                                    </div>
+                              </div>
+                              </div>
+                              <div class="col">
+                                <div class="p-3  ">
+                                    <img src="{{ asset('assets/img/les-personnes-agees.png') }}" class="w-25" />
+
+                                    <div class="container mt-4">
+                                        <h4>Accueil. Disponibilité. Réactivité</h4>
+                                        <p style="text-align: justify">Nous repondons de manière rapide et adaptée à chaque demande pour ainsi vous Fournir des informations complètes et fiables tout au long de la prestation</p>
+                                    </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+						</div>
+					  </div>
+				  </div>
+                <div class="card mt-4">
+
+                    <div class="card-body bg-dark">
+
+					  <section class="fdb-block">
+						<div class="container mt-5">
+						  <div class="row align-items-center">
+							<div class="col-12 col-md-12 col-lg-6 col-xl-5">
+							  <h1 class='text-white'>Nos Engagements</h1>
+							  <p class="lead mb-5 text-white">Notre équipe vous accompagne dans toutes vos démarches et vous propose des solutions adaptées à vos besoins .
+								Nos auxiliaires de vie sont diplômés et expérimentés et détiennent une expérience solide dans le domaine du maintien à domicile  des personnes en perte d’autonomie
+							  </p>
+
+							  <button type="button" class="btn btn-primary btn-lg">Nous Rejoindre</button>
+							<button type="button" class="btn btn-secondary btn-lg" style="margin-left: 12px;">Devenez Partenaire</button>
+							</div>
+							<div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+							  <img alt="image" class="img-fluid " src="{{ asset("assets/img/pngegg.png") }}" style="width: 75%;">
+							</div>
+						  </div>
+						</div>
+					  </section>
+
+                    </div>
+                  </div>
+
+
 
 
 </section>
-
 
 @endsection
