@@ -15,16 +15,26 @@
 														L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie.
 													</p>
 													<p class="text text_lg margin-top-default" style="font-size: 19px">
-														YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en perte d’autonomie,
-														pour les personnes handicapées, pour les enfants malades et pour les personnes en situation handicap , fragilisées qui
-														souhaitent vivre à leur domicile, dans les meilleures conditions de bien-être et de sécurité.
+													Spécialistes du services à la personne et  du grand âge, les conseillers de <span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span>    identifient, 
+													pour vous ou l’un de vos proches en perte d’autonomie, des solutions pour bien vieillir chez soi : 
+													services à domicile (ménage, téléassistance, garde de nuit…), adaptation du logement, transport médicalisé …
 													</p>
 
 													<p class="text text_lg margin-top-default" style="font-size: 19px">
 
-															Nous traitons vos proches comme les membres de notre famille. Nous abordons tous
-															les aspects de la vie d’une personne âgée, malade, en situation d’handicap en nous efforçant d’enrichir sa journée
-															de toutes les manières possibles !
+															<span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span> - est la première entreprise au service des seniors et des proches aidants. 
+															Gage de qualité, sa raison d’être est d’offrir à chacun des solutions de confiance pour bien 
+															vivre et bien vieillir à domicile. 
+
+													</p>
+
+														<p class="text text_lg margin-top-default" style="font-size: 19px">
+
+															La construction du modèle innovant <span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span> repose sur une conviction forte : 
+															<span style="color: #E84347; font-weight:400;"> le maintien du lien social</span> pour permettre à la personne âgée ou handicapée de bien vivre chez soi .
+ 															Cette originalité repose sur une <span style="color: #E84347; font-weight:400;"> approche humaine de l’aide à domicile</span> où l’intervenant est avant tout
+															 une sentinelle bienveillante qui accompagne la personne âgée dans les différentes phases de la vieillesse de manière conviviale et positive.
+
 
 													</p>
 
@@ -38,6 +48,67 @@
 							</div></div>
 						</div>
 					</div>
+				</section>
+
+								<section class="main-invoicing">
+				
+					<div class="container container_card">
+						
+						<div class="section-body section-body_card section-body_card_pink section-body_card_margin-top main-invoicing__body">
+						
+							<h2 class="heading heading__lvl1 color_blue">Des services à la personne pour toutes et tous
+							</h2>
+							<p class="margin-top-xs text">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
+								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et 
+									vous permet une déduction d'impôt</span></b></p>
+
+								<p class="margin-top-xs text">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
+									<a href="{{ route('services') }}">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
+							
+							<div class="margin-top-lg main-invoicing__content-wrap">
+								
+								<div class="main-invoicing__info">
+								
+									<ul class="main-invoicing__list">
+										
+										<li><div class="main-invoicing__list-icon-wrap">
+											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg></div>
+											<p class="margin-top-xs text"> <b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
+										</li>
+										
+										<li>
+											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#link_ver-2"></use></svg></div>
+											<p class="margin-top-xs text">Sortie d'hospitalisation</p>
+										</li>
+										
+										<li>
+											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#idea"></use></svg></div>
+											<p class="margin-top-xs text">Situation de handicap</p>
+										</li>
+										
+										<li>
+											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#invoice"></use></svg></div>
+											<p class="margin-top-xs text">Et bien plus encore !</p>
+										</li>
+										
+									</ul>
+									
+								
+									
+								</div>
+								
+								<div class="main-invoicing__simg-wrap">
+									
+									<picture class="picture__image-container ">
+																		
+										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
+									</picture>
+									
+								</div>
+							</div>
+					    </div>
+					</div>
+				
 				</section>
 
 				<section class="lp-banking-track-cashflow">
