@@ -3,7 +3,7 @@
 
 @section('content')
 
-<section class="lp-banking-track-cashflow">
+<section class="lp-banking-track-cashflow" style="margin-top:-5%">
     <div class="container">
         <div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 
@@ -47,7 +47,7 @@
     </div>
 </section>
 
-<section class="lp-banking-track-cashflow">
+<section class="lp-banking-track-cashflow" style="margin-top:-5%">
     <div class="container">
         <div
         class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
