@@ -70,6 +70,31 @@
     </div>
 </section>
 
+<section class="fdb-block" style="margin-left: 30%">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-12 m-auto ml-lg-auto mr-lg-0 col-lg-12 pt-5 pt-lg-0">
+        <img alt="image" class="img-fluid" src="{{ asset("_next/static/media/documentation.png") }}">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fdb-block" style="margin-left: 35%">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+        <h1>Avoir plus d'informations</h1>
+        <p class="lead mb-5">Vous souhaitez devenir franchisé chez Youdom Service mais souhaitez avoir plus d'informations, alors contactez nous.</p>
+
+        	<a href="#" class="margin-top-default button button_w-m-full" style="margin-top:-15px; background-color:#DF034D" id="target-action-main-intro-all">
+									Contactez Nous
+								</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   @endsection
