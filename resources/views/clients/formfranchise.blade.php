@@ -33,23 +33,26 @@
         </div>
 
     <form class="row g-3 needs-validation form-check" novalidate>
+        <div class="row g-3">
         <div class="col-md-6 position-relative">
-          <label for="validationTooltip01" class="form-label">First name</label>
+          <label for="validationTooltip01" class="form-label">Nom</label>
           <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
           <div class="valid-tooltip">
             Looks good!
           </div>
         </div>
         <div class="col-md-4 position-relative">
-          <label for="validationTooltip02" class="form-label">Last name</label>
+          <label for="validationTooltip02" class="form-label">prenom</label>
           <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
           <div class="valid-tooltip">
             Looks good!
           </div>
         </div>
+        </div>
 
-        <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
+        <div class="row">
+            <div class="col-12">
+            <label for="inputAddress" class="form-label">Addresse</label>
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
 
@@ -77,17 +80,22 @@
               Please provide a valid zip.
             </div>
           </div>
+        </div>
 
-          <div class="col-12">
+
+
+          <div class="row ">
+            <div class="col-md-6 position-relative">
             <label for="phone" class="form-label">Telephone</label>
             <input type="tel" class="form-control" id="phone" placeholder="+09999999">
           </div>
 
-          <div class="col-12">
+          <div class="col-md-6 position-relative">
             <label for="inputEmail3" class="form-label">Email</label>
             <div class="col-sm-10">
               <input type="email" class="form-control" id="inputEmail3">
             </div>
+          </div>
           </div>
 
           <div class="col-12">
@@ -104,7 +112,7 @@
                 <span class="validity"></span>
             </div>
 
-            <div class="position-center" style="text-align: center">
+         <div class="position-center" style="text-align: center">
             <h2 class="  color_blue-10 " style="color: rgb(249, 164, 7)" >Comment avez-vous connu Youdom Services ?</h2>
             <select class="form-select" aria-label="Default select example">
                 <option value="1">Les Echos de la Franchise </option>
@@ -120,7 +128,7 @@
               </select>
             </div>
 
-            <div class="position-center" style="text-align: center">
+            <div class=" position-center" style="text-align: center">
                 <div class="col-12">
                     <label for="inputAddress" class="form-label" style="color: rgb(249, 164, 7)"><h2> quelle(s) villes souhaitez-vous ouvrir une agence Youdom Services? *</h2></label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">

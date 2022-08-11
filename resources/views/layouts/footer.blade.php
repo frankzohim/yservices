@@ -4,12 +4,13 @@
 					<div class="padding-top-sm padding-bottom-xs footer__body">
 
 						<a class=" footer__logo" data-inner-link="true" aria-label="Youdom Services" href="{{ route('about') }}">
-							<img src="_next/static/media/logo.png"   />
+							<img src="{{ asset('_next/static/media/logo.png') }} "   />
 						</a>
 						
 						<ul class="margin-top-default social footer__social">
 
-							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon_sm"><use href="#facebook"></use></svg></a>
+							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg class="icon icon_sm">
+								<use href="#facebook"></use></svg></a>
 							</li>
 
 							<li><a class="social__link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon icon_sm"><use href="#instagram"></use></svg></a>
@@ -52,9 +53,10 @@
 
 						<ul class="app-download margin-top-lg">
 							<li><a href="https://apps.apple.com/app/finom-business/id1483892148" class="image" rel="noopener noreferrer" target="_blank" data-test="app-store">
-                <img src="_next/static/media/app-download__apple.4f4133a0.svg" loading="lazy" alt="Download on the App Store" /></a></li><li><a href="https://play.google.com/store/apps/details?id=tech.pnlfin.finom" class="image" rel="noopener noreferrer" target="_blank" data-test="google-play">
+                <img src=" {{ asset('_next/static/media/app-download__apple.4f4133a0.svg') }}" loading="lazy" alt="Download on the App Store" /></a></li>
+								<li><a href="https://play.google.com/store/apps/details?id=tech.pnlfin.finom" class="image" rel="noopener noreferrer" target="_blank" data-test="google-play">
 
-                <img src="_next/static/media/download_on_the_play_store.svg" loading="lazy" alt="Download on the Play Store" /></a></li>
+                <img src="{{ asset('_next/static/media/download_on_the_play_store.svg') }}" loading="lazy" alt="Download on the Play Store" /></a></li>
 							
 
 						</ul>
@@ -80,7 +82,8 @@
 														href="http://finom.co/en-fr/"><img src="http://finom.co/_next/static/media/flag-français.81bf857e.svg" alt="" class="language-dropdown__icon-flag" 
 														loading="lazy" />France</a></li><li class="dropdown__item"><a data-locale="true" 
 															class="link link_inherit language-dropdown__list-item text text_md text_grey" data-test="country-dropdown__de" href="http://finom.co/en-de/">
-															<img src="http://finom.co/_next/static/media/flag-deutschland.6b8fef14.svg" alt="" class="language-dropdown__icon-flag" loading="lazy" />Deutschland</a></li></ul><div class="dropdown__drop-arrow">
+															<img src="http://finom.co/_next/static/media/flag-deutschland.6b8fef14.svg" 
+															alt="" class="language-dropdown__icon-flag" loading="lazy" />Deutschland</a></li></ul><div class="dropdown__drop-arrow">
 																</div></div></div></div></div>
 
 						<div class="margin-top-default footer__links-wrap footer__bottom">

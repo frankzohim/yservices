@@ -14,9 +14,9 @@
 		</div>
 		<div class="popup__close popup__close_white" data-test="popup-promo__close">
 		</div>
-		
+
 	</div>
-	
+
 </div>
 </aside>
 
@@ -29,10 +29,10 @@
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
 
-									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Nous Rejoindre</a>
+									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Trouver un emploi</a>
 									</li>
 
-								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Devenez partenaire</a>
+								<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('become_partner') }}">Devenez partenaire</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
@@ -83,7 +83,7 @@
 										<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('homepage') }}">Accueil</a>
 									</li>
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="#">Nos Services</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route("services") }}">Nos Services</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
@@ -93,7 +93,7 @@
 
 									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('about') }}">Qui Sommes-nous</a>
 									</li>
-								
+
 
 									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Contact</a>
 									</li>

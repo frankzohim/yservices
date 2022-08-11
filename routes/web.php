@@ -21,6 +21,11 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('about');
 })->name('about');
+
+Route::get('services', function () {
+    return view('services');
+})->name('services');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -30,11 +35,13 @@ Route::get('/dashboard', function () {
     ]);
 
 require __DIR__ . '/auth.php';
+
 Route::group(['prefix' => 'clients'], function () {
 
 	Route::get('franchise', function () {
 		return view("clients/franchise");
-	});
+	})->name('become_partner');
+
 	Route::get('rejoindre', function () {
 		return view("clients/rejoindre");
 
@@ -42,9 +49,9 @@ Route::group(['prefix' => 'clients'], function () {
     Route::get('formfranchise', function () {
 		return view("clients/formfranchise");
 
-	});
+	})->name('partner_form');
 
-    Route::get('fonctionement', function () {
+  Route::get('fonctionement', function () {
 		return view("clients/fonctionement");
 
 	});
