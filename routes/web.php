@@ -61,7 +61,3 @@ Route::group(['prefix' => 'clients'], function () {
 
 	});
 });
-
-Route::get('join-us',function(){
-    return view('rejoindre');
-});
