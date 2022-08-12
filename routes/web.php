@@ -42,10 +42,16 @@ Route::group(['prefix' => 'clients'], function () {
 		return view("clients/franchise");
 	})->name('become_partner');
 
-	Route::get('rejoindre', function () {
+	Route::get('join-us', function () {
 		return view("clients/rejoindre");
 
-	});
+	})->name('join-us');
+
+	Route::get('join-us-form', function () {
+		return view("clients/join-us-form");
+
+	})->name('join-us-form');
+
     Route::get('formfranchise', function () {
 		return view("clients/formfranchise");
 

@@ -133,10 +133,7 @@ label{
 }
 
 .when{
-  margin-left: 15%;
-  margin-right: auto;
-  margin-bottom: 25px;
-  margin-top: 20px;
+
 }
 
 .when select{
