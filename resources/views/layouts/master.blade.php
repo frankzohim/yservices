@@ -104,49 +104,6 @@
 //end css timetable
 
 
-/* (A) HIDE CHECKBOX */
-.togCheck { display: none; }
-
-/* (B) HIDE CONTENT BY DEFAULT */
-.togContent {
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: max-height 1s;
-}
-
-/* (C) SHOW CONTENT WHEN CHECKED */
-.togCheck:checked + .togContent {
-  max-height: 100vh; /* any insanely large number if a lot of contents */
-  opacity: 1;
-  visibility: visible;
-}
-
-/* (X) COSMETICS - DOES NOT MATTER */
-/* (X1) ENTIRE DEMO */
-* {
-  font-family: arial, sans-serif;
-  box-sizing: border-box;
-}
-
-/* (X2) TOGGLE BUTTON */
-.togButton {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  color: #fff;
-  background: #00409f;
-  cursor: pointer;
-}
-
-/* (X3) CONTENT */
-.togContent { background: #f4f6ff; }
-.togContent p {
-  padding: 50px 10px;
-  margin: 0;
-}
-
-
 .stillforce-heading-blue {
 	color: #594EE6; font-weight:700; font-size:70px; line-height:59.5px;
 }

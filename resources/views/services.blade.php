@@ -186,6 +186,10 @@
                     <div class="mt-3">
                         <a href="javascript:void(0)" class="text-custom">Voir Plus <i class="mdi mdi-chevron-right"></i></a>
                     </div>
+  
+                    <div class="togContent">
+                      <p>Just some random content here.</p>
+                    </div>
                 </div>
                 <div class="big-icon h1 text-custom">
                     <span class="uim-svg" style=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
