@@ -319,8 +319,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 </style>
 
 <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
-<link rel="stylesheet" href="{{asset('assets/css/main.min.css')}}">
 
 
 
