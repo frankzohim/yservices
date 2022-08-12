@@ -23,6 +23,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+<!---------------Third Party import  -->
+<!--     Fonts and icons     -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+<!-- Nucleo Icons -->
+<link href="{{ asset('third/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
+<link href="{{ asset('third/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+<link href="{{ asset('third/assets/css/nucleo-svg.css') }}./assets/css/nucleo-svg.css" rel="stylesheet" />
+
+<!-- CSS Files -->
+
+
+
+<link id="pagestyle" href="{{  asset('third/assets/css/soft-design-system.css?v=1.0.9') }}" rel="stylesheet" />
+<!---------------Third Party import  -->
+
 <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png" />
 <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png" />
@@ -39,6 +58,7 @@
 
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('_next/static/media/icones/favicon.png') }}" />
+
 
 <link rel="manifest" href="#" />
 <meta name="msapplication-TileColor" content="#ffffff" />
@@ -83,6 +103,50 @@
 .TimetableDesign tbody tr td.allDays{width:13%}
 //end css timetable
 
+
+/* (A) HIDE CHECKBOX */
+.togCheck { display: none; }
+
+/* (B) HIDE CONTENT BY DEFAULT */
+.togContent {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 1s;
+}
+
+/* (C) SHOW CONTENT WHEN CHECKED */
+.togCheck:checked + .togContent {
+  max-height: 100vh; /* any insanely large number if a lot of contents */
+  opacity: 1;
+  visibility: visible;
+}
+
+/* (X) COSMETICS - DOES NOT MATTER */
+/* (X1) ENTIRE DEMO */
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* (X2) TOGGLE BUTTON */
+.togButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background: #00409f;
+  cursor: pointer;
+}
+
+/* (X3) CONTENT */
+.togContent { background: #f4f6ff; }
+.togContent p {
+  padding: 50px 10px;
+  margin: 0;
+}
+
+
 .stillforce-heading-blue {
 	color: #594EE6; font-weight:700; font-size:70px; line-height:59.5px;
 }
@@ -101,6 +165,14 @@
 
 .stillforce-heading-red-small {
 	color: #E84347; font-weight:100; font-size:26px; line-height:59.5px;
+}
+
+span{
+  color: white;
+}
+
+label{
+  color:white;
 }
 
 .when{
