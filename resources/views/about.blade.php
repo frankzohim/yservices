@@ -216,8 +216,8 @@
 								Nos auxiliaires de vie sont diplômés et expérimentés et détiennent une expérience solide dans le domaine du maintien à domicile  des personnes en perte d’autonomie
 							  </p>
 
-							  <button type="button" class="btn btn-primary btn-lg">Nous Rejoindre</button>
-							<button type="button" class="btn btn-secondary btn-lg" style="margin-left: 12px;">Devenez Partenaire</button>
+							 <a href="clients/rejoindre"> <button type="button" class="btn btn-primary btn-lg">Nous Rejoindre</button></a>
+							<a href="clients/franchise"><button type="button" class="btn btn-secondary btn-lg" style="margin-left: 12px;">Devenez Partenaire</button></a>
 							</div>
 							<div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
 							  <img alt="image" class="img-fluid " src="{{ asset("assets/img/pngegg.png") }}" style="width: 75%;">

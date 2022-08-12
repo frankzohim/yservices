@@ -43,7 +43,6 @@
                         </div>
 
                         <div class="d-flex flex-row align-items-center mb-4">
-                            <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0">
                                     <select class="form-control form-select" aria-label="Default select example" title="agency"   name='agency_id'>
                                         <option disabled selected>{{ __('Sélectionner l\'agence la plus proche') }}</option>

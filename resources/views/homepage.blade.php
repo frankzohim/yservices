@@ -392,8 +392,8 @@
 						
 							<h2 class="heading heading__lvl1 color_blue">Notre Fonctionnement
 							</h2>
-							<p class="margin-top-xs text text_lg">Chez Youdom Services le fonctionnement est très simple. <span class="stillforce-heading-red-small"> Un service sur-mesure et un interlocuteur unique.</span></b></p>
-							
+							<p class="margin-top-xs text">Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie professionnelles, des aides-soignants (es) avec  pour seul  souci constant de rendre le quotidien des personnes âgées ou personnes en situation handicap plus agréable et de faciliter leur maintien à domicile.</span></b></p>
+							<p class="margin-top-xs text stillforce-heading-red"> Comment fonctionne la mise en place d’une prestation d’aide à domicile chez YOUDOM-CARE ? </span></b></p>
 							<div class="margin-top-lg main-invoicing__content-wrap">
 								
 								<div class="main-invoicing__info">
