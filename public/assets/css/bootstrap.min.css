@@ -88,6 +88,21 @@ color_blue-10{
 color_1{
     color:#f26522;
 }
+.selecteur-conteneur{
+    width : 100%;
+    padding-top : 150%;
+    /* Calcul du padding
+     H = 150 * width / L = 100
+    */
+    background-image  : url('_next/static/media/image17.png');
+    background-repeat : no-repeat;
+    background-size : cover;
+    vertical-align : top;
+    /* on annule toute hauteur par défaut*/
+    line-height : 0px;
+  /* si vous devez mettre un contenu */
+    position:relative;
+  }
 .button1{
     position:relative;
     display:inline-flex;

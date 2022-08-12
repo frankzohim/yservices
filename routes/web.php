@@ -55,6 +55,11 @@ Route::group(['prefix' => 'clients'], function () {
 		return view("clients/fonctionement");
 
 	});
+
+    Route::get('formation', function () {
+		return view("clients/formation");
+
+	});
 });
 
 Route::get('join-us',function(){
