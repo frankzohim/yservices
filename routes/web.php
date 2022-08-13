@@ -67,3 +67,6 @@ Route::group(['prefix' => 'clients'], function () {
 
 	});
 });
+Route::get('/co',function(){
+    return view('co');
+});
