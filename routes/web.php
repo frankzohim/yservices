@@ -66,6 +66,11 @@ Route::group(['prefix' => 'clients'], function () {
 		return view("clients/formation");
 
 	});
+
+	Route::post('join-confirm', function () {
+		return view("clients/join-confirm");
+
+	})->name('join-confirm');
 });
 Route::get('/co',function(){
     return view('co');
