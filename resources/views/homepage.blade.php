@@ -266,13 +266,13 @@
 											</tr>
 											<tr>
 												<th>Nuit (20h > 8h)</th>
-												<td data-time="Lundi - Nuit"></td>
-												<td data-time="Mardi - Nuit"></td>
-												<td data-time="Mercredi - Nuit"></td>
-												<td data-time="Jeudi - Nuit"></td>
-												<td data-time="Vendredi - Nuit"></td>
-												<td data-time="Samedi - Nuit"></td>
-												<td data-time="Dimanche - Nuit"></td>
+												<td class="night" data-time="Lundi - Nuit"></td>
+												<td class="night" data-time="Mardi - Nuit"></td>
+												<td class="night" data-time="Mercredi - Nuit"></td>
+												<td class="night" data-time="Jeudi - Nuit"></td>
+												<td class="night" data-time="Vendredi - Nuit"></td>
+												<td class="night" data-time="Samedi - Nuit"></td>
+												<td class="night" data-time="Dimanche - Nuit"></td>
 												<td class="allDays"></td>
 											</tr>
 											<tr class="allDay">
@@ -848,9 +848,7 @@
 
 							var mornings=document.querySelectorAll('.inJourney');
 
-							var middays=document.getElementById('midday');
-							var afternoons=document.getElementById('afternoon');
-							var nights=document.getElementById('night');
+
                             var ArrayJourney;
                             ArrayJourney=Array.from(mornings);
                             var ArrayMorning=ArrayJourney.slice(0,7);
@@ -882,6 +880,22 @@
 
 						})
 					})
+
+                    document.querySelectorAll('.night').forEach((curr,ind)=>{
+                        curr.addEventListener("click",()=>{
+
+                            var mornings=document.querySelectorAll('.inJourney');
+                            var ArrayJourney=Array.from(mornings);
+
+                            if(curr.style.backgroundColor=="blue"){
+                                curr.style.backgroundColor='white';
+                                ArrayJourney[ind].style.backgroundColor="white";
+                            }else{
+                                curr.style.backgroundColor='blue';
+                                ArrayJourney[ind].style.backgroundColor="blue";
+                            }
+                        })
+                    })
 
 
 
