@@ -50,7 +50,7 @@
     <div class="row" style="display:flex;">
         <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
             <div class="card service-wrapper rounded border-0 shadow p-4">
-                 <img src="{{ asset('_next/static/media/service-lever-coucher.png') }}" width="30%" alt="">
+                 <img src="{{ asset('_next/static/media/service-lever-coucher.png') }}" width="38%" alt="">
 
                 <div class="content mt-4">
                     <h5 class="title" style="color: #E84347; font-weight:700;">Aide à l’autonomie  /<br> Geste du quotidien</h5>
@@ -58,22 +58,12 @@
                     <div class="mt-3">
                         <ul style="list-style: circle; color:#1b138a;">
                             <li>Aide au lever et au coucher</li>
-                            <li>Aide à la toilette</li>
+                            <li>Aide à la toilette, coiffure, maquillage, habillage</li>
                             <li>Aide-ménagère</li>
                             <div id="wrapper6">
-                                <li>coiffure</li>
-                                    <li>maquillage</li>
-                                    <li>habillage</li>
                             </div>
                           </ul>
-                          <a href="javascript:void(0)"  id="bt6">voir plus</a>
-                          <div class="contenue">
-                            <p>
-                                <ul style="list-style: circle; color:#1b138a;">
-
-                                </ul>
-                            </p>
-                          </div>
+                         
                     </div>
 
                 </div>
@@ -98,12 +88,15 @@
                             <li>Présence de nuits pour personnes âgées </li>
                             <li style="">Garde de nuit pour personnes âgées et personnes en situation d’handicap</li>
                             <li>Retour à domicile après une hospitalisation</li>
-                            <div id="wrapper5">
+                        </ul>
+                            <div id="wrapper5" style="margin-top:-12px;">
+                                <ul style="list-style: circle; color:#1b138a;">
                                 <li>Garde de Jour</li>
-                                    <li>Retour à domicile après une hospitalisation</li>
+                                    <li>Présence de nuits auprès des enfants malades </li>
                                     <li>Garde 24h sur 24</li>
+                                    </ul>
                             </div>
-                          </ul>
+                          
                           <a href="javascript:void(0)"  id="bt5">voir plus</a>
                           <div class="contenue">
                             <p>
@@ -123,7 +116,7 @@
 
         <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
             <div class="card service-wrapper rounded border-0 shadow p-4">
-               <img src="{{ asset('_next/static/media/service-handicap.png') }}" width="32%" alt="">
+               <img src="{{ asset('_next/static/media/service-handicap.png') }}" width="36%" alt="">
                 <div class="content mt-4">
                     <h5 class="title" style="color: #E84347; font-weight:700;">Service handicap</h5>
 
@@ -132,10 +125,13 @@
                             <li>Aide à domicile - personnes handicapées</li>
                             <li>Entretien du lieu de vie - personnes handicapées</li>
                             <li>Aide à la vie sociale - personnes handicapées</li>
-                            <div id="wrapper4">
+                        </ul>
+                            <div id="wrapper4" style="margin-top:-12px;">
+                               <ul style="list-style: circle; color:#1b138a;" >
                                 <li>Garde de jour et/ou de nuit - personnes handicapées</li>
+                                </ul>
                             </div>
-                          </ul>
+                          
                           <a href="javascript:void(0)"  id="bt4">voir plus</a>
 
 
@@ -156,14 +152,17 @@
                       <li>Accompagnements aux courses</li>
                       <li>Accompagnement culturel </li>
                       <li>Compagnies et stimulation</li>
-                      <div id="wrapper3">
+                    </ul>
+                      <div id="wrapper3" style="margin-top:-12px;">
+                        <ul style="list-style: circle; color:#1b138a;">
                         <li>Promenades et loisirs</li>
                                     <li>Aide à la mobilité</li>
                                     <li>Sorties véhiculées</li>
                                     <li>Lecture, discussion</li>
                                     <li>Rendez-vous médicaux</li>
+                        </ul>
                       </div>
-                    </ul>
+                   
                     <div class="mt-3">
 
                         <a href="javascript:void(0)"  id="bt3">voir plus</a>
@@ -179,7 +178,7 @@
 
         <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
             <div class="card service-wrapper rounded border-0 shadow p-4">
-                <img src="{{ asset('_next/static/media/service-hospitalisation.jpg') }}" width="28%" alt="">
+                <img src="{{ asset('_next/static/media/service-hospitalisation.jpg') }}" width="42%" alt="">
                 <div class="content mt-4">
                     <h5 class="title" style="color: #E84347; font-weight:700;">Retour d’hospitalisation</h5>
                     <ul style="list-style: circle; color:#1b138a;">
@@ -203,11 +202,14 @@
                       <li>Courses</li>
                       <li>Préparation des repas</li>
                       <li>Aide à la prise des repas</li>
-                      <div id="wrapper2">
-                        <li>Prise de médicament</li>
-                                    <li>Alimentation-Surveillance des régimes</li>
-                      </div>
                     </ul>
+                    <div id="wrapper2" style="margin-top:-12px;">
+                        <ul style="list-style: circle;color:#1b138a;">
+                            <li>Prise de médicament</li>
+                            <li>Alimentation-Surveillance des régimes</li>
+                        </ul>
+                    </div>
+                    
                     <div class="mt-3">
                         <a href="javascript:void(0)"  id="bt2">voir plus</a>
 
@@ -221,7 +223,7 @@
 
          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
             <div class="card service-wrapper rounded border-0 shadow p-4">
-               <img src="{{ asset('_next/static/media/service-menage1.png') }}" width="40%" alt="">
+               <img src="{{ asset('_next/static/media/service-menage1.png') }}" width="51%" alt="">
                 <div class="content mt-4">
                     <h5 class="title" style="color: #E84347; font-weight:700;">Aide-ménagère</h5>
                    <ul style="list-style: circle; color:#1b138a;">
@@ -246,11 +248,12 @@
                       <li>Gestion du courrier</li>
                       <li>Classement des documents</li>
                       <li>Prise de rendez-vous</li>
-                      <div id="wrapper">
-
-                        <li >Démarches administratives</li>
-                        <li>Loyer , factures</li>
-
+                    </ul>
+                      <div id="wrapper" style="margin-top:-12px;">
+                        <ul style="list-style: circle; color:#1b138a;" class="circle">
+                            <li >Démarches administratives</li>
+                            <li>Loyer , factures</li>
+                        </ul>
                         </div>
 
 

@@ -1,4 +1,5 @@
 (function ($) {
+    console.log('services');
     'use strict';
     /*==================================================================
         [ Daterangepicker ]*/

@@ -37,7 +37,7 @@
 									En Savoir Plus
 								</a>
 
-								<a href="#" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
+								<a href="{{ route('join-us') }}" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
 									Nous Rejoindre
 								</a>
 
@@ -67,11 +67,11 @@
 						<div class="section-body section-body_card section-body_card_blue section-body_card_margin-top color_white main-promo-six-months-free__body">
 
 							<h2 class="heading heading__lvl1 main-promo-six-months-free__heading" style="text-align: center;">
-								 <span>Quels sont vos besoins d'aide à domicile ?</span>
+								 <span style="color:white;">Quels sont vos besoins d'aide à domicile ?</span>
 							</h2>
 							<br/>
 							<h4 class="heading  main-promo-six-months-free__heading" style="text-align: center;">
-								 <span>Expliquez-nous votre situation en 3 clics</span>
+								 <span style="color:white;">Expliquez-nous votre situation en 3 clics</span>
 							</h4>
 
 							<form id="regForm" method="post" action="{{ route('need.store') }}">
@@ -86,7 +86,6 @@
 											<div class="cards-steps__icons-wrap color_red">
 
 													<img src="{{  asset('_next/static/media/icones/menage.PNG') }} " alt="" style="height: 120px"/>
-													<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="Bike">
@@ -100,7 +99,7 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/icones/handicape.PNG') }} " alt="" style="height: 120px" />
-												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+
 											</div>
 											<div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="service-handicap">
@@ -128,7 +127,7 @@
 											<div class="cards-steps__icons-wrap color_red">
 
 												<img src="{{  asset('_next/static/media/icones/accompagnement.PNG') }} " alt="" style="height: 120px"/>
-												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
+
 											</div>
 											 <div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="accompagnement">
@@ -139,7 +138,6 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/icones/hopital.PNG') }} " alt="" style="height: 120px"/>
-												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											  <div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="retour-hospitalisation">
@@ -150,7 +148,6 @@
 										<li style="margin-right: 30px;">
 											<div class="cards-steps__icons-wrap color_red">
 												<img src="{{  asset('_next/static/media/icones/garde.PNG') }} " alt="" style="height: 120px"/>
-												<img class="cards-steps__icons-arrow hide-tablet hide-mobile" src="http://finom.co/_next/static/media/dotted-arrow.52d3e164.svg" alt="" />
 											</div>
 											<div style="white-space: nowrap">
 														<input type="checkbox" id="chkbox" name="services[]" value="gardes-non-medicalisées">
@@ -358,7 +355,7 @@
 					</div>
 
 				</section>
-
+				<br>
 				<section class="lp-banking-track-cashflow">
 					<div class="container">
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
@@ -370,14 +367,16 @@
 							<div class="lp-banking-track-cashflow__content">
 								<h2 class="heading heading__lvl1 stillforce-heading-red">Pourquoi Choisir <span style="color:#594EE6;">Youdom Services</span></h2>
 									<p class="text text_lg margin-top-default">
-										Chez Youdom Services, nous avons le même niveau d’exigence pour nos clients que pour nos propres grands-parents.
+										La satisfaction de nos clients est au cœur de notre attention
 									</p>
 									<ul class="margin-top-default">
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4"><span>Nous vous garantissons toujours le même auxiliaire de vie</span></li>
+										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Nous vous garantissons toujours le même auxiliaire de vie</li>
 										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Un conseiller dédié pour un service personnalisé.</li>
 										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Des prestations flexibles qui évoluent selon vos besoins.</li>
 									</ul>
+									<a href="#" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">En Savoir Plus</a></div>
 							</div>
+
 						</div>
 					</div>
 				</section>
@@ -405,15 +404,24 @@
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#link_ver-2"></use></svg></div><p class="margin-top-xs text">Lorem ipsum dolor sit amet, consectetur adipiscing eli <b>sint occaecat</b></p>
+											<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-2.png') }}" width="15%" alt="">
+											</div>
+											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#idea"></use></svg></div><p class="margin-top-xs text">Aboris<b>nisi ut aliquip ex ea </b> commodo consequat. Duis</p>
+											<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-3.png') }}" width="15%" alt="">
+											</div>
+											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#invoice"></use></svg></div><p class="margin-top-xs text">Excepteur sint occaecat cupidatat non proident <b>officia</b></p>
+										<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-four.png') }}" width="15%" alt="">
+											</div>
+											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
 										</li>
 
 									</ul>
@@ -575,7 +583,9 @@
 								<picture class="picture__image-container ">
 
 								<img src="{{  asset('_next/static/media/lp-banking-invite-team__simg_ver-2_fr.301d3092.webp') }} " srcSet="/_next/static/media/lp-banking-invite-team__simg_ver-2_fr@2x.7788242e.png 2x" alt="" class="picture__image " loading="eager" /></picture>
-							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte FINOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p><a href="https://app.finom.co/fr/signup/" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
+							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte FINOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p>
+
+							<a href="#" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
 						</div>
 					</div>
 				</section>
