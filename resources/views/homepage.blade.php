@@ -211,80 +211,80 @@
 										<tbody>
 											<tr>
 												<th id="morning">Matin</th>
-												<td class="inJourney" data-time="Lundi - Matin"></td>
-												<td class="inJourney" data-time="Mardi - Matin"></td>
-												<td class="inJourney" data-time="Mercredi - Matin"></td>
-												<td class="inJourney" data-time="Jeudi - Matin"></td>
-												<td class="inJourney" data-time="Vendredi - Matin"></td>
-												<td class="inJourney" data-time="Samedi - Matin"></td>
-												<td class="inJourney" data-time="Dimanche - Matin"></td>
+												<td class="inJourney everyday" data-time="Lundi - Matin"></td>
+												<td class="inJourney everyday" data-time="Mardi - Matin"></td>
+												<td class="inJourney everyday" data-time="Mercredi - Matin"></td>
+												<td class="inJourney everyday" data-time="Jeudi - Matin"></td>
+												<td class="inJourney everyday" data-time="Vendredi - Matin"></td>
+												<td class="inJourney everyday" data-time="Samedi - Matin"></td>
+												<td class="inJourney everyday" data-time="Dimanche - Matin"></td>
 												<td class="allDays"></td>
 											</tr>
 											<tr>
 												<th id="midday">Midi</th>
-												<td class="inJourney" data-time="Lundi - Midi"></td>
-												<td class="inJourney" data-time="Mardi - Midi"></td>
-												<td class="inJourney" data-time="Mercredi - Midi"></td>
-												<td class="inJourney" data-time="Jeudi - Midi"></td>
-												<td class="inJourney" data-time="Vendredi - Midi"></td>
-												<td class="inJourney" data-time="Samedi - Midi"></td>
-												<td class="inJourney" data-time="Dimanche - Midi"></td>
+												<td class="inJourney everyday" data-time="Lundi - Midi"></td>
+												<td class="inJourney everyday" data-time="Mardi - Midi"></td>
+												<td class="inJourney everyday" data-time="Mercredi - Midi"></td>
+												<td class="inJourney everyday" data-time="Jeudi - Midi"></td>
+												<td class="inJourney everyday" data-time="Vendredi - Midi"></td>
+												<td class="inJourney everyday" data-time="Samedi - Midi"></td>
+												<td class="inJourney everyday" data-time="Dimanche - Midi"></td>
 												<td class="allDays"></td>
 											</tr>
 											<tr>
 												<th id="afternoon">Après-Midi</th>
-												<td class="inJourney" data-time="Lundi - Après-midi"></td>
-												<td class="inJourney" data-time="Mardi - Après-midi"></td>
-												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
-												<td class="inJourney" data-time="Jeudi - Après-midi"></td>
-												<td class="inJourney" data-time="Vendredi - Après-midi"></td>
-												<td class="inJourney" data-time="Samedi - Après-midi"></td>
-												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Lundi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Mardi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Mercredi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Jeudi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Vendredi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Samedi - Après-midi"></td>
+												<td class="inJourney everyday" data-time="Dimanche - Après-midi"></td>
 												<td class="allDays"></td>
 											</tr>
 											<tr>
 												<th id="night">Soir</th>
-												<td class="inJourney" data-time="Lundi - Soir"></td>
-												<td class="inJourney" data-time="Mardi - Soir"></td>
-												<td class="inJourney" data-time="Mercredi - Soir"></td>
-												<td class="inJourney" data-time="Jeudi - Soir"></td>
-												<td class="inJourney" data-time="Vendredi - Soir"></td>
-												<td class="inJourney" data-time="Samedi - Soir"></td>
-												<td class="inJourney" data-time="Dimanche - Soir"></td>
+												<td class="inJourney everyday" data-time="Lundi - Soir"></td>
+												<td class="inJourney everyday" data-time="Mardi - Soir"></td>
+												<td class="inJourney everyday" data-time="Mercredi - Soir"></td>
+												<td class="inJourney everyday" data-time="Jeudi - Soir"></td>
+												<td class="inJourney everyday" data-time="Vendredi - Soir"></td>
+												<td class="inJourney everyday" data-time="Samedi - Soir"></td>
+												<td class="inJourney everyday" data-time="Dimanche - Soir"></td>
 												<td class="allDays"></td>
 											</tr>
 											<tr>
 												<th>Journée entière (8h > 20h)</th>
-												<td class="allJourney " data-time="Lundi - Journée"></td>
-												<td class="allJourney" data-time="Mardi - Journée"></td>
-												<td class="allJourney" data-time="Mercredi - Journée"></td>
-												<td class="allJourney" data-time="Jeudi - Journée"></td>
-												<td class="allJourney" data-time="Vendredi - Journée"></td>
-												<td class="allJourney" data-time="Samedi - Journée"></td>
-												<td class="allJourney" data-time="Dimanche - Journée"></td>
+												<td class="allJourney everyday" data-time="Lundi - Journée"></td>
+												<td class="allJourney everyday" data-time="Mardi - Journée"></td>
+												<td class="allJourney everyday" data-time="Mercredi - Journée"></td>
+												<td class="allJourney everyday" data-time="Jeudi - Journée"></td>
+												<td class="allJourney everyday" data-time="Vendredi - Journée"></td>
+												<td class="allJourney everyday" data-time="Samedi - Journée"></td>
+												<td class="allJourney everyday" data-time="Dimanche - Journée"></td>
 												<td class="allDays allJourney"></td>
 											</tr>
 											<tr>
 												<th>Nuit (20h > 8h)</th>
-												<td class="night" data-time="Lundi - Nuit"></td>
-												<td class="night" data-time="Mardi - Nuit"></td>
-												<td class="night" data-time="Mercredi - Nuit"></td>
-												<td class="night" data-time="Jeudi - Nuit"></td>
-												<td class="night" data-time="Vendredi - Nuit"></td>
-												<td class="night" data-time="Samedi - Nuit"></td>
-												<td class="night" data-time="Dimanche - Nuit"></td>
+												<td class="night everyday" data-time="Lundi - Nuit"></td>
+												<td class="night everyday" data-time="Mardi - Nuit"></td>
+												<td class="night everyday" data-time="Mercredi - Nuit"></td>
+												<td class="night everyday" data-time="Jeudi - Nuit"></td>
+												<td class="night everyday" data-time="Vendredi - Nuit"></td>
+												<td class="night everyday" data-time="Samedi - Nuit"></td>
+												<td class="night everyday" data-time="Dimanche - Nuit"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr class="allDay">
+											<tr>
 												<th>24h/24</th>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay allDays"></td>
+												<td class="allDay" data-time="lundi-24/24"></td>
+												<td class="allDay" data-time="mardi-24/24"></td>
+												<td class="allDay" data-time="mercredi-24/24"></td>
+												<td class="allDay" data-time="jeudi-24/24"></td>
+												<td class="allDay" data-time="vendredi-24/24"></td>
+												<td class="allDay" data-time="samedi-24/24"></td>
+												<td class="allDay" data-time="dimanche-24/24"></td>
+												<td class="allDays"></td>
 											</tr>
 										</tbody>
 									</table>
@@ -897,7 +897,39 @@
                         })
                     })
 
+                    document.querySelectorAll('.allDay').forEach((curr,index)=>{
+                        var alldays=document.querySelectorAll('.everyday');
+                        var ArrayDays=Array.from(alldays);
+                        var ArrayMorning=ArrayDays.slice(0,7);
+                        var ArrayMidday=ArrayDays.slice(7,14);
+                        var ArrayAfternoon=ArrayDays.slice(14,21);
+                        var ArrayNight=ArrayDays.slice(21,28);
+                        var ArrayWholeJourney=ArrayDays.slice(28,35);
+                        var ArrayNightAndMorning=ArrayDays.slice(35,42);
 
+                        curr.addEventListener('click',()=>{
+                            if(curr.style.backgroundColor=='blue'){
+                                curr.style.backgroundColor="white";
+
+                                ArrayMorning[index].style.backgroundColor="white";
+                                ArrayMidday[index].style.backgroundColor="white";
+                                ArrayAfternoon[index].style.backgroundColor="white";
+                                ArrayNightAndMorning[index].style.backgroundColor="white";
+                                ArrayWholeJourney[index].style.backgroundColor="white";
+                                ArrayNight[index].style.backgroundColor="white";
+                            }else{
+
+                                curr.style.backgroundColor="blue";
+                                ArrayMorning[index].style.backgroundColor="blue";
+                                ArrayMidday[index].style.backgroundColor="blue";
+                                ArrayAfternoon[index].style.backgroundColor="blue";
+                                ArrayNightAndMorning[index].style.backgroundColor="blue";
+                                ArrayWholeJourney[index].style.backgroundColor="blue";
+                                ArrayNight[index].style.backgroundColor="blue";
+
+                            }
+                        })
+                    })
 
 				  var currentTab = 0; // Current tab is set to be the first tab (0)
 				  showTab(currentTab); // Display the current tab
