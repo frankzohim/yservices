@@ -72,8 +72,9 @@
 
 									<ul class="main-invoicing__list">
 
-										<li><div class="main-invoicing__list-icon-wrap">
-											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg>
+										<li><div class="">
+											
+											<img src="{{ asset('_next/static/media/icones/numbers/number-one.png') }}" width="15%" alt="">
 											
 										</div>
 											<p class="margin-top-xs text" style="color: white;"> 
@@ -82,17 +83,23 @@
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#link_ver-2"></use></svg></div>
+											<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-2.png') }}" width="15%" alt="">
+											</div>
 											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#idea"></use></svg></div>
+											<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-3.png') }}" width="15%" alt="">
+											</div>
 											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
 										</li>
 
 										<li>
-											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#invoice"></use></svg></div>
+										<div class="">
+												 <img src="{{ asset('_next/static/media/icones/numbers/number-four.png') }}" width="15%" alt="">
+											</div>
 											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
 										</li>
 
@@ -129,7 +136,7 @@
 
 							<div class="lp-banking-track-cashflow__content">
 
-									<h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading text-center">
+									<h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading">
 										Pourquoi choisir YOUDOM-CARE ?
 									</h2>
 									<p class="margin-top-default text text_lg">
@@ -241,24 +248,26 @@
 				<!-- Section with four info areas left & one card right with image and waves -->
 				  <section class="py-7">
 					<div class="container">
-					  <h1 class="text-center ">NOTRE CHARTE QUALITÉ <i class="fas fa-facebook"></i></h1>
+					  <h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading text-center">
+										NOTRE CHARTE QUALITE
+									</h2>
+					 <br>
 					  <div class="row align-items-center">
 						<div class="col-lg-9">
 						  <div class="row justify-content-start">
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="main-invoicing__list-icon-wrap">
-											<svg class="icon  icon_sm"><use href="#check"></use></svg>
-											
-										</div>
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-plane-departure fa-2xl"></i>
+								</div>
 								<h5>Choisir YOUDOM-CARE </h5>
 								<p>C’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients </p>
 							  </div>
 							</div>
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								  
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-door-open fa-2xl"></i>
 								</div>
 								<h5>Accueil, Disponibilité, Réactivité </h5>
 								<p>Répondre de manière rapide et adaptée à chaque demande</p>
@@ -268,8 +277,8 @@
 						  <div class="row justify-content-start">
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								 
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-magnifying-glass fa-2xl"></i>
 								</div>
 								<h5>Clarté, Rigueur, Transparence</h5>
 								<p>Fournir des informations complètes et fiables tout au long de la prestation</p>
@@ -277,8 +286,8 @@
 							</div>
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								 
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-bars-progress fa-2xl"></i>
 								</div>
 								<h5>Personnalisation, Écoute, Suivi</h5>
 								<p>Adapter notre intervention à l’évolution des besoins des clients.</p>
@@ -286,8 +295,8 @@
 							</div>
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								 
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-user-tie fa-2xl"></i>
 								</div>
 								<h5>Compétences, Expériences, Savoir-faire</h5>
 								<p>Mettre au service des clients des intervenants compétents et professionnels.</p>
@@ -295,8 +304,8 @@
 							</div>
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								 
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-eye fa-2xl"></i>
 								</div>
 								<h5>Confidentialité, Respect, Discrétion</h5>
 								<p>Respecter la vie privée et l’intimité des clients. </p>
@@ -304,8 +313,8 @@
 							</div>
 							<div class="col-md-6">
 							  <div class="info">
-								<div class="icon icon-shape text-center">
-								 
+								<div class="main-invoicing__list-icon-wrap" style="background-color: transparent">
+											<i class="fa fa-file-pen fa-2xl"></i>
 								</div>
 								<h5>Qualité, Évaluation, Amélioration</h5>
 								<p>Faire évoluer les pratiques pour améliorer la satisfaction des clients.</p>
@@ -339,88 +348,147 @@ Youdom-care  motive ses collaborateurs à aller toujours plus loin dans l’exce
 					</div>
 				  </section>
 
-                <div class="container mt-5">
-					<h1 class="text-center ">NOTRE CHARTE QUALITÉ</h1>
-                    <p class="text-center">La qualité au cœur de toutes nos prestations</p>
-					<div class="container overflow-hidden text-center mt-5">
-						<div class="row gy-5 ">
-						    <div class="col-6 ">
-                                <div class="p-4  border bg-white rounded-5 shadow mt-2">
-                                    <img src="{{ asset('assets/img/care.png') }}" class="w-25" />
-                                    <div class="container mt-4">
-                                        <h3>YOUDOM-CARE</h3>
-                                        <p style="text-align: justify">Choisir YOUDOM-CARE , c’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients </p>
-                                    </div>
 
-                            </div>
-						</div>
-						<div class="col-6">
-							<div class="p-3  border bg-white rounded-5 shadow">
-                                <img src="{{ asset('assets/img/enterprise.png') }}" class="w-25" />
+   <div class="container mt-sm-5">
+    <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl" style="background-image: url('{{ asset('_next/static/media/impots-tampon-1200.jpg') }}');">
+      <span class="mask bg-gradient-dark"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 ms-lg-5">
+            <h4 class="text-white mb-0">IMPÔT</h4>
+            <h1 class="text-white">50% de réduction d’impôts</h1>
+            <p class="lead text-white opacity-8">
+							Dans le cadre de sa politique de développement des services à la personne, l’administration a mis en place des 
+							incitations fiscales pour les personnes qui recourent aux services à la personne. En faisant appel aux services YOUDUM-CARE, vous pouvez 
+							bénéficier d’une réduction ou d’un crédit d’impôt égal à 50% des dépenses que vous avez engagé dans l’année, un montant plafonné selon la réglementation 
+							fiscale applicable</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Tabs navs -->
+ <div class="container mt-sm-5">
+			
+		<h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading text-center">
+			Nos engagements 
+		</h2>
+		<br>						
+		<ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link active"
+			  id="ex3-tab-1"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-1"
+			  role="tab"
+			  aria-controls="ex3-tabs-1"
+			  aria-selected="true"
+			  >Un accompagnement personnalisé</a
+			>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link"
+			  id="ex3-tab-2"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-2"
+			  role="tab"
+			  aria-controls="ex3-tabs-2"
+			  aria-selected="false"
+			  >Service de qualité </a
+			>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link"
+			  id="ex3-tab-3"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-3"
+			  role="tab"
+			  aria-controls="ex3-tabs-3"
+			  aria-selected="false"
+			  >Assurer la fidélité de nos salariés pour vous satisfaire</a
+			>
+		  </li>
+		</ul>
+		<!-- Tabs navs -->
 
-                                <div class="container mt-4">
-                                    <h4>L’HUMAIN AU CŒUR DE L’ENTREPRISE</h4>
-                                    <p class="fs-6" style="text-align: justify">Nous mettons en place des pratiques de management valorisant le travail exécuté et la personne elle-même.
-                                        Youdom-care  motive ses collaborateurs à aller toujours plus loin dans l’excellence.</p>
-                                </div>
-                            </div>
-						  </div>
+		<!-- Tabs content -->
+		<div class="tab-content" id="ex2-content">
+		  <div
+			class="tab-pane fade show active"
+			id="ex3-tabs-1"
+			role="tabpanel"
+			aria-labelledby="ex3-tab-1"
+		  >
+			Notre équipe vous accompagne dans toutes vos démarches et vous propose des solutions adaptées à vos besoins.
+		  </div>
+		  <div
+			class="tab-pane fade"
+			id="ex3-tabs-2"
+			role="tabpanel"
+			aria-labelledby="ex3-tab-2"
+		  >
+			Nos auxiliaires de vie sont diplômés et expérimentés et détiennent une expérience solide dans le domaine du maintien à domicile  des personnes en perte d’autonomie 
+La sélection de nos auxiliaires de vie est rigoureuse et exigeante. Les profils retenus justifient soit d’une expérience professionnelle d’au moins 3 ans dans le secteur de l’aide à domicile, soit d’un diplôme d’Etat d’auxiliaire de vie ou d’un 
+certificat de compétences professionnelles (délivré par les ministères), gages de sérieux des acquis professionnels
+Nos chefs de secteur les encadrent au quotidien et s’assurent de la satisfaction des bénéficiaires 
 
-                          <div class="container overflow-hidden text-center ">
-                            <div class="row gx-5">
-                              <div class="col">
-                                <div class="p-4  border bg-white rounded-5 shadow mt-3">
-                                    <img src="{{ asset('assets/img/confidential-folder.png') }}" class="w-25" />
-
-                                    <div class="container mt-4">
-                                        <h4>Confidentialité. Respect. Discrétion.</h4>
-                                        <p style="text-align: justify">Nous Respectons la vie privée du client inscrit sur Youdom tout en faisant évoluer les pratiques pour améliorer leur satisfaction</p>
-                                    </div>
-                              </div>
-                              </div>
-                              <div class="col">
-                                <div class="p-3  mt-3 border bg-white rounded-5 shadow">
-                                    <img src="{{ asset('assets/img/customer-service-help-svgrepo-com.svg') }}" class="w-25" />
-
-                                    <div class="container mt-4">
-                                        <h4>Accueil. Disponibilité. Réactivité</h4>
-                                        <p style="text-align: justify">Nous repondons de manière rapide et adaptée à chaque demande pour ainsi vous Fournir des informations complètes et fiables tout au long de la prestation</p>
-                                    </div>
-                              </div>
-                              </div>
-                            </div>
-                          </div>
-						</div>
-					  </div>
-				  </div>
-
-                <div class="card mt-5">
-
-                    <div class="card-body bg-dark">
-
-					  <section class="fdb-block">
-						<div class="container mt-5">
-						  <div class="row align-items-center">
-							<div class="col-12 col-md-12 col-lg-6 col-xl-5">
-							  <h1 class='text-white'>Nos Engagements</h1>
-							  <p class="lead mb-5 text-white">Notre équipe vous accompagne dans toutes vos démarches et vous propose des solutions adaptées à vos besoins .
-								Nos auxiliaires de vie sont diplômés et expérimentés et détiennent une expérience solide dans le domaine du maintien à domicile  des personnes en perte d’autonomie
-							  </p>
-
-							 <a href="clients/rejoindre"> <button type="button" class="btn btn-primary btn-lg">Nous Rejoindre</button></a>
-							<a href="clients/franchise"><button type="button" class="btn btn-secondary btn-lg" style="margin-left: 12px;">Devenez Partenaire</button></a>
-							</div>
-							<div class="col-12 col-md-8 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
-							  <img alt="image" class="img-fluid " src="{{ asset("assets/img/pngegg.png") }}" style="width: 75%;">
-							</div>
-						  </div>
-						</div>
-					  </section>
-
-                    </div>
-                  </div>
-
-
+		  </div>
+		  <div
+			class="tab-pane fade"
+			id="ex3-tabs-3"
+			role="tabpanel"
+			aria-labelledby="ex3-tab-3"
+		  >
+			YOUDOM-CARE  met tous les moyens en œuvre pour offrir à nos clients une solution de qualité pour tous les services d’aide à domicile, tout en valorisant nos salariés.
+		  </div>
+		</div>
+		<!-- Tabs content -->
+		
+		<ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist">
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link"
+			  id="ex3-tab-4"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-1"
+			  role="tab"
+			  aria-controls="ex3-tabs-1"
+			  aria-selected="true"
+			  >Partager, avec vous, la confiance que nous avons en notre personnel</a
+			>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link"
+			  id="ex3-tab-5"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-2"
+			  role="tab"
+			  aria-controls="ex3-tabs-2"
+			  aria-selected="false"
+			  >Impliquer nos intervenants dans votre exigence de qualité </a
+			>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<a
+			  class="nav-link"
+			  id="ex3-tab-6"
+			  data-mdb-toggle="tab"
+			  href="#ex3-tabs-3"
+			  role="tab"
+			  aria-controls="ex3-tabs-3"
+			  aria-selected="false"
+			  >Vous faire bénéficier de la rigueur de notre organisation.</a
+			>
+		  </li>
+		</ul>
+		<!-- Tabs navs -->
+  </div>
 
 
 </section>
