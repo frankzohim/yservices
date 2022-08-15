@@ -1,5 +1,6 @@
 $(function() {
 
+
     //button 1
     var b1 = $("#bt");
     var w1 = $("#wrapper");
@@ -28,7 +29,6 @@ $(function() {
     b1.click(function() {
 
       w1.toggleClass('open'); /* <-- toggle the application of the open class on click */
-
     });
     b2.click(function() {
         w2.toggleClass('open'); /* <-- toggle the application of the open class on click */
