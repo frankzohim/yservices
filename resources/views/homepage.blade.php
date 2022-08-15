@@ -193,98 +193,98 @@
 
 									<table class="TimetableDesign PFTimetableDesktop">
 										<thead>
-											<tr>
-												<th></th>
-												<th>Lundi</th>
-												<th>Mardi</th>
-												<th>Mercredi</th>
-												<th>Jeudi</th>
-												<th>Vendredi</th>
-												<th>Samedi</th>
-												<th>Dimanche</th>
-												<th class="allDays">Tous les jours</th>
-											</tr>
+										  <tr>
+											<th></th>
+											<th>Lundi</th>
+											<th>Mardi</th>
+											<th>Mercredi</th>
+											<th>Jeudi</th>
+											<th>Vendredi</th>
+											<th>Samedi</th>
+											<th>Dimanche</th>
+											<th class="allDays">Tous les jours</th>
+										  </tr>
 										</thead>
 										<tbody>
-											<tr class="inJourney">
-												<th>Matin</th>
-												<td class="inJourney" data-time="Lundi - Matin"></td>
-												<td class="inJourney" data-time="Mardi - Matin"></td>
-												<td class="inJourney" data-time="Mercredi - Matin"></td>
-												<td class="inJourney" data-time="Jeudi - Matin"></td>
-												<td class="inJourney" data-time="Vendredi - Matin"></td>
-												<td class="inJourney" data-time="Samedi - Matin"></td>
-												<td class="inJourney" data-time="Dimanche - Matin"></td>
-												<td class="allDays"></td>
-											</tr>
-											<tr class="inJourney">
-												<th>Midi</th>
-												<td class="inJourney" data-time="Lundi - Midi"></td>
-												<td class="inJourney" data-time="Mardi - Midi"></td>
-												<td class="inJourney" data-time="Mercredi - Midi"></td>
-												<td class="inJourney" data-time="Jeudi - Midi"></td>
-												<td class="inJourney" data-time="Vendredi - Midi"></td>
-												<td class="inJourney" data-time="Samedi - Midi"></td>
-												<td class="inJourney" data-time="Dimanche - Midi"></td>
-												<td class="allDays"></td>
-											</tr>
-											<tr class="inJourney">
-												<th>Après-Midi</th>
-												<td class="inJourney" data-time="Lundi - Après-midi"></td>
-												<td class="inJourney" data-time="Mardi - Après-midi"></td>
-												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
-												<td class="inJourney" data-time="Jeudi - Après-midi"></td>
-												<td class="inJourney" data-time="Vendredi - Après-midi"></td>
-												<td class="inJourney" data-time="Samedi - Après-midi"></td>
-												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
-												<td class="allDays"></td>
-											</tr>
-											<tr class="inJourney">
-												<th>Soir</th>
-												<td class="inJourney" data-time="Lundi - Soir"></td>
-												<td class="inJourney" data-time="Mardi - Soir"></td>
-												<td class="inJourney" data-time="Mercredi - Soir"></td>
-												<td class="inJourney" data-time="Jeudi - Soir"></td>
-												<td class="inJourney" data-time="Vendredi - Soir"></td>
-												<td class="inJourney" data-time="Samedi - Soir"></td>
-												<td class="inJourney" data-time="Dimanche - Soir"></td>
-												<td class="allDays"></td>
-											</tr>
-											<tr class="allJourney">
-												<th>Journée entière (8h > 20h)</th>
-												<td class="allJourney" data-time="Lundi - Journée"></td>
-												<td class="allJourney" data-time="Mardi - Journée"></td>
-												<td class="allJourney" data-time="Mercredi - Journée"></td>
-												<td class="allJourney" data-time="Jeudi - Journée"></td>
-												<td class="allJourney" data-time="Vendredi - Journée"></td>
-												<td class="allJourney" data-time="Samedi - Journée"></td>
-												<td class="allJourney" data-time="Dimanche - Journée"></td>
-												<td class="allDays allJourney"></td>
-											</tr>
-											<tr>
-												<th>Nuit (20h > 8h)</th>
-												<td data-time="Lundi - Nuit"></td>
-												<td data-time="Mardi - Nuit"></td>
-												<td data-time="Mercredi - Nuit"></td>
-												<td data-time="Jeudi - Nuit"></td>
-												<td data-time="Vendredi - Nuit"></td>
-												<td data-time="Samedi - Nuit"></td>
-												<td data-time="Dimanche - Nuit"></td>
-												<td class="allDays"></td>
-											</tr>
-											<tr class="allDay">
-												<th>24h/24</th>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay"></td>
-												<td class="allDay allDays"></td>
-											</tr>
-										</tbody>
-									</table>
+										  <tr>
+											<th id="morning">Matin</th>
+											<td class="inJourney everyday" data-time="Lundi - Matin"></td>
+											<td class="inJourney everyday" data-time="Mardi - Matin"></td>
+											<td class="inJourney everyday" data-time="Mercredi - Matin"></td>
+											<td class="inJourney everyday" data-time="Jeudi - Matin"></td>
+											<td class="inJourney everyday" data-time="Vendredi - Matin"></td>
+											<td class="inJourney everyday" data-time="Samedi - Matin"></td>
+											<td class="inJourney everyday" data-time="Dimanche - Matin"></td>
+											<td class="allDays"></td>
+										  </tr>
+										  <tr>
+											<th id="midday">Midi</th>
+											<td class="inJourney everyday" data-time="Lundi - Midi"></td>
+											<td class="inJourney everyday" data-time="Mardi - Midi"></td>
+											<td class="inJourney everyday" data-time="Mercredi - Midi"></td>
+											<td class="inJourney everyday" data-time="Jeudi - Midi"></td>
+											<td class="inJourney everyday" data-time="Vendredi - Midi"></td>
+											<td class="inJourney everyday" data-time="Samedi - Midi"></td>
+											<td class="inJourney everyday" data-time="Dimanche - Midi"></td>
+											<td class="allDays"></td>
+										  </tr>
+										  <tr>
+											<th id="afternoon">Après-Midi</th>
+											<td class="inJourney everyday" data-time="Lundi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Mardi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Mercredi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Jeudi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Vendredi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Samedi - Après-midi"></td>
+											<td class="inJourney everyday" data-time="Dimanche - Après-midi"></td>
+											<td class="allDays"></td>
+										  </tr>
+										  <tr>
+											<th id="night">Soir</th>
+											<td class="inJourney everyday" data-time="Lundi - Soir"></td>
+											<td class="inJourney everyday" data-time="Mardi - Soir"></td>
+											<td class="inJourney everyday" data-time="Mercredi - Soir"></td>
+											<td class="inJourney everyday" data-time="Jeudi - Soir"></td>
+											<td class="inJourney everyday" data-time="Vendredi - Soir"></td>
+											<td class="inJourney everyday" data-time="Samedi - Soir"></td>
+											<td class="inJourney everyday" data-time="Dimanche - Soir"></td>
+											<td class="allDays"></td>
+										  </tr>
+										  <tr>
+											<th>Journée entière (8h > 20h)</th>
+											<td class="allJourney everyday" data-time="Lundi - Journée"></td>
+											<td class="allJourney everyday" data-time="Mardi - Journée"></td>
+											<td class="allJourney everyday" data-time="Mercredi - Journée"></td>
+											<td class="allJourney everyday" data-time="Jeudi - Journée"></td>
+                        <td class="allJourney everyday" data-time="Vendredi - Journée"></td>
+                        <td class="allJourney everyday" data-time="Samedi - Journée"></td>
+                        <td class="allJourney everyday" data-time="Dimanche - Journée"></td>
+                        <td class="allDays allJourney"></td>
+                      </tr>
+                      <tr>
+                        <th>Nuit (20h > 8h)</th>
+                        <td class="night everyday" data-time="Lundi - Nuit"></td>
+                        <td class="night everyday" data-time="Mardi - Nuit"></td>
+                        <td class="night everyday" data-time="Mercredi - Nuit"></td>
+                        <td class="night everyday" data-time="Jeudi - Nuit"></td>
+                        <td class="night everyday" data-time="Vendredi - Nuit"></td>
+                        <td class="night everyday" data-time="Samedi - Nuit"></td>
+                        <td class="night everyday" data-time="Dimanche - Nuit"></td>
+                        <td class="allDays"></td>
+                      </tr>
+                      <tr>
+                        <th>24h/24</th>
+                        <td class="allDay" data-time="lundi-24/24"></td>
+                        <td class="allDay" data-time="mardi-24/24"></td>
+                        <td class="allDay" data-time="mercredi-24/24"></td>
+                        <td class="allDay" data-time="jeudi-24/24"></td>
+                        <td class="allDay" data-time="vendredi-24/24"></td>
+                        <td class="allDay" data-time="samedi-24/24"></td>
+                        <td class="allDay" data-time="dimanche-24/24"></td>
+                        <td class="allDays"></td>
+                      </tr>
+                    </tbody>
+                  </table>
 									<input type="hidden" name="data_times" id ="dataTimes" value="" >
 								</div>
 
@@ -748,35 +748,123 @@
 
 				<script>
 
-					document.querySelectorAll('.inJourney').forEach((item)=>{
-						item.addEventListener('click',()=>{
-
-						  if(item.style.backgroundColor == 'blue')
-							item.style.backgroundColor = 'white';
-						  else
-							item.style.backgroundColor = 'blue'
-
-
-						});
-					  }
-
-					)
-
 					document.querySelectorAll('.allDays').forEach((item)=>{
 						item.addEventListener('click',()=>{
 						  //console.log(item.getAttribute('data-time'));
 						  //let parent = item.parentElement;
-						  console.log(parent);
+						  //console.log(parent);
 						  if(item.style.backgroundColor == 'blue')
-							item.style.backgroundColor = 'white';
+						  item.style.backgroundColor = 'white';
 						  else
-							item.style.backgroundColor = 'blue'
+						  item.style.backgroundColor = 'blue'
 
-
+									console.log(item.parentElement.id);
+									let parel =item.parentElement;
+										//console.log(parel.children)
+									Array.prototype.forEach.call(parel.children,child =>{
+										child.nextElementSibling.style.backgroundColor="blue";
+						  item.addEventListener('click',()=>{
+							if(item.style.backgroundColor == 'blue')
+							child.nextElementSibling.style.backgroundColor="white";
+							else
+							child.nextElementSibling.style.backgroundColor="blue";
+						  });
+									})
 						});
-					  }
+						}
 
-					)
+					  )
+
+
+					  document.querySelectorAll('.allJourney').forEach((curr,index,arrays)=>{
+
+									curr.addEventListener('click',()=>{
+						  //initialize document
+
+						  var mornings=document.querySelectorAll('.inJourney');
+
+
+										var ArrayJourney;
+										ArrayJourney=Array.from(mornings);
+										var ArrayMorning=ArrayJourney.slice(0,7);
+										var ArrayMidday=ArrayJourney.slice(7,14);
+										var ArrayAfternoon=ArrayJourney.slice(14,21);
+										var ArrayNight=ArrayJourney.slice(21,28);
+
+						  if(curr.style.backgroundColor=="blue"){
+							curr.style.backgroundColor="white";
+
+											ArrayMorning[index].style.backgroundColor="white";
+											ArrayMidday[index].style.backgroundColor="white";
+											ArrayAfternoon[index].style.backgroundColor="white";
+											ArrayNight[index].style.backgroundColor="white";
+
+
+						  }else{
+							curr.style.backgroundColor="blue";
+
+											//console.log(ArrayMorning,ArrayMidday,ArrayAfternoon,ArrayNight);
+											ArrayMorning[index].style.backgroundColor="blue";
+											ArrayMidday[index].style.backgroundColor="blue";
+											ArrayAfternoon[index].style.backgroundColor="blue";
+											ArrayNight[index].style.backgroundColor="blue";
+
+										}
+
+										//document.querySelectorAll('.inJourney').forEach()
+
+						})
+					  })
+
+								document.querySelectorAll('.night').forEach((curr,ind)=>{
+									curr.addEventListener("click",()=>{
+
+										var mornings=document.querySelectorAll('.inJourney');
+										var ArrayJourney=Array.from(mornings);
+
+										if(curr.style.backgroundColor=="blue"){
+											curr.style.backgroundColor='white';
+											ArrayJourney[ind].style.backgroundColor="white";
+										}else{
+											curr.style.backgroundColor='blue';
+											ArrayJourney[ind].style.backgroundColor="blue";
+										}
+									})
+								})
+
+						document.querySelectorAll('.allDay').forEach((curr,index)=>{
+									var alldays=document.querySelectorAll('.everyday');
+									var ArrayDays=Array.from(alldays);
+									var ArrayMorning=ArrayDays.slice(0,7);
+									var ArrayMidday=ArrayDays.slice(7,14);
+									var ArrayAfternoon=ArrayDays.slice(14,21);
+									var ArrayNight=ArrayDays.slice(21,28);
+									var ArrayWholeJourney=ArrayDays.slice(28,35);
+									var ArrayNightAndMorning=ArrayDays.slice(35,42);
+
+									curr.addEventListener('click',()=>{
+										if(curr.style.backgroundColor=='blue'){
+											curr.style.backgroundColor="white";
+
+											ArrayMorning[index].style.backgroundColor="white";
+											ArrayMidday[index].style.backgroundColor="white";
+											ArrayAfternoon[index].style.backgroundColor="white";
+											ArrayNightAndMorning[index].style.backgroundColor="white";
+											ArrayWholeJourney[index].style.backgroundColor="white";
+											ArrayNight[index].style.backgroundColor="white";
+										}else{
+
+											curr.style.backgroundColor="blue";
+											ArrayMorning[index].style.backgroundColor="blue";
+											ArrayMidday[index].style.backgroundColor="blue";
+											ArrayAfternoon[index].style.backgroundColor="blue";
+											ArrayNightAndMorning[index].style.backgroundColor="blue";
+											ArrayWholeJourney[index].style.backgroundColor="blue";
+											ArrayNight[index].style.backgroundColor="blue";
+
+										}
+									})
+								})
 
 
 
@@ -805,23 +893,36 @@
 
 				  function nextPrev(n) {
 
-					// This function will figure out which tab to display
-					var x = document.getElementsByClassName("tab");
-					// Exit the function if any field in the current tab is invalid:
-					if (n == 1 && !validateForm()) return false;
-					// Hide the current tab:
-					x[currentTab].style.display = "none";
-					// Increase or decrease the current tab by 1:
-					currentTab = currentTab + n;
-					// if you have reached the end of the form...
-					if (currentTab >= x.length) {
-					  // ... the form gets submitted:
-					  document.getElementById("regForm").submit();
-					  return false;
-					}
-					// Otherwise, display the correct tab:
-					showTab(currentTab);
-				  }
+                    var isChecked=document.querySelectorAll('#chkbox');
+                    var isCheckedArray=Array.from(isChecked);
+
+                    isCheckedArray.forEach((curr)=>{
+                        if(curr.checked==true){
+                            //alert('la case à ete coché');
+                        }else{
+                            //alert("la case n'a pas ete coché")
+                        }
+                    })
+
+          // This function will figure out which tab to display
+          var x = document.getElementsByClassName("tab");
+          // Exit the function if any field in the current tab is invalid:
+          if (n == 1 && !validateForm()) return false;
+          // Hide the current tab:
+          x[currentTab].style.display = "none";
+          // Increase or decrease the current tab by 1:
+          currentTab = currentTab + n;
+          // if you have reached the end of the form...
+
+          if (currentTab >= x.length) {
+            // ... the form gets submitted:
+            document.getElementById("regForm").submit();
+
+            return false;
+          }
+          // Otherwise, display the correct tab:
+          showTab(currentTab);
+          }
 
 				  function validateForm() {
 
