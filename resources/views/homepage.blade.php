@@ -206,82 +206,82 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<th id="morning">Matin</th>
-												<td class="inJourney everyday" data-time="Lundi - Matin"></td>
-												<td class="inJourney everyday" data-time="Mardi - Matin"></td>
-												<td class="inJourney everyday" data-time="Mercredi - Matin"></td>
-												<td class="inJourney everyday" data-time="Jeudi - Matin"></td>
-												<td class="inJourney everyday" data-time="Vendredi - Matin"></td>
-												<td class="inJourney everyday" data-time="Samedi - Matin"></td>
-												<td class="inJourney everyday" data-time="Dimanche - Matin"></td>
+											<tr class="inJourney">
+												<th>Matin</th>
+												<td class="inJourney" data-time="Lundi - Matin"></td>
+												<td class="inJourney" data-time="Mardi - Matin"></td>
+												<td class="inJourney" data-time="Mercredi - Matin"></td>
+												<td class="inJourney" data-time="Jeudi - Matin"></td>
+												<td class="inJourney" data-time="Vendredi - Matin"></td>
+												<td class="inJourney" data-time="Samedi - Matin"></td>
+												<td class="inJourney" data-time="Dimanche - Matin"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr>
-												<th id="midday">Midi</th>
-												<td class="inJourney everyday" data-time="Lundi - Midi"></td>
-												<td class="inJourney everyday" data-time="Mardi - Midi"></td>
-												<td class="inJourney everyday" data-time="Mercredi - Midi"></td>
-												<td class="inJourney everyday" data-time="Jeudi - Midi"></td>
-												<td class="inJourney everyday" data-time="Vendredi - Midi"></td>
-												<td class="inJourney everyday" data-time="Samedi - Midi"></td>
-												<td class="inJourney everyday" data-time="Dimanche - Midi"></td>
+											<tr class="inJourney">
+												<th>Midi</th>
+												<td class="inJourney" data-time="Lundi - Midi"></td>
+												<td class="inJourney" data-time="Mardi - Midi"></td>
+												<td class="inJourney" data-time="Mercredi - Midi"></td>
+												<td class="inJourney" data-time="Jeudi - Midi"></td>
+												<td class="inJourney" data-time="Vendredi - Midi"></td>
+												<td class="inJourney" data-time="Samedi - Midi"></td>
+												<td class="inJourney" data-time="Dimanche - Midi"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr>
-												<th id="afternoon">Après-Midi</th>
-												<td class="inJourney everyday" data-time="Lundi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Mardi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Mercredi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Jeudi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Vendredi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Samedi - Après-midi"></td>
-												<td class="inJourney everyday" data-time="Dimanche - Après-midi"></td>
+											<tr class="inJourney">
+												<th>Après-Midi</th>
+												<td class="inJourney" data-time="Lundi - Après-midi"></td>
+												<td class="inJourney" data-time="Mardi - Après-midi"></td>
+												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
+												<td class="inJourney" data-time="Jeudi - Après-midi"></td>
+												<td class="inJourney" data-time="Vendredi - Après-midi"></td>
+												<td class="inJourney" data-time="Samedi - Après-midi"></td>
+												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr>
-												<th id="night">Soir</th>
-												<td class="inJourney everyday" data-time="Lundi - Soir"></td>
-												<td class="inJourney everyday" data-time="Mardi - Soir"></td>
-												<td class="inJourney everyday" data-time="Mercredi - Soir"></td>
-												<td class="inJourney everyday" data-time="Jeudi - Soir"></td>
-												<td class="inJourney everyday" data-time="Vendredi - Soir"></td>
-												<td class="inJourney everyday" data-time="Samedi - Soir"></td>
-												<td class="inJourney everyday" data-time="Dimanche - Soir"></td>
+											<tr class="inJourney">
+												<th>Soir</th>
+												<td class="inJourney" data-time="Lundi - Soir"></td>
+												<td class="inJourney" data-time="Mardi - Soir"></td>
+												<td class="inJourney" data-time="Mercredi - Soir"></td>
+												<td class="inJourney" data-time="Jeudi - Soir"></td>
+												<td class="inJourney" data-time="Vendredi - Soir"></td>
+												<td class="inJourney" data-time="Samedi - Soir"></td>
+												<td class="inJourney" data-time="Dimanche - Soir"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr>
+											<tr class="allJourney">
 												<th>Journée entière (8h > 20h)</th>
-												<td class="allJourney everyday" data-time="Lundi - Journée"></td>
-												<td class="allJourney everyday" data-time="Mardi - Journée"></td>
-												<td class="allJourney everyday" data-time="Mercredi - Journée"></td>
-												<td class="allJourney everyday" data-time="Jeudi - Journée"></td>
-												<td class="allJourney everyday" data-time="Vendredi - Journée"></td>
-												<td class="allJourney everyday" data-time="Samedi - Journée"></td>
-												<td class="allJourney everyday" data-time="Dimanche - Journée"></td>
+												<td class="allJourney" data-time="Lundi - Journée"></td>
+												<td class="allJourney" data-time="Mardi - Journée"></td>
+												<td class="allJourney" data-time="Mercredi - Journée"></td>
+												<td class="allJourney" data-time="Jeudi - Journée"></td>
+												<td class="allJourney" data-time="Vendredi - Journée"></td>
+												<td class="allJourney" data-time="Samedi - Journée"></td>
+												<td class="allJourney" data-time="Dimanche - Journée"></td>
 												<td class="allDays allJourney"></td>
 											</tr>
 											<tr>
 												<th>Nuit (20h > 8h)</th>
-												<td class="night everyday" data-time="Lundi - Nuit"></td>
-												<td class="night everyday" data-time="Mardi - Nuit"></td>
-												<td class="night everyday" data-time="Mercredi - Nuit"></td>
-												<td class="night everyday" data-time="Jeudi - Nuit"></td>
-												<td class="night everyday" data-time="Vendredi - Nuit"></td>
-												<td class="night everyday" data-time="Samedi - Nuit"></td>
-												<td class="night everyday" data-time="Dimanche - Nuit"></td>
+												<td data-time="Lundi - Nuit"></td>
+												<td data-time="Mardi - Nuit"></td>
+												<td data-time="Mercredi - Nuit"></td>
+												<td data-time="Jeudi - Nuit"></td>
+												<td data-time="Vendredi - Nuit"></td>
+												<td data-time="Samedi - Nuit"></td>
+												<td data-time="Dimanche - Nuit"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr>
+											<tr class="allDay">
 												<th>24h/24</th>
-												<td class="allDay" data-time="lundi-24/24"></td>
-												<td class="allDay" data-time="mardi-24/24"></td>
-												<td class="allDay" data-time="mercredi-24/24"></td>
-												<td class="allDay" data-time="jeudi-24/24"></td>
-												<td class="allDay" data-time="vendredi-24/24"></td>
-												<td class="allDay" data-time="samedi-24/24"></td>
-												<td class="allDay" data-time="dimanche-24/24"></td>
-												<td class="allDays"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay"></td>
+												<td class="allDay allDays"></td>
 											</tr>
 										</tbody>
 									</table>
@@ -380,27 +380,36 @@
 						</div>
 					</div>
 				</section>
+				<section class="main-invoicing" >
 
+					<div class="container container_card" >
 
+						<div class="section-body section-body_card
+						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
 
-				<section class="main-invoicing">
-
-					<div class="container container_card">
-
-						<div class="section-body section-body_card section-body_card_pink section-body_card_margin-top main-invoicing__body">
-
-							<h2 class="heading heading__lvl1 color_blue">Notre Fonctionnement
+							<h2 class="heading heading__lvl1 color_blue" style="color: white;">Des services à la personne pour toutes et tous
 							</h2>
-							<p class="margin-top-xs text">Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie professionnelles, des aides-soignants (es) avec  pour seul  souci constant de rendre le quotidien des personnes âgées ou personnes en situation handicap plus agréable et de faciliter leur maintien à domicile.</span></b></p>
-							<p class="margin-top-xs text stillforce-heading-red"> Comment fonctionne la mise en place d’une prestation d’aide à domicile chez YOUDOM-CARE ? </span></b></p>
+							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
+								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et
+									vous permet une déduction d'impôt</span></b></p>
+
+								<p class="margin-top-xs text" style="color: white;">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
+									<a href="{{ route('services') }}" style="color: white;">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
+
 							<div class="margin-top-lg main-invoicing__content-wrap">
 
 								<div class="main-invoicing__info">
 
 									<ul class="main-invoicing__list">
 
-										<li><div class="main-invoicing__list-icon-wrap">
-											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg></div><p class="margin-top-xs text">Lorem ipsum <b>Lorem ipsum</b> Lorem ipsum Lorem ipsum <b>Lorem ipsum</b> Lorem ipsum</p>
+										<li><div class="">
+
+											<img src="{{ asset('_next/static/media/icones/numbers/number-one.png') }}" width="15%" alt="">
+
+										</div>
+											<p class="margin-top-xs text" style="color: white;">
+
+												<b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
 										</li>
 
 										<li>
@@ -426,9 +435,7 @@
 
 									</ul>
 
-									<div class="main-invoicing__btn-wrap button_margin-default">
-										<a href="#" class="button button_secondary button_w-m-full" id="target-action-main-invoicing-business">Créer un compte</a><div><a class="link link_underline link_blue-bright main-invoicing__btn-learn-more" data-inner-link="true" data-test="header_nav__main-invoicing-learn-more" href="#">En Savoir Plus</a></div>
-									</div>
+
 
 								</div>
 
@@ -446,60 +453,6 @@
 
 				</section>
 
-				<section class="lp-banking-support-team color_white">
-					<div class="container container_card">
-					<div class="lp-banking-support-team__body section-body section-body_card section-body_card_blue section-body_card_margin-top">
-						<h2 class="heading heading__lvl1">Pourquoi choisir Youdom Services</h2>
-
-						<div class="lp-banking-support-team__content margin-top-default" style="margin-top:0px">
-
-							<div class="lp-banking-support-team__content-image-wrap" >
-
-								<picture class="picture__image-container ">
-
-
-									<img  src="{{  asset('_next/static/media/why-us.png') }} " srcSet="/_next/static/media/lp-banking-support-team__team_it@2x.5c133c0b.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
-
-								</picture>
-
-							</div>
-							<div class="lp-banking-support-team__content-message">
-
-								<ul class="lp-banking-support-team__content-list">
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#clock"></use></svg><span class="text">Nous vous garantissons toujours le même auxiliaire de vie.</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#check-circle"></use></svg><span class="text">Un conseiller dédié pour un service personnalisé.</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#eye"></use></svg><span class="text">Des prestations flexibles qui évoluent selon vos besoins.</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#settings"></use></svg><span class="text">Des prestations flexibles qui évoluent selon vos besoins. </span>
-									</li>
-								</ul>
-
-								<div class="lp-banking-support-team__content-contact margin-top-lg">
-
-									<button class="button button_w-m-full lp-banking-support-team-contact-us__button" id="target-action-lp-banking-support-team-chat" disabled="">
-										Ouvrir le chat
-									</button>
-
-									<a class="button button_w-m-full button_white lp-banking-support-team-contact-us__button" href="https://api.whatsapp.com/send?phone=3197014203777" target="_blank" rel="noreferrer">
-										<img src="http://finom.co/_next/static/media/whatsapp.ed0dbc2b.svg" alt="" /><span>Discutez Sur WhatsApp</span>
-									</a>
-
-
-								</div>
-							</div>
-
-						</div>
-					</div></div>
-				</section>
 
 				<section class="lp-banking-track-cashflow">
 					<div class="container">
@@ -514,27 +467,157 @@
 					</div>
 				</section>
 
-				<section class="main-why-we" id="main-why-we">
 
-					<div class="container">
-						<div class="padding-bottom-sm section-body undefined">
-							<h2 class="heading heading__lvl1 ta-c">Gérez vos finances facilement à partir de votre téléphone</h2>
-							<ul class="margin-top-default main-why-we-list">
+
+
+	<section class="main-why-we" id="main-why-we">
+
+		<div class="container">
+
+			<div class="padding-bottom-sm section-body undefined">
+
+				<h2 class="heading heading__lvl1 ta-c">Les différents services de Youmdom-CARE</h2>
+				<ul class="margin-top-default main-why-we-list">
 								<li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-									<svg class="icon color_blue-bright icon_normal"><use href="#briefcase"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Compte professionnel</h3>
+
+									<h3 class="margin-top-sm heading heading__lvl2">Aide à l’autonomie/geste du quotidien</h3>
 									<ul class="margin-top-sm list list_star">
-										<li class="text">Web&App</li>
-										<li class="text">Invitez votre équipe à accéder à votre compte en toute sécurité</li>
-										<li class="text">IBAN Français</li>
+										<li class="text">Aide au lever et au coucher</li>
+										<li class="text">Aide à la toilette, coiffure, maquillage, habillage</li>
+										<li class="text">Aide-ménagère</li>
 									</ul>
 								</div></li>
 
-								<li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card"><svg class="icon color_blue-bright icon_normal"><use href="#box"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Réconciliation</h3><ul class="margin-top-sm list list_star"><li class="text">Rapprochement automatique des factures et des paiements par virement</li><li class="text">Collectez, stockez et numérisez les reçus et autres documents en un clin d'œil</li></ul></div></li><li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card"><svg class="icon color_blue-bright icon_normal"><use href="#card"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Cartes</h3><ul class="margin-top-sm list list_star"><li class="text">Cartes physiques et virtuelles gratuites</li><li class="text">Un cashback de 3%, le plus élevé du marché</li></ul></div></li><li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card"><svg class="icon color_blue-bright icon_normal"><use href="#user"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Service client</h3><ul class="margin-top-sm list list_star"><li class="text">Réponse du service client en moins de 5 min</li><li class="text">92% de nos clients nous ont attribué 5 étoiles pour notre travail</li></ul></div></li><li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card"><svg class="icon color_blue-bright icon_normal"><use href="#invoice"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Facturation</h3><ul class="margin-top-sm list list_star"><li class="text">Rappels automatiques de paiement envoyés à vos clients</li><li class="text">60 sec pour créer une facture et l'envoyer au client e-mail, facebook, Whatsapp</li><li class="text">Le lien présenté avec la facture permet de la payer en 1 clic</li></ul></div></li><li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card"><svg class="icon color_blue-bright icon_normal"><use href="#file"></use></svg><h3 class="margin-top-sm heading heading__lvl2">Comptabilité</h3><ul class="margin-top-sm list list_star"><li class="text">Accès dédié complet ou limité pour votre comptable</li></ul></div></li>
-							</ul>
-						</div>
-					</div>
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+										<h3 class="margin-top-sm heading heading__lvl2">Gardes non médicalisées/Présence de nuit</h3>
+										<ul class="margin-top-sm list list_star">
+											<li class="text">Présence de nuits pour personnes âgées </li>
+											<li class="text">Garde de nuit pour personnes âgées et personnes en situation d’handicap</li>
+											<li class="text">Présence de nuits auprès des enfants malades </li>
 
-				</section>
+										</ul>
+										<div id="wrapper5">
+											<ul class="margin-top-sm list list_star" style="">
+												<li class="text">Garde de jour</li>
+												<li class="text">Retour à domicile après une hospitalisation</li>
+												<li class="text">Garde 24h sur 24</li>
+											</ul>
+										</div>
+
+                          <a href="javascript:void(0)"  id="bt5">voir plus</a>
+									</div>
+								</li>
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+
+										<h3 class="margin-top-sm heading heading__lvl2">Service handicap</h3>
+										<ul class="margin-top-sm list list_star">
+											<li class="text">Aide à domicile - personnes handicapées</li>
+											<li class="text">Entretien du lieu de vie - personnes handicapées</li>
+											<li class="text">Aide à la vie sociale - personnes handicapées</li>
+											<li class="text">Garde de jour et ou de nuit - personnes handicapées</li>
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+									<h3 class="margin-top-sm heading heading__lvl2">Accompagnements</h3>
+										<ul class="margin-top-sm list list_star">
+											<li class="text">Accompagnements aux courses</li>
+											<li class="text">Accompagnement culturel </li>
+											<li class="text">Compagnies et stimulation </li>
+											<li class="text">Promenades et loisirs </li>
+
+										</ul>
+
+										<div id="wrapper6">
+											<ul class="margin-top-sm list list_star">
+												<li class="text">Aide à la mobilité</li>
+												<li class="text">Sorties véhiculées</li>
+												<li class="text">Lecture, discussion</li>
+												<li class="text">Rendez-vous médicaux</li>
+											</ul>
+										</div>
+
+										<a href="javascript:void(0)"  id="bt6">voir plus</a>
+
+									</div>
+								</li>
+
+
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+										<h3 class="margin-top-sm heading heading__lvl2">Retour d’hospitalisation</h3>
+										<ul class="margin-top-sm list list_star">
+											<li class="text">Retour au domicile</li>
+											<li class="text">Aide au quotidien</li>
+										</ul>
+									</div>
+								</li>
+
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+									<h3 class="margin-top-sm heading heading__lvl2">Aide aux repas</h3>
+									<ul class="margin-top-sm list list_star">
+										<li class="text">Courses </li>
+										<li class="text">Préparation des repas</li>
+
+									</ul>
+									<div id="wrapper2">
+											<ul class="margin-top-sm list list_star">
+												<li class="text">Aide à la prise des repas</li>
+												<li class="text">Prise de médicament</li>
+												<li class="text">Alimentation-Surveillance des régimes</li>
+											</ul>
+										</div>
+
+										<a href="javascript:void(0)"  id="bt2">voir plus</a>
+									</div>
+								</li>
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+										<h3 class="margin-top-sm heading heading__lvl2">Aide-ménagère</h3>
+										<ul class="margin-top-sm list list_star">
+											<li class="text">Ménage</li>
+											<li class="text">Lessive- repassage</li>
+											<li class="text">Entretien du logement </li>
+										</ul>
+									</div>
+								</li>
+
+								<li>
+									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+									<h3 class="margin-top-sm heading heading__lvl2">Assistance administrative</h3>
+									<ul class="margin-top-sm list list_star">
+										<li class="text">Gestion du courrier </li>
+										<li class="text">Classement des documents</li>
+										<li class="text">Prise de rendez-vous</li>
+
+									</ul>
+									<div id="wrapper3">
+											<ul class="margin-top-sm list list_star">
+												<li class="text">Démarches administratives</li>
+										<li class="text">Loyer , factures </li>
+											</ul>
+										</div>
+
+										<a href="javascript:void(0)"  id="bt3">voir plus</a>
+									</div>
+									</div>
+								</li>
+
+
+				</ul>
+			</div>
+		</div>
+
+	</section>
 
 				<section class="main-cards color_white"><div class="container container_card">
 
@@ -660,152 +743,8 @@
 
 
 
-				<section class="main-about-us">
-					<div class="container container_card">
 
-					<div class="section-body section-body_card section-body_card_blue-light main-about-us__body section-body_card_margin-top">
 
-						<div class="hide-tablet-lg hide-desktop">
-							<p class="text caps color_red">About us</p>
-
-							<ul class="margin-top-sm main-about-us__list">
-								<li>
-									<div class="main-about-us__card">
-
-										<div class="main-about-us__card-content">
-											<svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">We’re specialists in the fintech market and serial entrepreneurs. We decided to make things pure and more intuitive. It’s essential to spend time on your business, family and friends. Everything else is just a waste of time like being engaged in paper administrative routines.</p><h3 class="margin-top-xs heading heading heading__lvl1 main-about-us__heading">Antonio la Mura</h3><p class="margin-top-xs text text_lg">Head of business in Italy</p><p class="margin-top-xs text">6 years of experience in fintech and business development. Entrepreneur: farm in southern Italy. Milan, Ital.</p>
-										</div>
-
-										<div class="main-about-us__person main-about-us__person_1">
-											<div class="main-about-us__person-bg">
-												<div class="main-about-us__person-bg-rect"></div>
-											</div>
-
-											<picture class="picture__image-container ">
-
-												<img src="{{ asset('_next/static/media/Antonio@1x.a5949d97.png') }}" srcSet="_next/static/media/Antonio@2x.ded0e665.png 2x" alt="" class="picture__image main-about-us__person-img" loading="lazy" />
-											</picture>
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class="main-about-us__card"><div class="main-about-us__card-content"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">That’s why we’ve set up FINOM – a digital solution that helps you create, send and store invoices and electronic invoices. We wanted to build a place where you can grow your business and make money but not waste your time.</p><h3 class="margin-top-xs heading heading heading__lvl1 main-about-us__heading">Alena Valovaya</h3><p class="margin-top-xs text text_lg"></p><p class="margin-top-xs text">4 years in fintech. 13 years in HR, 3 years in Marketing. Сonducts independent coaching with European ECF certification. Lives in Amsterdam, the Netherlands.</p></div><div class="main-about-us__person main-about-us__person_1"><div class="main-about-us__person-bg"><div class="main-about-us__person-bg-rect"></div></div><picture class="picture__image-container "><source media="(max-width: 600px)" srcSet="/_next/static/media/Alyona@1x.c2a46759.webp" type="image/webp" /><source media="(min-width: 601px)" srcSet="/_next/static/media/Alyona@1x.c2a46759.webp 1x, /_next/static/media/Alyona@2x.a0158606.webp 2x" type="image/webp" /><source media="(max-width: 600px)" srcSet="/_next/static/media/Alyona@1x.11e8c724.png" type="image/png" /><img src="../_next/static/media/Alyona%401x.11e8c724.png" srcSet="/_next/static/media/Alyona@2x.d022a1c2.png 2x" alt="" class="picture__image main-about-us__person-img" loading="lazy" /></picture></div></div>
-								</li>
-
-								<li><div class="main-about-us__card"><div class="main-about-us__card-content"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">Our goal is to simplify the life of those who provide for half the Europe.</p><h3 class="margin-top-xs heading heading heading__lvl1 main-about-us__heading">Thomas Finan</h3><p class="margin-top-xs text text_lg">Co-founder</p><p class="margin-top-xs text">10+ years managing Customer service teams in a variety of business including fintech and travel. Extensive experience working with entrepreneurs. Lives in London, United Kingdom.</p></div><div class="main-about-us__person main-about-us__person_7"><div class="main-about-us__person-bg"><div class="main-about-us__person-bg-rect"></div></div><picture class="picture__image-container "><source media="(max-width: 600px)" srcSet="/_next/static/media/Thomas@1x.5fa320a3.webp" type="image/webp" /><source media="(min-width: 601px)" srcSet="/_next/static/media/Thomas@1x.5fa320a3.webp 1x, /_next/static/media/Thomas@2x.aca6c2d8.webp 2x" type="image/webp" /><source media="(max-width: 600px)" srcSet="/_next/static/media/Thomas@1x.a28d0330.png" type="image/png" /><img src="../_next/static/media/Thomas%401x.a28d0330.png" srcSet="/_next/static/media/Thomas@2x.e98343a8.png 2x" alt="" class="picture__image main-about-us__person-img" loading="lazy" /></picture></div></div></li><li><div class="main-about-us__card"><div class="main-about-us__card-content"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">We're using FINOM every day ourselves because we believe that we deserve the best. We're improving FINOM every day based on what entrepreneurs wish and desire. And of course, we're going to build more services for those like us. For those whom “enough” is not enough.</p><h3 class="margin-top-xs heading heading heading__lvl1 main-about-us__heading">Ivo Dimitrov</h3><p class="margin-top-xs text text_lg">Co-founder</p><p class="margin-top-xs text">6+ years in fintech. Entrepreneur: mobile app with marketplace of tatoo artists, online services for startup founders. Berlin, Germany.</p></div><div class="main-about-us__person main-about-us__person_3"><div class="main-about-us__person-bg"><div class="main-about-us__person-bg-rect"></div></div><picture class="picture__image-container "><source media="(max-width: 600px)" srcSet="/_next/static/media/Ivo@1x.e17b5022.webp" type="image/webp" /><source media="(min-width: 601px)" srcSet="/_next/static/media/Ivo@1x.e17b5022.webp 1x, /_next/static/media/Ivo@2x.d2ca2800.webp 2x" type="image/webp" /><source media="(max-width: 600px)" srcSet="/_next/static/media/Ivo@1x.6dd3da5f.png" type="image/png" /><img src="../_next/static/media/Ivo%401x.6dd3da5f.png" srcSet="/_next/static/media/Ivo@2x.7fd160d5.png 2x" alt="" class="picture__image main-about-us__person-img" loading="lazy" /></picture></div></div></li>
-							</ul>
-						</div>
-
-						<div class="hide-mobile hide-tablet-sm">
-							<div class="main-about-us__slider-main" id="main-about-us-slider-main">
-								<div>
-									<div class="main-about-us__info-slide">
-										<div>
-											<p class="text caps color_red">Qui Sommes Nous</p>
-											<h3 class="margin-top-sm heading heading__lvl1">Lorem ipsum</h3>
-											<p class="margin-top-xs text text_lg">Lorem ipsum Lorem Ipsum</p>
-											<p class="margin-top-xs text">6 Lorem ipsum  consectetur ipsum consectetur ipsum Lorem ipsum Lorem ipsum: farm in Lorem ipsum.</p>
-										</div>
-
-										<div>
-											<div class="main-about-us__comment">
-												<svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">We’re specialists in the fintech market and serial entrepreneurs. We decided to make things pure and more intuitive. It’s essential to spend time on your business, family and friends. Everything else is just a waste of time like being engaged in paper administrative routines.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							<div>
-								<div class="main-about-us__info-slide"><div><p class="text caps color_red">About us</p><h3 class="margin-top-sm heading heading__lvl1">Alena Valovaya</h3><p class="margin-top-xs text text_lg">Co-founder</p><p class="margin-top-xs text">4 years in fintech. 13 years in HR, 3 years in Marketing. Сonducts independent coaching with European ECF certification. Lives in Amsterdam, the Netherlands.</p></div><div><div class="main-about-us__comment"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">That’s why we’ve set up FINOM – a digital solution that helps you create, send and store invoices and electronic invoices. We wanted to build a place where you can grow your business and make money but not waste your time.</p></div></div></div>
-							</div><div><div class="main-about-us__info-slide"><div><p class="text caps color_red">About us</p><h3 class="margin-top-sm heading heading__lvl1">Thomas Finan</h3><p class="margin-top-xs text text_lg">Co-founder</p><p class="margin-top-xs text">10+ years managing Customer service teams in a variety of business including fintech and travel. Extensive experience working with entrepreneurs. Lives in London, United Kingdom.</p></div><div><div class="main-about-us__comment"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">Our goal is to simplify the life of those who provide for half the Europe.</p></div></div></div></div><div><div class="main-about-us__info-slide"><div><p class="text caps color_red">About us</p><h3 class="margin-top-sm heading heading__lvl1">Ivo Dimitrov</h3><p class="margin-top-xs text text_lg"></p><p class="margin-top-xs text">6+ years in fintech. Entrepreneur: mobile app with marketplace of tatoo artists, online services for startup founders. Berlin, Germany.</p></div><div><div class="main-about-us__comment"><svg class="icon color_blue-5" width="36px" height="36px"><use href="#quotes"></use></svg><p class="margin-top-xs text">We're using FINOM every day ourselves because we believe that we deserve the best. We're improving FINOM every day based on what entrepreneurs wish and desire. And of course, we're going to build more services for those like us. For those whom “enough” is not enough.</p></div></div></div></div>
-							</div>
-
-							<div class="margin-top-default main-about-us__slider-nav" id="main-about-us-slider-nav">
-
-								<div>
-									<div class="main-about-us__person main-about-us__person_1">
-										<div class="main-about-us__person-bg">
-											<div class="main-about-us__person-bg-rect _blue"></div><div class="main-about-us__person-bg-rect _fill"></div>
-										</div>
-										<h3 class="text text_bold main-about-us__person-name">Antonio<br />la Mura</h3>
-
-										<picture class="picture__image-container ">
-
-											<img src="_next/static/media/Antonio@1x.a5949d97.png" srcSet="/_next/static/media/Antonio@2x.ded0e665.png 2x" alt="" class="picture__image main-about-us__person-img" width="275" />
-										</picture>
-									</div>
-								</div>
-
-								<div>
-									<div class="main-about-us__person main-about-us__person_4">
-
-										<div class="main-about-us__person-bg">
-											<div class="main-about-us__person-bg-rect _blue"></div><div class="main-about-us__person-bg-rect _fill"></div></div><h3 class="text text_bold main-about-us__person-name">Alena<br />Valovaya</h3>
-
-											<picture class="picture__image-container ">
-
-												<img src="_next/static/media/Alyona@1x.11e8c724.png" srcSet="/_next/static/media/Alyona@2x.d022a1c2.png 2x" alt="" class="picture__image main-about-us__person-img" width="275" />
-											</picture>
-									</div>
-								</div>
-
-								<div>
-									<div class="main-about-us__person main-about-us__person_7">
-
-										<div class="main-about-us__person-bg">
-											<div class="main-about-us__person-bg-rect _small"></div><div class="main-about-us__person-bg-rect _fill _blue"></div></div><h3 class="text text_bold main-about-us__person-name">Thomas<br /> Finan</h3>
-
-											<picture class="picture__image-container ">
-
-												<img src="_next/static/media/Thomas@1x.a28d0330.png" srcSet="/_next/static/media/Thomas@2x.e98343a8.png 2x" alt="" class="picture__image main-about-us__person-img" width="275" />
-											</picture>
-									</div>
-								</div>
-
-								<div>
-									<div class="main-about-us__person main-about-us__person_3">
-										<div class="main-about-us__person-bg">
-											<div class="main-about-us__person-bg-rect _blue">
-											</div><div class="main-about-us__person-bg-rect _fill"></div>
-										</div><h3 class="text text_bold main-about-us__person-name">Ivo<br />Dimitrov</h3>
-
-											<picture class="picture__image-container ">
-												<img src="_next/static/media/Ivo@1x.6dd3da5f.png" srcSet="/_next/static/media/Ivo@2x.7fd160d5.png 2x" alt="" class="picture__image main-about-us__person-img" width="275" />
-											</picture>
-									</div>
-								</div>
-							</div>
-						</div></div></div>
-
-				</section>
-
-				<section class="security-data">
-					<div class="container container_card">
-						<div class="section-body section-body_card section-body_card_pink-light security-data__body section-body_card_margin-top">
-							<h2 class="heading heading__lvl1">La sécurité de vos Grand-Parents </h2>
-							<ul class="security-data__list margin-top-default">
-
-								<li class="security-data-list__item">
-										<div class="security-data-list__icon-wrap">
-												<img src="_next/static/media/gdpr.svg" alt="" class="security-data-list__icon" />
-										</div><h3 class="heading margin-top-sm">Our servers are protected and hosted in the European Union</h3><p class="text margin-top-xs">We comply with the 2016 General Data Protection Rules (GDPR)</p>
-									</li>
-
-								<li class="security-data-list__item">
-										<div class="security-data-list__icon-wrap"><img src="_next/static/media/tls-protocol.svg" alt="" class="security-data-list__icon" />
-											</div><h3 class="heading margin-top-sm">TLS protocol</h3><p class="text margin-top-xs">All information and registration data are encrypted before being sent to our servers so that no one can intercept them</p>
-									</li>
-
-								<li class="security-data-list__item"><div class="security-data-list__icon-wrap">
-										<img src="_next/static/media/3dsecure.svg" alt="" class="security-data-list__icon" />
-										</div><h3 class="heading margin-top-sm">3D Secure</h3>
-										<p class="text margin-top-xs">Confirm each online card transaction with a unique one-time password</p></li>
-
-							</ul>
-						</div>
-					</div>
-				</section>
 
 				<script>
 
@@ -827,119 +766,19 @@
 						item.addEventListener('click',()=>{
 						  //console.log(item.getAttribute('data-time'));
 						  //let parent = item.parentElement;
-						  //console.log(parent);
+						  console.log(parent);
 						  if(item.style.backgroundColor == 'blue')
 							item.style.backgroundColor = 'white';
 						  else
 							item.style.backgroundColor = 'blue'
 
-                        console.log(item.parentElement.id);
-                        let parel =item.parentElement;
-                            //console.log(parel.children)
-                        Array.prototype.forEach.call(parel.children,child =>{
-                            child.nextElementSibling.style.backgroundColor="blue";
-							item.addEventListener('click',()=>{
-								if(item.style.backgroundColor == 'blue')
-								child.nextElementSibling.style.backgroundColor="white";
-								else
-								child.nextElementSibling.style.backgroundColor="blue";
-							});
-                        })
+
 						});
 					  }
 
 					)
 
 
-					document.querySelectorAll('.allJourney').forEach((curr,index,arrays)=>{
-
-                        curr.addEventListener('click',()=>{
-							//initialize document
-
-							var mornings=document.querySelectorAll('.inJourney');
-
-
-                            var ArrayJourney;
-                            ArrayJourney=Array.from(mornings);
-                            var ArrayMorning=ArrayJourney.slice(0,7);
-                            var ArrayMidday=ArrayJourney.slice(7,14);
-                            var ArrayAfternoon=ArrayJourney.slice(14,21);
-                            var ArrayNight=ArrayJourney.slice(21,28);
-
-							if(curr.style.backgroundColor=="blue"){
-								curr.style.backgroundColor="white";
-
-                                ArrayMorning[index].style.backgroundColor="white";
-                                ArrayMidday[index].style.backgroundColor="white";
-                                ArrayAfternoon[index].style.backgroundColor="white";
-                                ArrayNight[index].style.backgroundColor="white";
-
-
-							}else{
-								curr.style.backgroundColor="blue";
-
-                                //console.log(ArrayMorning,ArrayMidday,ArrayAfternoon,ArrayNight);
-                                ArrayMorning[index].style.backgroundColor="blue";
-                                ArrayMidday[index].style.backgroundColor="blue";
-                                ArrayAfternoon[index].style.backgroundColor="blue";
-                                ArrayNight[index].style.backgroundColor="blue";
-
-                            }
-
-                            //document.querySelectorAll('.inJourney').forEach()
-
-						})
-					})
-
-                    document.querySelectorAll('.night').forEach((curr,ind)=>{
-                        curr.addEventListener("click",()=>{
-
-                            var mornings=document.querySelectorAll('.inJourney');
-                            var ArrayJourney=Array.from(mornings);
-
-                            if(curr.style.backgroundColor=="blue"){
-                                curr.style.backgroundColor='white';
-                                ArrayJourney[ind].style.backgroundColor="white";
-                            }else{
-                                curr.style.backgroundColor='blue';
-                                ArrayJourney[ind].style.backgroundColor="blue";
-                            }
-                        })
-                    })
-
-                    document.querySelectorAll('.allDay').forEach((curr,index)=>{
-                        var alldays=document.querySelectorAll('.everyday');
-                        var ArrayDays=Array.from(alldays);
-                        var ArrayMorning=ArrayDays.slice(0,7);
-                        var ArrayMidday=ArrayDays.slice(7,14);
-                        var ArrayAfternoon=ArrayDays.slice(14,21);
-                        var ArrayNight=ArrayDays.slice(21,28);
-                        var ArrayWholeJourney=ArrayDays.slice(28,35);
-                        var ArrayNightAndMorning=ArrayDays.slice(35,42);
-
-                        curr.addEventListener('click',()=>{
-                            if(curr.style.backgroundColor=='blue'){
-                                curr.style.backgroundColor="white";
-
-                                ArrayMorning[index].style.backgroundColor="white";
-                                ArrayMidday[index].style.backgroundColor="white";
-                                ArrayAfternoon[index].style.backgroundColor="white";
-                                ArrayNightAndMorning[index].style.backgroundColor="white";
-                                ArrayWholeJourney[index].style.backgroundColor="white";
-                                ArrayNight[index].style.backgroundColor="white";
-                            }else{
-
-                                curr.style.backgroundColor="blue";
-                                ArrayMorning[index].style.backgroundColor="blue";
-                                ArrayMidday[index].style.backgroundColor="blue";
-                                ArrayAfternoon[index].style.backgroundColor="blue";
-                                ArrayNightAndMorning[index].style.backgroundColor="blue";
-                                ArrayWholeJourney[index].style.backgroundColor="blue";
-                                ArrayNight[index].style.backgroundColor="blue";
-
-                            }
-                        })
-                    })
 
 				  var currentTab = 0; // Current tab is set to be the first tab (0)
 				  showTab(currentTab); // Display the current tab
