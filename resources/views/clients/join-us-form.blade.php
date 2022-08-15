@@ -20,7 +20,9 @@
                         <div class="text-center">
                             <h3 class="text-gradient text-primary">Rejoindre Youdom - CARE</h3>
                             <p class="mb-0">
-                            Pour toute autre question, y compris les opportunités de partenariat, veuillez envoyer un e-mail à hello@youdom.com ou contactez-nous en utilisant notre formulaire de contact
+                            Pour toute autre question, y compris les opportunités de partenariat, 
+                            veuillez envoyer un e-mail à hello@youdom.com ou contactez-nous en utilisant notre 
+                            formulaire de contact
                             </p>
                         </div>
                         <form id="join-us-form" method="post" action="{{ route('join-confirm') }}" autocomplete="on">
@@ -51,7 +53,7 @@
 											
                                     </div>
                                 </div>
-                                  <div class="row">
+                                <div class="row">
                                   
                                     <div class="col-md-6">
                                     <div class="input-group mb-4">
@@ -103,12 +105,12 @@
 								<div class="tab">
 									<div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-                      Sélectionnez le poste auquel vous souhaiter postuler
-                      </label>
-										<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
-                      <option value="">
-                        Sélectionner dans la liste
-                    </option>
+											  Sélectionnez le poste auquel vous souhaiter postuler
+											  </label>
+																<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+											  <option value="">
+												Sélectionner dans la liste
+											</option>
                                             <optgroup label="Les metiers pour la famille et les personnes fragiles">
                                               
                                                 <option value="Auxiliaire de vie sociale (AVS)">
@@ -192,37 +194,37 @@
 										</select>
 										
 									</div>
-                  <br>
-                  <div class="form-group mb-0 mt-md-0 mt-4">
+									<br>
+								<div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-                      À partir de quand êtes-vous disponible ?
-                      </label>
-										<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
-                        <option value="">
-                          Sélectionner dans la liste
-                      </option>
-                    
-                                              
-                      <option value="Immédiatement">
-                        Immédiatement
-                      </option>
-
-                      <option value="Dans 1 mois">
-                        Dans 1 mois
-                      </option>
-
-                      <option value="Dans 2 mois">
-                        Dans 2 mois
-                      </option>
-
-                      <option value="Dans 2 mois">
-                        Dans 3 mois
-                      </option>
-
-										</select>
+										  À partir de quand êtes-vous disponible ?
+										  </label>
+									<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+											<option value="">
+											  Sélectionner dans la liste
+										  </option>
 										
-									</div>
-                  <br>
+																  
+										  <option value="Immédiatement">
+											Immédiatement
+										  </option>
+
+										  <option value="Dans 1 mois">
+											Dans 1 mois
+										  </option>
+
+										  <option value="Dans 2 mois">
+											Dans 2 mois
+										  </option>
+
+										  <option value="Dans 2 mois">
+											Dans 3 mois
+										  </option>
+
+									</select>
+										
+								</div>
+							<br>
 								</div>
 								
 								<div class="tab">

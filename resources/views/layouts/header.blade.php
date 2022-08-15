@@ -1,24 +1,29 @@
 <div class="header__container">
 
-			<aside class="popup popup-promo" data-test="popup-promo">
+	<aside class="popup popup-promo" data-test="popup-promo">
 
-<div class="container">
-	<div class="popup-promo__body popup-promo__body_it-banking">
-		<p class="text color_white popup-promo__description">
-			Take your chance to get 6 months free on a Start plan
-		</p>
-		<div class="popup-promo__btn-wrap popup-promo__btn-wrap_it-banking">
-			<a href="#main-promo-six-months-free" class="button button_xsmall button_white" data-test="popup-promo__learn-more">
-				Learn more
-			</a>
+		<div class="container">
+			<div class="popup-promo__body popup-promo__body_it-banking">
+				<p class="text color_white popup-promo__description">
+					Take your chance to get 6 months free on a Start plan
+				</p>
+				<div class="popup-promo__btn-wrap popup-promo__btn-wrap_it-banking" style="margin-top:-13px;">
+					<a href="#main-promo-six-months-free" class="button button_xsmall button_white" data-test="popup-promo__learn-more">
+						Learn more
+					</a>
+				</div>
+				<div class="popup__close popup__close_white" data-test="popup-promo__close" 
+					style="display: flex; justify-content: center; align-items: center; margin-top:-13px;">
+					
+					<span style="font-size: 20px; color: white;">
+						<i class="fa-solid fa-xmark"></i>
+					  </span>
+				</div>
+				
+			</div>
+			
 		</div>
-		<div class="popup__close popup__close_white" data-test="popup-promo__close">
-		</div>
-
-	</div>
-
-</div>
-</aside>
+		</aside>
 
 			<aside class="popup popup-promo" style="margin-left:-85px; font-family:Montserrat, sans-serif; font-size:14px; background-color:white;"
 			data-test="popup-promo">
@@ -96,7 +101,7 @@
 									</li>
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="#">Contact</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('contact') }}">Contact</a>
 									</li>
 
 

@@ -50,20 +50,21 @@
 					</div>
 				</section>
 
-								<section class="main-invoicing">
+				<section class="main-invoicing" >
 
-					<div class="container container_card">
+					<div class="container container_card" >
 
-						<div class="section-body section-body_card section-body_card_pink section-body_card_margin-top main-invoicing__body">
+						<div class="section-body section-body_card 
+						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
 
-							<h2 class="heading heading__lvl1 color_blue">Des services à la personne pour toutes et tous
+							<h2 class="heading heading__lvl1 color_blue" style="color: white;">Des services à la personne pour toutes et tous
 							</h2>
-							<p class="margin-top-xs text">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
+							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
 								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et
 									vous permet une déduction d'impôt</span></b></p>
 
-								<p class="margin-top-xs text">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
-									<a href="{{ route('services') }}">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
+								<p class="margin-top-xs text" style="color: white;">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
+									<a href="{{ route('services') }}" style="color: white;">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
 
 							<div class="margin-top-lg main-invoicing__content-wrap">
 
@@ -72,23 +73,27 @@
 									<ul class="main-invoicing__list">
 
 										<li><div class="main-invoicing__list-icon-wrap">
-											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg></div>
-											<p class="margin-top-xs text"> <b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
+											<svg class="icon  icon_sm"><use href="#hourglass"></use></svg>
+											
+										</div>
+											<p class="margin-top-xs text" style="color: white;"> 
+												
+												<b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
 										</li>
 
 										<li>
 											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#link_ver-2"></use></svg></div>
-											<p class="margin-top-xs text">Sortie d'hospitalisation</p>
+											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
 										</li>
 
 										<li>
 											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#idea"></use></svg></div>
-											<p class="margin-top-xs text">Situation de handicap</p>
+											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
 										</li>
 
 										<li>
 											<div class="main-invoicing__list-icon-wrap"><svg class="icon  icon_sm"><use href="#invoice"></use></svg></div>
-											<p class="margin-top-xs text">Et bien plus encore !</p>
+											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
 										</li>
 
 									</ul>
@@ -132,14 +137,15 @@
 									</p>
 									<ul class="margin-top-default list list_10px list_bullet-color_blue">
 												<li>
-													<h4 class="heading heading__lvl4">GARANTIE</h4><span class="text">Un(e) auxiliaire de vie unique et adapté à vos besoins
+													<h4 class="heading heading__lvl4">GARANTIE</h4>
+													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
 													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
 													sur-mesure et adapté à vos besoins.</span>
 												</li>
 
 												<li>
 													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
-													<span class="text">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
+													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
 													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
 													</span>
 												</li>
@@ -149,6 +155,190 @@
 					</div>
 
 				</section>
+
+				<section class="lp-banking-track-cashflow" style="margin-top:-10%">
+					<div class="container">
+
+						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
+							
+
+							<div class="lp-banking-track-cashflow__content">
+
+									<ul class="margin-top-default list list_10px list_bullet-color_blue">
+												<li>
+													<h4 class="heading heading__lvl4">PROFESSIONNALISME</h4>
+													<span class="text" style="color:black;">Nos intervenants sont hautement qualifiés 
+														pour vous apporter un service de très haute qualité. Professionnalisme, 
+														confidentialité et respect sont les valeurs fondamentales de chaque service 
+														que nous offrons.</span>
+												</li>
+
+												<li>
+													<h4 class="heading heading__lvl4">UN SERVICE SUR MESURE</h4>
+													<span class="text" style="color:black;">
+														Chez YOUDOM-CARE, nous savons que les soins complets aux personnes âgées vont bien 
+														au-delà de la simple assistance aux besoins de base. A cet effet, nous concevons 
+														un plan de soins adapté aux besoins de chaque client.
+													</span>
+												</li>
+
+												<li>
+													<h4 class="heading heading__lvl4">ÉCONOMIE</h4>
+													<span class="text" style="color:black;">
+														Crédit d’impôt de 50%* des sommes versées.
+													</span>
+												</li>
+
+												<li>
+													<h4 class="heading heading__lvl4">Formation</h4>
+													<span class="text" style="color:black;">
+														Formation continue de nos intervenants, auxiliaires de vie 
+													</span>
+												</li>
+
+												
+									</ul>
+							</div>
+
+							<div class="image lp-banking-track-cashflow__image-wrap">
+								<ul class="margin-top-default list list_10px list_bullet-color_blue">
+									<li>
+										<h4 class="heading heading__lvl4">PRIVILÈGES</h4>
+										<span class="text" style="color:black;">
+											Un suivi d’exception au quotidien et un diagnostic renforcé qui font la différence !
+										</span>
+									</li>
+
+									<li>
+										<h4 class="heading heading__lvl4">Des intervenants fiables </h4>
+										<span class="text" style="color:black;">Nous vous garantissons toujours la même aide à 
+											domicile ou auxiliaire de vie, formée et sélectionnée pour ses qualités humaines qui 
+											interviendra auprès de votre proche.
+										</span>
+									</li>
+
+									<li>
+										<h4 class="heading heading__lvl4">Ambiance familiale </h4>
+										<span class="text" style="color:black;">Nous traitons vos proches comme les membres de 
+											notre famille. Nous abordons tous les aspects de la vie d’une personne âgée, malade, 
+											en situation d’handicap en nous efforçant d’enrichir sa journée de toutes les manières
+											 possibles !
+										</span>
+									</li>
+									<li>
+										<h4 class="heading heading__lvl4">Coordination de soin</h4>
+										<span class="text" style="color:black;">
+											Coordination avec les intervenants médicaux et paramédicaux
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+				<!-- Section with four info areas left & one card right with image and waves -->
+				  <section class="py-7">
+					<div class="container">
+					  <h1 class="text-center ">NOTRE CHARTE QUALITÉ <i class="fas fa-facebook"></i></h1>
+					  <div class="row align-items-center">
+						<div class="col-lg-9">
+						  <div class="row justify-content-start">
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="main-invoicing__list-icon-wrap">
+											<svg class="icon  icon_sm"><use href="#check"></use></svg>
+											
+										</div>
+								<h5>Choisir YOUDOM-CARE </h5>
+								<p>C’est s’entourer de vrais professionnels et dont le seul objectif est  la satisfaction des clients </p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								  
+								</div>
+								<h5>Accueil, Disponibilité, Réactivité </h5>
+								<p>Répondre de manière rapide et adaptée à chaque demande</p>
+							  </div>
+							</div>
+						  </div>
+						  <div class="row justify-content-start">
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								 
+								</div>
+								<h5>Clarté, Rigueur, Transparence</h5>
+								<p>Fournir des informations complètes et fiables tout au long de la prestation</p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								 
+								</div>
+								<h5>Personnalisation, Écoute, Suivi</h5>
+								<p>Adapter notre intervention à l’évolution des besoins des clients.</p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								 
+								</div>
+								<h5>Compétences, Expériences, Savoir-faire</h5>
+								<p>Mettre au service des clients des intervenants compétents et professionnels.</p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								 
+								</div>
+								<h5>Confidentialité, Respect, Discrétion</h5>
+								<p>Respecter la vie privée et l’intimité des clients. </p>
+							  </div>
+							</div>
+							<div class="col-md-6">
+							  <div class="info">
+								<div class="icon icon-shape text-center">
+								 
+								</div>
+								<h5>Qualité, Évaluation, Amélioration</h5>
+								<p>Faire évoluer les pratiques pour améliorer la satisfaction des clients.</p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						<div class="col-lg-3 ms-auto mt-lg-0 mt-4">
+						  <div class="card shadow-lg">
+							<div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+							  <div class="d-block blur-shadow-image">
+								<img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
+							  </div>
+							  <div class="colored-shadow" style="background-image: url(&quot;https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/funny.jpg&quot;);"></div>
+							</div>
+							<div class="card-body">
+							  <a href="javascript:;">
+								<h5 class="mt-3">
+								  L’HUMAIN AU CŒUR DE L’ENTREPRISE
+								</h5>
+							  </a>
+							  <p>
+								Nous mettons en place des pratiques de management valorisant le travail exécuté et la personne elle-même.
+Youdom-care  motive ses collaborateurs à aller toujours plus loin dans l’excellence, récompense les performances et encourage le renforcement des compétences
+
+							  </p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </section>
+
                 <div class="container mt-5">
 					<h1 class="text-center ">NOTRE CHARTE QUALITÉ</h1>
                     <p class="text-center">La qualité au cœur de toutes nos prestations</p>
