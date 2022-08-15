@@ -1,0 +1,19 @@
+#wrapper ,#wrapper2,#wrapper3,#wrapper4,#wrapper5,#wrapper6{
+
+    overflow: hidden;
+    transition: max-height 300ms;
+    max-height: 0; /* <---hide by default */
+  }
+  #wrapper.open ,#wrapper2.open,#wrapper3.open,#wrapper4.open,#wrapper5.open,#wrapper6.open{
+    max-height: 100px; /* <---when open, allow content to expand to take up as much height as it needs, up to e.g. 100px */
+  }
+  .hidden{
+    display: none;
+  }
+  .hiden.open{
+    display: block;
+  }
+
+
+
+

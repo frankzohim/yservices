@@ -77,3 +77,6 @@ Route::group(['prefix' => 'clients'], function () {
 
 	})->name('join-confirm');
 });
+Route::get('/co',function(){
+    return view('co');
+});
