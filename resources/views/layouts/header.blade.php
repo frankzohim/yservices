@@ -7,13 +7,13 @@
 				<p class="text color_white popup-promo__description">
 					Take your chance to get 6 months free on a Start plan
 				</p>
-				<div class="popup-promo__btn-wrap popup-promo__btn-wrap_it-banking" style="margin-top:-13px;">
+				<div class="popup-promo__btn-wrap popup-promo__btn-wrap_it-banking" >
 					<a href="#main-promo-six-months-free" class="button button_xsmall button_white" data-test="popup-promo__learn-more">
 						Learn more
 					</a>
 				</div>
 				<div class="popup__close popup__close_white" data-test="popup-promo__close" 
-					style="display: flex; justify-content: center; align-items: center; margin-top:-13px;">
+					style="display: flex; justify-content: center; align-items: center;">
 					
 					<span style="font-size: 20px; color: white;">
 						<i class="fa-solid fa-xmark"></i>
