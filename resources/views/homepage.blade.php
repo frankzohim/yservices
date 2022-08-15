@@ -209,8 +209,8 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr class="inJourney" id="tag">
-												<th>Matin</th>
+											<tr>
+												<th id="morning">Matin</th>
 												<td class="inJourney" data-time="Lundi - Matin"></td>
 												<td class="inJourney" data-time="Mardi - Matin"></td>
 												<td class="inJourney" data-time="Mercredi - Matin"></td>
@@ -220,8 +220,8 @@
 												<td class="inJourney" data-time="Dimanche - Matin"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr class="inJourney">
-												<th>Midi</th>
+											<tr>
+												<th id="midday">Midi</th>
 												<td class="inJourney" data-time="Lundi - Midi"></td>
 												<td class="inJourney" data-time="Mardi - Midi"></td>
 												<td class="inJourney" data-time="Mercredi - Midi"></td>
@@ -231,8 +231,8 @@
 												<td class="inJourney" data-time="Dimanche - Midi"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr class="inJourney">
-												<th>Après-Midi</th>
+											<tr>
+												<th id="afternoon">Après-Midi</th>
 												<td class="inJourney" data-time="Lundi - Après-midi"></td>
 												<td class="inJourney" data-time="Mardi - Après-midi"></td>
 												<td class="inJourney" data-time="Mercredi - Après-midi"></td>
@@ -242,8 +242,8 @@
 												<td class="inJourney" data-time="Dimanche - Après-midi"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr class="inJourney">
-												<th>Soir</th>
+											<tr>
+												<th id="night">Soir</th>
 												<td class="inJourney" data-time="Lundi - Soir"></td>
 												<td class="inJourney" data-time="Mardi - Soir"></td>
 												<td class="inJourney" data-time="Mercredi - Soir"></td>
@@ -253,9 +253,9 @@
 												<td class="inJourney" data-time="Dimanche - Soir"></td>
 												<td class="allDays"></td>
 											</tr>
-											<tr class="allJourney">
+											<tr>
 												<th>Journée entière (8h > 20h)</th>
-												<td class="allJourney" data-time="Lundi - Journée"></td>
+												<td class="allJourney " data-time="Lundi - Journée"></td>
 												<td class="allJourney" data-time="Mardi - Journée"></td>
 												<td class="allJourney" data-time="Mercredi - Journée"></td>
 												<td class="allJourney" data-time="Jeudi - Journée"></td>
@@ -817,7 +817,7 @@
 						item.addEventListener('click',()=>{
 						  //console.log(item.getAttribute('data-time'));
 						  //let parent = item.parentElement;
-						  console.log(parent);
+						  //console.log(parent);
 						  if(item.style.backgroundColor == 'blue')
 							item.style.backgroundColor = 'white';
 						  else
@@ -825,14 +825,63 @@
 
                         console.log(item.parentElement.id);
                         let parel =item.parentElement;
-
+                            //console.log(parel.children)
                         Array.prototype.forEach.call(parel.children,child =>{
                             child.nextElementSibling.style.backgroundColor="blue";
+							item.addEventListener('click',()=>{
+								if(item.style.backgroundColor == 'blue')
+								child.nextElementSibling.style.backgroundColor="white";
+								else
+								child.nextElementSibling.style.backgroundColor="blue";
+							});
                         })
 						});
 					  }
 
 					)
+
+
+					document.querySelectorAll('.allJourney').forEach((curr,index,arrays)=>{
+
+                        curr.addEventListener('click',()=>{
+							//initialize document
+
+							var mornings=document.querySelectorAll('.inJourney');
+
+							var middays=document.getElementById('midday');
+							var afternoons=document.getElementById('afternoon');
+							var nights=document.getElementById('night');
+                            var ArrayJourney;
+                            ArrayJourney=Array.from(mornings);
+                            var ArrayMorning=ArrayJourney.slice(0,7);
+                            var ArrayMidday=ArrayJourney.slice(7,14);
+                            var ArrayAfternoon=ArrayJourney.slice(14,21);
+                            var ArrayNight=ArrayJourney.slice(21,28);
+
+							if(curr.style.backgroundColor=="blue"){
+								curr.style.backgroundColor="white";
+
+                                ArrayMorning[index].style.backgroundColor="white";
+                                ArrayMidday[index].style.backgroundColor="white";
+                                ArrayAfternoon[index].style.backgroundColor="white";
+                                ArrayNight[index].style.backgroundColor="white";
+
+
+							}else{
+								curr.style.backgroundColor="blue";
+
+                                //console.log(ArrayMorning,ArrayMidday,ArrayAfternoon,ArrayNight);
+                                ArrayMorning[index].style.backgroundColor="blue";
+                                ArrayMidday[index].style.backgroundColor="blue";
+                                ArrayAfternoon[index].style.backgroundColor="blue";
+                                ArrayNight[index].style.backgroundColor="blue";
+
+                            }
+
+                            //document.querySelectorAll('.inJourney').forEach()
+
+						})
+					})
 
 
 
