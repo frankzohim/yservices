@@ -101,7 +101,7 @@
 									</li>
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('contact') }}">Contact</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('contact.create') }}">Contact</a>
 									</li>
 
 

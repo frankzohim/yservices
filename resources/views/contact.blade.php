@@ -8,8 +8,8 @@
     <div class="row">
       
       @if (session('update_success'))
-         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+         <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: white">
+          <strong>Super !</strong> votre demande a été envoyé avec succès.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
@@ -21,11 +21,23 @@
         </div>
       @endif
 
+      @if ($errors->any())
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="color: white">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      @endif
+
       <div class="col">
         <div class="card overflow-hidden mb-5">
           <div class="row">
             <div class="col-lg-7">
-              <form class="p-3" id="contact-form" method="post">
+              <form class="p-3" id="contact-form" method="post" action="{{ route('contact.store') }}">
+                @csrf
                 <div class="card-header px-4 py-sm-5 py-3" style="background-color: #1b138a; color:white">
                   <h2 style="color:white">Des Questions ?</h2>
                   <p class="lead"> Entrez en contact avec nous.</p>
@@ -34,20 +46,20 @@
                 <div class="card-body pt-1">
                   <div class="row">
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Nom complet" type="text" required autofocus>
+                      <input class="form-control" placeholder="Nom complet" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
                     </div>
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Email" type="email" required>
+                      <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Téléphone" type="tel" required>
+                      <input class="form-control" placeholder="Téléphone" name="phone" type="tel" value="{{ old('phone') }}" required>
                     </div>
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Sujet" type="text" required>
+                      <input class="form-control" placeholder="Sujet" name="subject" type="text" value="{{ old('subject') }}" required>
                     </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <div class="form-group mb-0">
-                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Votre message..." required></textarea>
+                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Votre message..." required>{{ old('message') }}</textarea>
                       </div>
                     </div>
                   </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,8 +36,9 @@ Route::get('contact', function () {
 })->name('contact');
 
 
-   Route::resources([
+Route::resources([
         'need' => NeedController::class,
+				'contact' => ContactController::class,
     ]);
 
 require __DIR__ . '/auth.php';
