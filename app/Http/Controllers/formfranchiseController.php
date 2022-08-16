@@ -67,13 +67,7 @@ class formfranchiseController extends Controller
             'news'=>$request->news,
         ]);
 
-
-
-        if($franchiseuser->save())
-        return redirect()->back()->with('success','votre reponse a bien été envoyé');
-    else
-        return redirect()->back()->with('update_failure','Une erreur est survenue, veuillez réessayez plutard');
-
+        return view('clients.confirmfranchise');
 
     }
 
