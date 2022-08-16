@@ -46,7 +46,7 @@ class formfranchiseController extends Controller
             'town' => ['required'],
             'capital' => ['required'],
             'description' => ['bail|required|max:500'],
-            'news' => ['required|boolean'],
+            'news' => ['required|string'],
         ]);
 
         $franchiseuser = formfranchise::create([

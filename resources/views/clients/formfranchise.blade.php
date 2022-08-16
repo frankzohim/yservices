@@ -4,9 +4,8 @@
 @section('content')
 
     <!-- -------- START HEADER 8 w/ card over right bg image ------- -->
-    <form role="form" action="{{ route('partner_form.create')}}" method="POST">
-        @csrf
-        @method('PUT')
+
+
         <header>
             <div class="page-header min-vh-85">
                 <div>
@@ -17,6 +16,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
+                        
                         <div class="col-lg-6 d-flex justify-content-center flex-column">
                             <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                                 <div class="text-center">
@@ -25,7 +25,8 @@
 
                                     </p>
                                 </div>
-                                <form id="contact-form" method="post" action="{{ route('partner_form.create')}}" autocomplete="off">
+                                <form id="contact-form" method="post" action="{{ route('partner_form.store')}}" autocomplete="off">
+                                    @csrf
                                     <div class="card-body pb-2">
                                         <div class="row justify-content-center">
                                             <h5 class="text-gradient text-primary" style="text-align: center;">A propos de
@@ -60,26 +61,25 @@
                                         <br>
                                         <div class="row">
 
-                                            <div class="col-md-12{{ $errors->has('civility') ? ' has-danger' : '' }}">
+                                           <fieldset> <div class="col-md-12{{ $errors->has('civility') ? ' has-danger' : '' }}">
                                                 <div class="form-check form-check-inline{{ $errors->has('civility') ? ' is-invalid' : '' }}">
                                                     <input class="form-check-input" type="radio" name="civility"
-                                                        id="civility" value="{{ old('civility') }}" checked>
+                                                        id="civility" value="monsieur" checked>
                                                     <label class="form-check-label" for="civility"
                                                         style="color:#1b138a;">
                                                         {{ __('Monsieur')}}
                                                     </label>
                                                 </div>
-
                                                 <div class="form-check form-check-inline{{ $errors->has('civility') ? ' is-invalid' : '' }}">
                                                     <input class="form-check-input" type="radio" name="civility"
-                                                        id="civility" value="{{ old('civility')}}">
+                                                        id="civility" value="madame">
                                                     <label class="form-check-label" for="civility"
                                                         style="color:#1b138a;">
                                                         {{ __('Madame')}}
                                                     </label>
                                                 </div>
 
-                                            </div>
+                                            </div> </fieldset>
                                         </div>
                                         <br>
                                         <div class="row">
@@ -214,7 +214,7 @@
 
                                     <div class="row">
                                         <div class="col-md-12{{ $errors->has('knowledge') ? ' has-danger' : '' }}">
-                                            <select name="knowlwdgw"
+                                            <select name="knowledge"
                                                 class="form-control form-select{{ $errors->has('knowledge') ? ' is-invalid' : '' }}"
                                                 aria-label="Default select example" id="knowledge"
                                                 value="{{ old('knowledge') }}">
@@ -309,32 +309,33 @@
 
                                     <div class="row">
 
-                                        <div class="col-md-6">
+
                                             Je veux recevoir les actualités du réseau de franchise
                                         </div>
+                                        <fieldset> <div class="col-md-6">
 
                                         <div class="col-md-6{{ $errors->has('news') ? ' has-danger' : '' }}">
                                             <div class="form-check form-check-inline">
                                                 <input
                                                     class="form-check-input{{ $errors->has('news') ? ' is-invalid' : '' }}"
-                                                    type="radio" name="news" id="flexRadioDefault1"
-                                                    value="{{ old('news') }}" checked>
-                                                <label class="form-check-label" for="flexRadioDefault1"
+                                                    type="radio" name="news" id="news"
+                                                    value="oui" checked>
+                                                <label class="form-check-label" for="news"
                                                     style="color:#1b138a;">
                                                     {{ __('Oui') }}
                                                 </label>
                                             </div>
 
                                             <div class="form-check form-check-inline{{ $errors->has('news') ? ' is-invalid' : '' }}">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                    id="flexRadioDefault2" value="{{ old('news') }}">
-                                                <label class="form-check-label" for="flexRadioDefault2"
+                                                <input class="form-check-input" type="radio" name="news"
+                                                    id="news" value="non">
+                                                <label class="form-check-label" for="news"
                                                     style="color:#1b138a;">
                                                     {{ __('Non') }}
                                                 </label>
                                             </div>
 
-                                        </div>
+                                        </div> </fieldset>
                                     </div>
                                     <br>
 
@@ -432,5 +433,5 @@
         }
     </script>
 
-    </form>
+
 @endsection

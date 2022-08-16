@@ -16,11 +16,6 @@ return new class extends Migration
     {
         Schema::create('formfranchises', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class)
-                ->constrained()
-                ->onUpdate('restrict')
-                ->onDelete('restrict');
-
             $table->text('research');
             $table->string('civility');
             $table->string('name');
@@ -35,7 +30,7 @@ return new class extends Migration
             $table->string('town');
             $table->text('capital');
             $table->longText('description');
-            $table->boolean('news');
+            $table->string('news');
             $table->timestamps();
         });
     }
