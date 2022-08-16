@@ -170,6 +170,7 @@
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h3 class=" color_blue-3 ">Puis-je faire évoluer le planning d'interventionou annuler une
                                 intervention?</h3>
+
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"

@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
-
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\formfranchiseController;
+use App\Models\formfranchise;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,7 @@ use App\Http\Controllers\NeedController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return view('homepage');
@@ -35,17 +38,24 @@ Route::get('contact', function () {
 })->name('contact');
 
 
-   Route::resources([
+Route::resources([
         'need' => NeedController::class,
+        'contact' => ContactController::class,
+        'partner_form'=> formfranchiseController::class,
     ]);
+
+
+
+
+
 
 require __DIR__ . '/auth.php';
 
 Route::group(['prefix' => 'clients'], function () {
+    Route::get('franchise', function(){
+        return view("clients/franchise");
+    })->name('become_partner');
 
-	Route::get('franchise', function () {
-		return view("clients/franchise");
-	})->name('become_partner');
 
 	Route::get('join-us', function () {
 		return view("clients/rejoindre");
@@ -57,10 +67,7 @@ Route::group(['prefix' => 'clients'], function () {
 
 	})->name('join-us-form');
 
-    Route::get('formfranchise', function () {
-		return view("clients/formfranchise");
 
-	})->name('partner_form');
 
   Route::get('fonctionement', function () {
 		return view("clients/fonctionement");
@@ -76,6 +83,11 @@ Route::group(['prefix' => 'clients'], function () {
 		return view("clients/join-confirm");
 
 	})->name('join-confirm');
+
+    Route::post('formfranchise', function () {
+        return view("clients/formfranchise");
+
+      })->name('partner_form');
 });
 Route::get('/co',function(){
     return view('co');
