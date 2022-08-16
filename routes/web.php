@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\formfranchiseController;
 use App\Models\formfranchise;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,10 +38,10 @@ Route::get('contact', function () {
 })->name('contact');
 
 
-   Route::resources([
+Route::resources([
         'need' => NeedController::class,
+        'contact' => ContactController::class,
         'partner_form'=> formfranchiseController::class,
-
     ]);
 
 
