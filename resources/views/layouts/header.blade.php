@@ -93,7 +93,7 @@
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
-										Fonctionnement
+										<a class="link_inherit" data-test="header_nav__blog" href="{{ route('functioning') }}"> Fonctionnement</a>
 
 									</li>
 

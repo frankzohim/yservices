@@ -106,9 +106,9 @@
 
 							<ul class="footer-links">
 								
-								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide à domicile pour les personnes âgées</a></li>
-								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide à domicile pour des personne handicapées</a></li>
-								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide à domicile après retour d’hospitalisation</a></li>
+								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide pour les personnes âgées</a></li>
+								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide pour des personne handicapées</a></li>
+								<li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Aide après retour d’hospitalisation</a></li>
 								<li class="text text_md color_grey">Aide à la vie social</li>
 							</ul>
 

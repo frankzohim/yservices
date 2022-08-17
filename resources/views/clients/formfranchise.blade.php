@@ -2,10 +2,6 @@
 @section('title', __('Formulaire - Devenir Partenaire'))
 
 @section('content')
-
-    <!-- -------- START HEADER 8 w/ card over right bg image ------- -->
-
-
     <header>
         <div class="page-header min-vh-85">
             <div>
@@ -32,6 +28,7 @@
                                     <div class="row justify-content-center">
                                         <h5 class="text-gradient text-primary" style="text-align: center;">A propos de
                                             vous</h5>
+
 
                                     </div>
 
