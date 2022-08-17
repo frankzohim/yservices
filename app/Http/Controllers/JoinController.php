@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\join;
+use Illuminate\Support\File;
 use Illuminate\Http\Request;
 
 class JoinController extends Controller
@@ -25,7 +26,7 @@ class JoinController extends Controller
         $join->job=$request->job;
         $join->available=$request->available;
         $join->diploma=$request->diploma;
-        $join->cv=$request->cv;
+        $join->cv=$request->file('cv')->store('public/cv');
 
         if($join->save()){
             return view('clients.join-confirm');

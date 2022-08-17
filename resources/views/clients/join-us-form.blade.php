@@ -25,7 +25,7 @@
                             formulaire de contact
                             </p>
                         </div>
-                        <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on">
+                        <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on" enctype="multipart/form-data">
                            @csrf
                             <div class="card-body pb-2">
                               <div class="tab">
