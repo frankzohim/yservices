@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\JoinRequest;
 use App\Models\join;
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class JoinController extends Controller
         return view('clients.join-us-form');
     }
 
-    public function store(Request $request){
+    public function store(JoinRequest $request){
 
         $join=new join;
         $join->civility=$request->civility;

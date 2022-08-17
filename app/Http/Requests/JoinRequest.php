@@ -13,7 +13,7 @@ class JoinRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,18 @@ class JoinRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'civility'=>['required'],
+            'name'=>['required'],
+            'username'=>['required'],
+            'phone_number'=>['required'],
+            'email'=>['required','email'],
+            'postal_code'=>['required'],
+            'town'=>['required'],
+            'informations'=>['required'],
+            'job'=>['required'],
+            'available'=>['required'],
+            'diploma'=>['required'],
+            'cv'=>['required','file']
         ];
     }
 }
