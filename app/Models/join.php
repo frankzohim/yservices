@@ -16,6 +16,11 @@ class join extends Model
         'phone_number',
         'email',
         'postal_code',
-        'town'
+        'town',
+        'informations',
+        'job',
+        'available',
+        'diploma',
+        'cv'
     ];
 }

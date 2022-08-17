@@ -22,6 +22,11 @@ return new class extends Migration
             $table->string("email")->unique();
             $table->string("postal_code");
             $table->string("town");
+            $table->text('informations');
+            $table->string("job");
+            $table->string("available");
+            $table->string("diploma");
+            $table->string("cv");
             $table->timestamps();
         });
     }

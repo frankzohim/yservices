@@ -25,7 +25,7 @@
                             formulaire de contact
                             </p>
                         </div>
-                        <form id="join-us-form" method="post" action="{{ route('join-confirm') }}" autocomplete="on">
+                        <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on">
                            @csrf
                             <div class="card-body pb-2">
                               <div class="tab">
@@ -101,7 +101,7 @@
 
                                   </div>
                                   <div class="form-group mb-0 mt-md-0 mt-4">
-                                    <textarea name="message" class="form-control" id="message" rows="6" placeholder="Décrivez-vous en au moins 250 caractères"></textarea>
+                                    <textarea name="informations" class="form-control" id="message" rows="6" placeholder="Décrivez-vous en au moins 250 caractères"></textarea>
                                   </div>
 								</div>
 
@@ -202,7 +202,7 @@
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 										  À partir de quand êtes-vous disponible ?
 										  </label>
-									<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+									<select name="available" class="form-control form-select" aria-label="Default select example" id="job">
 											<option value="">
 											  Sélectionner dans la liste
 										  </option>
@@ -220,7 +220,7 @@
 											Dans 2 mois
 										  </option>
 
-										  <option value="Dans 2 mois">
+										  <option value="Dans 3 mois">
 											Dans 3 mois
 										  </option>
 
@@ -235,7 +235,7 @@
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
                       Sélectionner votre diplôme
                       </label>
-										<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+										<select name="diploma" class="form-control form-select" aria-label="Default select example" id="job">
                         <option value="">
                           Sélectionner dans la liste
                       </option>
@@ -258,7 +258,7 @@
                       Charger votre CV
                       </label>
 
-                    <input class="form-control" type="file" id="formFile">
+                    <input class="form-control" type="file" id="formFile" name="cv">
 									</div>
                   <br>
 								</div>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\formfranchiseController;
+use App\Http\Controllers\JoinController;
 use App\Models\formfranchise;
 /*
 |--------------------------------------------------------------------------
@@ -57,10 +58,8 @@ Route::group(['prefix' => 'clients'], function () {
     })->name('become_partner');
 
 
-	Route::get('join-us', function () {
-		return view("clients/rejoindre");
-
-	})->name('join-us');
+	Route::get('join-us',[JoinController::class,'create'])->name('join-us');
+    Route::post('join-us',[JoinController::class,'store'])->name('join.store');
 
 	Route::get('join-us-form', function () {
 		return view("clients/join-us-form");
