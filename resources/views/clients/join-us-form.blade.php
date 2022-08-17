@@ -10,7 +10,7 @@
         <header>
             <div class="page-header min-vh-85">
             <div>
-                <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0" 
+                <img class="position-absolute fixed-top ms-auto w-50 h-100 z-index-0 d-none d-sm-none d-md-block border-radius-section border-top-end-radius-0 border-top-start-radius-0 border-bottom-end-radius-0"
                 src="{{ asset('third/assets/img/curved-images/curved8.jpg') }}" alt="image">
             </div>
             <div class="container">
@@ -20,12 +20,12 @@
                         <div class="text-center">
                             <h3 class="text-gradient text-primary">Rejoindre Youdom - CARE</h3>
                             <p class="mb-0">
-                            Pour toute autre question, y compris les opportunités de partenariat, 
-                            veuillez envoyer un e-mail à hello@youdom.com ou contactez-nous en utilisant notre 
+                            Pour toute autre question, y compris les opportunités de partenariat,
+                            veuillez envoyer un e-mail à hello@youdom.com ou contactez-nous en utilisant notre
                             formulaire de contact
                             </p>
                         </div>
-                        <form id="join-us-form" method="post" action="{{ route('join-confirm') }}" autocomplete="on">
+                        <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on" enctype="multipart/form-data">
                            @csrf
                             <div class="card-body pb-2">
                               <div class="tab">
@@ -37,71 +37,74 @@
                                 </div>
                                 </div>
                                 <div class="col-md-6 ps-md-2">
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1" style="color:#1b138a;">
-                                    Monsieur
-                                    </label>
-                                  </div>
-                                  
-                                  <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2" style="color:#1b138a;">
-                                    Madame
-                                    </label>
-                                  </div>
-											
-                                    </div>
+                                    <fieldset>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="civility" id="flexRadioDefault1" value="monsieur" checked>
+                                            <label class="form-check-label" for="flexRadioDefault1" style="color:#1b138a;">
+                                            Monsieur
+                                            </label>
+                                          </div>
+
+                                          <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="civility" id="flexRadioDefault2" value="madame">
+                                            <label class="form-check-label" for="flexRadioDefault2" style="color:#1b138a;">
+                                            Madame
+                                            </label>
+                                          </div>
+                                    </fieldset>
+
+
+                                </div>
                                 </div>
                                 <div class="row">
-                                  
+
                                     <div class="col-md-6">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Nom" aria-label="Full Name" type="text" autofocus>
+                                      <input class="form-control" placeholder="Nom" name="name" aria-label="Full Name" type="text" autofocus>
                                     </div>
                                     </div>
                                     <div class="col-md-6 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Prénom">
+                                      <input type="text" class="form-control" placeholder="Prénom" name="username">
                                     </div>
                                     </div>
-                                    
+
                                   </div>
-                                  
+
                                   <div class="row">
-                                  
+
                                     <div class="col-md-6">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="tel">
+                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="tel" name="phone_number">
                                     </div>
                                     </div>
                                     <div class="col-md-6 ps-md-2">
                                     <div class="input-group">
-                                      <input type="email" class="form-control" placeholder="Email">
+                                      <input type="email" class="form-control" placeholder="Email" name="email">
                                     </div>
                                     </div>
-                                    
+
                                   </div>
-                                  
+
                                   <div class="row">
-                                  
+
                                     <div class="col-md-6">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="number">
+                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="number" name="postal_code">
                                     </div>
                                     </div>
                                     <div class="col-md-6 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="ville">
+                                      <input type="text" class="form-control" placeholder="ville" name="town">
                                     </div>
                                     </div>
-                                    
+
                                   </div>
                                   <div class="form-group mb-0 mt-md-0 mt-4">
-                                    <textarea name="message" class="form-control" id="message" rows="6" placeholder="Décrivez-vous en au moins 250 caractères"></textarea>
+                                    <textarea name="informations" class="form-control" id="message" rows="6" placeholder="Décrivez-vous en au moins 250 caractères"></textarea>
                                   </div>
 								</div>
-								
+
 								<div class="tab">
 									<div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
@@ -112,7 +115,7 @@
 												Sélectionner dans la liste
 											</option>
                                             <optgroup label="Les metiers pour la famille et les personnes fragiles">
-                                              
+
                                                 <option value="Auxiliaire de vie sociale (AVS)">
                                                    Auxiliaire de vie sociale (AVS)
                                                 </option>
@@ -129,7 +132,7 @@
                                                 <option value="Autre">Autre</option>
                                             </optgroup>
                                             <optgroup label="Les métiers de la vie quotidienne">
-                                              
+
                                                 <option value="Agent d’entretien de petits travaux et de jardins">
                                                    Agent d’entretien de petits travaux et de jardins
                                                 </option>
@@ -149,7 +152,7 @@
                                                 <option value="Chauffeur accompagnateur">Chauffeur accompagnateur</option>
                                             </optgroup>
                                             <optgroup label=" Bureaux & managements">
-                                              
+
                                                 <option value="Responsables de secteur">
                                                   Responsables de secteur
                                                 </option>
@@ -163,7 +166,7 @@
                                                   Chargé de recrutemente
                                                 </option>
                                                 <option value="Chargé de formation">
-                                                  Chargé de formation 
+                                                  Chargé de formation
                                                 </option>
                                                 <option value="Chargé de clientèle">
                                                   Chargé de clientèle
@@ -171,7 +174,7 @@
                                             </optgroup>
 
                                             <optgroup label="Direction et d'encadrement">
-                                              
+
                                                 <option value="Directeur de structure">
                                                   Directeur de structure
                                                 </option>
@@ -192,19 +195,19 @@
                                                 <option value="Communication">Communication</option>
                                             </optgroup>
 										</select>
-										
+
 									</div>
 									<br>
 								<div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 										  À partir de quand êtes-vous disponible ?
 										  </label>
-									<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+									<select name="available" class="form-control form-select" aria-label="Default select example" id="job">
 											<option value="">
 											  Sélectionner dans la liste
 										  </option>
-										
-																  
+
+
 										  <option value="Immédiatement">
 											Immédiatement
 										  </option>
@@ -217,27 +220,27 @@
 											Dans 2 mois
 										  </option>
 
-										  <option value="Dans 2 mois">
+										  <option value="Dans 3 mois">
 											Dans 3 mois
 										  </option>
 
 									</select>
-										
+
 								</div>
 							<br>
 								</div>
-								
+
 								<div class="tab">
                   <div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-                      Sélectionner votre diplôme 
+                      Sélectionner votre diplôme
                       </label>
-										<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+										<select name="diploma" class="form-control form-select" aria-label="Default select example" id="job">
                         <option value="">
                           Sélectionner dans la liste
                       </option>
-                    
-                                              
+
+
                       <option value="BTS économie sociale familiale (BTS ESF)">
                         BTS économie sociale familiale (BTS ESF)
                       </option>
@@ -247,19 +250,19 @@
                       </option>
 
 										</select>
-										
+
 									</div>
                   <br>
                   <div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-                      Charger votre CV 
+                      Charger votre CV
                       </label>
 
-                    <input class="form-control" type="file" id="formFile">							
+                    <input class="form-control" type="file" id="formFile" name="cv">
 									</div>
                   <br>
 								</div>
-								
+
 								<!-- unchange blocks for buttons -->
 								<div class="row">
 									<div class="col-md-12 text-center">
@@ -273,7 +276,7 @@
 									<span class="step"></span>
 									<span class="step"></span>
 								  </div>
-								
+
                             </div>
                         </form>
                         </div>
@@ -289,7 +292,7 @@
     <script>
         var currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
-        
+
         function showTab(n) {
           // This function will display the specified tab of the form...
           var x = document.getElementsByClassName("tab");
@@ -308,7 +311,7 @@
           //... and run a function that will display the correct step indicator:
           fixStepIndicator(n)
         }
-        
+
         function nextPrev(n) {
           // This function will figure out which tab to display
           var x = document.getElementsByClassName("tab");
@@ -327,7 +330,7 @@
           // Otherwise, display the correct tab:
           showTab(currentTab);
         }
-        
+
         function validateForm() {
           // This function deals with validation of the form fields
           var x, y, i, valid = true;
@@ -350,7 +353,7 @@
           }
           return valid; // return the valid status
         }
-        
+
         function fixStepIndicator(n) {
           // This function removes the "active" class of all steps...
           var i, x = document.getElementsByClassName("step");
