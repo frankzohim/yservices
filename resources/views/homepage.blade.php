@@ -270,7 +270,7 @@
                         <td class="night everyday all" data-time="Vendredi - Nuit"></td>
                         <td class="night everyday all" data-time="Samedi - Nuit"></td>
                         <td class="night everyday all" data-time="Dimanche - Nuit"></td>
-                        <td class="allDays all" data-time="Tout les jours-Nuit></td>
+                        <td class="allDays all" data-time="Tout les jours-Nuit"></td>
                       </tr>
                       <tr>
                         <th>24h/24</th>
