@@ -88,7 +88,7 @@
 													<img src="{{  asset('_next/static/media/icones/menage.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="Bike">
+														<input type="checkbox" class="chkbox" name="services[]" value="Bike">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide-ménagère </label>
 												</div>
 
@@ -102,7 +102,7 @@
 
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="service-handicap">
+														<input type="checkbox" class="chkbox" name="services[]" value="service-handicap">
   											    <label for="vehicle1" style="white-space: nowrap"> Service handicap </label>
 												</div>
 										</li>
@@ -112,7 +112,7 @@
 												<img src="{{  asset('_next/static/media/icones/autonomie.PNG') }} " alt=""  style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="aide-autonomie">
+														<input type="checkbox" class="chkbox" name="services[]" value="aide-autonomie">
   											    <label for="vehicle1" style="white-space: nowrap"> Aide à l’autonomie </label>
 												</div>
 										</li>
@@ -130,7 +130,7 @@
 
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="accompagnement">
+														<input type="checkbox" class="chkbox" name="services[]" value="accompagnement">
   											    <label for="vehicle1" style="white-space: nowrap"> Accompagnements </label>
 												</div>
 										</li>
@@ -140,7 +140,7 @@
 												<img src="{{  asset('_next/static/media/icones/hopital.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											  <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="retour-hospitalisation">
+														<input type="checkbox" class="chkbox" name="services[]" value="retour-hospitalisation">
   											    <label for="vehicle1" style="white-space: nowrap"> Retour d’hospitalisation </label>
 												</div>
 										</li>
@@ -150,7 +150,7 @@
 												<img src="{{  asset('_next/static/media/icones/garde.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											<div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="gardes-non-medicalisées">
+														<input type="checkbox" class="chkbox" name="services[]" value="gardes-non-medicalisées">
   											    <label for="vehicle1" style="white-space: nowrap"> Gardes non médicalisées </label>
 												</div>
 										</li>
@@ -160,7 +160,7 @@
 												<img src="{{  asset('_next/static/media/icones/administration.PNG') }} " alt="" style="height: 120px"/>
 											</div>
 											 <div style="white-space: nowrap">
-														<input type="checkbox" id="chkbox" name="services[]" value="assistance-administrative">
+														<input type="checkbox" class="chkbox" name="services[]" value="assistance-administrative">
   											    <label for="vehicle1" style="white-space: nowrap"> Assistance administrative </label>
 												</div>
 										</li>
@@ -208,80 +208,80 @@
 										<tbody>
 										  <tr>
 											<th id="morning">Matin</th>
-											<td class="inJourney everyday" data-time="Lundi - Matin"></td>
-											<td class="inJourney everyday" data-time="Mardi - Matin"></td>
-											<td class="inJourney everyday" data-time="Mercredi - Matin"></td>
-											<td class="inJourney everyday" data-time="Jeudi - Matin"></td>
-											<td class="inJourney everyday" data-time="Vendredi - Matin"></td>
-											<td class="inJourney everyday" data-time="Samedi - Matin"></td>
-											<td class="inJourney everyday" data-time="Dimanche - Matin"></td>
-											<td class="allDays"></td>
+											<td class="inJourney everyday whole all" data-time="Lundi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Mardi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Mercredi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Jeudi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Vendredi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Samedi - Matin"></td>
+											<td class="inJourney everyday whole all" data-time="Dimanche - Matin"></td>
+											<td class="allDays whole all" data-time="Tout les jours-Matin"></td>
 										  </tr>
 										  <tr>
 											<th id="midday">Midi</th>
-											<td class="inJourney everyday" data-time="Lundi - Midi"></td>
-											<td class="inJourney everyday" data-time="Mardi - Midi"></td>
-											<td class="inJourney everyday" data-time="Mercredi - Midi"></td>
-											<td class="inJourney everyday" data-time="Jeudi - Midi"></td>
-											<td class="inJourney everyday" data-time="Vendredi - Midi"></td>
-											<td class="inJourney everyday" data-time="Samedi - Midi"></td>
-											<td class="inJourney everyday" data-time="Dimanche - Midi"></td>
-											<td class="allDays"></td>
+											<td class="inJourney everyday whole all" data-time="Lundi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Mardi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Mercredi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Jeudi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Vendredi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Samedi - Midi"></td>
+											<td class="inJourney everyday whole all" data-time="Dimanche - Midi"></td>
+											<td class="allDays whole all" data-time="Tout les jours-Midi"></td>
 										  </tr>
 										  <tr>
 											<th id="afternoon">Après-Midi</th>
-											<td class="inJourney everyday" data-time="Lundi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Mardi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Mercredi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Jeudi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Vendredi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Samedi - Après-midi"></td>
-											<td class="inJourney everyday" data-time="Dimanche - Après-midi"></td>
-											<td class="allDays"></td>
+											<td class="inJourney everyday whole all" data-time="Lundi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Mardi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Mercredi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Jeudi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Vendredi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Samedi - Après-midi"></td>
+											<td class="inJourney everyday whole all" data-time="Dimanche - Après-midi"></td>
+											<td class="allDays whole all" data-time="Tout les jours-Apres-Midi"></td>
 										  </tr>
 										  <tr>
 											<th id="night">Soir</th>
-											<td class="inJourney everyday" data-time="Lundi - Soir"></td>
-											<td class="inJourney everyday" data-time="Mardi - Soir"></td>
-											<td class="inJourney everyday" data-time="Mercredi - Soir"></td>
-											<td class="inJourney everyday" data-time="Jeudi - Soir"></td>
-											<td class="inJourney everyday" data-time="Vendredi - Soir"></td>
-											<td class="inJourney everyday" data-time="Samedi - Soir"></td>
-											<td class="inJourney everyday" data-time="Dimanche - Soir"></td>
-											<td class="allDays"></td>
+											<td class="inJourney everyday whole all" data-time="Lundi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Mardi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Mercredi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Jeudi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Vendredi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Samedi - Soir"></td>
+											<td class="inJourney everyday whole all" data-time="Dimanche - Soir"></td>
+											<td class="allDays whole all" data-time="Tout les jours-Soir"></td>
 										  </tr>
 										  <tr>
 											<th>Journée entière (8h > 20h)</th>
-											<td class="allJourney everyday" data-time="Lundi - Journée"></td>
-											<td class="allJourney everyday" data-time="Mardi - Journée"></td>
-											<td class="allJourney everyday" data-time="Mercredi - Journée"></td>
-											<td class="allJourney everyday" data-time="Jeudi - Journée"></td>
-                        <td class="allJourney everyday" data-time="Vendredi - Journée"></td>
-                        <td class="allJourney everyday" data-time="Samedi - Journée"></td>
-                        <td class="allJourney everyday" data-time="Dimanche - Journée"></td>
-                        <td class="allDays allJourney"></td>
+											<td class="allJourney everyday whole all" data-time="Lundi - Journée"></td>
+											<td class="allJourney everyday whole all" data-time="Mardi - Journée"></td>
+											<td class="allJourney everyday whole all" data-time="Mercredi - Journée"></td>
+											<td class="allJourney everyday whole all" data-time="Jeudi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Vendredi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Samedi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Dimanche - Journée"></td>
+                        <td id="wholeday" class="all" data-time="Tout les jours-Journée "></td>
                       </tr>
                       <tr>
                         <th>Nuit (20h > 8h)</th>
-                        <td class="night everyday" data-time="Lundi - Nuit"></td>
-                        <td class="night everyday" data-time="Mardi - Nuit"></td>
-                        <td class="night everyday" data-time="Mercredi - Nuit"></td>
-                        <td class="night everyday" data-time="Jeudi - Nuit"></td>
-                        <td class="night everyday" data-time="Vendredi - Nuit"></td>
-                        <td class="night everyday" data-time="Samedi - Nuit"></td>
-                        <td class="night everyday" data-time="Dimanche - Nuit"></td>
-                        <td class="allDays"></td>
+                        <td class="night everyday all" data-time="Lundi - Nuit"></td>
+                        <td class="night everyday all" data-time="Mardi - Nuit"></td>
+                        <td class="night everyday all" data-time="Mercredi - Nuit"></td>
+                        <td class="night everyday all" data-time="Jeudi - Nuit"></td>
+                        <td class="night everyday all" data-time="Vendredi - Nuit"></td>
+                        <td class="night everyday all" data-time="Samedi - Nuit"></td>
+                        <td class="night everyday all" data-time="Dimanche - Nuit"></td>
+                        <td class="allDays all" data-time="Tout les jours-Nuit></td>
                       </tr>
                       <tr>
                         <th>24h/24</th>
-                        <td class="allDay" data-time="lundi-24/24"></td>
-                        <td class="allDay" data-time="mardi-24/24"></td>
-                        <td class="allDay" data-time="mercredi-24/24"></td>
-                        <td class="allDay" data-time="jeudi-24/24"></td>
-                        <td class="allDay" data-time="vendredi-24/24"></td>
-                        <td class="allDay" data-time="samedi-24/24"></td>
-                        <td class="allDay" data-time="dimanche-24/24"></td>
-                        <td class="allDays"></td>
+                        <td class="allDay all" data-time="lundi-24/24"></td>
+                        <td class="allDay all" data-time="mardi-24/24"></td>
+                        <td class="allDay all" data-time="mercredi-24/24"></td>
+                        <td class="allDay all" data-time="jeudi-24/24"></td>
+                        <td class="allDay all" data-time="vendredi-24/24"></td>
+                        <td class="allDay all" data-time="samedi-24/24"></td>
+                        <td class="allDay all" data-time="dimanche-24/24"></td>
+                        <td id="wholeAll" data-time="Tout les jours"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -658,7 +658,7 @@
 				</div>
 
 				</section>
-
+				<!--
 				<section class="lp-banking-invite-team">
 					<div class="container container_card">
 						<div class="section-body section-body_card section-body_card_pink section-body_margin-top lp-banking-invite-team__body ">
@@ -696,7 +696,7 @@
 						</div>
 					</div>
 				</section>
-
+			-->
 
 
 
@@ -704,30 +704,46 @@
 
 				<script>
 
-					document.querySelectorAll('.allDays').forEach((item)=>{
-						item.addEventListener('click',()=>{
-						  //console.log(item.getAttribute('data-time'));
-						  //let parent = item.parentElement;
-						  //console.log(parent);
-						  if(item.style.backgroundColor == 'blue')
-						  item.style.backgroundColor = 'white';
-						  else
-						  item.style.backgroundColor = 'blue'
+					document.querySelectorAll('.allDays').forEach((item,index,items)=>{
+                        let parel =item.parentElement;
 
-									console.log(item.parentElement.id);
-									let parel =item.parentElement;
-										//console.log(parel.children)
-									Array.prototype.forEach.call(parel.children,child =>{
-										child.nextElementSibling.style.backgroundColor="blue";
-						  item.addEventListener('click',()=>{
-							if(item.style.backgroundColor == 'blue')
-							child.nextElementSibling.style.backgroundColor="white";
-							else
-							child.nextElementSibling.style.backgroundColor="blue";
-						  });
-									})
-						});
-						}
+
+                            item.addEventListener('click',()=>{
+                                //console.log(item.getAttribute('data-time'));
+                                //let parent = item.parentElement;
+                                //console.log(parent);
+
+
+
+                                if(item.style.backgroundColor == 'blue')
+
+
+                                          item.style.backgroundColor = 'white';
+
+
+                                else
+
+                                item.style.backgroundColor = 'blue'
+
+
+                                console.log('djjj')
+                                console.log(item.parentElement.id);
+
+                                              //console.log(parel.children)
+                                Array.prototype.forEach.call(parel.children,child =>{
+                                      child.nextElementSibling.style.backgroundColor="blue";
+                                item.addEventListener('click',()=>{
+                                  if(item.style.backgroundColor == 'blue')
+                                      child.nextElementSibling.style.backgroundColor="white";
+                                  else
+                                      child.nextElementSibling.style.backgroundColor="blue";
+                                });
+                                          })
+                              });
+                        }
+
+
+
 
 					  )
 
@@ -757,6 +773,7 @@
 
 
 						  }else{
+                            console.log(ArrayJourney)
 							curr.style.backgroundColor="blue";
 
 											//console.log(ArrayMorning,ArrayMidday,ArrayAfternoon,ArrayNight);
@@ -788,17 +805,18 @@
 									})
 								})
 
-						document.querySelectorAll('.allDay').forEach((curr,index)=>{
-									var alldays=document.querySelectorAll('.everyday');
-									var ArrayDays=Array.from(alldays);
+                                document.querySelectorAll('.allDay').forEach((curr,index)=>{
+
+									curr.addEventListener('click',()=>{
+                                    var alldays=document.querySelectorAll('.everyday');
+									var ArrayDays,
+                                    ArrayDays=Array.from(alldays);
 									var ArrayMorning=ArrayDays.slice(0,7);
 									var ArrayMidday=ArrayDays.slice(7,14);
 									var ArrayAfternoon=ArrayDays.slice(14,21);
 									var ArrayNight=ArrayDays.slice(21,28);
 									var ArrayWholeJourney=ArrayDays.slice(28,35);
 									var ArrayNightAndMorning=ArrayDays.slice(35,42);
-
-									curr.addEventListener('click',()=>{
 										if(curr.style.backgroundColor=='blue'){
 											curr.style.backgroundColor="white";
 
@@ -810,6 +828,7 @@
 											ArrayNight[index].style.backgroundColor="white";
 										}else{
 
+                                            console.log(index,ArrayDays)
 											curr.style.backgroundColor="blue";
 											ArrayMorning[index].style.backgroundColor="blue";
 											ArrayMidday[index].style.backgroundColor="blue";
@@ -817,12 +836,60 @@
 											ArrayNightAndMorning[index].style.backgroundColor="blue";
 											ArrayWholeJourney[index].style.backgroundColor="blue";
 											ArrayNight[index].style.backgroundColor="blue";
-
 										}
 									})
 								})
 
+                                let wholeday=document.getElementById('wholeday');
+                                wholeday.addEventListener('click',()=>{
+                                    var whole=document.querySelectorAll('.whole');
+                                    var arrayWholeDay=Array.from(whole);
+                                    //console.log(arrayWholeDay);
+                                    if(wholeday.style.backgroundColor=="blue"){
+                                        wholeday.style.backgroundColor="white";
+                                        arrayWholeDay.forEach((current)=>{
+                                            current.style.backgroundColor="white";
+                                        })
+                                    }else{
+                                        wholeday.style.backgroundColor="blue";
+                                        arrayWholeDay.forEach((current)=>{
+                                            current.style.backgroundColor="blue";
+                                        })
+                                    }
+                                })
 
+                                let wholeAll=document.getElementById("wholeAll");
+
+                                wholeAll.addEventListener('click',()=>{
+                                    var everyday=document.querySelectorAll('.all');
+                                    var ArrayEveryDay=Array.from(everyday);
+                                    if(wholeAll.style.backgroundColor=="blue"){
+                                        wholeAll.style.backgroundColor="white"
+                                        ArrayEveryDay.forEach((curr)=>{
+                                            curr.style.backgroundColor="white";
+                                        })
+                                    }else{
+                                        wholeAll.style.backgroundColor="blue";
+                                        ArrayEveryDay.forEach((curr)=>{
+                                            curr.style.backgroundColor="blue";
+                                        })
+                                    }
+                                })
+                                var Injourney=document.querySelectorAll('.inJourney');
+
+                                var ArrayInjourneys=Array.from(Injourney);
+
+                                Injourney.forEach((item)=>{
+                                    item.addEventListener('click',()=>{
+                                        console.log('bonjour')
+                                        if(item.style.backgroundColor=="blue"){
+                                            item.style.backgroundColor="white";
+                                        }else{
+                                            item.style.backgroundColor="blue"
+                                        }
+                                    })
+
+                                })
 
 				  var currentTab = 0; // Current tab is set to be the first tab (0)
 				  showTab(currentTab); // Display the current tab
@@ -849,12 +916,12 @@
 
 				  function nextPrev(n) {
 
-                    var isChecked=document.querySelectorAll('#chkbox');
+                    var isChecked=document.querySelectorAll('.chkbox');
                     var isCheckedArray=Array.from(isChecked);
 
                     isCheckedArray.forEach((curr)=>{
                         if(curr.checked==true){
-                            //alert('la case à ete coché');
+
                         }else{
                             //alert("la case n'a pas ete coché")
                         }

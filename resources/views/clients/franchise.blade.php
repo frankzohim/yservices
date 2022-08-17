@@ -15,7 +15,7 @@
                 <h2 class=" stillforce-heading-blue color_red "  style="">Rejoignez un réseau de plus de 220 agences ! </h2>
 
                 <div class=" gap-2   " style=" margin-top:30px;">
-                    <a href="{{ route('partner_form') }}" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
+                    <a href="{{ route('partner_form.create') }}" class="button1  button_w-m-full color_blue-3 " id="target-action-main-invoicing-business">Devenir franchisé</a>
                 </div>
             </div>
             <div class="lp-banking-track-cashflow__image-wrap image">
@@ -25,7 +25,7 @@
                 </picture>
             </div>
         </div>
-       
+
     </div>
 </section>
 
