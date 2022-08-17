@@ -35,6 +35,10 @@ Route::get('contact', function () {
 	return view("contact");
 })->name('contact');
 
+Route::get('functioning', function () {
+	return view("functioning");
+})->name('functioning');
+
 
 Route::resources([
         'need' => NeedController::class,
@@ -78,7 +82,4 @@ Route::group(['prefix' => 'clients'], function () {
 		return view("clients/join-confirm");
 
 	})->name('join-confirm');
-});
-Route::get('/co',function(){
-    return view('co');
 });

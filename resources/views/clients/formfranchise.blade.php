@@ -21,7 +21,8 @@
 
                 </p>
               </div>
-              <form id="contact-form" method="post" autocomplete="off">
+              <form id="contact-form" method="post" autocomplete="off" action="{{ route('contact.store') }}">
+                @csrf
                 <div class="card-body pb-2">
                   <div class="row justify-content-center">
 					 <h5 class="text-gradient text-primary" style="text-align: center;">A propos de vous</h5>
@@ -56,14 +57,14 @@
                                
                                 <div class="col-md-12">
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <input class="form-check-input" type="radio" name="civility" id="flexRadioDefault1" value="monsieur" checked>
                                     <label class="form-check-label" for="flexRadioDefault1" style="color:#1b138a;">
                                     Monsieur
                                     </label>
                                   </div>
                                   
                                   <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <input class="form-check-input" type="radio" name="civility" value="madame" id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2" style="color:#1b138a;">
                                     Madame
                                     </label>

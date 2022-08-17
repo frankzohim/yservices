@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\requests\ContactRequest;
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 
@@ -35,6 +35,7 @@ class ContactController extends Controller
      */
     public function store(ContactRequest $request)
     {
+        //dd($request->civility);
         $validatedData = $request->validated();
 
         Contact::create($request->except('_token'));

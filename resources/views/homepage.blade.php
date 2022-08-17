@@ -637,7 +637,7 @@
 
 
 							<div class="main-cards__btn-wrap margin-top-default">
-								<a href="#" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div><a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more" href="cards/index.html">EN SAVOIR PLUS</a></div>
+								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div><a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more" href="cards/index.html">EN SAVOIR PLUS</a></div>
 							</div>
 
 						</div>
@@ -695,50 +695,6 @@
 							</div>
 						</div>
 					</div>
-				</section>
-
-
-				<section class="lp-banking-support-team color_white"><div class="container container_card">
-					<div class="lp-banking-support-team__body section-body section-body_card section-body_card_blue section-body_card_margin-top">
-						<h2 class="heading heading__lvl1">Bénéficiez d'une assistance premium rapide et professionnelle de la part de notre service client !</h2>
-
-						<div class="lp-banking-support-team__content margin-top-default">
-
-							<div class="lp-banking-support-team__content-image-wrap">
-
-								<picture class="picture__image-container ">
-
-
-									<img src="{{  asset('_next/static/media/lp-banking-support-team__team_it%401x.36f5a763.png') }} " srcSet="/_next/static/media/lp-banking-support-team__team_it@2x.5c133c0b.png 2x" alt="" class="picture__image lp-banking-support-team__content-picture" loading="lazy" />
-
-								</picture>
-
-							</div>
-							<div class="lp-banking-support-team__content-message">
-
-								<ul class="lp-banking-support-team__content-list">
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#clock"></use></svg><span class="text">Temps de réponse inférieur à 1 minute en utilisant notre application WhatsApp ou Chat</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#check-circle"></use></svg><span class="text">Assistance téléphonique ou vidéo dédiée à l'heure qui vous convient</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#eye"></use></svg><span class="text">Demandez une démonstration de produit à l'un de nos spécialistes</span>
-									</li>
-
-									<li class="lp-banking-support-team__content-item">
-										<svg class="icon icon_sm"><use href="#date-recurring"></use></svg><span class="text">Centre d'aide interactif disponible 24 heures sur 24 </span>
-									</li>
-								</ul>
-
-								<div class="lp-banking-support-team__content-contact margin-top-lg"><button class="button button_w-m-full lp-banking-support-team-contact-us__button" id="target-action-lp-banking-support-team-chat" disabled="">Ouvrir le chat</button><a class="button button_w-m-full button_white lp-banking-support-team-contact-us__button" href="https://api.whatsapp.com/send?phone=33687263865" target="_blank" rel="noreferrer"><img src="http://finom.co/_next/static/media/whatsapp.ed0dbc2b.svg" alt="" /><span>Discussion WhatsApp</span></a><div class="lp-banking-support-team-contact-us__email-wrap"><span class="text">ou contactez-nous <span class='no-wrap'>e-mail</span>:info@youdom.services</span><br /><a href="#" class="link link_inherit link_hover_underline heading heading__lvl3"></a></div></div>
-							</div>
-
-						</div>
-					</div></div>
 				</section>
 
 
