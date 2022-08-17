@@ -4,7 +4,7 @@
 					<div class="padding-top-sm padding-bottom-xs footer__body">
 
 						<a class=" footer__logo" data-inner-link="true" aria-label="Youdom Services" href="{{ route('about') }}">
-							<img src="{{ asset('_next/static/media/logo.png') }} "   />
+							<img src="{{ asset('_next/static/media/logo-care.png') }} "   />
 						</a>
 						
 						<ul class="margin-top-default social footer__social">

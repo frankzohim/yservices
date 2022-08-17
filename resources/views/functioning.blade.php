@@ -7,7 +7,7 @@
 		<div class="container">
 		  <div class="row">
 			<div class="row text-center my-sm-5 mt-5">
-			  <div class="col-lg-8 mx-auto">
+			  <div class="col-lg-10 mx-auto">
 				<h2 class="text-primary text-gradient mb-0" style="font-family: Open Sans; font-weight:bold; font-size:36px;">Notre fonctionnement </h2>
 
 				<p class="lead" style="font-family: Open Sans; font-weight:400; font-size:20px; color:rgb(103,116,142)">
@@ -31,7 +31,7 @@
 			<div class="col-12 mx-auto">
 			  <div class="row py-lg-7 py-5">
 				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/evaluation-besoin.png') }}" alt="bruce">
+				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/evaluation-des-besoins.png') }}" alt="bruce">
 				</div>
 				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
 				  <div class="d-flex justify-content-between align-items-center mb-2">
@@ -81,7 +81,7 @@
 				</div>
 				
 				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/devis.png') }}" alt="bruce">
+				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/devis-personnalise.png') }}" alt="bruce">
 				</div>
 				
 			  </div>
@@ -147,7 +147,7 @@
 				</div>
 				
 				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/bruce-mars.jpg') }}" alt="bruce">
+				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/confiance.png') }}" alt="bruce">
 				</div>
 				
 			  </div>
@@ -217,7 +217,7 @@ Ce qui signifie que nous pouvons, en cours de contrat, adapter la prestation ini
 				</div>
 				
 				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/bruce-mars.jpg') }}" alt="bruce">
+				  <img class="img border-radius-lg max-width-600 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/controle.png') }}" alt="bruce">
 				</div>
 				
 			  </div>
@@ -233,7 +233,7 @@ Ce qui signifie que nous pouvons, en cours de contrat, adapter la prestation ini
 			  <div class="row py-lg-7 py-5">
 				
 				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/bruce-mars.jpg') }}" alt="bruce">
+				  <img class="img border-radius-lg max-width-300 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/rgpd-european-union.png') }}" alt="bruce">
 				</div>
 				
 				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">

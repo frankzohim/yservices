@@ -453,7 +453,7 @@
 
 				</section>
 
-
+			<!--
 				<section class="lp-banking-track-cashflow">
 					<div class="container">
 						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
@@ -466,7 +466,7 @@
 						</div>
 					</div>
 				</section>
-
+			-->
 
 
 
@@ -476,7 +476,7 @@
 
 			<div class="padding-bottom-sm section-body undefined">
 
-				<h2 class="heading heading__lvl1 ta-c">Les différents services de Youmdom-CARE</h2>
+				<h2 class="heading heading__lvl1 ta-c">Les différents services d'aide à domicile</h2>
 				<ul class="margin-top-default main-why-we-list">
 								<li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
 
