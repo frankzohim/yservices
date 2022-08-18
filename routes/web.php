@@ -65,10 +65,10 @@ Route::group(['prefix' => 'clients'], function () {
 	Route::get('join-us',[JoinController::class,'create'])->name('join-us');
     Route::post('join-us',[JoinController::class,'store'])->name('join.store');
 
-	Route::get('join-us-form', function () {
-		return view("clients/join-us-form");
+	Route::get('join-us-content', function () {
+		return view("clients/rejoindre");
 
-	})->name('join-us-form');
+	})->name('join-us-content');
 
 
 

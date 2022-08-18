@@ -2,190 +2,270 @@
 @section('title', __('Youdom Services – Aide à domicile sur mesure en Europe'))
 
 @section('content')
+<style>
+	.content-wrap{position:relative;padding:80px 0;overflow:hidden}
 
-<div class="container my-5 z-depth-1">
+	.feature-box{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.75rem;margin-right:-.75rem}
+.feature-box:first-child{margin-top:0}
+
+.media-box{padding:0;margin-left:0;margin-right:0;-ms-flex-direction:column;flex-direction:column}
+.media-box .fbox-media{margin:0 0 1.5rem}
+.media-box .fbox-media,.media-box .fbox-media a,.media-box .fbox-media img{position:relative;display:block;width:100%;height:auto}
+.media-box .fbox-media iframe{display:block}
+.media-box p{margin-top:1rem}.media-box 
+.fbox-content{-ms-flex-preferred-size:auto}
+.media-box.fbox-bg .fbox-media{margin:0}
+.media-box.fbox-bg .fbox-content{padding:1.5rem;background-color:#fff;border:1px solid #e5e5e5;border-top:0;border-radius:0 0 5px 5px}
+.media-box.fbox-bg .fbox-media img{border-radius:5px 5px 0 0}
+
+.fbox-content{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%;padding:0 .75rem}
+.fbox-content h3{font-size:16px;font-weight:600;font-family:Poppins,sans-serif;text-transform:uppercase;margin-bottom:0;color:#333}
+.fbox-content p{font-family:sans-serif;.5rem;margin-bottom:0;color:#999; font-size: 8px; font-weight: 400;}
+.fbox-content .before-heading{font-size:14px}
+.fbox-content-sm h3,.fbox-content-sm p{font-size:14px}
+.fbox-content-sm .before-heading{font-size:12px}
+.fbox-content-lg h3{font-size:20px}
+.fbox-content-lg p{font-size:18px;margin-top:.75rem}
+.fbox-content-lg .before-heading{font-size:16px}.fbox-sm{margin-left:-.5rem;margin-right:-.5rem}.fbox-sm .fbox-icon{width:3rem;height:2rem;padding:0 .5rem}.fbox-sm .fbox-icon i{font-size:16px;line-height:2rem}.fbox-sm .fbox-content{padding:0 .5rem}.fbox-lg .fbox-icon{width:7.5rem;height:6rem}.fbox-lg .fbox-icon i{font-size:40px;line-height:6rem}.fbox-xl .fbox-icon{width:9.5rem;height:8rem}.fbox-xl .fbox-icon i{font-size:72px;line-height:8rem}.fbox-outline .fbox-icon a{border:1px solid #1abc9c;padding:.25rem;border-radius:50%}.fbox-outline .fbox-icon i{line-height:3.5rem}.fbox-outline.fbox-sm .fbox-icon i{line-height:1.5rem}.fbox-outline.fbox-lg .fbox-icon i{line-height:5.5rem}.fbox-outline.fbox-xl .fbox-icon i{line-height:7.5rem}.fbox-rounded .fbox-icon{border-radius:3px!important}.fbox-rounded .fbox-icon i,.fbox-rounded .fbox-icon img{border-radius:3px!important}.fbox-rounded.fbox-lg .fbox-icon{border-radius:4px!important}.fbox-rounded.fbox-lg .fbox-icon i,.fbox-rounded.fbox-lg .fbox-icon img{border-radius:4px!important}.fbox-rounded.fbox-xl .fbox-icon{border-radius:6px!important}.fbox-rounded.fbox-xl .fbox-icon i,.fbox-rounded.fbox-xl .fbox-icon img{border-radius:6px!important}.fbox-light.fbox-outline .fbox-icon a{border-color:#e5e5e5}.fbox-light .fbox-icon i,.fbox-light .fbox-icon img{border:1px solid #e5e5e5;background-color:#f5f5f5;color:#444}.fbox-dark.fbox-outline .fbox-icon a{border-color:#444}.fbox-dark .fbox-icon i,.fbox-dark .fbox-icon img{background-color:#333}.fbox-border .fbox-icon a{border:1px solid #1abc9c;border-radius:50%}.fbox-border .fbox-icon i,.fbox-border .fbox-icon img{border:none;background-color:transparent!important;color:#1abc9c}.fbox-border.fbox-light .fbox-icon a{border-color:#e5e5e5}.fbox-border.fbox-light .fbox-icon i,.fbox-border.fbox-light .fbox-icon img{color:#888}.fbox-border.fbox-dark .fbox-icon a{border-color:#333}.fbox-border.fbox-dark .fbox-icon i,.fbox-border.fbox-dark .fbox-icon img{color:#444}.fbox-plain .fbox-icon{border:none!important}.fbox-plain .fbox-icon i,.fbox-plain .fbox-icon img{border:none;background-color:transparent!important;color:#1abc9c;border-radius:0}.fbox-plain .fbox-icon i{font-size:48px;line-height:1}.fbox-plain.fbox-image .fbox-icon{width:auto}.fbox-plain.fbox-image .fbox-icon img{width:auto;display:inline-block}.fbox-plain.fbox-light .fbox-icon i,.fbox-plain.fbox-light .fbox-icon img{color:#888}.fbox-plain.fbox-dark .fbox-icon i,.fbox-plain.fbox-dark .fbox-icon img{color:#444}.fbox-plain.fbox-sm .fbox-icon i{font-size:32px}.fbox-plain.fbox-lg .fbox-icon i{font-size:72px}.fbox-plain.fbox-xl .fbox-icon i{font-size:96px}.fbox-center{-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center;text-align:center}.fbox-center .fbox-icon{margin-bottom:1.5rem}.fbox-center .fbox-content{-ms-flex-preferred-size:auto}
+.fbox-content+.fbox-icon{margin-top:1.5rem;margin-bottom:0!important}
+.fbox-content h3 span.subtitle{display:block;margin-top:5px;color:#444;font-weight:300;text-transform:none}
+
+.text{font-size: 14px;}
 
 
-  <!--Section: Content-->
-  <section class="dark-grey-text" >
+</style>
 
-    <div class="row pr-lg-5">
-      <div class="col-md-7 mb-4">
+	<section>
 
-        <div class="view">
-          <img src="{{ asset('_next/static/media/service.png') }}" width="" class="img-fluid" alt="smaple image">
-        </div>
+		<div class="container content-wrap">
+				<div class="row justify-content-center">
 
+					<div class="col-md-8" >
+						<h2 class="heading heading__lvl1 stillforce-heading-red">Nos Services <span style="color:#594EE6;">d'aide à domicile</span></h2>
+					</div>
+						
+				</div>
+				
+		</div>
+			
+	</section>
+	<section class="fdb-block content-wrap" style="margin-bottom: -80px" >
+  <div class="container">
+    <div class="row ">
+			
+				<br>
+      <div class="col-6 col-md-6 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
+        <img alt="image" class="img-fluid" src="{{ asset("_next/static/media/documentation.png") }}">
       </div>
-      <div class="col-md-5 d-flex align-items-center" style="margin-top:20%">
-        <div>
+			<div class="col-6 col-md-6 col-lg-6 col-xl-5">
 
-          <h3 class="font-weight-bold mb-4" style="font-weight:700; color:#1b138a">Nos services d'aide à domicile</h3>
+        <p class="lead mb-5">Découvrez nos services de maintien à domicile adaptés à vos besoins et sur-mesure. <br> Un accompagnement 24h/24 et 7J/7..</p>
 
-        	<p style=" font-size:25px">Découvrez nos services de maintien à domicile adaptés à vos besoins et sur-mesure.
-                Un accompagnement 24h/24 et 7J/7.</p>
-
-        	<a href="{{ route('login') }}"><button type="button" class="btn btn-primary btn-rounded mx-0">FAITES VOTRE DEMANDE</button></a>
-
-        </div>
+        	<a href="#" class="margin-top-default button button_w-m-full" style="margin-top:-15px; background-color:#DF034D" id="target-action-main-intro-all">
+									Demandez un devis
+								</a>
       </div>
     </div>
+  </div>
+</section>
 
-  </section>
-  <!--Section: Content-->
 
 
-</div>
-
-	<section class="main-why-we" id="main-why-we">
-
-		<div class="container">
-			
-			<div class="padding-bottom-sm section-body undefined">
+	<section id="content">
+		<div class="content-wrap">
+			<div class="container clearfix">
+				<div class="row col-mb-50">
 				
-				<h2 class="heading heading__lvl1 ta-c">Les différents services d'aide à domicile</h2>
-				<ul class="margin-top-default main-why-we-list">
-								<li><div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-									
-									<h3 class="margin-top-sm heading heading__lvl2">Aide à l’autonomie/geste du quotidien
-</h3>
-									<ul class="margin-top-sm list list_star">
-										<li class="text">Aide au lever et au coucher</li>
-										<li class="text">Aide à la toilette, coiffure, maquillage, habillage</li>
-										<li class="text">Aide-ménagère</li>
-									</ul>
-								</div></li>
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-										<h3 class="margin-top-sm heading heading__lvl2">Gardes non médicalisées/Présence de nuit</h3>
-										<ul class="margin-top-sm list list_star">
-											<li class="text">Présence de nuits pour personnes âgées </li>
-											<li class="text">Garde de nuit pour personnes âgées et personnes en situation d’handicap</li>
-											<li class="text">Présence de nuits auprès des enfants malades </li>
-											
-										</ul>
-										<div id="wrapper5">
-											<ul class="margin-top-sm list list_star" style="">
-												<li class="text">Garde de jour</li>
-												<li class="text">Retour à domicile après une hospitalisation</li>
-												<li class="text">Garde 24h sur 24</li>
-											</ul>
-										</div>
-                          
-                          <a href="javascript:void(0)"  id="bt5">voir plus</a>
-									</div>
-								</li>
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/aide-autonomie.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide à l’autonomie / Geste du quotidien  <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
 
-										<h3 class="margin-top-sm heading heading__lvl2">Service handicap</h3>
-										<ul class="margin-top-sm list list_star">
-											<li class="text">Aide à domicile - personnes handicapées</li>
-											<li class="text">Entretien du lieu de vie - personnes handicapées</li>
-											<li class="text">Aide à la vie sociale - personnes handicapées</li>
-											<li class="text">Garde de jour et ou de nuit - personnes handicapées</li>
-										</ul>
-									</div>
-								</li>
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-									<h3 class="margin-top-sm heading heading__lvl2">Accompagnements</h3>
-										<ul class="margin-top-sm list list_star">
-											<li class="text">Accompagnements aux courses</li>
-											<li class="text">Accompagnement culturel </li>
-											<li class="text">Compagnies et stimulation </li>
-											<li class="text">Promenades et loisirs </li>
-											
-										</ul>
-										
-										<div id="wrapper6">
-											<ul class="margin-top-sm list list_star">
-												<li class="text">Aide à la mobilité</li>
-												<li class="text">Sorties véhiculées</li>
-												<li class="text">Lecture, discussion</li>
-												<li class="text">Rendez-vous médicaux</li>
-											</ul>
-										</div>
-                          
-										<a href="javascript:void(0)"  id="bt6">voir plus</a>
-                    
-									</div>
-								</li>
-								
-								
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-										<h3 class="margin-top-sm heading heading__lvl2">Retour d’hospitalisation</h3>
-										<ul class="margin-top-sm list list_star">
-											<li class="text">Retour au domicile</li>
-											<li class="text">Aide au quotidien</li>
-										</ul>
-									</div>
-								</li>
-								
-							
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-									<h3 class="margin-top-sm heading heading__lvl2">Aide aux repas</h3>
-									<ul class="margin-top-sm list list_star">
-										<li class="text">Courses </li>
-										<li class="text">Préparation des repas</li>
+										<li class="text">Aide au lever et au coucher </li>
+										<li class="text">Aide à la toilette, coiffure, maquillage, habillage </li>
+										<li class="text">Aide-ménagère   </li>
+
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box flex-column">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/garde-precense.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Gardes non médicalisées / Présence de nuit<span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Présence de nuits pour personnes âgées</li>
+										<li class="text">Garde de nuit pour personnes âgées et personnes en situation d’handicap  </li>
+										<li class="text">Présence de nuits auprès des enfants malades   </li>
+
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+	
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/service-handicape.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Service handicap  <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star" >
+
+										<li class="text" >Aide à domicile - personnes handicapées </li>
+										<li class="text">Entretien du lieu de vie - personnes handicapées </li>
+										<li class="text">Aide à la vie sociale - personnes handicapées   </li>
+										<li class="text">Garde de jour et ou de nuit - personnes handicapées   </li>
 										
 									</ul>
-									<div id="wrapper2">
-											<ul class="margin-top-sm list list_star">
-												<li class="text">Aide à la prise des repas</li>
-												<li class="text">Prise de médicament</li>
-												<li class="text">Alimentation-Surveillance des régimes</li>
-											</ul>
-										</div>
-                          
-										<a href="javascript:void(0)"  id="bt2">voir plus</a>
-									</div>
-								</li>
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-										<h3 class="margin-top-sm heading heading__lvl2">Aide-ménagère</h3>
-										<ul class="margin-top-sm list list_star">
-											<li class="text">Ménage</li>
-											<li class="text">Lessive- repassage</li>
-											<li class="text">Entretien du logement </li>
-										</ul>
-									</div>
-								</li>
-								
-								<li>
-									<div class="padding-top-xs padding-bottom-sm main-why-we__card main-why-we-card">
-									<h3 class="margin-top-sm heading heading__lvl2">Assistance administrative</h3>
-									<ul class="margin-top-sm list list_star">
-										<li class="text">Gestion du courrier </li>
-										<li class="text">Classement des documents</li>
-										<li class="text">Prise de rendez-vous</li>
-										
-									</ul>
-									<div id="wrapper3">
-											<ul class="margin-top-sm list list_star">
-												<li class="text">Démarches administratives</li>
-										<li class="text">Loyer , factures </li>
-											</ul>
-										</div>
-                          
-										<a href="javascript:void(0)"  id="bt3">voir plus</a>
-									</div>
-									</div>
-								</li>
-								
-								
-				</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+				</div>
 			</div>
 		</div>
-
+		
 	</section>
+	
+	<section id="content" style="margin-top:-100px;">
+		<div class="content-wrap">
+			<div class="container clearfix">
+				<div class="row col-mb-50">
+			
+				
+					
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box flex-column">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/service-accompagnements.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Accompagnements<span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Accompagnements aux courses</li>
+										<li class="text">Accompagnement culturel </li>
+										<li class="text">Compagnies et stimulation  </li>
+										<li class="text">Promenades et loisirs  </li>
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/aide-repas.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide aux repas <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Courses </li>
+										<li class="text">Préparation des repas </li>
+										<li class="text">Aide à la prise des repas   </li>
+										<li class="text">Prise de médicament   </li>
+										
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/service-retour-hospitalisation.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Retour d’hospitalisation  <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Retour au domicile</li>
+										<li class="text">Aide au quotidien</li>
+										
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+		<section id="content" style="margin-top:-100px;">
+		<div class="content-wrap">
+			<div class="container clearfix">
+				<div class="row col-mb-50 justify-content-center">
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box flex-column">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/aide-menagere.jpg') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide-ménagère<span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Ménage</li>
+										<li class="text">Lessive- repassage </li>
+										<li class="text">Entretien du logement </li>
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/assistance-administrative.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Assistance administrative <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Gestion du courrier </li>
+										<li class="text">Classement des documents </li>
+										<li class="text">Prise de rendez-vous  </li>
+										
+									</ul>
+						</p>
+						</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
 				
 
 

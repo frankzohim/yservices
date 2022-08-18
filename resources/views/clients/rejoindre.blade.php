@@ -15,7 +15,7 @@
                                         <h1 class="mb-4">chez Youdom - CARE</h1>
                                         <p class="lead pe-5 me-5">…pour nous aider à proposer les meilleurs services d’aide à domicile !</p>
                                         <div class="buttons">
-                                           <a href="{{ route('join-us-form') }}">
+                                           <a href="{{ route('join-us') }}">
                                                 <button type="button" class="btn btn-primary btn-lg mt-4" style="background-color:#DF034D">Nous Rejoindre Maintenant</button>
                                             </a> 
                                            
