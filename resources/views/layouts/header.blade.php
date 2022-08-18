@@ -1,9 +1,10 @@
+
 <div class="header__container">
 
-	<aside class="popup popup-promo" data-test="popup-promo">
+	<aside class="popup popup-promo Closepopup" data-test="popup-promo">
 
-		<div class="container">
-			<div class="popup-promo__body popup-promo__body_it-banking">
+		<div class="container"  id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+			<div class="popup-promo__body popup-promo__body_it-banking" role="document">
 				<p class="text color_white popup-promo__description">
 					Take your chance to get 6 months free on a Start plan
 				</p>
@@ -12,16 +13,16 @@
 						Learn more
 					</a>
 				</div>
-				<div class="popup__close popup__close_white" data-test="popup-promo__close" 
+				<div class="popup__close popup__close_white" data-test="popup-promo__close"
 					style="display: flex; justify-content: center; align-items: center;">
-					
-					<span style="font-size: 20px; color: white;">
-						<i class="fa-solid fa-xmark"></i>
-					  </span>
+
+					 <span style="font-size: 20px; color: white;" id="close-button" >
+						 <i class="fa-solid fa-xmark"></i> 
+					 </span>
 				</div>
-				
+
 			</div>
-			
+
 		</div>
 		</aside>
 
@@ -122,3 +123,5 @@
 				</div>
 			</header>
 	</div>
+
+

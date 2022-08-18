@@ -455,8 +455,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
    <!-- Loading js file write by me that enable bootstrap tap -->
 
-  <script src="{{ asset('assets/js/bootstrap-tab-enable.js') }}">
-   
+  <script src="{{ asset('assets/js/bootstrap-tab-enable.js') }}"></script>
+  <script>
+    var buttonClose = document.getElementById('close-button');
+    buttonClose.addEventListener('click',()=>{
+        document.querySelector('.Closepopup').style.display="none";
+        console.log("bonjour")
+    })
   </script>
 
 </body>
