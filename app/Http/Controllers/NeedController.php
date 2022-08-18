@@ -23,7 +23,7 @@ class NeedController extends Controller
      */
     public function create()
     {
-        
+        return view("need.assistant");
     }
 
     /**
