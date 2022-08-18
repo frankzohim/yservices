@@ -163,7 +163,8 @@ label img {
 					<div class="section">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3>Quels sont vos besoins d'aide à domicile ?</h3>
+			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span> 
+				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
 			</div>
 			
 			<form id="regForm" method="post" action="{{ route('need.store') }}">
@@ -174,7 +175,7 @@ label img {
 				<div class="tab">
 						<div class="heading-block topmargin-sm center">
 							<img src="/_next/static/media/step1.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5">Cliquez sur un service pour sélectionner</h5>
+							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez sur un service pour sélectionner</h5>
 						</div>
 						<div class="row">
 				
@@ -342,13 +343,13 @@ label img {
 				
 						<div class="heading-block topmargin-sm center">
 							<img src="/_next/static/media/step2.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5">Dites nous plus sur le planning</h5>
+							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Dites nous plus sur le planning</h5>
 						</div>
 
 							<div class="row">
 							
 								<div class="form-group col-md-4 col-lg-4 mb-0 mt-md-0 mt-4 center" >
-										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
+										<label class="form-check-label" style="color:#1b138a; font-size:18px; font-weight:700;">
 											  A Partir de quand peut-on commencer?
 											  </label>
 										
@@ -373,7 +374,7 @@ label img {
 								
 
 						    <div class="heading-block topmargin-sm center">
-								<h5 style="color: #6105F5">Cliquez pour sélectionner vos horaires</h5>
+								<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Cliquez pour sélectionner vos horaires</h5>
 							</div>
 
 							<table class="TimetableDesign PFTimetableDesktop">
@@ -477,7 +478,7 @@ label img {
 				
 						<div class="heading-block topmargin-sm center">
 							<img src="/_next/static/media/step3.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
+							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
 						</div>
 									
 						    <div class="row justify-content-center">
