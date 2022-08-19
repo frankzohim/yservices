@@ -6,7 +6,7 @@
 <script type="application/ld+json">{
     "@context": "http://www.schema.org",
     "@type": "Organization",
-    "name": "FINOM",
+    "name": "Youdom Service",
     "url": "https://finom.co/",
     "sameAs": [ "https://www.facebook.com/finom.germany", "https://www.facebook.com/finom.france", "https://www.facebook.com/finom.italy", "https://www.instagram.com/finom_germany/", "https://www.instagram.com/finom_france/", "https://www.instagram.com/finom_italy/", "https://www.linkedin.com/company/finomhq" ],
     "founders": [{ "@type": "Person", "name": "Yakov Novikov" }, { "@type": "Person", "name": "Andrey Petrov"}, { "@type": "Person", "name": "Oleg Laguta"}, { "@type": "Person", "name": "Konstantin Stiskin" }],
