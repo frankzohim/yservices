@@ -5,7 +5,8 @@
 								<a class=" footer__logo" data-inner-link="true" aria-label="Youdom Services" href="{{ route('about') }}">
 							<img src="{{ asset('_next/static/media/logo-care.png') }} "   />
 						</a>
-						</div>
+					</div>
+					
 					<div class="padding-top-sm padding-bottom-xs footer__body">
 						
 						
@@ -29,7 +30,7 @@
 								<li class="text caps">Qui Sommes Nous?</li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Charte de qualité</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Charte de qualité</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
 							</ul>
 
@@ -45,8 +46,8 @@
 
 							<ul class="footer-nav">
 								<li class="text caps">Aide</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Qualité</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Contactez-Nous</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
 								<li class="text text_md color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
 							</ul>
