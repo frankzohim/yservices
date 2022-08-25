@@ -30,6 +30,10 @@ Route::get('commitment', function () {
     return view('our-commitment');
 })->name('commitment');
 
+Route::get('quality', function () {
+    return view('quality');
+})->name('quality');
+
 Route::get('services', function () {
     return view('services');
 })->name('services');

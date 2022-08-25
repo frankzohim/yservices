@@ -1391,7 +1391,7 @@
 		</div>
 		<div class="widget-content-left mr-3">
 		<div class="widget-content-left">
-		<img width="42" class="rounded" src="assets/images/avatars/1.jpg" alt="">
+		<img width="42" class="rounded" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
 		</div>
 		</div>
 		<div class="widget-content-left">
@@ -1633,7 +1633,7 @@
 		<div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
 		</div>
 		<div class="avatar-icon avatar-icon-lg rounded">
-		<img src="assets/images/avatars/2.jpg" alt="">
+		<img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }} " alt="">
 		</div>
 		</div>
 		</div>
@@ -1663,7 +1663,7 @@
 		<div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
 		</div>
 		<div class="avatar-icon avatar-icon-lg rounded">
-		<img src="assets/images/avatars/3.jpg" alt="">
+		<img src="{{ asset('assets/backoffice/assets/images/avatars/3.jpg') }}" alt="">
 		</div>
 		</div>
 		 </div>
@@ -1675,7 +1675,7 @@
 		<div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
 		</div>
 		<div class="avatar-icon avatar-icon-lg rounded">
-		<img src="assets/images/avatars/2.jpg" alt="">
+		<img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }}" alt="">
 		</div>
 		</div>
 		</div>
@@ -1704,7 +1704,7 @@
 		<div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
 		</div>
 		<div class="avatar-icon avatar-icon-lg rounded">
-		<img src="assets/images/avatars/2.jpg" alt="">
+		<img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }}" alt="">
 		</div>
 		</div>
 		</div>
@@ -1724,7 +1724,7 @@
 		<div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
 		</div>
 		<div class="avatar-icon avatar-icon-lg rounded">
-		<img src="assets/images/avatars/2.jpg" alt="">
+		<img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }}" alt="">
 		</div>
 		</div>
 		</div>
