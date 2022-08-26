@@ -688,7 +688,15 @@
     <div class="widget-subheading opacity-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima</div>
     </div>
     <div class="widget-content-right mr-2">
-    <button class="btn-pill btn-shadow btn-shine btn btn-focus">Déconnexion</button>
+        <form method="POST" action="{{ route('logout') }}" id="logout-form">
+            @csrf
+        </form>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>
+                        <button class="btn-pill btn-shadow btn-shine btn btn-focus">
+                            Déconnexion
+
+                        </button>
+            </a>
     </div>
     </div>
     </div>
