@@ -1,6 +1,8 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
-    <div class="logo-src"></div>
+    <div class=""><a class="" aria-label="Youdom" data-inner-link="true" href="{{ route('homepage') }}">
+									<img src="{{  asset('_next/static/media/logo-care.png') }}"   />
+								</a></div>
     <div class="header__pane ml-auto">
     <div>
     <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -586,11 +588,11 @@
     <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
     <div class="menu-header-image opacity-05" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/city2.jpg') }});"></div>
     <div class="menu-header-content text-center text-white">
-    <h6 class="menu-header-subtitle mt-0"> Choose Language</h6>
+    <h6 class="menu-header-subtitle mt-0"> Choisissez la langue</h6>
     </div>
     </div>
     </div>
-    <h6 tabindex="-1" class="dropdown-header"> Popular Languages</h6>
+    <h6 tabindex="-1" class="dropdown-header"> Langues Populaires</h6>
     <button type="button" tabindex="0" class="dropdown-item">
     <span class="mr-3 opacity-8 flag large US"></span> USA
     </button>
@@ -604,7 +606,7 @@
     <span class="mr-3 opacity-8 flag large ES"></span>Spain
     </button>
     <div tabindex="-1" class="dropdown-divider"></div>
-    <h6 tabindex="-1" class="dropdown-header">Others</h6>
+    <h6 tabindex="-1" class="dropdown-header">Autres</h6>
     <button type="button" tabindex="0" class="dropdown-item active">
     <span class="mr-3 opacity-8 flag large DE"></span> Germany
     </button>
@@ -623,10 +625,10 @@
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-premium-dark">
-    <div class="menu-header-image" style="background-image: url('assets/backoffice/images/dropdown-header/abstract4.jpg');"></div>
+    <div class="menu-header-image" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/abstract4.jpg') }}');"></div>
     <div class="menu-header-content text-white">
-    <h5 class="menu-header-title">Users Online</h5>
-    <h6 class="menu-header-subtitle">Recent Account Activity Aperçu</h6>
+    <h5 class="menu-header-title">Utilisateurs en ligne</h5>
+    <h6 class="menu-header-subtitle">Aperçu Activité Récente du Compte</h6>
     </div>
     </div>
     </div>
@@ -640,7 +642,7 @@
     <span>344k</span>
     </div>
     <div class="widget-subheading pt-2">
-    Profile views since last login
+    Consultations de profil depuis la dernière connexion
     </div>
     <div class="widget-description text-danger">
     <span class="pr-1"><span>176%</span></span>
@@ -655,7 +657,7 @@
     <li class="nav-item-divider mt-0 nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
     <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
-    <i class="fa fa-cog fa-spin mr-2"></i>View Details
+    <i class="fa fa-cog fa-spin mr-2"></i>Voir Détails
     </button>
     </li>
     </ul>
@@ -679,14 +681,14 @@
     <div class="widget-content p-0">
     <div class="widget-content-wrapper">
     <div class="widget-content-left mr-3">
-    <img width="42" class="rounded-circle" src="assets/backoffice/images/avatars/1.jpg" alt="">
+    <img width="42" class="rounded-circle" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
     </div>
     <div class="widget-content-left">
-    <div class="widget-heading">Alina Mcloughlin</div>
-    <div class="widget-subheading opacity-8">A short profile description</div>
+    <div class="widget-heading">Pauline Youdom</div>
+    <div class="widget-subheading opacity-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima</div>
     </div>
     <div class="widget-content-right mr-2">
-    <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+    <button class="btn-pill btn-shadow btn-shine btn btn-focus">Déconnexion</button>
     </div>
     </div>
     </div>
@@ -696,20 +698,20 @@
     <div class="scroll-area-xs" style="height: 150px;">
     <div class="scrollbar-container ps">
     <ul class="nav flex-column">
-     <li class="nav-item-header nav-item">Activity</li>
+     <li class="nav-item-header nav-item">Activités</li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link">Chat
     <div class="ml-auto badge badge-pill badge-info">8</div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Recover Password</a>
+    <a href="javascript:void(0);" class="nav-link">Récupérer Mot de passe</a>
     </li>
-    <li class="nav-item-header nav-item">My Account
+    <li class="nav-item-header nav-item">Mon Compte
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Settings
-    <div class="ml-auto badge badge-success">New</div>
+    <a href="javascript:void(0);" class="nav-link">Paramètres
+    <div class="ml-auto badge badge-success">Nouveau</div>
     </a>
     </li>
     <li class="nav-item">
@@ -730,13 +732,13 @@
     <div class="no-gutters row">
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
-    <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Message Inbox
+    <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Boîte Réception
     </button>
     </div>
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
     <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-    <b>Support Tickets</b>
+    <b>Billets d'Assistance</b>
     </button>
     </div>
     </div>
@@ -745,15 +747,15 @@
     <li class="nav-item-divider nav-item">
     </li> 
     <li class="nav-item-btn text-center nav-item">
-    <button class="btn-wide btn btn-primary btn-sm"> Open Messages </button>
+    <button class="btn-wide btn btn-primary btn-sm"> Voir Messages </button>
     </li>
     </ul>
     </div>
     </div>
     </div>
     <div class="widget-content-left  ml-3 header-user-info">
-    <div class="widget-heading"> Alina Mclourd </div>
-    <div class="widget-subheading"> VP People Manager </div>
+    <div class="widget-heading"> Pauline Youdom </div>
+    <div class="widget-subheading"> Administratrice </div>
     </div>
     <div class="widget-content-right header-user-info ml-3">
     <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">

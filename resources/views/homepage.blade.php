@@ -589,7 +589,7 @@ label img {
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 							<div class="lp-banking-track-cashflow__image-wrap image">
 								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/women.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+								<img src="{{  asset('_next/static/media/old-people.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
 								</picture>
 							</div>
 							<div class="lp-banking-track-cashflow__content">

@@ -5,6 +5,7 @@ use App\Http\Controllers\NeedController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\JoinController;
+use App\Http\Controllers\DashboardController;
 use App\Models\formfranchise;
 /*
 |--------------------------------------------------------------------------
@@ -99,4 +100,11 @@ Route::group(['prefix' => 'clients'], function () {
         return view("clients/formfranchise");
 
       })->name('partner_form');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/dashboard', [DashboardController::class, 'index'])
+        ->name('dashboard');
+ 
 });
