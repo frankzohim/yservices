@@ -17,7 +17,7 @@ class AgencySeeder extends Seeder
     {
         agency::create([
             'name'=>'youdom-care',
-            'address'=>'france',
+            'adress'=>'france',
             'phone_number'=>'129927355'
         ]);
     }
