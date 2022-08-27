@@ -39,6 +39,7 @@
 .extra-small-icon a{font-size:14px;width:30px;height:30px;line-height:30px}
 .margin-10px-right{margin-right:10px}
 		</style>
+		
 		<footer class="footer">
 				<div class="container">
 					<div class="margin-top-lg footer__actions">
@@ -48,6 +49,53 @@
 						</a>
 					</div>
 					
+					<div class="padding-top-sm padding-bottom-xs footer__body">
+						
+						
+						<ul class="footer-nav">
+								<li class="text caps">Aide à l'autonomie</li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Charte de qualité</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
+						</ul>
+
+						<div class="footer__nav-wrap">
+
+							<ul class="footer-nav">
+								<li class="text caps">Garde de nuit</li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à la vie social </a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide au repas</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’autonomie</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’accompagnement</a></li>
+							</ul>
+
+							<ul class="footer-nav">
+								<li class="text caps">Service handicap</li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('services') }}">Nos services d’aide à domicile</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à domicile 24h/24 et 7j/7</a></li>
+
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="clients/franchise">Financer son aide à domicile</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" data-test="footer-nav_promoactions" href="#">Les aides financières</a></li>
+
+							</ul>
+
+							<ul class="footer-nav">
+								<li class="text caps">Accompagnements</li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
+								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
+								<li class="text text_md color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
+							</ul>
+
+							
+						</div>
+
+					
+					
+
+						
+					</div>
 					<div class="padding-top-sm padding-bottom-xs footer__body">
 						
 						
@@ -106,7 +154,7 @@
                     <div class="row">
                         <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="">QUI SOMMES NOUS?</span>
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="color:#232323">QUI SOMMES NOUS?</span>
                             <ul>
                                <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
 															<li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
