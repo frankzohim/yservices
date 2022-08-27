@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('title', __('Formulaire - Nous Rejoindre'))
 
+
 @section('content')
 
 
@@ -83,19 +84,20 @@
                                       <input type="email" class="form-control" placeholder="Email" name="email">
                                     </div>
                                     </div>
-
                                   </div>
 
                                   <div class="row">
 
                                     <div class="col-md-6">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="number" name="postal_code">
+                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name"  name="postal_code" id="searchI">
                                     </div>
+                                    <ul class="list-group" id="result"></ul>
+
                                     </div>
                                     <div class="col-md-6 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="ville" name="town">
+                                      <input type="text" class="form-control" placeholder="ville" name="town" id="town">
                                     </div>
                                     </div>
 
@@ -364,4 +366,7 @@
           x[n].className += " active";
         }
         </script>
+
+
+
 @endsection

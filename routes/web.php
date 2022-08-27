@@ -102,9 +102,11 @@ Route::group(['prefix' => 'clients'], function () {
       })->name('partner_form');
 });
 
+
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
- 
+
+
 });
