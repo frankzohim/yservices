@@ -92,3 +92,7 @@ Route::group(['prefix' => 'clients'], function () {
 
       })->name('partner_form');
 });
+
+Route::get('/test',function(){
+    return view('test');
+});
