@@ -10,7 +10,7 @@
 			footer .instagram-follow-api ul li{margin-bottom:0}
 			footer .footer-horizontal-link li{margin-right:35px;list-style:none;margin-bottom:0}
 			footer .footer-horizontal-link li:last-child{margin-right:0}
-			.footer-dark,.footer-dark a{color:#8890a4}
+			.footer-dark,.footer-dark a{color:#fff; font-family: Lato, Arial, sans-serif; line-height: 30px; }
 			.footer-dark a:hover{color:#fff}
 			.footer-dark .footer-social a{color:#fff}
 			.footer-dark .footer-social a:hover{color:#8890a4}
@@ -23,8 +23,21 @@
 			footer .instafeed-grid.gutter-large{margin-left:-10px;margin-right:-10px}
 			footer .instafeed-grid.gutter-extra-large{margin-left:-15px;margin-right:-15px}
 			footer .instafeed-grid.gutter-double-extra-large{margin-left:-20px;margin-right:-20px}
-			.bg-slate-blue{background-color:#262b35}
+			.bg-slate-blue{background-color:#594EE6}
 			.padding-five-tb{padding-top:5%;padding-bottom:5%}
+			.footer-bottom,.footer-consulting.footer-dark .footer-bottom a,.footer-consulting.footer-dark .footer-top,.footer-consulting.footer-dark .footer-top a{color:#828282}
+.footer-consulting.footer-dark .footer-bottom a:hover,.footer-consulting.footer-dark .footer-top a:hover{color:#fff}
+
+.footer-furniture-shop.footer-dark .footer-bottom,.footer-furniture-shop.footer-dark .footer-bottom a,.footer-furniture-shop.footer-dark .footer-top,.footer-furniture-shop.footer-dark .footer-top a{color:#828282}.footer-furniture-shop.footer-dark a:hover{color:#fff}
+		.padding-40px-tb{padding-top:40px;padding-bottom:40px}
+		.border-top{border-top:1px solid!important}
+		.border-color-white-transparent{border-color:rgba(255,255,255,.1)!important}
+		.social-icon-style-12 li a{color:#232323;display:inline-block}
+.social-icon-style-12 .light li a{color:#fff;display:inline-block}
+.social-icon-style-12 li a:hover{opacity:.5}
+.extra-large-icon,.extra-small-icon,.large-icon,.medium-icon,.small-icon{list-style:none;padding:0}.extra-large-icon li,.extra-small-icon li,.large-icon li,.medium-icon li,.small-icon li{display:inline-block}.extra-large-icon li:first-child,.extra-small-icon li:first-child,.large-icon li:first-child,.medium-icon li:first-child,.small-icon li:first-child{margin-left:0}.extra-large-icon li:last-child,.extra-small-icon li:last-child,.large-icon li:last-child,.medium-icon li:last-child,.small-icon li:last-child{margin-right:0}.extra-small-icon li{margin:0 2px}.small-icon li{margin:0 5px}.medium-icon li{margin:0 8px}.large-icon li{margin:0 10px}.extra-large-icon li{margin:0 12px}
+.extra-small-icon a{font-size:14px;width:30px;height:30px;line-height:30px}
+.margin-10px-right{margin-right:10px}
 		</style>
 		<footer class="footer">
 				<div class="container">
@@ -39,23 +52,17 @@
 						
 						
 						<ul class="footer-nav">
-								<li class="text caps">Qui Sommes Nous?</li>
+								<li class="text caps">Aide à l'autonomie</li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Charte de qualité</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
 						</ul>
-						
-						
-						
-						
-
-				
 
 						<div class="footer__nav-wrap">
 
 							<ul class="footer-nav">
-								<li class="text caps">Services</li>
+								<li class="text caps">Garde de nuit</li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à la vie social </a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide au repas</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’autonomie</a></li>
@@ -63,7 +70,7 @@
 							</ul>
 
 							<ul class="footer-nav">
-								<li class="text caps">YOUDOM-CARE vous accompagne</li>
+								<li class="text caps">Service handicap</li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('services') }}">Nos services d’aide à domicile</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à domicile 24h/24 et 7j/7</a></li>
 
@@ -73,7 +80,7 @@
 							</ul>
 
 							<ul class="footer-nav">
-								<li class="text caps">Aide</li>
+								<li class="text caps">Accompagnements</li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
 								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
@@ -86,12 +93,7 @@
 					
 					
 
-						<div class="margin-top-default footer__links-wrap footer__bottom">
-
-							
-
-							<ul class="footer-links"><li class="text text_md color_grey">© 2022 Youdom Care</li><li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Termes & Conditions</a></li><li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a></li><li class="text text_md color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Politique de cookies</a></li></ul>
-						</div>
+						
 					</div>
 				</div>
 
@@ -104,56 +106,63 @@
                     <div class="row">
                         <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Company</span>
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="">QUI SOMMES NOUS?</span>
                             <ul>
-                                <li><a href="about-us.html">About company</a></li>
-                                <li><a href="our-services.html">Company services</a></li>
-                                <li><a href="our-team.html">Job opportunities</a></li>
-                                <li><a href="contact-us-classic.html">Contact us</a></li>
+                               <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
+															<li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
+															<li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Charte de qualité</a></li>
+															<li class="text  color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
                             </ul>
                         </div>
                         <!-- end footer column -->
+
                         <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Customer</span>
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;">YOUDOM-CARE</span>
                             <ul>                           
-                                <li><a href="faq.html">Client support</a></li>
-                                <li><a href="pricing-packages.html">Pricing packages</a></li>
-                                <li><a href="our-story.html">Company history</a></li>
-                                <li><a href="our-process.html">Our process</a></li>
+                               	<li class="text color_grey"><a class="link" data-inner-link="true" href="{{ route('services') }}">Nos services d’aide à domicile</a></li>
+																<li class="text  color_grey"><a class="link" data-inner-link="true" href="#">Aide à domicile 24h/24 et 7j/7</a></li>
+																<li class="text  color_grey"><a class="link" data-inner-link="true" href="clients/franchise">Financer son aide à domicile</a></li>
+																<li class="text  color_grey"><a class="link" data-inner-link="true" data-test="footer-nav_promoactions" href="#">Les aides financières</a></li>
                             </ul>
                         </div>
                         <!-- end footer column -->
-                        <!-- start footer column -->
-                        <div class="col-12 col-lg-3 col-sm-6 xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Get in touch</span>
-                            <p class="w-85 margin-15px-bottom">27 Eden walk eden centre, Orchard view, Paris, France</p>
-                            <div><i class="feather icon-feather-phone-call icon-very-small margin-10px-right text-white"></i>+1 234 567 8910</div>
-                            <div><i class="feather icon-feather-mail icon-very-small margin-10px-right text-white"></i><a href="#">info@yourdomain.com</a></div>
+
+												 <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;">LIENS RAPIDES</span>
+                            <ul>                           
+                               <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
+															 <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
+															 <li class="text  color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
+															<li class="text  color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
+                            </ul>
                         </div>
                         <!-- end footer column -->
+
                         <!-- start footer column -->
-                        <div class="col-12 col-lg-3 col-sm-6">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom">Follow us on Instagram</span>
-                            <div class="w-100 d-inline-block margin-10px-top">
-                                <ul class="instafeed-grid instafeed-wrapper grid grid-3col xl-grid-3col lg-grid-3col md-grid-3col sm-grid-3col xs-grid-3col gutter-small" data-total="3">
-                                    <li class="grid-item"><figure><a href="#" data-href="" target="_blank"><img src="#" data-src="" class="insta-image" alt="" /><span class="insta-counts"><i class="fab fa-instagram"></i></span></a></figure></li>
-                                </ul>
-                                <a class="alt-font text-extra-small text-uppercase font-weight-500 margin-20px-top d-inline-block" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram icon-extra-small align-middle margin-10px-right text-gradient-light-purple-light-orange"></i><span class="d-inline-block align-middle">Follow instagram</span></a>
-                            </div>
+                        <div class="col-12 col-lg-3 col-sm-6 xs-margin-25px-bottom" >
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">CONTACT</span>
+                            <p class="w-85 margin-15px-bottom text" style="margin-bottom: 14px;">60 rue Federico Garcia Lorca 93130 Paris, France</p>
+                            <div><i class="fa fa-phone  icon-very-small margin-10px-right text-white"></i> <span class="text "> +33 66-7224-507</span> </div>
+                            <div><i class="fa fa-envelope  icon-very-small margin-10px-right text-white"></i><a href="#"> <span class="text "> contact@youdom-care.com</span> </a></div>
                         </div>
                         <!-- end footer column -->
+                        
                     </div>
                 </div>
             </div>
             <div class="footer-bottom padding-40px-tb border-top border-color-white-transparent">
                 <div class="container"> 
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-3 text-center text-md-start sm-margin-20px-bottom">
-                            <a href="index.html" class="footer-logo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
+                        <div class="col-12 col-md-3 text-center text-md-start sm-margin-20px-bottom" style="margin-top: 20px">
+                           <ul class="footer-links">
+															<li class="text  color_grey" style="white-space: nowrap"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Confidentialité</a></li>
+															<li class="text  color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Cookies</a></li>
+														</ul>
                         </div>
                         <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
-                            <p>&copy; 2021 Litho is Proudly Powered by <a href="https://www.themezaa.com/" target="_blank">ThemeZaa</a></p>
+                            <p style="color: #fff" class="text text_md">&copy; 2022 Youdom Care is Proudly Powered by <a href="#" target="_blank">STILLFORCE</a></p>
                         </div>
                         <div class="col-12 col-md-3 text-center text-md-end">
                             <div class="social-icon-style-12">
