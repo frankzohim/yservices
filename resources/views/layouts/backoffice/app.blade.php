@@ -10,7 +10,8 @@
 <meta name="description" content="This is an example dashboard created using build-in elements and components.">
 
 <meta name="msapplication-tap-highlight" content="no">
-<link href="{{ asset('assets/backoffice/css/main.d810cf0ae7f39f28f336.css') }}" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="{{ asset('_next/static/media/icones/favicon.png') }}" />
+<link href="{{ asset('assets/backoffice/main.d810cf0ae7f39f28f336.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenu/dist/metisMenu.min.css">
  <script src="https://kit.fontawesome.com/97e37c6653.js" crossorigin="anonymous"></script>
 </head>
@@ -276,7 +277,7 @@
 </div>
 <div class="widget-content-left mr-3">
 <div class="widget-content-left">
-<img width="42" class="rounded" src="assets/images/avatars/1.jpg" alt="">
+<img width="42" class="rounded" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
 </div>
 </div>
 <div class="widget-content-left">
@@ -366,42 +367,42 @@
 <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/1.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }} " alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/2.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }} " alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/3.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/3.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/4.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/4.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/5.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/5.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/6.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/6.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/7.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/7.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm">
 <div class="avatar-icon">
-<img src="assets/backoffice/images/avatars/8.jpg" alt="">
+<img src="{{ asset('assets/backoffice/assets/images/avatars/8.jpg') }}" alt="">
 </div>
 </div>
 <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -438,7 +439,7 @@
 </div>
 </div>
 <div class="app-drawer-overlay d-none animated fadeIn"></div>
-<script type="text/javascript" src="assets/backoffice/scripts/main.d810cf0ae7f39f28f336.js"></script>
+<script type="text/javascript" src="assets/backoffice/assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
 <script src="https://cdn.jsdelivr.net/npm/metismenu"></script>
 </body>

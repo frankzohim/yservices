@@ -1,6 +1,8 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
-    <div class="logo-src"></div>
+    <div class=""><a class="" aria-label="Youdom" data-inner-link="true" href="{{ route('homepage') }}">
+									<img src="{{  asset('_next/static/media/logo-care.png') }}"   />
+								</a></div>
     <div class="header__pane ml-auto">
     <div>
     <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
@@ -40,7 +42,7 @@
     <ul class="header-megamenu nav">
     <li class="nav-item">
     <a href="javascript:void(0);" data-placement="bottom" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
-    <i class="nav-link-icon pe-7s-gift"> </i> Mega Menu
+    <i class="nav-link-icon pe-7s-gift"> </i> Liens Rapides
     <i class="fa fa-angle-down ml-2 opacity-5"></i>
     </a>
     <div class="rm-max-width">
@@ -50,69 +52,69 @@
     <div class="no-gutters row">
     <div class="col-sm-6 col-xl-4">
     <ul class="nav flex-column">
-    <li class="nav-item-header nav-item"> Overview</li>
+    <li class="nav-item-header nav-item"> Aide à la personne</li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link">
     <i class="nav-link-icon lnr-inbox"></i>
-    <span> Contacts</span>
+    <span> Devis</span>
     </a>
     </li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link">
     <i class="nav-link-icon lnr-book"></i>
-    <span> Incidents</span>
+    <span> Emplois</span>
     <div class="ml-auto badge badge-pill badge-danger">5</div>
     </a>
     </li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link">
     <i class="nav-link-icon lnr-picture"></i>
-    <span> Companies</span>
+    <span> Jobs</span>
     </a>
     </li>
     <li class="nav-item">
     <a disabled="" href="javascript:void(0);" class="nav-link disabled">
     <i class="nav-link-icon lnr-file-empty"></i>
-    <span> Dashboards</span>
+    <span> Intervenants</span>
     </a>
     </li>
     </ul>
     </div>
     <div class="col-sm-6 col-xl-4">
     <ul class="nav flex-column">
-    <li class="nav-item-header nav-item"> Favourites</li>
+    <li class="nav-item-header nav-item"> Système</li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link"> Reports Conversions </a>
+    <a href="javascript:void(0);" class="nav-link"> Configurations </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link"> Quick Start
-    <div class="ml-auto badge badge-success">New</div>
+    <a href="javascript:void(0);" class="nav-link"> Rôles
+    <div class="ml-auto badge badge-success">Nouveau</div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Users &amp; Groups</a>
+    <a href="javascript:void(0);" class="nav-link">Utilisateurs &amp; Groupes</a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Proprieties</a>
+    <a href="javascript:void(0);" class="nav-link">Propriétés</a>
     </li>
     </ul>
     </div>
     <div class="col-sm-6 col-xl-4">
     <ul class="nav flex-column">
-    <li class="nav-item-header nav-item">Sales &amp; Marketing</li>
+    <li class="nav-item-header nav-item">Ventes &amp; Marketing</li>
      <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Queues </a>
+    <a href="javascript:void(0);" class="nav-link">Landing Page </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Resource Groups </a>
+    <a href="javascript:void(0);" class="nav-link">Taux Conversions </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Goal Metrics
+    <a href="javascript:void(0);" class="nav-link">Mesures D'objectif
     <div class="ml-auto badge badge-warning">3</div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Campaigns</a>
+    <a href="javascript:void(0);" class="nav-link">Campagnes</a>
     </li>
     </ul>
     </div>
@@ -124,52 +126,52 @@
     </li>
     <li class="btn-group nav-item">
     <a class="nav-link" data-toggle="dropdown" aria-expanded="false">
-    <span class="badge badge-pill badge-danger ml-0 mr-2">4</span> Settings
+    <span class="badge badge-pill badge-danger ml-0 mr-2">4</span> Paramètres
     <i class="fa fa-angle-down ml-2 opacity-5"></i>
     </a>
     <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-secondary">
-    <div class="menu-header-image opacity-5" style="background-image: url('assets/backoffice/images/dropdown-header/abstract2.jpg');"></div>
+    <div class="menu-header-image opacity-5" style="background-image: url('assets/backoffice/assets/images/dropdown-header/abstract2.jpg');"></div>
     <div class="menu-header-content">
-    <h5 class="menu-header-title">Overview</h5>
-    <h6 class="menu-header-subtitle">Dropdown menus for everyone</h6>
+    <h5 class="menu-header-title">Aperçu</h5>
+    <h6 class="menu-header-subtitle">Options Illimitées</h6>
     </div>
     </div>
     </div>
     <div class="scroll-area-xs">
     <div class="scrollbar-container">
-    <h6 tabindex="-1" class="dropdown-header">Key Figures</h6>
-    <button type="button" tabindex="0" class="dropdown-item">Service Calendar</button>
-    <button type="button" tabindex="0" class="dropdown-item">Knowledge Base</button>
-    <button type="button" tabindex="0" class="dropdown-item">Accounts</button>
+    <h6 tabindex="-1" class="dropdown-header">Chiffres Clés</h6>
+    <button type="button" tabindex="0" class="dropdown-item">Calendrier Services</button>
+    <button type="button" tabindex="0" class="dropdown-item">Base Connaissances</button>
+    <button type="button" tabindex="0" class="dropdown-item">Comptes</button>
     <div tabindex="-1" class="dropdown-divider"></div>
-    <button type="button" tabindex="0" class="dropdown-item">Products</button>
-    <button type="button" tabindex="0" class="dropdown-item">Rollup Queries</button>
+    <button type="button" tabindex="0" class="dropdown-item">Produits</button>
+    <button type="button" tabindex="0" class="dropdown-item">Requêtes Cumulées</button>
     </div>
     </div>
     <ul class="nav flex-column">
     <li class="nav-item-divider nav-item"></li>
     <li class="nav-item-btn nav-item">
-    <button class="btn-wide btn-shadow btn btn-danger btn-sm">Cancel</button>
+    <button class="btn-wide btn-shadow btn btn-danger btn-sm">Annuler</button>
     </li>
     </ul>
     </div>
     </li>
     <li class="dropdown nav-item">
     <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false">
-    <i class="nav-link-icon pe-7s-settings"></i> Projects
+    <i class="nav-link-icon pe-7s-settings"></i> Projets
     <i class="fa fa-angle-down ml-2 opacity-5"></i>
     </a>
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-success">
-    <div class="menu-header-image opacity-1" style="background-image: url('assets/backoffice/images/dropdown-header/abstract3.jpg');"></div>
+    <div class="menu-header-image opacity-1" style="background-image: url('assets/backoffice/assets/images/dropdown-header/abstract3.jpg');"></div>
     <div class="menu-header-content text-left">
-    <h5 class="menu-header-title">Overview</h5>
-    <h6 class="menu-header-subtitle">Unlimited options</h6>
+    <h5 class="menu-header-title">Aperçu</h5>
+    <h6 class="menu-header-subtitle">Options Illimitées</h6>
     <div class="menu-header-btn-pane">
-    <button class="mr-2 btn btn-dark btn-sm">Settings</button>
+    <button class="mr-2 btn btn-dark btn-sm">Paramètres</button>
     <button class="btn-icon btn-icon-only btn btn-warning btn-sm">
     <i class="pe-7s-config btn-icon-wrapper"></i>
     </button>
@@ -178,20 +180,20 @@
     </div>
     </div>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"></i>Graphic Design
+    <i class="dropdown-icon lnr-file-empty"></i>Aide et accompagnement PAMH  
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"> </i>App Development
+    <i class="dropdown-icon lnr-file-empty"> </i>Aide-Ménagère 
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"> </i>Icon Design
+    <i class="dropdown-icon lnr-file-empty"> </i>Petite Enfance 
     </button>
     <div tabindex="-1" class="dropdown-divider"></div>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"></i>Miscellaneous
+    <i class="dropdown-icon lnr-file-empty"></i>Travaux Nettoyage 
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"></i>Frontend Dev
+    <i class="dropdown-icon lnr-file-empty"></i>Recrutement, Formation
     </button>
     </div>
     </li>
@@ -210,8 +212,8 @@
     <div class="dropdown-menu-header-inner bg-plum-plate">
     <div class="menu-header-image" style="background-image: url('assets/backoffice/images/dropdown-header/abstract4.jpg');"></div>
     <div class="menu-header-content text-white">
-    <h5 class="menu-header-title">Grid Dashboard</h5>
-    <h6 class="menu-header-subtitle">Easy grid navigation inside dropdowns</h6>
+    <h5 class="menu-header-title">Tableau Bord</h5>
+    <h6 class="menu-header-subtitle">Navigation Facile</h6>
     </div>
     </div>
     </div>
@@ -219,27 +221,27 @@
     <div class="no-gutters row">
     <div class="col-sm-6 col-xl-4">
     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-    <i class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Automation
+    <i class="pe-7s-world icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Automatisation
     </button>
     </div>
     <div class="col-sm-6 col-xl-4">
     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-    <i class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Reports
+    <i class="pe-7s-piggy icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Rapports
     </button>
     </div>
     <div class="col-sm-6 col-xl-4">
     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-    <i class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Settings
+    <i class="pe-7s-config icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Paramètres
     </button>
     </div>
     <div class="col-sm-6 col-xl-4">
     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-    <i class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Content
+    <i class="pe-7s-browser icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"> </i> Contenu
     </button>
     </div>
     <div class="col-sm-6 col-xl-4">
     <button class="btn-icon-vertical btn-square btn-transition btn btn-outline-link">
-    <i class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Activity
+    <i class="pe-7s-hourglass icon-gradient bg-night-fade btn-icon-wrapper btn-icon-lg mb-3"></i> Activités
     </button>
     </div>
     <div class="col-sm-6 col-xl-4">
@@ -252,7 +254,7 @@
     <ul class="nav flex-column">
     <li class="nav-item-divider nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
-    <button class="btn-shadow btn btn-primary btn-sm">Follow-ups</button>
+    <button class="btn-shadow btn btn-primary btn-sm">Suivis</button>
     </li>
     </ul>
     </div>
@@ -268,10 +270,10 @@
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
     <div class="dropdown-menu-header mb-0">
     <div class="dropdown-menu-header-inner bg-deep-blue">
-    <div class="menu-header-image opacity-1" style="background-image: url('assets/backoffice/images/dropdown-header/city3.jpg');"></div>
+    <div class="menu-header-image opacity-1" style="background-image: url('assets/backoffice/assets/images/dropdown-header/city3.jpg');"></div>
     <div class="menu-header-content text-dark">
     <h5 class="menu-header-title">Notifications</h5>
-    <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
+    <h6 class="menu-header-subtitle">Vous avez <b>21</b> messages non lus</h6>
     </div>
     </div>
     </div>
@@ -283,12 +285,12 @@
     </li>
     <li class="nav-item">
     <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
-    <span>Events</span>
+    <span>Événements</span>
     </a>
     </li>
     <li class="nav-item">
     <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
-    <span>System Errors</span>
+    <span style="white-space: nowrap;">Erreurs Système</span>
     </a>
     </li>
     </ul>
@@ -302,7 +304,7 @@
     <div class="vertical-timeline-item dot-danger vertical-timeline-element">
     <div><span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
+    <h4 class="timeline-title">Réunions</h4>
      <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -311,7 +313,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+    <p>Encore une autre, à <span class="text-success">15:00 H</span></p>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -320,8 +322,8 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release
-    <span class="badge badge-danger ml-2">NEW</span>
+    <h4 class="timeline-title">Créer la version de production
+    <span class="badge badge-danger ml-2">NOUVEAU</span>
     </h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -331,46 +333,46 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Something not important
+    <h4 class="timeline-title">Quelque chose de pas important
     <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/1.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/2.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }}" alt="">
      </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/3.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/3.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/4.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/4.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/5.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/5.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/9.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/6.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/7.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/7.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/8.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/8.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -386,7 +388,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">This dot has an info state</h4>
+    <h4 class="timeline-title">Ce point a un état d'information</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -395,7 +397,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
+    <h4 class="timeline-title">Toutes Les Réunions</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -404,7 +406,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Yet another one, at <span class="text-success">15:00 PM</span>
+    <p>Encore une autre, à <span class="text-success">14:00 H</span>
     </p><span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -412,8 +414,8 @@
     <div class="vertical-timeline-item dot-success vertical-timeline-element">
     <div><span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release
-    <span class="badge badge-danger ml-2">NEW</span>
+    <h4 class="timeline-title">Créer la version de production
+    <span class="badge badge-danger ml-2">NOUVEAU</span>
     </h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -422,7 +424,7 @@
     <div class="vertical-timeline-item dot-dark vertical-timeline-element">
     <div><span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">This dot has a dark state</h4>
+    <h4 class="timeline-title">Ce point a un état sombre</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -444,9 +446,9 @@
     <i class="badge badge-dot badge-dot-xl badge-success"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
-    <p>Lorem ipsum dolor sic amet, today at
-    <a href="javascript:void(0);">12:00 PM</a>
+    <h4 class="timeline-title">Toutes Les Réunions</h4>
+    <p>Lorem ipsum dolor sic amet, aujourd'hui à
+    <a href="javascript:void(0);">12:00 H</a>
     </p>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -458,8 +460,8 @@
     <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Another meeting today, at <b class="text-danger">12:00 PM</b></p>
-    <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+    <p>Une autre réunion aujourd'hui, à <b class="text-danger">12:00 PM</b></p>
+    <p>Encore une autre, à <span class="text-success">15:00 H</span></p>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -470,7 +472,7 @@
     <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release</h4>
+    <h4 class="timeline-title">Créer la version de production</h4>
     <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut
     labore et dolore magna elit enim at minim veniam quis nostrud
     </p>
@@ -484,7 +486,7 @@
     <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title text-success">Something not important</h4>
+    <h4 class="timeline-title text-success">Quelque chose de pas important</h4>
     <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -496,9 +498,9 @@
     <i class="badge badge-dot badge-dot-xl badge-success"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
-    <p>Lorem ipsum dolor sic amet, today at
-    <a href="javascript:void(0);">12:00 PM</a>
+    <h4 class="timeline-title">Toutes Les Réunions</h4>
+    <p>Lorem ipsum dolor sic amet, ajourd'hui à
+    <a href="javascript:void(0);">12:00 H</a>
     </p>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -510,8 +512,8 @@
     <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Another meeting today, at <b class="text-danger">12:00 PM</b></p>
-    <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+    <p>Une autre réunion aujourd'hui, à <b class="text-danger">12:00 H</b></p>
+    <p>Encore une autre, à <span class="text-success">15:00 H</span></p>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -522,7 +524,7 @@
     <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release</h4>
+    <h4 class="timeline-title">Créer la version de production</h4>
     <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut
     labore et dolore magna elit enim at minim veniam quis nostrud
     </p>
@@ -536,7 +538,7 @@
     <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title text-success">Something not important</h4>
+    <h4 class="timeline-title text-success">Quelque chose de pas important</h4>
     <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -559,8 +561,8 @@
     <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
     <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
     </div>
-    <div class="results-subtitle">All caught up!</div>
-    <div class="results-title">There are no system errors!</div>
+    <div class="results-subtitle">Tous OK!</div>
+    <div class="results-title">Il n'y a pas d'erreur système !</div>
     </div>
     </div>
     </div>
@@ -569,7 +571,7 @@
     <ul class="nav flex-column">
     <li class="nav-item-divider nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
-    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
+    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">Voir les Dernières Modifications</button>
     </li>
     </ul>
     </div>
@@ -584,13 +586,13 @@
     <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu dropdown-menu-right">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
-    <div class="menu-header-image opacity-05" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
+    <div class="menu-header-image opacity-05" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/city2.jpg') }});"></div>
     <div class="menu-header-content text-center text-white">
-    <h6 class="menu-header-subtitle mt-0"> Choose Language</h6>
+    <h6 class="menu-header-subtitle mt-0"> Choisissez la langue</h6>
     </div>
     </div>
     </div>
-    <h6 tabindex="-1" class="dropdown-header"> Popular Languages</h6>
+    <h6 tabindex="-1" class="dropdown-header"> Langues Populaires</h6>
     <button type="button" tabindex="0" class="dropdown-item">
     <span class="mr-3 opacity-8 flag large US"></span> USA
     </button>
@@ -604,7 +606,7 @@
     <span class="mr-3 opacity-8 flag large ES"></span>Spain
     </button>
     <div tabindex="-1" class="dropdown-divider"></div>
-    <h6 tabindex="-1" class="dropdown-header">Others</h6>
+    <h6 tabindex="-1" class="dropdown-header">Autres</h6>
     <button type="button" tabindex="0" class="dropdown-item active">
     <span class="mr-3 opacity-8 flag large DE"></span> Germany
     </button>
@@ -623,10 +625,10 @@
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-premium-dark">
-    <div class="menu-header-image" style="background-image: url('assets/backoffice/images/dropdown-header/abstract4.jpg');"></div>
+    <div class="menu-header-image" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/abstract4.jpg') }}');"></div>
     <div class="menu-header-content text-white">
-    <h5 class="menu-header-title">Users Online</h5>
-    <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+    <h5 class="menu-header-title">Utilisateurs en ligne</h5>
+    <h6 class="menu-header-subtitle">Aperçu Activité Récente du Compte</h6>
     </div>
     </div>
     </div>
@@ -640,7 +642,7 @@
     <span>344k</span>
     </div>
     <div class="widget-subheading pt-2">
-    Profile views since last login
+    Consultations de profil depuis la dernière connexion
     </div>
     <div class="widget-description text-danger">
     <span class="pr-1"><span>176%</span></span>
@@ -655,7 +657,7 @@
     <li class="nav-item-divider mt-0 nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
     <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
-    <i class="fa fa-cog fa-spin mr-2"></i>View Details
+    <i class="fa fa-cog fa-spin mr-2"></i>Voir Détails
     </button>
     </li>
     </ul>
@@ -668,25 +670,33 @@
     <div class="widget-content-left">
     <div class="btn-group">
     <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-    <img width="42" class="rounded-circle" src="assets/backoffice/images/avatars/1.jpg" alt="">
+    <img width="42" class="rounded-circle" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }} " alt="">
     <i class="fa fa-angle-down ml-2 opacity-8"></i>
     </a>
     <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-info">
-    <div class="menu-header-image opacity-2" style="background-image: url('assets/backoffice/images/dropdown-header/city3.jpg');"></div>
+    <div class="menu-header-image opacity-2" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/city3.jpg') }} );"></div>
     <div class="menu-header-content text-left">
     <div class="widget-content p-0">
     <div class="widget-content-wrapper">
     <div class="widget-content-left mr-3">
-    <img width="42" class="rounded-circle" src="assets/backoffice/images/avatars/1.jpg" alt="">
+    <img width="42" class="rounded-circle" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
     </div>
     <div class="widget-content-left">
-    <div class="widget-heading">Alina Mcloughlin</div>
-    <div class="widget-subheading opacity-8">A short profile description</div>
+    <div class="widget-heading">Pauline Youdom</div>
+    <div class="widget-subheading opacity-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima</div>
     </div>
     <div class="widget-content-right mr-2">
-    <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+        <form method="POST" action="{{ route('logout') }}" id="logout-form">
+            @csrf
+        </form>
+            <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>
+                        <button class="btn-pill btn-shadow btn-shine btn btn-focus">
+                            Déconnexion
+
+                        </button>
+            </a>
     </div>
     </div>
     </div>
@@ -696,20 +706,20 @@
     <div class="scroll-area-xs" style="height: 150px;">
     <div class="scrollbar-container ps">
     <ul class="nav flex-column">
-     <li class="nav-item-header nav-item">Activity</li>
+     <li class="nav-item-header nav-item">Activités</li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link">Chat
     <div class="ml-auto badge badge-pill badge-info">8</div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Recover Password</a>
+    <a href="javascript:void(0);" class="nav-link">Récupérer Mot de passe</a>
     </li>
-    <li class="nav-item-header nav-item">My Account
+    <li class="nav-item-header nav-item">Mon Compte
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">Settings
-    <div class="ml-auto badge badge-success">New</div>
+    <a href="javascript:void(0);" class="nav-link">Paramètres
+    <div class="ml-auto badge badge-success">Nouveau</div>
     </a>
     </li>
     <li class="nav-item">
@@ -730,13 +740,13 @@
     <div class="no-gutters row">
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
-    <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Message Inbox
+    <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Boîte Réception
     </button>
     </div>
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
     <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-    <b>Support Tickets</b>
+    <b>Billets d'Assistance</b>
     </button>
     </div>
     </div>
@@ -745,15 +755,15 @@
     <li class="nav-item-divider nav-item">
     </li> 
     <li class="nav-item-btn text-center nav-item">
-    <button class="btn-wide btn btn-primary btn-sm"> Open Messages </button>
+    <button class="btn-wide btn btn-primary btn-sm"> Voir Messages </button>
     </li>
     </ul>
     </div>
     </div>
     </div>
     <div class="widget-content-left  ml-3 header-user-info">
-    <div class="widget-heading"> Alina Mclourd </div>
-    <div class="widget-subheading"> VP People Manager </div>
+    <div class="widget-heading"> Pauline Youdom </div>
+    <div class="widget-subheading"> Administratrice </div>
     </div>
     <div class="widget-content-right header-user-info ml-3">
     <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">

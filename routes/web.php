@@ -5,6 +5,7 @@ use App\Http\Controllers\NeedController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\JoinController;
+use App\Http\Controllers\DashboardController;
 use App\Models\formfranchise;
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +26,14 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('about');
 })->name('about');
+
+Route::get('commitment', function () {
+    return view('our-commitment');
+})->name('commitment');
+
+Route::get('quality', function () {
+    return view('quality');
+})->name('quality');
 
 Route::get('services', function () {
     return view('services');
@@ -93,6 +102,11 @@ Route::group(['prefix' => 'clients'], function () {
       })->name('partner_form');
 });
 
-Route::get('/test',function(){
-    return view('test');
+
+Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/dashboard', [DashboardController::class, 'index'])
+        ->name('dashboard');
+
+
 });

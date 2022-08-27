@@ -14,7 +14,7 @@
     <div class="menu-header-image opacity-1" style="background-image: url('assets/backoffice/images/dropdown-header/city3.jpg');"></div>
     <div class="menu-header-content text-dark">
     <h5 class="menu-header-title">Notifications</h5>
-    <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
+    <h6 class="menu-header-subtitle">Vous avez <b>21</b> messages non lus</h6>
     </div>
     </div>
     </div>
@@ -26,12 +26,12 @@
     </li>
     <li class="nav-item">
     <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header1">
-    <span>Events</span>
+    <span>Evènements</span>
     </a>
     </li>
     <li class="nav-item">
     <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header1">
-    <span>System Errors</span>
+    <span>Erreurs système</span>
     </a>
     </li>
     </ul>
@@ -46,7 +46,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
+    <h4 class="timeline-title">Réunion de toutes les mains</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -55,8 +55,8 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
      <div class="vertical-timeline-element-content bounce-in">
-    <p>Yet another one, at
-    <span class="text-success">15:00 PM</span>
+    <p>Encore une autre réunion, à
+    <span class="text-success">15:00 H</span>
     </p>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -66,8 +66,8 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release
-    <span class="badge badge-danger ml-2">NEW</span>
+    <h4 class="timeline-title">Créer la version de production
+    <span class="badge badge-danger ml-2">NOUVEAU</span>
     </h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
@@ -77,46 +77,46 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Something not important
+    <h4 class="timeline-title">Lorem ipsum dolor si
     <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/1.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/2.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/2.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/3.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/3.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/4.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/4.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/5.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/5.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/9.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/9.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/images/avatars/7.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/10.jpg') }}" alt="">
     </div>
     </div>
     <div class="avatar-icon-wrapper avatar-icon-sm">
     <div class="avatar-icon">
-    <img src="assets/backoffice/images/avatars/8.jpg" alt="">
+    <img src="{{ asset('assets/backoffice/assets/images/avatars/8.jpg') }}" alt="">
     </div>
      </div>
     <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -132,7 +132,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">This dot has an info state</h4>
+    <h4 class="timeline-title">Lorem ipsum dolor</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -141,7 +141,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
+    <h4 class="timeline-title">Lorem ipsum dolor sit.</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -150,7 +150,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Yet another one, at
+    <p>Lorem ipsum dolor sit.
     <span class="text-success">15:00 PM</span>
     </p>
     <span class="vertical-timeline-element-date"></span>
@@ -161,7 +161,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release
+    <h4 class="timeline-title">Lorem, ipsum dolor.
     <span class="badge badge-danger ml-2">NEW</span>
     </h4>
     <span class="vertical-timeline-element-date"></span>
@@ -172,7 +172,7 @@
     <div>
     <span class="vertical-timeline-element-icon bounce-in"></span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">This dot has a dark state</h4>
+    <h4 class="timeline-title">Lorem, ipsum dolor.</h4>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -194,7 +194,7 @@
     <i class="badge badge-dot badge-dot-xl badge-success"></i>
      </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">All Hands Meeting</h4>
+    <h4 class="timeline-title">Lorem, ipsum.</h4>
     <p>Lorem ipsum dolor sic amet, today at
     <a href="javascript:void(0);">12:00 PM</a>
     </p>
@@ -208,10 +208,10 @@
     <i class="badge badge-dot badge-dot-xl badge-warning"></i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <p>Another meeting today, at
+    <p>Lorem, ipsum dolor.
     <b class="text-danger">12:00 PM</b>
     </p>
-    <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+    <p>Lorem, ipsum dolor.<span class="text-success">15:00 PM</span></p>
     <span class="vertical-timeline-element-date"></span>
     </div>
     </div>
@@ -222,7 +222,7 @@
     <i class="badge badge-dot badge-dot-xl badge-danger"></i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title">Build the production release</h4>
+    <h4 class="timeline-title">Lorem, ipsum.</h4>
     <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor
     incididunt ut labore et dolore magna elit enim at
     minim veniam quis nostrud
@@ -237,7 +237,7 @@
     <i class="badge badge-dot badge-dot-xl badge-primary"></i>
     </span>
     <div class="vertical-timeline-element-content bounce-in">
-    <h4 class="timeline-title text-success">Something not important</h4>
+    <h4 class="timeline-title text-success">Lorem ipsum dolor sit.</h4>
     <p>Lorem ipsum dolor sit amit,consectetur elit enim at
     minim veniam quis nostrud</p>
     <span class="vertical-timeline-element-date"></span>
@@ -318,8 +318,8 @@
     <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
     <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
     </div>
-    <div class="results-subtitle">All caught up!</div>
-    <div class="results-title">There are no system errors!</div>
+    <div class="results-subtitle">Tout est ok</div>
+    <div class="results-title">Pas d'erreur système</div>
     </div>
     </div>
      </div>
@@ -328,7 +328,7 @@
     <ul class="nav flex-column">
     <li class="nav-item-divider nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
-    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
+    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">Afficher les dernières modifications</button>
     </li>
     </ul>
     </div>
@@ -343,11 +343,11 @@
     <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
     <div class="menu-header-image opacity-05" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
     <div class="menu-header-content text-center text-white">
-    <h6 class="menu-header-subtitle mt-0"> Choose Language</h6>
+    <h6 class="menu-header-subtitle mt-0"> Chosir la langue</h6>
     </div>
     </div>
     </div>
-    <h6 tabindex="-1" class="dropdown-header"> Popular Languages</h6>
+    <h6 tabindex="-1" class="dropdown-header"> Langues Populaires</h6>
     <button type="button" tabindex="0" class="dropdown-item">
     <span class="mr-3 opacity-8 flag large US"></span> USA
     </button>
@@ -379,10 +379,10 @@
     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
     <div class="dropdown-menu-header">
     <div class="dropdown-menu-header-inner bg-premium-dark">
-    <div class="menu-header-image" style="background-image: url('assets/backoffice/images/dropdown-header/abstract4.jpg');"></div>
+    <div class="menu-header-image" style="background-image: url('{{ asset('assets/backoffice/assets/images/dropdown-header/abstract4.jpg') }}');"></div>
     <div class="menu-header-content text-white">
-    <h5 class="menu-header-title">Users Online</h5>
-    <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
+    <h5 class="menu-header-title">Utilisateurs en ligne</h5>
+    <h6 class="menu-header-subtitle">Aperçu de l'activité récente du compte</h6>
     </div>
     </div>
     </div>
@@ -409,7 +409,7 @@
     <li class="nav-item-divider mt-0 nav-item"></li>
     <li class="nav-item-btn text-center nav-item">
     <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
-    <i class="fa fa-cog fa-spin mr-2"></i> View Details
+    <i class="fa fa-cog fa-spin mr-2"></i> Voir Détails
     </button>
     </li>
     </ul>
@@ -421,7 +421,7 @@
     <ul class="header-megamenu nav">
     <li class="nav-item">
     <a data-placement="top" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
-    Footer Menu
+    Pieds de page
     <i class="fa fa-angle-up ml-2 opacity-8"></i>
     </a>
     <div class="rm-max-width rm-pointers">
@@ -431,7 +431,7 @@
     <div class="no-gutters row">
     <div class="col-sm-6 col-xl-6">
     <ul class="nav flex-column">
-    <li class="nav-item-header nav-item">Overview</li>
+    <li class="nav-item-header nav-item">Aperçu</li>
     <li class="nav-item">
     <a class="nav-link">
     <i class="nav-link-icon lnr-inbox"></i>
@@ -448,7 +448,7 @@
     <li class="nav-item">
     <a class="nav-link">
     <i class="nav-link-icon lnr-picture"></i>
-    <span>Companies</span>
+    <span>Entreprises</span>
     </a>
     </li>
     <li class="nav-item">
@@ -461,15 +461,15 @@
     </div>
     <div class="col-sm-6 col-xl-6">
     <ul class="nav flex-column">
-    <li class="nav-item-header nav-item">Sales &amp; Marketing</li>
-    <li class="nav-item"><a class="nav-link">Queues</a></li>
-     <li class="nav-item"><a class="nav-link">Resource Groups</a></li>
+    <li class="nav-item-header nav-item">Ventes &amp; Marketing</li>
+    <li class="nav-item"><a class="nav-link">Landing Page</a></li>
+     <li class="nav-item"><a class="nav-link">Taux Conversions</a></li>
     <li class="nav-item">
-    <a class="nav-link">Goal Metrics
+    <a class="nav-link">Mesures d'Objectif
     <div class="ml-auto badge badge-warning">3</div>
     </a>
     </li>
-    <li class="nav-item"><a class="nav-link">Campaigns</a></li>
+    <li class="nav-item"><a class="nav-link">Campagnes</a></li>
     </ul>
     </div>
     </div>
@@ -501,22 +501,22 @@
     <div class="no-gutters row">
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark">
-    <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>Automation
+    <i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"></i>Automatisation
     </button>
     </div>
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
-    <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>Reports
+    <i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"></i>Rapports
     </button>
      </div>
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-success">
-    <i class="lnr-bus text-success opacity-7 btn-icon-wrapper mb-2"></i>Activity
+    <i class="lnr-bus text-success opacity-7 btn-icon-wrapper mb-2"></i>Activités
     </button>
     </div>
     <div class="col-sm-6">
     <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus">
-    <i class="lnr-gift text-focus opacity-7 btn-icon-wrapper mb-2"></i>Settings
+    <i class="lnr-gift text-focus opacity-7 btn-icon-wrapper mb-2"></i>Paramètres
     </button>
     </div>
     </div>

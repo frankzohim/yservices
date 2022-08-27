@@ -46,7 +46,7 @@
 										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us-content') }}">Nous rejoindre</a>
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										Demandez un devis
+										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('need.create') }}"> Demandez un devis</a>
 									</li>
 
 									@auth
