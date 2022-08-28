@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Need;
+use App\Models\need;
 
 class DashboardController extends Controller
 {
     public function index(){
-        $needs = Need::all();
-        
+        $needs = need::all();
+
 		return view('dashboard', compact('needs'));
     }
 }

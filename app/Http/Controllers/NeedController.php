@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Need;
+use App\Models\need;
 use Illuminate\Http\Request;
 
 class NeedController extends Controller
@@ -34,7 +34,7 @@ class NeedController extends Controller
      */
     public function store(Request $request)
     {
-        $need = new Need;
+        $need = new need;
         //dd($request->services);
         foreach($request->services as $service){
                 $need->services .= $service;
@@ -50,7 +50,7 @@ class NeedController extends Controller
         $need->town = $request->town;
         $need->email = $request->email;
         $need->phone = $request->phone;
-        $need->address = $request->address;	
+        $need->address = $request->address;
         $need->save();
 
         return view('need.confirm');
