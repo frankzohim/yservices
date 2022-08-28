@@ -2,9 +2,9 @@
 @section('title', __('Tableau de bord'))
 
 @section('content')
- 
 
-		
+
+
 		<div class="app-main__inner">
 		<div class="app-page-title">
 		<div class="page-title-wrapper">
@@ -796,8 +796,8 @@
 		</tr>
 			@endforeach
 		<tr>
-		
-		
+
+
 		</tbody>
 		<tfoot>
 		<tr>
@@ -859,7 +859,7 @@
 		</div>
 		</div>
 		<div class="widget-content-left">
-		<div class="widget-heading">Aide au repas chez Xavier 
+		<div class="widget-heading">Aide au repas chez Xavier
 		<div class="badge badge-danger ml-2">Renvoyé</div>
 		</div>
 		<div class="widget-subheading"><i>Effectué par Mireille</i></div>
@@ -1234,7 +1234,7 @@
 		</div>
 		</div>
 		<div>
-		<div class="chat-box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque quas officiis 
+		<div class="chat-box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore atque quas officiis
 			aut architecto? Cum nihil sed ratione dolorem quaerat deleniti, cumque labore alias expedita nobis repudiandae sunt, eveniet nemo!</div>
 		<small class="opacity-6">
 		<i class="fa fa-calendar-alt mr-1"></i>
