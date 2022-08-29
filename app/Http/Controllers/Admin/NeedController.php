@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\need;
 use Illuminate\Http\Request;
 
 class NeedController extends Controller
@@ -14,7 +15,8 @@ class NeedController extends Controller
      */
     public function index()
     {
-        return view("admin.Need.index");
+        $need=need::all();
+        return view("admin.Need.index",compact('need'));
     }
 
     /**

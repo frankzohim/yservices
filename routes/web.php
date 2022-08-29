@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
 use App\Http\Controllers\ContactController;
@@ -101,6 +102,10 @@ Route::group(['prefix' => 'clients'], function () {
 
       })->name('partner_form');
 });
+
+    Route::middleware('auth')->prefix('admin')->group(function(){
+        Route::resource("/need",AdminNeedController::class);
+    });
 
 
 Route::group(['middleware' => ['auth']], function () {
