@@ -32,6 +32,16 @@
 
 .text{font-size: 14px;}
 
+.see-more-a{
+	text-decoration: none;
+}
+
+.see-more{
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 
 </style>
 
@@ -111,6 +121,31 @@
 										<li class="text">Présence de nuits auprès des enfants malades   </li>
 
 									</ul>
+									<!-- start accordion item -->
+									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
+										<div class="panel-heading active-accordion">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-01" aria-expanded="false">
+												<div class="panel-title">
+													<span class="see-more">
+														Voir Plus
+																						</span>
+													<i class="indicator fas fa-angle-down"></i>
+													</div>
+													</a>
+										</div>
+										<div id="accordion-style-01" class="panel-collapse collapse" data-bs-parent="#accordion3">
+													<div class="panel-body">
+																						<ul class="margin-top-sm list list_star">
+
+																							<li class="text">Garde de jour </li>
+																							<li class="text">Garde 24h sur 24  </li>
+																							<li class="text">Retour à domicile après une hospitalisation  </li>
+																							
+																						</ul>
+												</div>
+										 </div>
+									 </div>
+									<!-- end accordion item -->
 						</p>
 						</div>
 						</div>
@@ -166,6 +201,31 @@
 										<li class="text">Compagnies et stimulation  </li>
 										<li class="text">Promenades et loisirs  </li>
 									</ul>
+									<!-- start accordion item -->
+									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
+										<div class="panel-heading active-accordion">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-02" aria-expanded="false">
+												<div class="panel-title">
+													<span class="see-more">
+														Voir Plus
+																						</span>
+													<i class="indicator fas fa-angle-down"></i>
+													</div>
+													</a>
+										</div>
+										<div id="accordion-style-02" class="panel-collapse collapse" data-bs-parent="#accordion3">
+													<div class="panel-body">
+																						<ul class="margin-top-sm list list_star">
+
+																							<li class="text">Aide à la mobilité </li>
+																							<li class="text">Sorties véhiculées  </li>
+																							<li class="text">Lecture, discussion  </li>
+																							<li class="text">RDV médicaux  </li>
+																						</ul>
+												</div>
+										 </div>
+									 </div>
+									<!-- end accordion item -->
 						</p>
 						</div>
 						</div>
@@ -185,7 +245,7 @@
 										<li class="text">Préparation des repas </li>
 										<li class="text">Aide à la prise des repas   </li>
 										<li class="text">Prise de médicament   </li>
-										
+										<li class="text">Alimentation-Surveillance des régimes  </li>
 									</ul>
 						</p>
 						</div>
@@ -255,8 +315,96 @@
 										<li class="text">Prise de rendez-vous  </li>
 										
 									</ul>
+									<!-- start accordion item -->
+									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
+										<div class="panel-heading active-accordion">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-03" aria-expanded="false">
+												<div class="panel-title">
+													<span class="see-more">
+														Voir Plus
+																						</span>
+													<i class="indicator fas fa-angle-down"></i>
+													</div>
+													</a>
+										</div>
+										<div id="accordion-style-03" class="panel-collapse collapse" data-bs-parent="#accordion3">
+													<div class="panel-body">
+																						<ul class="margin-top-sm list list_star">
+
+																							<li class="text">Démarches administrative</li>
+																							<li class="text">Loyer , factures   </li>
+																						</ul>
+												</div>
+										 </div>
+									 </div>
+									<!-- end accordion item -->
 						</p>
 						</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/transport-handicape.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Transport des handicapés <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Des véhicules équipés pour le transport des personnes à mobilité réduite ; </li>
+										<li class="text">Tout Transport professionnel  </li>
+										<li class="text">Tout Transport privé   </li>
+										
+									</ul>
+									<!-- start accordion item -->
+									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
+										<div class="panel-heading active-accordion">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-04" aria-expanded="false">
+												<div class="panel-title">
+													<span class="see-more">
+														Voir Plus
+																						</span>
+													<i class="indicator fas fa-angle-down"></i>
+													</div>
+													</a>
+										</div>
+										<div id="accordion-style-04" class="panel-collapse collapse" data-bs-parent="#accordion3">
+													<div class="panel-body">
+																						<ul class="margin-top-sm list list_star">
+																							<li class="text">Tout Transport scolaire  </li>
+																							<li class="text">Forme dès leur intégration et durant toute leur carrière les Chauffeurs/Accompagnateurs  </li>
+																						</ul>
+												</div>
+										 </div>
+									 </div>
+									<!-- end accordion item -->
+						</p>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/assistance-administrative.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Voyages / évasion <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Des véhicules équipés pour le transport des personnes à mobilité réduite ; </li>
+										<li class="text">Tout Transport professionnel  </li>
+										<li class="text">Tout Transport privé   </li>
+										
+									</ul>
+
+							
+								
+						   
+						</p>
 						</div>
 					</div>
 					

@@ -17,6 +17,7 @@
    .bg-white{background-color:#fff}
    .box-shadow-small,.box-shadow-small-hover:hover{box-shadow:0 0 15px rgba(0,0,0,.08);transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;-ms-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out}.box-shadow-dark-hover:hover,.box-shadow-double-large-hover:hover,.box-shadow-extra-large-hover:hover,.box-shadow-large-hover:hover,.box-shadow-light-hover:hover,.box-shadow-medium-hover:hover,.box-shadow-small-hover:hover,.box-shadow-very-light-hover:hover{-moz-transform:translate3d(0,-3px,0);-o-transform:translate3d(0,-3px,0);-ms-transform:translate3d(0,-3px,0);-webkit-transform:translate3d(0,-3px,0);transform:translate3d(0,-3px,0)}.text-shadow-large{text-shadow:0 0 50px rgba(0,0,0,.9)}
    .border-radius-5px{border-radius:5px}
+   .alt-font strong{font-weight:600}
   </style>
      <!-- start section -->
         <section class="big-section bg-light-gray wow animate__fadeIn">
