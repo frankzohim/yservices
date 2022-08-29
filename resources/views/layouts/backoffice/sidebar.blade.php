@@ -233,7 +233,7 @@
     </a>
     <ul>
     <li>
-    <a href="tables-data-tables.html.htm">
+    <a href="{{ route('franchise.index') }}">
     <i class="metismenu-icon"> </i>Liste
     </a>
     </li>

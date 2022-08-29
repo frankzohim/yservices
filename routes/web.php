@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
@@ -105,6 +106,7 @@ Route::group(['prefix' => 'clients'], function () {
 
     Route::middleware('auth')->prefix('admin')->group(function(){
         Route::resource("/need",AdminNeedController::class);
+        Route::resource("/franchise",FranchiseController::class);
     });
 
 

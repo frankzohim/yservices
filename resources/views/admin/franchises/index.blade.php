@@ -62,32 +62,31 @@
         <button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i> Excel</button>
     <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
     <thead>
-    <tr>
+        <tr>
 
-    <th>Nom Complet</th>
-    <th>Email</th>
-     <th>Services souhaités</th>
-
-     <th>Date debut</th>
-    <th>Telephone</th>
-    <th>Adresse</th>
-    <th>Code Postal</th>
-    <th>town</th>
-    <th>Action</th>
-    </tr>
+            <th>Nom Complet</th>
+            <th>Email</th>
+             <th>Recherches souhaités</th>
+             <th>Metier</th>
+            <th>Telephone</th>
+            <th>Adresse</th>
+            <th>Code Postal</th>
+            <th>town</th>
+            <th>Action</th>
+            </tr>
     </thead>
     <tbody>
-        @foreach ($needs as $need  )
+        @foreach ($franchises as $franchise  )
         <tr>
-            <td>{{ $need->firstname }} {{ $need->lastname }}</td>
-            <td>{{ $need->email }}</td>
-            <td>{{ $need->services }}</td>
+            <td>{{ $franchise->name }} {{ $franchise->surname }}</td>
+            <td>{{ $franchise->email }}</td>
+            <td>{{ $franchise->research }}</td>
 
-            <td>{{ $need->start_at }}</td>
-            <td>{{ $need->phone }}</td>
-            <td>{{ $need->address }}</td>
-            <td>{{ $need->postal_code }}</td>
-            <td>{{ $need->town }}</td>
+            <td>{{ $franchise->occupation }}</td>
+            <td>{{ $franchise->phone }}</td>
+            <td>{{ $franchise->addresse }}</td>
+            <td>{{ $franchise->postal_code }}</td>
+            <td>{{ $franchise->town }}</td>
             <td><a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
             </tr>
@@ -101,9 +100,8 @@
 
             <th>Nom Complet</th>
             <th>Email</th>
-             <th>Services souhaités</th>
-
-             <th>Date debut</th>
+             <th>Recherches souhaités</th>
+             <th>Metier</th>
             <th>Telephone</th>
             <th>Adresse</th>
             <th>Code Postal</th>
