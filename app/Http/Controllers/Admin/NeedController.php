@@ -15,8 +15,8 @@ class NeedController extends Controller
      */
     public function index()
     {
-        $need=need::all();
-        return view("admin.Need.index",compact('need'));
+        $needs=need::all();
+        return view("admin.Need.index",compact('needs'));
     }
 
     /**
