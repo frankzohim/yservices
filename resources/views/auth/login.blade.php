@@ -2,64 +2,214 @@
 @section('title', __('Connexion'))
 
 @section('content')
-    <section class="vh-100" style="background-color: white;">
-        <div class="container ">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-lg-12 col-xl-11">
-                  <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                        <!-- Validation Errors -->
-				              <x-auth-validation-errors class="mb-4" :errors="$errors" />
-                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Connectez-vous</p>
+ <style>
+   .page-header {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: 50%;
+}
 
-                      <form class="mx-1 mx-md-4" method="POST" action="{{ route('login') }}">
-                        @csrf
-                      
+.min-vh-100 {
+  min-height: 100vh !important;
+}
 
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Votre Email" required/>
-                          </div>
-                        </div>
+.page-header .container {
+  z-index: 1;
+}
 
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <input type="password" id="password" name="password" required autocomplete="new-password" class="form-control" placeholder="Mot de passe" required/>
-                          </div>
-                        </div>
+.d-flex {
+  display: flex !important;
+}
 
-                     
-                        <div class="form-check d-flex justify-content-center mb-5">
-                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                          <label class="form-check-label" for="form2Example3">
-                            J'accepte <a href="#!">les conditions d'utilisations</a>
-                          </label>
-                        </div>
+.flex-column {
+  flex-direction: column !important;
+}
 
-                        <div class="d-flex justify-content-center" >
-                           <button type="submit" class="btn btn-primary btn-lg" style="padding-left: 100px;padding-right:100px">Connexion</button>
-                        </div>
-                        <div class="d-flex justify-content-center" style="margin-top:10px;">
-                            <span style="margin-right: 20px; font-size:25px; font-weight:bold">Nouveau ?</span>
-                         <a href="{{ route('register') }}" class="btn btn-success">Créer un compte</a>
-                        </div>
-                        
+  .mx-lg-0 {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 
-                      </form>
+  .card {
+  box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
+}
 
-                    </div>
-                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+.card.card-plain {
+  background-color: transparent;
+  box-shadow: none;
+}
 
-                      <img src="{{ asset("_next/static/media/login.png") }}"
-                        class="img-fluid" alt="Sample image" width="80%">
+.card>.card-header+.list-group,
+.card>.list-group+.card-footer {
+  border-top: 0;
+}
 
-                    </div>
+.card-header {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  margin-bottom: 0;
+  color: var(--bs-card-cap-color);
+  background-color: var(--bs-card-cap-bg);
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.card-header:first-child {
+  border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+}
+
+.card .card-header {
+  padding: 1.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.font-weight-bolder {
+  font-weight: 700 !important;
+  font-size:24px;
+  color : #344767;
+  font-family: Open, sans-serif;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.card .card-body {
+  font-family: "Open Sans";
+  padding: 1.5rem;
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+}
+
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.73em;
+  margin-bottom: 0.125rem;
+}
+
+.form-switch {
+  padding-left: 3rem;
+}
+
+.form-switch .form-check-input {
+  width: 2.5rem;
+  margin-left: -3rem;
+  background-image: none;
+  background-position: left center;
+  border-radius: 2.5rem;
+  transition: background-color 0.25s ease, border-color 0.25s ease, background-position 0.15s ease-in-out, opacity 0.15s ease-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-switch .form-check-input:focus {
+  background-image: none;
+}
+
+.form-switch .form-check-input:checked {
+  background-position: right center;
+  background-image: none;
+}
+
+.card>.card-header+.list-group,
+.card>.list-group+.card-footer {
+  border-top: 0;
+}
+
+.card-footer {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  color: var(--bs-card-cap-color);
+  background-color: var(--bs-card-cap-bg);
+  border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d2d6da;
+  appearance: none;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.form-control-lg {
+  min-height: unset;
+  padding: 0.75rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+}
+  
+ </style>
+   
+  
+  <section>
+    <div class="page-header min-vh-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+            <div class="card card-plain">
+              <div class="card-header pb-0 text-left">
+                <h4 class="font-weight-bolder">Connexion</h4>
+                <p class="mb-0" style="font-family: Open, sans-serif; font-size:16px; color:#67748E;">Entrez votre email et votre mot de passe pour vous connecter</p>
+              </div>
+              <div class="card-body">
+                <form role="form"  method="POST" action="{{ route('login') }}">
+                  @csrf
+                  <div class="mb-3">
+                    <input type="email" class="form-control form-control-lg" id="email" name="email" value="{{ old('email') }}" placeholder="Votre email" aria-label="Email" aria-describedby="email-addon" style="padding: 12px;" required>
                   </div>
-                </div>
+                  <div class="mb-3">
+                    <input type="password" class="form-control form-control-lg" id="password" name="password"  placeholder="Mot de passe" aria-label="Password" aria-describedby="password-addon" required>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                    <label class="form-check-label" for="rememberMe" style="color: #344767;">J'accepte les conditions d'utilisations</label>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0" style="font-weight:bold; font-size: 14px; font-family:sans-serif">
+                      Connexion
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                <p class="mb-4 text-sm mx-auto" style="font-size:14px; color:#67748E; font-family:Open, sans-serif">
+                  Pas de compte
+                  <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Créer un compte</a>
+                </p>
               </div>
             </div>
-
-      </section>
+          </div>
+          <div class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+            <div class="position-relative bg-gradient-primary h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+              <img src="{{ asset('_next/static/media/pattern-lines.svg') }}" alt="pattern-lines" class="position-absolute opacity-4 start-0">
+              <div class="position-relative">
+                <img class="max-width-500 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/chat.png') }}">
+              </div>
+              <h4 class="mt-5 text-white font-weight-bolder">"Attention is the new currency"</h4>
+              <p class="text-white">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 @endsection
