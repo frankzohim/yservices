@@ -166,15 +166,17 @@
                                                 <input
                                                     class="form-control{{ $errors->has('postal_code') ? ' is-invalid' : '' }}"
                                                     placeholder="{{ __('Code postal') }}" aria-label="Full Name"
-                                                    name="postal_code" type="number" value="{{ old('postal_code') }}">
+                                                    name="postal_code" type="text" value="{{ old('postal_code') }}" id="searchI">
+                                                    <ul class="list-group" id="result"></ul>
                                             </div>
+
                                         </div>
                                         <div class="col-md-6 ps-md-2{{ $errors->has('city') ? ' has-danger' : '' }}">
                                             <div class="input-group">
                                                 <input type="text"
                                                     class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}"
                                                     placeholder="{{ __('ville') }}" value="{{ old('city') }}"
-                                                    name="city" required>
+                                                    name="city" required id="town">
                                             </div>
                                         </div>
 
