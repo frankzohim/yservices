@@ -26,129 +26,189 @@
 			.bg-slate-blue{background-color:#594EE6}
 			.padding-five-tb{padding-top:5%;padding-bottom:5%}
 			.footer-bottom,.footer-consulting.footer-dark .footer-bottom a,.footer-consulting.footer-dark .footer-top,.footer-consulting.footer-dark .footer-top a{color:#828282}
-.footer-consulting.footer-dark .footer-bottom a:hover,.footer-consulting.footer-dark .footer-top a:hover{color:#fff}
+			.footer-consulting.footer-dark .footer-bottom a:hover,.footer-consulting.footer-dark .footer-top a:hover{color:#fff}
 
-.footer-furniture-shop.footer-dark .footer-bottom,.footer-furniture-shop.footer-dark .footer-bottom a,.footer-furniture-shop.footer-dark .footer-top,.footer-furniture-shop.footer-dark .footer-top a{color:#828282}.footer-furniture-shop.footer-dark a:hover{color:#fff}
-		.padding-40px-tb{padding-top:40px;padding-bottom:40px}
-		.border-top{border-top:1px solid!important}
-		.border-color-white-transparent{border-color:rgba(255,255,255,.1)!important}
-		.social-icon-style-12 li a{color:#232323;display:inline-block}
-.social-icon-style-12 .light li a{color:#fff;display:inline-block}
-.social-icon-style-12 li a:hover{opacity:.5}
-.extra-large-icon,.extra-small-icon,.large-icon,.medium-icon,.small-icon{list-style:none;padding:0}.extra-large-icon li,.extra-small-icon li,.large-icon li,.medium-icon li,.small-icon li{display:inline-block}.extra-large-icon li:first-child,.extra-small-icon li:first-child,.large-icon li:first-child,.medium-icon li:first-child,.small-icon li:first-child{margin-left:0}.extra-large-icon li:last-child,.extra-small-icon li:last-child,.large-icon li:last-child,.medium-icon li:last-child,.small-icon li:last-child{margin-right:0}.extra-small-icon li{margin:0 2px}.small-icon li{margin:0 5px}.medium-icon li{margin:0 8px}.large-icon li{margin:0 10px}.extra-large-icon li{margin:0 12px}
-.extra-small-icon a{font-size:14px;width:30px;height:30px;line-height:30px}
-.margin-10px-right{margin-right:10px}
+			.footer-furniture-shop.footer-dark .footer-bottom,.footer-furniture-shop.footer-dark .footer-bottom a,.footer-furniture-shop.footer-dark .footer-top,.footer-furniture-shop.footer-dark .footer-top a{color:#828282}.footer-furniture-shop.footer-dark a:hover{color:#fff}
+			.padding-40px-tb{padding-top:40px;padding-bottom:40px}
+			.border-top{border-top:1px solid!important}
+			.border-color-white-transparent{border-color:rgba(255,255,255,.1)!important}
+			.social-icon-style-12 li a{color:#232323;display:inline-block}
+			.social-icon-style-12 .light li a{color:#fff;display:inline-block}
+			.social-icon-style-12 li a:hover{opacity:.5}
+			.extra-large-icon,.extra-small-icon,.large-icon,.medium-icon,.small-icon{list-style:none;padding:0}.extra-large-icon li,.extra-small-icon li,.large-icon li,.medium-icon li,.small-icon li{display:inline-block}.extra-large-icon li:first-child,.extra-small-icon li:first-child,.large-icon li:first-child,.medium-icon li:first-child,.small-icon li:first-child{margin-left:0}.extra-large-icon li:last-child,.extra-small-icon li:last-child,.large-icon li:last-child,.medium-icon li:last-child,.small-icon li:last-child{margin-right:0}.extra-small-icon li{margin:0 2px}.small-icon li{margin:0 5px}.medium-icon li{margin:0 8px}.large-icon li{margin:0 10px}.extra-large-icon li{margin:0 12px}
+			.extra-small-icon a{font-size:14px;width:30px;height:30px;line-height:30px}
+			.margin-10px-right{margin-right:10px}
+			.text-black{color:black}
 		</style>
-		
-		<footer class="footer">
-				<div class="container">
-					<div class="margin-top-lg footer__actions">
-							
-								<a class=" footer__logo" data-inner-link="true" aria-label="Youdom Services" href="{{ route('about') }}">
-							<img src="{{ asset('_next/static/media/logo-care.png') }} "   />
-						</a>
-					</div>
-					
-					<div class="padding-top-sm padding-bottom-xs footer__body">
-						
-						
-						<ul class="footer-nav">
-								<li class="text caps">Aide à l'autonomie</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Charte de qualité</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
-						</ul>
+	
 
-						<div class="footer__nav-wrap">
+			 <!-- start footer  -->
+        <footer class="footer-dark bg-slate-blue" style="background-color: #fff; color:#232323">
+            <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
+                <div class="container">
+                    <div class="row">
 
-							<ul class="footer-nav">
-								<li class="text caps">Garde de nuit</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à la vie social </a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide au repas</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’autonomie</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’accompagnement</a></li>
-							</ul>
+												 <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Garde de nuit</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               	<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits pour personnes âgées  </a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de nuit pour personnes âgées et personnes en situation d’handicap</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits auprès des enfants malades </a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de jour</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Retour à domicile après une hospitalisation</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde 24h sur 24</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-							<ul class="footer-nav">
-								<li class="text caps">Service handicap</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('services') }}">Nos services d’aide à domicile</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à domicile 24h/24 et 7j/7</a></li>
+												 <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Accompagnements</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               	<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Accompagnements aux courses  </a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Accompagnement culturel </a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Compagnies et stimulation </a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Promenades et loisirs</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la mobilité</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Sorties véhiculées</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Lecture, discussion</a></li>
+																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">RDV médicaux</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="clients/franchise">Financer son aide à domicile</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" data-test="footer-nav_promoactions" href="#">Les aides financières</a></li>
+                        <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Aide à l'autonomie</span>
+                            <ul class="margin-top-sm list list_star">
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide au lever et au coucher </a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la toilette, coiffure,  maquillage, habillage</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide-ménagère</a></li>
+                            </ul>
+														 <hr style="color:#594EE6">
+														 <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														 text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															Aide-ménagère</span>
+                            <ul class="margin-top-sm list list_star">
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Ménage</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Lessive- repassage</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Entretien du logement </a></li>
+															
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-							</ul>
+                        <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                           
+														<span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															Aide aux repas
+														</span>
+                            <ul class="margin-top-sm list list_star">
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Courses</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Préparation des repas</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la prise des repas</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Prise de médicament</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Alimentation-Surveillance des régimes</a></li>
+                            </ul>
+														<hr style="color:#594EE6">
+														<span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															Retour d’hospitalisation
+														</span>
+                            <ul class="margin-top-sm list list_star">
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Retour au domicile</a></li>
+															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide au quotidien</a></li>
+															
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-							<ul class="footer-nav">
-								<li class="text caps">Accompagnements</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
-								<li class="text text_md color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
-							</ul>
+												<hr style="color: #594EE6">
+												
+												<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															Service handicap</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aide à domicile - personnes handicapées</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Entretien du lieu de vie - personnes handicapées</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aide à la vie sociale - personnes handicapées</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Garde de jour et ou de nuit - personnes handicapées</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-							
-						</div>
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
+														color: #E84347; font-weight: 700; font-size: 15px;">TRANSPORT DES HANDICAPÉS</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Des véhicules équipés pour le transport des personnes à mobilité réduite ;</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Tout Transport professionnel</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Tout Transport privé</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Tout Transport scolaire</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Forme dès leur intégration et durant toute leur carrière les Chauffeurs/Accompagnateurs</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-					
-					
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Assistance administrative</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">
+																Gestion du courrier</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Classement des documents</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Prise de rendez-vous</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Démarches administrative</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Loyer , factures</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-						
-					</div>
-					<div class="padding-top-sm padding-bottom-xs footer__body">
-						
-						
-						<ul class="footer-nav">
-								<li class="text caps">Aide à l'autonomie</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Charte de qualité</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Les avantages</a></li>
-						</ul>
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
+														color: #E84347; font-weight: 700; font-size: 15px;">VOYAGES / ÉVASION</span>
+                            <ul class="margin-top-sm list list_star">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Formations</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
 
-						<div class="footer__nav-wrap">
-
-							<ul class="footer-nav">
-								<li class="text caps">Garde de nuit</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à la vie social </a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide au repas</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’autonomie</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à l’accompagnement</a></li>
-							</ul>
-
-							<ul class="footer-nav">
-								<li class="text caps">Service handicap</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('services') }}">Nos services d’aide à domicile</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Aide à domicile 24h/24 et 7j/7</a></li>
-
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="clients/franchise">Financer son aide à domicile</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" data-test="footer-nav_promoactions" href="#">Les aides financières</a></li>
-
-							</ul>
-
-							<ul class="footer-nav">
-								<li class="text caps">Accompagnements</li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
-								<li class="text text_md color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
-								<li class="text text_md color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
-							</ul>
-
-							
-						</div>
-
-					
-					
-
-						
-					</div>
-				</div>
-
-		</footer>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+        <!-- end footer -->
 
 		  <!-- start footer  -->
-        <footer class="footer-dark bg-slate-blue">
+        <footer class="footer-dark bg-slate-blue" >
             <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
                 <div class="container">
                     <div class="row">
