@@ -163,14 +163,14 @@ label img {
 					<div class="section">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span> 
+			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span>
 				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
 			</div>
-			
+
 			<form id="regForm" method="post" action="{{ route('need.store') }}">
-					
+
 					@csrf
-			
+
 				<!-- One "tab" for each step in the form: -->
 				<div class="tab">
 						<div class="heading-block topmargin-sm center">
@@ -178,186 +178,186 @@ label img {
 							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez sur un service pour sélectionner</h5>
 						</div>
 						<div class="row">
-				
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb1" name="services[]" value="AIDE À L’AUTONOMIE"/>
 										<label for="cb1">
 											<img src="{{ asset('_next/static/media/team/1.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb2" name="services[]" value="GARDES NON MÉDICALISÉES"/>
 										<label for="cb2">
 											<img src="{{ asset('_next/static/media/team/2.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 						   </div>
-							
+
 						   <div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb3" name="services[]" value="SERVICE HANDICAP"/>
 										<label for="cb3">
 											<img src="{{ asset('_next/static/media/team/3.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">SERVICE HANDICAP</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb4" name="services[]" value="ACCOMPAGNEMENTS"/>
 										<label for="cb4">
 											<img src="{{ asset('_next/static/media/team/4.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ACCOMPAGNEMENTS</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-					
+
 					</div>
-					
+
 					<div class="row">
-				
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb5" name="services[] " value="AIDE AUX REPAS"/>
 										<label for="cb5">
 											<img src="{{ asset('_next/static/media/team/5.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE AUX REPAS</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb6" name="services[]" value="RETOUR D’HOSPITALISATION"/>
 										<label for="cb6">
 											<img src="{{ asset('_next/static/media/team/6.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR D’HOSPITALISATION</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 						   </div>
-							
+
 						   <div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb7" name="services[]" value="AIDE-MÉNAGÈRE"/>
 										<label for="cb7">
 											<img src="{{ asset('_next/static/media/team/7.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE-MÉNAGÈRE</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
-							
+
 								<div class="team">
-								
+
 									<div class="team-image">
 										<input type="checkbox" id="cb8" name="services[]" value="ASSISTANCE ADMINISTRATIVE"/>
 										<label for="cb8">
 											<img src="{{ asset('_next/static/media/team/8.png') }}" alt="John Doe">
 										</label>
 									</div>
-									
+
 									<div class="team-desc team-desc-bg">
 									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ASSISTANCE ADMINISTRATIVE</h4></div>
-									
+
 									</div>
 								</div>
-								
+
 							</div>
-					
+
 					</div>
-				
+
 				</div>
-				
+
 				<div class="tab">
-				
+
 						<div class="heading-block topmargin-sm center">
 							<img src="/_next/static/media/step2.png" style=" width: 20%;"/>
 							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Dites nous plus sur le planning</h5>
 						</div>
 
 							<div class="row">
-							
+
 								<div class="form-group col-md-4 col-lg-4 mb-0 mt-md-0 mt-4 center" >
 										<label class="form-check-label" style="color:#1b138a; font-size:18px; font-weight:700;">
 											  A Partir de quand peut-on commencer?
 											  </label>
-										
+
 
 								</div>
-								
+
 								<div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
+
 										<select name="start_at" class="form-control form-select" aria-label="Default select example" >
 
 											<option value="Immédiatement" >Immédiatement</option>
@@ -365,13 +365,13 @@ label img {
 											<option value="Dans 2 mois" >Dans 2 mois</option>
 											<option value="Dans 3 mois" >Dans 3 mois</option>
 											<option value="Dans plus de 3 mois" >Dans plus de 3 mois</option>
-                                      
+
 										</select>
 
 								</div>
-								
-							</div>		
-								
+
+							</div>
+
 
 						    <div class="heading-block topmargin-sm center">
 								<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Cliquez pour sélectionner vos horaires</h5>
@@ -472,19 +472,19 @@ label img {
                     </tbody>
                   </table>
 									<input type="hidden" name="data_times" id ="dataTimes" value="" >
-					
+
 				</div>
 				<div class="tab">
-				
+
 						<div class="heading-block topmargin-sm center">
 							<img src="/_next/static/media/step3.png" style=" width: 20%;"/>
 							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
 						</div>
-									
+
 						    <div class="row justify-content-center">
-                               
+
                                <div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
+
 									  Civilité
 
 										<select name="gender" class="form-control form-select" aria-label="Default select example">
@@ -494,12 +494,12 @@ label img {
 										</select>
 
 								</div>
-								
+
                             </div>
 							<br>
 							<div class="row justify-content-center">
 							 <div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
+
 									  A qui est destinée notre aide?
 
 										<select name="for_who" class="form-control form-select" aria-label="Default select example">
@@ -507,7 +507,7 @@ label img {
 											<option value="Vous même" >Vous même</option>
 											<option value="Quelqu'un d'autre" >Quelqu'un d'autre</option>
 										</select>
-								
+
                             </div>
 							 </div>
 							<br>
@@ -540,7 +540,7 @@ label img {
                                     </div>
 
                                   </div>
-								  
+
 								  <div class="row justify-content-center">
 									<div class="col-md-8">
 										<input type="text" name="address" class="form-control" id="message" rows="6" placeholder="Votre adresse">
@@ -551,19 +551,20 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="number" name="postal_code" required>
+                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="text" name="postal_code" required id="searchI">
                                     </div>
+                                    <ul class="list-group" id="result"></ul>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="ville" name="town" required>
+                                      <input type="text" class="form-control" placeholder="ville" name="town" required id="town">
                                     </div>
                                     </div>
 
-                                  </div>			
-									
+                                  </div>
+
 				</div>
-				
+
 				<div style="overflow:auto;">
 									<div style="float:right;">
 										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
@@ -576,13 +577,13 @@ label img {
 									<span class="step"></span>
 									<span class="step"></span>
 								</div>
-				
+
 			</form>
 
-			
+
 		</div>
 	</div>
-	
+
 				<br>
 				<section class="lp-banking-track-cashflow">
 					<div class="container">

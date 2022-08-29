@@ -210,7 +210,7 @@
     <ul>
     <li>
     <a href="{{ route('need.index') }}">
-    <i class="metismenu-icon"></i>Liste
+    <i class="metismenu-icon"></i>Liste de besoins
      </a>
     </li>
     <li>
