@@ -54,7 +54,7 @@ Route::get('functioning', function () {
 
 
 Route::resources([
-        'need' => NeedController::class,
+        'devis' => NeedController::class,
         'contact' => ContactController::class,
         'partner_form'=> formfranchiseController::class,
     ]);

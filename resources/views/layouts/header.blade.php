@@ -17,7 +17,7 @@
 					style="display: flex; justify-content: center; align-items: center;">
 
 					 <span style="font-size: 20px; color: white;" id="close-button" >
-						 <i class="fa-solid fa-xmark"></i> 
+						 <i class="fa-solid fa-xmark"></i>
 					 </span>
 				</div>
 
@@ -35,7 +35,7 @@
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
 
-									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="#">Trouver un emploi</a>
+									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Trouver un emploi</a>
 									</li>
 
 								<li class="header-nav__item" style="color:#272854">
@@ -46,7 +46,7 @@
 										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us-content') }}">Nous rejoindre</a>
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('need.create') }}"> Demandez un devis</a>
+										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('devis.create') }}"> Demandez un devis</a>
 									</li>
 
 									@auth
