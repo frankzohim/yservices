@@ -11,7 +11,7 @@
 			footer .footer-horizontal-link li{margin-right:35px;list-style:none;margin-bottom:0}
 			footer .footer-horizontal-link li:last-child{margin-right:0}
 			.footer-dark,.footer-dark a{color:#fff; font-family: Lato, Arial, sans-serif; line-height: 30px; }
-			.footer-dark a:hover{color:#fff}
+			.footer-dark a:hover{color:#E84347}
 			.footer-dark .footer-social a{color:#fff}
 			.footer-dark .footer-social a:hover{color:#8890a4}
 			.footer-sticky{position:fixed;width:100%;bottom:0;left:0;right:0;z-index:0}
@@ -39,11 +39,23 @@
 			.extra-small-icon a{font-size:14px;width:30px;height:30px;line-height:30px}
 			.margin-10px-right{margin-right:10px}
 			.text-black{color:black}
+			.footer-dark1 .link{
+				color:#8191A0;
+				font-size:14px;
+				font-family: 'Open Sans', 'sans-serif', 'Arial';
+				font-weight: 500;
+			}
+
+			.footer-dark1 li{
+  			line-height: 0;
+			}
+
+
 		</style>
 	
 
 			 <!-- start footer  -->
-        <footer class="footer-dark bg-slate-blue" style="background-color: #fff; color:#232323">
+        <footer class="footer-dark footer-dark1 bg-slate-blue" style="background-color: #fff; color:#232323">
             <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
                 <div class="container">
                     <div class="row">
@@ -52,7 +64,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Garde de nuit</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" " style="">                           
                                	<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits pour personnes âgées  </a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de nuit pour personnes âgées et personnes en situation d’handicap</a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits auprès des enfants malades </a></li>
@@ -67,7 +79,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Accompagnements</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" ">                           
                                	<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Accompagnements aux courses  </a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Accompagnement culturel </a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Compagnies et stimulation </a></li>
@@ -84,7 +96,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Aide à l'autonomie</span>
-                            <ul class="margin-top-sm list list_star">
+                            <ul class=" ">
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide au lever et au coucher </a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la toilette, coiffure,  maquillage, habillage</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide-ménagère</a></li>
@@ -93,7 +105,7 @@
 														 <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 														 text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 															Aide-ménagère</span>
-                            <ul class="margin-top-sm list list_star">
+                            <ul class=" ">
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Ménage</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Lessive- repassage</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Entretien du logement </a></li>
@@ -109,7 +121,7 @@
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 															Aide aux repas
 														</span>
-                            <ul class="margin-top-sm list list_star">
+                            <ul class=" ">
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Courses</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Préparation des repas</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la prise des repas</a></li>
@@ -121,7 +133,7 @@
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 															Retour d’hospitalisation
 														</span>
-                            <ul class="margin-top-sm list list_star">
+                            <ul class=" ">
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Retour au domicile</a></li>
 															<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide au quotidien</a></li>
 															
@@ -136,7 +148,7 @@
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 															Service handicap</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" ">                           
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
 																Aide à domicile - personnes handicapées</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
@@ -153,7 +165,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
 														color: #E84347; font-weight: 700; font-size: 15px;">TRANSPORT DES HANDICAPÉS</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" ">                           
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
 																Des véhicules équipés pour le transport des personnes à mobilité réduite ;</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
@@ -171,7 +183,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Assistance administrative</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" ">                           
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">
 																Gestion du courrier</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
@@ -189,7 +201,7 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
 														color: #E84347; font-weight: 700; font-size: 15px;">VOYAGES / ÉVASION</span>
-                            <ul class="margin-top-sm list list_star">                           
+                            <ul class=" ">                           
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Formations</a></li>
@@ -251,7 +263,7 @@
                         <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 xs-margin-25px-bottom" >
                             <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">CONTACT</span>
-                            <p class="w-85 margin-15px-bottom text" style="margin-bottom: 14px;">60 rue Federico Garcia Lorca 93130 Paris, France</p>
+                            <p class="w-85 margin-15px-bottom text" style="margin-bottom: 14px;">Adresse : 61 rue de Lyon 75012 Paris</p>
                             <div><i class="fa fa-phone  icon-very-small margin-10px-right text-white"></i> <span class="text "> +33 66-7224-507</span> </div>
                             <div><i class="fa fa-envelope  icon-very-small margin-10px-right text-white"></i><a href="#"> <span class="text "> contact@youdom-care.com</span> </a></div>
                         </div>
