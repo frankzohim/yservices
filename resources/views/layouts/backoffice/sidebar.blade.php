@@ -171,7 +171,7 @@
 		<i class="metismenu-icon"></i>Liste
 		<i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
 		</a>
-	
+
 		</li>
 		<li>
 		<a href="elements-dropdowns.html.htm">
@@ -193,13 +193,13 @@
 		<i class="metismenu-icon"></i>Emploi de temps
 		</a>
 		</li>
-	
+
 		<li>
 		<a href="elements-list-group.html.htm">
 		<i class="metismenu-icon"></i>Remplacement
 		</a>
 		</li>
-		
+
 		</ul>
     </li>
     <li>
@@ -209,8 +209,8 @@
     </a>
     <ul>
     <li>
-    <a href="components-tabs.html.htm">
-    <i class="metismenu-icon"></i>Liste
+    <a href="{{ route('need.index') }}">
+    <i class="metismenu-icon"></i>Liste de besoins
      </a>
     </li>
     <li>
@@ -223,7 +223,7 @@
     <i class="metismenu-icon"></i>Non Traités
     </a>
     </li>
-   
+
     </ul>
     </li>
     <li>
@@ -233,7 +233,7 @@
     </a>
     <ul>
     <li>
-    <a href="tables-data-tables.html.htm">
+    <a href="{{ route('franchise.index') }}">
     <i class="metismenu-icon"> </i>Liste
     </a>
     </li>
@@ -251,12 +251,12 @@
     </li>
 	  <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i> Formulaire Contact
+    <i class="metismenu-icon pe-7s-display2"></i>demandes
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
     <li>
-    <a href="tables-data-tables.html.htm">
+    <a href="{{ route('demandes.index') }}">
     <i class="metismenu-icon"> </i>Liste
     </a>
     </li>
@@ -272,6 +272,29 @@
     </li>
     </ul>
     </li>
+    <li>
+        <a href="#">
+        <i class="metismenu-icon pe-7s-display2"></i>Contacts
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+        </a>
+        <ul>
+        <li>
+        <a href="{{ route('contacts.index') }}">
+        <i class="metismenu-icon"> </i>Liste
+        </a>
+        </li>
+        <li>
+        <a href="tables-regular.html.htm">
+        <i class="metismenu-icon"></i>Traités
+        </a>
+        </li>
+        <li>
+        <a href="tables-grid.html.htm">
+        <i class="metismenu-icon"></i>Non Traités
+        </a>
+        </li>
+        </ul>
+        </li>
     <li class="app-sidebar__heading">Aide Ménagère</li>
     <li>
     <a href="widgets-chart-boxes.html.htm">
@@ -315,7 +338,7 @@
     <i class="metismenu-icon"></i>Sous menu 13
     </a>
     </li>
-    
+
     </ul>
     </li>
     <li>
@@ -339,7 +362,7 @@
     <i class="metismenu-icon"></i>Sous menu 23
     </a>
     </li>
-    
+
     </ul>
     </li>
     <li class="app-sidebar__heading">Recrutement</li>
@@ -353,7 +376,7 @@
     <i class="metismenu-icon pe-7s-graph"></i>Demandes
     </a>
     </li>
-   
+
     </ul>
     </div>
     </div>

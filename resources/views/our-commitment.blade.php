@@ -69,7 +69,8 @@
     }
 
   </style>
-          <!-- start section -->
+        
+        <!-- start section -->
         
         <section class="big-section">
             <div class="container content-wrap">
@@ -119,7 +120,7 @@
                             </div>
                             <!-- end tab item -->
                             <!-- start tab item -->
-                            <div id="research-tab" class="tab-pane fade">
+                            <div id="research-tab" class="tab-pane fade in">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/home-business-tab-img02.jpg') }}" alt="" />
@@ -142,7 +143,7 @@ Nos chefs de secteur les encadrent au quotidien et s’assurent de la satisfacti
                             </div>
                             <!-- end tab item -->
                             <!-- start tab item -->
-                            <div id="target-tab" class="tab-pane fade">
+                            <div id="target-tab" class="tab-pane fade in">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/home-business-tab-img03.jpg') }}" alt="" />
@@ -161,7 +162,7 @@ Nos chefs de secteur les encadrent au quotidien et s’assurent de la satisfacti
                             </div>
                             <!-- end tab item -->
                             <!-- start tab item -->
-                            <div id="campaign-tab" class="tab-pane fade">
+                            <div id="campaign-tab" class="tab-pane fade in">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/home-business-tab-img04.jpg') }} " alt="" />
@@ -182,7 +183,7 @@ Nos chefs de secteur les encadrent au quotidien et s’assurent de la satisfacti
                             <!-- end tab item -->
 
                             <!-- start tab item -->
-                            <div id="implication-tab" class="tab-pane fade">
+                            <div id="implication-tab" class="tab-pane fade in">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />

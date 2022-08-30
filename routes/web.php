@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\Admin\FranchiseController;
+use App\Http\Controllers\Admin\JoinController as AdminJoinController;
+use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NeedController;
 use App\Http\Controllers\ContactController;
@@ -57,7 +61,7 @@ Route::get('functioning', function () {
 
 
 Route::resources([
-        'need' => NeedController::class,
+        'devis' => NeedController::class,
         'contact' => ContactController::class,
         'partner_form'=> formfranchiseController::class,
     ]);
@@ -105,6 +109,13 @@ Route::group(['prefix' => 'clients'], function () {
 
       })->name('partner_form');
 });
+
+    Route::middleware('auth')->prefix('admin')->group(function(){
+        Route::resource("/need",AdminNeedController::class);
+        Route::resource("/franchise",FranchiseController::class);
+        Route::resource('/demandes',AdminJoinController::class);
+        Route::resource('/contacts',AdminContactController::class);
+    });
 
 
 Route::group(['middleware' => ['auth']], function () {
