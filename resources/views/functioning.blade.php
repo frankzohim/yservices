@@ -105,19 +105,7 @@
                 
                 <div class="row">
                     <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
-                        <!-- start tab navigation -->
-                        <ul class="nav nav-tabs text-uppercase justify-content-center text-center alt-font 
-                        font-weight-500 margin-7-rem-bottom md-margin-5-rem-bottom sm-margin-20px-bottom">
-                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#planning-tab">Evaluation</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#research-tab">Devis</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#target-tab">Intervenant</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#campaign-tab">Confiance & convivialité</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#implication-tab">Planning</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#suivi-tab">Suivi</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#protection-tab">Protection</a><span class="tab-border bg-extra-dark-gray"></span></li>
-                          
-                        </ul>
-                        <!-- end tab navigation -->
+                        
                         <div class="tab-content">
                             <!-- start tab item -->
                             <div id="planning-tab" class="tab-pane fade in active show">
@@ -144,12 +132,32 @@
                                 </div>
                             </div>
                             <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+		<!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                       
+                        <div class="tab-content">
+                            
                             <!-- start tab item -->
-                            <div id="research-tab" class="tab-pane fade in">
+                            <div id="research-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img02.jpg') }}" alt="" />
-                                    </div>
+                                   
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
                                       
                                         <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
@@ -161,11 +169,37 @@
                                         <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
+									
+									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img02.jpg') }}" alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <!-- end tab item -->
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+				 <!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                       
+                        <div class="tab-content">
+                           
                             <!-- start tab item -->
-                            <div id="target-tab" class="tab-pane fade in">
+                            <div id="target-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/home-business-tab-img03.jpg') }}" alt="" />
@@ -184,12 +218,31 @@
                                 </div>
                             </div>
                             <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+				 <!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                       
+                        
                             <!-- start tab item -->
-                            <div id="campaign-tab" class="tab-pane fade in">
+                            <div id="campaign-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img04.jpg') }} " alt="" />
-                                    </div>
+                                   
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
                                         
@@ -201,12 +254,38 @@
                                         <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
+									
+									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img04.jpg') }} " alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <!-- end tab item -->
 
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+				 <!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+
                             <!-- start tab item -->
-                            <div id="implication-tab" class="tab-pane fade in">
+                            <div id="implication-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
@@ -226,12 +305,33 @@
                             </div>
                             <!-- end tab item -->
                            
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+				 <!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                       
+                        <div class="tab-content">
+                            
+                           
                             <!-- start tab item -->
-                            <div id="suivi-tab" class="tab-pane fade in">
+                            <div id="suivi-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
-                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
-                                    </div>
+                                   
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
                                         
@@ -247,12 +347,36 @@
                                         <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
+									
+									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <!-- end tab item -->
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+		
+				 <!-- start section -->
+        
+        <section class="big-section" style="margin-top:100px;">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            
 														 <!-- start tab item -->
-                            <div id="protection-tab" class="tab-pane fade in">
+                            <div id="protection-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
                                         <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
