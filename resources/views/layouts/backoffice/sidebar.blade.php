@@ -251,7 +251,7 @@
     </li>
 	  <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i> Formulaire Contact
+    <i class="metismenu-icon pe-7s-display2"></i>Contacts
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>

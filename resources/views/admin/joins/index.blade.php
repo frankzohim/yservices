@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Contacts
+    <div class="page-title-subheading">Listes Des Personnes voulant rejoindre Youdom-Care</div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -66,29 +66,28 @@
 
     <th>Nom Complet</th>
     <th>Email</th>
-     <th>Services souhaités</th>
+     <th>Travail souhaités</th>
 
-     <th>Date debut</th>
+     <th>Disponibilité</th>
+    <th>Diplome Obtenu</th>
     <th>Telephone</th>
-    <th>Adresse</th>
     <th>Code Postal</th>
-    <th>town</th>
     <th>Action</th>
     </tr>
     </thead>
     <tbody>
-        @foreach ($needs as $need  )
+        @foreach ($joins as $join  )
         <tr>
-            <td>{{ $need->firstname }} {{ $need->lastname }}</td>
-            <td>{{ $need->email }}</td>
-            <td>{{ $need->services }}</td>
+            <td>{{ $join->name }} {{ $join->username }}</td>
+            <td>{{ $join->email }}</td>
+            <td>{{ $join->job }}</td>
 
-            <td>{{ $need->start_at }}</td>
-            <td>{{ $need->phone }}</td>
-            <td>{{ $need->address }}</td>
-            <td>{{ $need->postal_code }}</td>
-            <td>{{ $need->town }}</td>
-            <td><a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></a>
+            <td>{{ $join->available }}</td>
+            <td>{{ $join->diploma }}</td>
+            <td>{{ $join->phone_number }}</td>
+            <td>{{ $join->postal_code }}</td>
+
+            <td><a href=""><i class="fa fa-trash-alt"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
             </tr>
         @endforeach
