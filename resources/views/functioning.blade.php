@@ -3,6 +3,73 @@
 
 @section('content')
 
+		<style>
+
+    .content-wrap{position:relative;padding:80px 0;overflow:hidden}
+
+    .nav-tabs{border:none}
+    .nav-tabs>li.nav-item{display:inline-block;float:none;margin:0;padding:0 20px}
+    .nav-tabs>li.nav-item>a.nav-link{border:none;margin-bottom:0}
+    .nav-tabs>li.nav-item>a.nav-link{border-bottom:1px solid transparent}
+    .nav-tabs>li.nav-item>a.nav-link.active,.nav-tabs>li.nav-item>a.nav-link.active:hover,.nav-tabs>li.nav-item>a.nav-link:hover{background:0 0;border-color:#222;color:#222;cursor:pointer}
+    .nav-tabs.nav-tabs-light>li.nav-item>a.nav-link.active,.nav-tabs.nav-tabs-light>li.nav-item>a.nav-link.active:focus,.nav-tabs.nav-tabs-light>li.nav-item>a.nav-link:focus,.nav-tabs.nav-tabs-light>li.nav-item>a.nav-link:hover{border-bottom:1px solid #fff;color:#fff}
+    
+
+    .tab-style-01 .nav-tabs>li.nav-item{padding:0 35px}
+
+    .tab-style-01 .nav-tabs>li.nav-item>a.nav-link{padding:0;margin-left:25px;position:relative;border-bottom:none!important}
+    .tab-style-01 .grid-filter.nav-tabs>li.nav-item>a.nav-link{margin-left:0}
+    .tab-style-01 .nav-tabs>li.nav-item .tab-border{width:0;height:2px;display:block;margin-top:5px;opacity:0;visibility:hidden;transition-duration:.5s}
+    .tab-style-01 .nav-tabs>li.active .tab-border,.tab-style-01 .nav-tabs>li.nav-item>a.nav-link.active+.tab-border{opacity:1;width:100%;visibility:visible}
+    .tab-style-01 .nav-tabs>ul{counter-reset:slideNum}
+    .tab-style-01 .nav-tabs>li{counter-increment:slideNum;line-height:16px}
+    .tab-style-01 .nav-tabs>li.nav-item>a.nav-link:before{content:"0"counter(slideNum) ".";position:absolute;left:-25px}
+    .tab-style-01 .grid-filter.nav-tabs>li.nav-item>a.nav-link:before{display:none}
+    .tab-style-01 .nav-tabs>li:last-child{border-right:none;padding-right:0}
+    .tab-style-01 .nav-tabs>li:first-child{padding-left:0}
+    .tab-style-01.without-number .nav-tabs>li.nav-item>a.nav-link:before{content:""}
+    .tab-style-01.without-number .nav-tabs>li.nav-item>a.nav-link{margin-left:0}@media(hover:hover){.tab-style-01 .nav-tabs>li.nav-item>a.nav-link:hover+.tab-border{opacity:1;width:100%;visibility:visible}}
+    .alt-font{font-family:Poppins,sans-serif}
+    .alt-font strong{font-family: Poppins,sans-serif; font-weight:600}
+    .font-weight-600{font-weight:600!important}
+    .position-relative {
+        position: relative!important;
+        }
+
+    .bg-extra-dark-gray{background-color:#232323}
+    .tab-content>.tab-pane{padding:0 15px}
+    .feature-box .text-end{-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
+    section .big-section{padding:160px 0}
+    .margin-six-bottom{margin-bottom:6%}
+    .margin-7-rem-bottom{margin-bottom:7rem}
+    .text-medium{font-size:14px;line-height:20px}
+
+    .text-gradient-sky-blue-pink{background:linear-gradient(to right,#556fff,#556fff,#e05fc4,#f767a6,#ff798e);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.text-gradient-sky-blue-dark-pink{background:linear-gradient(to right,#5065da,#556fff,#c557ad,#e65f9a,#e66176);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .text-gradient-sky-blue-pink-2{background:linear-gradient(to right top,#6670ed,#556fff,#d45eba,#f767a6,#f5667d);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .margin-15px-bottom{margin-bottom:15px}
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+
+    a.nav-link{
+        color: #5D00F4;
+        font-size:15px;
+        font-family: Poppins, sans-serif;
+    }
+
+    a.nav-link.active{
+        color: #F65155;
+        font-size:15px;
+        font-family: Poppins, sans-serif;
+    }
+
+  </style>
 	<section class="py-5">
 		<div class="container">
 		  <div class="row">
@@ -25,246 +92,192 @@
 		</div>
 	</section>
 	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/evaluation-des-besoins.png') }}" alt="bruce">
-				</div>
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0 heading heading__lvl1 stillforce-heading-red" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)"><span style="color:#594EE6;">Evaluation des besoins</span></h4>
-
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					-	Ecoute de la demande et explication des missions à réaliser <br>
-					<span style="white-space: nowrap;">-	Rencontre au domicile avec les bénéficiaires pour identifier les besoins gratuitement</span>  <br>
-					-	Présentation des aides financières et aide au montage des dossiers  <br>
-					-	50 % de réduction d’impôt
-
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
 	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)"><span style="color:#594EE6;">Elaboration d’un devis personnalisé</span></h4>
-
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Nous déterminons ensemble la durée, la fréquence, les jours, les heures et le contenu des interventions.
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/devis-personnalise.png') }}" alt="bruce">
-				</div>
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
 	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/intervenant.png') }}" alt="bruce">
-				</div>
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)"><span style="color:#594EE6;">Sélection d’un(e) intervenant (e)  qualifié(e) ,formé(e) et dédié(e) à vos attentes</span> </h4>
-
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Afin d’établir une relation de confiance et offrir un service sur-mesure et stable, la même personne interviendra à chaque fois (sauf absence)
-					<br>
-				<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-				
-				
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
 	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)"><span style="color:#594EE6;">Confiance & convivialité</span></h4>
-
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Avant le début des prestations, rencontre et présentation au domicile  l’intervenant(e) sélectionné(e).
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
+		 <!-- start section -->
+        
+        <section class="big-section">
+            <div class="container ">
+                <div class="row justify-content-center">
+						
 				</div>
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/confiance.png') }}" alt="bruce">
-				</div>
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
-	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-200 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/planning.png') }}" alt="bruce">
-				</div>
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)"><span style="color:#594EE6;">Un planning qui s'adapte à l'évolution de vos besoins</span> </h4>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        <!-- start tab navigation -->
+                        <ul class="nav nav-tabs text-uppercase justify-content-center text-center alt-font 
+                        font-weight-500 margin-7-rem-bottom md-margin-5-rem-bottom sm-margin-20px-bottom">
+                            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#planning-tab">Evaluation</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#research-tab">Devis</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#target-tab">Intervenant</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#campaign-tab">Confiance & convivialité</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#implication-tab">Planning</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#suivi-tab">Suivi</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                            <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#protection-tab">Protection</a><span class="tab-border bg-extra-dark-gray"></span></li>
+                          
+                        </ul>
+                        <!-- end tab navigation -->
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img01.jpg') }}" alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6 text-center text-sm-start">
 
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Le planning des interventions à votre domicile pourra s’adapter à l’évolution de vos besoins.
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-				
-				
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
-	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)">Suivi et contrôle qualité régulier</h4>
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 30px;">Evaluation des besoins</h5>
 
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Afin de garantir un service conforme aux attentes de nos bénéficiaires, des enquêtes et des visites sont régulièrement réalisées. <br> <br>
-Un interlocuteur unique, de la prise de contact à la fin de la durée du contrat, s’informer régulièrement de l’évolution des besoins de la personne aidée, âgées ou en 
-situation de handicap <br> <br>
-Ce qui signifie que nous pouvons, en cours de contrat, adapter la prestation initialement mise en place : organisation des interventions, tâches à réaliser, qualification du personnel, etc
+                                        <p class="w-85 lg-w-100" style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+																					 <ul class ="margin-top-sm list list_star">
+																							 <li> Ecoute de la demande et explication des missions à réaliser </li>
+																							 <li> Rencontre au domicile avec les bénéficiaires pour identifier les besoins gratuitement </li>
+																							 <li> Présentation des aides financières et aide au montage des dossiers </li>
+																							 <li> 50 % de réduction d’impôt </li> 
+																					 </ul>
+                                        </p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- start tab item -->
+                            <div id="research-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img02.jpg') }}" alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
+                                      
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                       style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 30px;">Elaboration d’un devis personnalisé</h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Nous déterminons ensemble la durée, la fréquence, les jours, les heures et le contenu des interventions. 
+																				</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- start tab item -->
+                            <div id="target-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img03.jpg') }}" alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-600 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/controle.png') }}" alt="bruce">
-				</div>
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
-	
-	<section class="py-sm-7 py-5 position-relative" style="margin-top:-120px">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 mx-auto">
-			  <div class="row py-lg-7 py-5">
-				
-				<div class="col-lg-3 col-md-5 position-relative my-auto">
-				  <img class="img border-radius-lg max-width-300 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/rgpd-european-union.png') }}" alt="bruce">
-				</div>
-				
-				<div class="col-lg-7 col-md-7 z-index-2 position-relative px-md-2 px-sm-5 mt-sm-0 mt-4">
-				  <div class="d-flex justify-content-between align-items-center mb-2">
-					<h4 class="mb-0" style="font-family: Open Sans; font-weight:600; font-size:24px; color:rgb(52,71,103)">La protection des données (RGPD) </h4>
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 25px;">
+																				Sélection d’un(e) intervenant (e) qualifié(e) ,formé(e) et dédié(e) à vos attentes</h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Afin d’établir une relation de confiance et offrir un service sur-mesure et stable, la même personne interviendra à chaque fois (sauf absence)</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- start tab item -->
+                            <div id="campaign-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/home-business-tab-img04.jpg') }} " alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
-				  </div>
-				
-				  <p class="text-lg mb-0" style="font-family: Open Sans; font-weight:400; font-size:18px; color:rgb(103,116,142)">
-					Toutes les données concernant le ou la bénéficiaire font l’objet d’un traitement informatisé dans les conditions fixées par le règlement général de la protection des données(RGPD) <br><br>
-Les données médicales sont soumises au secret professionnel, auquel est tenu l’ensemble du personnel
+                                        
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 35px;">Confiance & convivialité</h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Avant le début des prestations, rencontre et présentation au domicile l’intervenant(e) sélectionné(e).</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
 
-					<br>
-					<a href="{{ route('about') }}" class="text-info icon-move-right" 
-					style="font-family: Open Sans; font-weight:700; font-size:18px; letter-spacing:-0.8px; line-height:46.8px; text-decoration:none;"> <span style="color:rgb(232,67,71)">Demander un devis 
-					  <i class="fas fa-arrow-right text-sm ms-1"></i></span>
-					</a>
-				  </p>
-				</div>
-				
-				
-				
-			  </div>
-			</div>
-		  </div>
-		</div>
-    </section>
+                            <!-- start tab item -->
+                            <div id="implication-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
-		
-  
+                                        
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 35px;">Un planning qui s'adapte à l'évolution de vos besoins </h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Le planning des interventions à votre domicile pourra s’adapter à l’évolution de vos besoins.</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                           
+                            <!-- start tab item -->
+                            <div id="suivi-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
+                                        
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 35px;">Suivi et contrôle qualité régulier </h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Afin de garantir un service conforme aux attentes de nos bénéficiaires, des enquêtes et des visites sont régulièrement réalisées.
+																				Un interlocuteur unique, de la prise de contact à la fin de la durée du contrat, s’informer régulièrement de l’évolution des besoins 
+																				de la personne aidée, âgées ou en situation de handicap
+																				Ce qui signifie que nous pouvons, en cours de contrat, adapter la prestation initialement 
+																				mise en place : organisation des interventions, tâches à réaliser, qualification du personnel, etc</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
 
+														 <!-- start tab item -->
+                            <div id="protection-tab" class="tab-pane fade in">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
+                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                    </div>
+                                    <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
+
+                                        
+                                        <h5 class="alt-font font-weight-600 text-extra-dark-gray margin-35px-bottom md-margin-30px-bottom"
+                                        style="font-family:Poppins, sans-serif; font-size:33px; margin-bottom: 35px;">La protection des données (RGPD) </h5>
+                                        <p class="w-85 lg-w-100"
+                                        style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
+                                       Toutes les données concernant le ou la bénéficiaire font l’objet d’un traitement informatisé dans les conditions fixées par le 
+																			 règlement général de la protection des données(RGPD) Les données médicales sont soumises au secret professionnel, auquel est tenu l’ensemble du personnel</p>
+                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
    
 @endsection
