@@ -379,14 +379,52 @@
 
     <li class="app-sidebar__heading">Blocs</li>
     <li>
-    <a href="{{ route('articles.index') }}">
-    <i class="metismenu-icon pe-7s-graph2"></i>Articles
+    <a href="#">
+    <i class="metismenu-icon pe-7s-light"></i> Articles
+    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+    <li>
+    <a href="{{ route('articles.create') }}">
+    <i class="metismenu-icon"></i>Creer un article
+    </a>
+    </li>
+     <li>
+    <a href="forms-layouts.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 12
     </a>
     </li>
     <li>
-    <a href="charts-apexcharts.html.htm">
-    <i class="metismenu-icon pe-7s-graph"></i>Demandes
+    <a href="forms-validation.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 13
     </a>
+    </li>
+
+    </ul>
+    </li>
+    <li>
+    <a href="#">
+    <i class="metismenu-icon pe-7s-joy"></i> Sous menu 2
+    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+    <li>
+    <a href="forms-datepicker.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 21
+    </a>
+    </li>
+    <li>
+    <a href="forms-range-slider.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 22
+    </a>
+    </li>
+    <li>
+    <a href="forms-input-selects.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 23
+    </a>
+    </li>
+
+    </ul>
     </li>
 
     </ul>
