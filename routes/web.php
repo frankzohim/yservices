@@ -27,6 +27,10 @@ Route::get('about', function () {
     return view('about');
 })->name('about');
 
+Route::get('metiers', function () {
+    return view('metiers');
+})->name('metiers');
+
 Route::get('commitment', function () {
     return view('our-commitment');
 })->name('commitment');
