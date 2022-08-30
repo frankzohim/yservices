@@ -251,12 +251,12 @@
     </li>
 	  <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i>Contacts
+    <i class="metismenu-icon pe-7s-display2"></i>demandes
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
     <li>
-    <a href="{{ route('contacts.index') }}">
+    <a href="{{ route('demandes.index') }}">
     <i class="metismenu-icon"> </i>Liste
     </a>
     </li>
@@ -272,6 +272,29 @@
     </li>
     </ul>
     </li>
+    <li>
+        <a href="#">
+        <i class="metismenu-icon pe-7s-display2"></i>Contacts
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+        </a>
+        <ul>
+        <li>
+        <a href="{{ route('contacts.index') }}">
+        <i class="metismenu-icon"> </i>Liste
+        </a>
+        </li>
+        <li>
+        <a href="tables-regular.html.htm">
+        <i class="metismenu-icon"></i>Traités
+        </a>
+        </li>
+        <li>
+        <a href="tables-grid.html.htm">
+        <i class="metismenu-icon"></i>Non Traités
+        </a>
+        </li>
+        </ul>
+        </li>
     <li class="app-sidebar__heading">Aide Ménagère</li>
     <li>
     <a href="widgets-chart-boxes.html.htm">
