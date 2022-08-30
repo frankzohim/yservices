@@ -377,6 +377,18 @@
     </a>
     </li>
 
+    <li class="app-sidebar__heading">Blocs</li>
+    <li>
+    <a href="{{ route('articles.index') }}">
+    <i class="metismenu-icon pe-7s-graph2"></i>Articles
+    </a>
+    </li>
+    <li>
+    <a href="charts-apexcharts.html.htm">
+    <i class="metismenu-icon pe-7s-graph"></i>Demandes
+    </a>
+    </li>
+
     </ul>
     </div>
     </div>
