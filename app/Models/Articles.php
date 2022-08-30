@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Articles extends Model
 {
     use HasFactory;
+
+    protected $fillable=[
+        'title',
+        'contenue',
+        'image_path',
+        'meta_description',
+        'keywords',
+        'status'
+    ];
 }
