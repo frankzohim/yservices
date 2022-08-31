@@ -139,7 +139,6 @@
 
 																							<li class="text">Garde de jour </li>
 																							<li class="text">Garde 24h sur 24  </li>
-																							<li class="text">Retour à domicile après une hospitalisation  </li>
 																							
 																						</ul>
 												</div>
@@ -346,7 +345,7 @@
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/transport-handicape.png') }}" alt="Why choose Us?">
+						<img src="{{ asset('_next/static/media/transport-des-handicapes.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
 						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Transport des handicapés <span class="subtitle" style="color:#1b138a"></span></h3>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
 use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
@@ -115,6 +116,7 @@ Route::group(['prefix' => 'clients'], function () {
         Route::resource("/franchise",FranchiseController::class);
         Route::resource('/demandes',AdminJoinController::class);
         Route::resource('/contacts',AdminContactController::class);
+        Route::resource('articles', ArticleController::class);
     });
 
 

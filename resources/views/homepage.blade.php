@@ -32,7 +32,8 @@
 .team-image:hover .middle {
   opacity: 1;
 }
-.team-image img,.team-image>a{display:block;width:100%}
+.team-image img,.team-image>a{display:block;width:40%;   margin-left: auto;
+  margin-right: auto;}
 .team-desc{text-align:center}
 .team-desc.team-desc-bg{background-color:#fff;padding:10px 0 30px}
 .team .si-share{margin-top:30px;text-align:left}
@@ -186,7 +187,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb1" name="services[]" value="AIDE À L’AUTONOMIE"/>
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/team/1.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n1.png') }}" alt="AIDE À L’AUTONOMIE">
 										</label>
 									</div>
 
@@ -205,7 +206,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb2" name="services[]" value="GARDES NON MÉDICALISÉES"/>
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/team/2.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n2.png') }}"  alt="GARDES NON MÉDICALISÉES">
 										</label>
 									</div>
 
@@ -224,7 +225,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb3" name="services[]" value="SERVICE HANDICAP"/>
 										<label for="cb3">
-											<img src="{{ asset('_next/static/media/team/3.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n3.png') }}" alt="SERVICE HANDICAP">
 										</label>
 									</div>
 
@@ -243,7 +244,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb4" name="services[]" value="ACCOMPAGNEMENTS"/>
 										<label for="cb4">
-											<img src="{{ asset('_next/static/media/team/4.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="John Doe">
 										</label>
 									</div>
 
@@ -266,7 +267,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb5" name="services[] " value="AIDE AUX REPAS"/>
 										<label for="cb5">
-											<img src="{{ asset('_next/static/media/team/5.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n5.png') }}" alt="AIDE AUX REPAS">
 										</label>
 									</div>
 
@@ -285,7 +286,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb6" name="services[]" value="RETOUR D’HOSPITALISATION"/>
 										<label for="cb6">
-											<img src="{{ asset('_next/static/media/team/6.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n6.png') }}" alt="RETOUR D’HOSPITALISATION">
 										</label>
 									</div>
 
@@ -304,7 +305,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb7" name="services[]" value="AIDE-MÉNAGÈRE"/>
 										<label for="cb7">
-											<img src="{{ asset('_next/static/media/team/7.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n7.png') }}" alt="AIDE-MÉNAGÈRE">
 										</label>
 									</div>
 
@@ -323,7 +324,7 @@ label img {
 									<div class="team-image">
 										<input type="checkbox" id="cb8" name="services[]" value="ASSISTANCE ADMINISTRATIVE"/>
 										<label for="cb8">
-											<img src="{{ asset('_next/static/media/team/8.png') }}" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n8.png') }}" alt="ASSISTANCE ADMINISTRATIVE">
 										</label>
 									</div>
 
