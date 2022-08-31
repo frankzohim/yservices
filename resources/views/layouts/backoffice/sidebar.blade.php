@@ -251,12 +251,12 @@
     </li>
 	  <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i> Formulaire Contact
+    <i class="metismenu-icon pe-7s-display2"></i>demandes
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
     <li>
-    <a href="tables-data-tables.html.htm">
+    <a href="{{ route('demandes.index') }}">
     <i class="metismenu-icon"> </i>Liste
     </a>
     </li>
@@ -272,6 +272,29 @@
     </li>
     </ul>
     </li>
+    <li>
+        <a href="#">
+        <i class="metismenu-icon pe-7s-display2"></i>Contacts
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+        </a>
+        <ul>
+        <li>
+        <a href="{{ route('contacts.index') }}">
+        <i class="metismenu-icon"> </i>Liste
+        </a>
+        </li>
+        <li>
+        <a href="tables-regular.html.htm">
+        <i class="metismenu-icon"></i>Traités
+        </a>
+        </li>
+        <li>
+        <a href="tables-grid.html.htm">
+        <i class="metismenu-icon"></i>Non Traités
+        </a>
+        </li>
+        </ul>
+        </li>
     <li class="app-sidebar__heading">Aide Ménagère</li>
     <li>
     <a href="widgets-chart-boxes.html.htm">
@@ -352,6 +375,56 @@
     <a href="charts-apexcharts.html.htm">
     <i class="metismenu-icon pe-7s-graph"></i>Demandes
     </a>
+    </li>
+
+    <li class="app-sidebar__heading">Blocs</li>
+    <li>
+    <a href="#">
+    <i class="metismenu-icon pe-7s-light"></i> Articles
+    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+    <li>
+    <a href="{{ route('articles.create') }}">
+    <i class="metismenu-icon"></i>Creer un article
+    </a>
+    </li>
+     <li>
+    <a href="forms-layouts.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 12
+    </a>
+    </li>
+    <li>
+    <a href="forms-validation.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 13
+    </a>
+    </li>
+
+    </ul>
+    </li>
+    <li>
+    <a href="#">
+    <i class="metismenu-icon pe-7s-joy"></i> Sous menu 2
+    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+    </a>
+    <ul>
+    <li>
+    <a href="forms-datepicker.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 21
+    </a>
+    </li>
+    <li>
+    <a href="forms-range-slider.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 22
+    </a>
+    </li>
+    <li>
+    <a href="forms-input-selects.html.htm">
+    <i class="metismenu-icon"></i>Sous menu 23
+    </a>
+    </li>
+
+    </ul>
     </li>
 
     </ul>

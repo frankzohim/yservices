@@ -88,7 +88,7 @@
             <td>{{ $need->address }}</td>
             <td>{{ $need->postal_code }}</td>
             <td>{{ $need->town }}</td>
-            <td><a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i></a>
+            <td><a href=""><i class="fa fa-trash-alt"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
             </tr>
         @endforeach

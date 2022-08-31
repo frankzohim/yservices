@@ -66,27 +66,21 @@
 
             <th>Nom Complet</th>
             <th>Email</th>
-             <th>Recherches souhaités</th>
-             <th>Metier</th>
             <th>Telephone</th>
-            <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>town</th>
+            <th>Object</th>
+            <th>Message</th>
             <th>Action</th>
             </tr>
     </thead>
     <tbody>
-        @foreach ($franchises as $franchise  )
+        @foreach ($contacts as $contact  )
         <tr>
-            <td>{{ $franchise->name }} {{ $franchise->surname }}</td>
-            <td>{{ $franchise->email }}</td>
-            <td>{{ $franchise->research }}</td>
+            <td>{{ $contact->fullname }} </td>
+            <td>{{ $contact->email }}</td>
+            <td>{{ $contact->phone }}</td>
 
-            <td>{{ $franchise->occupation }}</td>
-            <td>{{ $franchise->phone }}</td>
-            <td>{{ $franchise->addresse }}</td>
-            <td>{{ $franchise->postal_code }}</td>
-            <td>{{ $franchise->town }}</td>
+            <td>{{ $contact->subject }}</td>
+            <td>{{ $contact->message }}</td>
             <td><a href=""><i class="fa fa-trash-alt"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
             </tr>
@@ -100,12 +94,9 @@
 
             <th>Nom Complet</th>
             <th>Email</th>
-             <th>Recherches souhaités</th>
-             <th>Metier</th>
             <th>Telephone</th>
-            <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>town</th>
+            <th>Object</th>
+            <th>Message</th>
             <th>Action</th>
             </tr>
     </tfoot>

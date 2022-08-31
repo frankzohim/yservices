@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes des Besoins'))
+@section('title', __('Articles'))
 
 @section('content')
 
@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Articles
+    <div class="page-title-subheading">Listes Des Articles</div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -64,31 +64,31 @@
     <thead>
         <tr>
 
-            <th>Nom Complet</th>
-            <th>Email</th>
-             <th>Recherches souhaités</th>
-             <th>Metier</th>
-            <th>Telephone</th>
-            <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>town</th>
+            <th>Image</th>
+            <th>titre</th>
+            <th>Status</th>
             <th>Action</th>
             </tr>
     </thead>
     <tbody>
-        @foreach ($franchises as $franchise  )
+        @foreach ($articles as $article  )
         <tr>
-            <td>{{ $franchise->name }} {{ $franchise->surname }}</td>
-            <td>{{ $franchise->email }}</td>
-            <td>{{ $franchise->research }}</td>
+            <td><img src="{{ Storage::url($article->image_path) }}" alt="" style="width: 70px;" height="70px;"> </td>
+            <td style="font-size: 15px; font-weight:bold;">{{ $article->title }}</td>
+                @if($article->status==1)
+                <td>Publié</td>
+                @else
+                <td>Non Publié</td>
+                @endif
+            <td><form method="POST" action="{{ route('articles.destroy',$article->id) }}" class="px-4 py-2 bg-red-700 rounded-lg text-white" onsubmit="return confirm('Are you sure?')">
+                @csrf
+                @method('DELETE')
+                <button type="submit"><i class="fa fa-trash-alt"></i></button>
+            </form>
 
-            <td>{{ $franchise->occupation }}</td>
-            <td>{{ $franchise->phone }}</td>
-            <td>{{ $franchise->addresse }}</td>
-            <td>{{ $franchise->postal_code }}</td>
-            <td>{{ $franchise->town }}</td>
-            <td><a href=""><i class="fa fa-trash-alt"></i></a>
-                <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
+
+                <a href="{{ route('articles.edit',$article->id) }}"><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></a>
+                <a href=""><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a></td>
             </tr>
         @endforeach
 
@@ -98,14 +98,9 @@
     <tfoot>
         <tr>
 
-            <th>Nom Complet</th>
-            <th>Email</th>
-             <th>Recherches souhaités</th>
-             <th>Metier</th>
-            <th>Telephone</th>
-            <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>town</th>
+            <th>Image</th>
+            <th>titre</th>
+            <th>Status</th>
             <th>Action</th>
             </tr>
     </tfoot>

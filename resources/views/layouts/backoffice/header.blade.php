@@ -180,17 +180,17 @@
     </div>
     </div>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"></i>Aide et accompagnement PAMH  
+    <i class="dropdown-icon lnr-file-empty"></i>Aide et accompagnement PAMH
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"> </i>Aide-Ménagère 
+    <i class="dropdown-icon lnr-file-empty"> </i>Aide-Ménagère
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"> </i>Petite Enfance 
+    <i class="dropdown-icon lnr-file-empty"> </i>Petite Enfance
     </button>
     <div tabindex="-1" class="dropdown-divider"></div>
     <button type="button" tabindex="0" class="dropdown-item">
-    <i class="dropdown-icon lnr-file-empty"></i>Travaux Nettoyage 
+    <i class="dropdown-icon lnr-file-empty"></i>Travaux Nettoyage
     </button>
     <button type="button" tabindex="0" class="dropdown-item">
     <i class="dropdown-icon lnr-file-empty"></i>Recrutement, Formation
@@ -684,7 +684,7 @@
     <img width="42" class="rounded-circle" src="{{ asset('assets/backoffice/assets/images/avatars/1.jpg') }}" alt="">
     </div>
     <div class="widget-content-left">
-    <div class="widget-heading">Pauline Youdom</div>
+    <div class="widget-heading">{{ auth()->user()->name }}</div>
     <div class="widget-subheading opacity-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima</div>
     </div>
     <div class="widget-content-right mr-2">
@@ -753,7 +753,7 @@
     </div>
     <ul class="nav flex-column">
     <li class="nav-item-divider nav-item">
-    </li> 
+    </li>
     <li class="nav-item-btn text-center nav-item">
     <button class="btn-wide btn btn-primary btn-sm"> Voir Messages </button>
     </li>
@@ -762,7 +762,7 @@
     </div>
     </div>
     <div class="widget-content-left  ml-3 header-user-info">
-    <div class="widget-heading"> Pauline Youdom </div>
+    <div class="widget-heading">{{ auth()->user()->name }}</div>
     <div class="widget-subheading"> Administratrice </div>
     </div>
     <div class="widget-content-right header-user-info ml-3">
@@ -781,7 +781,7 @@
     </button>
     </div> </div>
     </div>
-    </div> 
+    </div>
 
     <div class="ui-theme-settings">
 <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
@@ -984,4 +984,4 @@ Restore Default
 </div>
 </div>
 </div>
-</div> 
+</div>
