@@ -81,6 +81,7 @@
                 <td>Non Publié</td>
                 @endif
             <td><a href=""><i class="fa fa-trash-alt"></i></a>
+                <a href="{{ route('articles.edit',$article->id) }}"><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a></td>
             </tr>
         @endforeach
