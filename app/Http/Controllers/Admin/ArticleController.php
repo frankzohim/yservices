@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
-use App\Models\Articles;
+use App\Models\Article;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\ArticleRequest;
 
 class ArticleController extends Controller
 {
@@ -15,7 +16,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles=Articles::all();
+        $articles=Article::all();
         return view('admin.articles.index',compact('articles'));
     }
 
@@ -35,9 +36,20 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ArticleRequest $request)
     {
-        //
+        $image=$request->file('image_path')->store('public/articles');
+
+        Article::create([
+            'title'=>$request->title,
+            'contenue'=>$request->contenue,
+            'meta_description'=>$request->meta_description,
+            'keywords'=>$request->keywords,
+            'image_path'=>$image,
+            'status'=>$request->status
+        ]);
+
+        return to_route('articles.index');
     }
 
     /**

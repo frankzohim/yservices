@@ -64,7 +64,8 @@
     <div class="card-body">
     <h5 class="card-title"></h5>
 
-    <form class="">
+    <form method="POST" enctype="multipart/form-data"  action="{{ route('articles.store') }}" >
+        @csrf
 
 
         <div class="position-relative row form-group">
@@ -114,7 +115,7 @@
                 </div>
                 </div>
             <div>
-                <button class="btn btn-primary mt-5">Submit</button>
+                <button type="submit" class="btn btn-primary mt-5">Submit</button>
 
             </div>
 
