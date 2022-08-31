@@ -80,7 +80,13 @@
                 @else
                 <td>Non Publié</td>
                 @endif
-            <td><a href=""><i class="fa fa-trash-alt"></i></a>
+            <td><form method="POST" action="{{ route('articles.destroy',$article->id) }}" class="px-4 py-2 bg-red-700 rounded-lg text-white" onsubmit="return confirm('Are you sure?')">
+                @csrf
+                @method('DELETE')
+                <button type="submit"><i class="fa fa-trash-alt"></i></button>
+            </form>
+
+
                 <a href="{{ route('articles.edit',$article->id) }}"><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a></td>
             </tr>
