@@ -70,42 +70,49 @@
         <div class="position-relative row form-group">
 
             <div class="col-sm-10">
-                <input name="email" id="exampleEmail" placeholder="Ajouter un titre" type="text" class="form-control" style="text-align: center;font-size:18px;font-weight:bold;color:black">
+                <input name="title" id="exampleEmail" placeholder="Ajouter un titre" type="text" class="form-control" style="text-align: center;font-size:18px;font-weight:bold;color:black">
             </div>
         </div>
 
         <div class="position-relative row form-group mt-5">
             <label for="exampleEmail" class="col-sm-2 col-form-label">Meta description</label>
             <div class="col-sm-10">
-                <input name="email" id="exampleEmail" placeholder="inserer des meta description pour votre article" type="text" class="form-control">
+                <input name="meta_description" id="exampleEmail" placeholder="inserer des meta description pour votre article" type="text" class="form-control">
             </div>
         </div>
         <div class="position-relative row form-group mt-3">
             <label for="exampleEmail" class="col-sm-2 col-form-label">Meta Keywords</label>
             <div class="col-sm-10">
-                <input name="email" id="exampleEmail" placeholder="inserer des meta keywords pour votre article" type="text" class="form-control">
+                <input name="keywords" id="exampleEmail" placeholder="inserer des meta keywords pour votre article" type="text" class="form-control">
             </div>
         </div>
         <div class="position-relative row form-group">
             <label for="exampleText" class="col-sm-2 col-form-label">Contenue</label>
             <div class="col-sm-10">
-                <textarea name="text" id="exampleText" class="form-control"></textarea>
+                <textarea name="contenue" id="exampleText" class="form-control"></textarea>
             </div>
         </div>
 
         <div class="position-relative row form-group">
             <label for="exampleFile" class="col-sm-2 col-form-label">Image mis en avant</label>
             <div class="col-sm-10">
-            <input name="file" id="exampleFile" type="file" class="form-control-file">
+            <input name="image_path" id="exampleFile" type="file" class="form-control-file">
             <small class="form-text text-muted">Selectionnez une image mis en avant pour votre article.
             </small>
             </div>
             </div>
 
-            <div class="form-check form-check-inline">
-                <input id="inlineCheckbox1" class="form-check-input" type="checkbox" data-toggle="toggle" data-style="mr-1" checked="">
-                <label for="inlineCheckbox1" class="form-check-label">Publié</label>
-            </div>
+            <div class="position-relative row form-group">
+                <label for="exampleSelect" class="col-sm-2 col-form-label">Status</label>
+                <div class="col-sm-10">
+                <select name="status" id="exampleSelect" class="form-control">
+                    <option value="0">Non Publié</option>
+                    <option value="1">Publié</option>
+
+                </select>
+
+                </div>
+                </div>
             <div>
                 <button class="btn btn-primary mt-5">Submit</button>
 
