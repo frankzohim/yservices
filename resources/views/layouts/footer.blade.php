@@ -69,7 +69,6 @@
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de nuit pour personnes âgées et personnes en situation d’handicap</a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits auprès des enfants malades </a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de jour</a></li>
-																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Retour à domicile après une hospitalisation</a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde 24h sur 24</a></li>
                             </ul>
                         </div>
@@ -202,10 +201,11 @@
                             <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
 														color: #E84347; font-weight: 700; font-size: 15px;">VOYAGES / ÉVASION</span>
                             <ul class=" ">                           
-                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Formations</a></li>
-															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">Sport, loisirs, vacances et handicap</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">Les vacances organisés</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Voyage organisé pour handicapé</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">Sorties organisées pour handicapés</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">Tourisme pour handicapés</a></li>
                             </ul>
                         </div>
                         <!-- end footer column -->

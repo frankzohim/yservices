@@ -111,7 +111,7 @@
                             <div id="planning-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img01.jpg') }}" alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement1.png') }}" alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6 text-center text-sm-start">
 
@@ -171,7 +171,7 @@
                                     </div>
 									
 									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img02.jpg') }}" alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement4.png') }}" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                             <div id="target-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img03.jpg') }}" alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement3.png') }}" alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
@@ -256,7 +256,7 @@
                                     </div>
 									
 									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/home-business-tab-img04.jpg') }} " alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement5.png') }} " alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@
                             <div id="implication-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement1.png') }} " alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
@@ -349,7 +349,7 @@
                                     </div>
 									
 									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement6.png') }} " alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@
                             <div id="protection-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/implication.jpg') }} " alt="" />
+                                        <img src="{{ asset('_next/static/media/fonctionnement2.png') }} " alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
 
