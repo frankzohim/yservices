@@ -142,23 +142,7 @@
 
 												<hr style="color: #594EE6">
 												
-												<!-- start footer column -->
-                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
-														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
-															Service handicap</span>
-                            <ul class=" ">                           
-                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
-																Aide à domicile - personnes handicapées</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
-																Entretien du lieu de vie - personnes handicapées</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
-																Aide à la vie sociale - personnes handicapées</a></li>
-															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
-																Garde de jour et ou de nuit - personnes handicapées</a></li>
-                            </ul>
-                        </div>
-                        <!-- end footer column -->
+												
 
 													<!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
@@ -166,14 +150,17 @@
 														color: #E84347; font-weight: 700; font-size: 15px;">TRANSPORT DES HANDICAPÉS</span>
                             <ul class=" ">                           
                                <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
-																Des véhicules équipés pour le transport des personnes à mobilité réduite ;</a></li>
+																Des véhicules TPMR adaptés à vos besoins</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
-																Tout Transport professionnel</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Tout Transport privé</a></li>
+																Accompagnement par une aide à domicile</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Location véhicules adaptés avec chauffeur</a></li>
 															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
-																Tout Transport scolaire</a></li>
+																Transport de porte-à-porte</a></li>
+															
+																<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Véhicules accessibles aux personnes à mobilité réduite sur demande au moment de réservation</a></li>
 															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
-																Forme dès leur intégration et durant toute leur carrière les Chauffeurs/Accompagnateurs</a></li>
+																Service assuré 7j :7 de 6 h à 21h</a></li>
                             </ul>
                         </div>
                         <!-- end footer column -->
@@ -210,7 +197,157 @@
                         </div>
                         <!-- end footer column -->
 
-                        
+												<hr style="color: #594EE6">
+												<!-- start footer column -->
+                        <div class="col-12 col-lg-12 col-sm-12 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #594EE6;; font-weight: 700; font-size: 15px;">
+															Aide et accompagnement à domicile des enfants malades ou handicapés</span>
+                            
+                        </div>
+                        <!-- end footer column -->
+
+                        <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															Aide à l’enfant malade</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aide à la toilette</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Aide au lever et coucher</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aide à l’habillage </a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Aide aux repas, et suivi du régime alimentaire</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																La mobilité (transfert et manipulation)</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Le suivi de la prise de ses médicaments</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																La stimulation intellectuelle et physique</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Aide aux développement sychomoteur </a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap;
+														color: #E84347; font-weight: 700; font-size: 15px; text-transform:uppercase;">Aide à la vie sociale</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																L’ accompagnement de l’enfant aux rendez-vous médicaux</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																La collaboration avec les équipes médicales et para-médicales (HAD, infirmières, kinésithérapeute,etc.)</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																L’ accompagnement de l’enfant à l’école</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																L’ accompagnement de l’enfant durant ses loisirs</a></li>
+															
+																<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Apprentissage de la lecture</a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Compagnie et Partage des jeux de société</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Aide à la famille</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">
+																Faire les courses</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Accomplir les travaux ménagers courants</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">L’entretien  et repassage </a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Service Handicap</a></li>
+															
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+												<hr style="color: #594EE6">
+												<!-- start footer column -->
+                        <div class="col-12 col-lg-12 col-sm-12 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #594EE6; font-weight: 700; font-size: 15px;">
+															Aide et accompagnement à domicile des personnes handicapées</span>
+                            
+                        </div>
+                        <!-- end footer column -->
+
+                        <!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
+															AIDER AUX ACTES DU QUOTIDIEN</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aider au lever et au coucher</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Aider à l’habillage et au déshabillage</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aider à la toilette </a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+													<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="
+														color: #E84347; font-weight: 700; font-size: 15px; text-transform:uppercase;">AIDER POUR LES REPAS ET LES COURSES</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Faire les courses</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Préparer les repas</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aider à la prise des repas</a></li>
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+												<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">AIDER POUR L'ENTRETIEN DU DOMICILE</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">
+																Le ménage du domicile</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Entretien & repassage du linge</a></li>
+															 
+															
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
+
+												<!-- start footer column -->
+                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
+                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">ACCOMPAGNER À LA VIE SOCIALE</span>
+                            <ul class=" ">                           
+                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('quality') }}">
+																Accompagner pour les promenades</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
+																Accompagner en voiture pour les sorties</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Aider à la prise de rendez-vous </a></li>
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Garde de nuit </a></li>
+
+															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																Garde de jour ou nuit des personnes handicapées </a></li>
+															
+                            </ul>
+                        </div>
+                        <!-- end footer column -->
                         
                     </div>
                 </div>

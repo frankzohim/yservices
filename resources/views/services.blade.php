@@ -150,42 +150,7 @@
 						</div>
 					</div>
 	
-					<div class="col-md-4">
-						<div class="feature-box media-box">
-						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/service-handicape.png') }}" alt="Why choose Us?">
-						</div>
-						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Service handicap  <span class="subtitle" style="color:#1b138a"></span></h3>
-						<p>
-							<ul class="margin-top-sm list list_star" >
-
-										<li class="text" >Aide à domicile - personnes handicapées </li>
-										<li class="text">Entretien du lieu de vie - personnes handicapées </li>
-										<li class="text">Aide à la vie sociale - personnes handicapées   </li>
-										<li class="text">Garde de jour et ou de nuit - personnes handicapées   </li>
-										
-									</ul>
-						</p>
-						</div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-		
-	</section>
-	
-	<section id="content" style="margin-top:-100px;">
-		<div class="content-wrap">
-			<div class="container clearfix">
-				<div class="row col-mb-50">
-			
-				
-					
-					
-					<div class="col-md-4">
+						<div class="col-md-4">
 						<div class="feature-box media-box flex-column">
 						<div class="fbox-media">
 						<img src="{{ asset('_next/static/media/service-accompagnements.png') }}" alt="Why choose Us?">
@@ -230,6 +195,17 @@
 						</div>
 					</div>
 					
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+	<section id="content" style="margin-top:-100px;">
+		<div class="content-wrap">
+			<div class="container clearfix">
+				<div class="row col-mb-50">
+					
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
@@ -257,28 +233,19 @@
 						<img src="{{ asset('_next/static/media/service-retour-hospitalisation.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Retour d’hospitalisation  <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Retour à domicile après hospitalisation  <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
 										<li class="text">Retour au domicile</li>
 										<li class="text">Aide au quotidien</li>
-										
+										<li class="text">Soin à domicile</li>
+										<li class="text">Aide aux courses et repas</li>
 									</ul>
 						</p>
 						</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-		
-	</section>
-	
-		<section id="content" style="margin-top:-100px;">
-		<div class="content-wrap">
-			<div class="container clearfix">
-				<div class="row col-mb-50 justify-content-center">
 					
 					<div class="col-md-4">
 						<div class="feature-box media-box flex-column">
@@ -298,6 +265,19 @@
 						</div>
 						</div>
 					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</section>
+	
+		<section id="content" style="margin-top:-100px;">
+		<div class="content-wrap">
+			<div class="container clearfix">
+				<div class="row col-mb-50 justify-content-center">
+					
+				
 					
 					<div class="col-md-4">
 						<div class="feature-box media-box">
@@ -341,26 +321,26 @@
 						</div>
 						</div>
 					</div>
-
+					
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/transport-des-handicapes.png') }}" alt="Why choose Us?">
+						<img src="{{ asset('_next/static/media/voyage.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Transport des handicapés <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Voyage & Evasion <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
-										<li class="text">Des véhicules équipés pour le transport des personnes à mobilité réduite ; </li>
-										<li class="text">Tout Transport professionnel  </li>
-										<li class="text">Tout Transport privé   </li>
+										<li class="text">Sport, loisirs, vacances et handicap </li>
+										<li class="text">Les vacances organisés  </li>
+										<li class="text">Voyage organisé pour handicapé  </li>
 										
 									</ul>
 									<!-- start accordion item -->
 									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
 										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-04" aria-expanded="false">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-08" aria-expanded="false">
 												<div class="panel-title">
 													<span class="see-more">
 														Voir Plus
@@ -369,11 +349,12 @@
 													</div>
 													</a>
 										</div>
-										<div id="accordion-style-04" class="panel-collapse collapse" data-bs-parent="#accordion3">
+										<div id="accordion-style-08" class="panel-collapse collapse" data-bs-parent="#accordion3">
 													<div class="panel-body">
 																						<ul class="margin-top-sm list list_star">
-																							<li class="text">Tout Transport scolaire  </li>
-																							<li class="text">Forme dès leur intégration et durant toute leur carrière les Chauffeurs/Accompagnateurs  </li>
+
+																							<li class="text">Sorties organisées pour handicapés</li>
+																							<li class="text">Tourisme pour handicap   </li>
 																						</ul>
 												</div>
 										 </div>
@@ -387,17 +368,82 @@
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/assistance-administrative.png') }}" alt="Why choose Us?">
+						<img src="{{ asset('_next/static/media/transport-des-handicapes.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Voyages / évasion <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Transport et accompagnement de personnes handicapées et de personnes à mobilité réduite (PMR) <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
-										<li class="text">Des véhicules équipés pour le transport des personnes à mobilité réduite ; </li>
-										<li class="text">Tout Transport professionnel  </li>
-										<li class="text">Tout Transport privé   </li>
+										<li class="text">Des véhicules TPMR adaptés à vos besoins </li>
+										<li class="text">Accompagnement par une aide à domicile  </li>
+										<li class="text">Location véhicules adaptés avec chauffeur   </li>
 										
+									</ul>
+									<!-- start accordion item -->
+									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
+										<div class="panel-heading active-accordion">
+											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-09" aria-expanded="false">
+												<div class="panel-title">
+													<span class="see-more">
+														Voir Plus
+																						</span>
+													<i class="indicator fas fa-angle-down"></i>
+													</div>
+													</a>
+										</div>
+										<div id="accordion-style-09" class="panel-collapse collapse" data-bs-parent="#accordion3">
+													<div class="panel-body">
+																						<ul class="margin-top-sm list list_star">
+																							<li class="text">Transport de porte-à-porte  </li>
+																							<li class="text">Véhicules accessibles aux personnes à mobilité réduite sur demande au moment de réservation  </li>
+																							<li class="text">Service assuré 7j :7 de 6 h à 21h  </li>
+																						</ul>
+												</div>
+										 </div>
+									 </div>
+									<!-- end accordion item -->
+						</p>
+						</div>
+						</div>
+					</div>
+
+					
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/aide-enfant.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide et accompagnement à domicile des enfants malades ou handicapés <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Aide à l’enfant malade </li>
+										<li class="text">Aide à la vie sociale  </li>
+										<li class="text">Aide à la famille   </li>
+										
+									</ul>
+									
+						</p>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+						<div class="fbox-media">
+						<img src="{{ asset('_next/static/media/aide-handicap-domicile.png') }}" alt="Why choose Us?">
+						</div>
+						<div class="fbox-content px-0">
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide et accompagnement à domicile des personnes handicapées <span class="subtitle" style="color:#1b138a"></span></h3>
+						<p>
+							<ul class="margin-top-sm list list_star">
+
+										<li class="text">Aider aux actes du quotidien </li>
+										<li class="text">Aider pour les repas et les courses  </li>
+										<li class="text">Aider pour l'entretien du domicile   </li>
+										<li class="text">Accompagner à la vie sociale   </li>
 									</ul>
 
 							
