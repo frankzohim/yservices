@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\need;
+use App\Models\Need;
 use Illuminate\Http\Request;
 
 class NeedController extends Controller
@@ -34,10 +34,20 @@ class NeedController extends Controller
      */
     public function store(Request $request)
     {
-        $need = new need;
+        $need = new Need;
         //dd($request->services);
+        $i =0;
         foreach($request->services as $service){
-                $need->services .= $service;
+            if ($i==0)
+                $need->services = $service;
+            
+            else{
+               
+                $need->services .= ', '.$service;
+            }
+
+             $i++;
+                
         }
 
         $need->start_at = $request->start_at;

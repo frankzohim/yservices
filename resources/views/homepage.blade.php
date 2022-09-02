@@ -168,7 +168,7 @@ label img {
 				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
 			</div>
 
-			<form id="regForm" method="post" action="{{ route('need.store') }}">
+			<form id="regForm" method="post" action="{{ route('devis.store') }}">
 
 					@csrf
 
@@ -185,7 +185,7 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb1" name="services[]" value="AIDE À L’AUTONOMIE"/>
+										<input type="checkbox" id="cb1" name="services[]" value="Aide à l'autonomie"/>
 										<label for="cb1">
 											<img src="{{ asset('_next/static/media/n1.png') }}" alt="AIDE À L’AUTONOMIE">
 										</label>
@@ -204,7 +204,7 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb2" name="services[]" value="GARDES NON MÉDICALISÉES"/>
+										<input type="checkbox" id="cb2" name="services[]" value="Gardes non médicalisées"/>
 										<label for="cb2">
 											<img src="{{ asset('_next/static/media/n2.png') }}"  alt="GARDES NON MÉDICALISÉES">
 										</label>
@@ -218,33 +218,16 @@ label img {
 
 						   </div>
 
-						   <div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb3" name="services[]" value="SERVICE HANDICAP"/>
-										<label for="cb3">
-											<img src="{{ asset('_next/static/media/n3.png') }}" alt="SERVICE HANDICAP">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">SERVICE HANDICAP</h4></div>
-
-									</div>
-								</div>
-
-							</div>
+						
 
 							<div class="col-lg-3 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb4" name="services[]" value="ACCOMPAGNEMENTS"/>
+										<input type="checkbox" id="cb4" name="services[]" value="Accompagnements"/>
 										<label for="cb4">
-											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="John Doe">
+											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="Accompagnements">
 										</label>
 									</div>
 
@@ -255,17 +238,13 @@ label img {
 								</div>
 
 							</div>
-
-					</div>
-
-					<div class="row">
-
+							
 							<div class="col-lg-3 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb5" name="services[] " value="AIDE AUX REPAS"/>
+										<input type="checkbox" id="cb5" name="services[] " value="Aide aux repas"/>
 										<label for="cb5">
 											<img src="{{ asset('_next/static/media/n5.png') }}" alt="AIDE AUX REPAS">
 										</label>
@@ -279,19 +258,25 @@ label img {
 
 							</div>
 
+					</div>
+
+					<div class="row">
+
+							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb6" name="services[]" value="RETOUR D’HOSPITALISATION"/>
+										<input type="checkbox" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>
 										<label for="cb6">
-											<img src="{{ asset('_next/static/media/n6.png') }}" alt="RETOUR D’HOSPITALISATION">
+											<img src="{{ asset('_next/static/media/nn1.png') }}" alt="RETOUR A DOMICILE APRES HOSPITALISATION">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR D’HOSPITALISATION</h4></div>
+									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
 
 									</div>
 								</div>
@@ -303,9 +288,9 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb7" name="services[]" value="AIDE-MÉNAGÈRE"/>
+										<input type="checkbox" id="cb7" name="services[]" value="Aide-ménagère"/>
 										<label for="cb7">
-											<img src="{{ asset('_next/static/media/n7.png') }}" alt="AIDE-MÉNAGÈRE">
+											<img src="{{ asset('_next/static/media/nn5.png') }}" alt="AIDE-MÉNAGÈRE">
 										</label>
 									</div>
 
@@ -322,7 +307,7 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb8" name="services[]" value="ASSISTANCE ADMINISTRATIVE"/>
+										<input type="checkbox" id="cb8" name="services[]" value="Assistance administrative"/>
 										<label for="cb8">
 											<img src="{{ asset('_next/static/media/n8.png') }}" alt="ASSISTANCE ADMINISTRATIVE">
 										</label>
@@ -335,6 +320,89 @@ label img {
 								</div>
 
 							</div>
+							
+							
+							<div class="col-lg-3 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										<input type="checkbox" id="cb8" name="services[]" value="Voyage & évasion"/>
+										<label for="cb8">
+											<img src="{{ asset('_next/static/media/n10.png') }}" alt="VOYAGE & EVASION">
+										</label>
+									</div>
+
+									<div class="team-desc team-desc-bg">
+									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">VOYAGE & EVASION</h4></div>
+
+									</div>
+								</div>
+
+							</div>
+
+					</div>
+					
+					<div class="row">
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										<input type="checkbox" id="cb5" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
+										<label for="cb5">
+											<img src="{{ asset('_next/static/media/nn6.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
+										</label>
+									</div>
+
+									<div class="team-desc team-desc-bg">
+									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										<input type="checkbox" id="cb6" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
+										<label for="cb6">
+											<img src="{{ asset('_next/static/media/nn2.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
+										</label>
+									</div>
+
+									<div class="team-desc team-desc-bg">
+									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
+
+									</div>
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										<input type="checkbox" id="cb7" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
+										<label for="cb7">
+											<img src="{{ asset('_next/static/media/nn4.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
+										</label>
+									</div>
+
+									<div class="team-desc team-desc-bg">
+									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+
+									</div>
+								</div>
+
+							</div>
+
+						
 
 					</div>
 
