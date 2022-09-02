@@ -142,23 +142,7 @@
 
 												<hr style="color: #594EE6">
 												
-												<!-- start footer column -->
-                        <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
-														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
-															Service handicap</span>
-                            <ul class=" ">                           
-                               <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
-																Aide à domicile - personnes handicapées</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
-																Entretien du lieu de vie - personnes handicapées</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
-																Aide à la vie sociale - personnes handicapées</a></li>
-															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
-																Garde de jour et ou de nuit - personnes handicapées</a></li>
-                            </ul>
-                        </div>
-                        <!-- end footer column -->
+												
 
 													<!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
