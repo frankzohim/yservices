@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Seeders\RoleSeeder;
+use Database\Seeders\UserSeeder;
 use Database\Seeders\AdminSeeder;
 use Database\Seeders\AgencySeeder;
 
@@ -23,6 +25,8 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call(AgencySeeder::class);
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
         $this->call(AdminSeeder::class);
 
     }

@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('name');
             $table->foreignIdFor(role::class)
                     ->constrained()
-                    ->restrictOnDelete()
-                    ->restrictOnUpdate();
+                    ->onUpdate('cascade')
+                    ->onDelete('cascade');
             $table->foreignIdFor(agency::class)
                     ->constrained()
                     ->onUpdate('restrict')
