@@ -32,137 +32,23 @@
     <div class="app-sidebar__inner">
     <ul class="vertical-nav-menu">
     <li class="app-sidebar__heading">Menu</li>
-    <li class="mm-active">
-    <a href="#">
-    <i class="metismenu-icon pe-7s-rocket"></i>Tableau De Bord
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
     <li>
-    <a href="index.html.htm" class="mm-active">
-    <i class="metismenu-icon"></i>Analytique
-    </a>
-    </li>
+        <a href="{{ route('dashboard') }}">
+        <i class="metismenu-icon pe-7s-ball"></i>Dashboard
+        </a>
+        </li>
+    <li>
 
-    <li>
-    <a href="dashboards-sales.html.htm">
-    <i class="metismenu-icon">
-    </i>Ventes
-    </a>
-    </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon"></i> Minimal
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="dashboards-minimal-1.html.htm">
-    <i class="metismenu-icon"></i>Variation 1
-    </a>
-    </li>
-    <li>
-    <a href="dashboards-minimal-2.html.htm">
-     <i class="metismenu-icon"></i>Variation 2
-    </a>
-    </li>
-    </ul>
-    </li>
-    <li>
-    <a href="dashboards-crm.html.htm">
-    <i class="metismenu-icon"></i> CRM
-    </a>
-    </li>
-    </ul>
-    </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon pe-7s-browser"></i>Pages
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="pages-login.html.htm">
-    <i class="metismenu-icon"></i> Login
-    </a>
-    </li>
-    <li>
-    <a href="pages-login-boxed.html.htm">
-    <i class="metismenu-icon"></i>Login Boxed
-    </a>
-    </li>
-    <li>
-    <a href="pages-register.html.htm">
-    <i class="metismenu-icon"></i>Register
-    </a>
-    </li>
-    <li>
-    <a href="pages-register-boxed.html.htm">
-    <i class="metismenu-icon"></i>Register Boxed
-    </a>
-    </li>
-    <li>
-    <a href="pages-forgot-password.html.htm">
-    <i class="metismenu-icon"></i>Forgot Password
-    </a>
-    </li>
-    <li>
-    <a href="pages-forgot-password-boxed.html.htm">
-    <i class="metismenu-icon"></i>Forgot Password Boxed
-    </a>
-    </li>
-    </ul>
-    </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon pe-7s-plugin"></i>Applications
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="apps-mailbox.html.htm">
-    <i class="metismenu-icon"></i>Mailbox
-    </a>
-    </li>
-    <li>
-    <a href="apps-chat.html.htm">
-    <i class="metismenu-icon"></i>Chat
-    </a>
-    </li>
-    <li>
-    <a href="apps-faq-section.html.htm">
-    <i class="metismenu-icon"></i>FAQ Section
-    </a>
-    </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon"></i>Forums
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="apps-forum-list.html.htm">
-    <i class="metismenu-icon"></i>Forum Listing
-    </a>
-    </li>
-    <li>
-    <a href="apps-forum-threads.html.htm">
-    <i class="metismenu-icon"></i>Forum Threads
-    </a>
-    </li>
-    <li>
-    <a href="apps-forum-discussion.html.htm">
-    <i class="metismenu-icon"></i>Forum Discussion
-    </a>
-    </li>
-    </ul>
-    </li>
-    </ul>
-    </li>
-    <li class="app-sidebar__heading">Aide PAH</li>
+
+
+
+
+
+
+    <li class="app-sidebar__heading">Gestion Utilisateurs</li>
     <li>
 		<a href="#">
-		<i class="metismenu-icon pe-7s-diamond"></i> Intervenants
+		<i class="metismenu-icon pe-7s-diamond"></i> Admin
 		<i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
 		</a>
 		<ul>
@@ -175,7 +61,7 @@
 		</li>
 		<li>
 		<a href="elements-dropdowns.html.htm">
-		<i class="metismenu-icon"></i>Paie
+		<i class="metismenu-icon"></i>Creer
 		</a>
 		</li>
 		<li>
@@ -204,18 +90,18 @@
     </li>
     <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-car"></i> Devis & Besoins
+    <i class="metismenu-icon pe-7s-car"></i> Utilisateurs
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
     <li>
     <a href="{{ route('need.index') }}">
-    <i class="metismenu-icon"></i>Liste de besoins
+    <i class="metismenu-icon"></i>Liste
      </a>
     </li>
     <li>
     <a href="components-accordions.html.htm">
-    <i class="metismenu-icon"></i>Traités
+    <i class="metismenu-icon"></i>Creer
     </a>
     </li>
     <li>
@@ -228,7 +114,7 @@
     </li>
     <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i> Franchises
+    <i class="metismenu-icon pe-7s-display2"></i> Intervenant
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
@@ -239,7 +125,7 @@
     </li>
     <li>
     <a href="tables-regular.html.htm">
-    <i class="metismenu-icon"></i>Traités
+    <i class="metismenu-icon"></i>creer
     </a>
     </li>
     <li>
@@ -249,43 +135,39 @@
     </li>
     </ul>
     </li>
-	  <li>
-    <a href="#">
-    <i class="metismenu-icon pe-7s-display2"></i>demandes
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
+
+
+
+    <li class="app-sidebar__heading">ESPACE COMMERCIALE</li>
     <li>
-    <a href="{{ route('demandes.index') }}">
-    <i class="metismenu-icon"> </i>Liste
+    <a href="{{ route('contacts.index') }}">
+    <i class="metismenu-icon pe-7s-graph"></i>Contact
     </a>
     </li>
     <li>
-    <a href="tables-regular.html.htm">
-    <i class="metismenu-icon"></i>Traités
+    <a href="widgets-chart-boxes-2.html.htm">
+    <i class="metismenu-icon pe-7s-way"></i>Sms
     </a>
     </li>
     <li>
-    <a href="tables-grid.html.htm">
-    <i class="metismenu-icon"></i>Non Traités
+    <a href="widgets-chart-boxes-3.html.htm">
+    <i class="metismenu-icon pe-7s-ball"></i>Traitement mail
     </a>
-    </li>
-    </ul>
     </li>
     <li>
         <a href="#">
-        <i class="metismenu-icon pe-7s-display2"></i>Contacts
+        <i class="metismenu-icon pe-7s-display2"></i> Rendez-vous
         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
         </a>
         <ul>
         <li>
-        <a href="{{ route('contacts.index') }}">
+        <a href="{{ route('franchise.index') }}">
         <i class="metismenu-icon"> </i>Liste
         </a>
         </li>
         <li>
         <a href="tables-regular.html.htm">
-        <i class="metismenu-icon"></i>Traités
+        <i class="metismenu-icon"></i>creer
         </a>
         </li>
         <li>
@@ -295,87 +177,168 @@
         </li>
         </ul>
         </li>
-    <li class="app-sidebar__heading">Aide Ménagère</li>
-    <li>
-    <a href="widgets-chart-boxes.html.htm">
-    <i class="metismenu-icon pe-7s-graph"></i>Sous menu 1
-    </a>
-    </li>
-    <li>
-    <a href="widgets-chart-boxes-2.html.htm">
-    <i class="metismenu-icon pe-7s-way"></i>Sous menu 2
-    </a>
-    </li>
-    <li>
-    <a href="widgets-chart-boxes-3.html.htm">
-    <i class="metismenu-icon pe-7s-ball"></i>Sous menu 3
-    </a>
-    </li>
     <li>
     <a href="widgets-profile-boxes.html.htm">
-    <i class="metismenu-icon pe-7s-id"></i>Sous menu 4
+    <i class="metismenu-icon pe-7s-id"></i>Agenda
     </a>
     </li>
-    <li class="app-sidebar__heading">Petite Enfance</li>
+    <li class="app-sidebar__heading">Gestion des annonceurs</li>
+    <li>
+        <a href="widgets-chart-boxes-3.html.htm">
+        <i class="metismenu-icon pe-7s-ball"></i>Devis
+        </a>
+        </li>
     <li>
     <a href="#">
-    <i class="metismenu-icon pe-7s-light"></i> Sous menu 1
+    <i class="metismenu-icon pe-7s-light"></i> Aide & accompagnement Personnes âgées
     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
     </a>
     <ul>
     <li>
     <a href="forms-controls.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 11
+    <i class="metismenu-icon"></i>aide à l’autonomie( coucher/lever, toilette)
     </a>
     </li>
      <li>
     <a href="forms-layouts.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 12
+    <i class="metismenu-icon"></i>aide-ménagère( ménage-repassage)
     </a>
     </li>
     <li>
     <a href="forms-validation.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 13
+    <i class="metismenu-icon"></i>Aide aux repas (course/repas)
     </a>
     </li>
+    <li>
+        <a href="forms-validation.html.htm">
+        <i class="metismenu-icon"></i>Accompagnement( sortie , promenade)
+        </a>
+        </li>
+        <li>
+            <a href="forms-validation.html.htm">
+            <i class="metismenu-icon"></i>Garde nuit ou assistance nuit
+            </a>
+            </li>
+            <li>
+                <a href="forms-datepicker.html.htm">
+                <i class="metismenu-icon"></i>sortie hopital
+                </a>
+            </li>
+            <li>
+                <a href="forms-datepicker.html.htm">
+                <i class="metismenu-icon"></i>transport
+                </a>
+            </li>
+
 
     </ul>
     </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon pe-7s-joy"></i> Sous menu 2
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="forms-datepicker.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 21
-    </a>
-    </li>
-    <li>
-    <a href="forms-range-slider.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 22
-    </a>
-    </li>
-    <li>
-    <a href="forms-input-selects.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 23
-    </a>
-    </li>
 
-    </ul>
-    </li>
-    <li class="app-sidebar__heading">Recrutement</li>
     <li>
-    <a href="charts-chartjs.html.htm">
-    <i class="metismenu-icon pe-7s-graph2"></i>Formation
-    </a>
-    </li>
+        <a href="#">
+        <i class="metismenu-icon pe-7s-joy"></i>Accompagnement  du handicap
+        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+        </a>
+        <ul>
+        <li>
+        <a href="forms-datepicker.html.htm">
+        <i class="metismenu-icon"></i>aide à l’autonomie( coucher/lever, toilette)
+        </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>aide-ménagère( ménage-repassage)
+            </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>Aide aux repas (course/repas)
+            </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>Accompagnement( sortie , promenade)
+            </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>Garde nuit ou assistance nuit
+            </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>sortie hopital
+            </a>
+        </li>
+        <li>
+            <a href="forms-datepicker.html.htm">
+            <i class="metismenu-icon"></i>transport
+            </a>
+        </li>
+        </ul>
+
+        </li>
+
+
+
+    <li class="app-sidebar__heading">PLANNIFICATION </li>
     <li>
-    <a href="charts-apexcharts.html.htm">
-    <i class="metismenu-icon pe-7s-graph"></i>Demandes
-    </a>
-    </li>
+        <li>
+            <a href="#">
+            <i class="metismenu-icon pe-7s-display2"></i> Intervenant
+            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+            </a>
+            <ul>
+            <li>
+            <a href="{{ route('franchise.index') }}">
+            <i class="metismenu-icon"> </i>AGENDA
+            </a>
+            </li>
+            <li>
+            <a href="tables-regular.html.htm">
+            <i class="metismenu-icon"></i>Gestion des absences
+            </a>
+            </li>
+            <li>
+            <a href="tables-grid.html.htm">
+            <i class="metismenu-icon"></i>Gestion des présences
+            </a>
+            </li>
+            <li>
+                <a href="tables-grid.html.htm">
+                <i class="metismenu-icon"></i>Gestion des remplacements
+                </a>
+                </li>
+                <li>
+                    <a href="tables-grid.html.htm">
+                    <i class="metismenu-icon"></i>Hospitalisation (personnes âgées ou handicapées hospitalisées)
+                    </a>
+                    </li>
+
+                    <li>
+                        <a href="tables-grid.html.htm">
+                        <i class="metismenu-icon"></i>Gestion des Sorties hôpital (retour des patients , date de retour)
+                        </a>
+                        </li>
+                        <li>
+                            <a href="tables-grid.html.htm">
+                            <i class="metismenu-icon"></i>Planning des intervenants  (gestion attribution ou affectation des patients)
+                            </a>
+                            </li>
+                            <li>
+                                <a href="tables-grid.html.htm">
+                                <i class="metismenu-icon"></i>Gestion des vacances
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="tables-grid.html.htm">
+                                    <i class="metismenu-icon"></i>Planifications des interventions
+                                    </a>
+                                    </li>
+            </ul>
+            </li>
+
+
 
     <li class="app-sidebar__heading">Blocs</li>
     <li>
@@ -390,42 +353,19 @@
     </a>
     </li>
      <li>
-    <a href="forms-layouts.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 12
+    <a href="{{ route('articles.index') }}>
+    <i class="metismenu-icon"></i>Listes
     </a>
     </li>
     <li>
-    <a href="forms-validation.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 13
-    </a>
+
     </li>
 
     </ul>
     </li>
-    <li>
-    <a href="#">
-    <i class="metismenu-icon pe-7s-joy"></i> Sous menu 2
-    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-    </a>
-    <ul>
-    <li>
-    <a href="forms-datepicker.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 21
-    </a>
-    </li>
-    <li>
-    <a href="forms-range-slider.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 22
-    </a>
-    </li>
-    <li>
-    <a href="forms-input-selects.html.htm">
-    <i class="metismenu-icon"></i>Sous menu 23
-    </a>
-    </li>
 
-    </ul>
-    </li>
+
+
 
     </ul>
     </div>
