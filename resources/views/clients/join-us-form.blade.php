@@ -22,7 +22,7 @@
                             <h3 class="text-gradient text-primary">Rejoindre Youdom - CARE</h3>
                             <p class="mb-0">
                             Pour toute autre question, y compris les opportunités de partenariat,
-                            veuillez envoyer un e-mail à hello@youdom.com ou contactez-nous en utilisant notre
+                            veuillez envoyer un e-mail à contact@youdom.com ou contactez-nous en utilisant notre
                             formulaire de contact
                             </p>
                         </div>
@@ -112,7 +112,7 @@
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 											  Sélectionnez le poste auquel vous souhaiter postuler
 											  </label>
-																<select name="job" class="form-control form-select" aria-label="Default select example" id="job">
+																<select name="job" class="form-control" aria-label="Default select example" id="job">
 											  <option value="">
 												Sélectionner dans la liste
 											</option>
@@ -269,7 +269,7 @@
 								<div class="row">
 									<div class="col-md-12 text-center">
 										<button type="button" class="btn bg-gradient-primary mt-3 mb-0" id="prevBtn" onclick="nextPrev(-1)">Précedant</button>
-										<button type="button" class="btn bg-gradient-primary mt-3 mb-0" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										<button type="button" style="background-color:#1b138a" class="btn bg-gradient-primary mt-3 mb-0" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
 									</div>
 								</div>
 								<!-- Circles which indicates the steps of the form: -->
