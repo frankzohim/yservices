@@ -38,7 +38,10 @@
 								<div class="row">
 									<div class="col-md-12 text-center">
 										
-									<a href="{{ route('homepage') }}"><button type="button" class="btn bg-gradient-primary mt-3 mb-0">Retourner à l'accueil</button></a>	
+									<a href="{{ route('homepage') }}" >
+                                        <button type="button" class="btn btn-primary mt-3 mb-0" style="background-color: #1b138a">
+                                            Retourner à l'accueil
+                                        </button></a>	
 									</div>
 								</div>
 								

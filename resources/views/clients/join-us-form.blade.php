@@ -137,7 +137,7 @@
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 											  Sélectionnez le poste auquel vous souhaiter postuler
 											  </label>
-																<select name="job" class="" aria-label="Default select example" id="job">
+																<select name="job" class="form-control" aria-label="Default select example" id="job">
 											  <option value="">
 												Sélectionner dans la liste
 											</option>

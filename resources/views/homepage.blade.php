@@ -327,8 +327,8 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb8" name="services[]" value="Voyage & évasion"/>
-										<label for="cb8">
+										<input type="checkbox" id="cb9" name="services[]" value="Voyage & évasion"/>
+										<label for="cb9">
 											<img src="{{ asset('_next/static/media/n10.png') }}" alt="VOYAGE & EVASION">
 										</label>
 									</div>
@@ -350,8 +350,8 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb5" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
-										<label for="cb5">
+										<input type="checkbox" id="cb10" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
+										<label for="cb10">
 											<img src="{{ asset('_next/static/media/nn6.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
 										</label>
 									</div>
@@ -369,8 +369,8 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb6" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
-										<label for="cb6">
+										<input type="checkbox" id="cb11" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
+										<label for="cb11">
 											<img src="{{ asset('_next/static/media/nn2.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
 										</label>
 									</div>
@@ -388,8 +388,8 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb7" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
-										<label for="cb7">
+										<input type="checkbox" id="cb12" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
+										<label for="cb12">
 											<img src="{{ asset('_next/static/media/nn4.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
 										</label>
 									</div>
