@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Contacts
+    <div class="page-title-subheading">Listes Des Contacts</div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -65,22 +65,20 @@
         <tr>
 
             <th>Nom Complet</th>
+            <th>Type de Prestation</th>
             <th>Email</th>
             <th>Telephone</th>
-            <th>Object</th>
-            <th>Message</th>
+
             <th>Action</th>
             </tr>
     </thead>
     <tbody>
         @foreach ($contacts as $contact  )
         <tr>
-            <td>{{ $contact->fullname }} </td>
+            <td>{{ $contact->name }} {{ $contact->username }} </td>
+            <td>{{ $contact->type }}</td>
             <td>{{ $contact->email }}</td>
             <td>{{ $contact->phone }}</td>
-
-            <td>{{ $contact->subject }}</td>
-            <td>{{ $contact->message }}</td>
             <td><a href=""><i class="fa fa-trash-alt"></i></a>
                 <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
             </tr>
@@ -93,10 +91,9 @@
         <tr>
 
             <th>Nom Complet</th>
+            <th>Type</th>
             <th>Email</th>
             <th>Telephone</th>
-            <th>Object</th>
-            <th>Message</th>
             <th>Action</th>
             </tr>
     </tfoot>
