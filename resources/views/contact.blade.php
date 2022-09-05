@@ -49,49 +49,49 @@
                         <fieldset>
                             <legend>Type de Prestation *:</legend>
                             <div class="col-md-6 pe-2 mb-3">
-                              <input type="checkbox" id="coding" name="interest" value="coding">
+                              <input type="checkbox" id="type" name="type" value="Souhaite être rappelé">
                               <label for="coding" style="color: black">Vous Souhaitez être rappelé</label>
                             </div>
                             <div class="col-md-6 pe-2 mb-3">
-                              <input type="checkbox" id="music" name="interest" value="music">
+                              <input type="checkbox" id="music" name="type" value="Demande d’information">
                               <label for="music" style="color: black">Demande d’information</label>
                             </div>
                             <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="interest" value="music">
+                                <input type="checkbox" id="music" name="type" value="Offre de Bienvenue">
                                 <label for="music" style="color: black">Offre de Bienvenue</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="interest" value="music">
+                                <input type="checkbox" id="music" name="type" value="Partenariat">
                                 <label for="music" style="color: black">Partenariat</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="interest" value="music">
+                                <input type="checkbox" id="music" name="type" value="Presse">
                                 <label for="music" style="color: black">Presse</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="interest" value="music">
+                                <input type="checkbox" id="music" name="type" value="Recrutement">
                                 <label for="music" style="color: black">Recrutement</label>
                               </div>
                           </fieldset>
 
                       </div>
                     <div class="col-md-6 pe-2 mb-3">
-                      <input class="form-control" placeholder="votre nom" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+                      <input class="form-control" placeholder="votre nom" name="name" type="text" value="{{ old('fullname') }}" required autofocus>
 
                     </div>
                     <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="votre Prenom" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+                        <input class="form-control" placeholder="votre Prenom" name="username" type="text" value="{{ old('fullname') }}" required autofocus>
 
                       </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
                     <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="Code Postal" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+                        <input class="form-control" placeholder="Code Postal" name="postal_code" type="text" value="{{ old('fullname') }}" required autofocus>
 
                       </div>
                       <div class="col-md-6 pe-2 mb-3">
-                          <input class="form-control" placeholder="Ville" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+                          <input class="form-control" placeholder="Ville" name="town" type="text" value="{{ old('fullname') }}" required autofocus>
 
                         </div>
                     <div class="col-md-12 pe-2 mb-3">
@@ -116,7 +116,7 @@
               <div class="position-absolute z-index-2 w-100 h-100 top-0 start-0 d-lg-block d-none">
                 <img src="{{ asset('third/assets/img/wave-1.svg') }}" class="h-100 ms-n5" alt="vertical-wave">
               </div>
-              <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-auto justify-content-center">
+              <div class="z-index-2 text-center d-flex h-100 w-100 d-flex m-5 justify-content-center">
                 <div class="mask bg-gradient-info opacity-9"></div>
                 <div class="p-5 ps-sm-8 position-relative text-start my-auto z-index-2">
                   <h3 class="text-white">Coordonnées</h3>
@@ -142,7 +142,7 @@
                       <i class="fas fa-map-marker-alt text-sm"></i>
                     </div>
                     <div class="ps-3">
-                      <span class="text-sm opacity-8">60 rue Federico Garcia Lorca 93130 Paris, France</span>
+                      <span class="text-sm opacity-8">61 rue de Lyon 75012 Paris</span>
                     </div>
                   </div>
                   <div class="mt-4">
