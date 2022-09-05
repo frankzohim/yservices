@@ -8,21 +8,21 @@
     <div class="row">
 
       @if (session('update_success'))
-         <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: white">
+         <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: red; background-color:#1b138a">
           <strong>Super !</strong> votre demande a été envoyé avec succès.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
 
       @if (session('update_failure'))
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <div class="alert alert-danger alert-dismissible fade show" style="color: red; background-color:#1b138a" role="alert">
           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
 
       @if ($errors->any())
-        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="color: white">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="color: red; background-color:#1b138a">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -106,7 +106,7 @@
                   </div>
                   <div class="row">
                     <div class="col-md-6 text-end ms-auto">
-                      <button type="submit" class="btn btn-round bg-gradient-info mb-0">Envoyer</button>
+                      <button style="background-color: #1b138a;" type="submit" class="btn btn-round bg-gradient-info mb-0">Envoyer</button>
                     </div>
                   </div>
                 </div>
