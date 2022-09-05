@@ -6,14 +6,14 @@
 <section class="py-lg-7">
   <div class="container">
     <div class="row">
-      
+
       @if (session('update_success'))
          <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: white">
           <strong>Super !</strong> votre demande a été envoyé avec succès.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
-     
+
       @if (session('update_failure'))
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
@@ -46,20 +46,61 @@
                 <div class="card-body pt-1">
                   <div class="row">
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Nom complet" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+                        <fieldset>
+                            <legend>Type de Prestation *:</legend>
+                            <div class="col-md-6 pe-2 mb-3">
+                              <input type="checkbox" id="coding" name="interest" value="coding">
+                              <label for="coding" style="color: black">Vous Souhaitez être rappelé</label>
+                            </div>
+                            <div class="col-md-6 pe-2 mb-3">
+                              <input type="checkbox" id="music" name="interest" value="music">
+                              <label for="music" style="color: black">Demande d’information</label>
+                            </div>
+                            <div class="col-md-6 pe-2 mb-3">
+                                <input type="checkbox" id="music" name="interest" value="music">
+                                <label for="music" style="color: black">Offre de Bienvenue</label>
+                              </div>
+                              <div class="col-md-6 pe-2 mb-3">
+                                <input type="checkbox" id="music" name="interest" value="music">
+                                <label for="music" style="color: black">Partenariat</label>
+                              </div>
+                              <div class="col-md-6 pe-2 mb-3">
+                                <input type="checkbox" id="music" name="interest" value="music">
+                                <label for="music" style="color: black">Presse</label>
+                              </div>
+                              <div class="col-md-6 pe-2 mb-3">
+                                <input type="checkbox" id="music" name="interest" value="music">
+                                <label for="music" style="color: black">Recrutement</label>
+                              </div>
+                          </fieldset>
+
+                      </div>
+                    <div class="col-md-6 pe-2 mb-3">
+                      <input class="form-control" placeholder="votre nom" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+
                     </div>
+                    <div class="col-md-6 pe-2 mb-3">
+                        <input class="form-control" placeholder="votre Prenom" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+
+                      </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
+                    <div class="col-md-6 pe-2 mb-3">
+                        <input class="form-control" placeholder="Code Postal" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+
+                      </div>
+                      <div class="col-md-6 pe-2 mb-3">
+                          <input class="form-control" placeholder="Ville" name="fullname" type="text" value="{{ old('fullname') }}" required autofocus>
+
+                        </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Téléphone" name="phone" type="tel" value="{{ old('phone') }}" required>
                     </div>
-                    <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Sujet" name="subject" type="text" value="{{ old('subject') }}" required>
-                    </div>
+
                     <div class="col-md-12 pe-2 mb-3">
                       <div class="form-group mb-0">
-                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Votre message..." required>{{ old('message') }}</textarea>
+                        <textarea name="message" class="form-control" id="message" rows="6" placeholder="Informations complementaires" required>{{ old('message') }}</textarea>
                       </div>
                     </div>
                   </div>
@@ -130,10 +171,10 @@
 
 
 
-  
-
-  
 
 
-    
+
+
+
+
 @endsection
