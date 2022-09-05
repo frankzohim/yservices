@@ -13,9 +13,8 @@ class JoinController extends Controller
         return view('clients.join-us-form');
     }
 
-    public function store(Request $request){
+    public function store(JoinRequest $request){
 
-        dd('hello');
         $join=new join;
         $join->civility=$request->civility;
         $join->name=$request->name;

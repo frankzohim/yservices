@@ -352,7 +352,7 @@
 											<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 											  Civilité
 											  </label>
-										<select name="civilite" class="form-control form-select" aria-label="Default select example" required>
+										<select name="civility" class="form-control form-select" aria-label="Default select example" required>
 												
 
 
