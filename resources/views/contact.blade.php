@@ -49,27 +49,27 @@
                         <fieldset>
                             <legend>Type de Prestation *:</legend>
                             <div class="col-md-6 pe-2 mb-3">
-                              <input type="checkbox" id="type" name="type" value="Souhaite être rappelé">
+                              <input type="checkbox" id="type" name="type[]" value="Souhaite être rappelé">
                               <label for="coding" style="color: black">Vous Souhaitez être rappelé</label>
                             </div>
                             <div class="col-md-6 pe-2 mb-3">
-                              <input type="checkbox" id="music" name="type" value="Demande d’information">
+                              <input type="checkbox" id="music" name="type[]" value="Demande d’information">
                               <label for="music" style="color: black">Demande d’information</label>
                             </div>
                             <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="type" value="Offre de Bienvenue">
+                                <input type="checkbox" id="music" name="type[]" value="Offre de Bienvenue">
                                 <label for="music" style="color: black">Offre de Bienvenue</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="type" value="Partenariat">
+                                <input type="checkbox" id="music" name="type[]" value="Partenariat">
                                 <label for="music" style="color: black">Partenariat</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="type" value="Presse">
+                                <input type="checkbox" id="music" name="type[]" value="Presse">
                                 <label for="music" style="color: black">Presse</label>
                               </div>
                               <div class="col-md-6 pe-2 mb-3">
-                                <input type="checkbox" id="music" name="type" value="Recrutement">
+                                <input type="checkbox" id="music" name="type[]" value="Recrutement">
                                 <label for="music" style="color: black">Recrutement</label>
                               </div>
                           </fieldset>

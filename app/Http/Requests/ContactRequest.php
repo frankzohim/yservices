@@ -26,7 +26,7 @@ class ContactRequest extends FormRequest
         return [
             'name'=>['required','string'],
             'username'=>['required','string'],
-            'type'=>['required','string'],
+            'type'=>['required'],
             'postal_code'=>['required','string'],
             'town'=>['required','string'],
             'email'=>['required','email'],

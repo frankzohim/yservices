@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes des Besoins'))
+@section('title', __('Listes des Contacts'))
 
 @section('content')
 
@@ -65,7 +65,7 @@
         <tr>
 
             <th>Nom Complet</th>
-            <th>Type de Prestation</th>
+            <th>Type(s) de Prestation</th>
             <th>Email</th>
             <th>Telephone</th>
 
@@ -76,7 +76,14 @@
         @foreach ($contacts as $contact  )
         <tr>
             <td>{{ $contact->name }} {{ $contact->username }} </td>
-            <td>{{ $contact->type }}</td>
+            <td>
+                @php $types= $contact->type ? json_decode($contact->type, true) : []; @endphp
+                    @foreach($types as $type)
+                        {{$type}},
+                    @endforeach
+
+
+            </td>
             <td>{{ $contact->email }}</td>
             <td>{{ $contact->phone }}</td>
             <td><a href=""><i class="fa fa-trash-alt"></i></a>
