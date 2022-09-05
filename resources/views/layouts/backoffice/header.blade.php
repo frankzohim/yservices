@@ -54,22 +54,22 @@
     <ul class="nav flex-column">
     <li class="nav-item-header nav-item"> Aide à la personne</li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">
+    <a href="admin/need" class="nav-link">
     <i class="nav-link-icon lnr-inbox"></i>
     <span> Devis</span>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">
+    <a href="admin/demandes" class="nav-link">
     <i class="nav-link-icon lnr-book"></i>
     <span> Emplois</span>
     <div class="ml-auto badge badge-pill badge-danger">5</div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link">
+    <a href="admin/franchise" class="nav-link">
     <i class="nav-link-icon lnr-picture"></i>
-    <span> Jobs</span>
+    <span> Franchises</span>
     </a>
     </li>
     <li class="nav-item">

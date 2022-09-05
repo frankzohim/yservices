@@ -37,7 +37,7 @@
                                             <select name="research"
                                                 class="form-control form-select{{ $errors->has('research') ? ' is-invalid' : '' }}"
                                                 aria-label="Default select example" id="research"
-                                                value="{{ old('research') }}">
+                                                value="{{ old('research') }}" required>
                                                 <option value="">
                                                     {{ __('Vous êtes') }}
                                                 </option>
@@ -219,7 +219,7 @@
                                         <select name="knowledge"
                                             class="form-control form-select{{ $errors->has('knowledge') ? ' is-invalid' : '' }}"
                                             aria-label="Default select example" id="knowledge"
-                                            value="{{ old('knowledge') }}">
+                                            value="{{ old('knowledge') }}" required>
 
                                             <option value='Les Echos de la Franchise'>
                                                 {{ __('Les Echos de la Franchise') }}
@@ -278,9 +278,9 @@
                                 <div class="row">
                                     <div class="col-md-12{{ $errors->has('capital') ? ' has-danger' : '' }}">
                                         <select name="capital"
-                                            class="form-control form-select{{ $errors->has('capital') ? ' is-invalid' : '' }}"
+                                            class="form-control "
                                             aria-label="Default select example" id="job"
-                                            value="{{ old('town') }}">
+                                            value="{{ old('capital') }}" required>
 
                                             <option value='' selected='selected' class='gf_placeholder'>
                                                 {{ __('Quel
@@ -344,7 +344,7 @@
 
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <button type="submit"
+                                    <button type="submit" style="background-color: #1b138a;"
                                         class="btn bg-gradient-primary mt-3 mb-0">{{ __('Envoyer') }}</button>
                                 </div>
                             </div>

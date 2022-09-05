@@ -42,18 +42,7 @@
                           </div>
                         </div>
 
-                        <div class="d-flex flex-row align-items-center mb-4">
-                            <div class="form-outline flex-fill mb-0">
-                                    <select class="form-control form-select" aria-label="Default select example" title="agency"   name='agency_id'>
-                                        <option disabled selected>{{ __('Sélectionner l\'agence la plus proche') }}</option>
-                                        <option value="1">{{ __('Bouches-du-Rhône') }}</option>
-                                        <option value="1">{{ __('Dordogne') }}</option>
-                                        <option value="1">{{ __('Haute-Garonne') }}</option>
-                                        <option value="1">{{ __('Ille-et-Vilaine') }}</option>
-                                        <option value="1">{{ __('Indre-et-Loire') }}</option>
-                                     </select>
-                            </div>
-                        </div>
+                      
                         <div class="form-check d-flex justify-content-center mb-5">
                           <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                           <label class="form-check-label" for="form2Example3">
