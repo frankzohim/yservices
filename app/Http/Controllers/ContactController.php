@@ -38,7 +38,16 @@ class ContactController extends Controller
         //dd($request->civility);
         $validatedData = $request->validated();
 
-        Contact::create($request->except('_token'));
+        Contact::create([
+            'name'=>$request->name,
+            'username'=>$request->username,
+            'type'=>json_encode($request->type),
+            'postal_code'=>$request->postal_code,
+            'town'=>$request->town,
+            'email'=>$request->email,
+            'phone'=>$request->phone,
+            'message'=>$request->message
+        ]);
 
         return redirect()->route('contact.create')->with('update_success','Produit bien enregistré');
     }

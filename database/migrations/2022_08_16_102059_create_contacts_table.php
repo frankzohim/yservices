@@ -15,10 +15,13 @@ return new class extends Migration
     {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
+            $table->string('name');
+            $table->string('username');
+            $table->json('type')->nullable();
+            $table->string('postal_code');
+            $table->string('town');
             $table->string('email');
             $table->string('phone');
-            $table->string('subject');
             $table->string('message');
             $table->timestamps();
         });
