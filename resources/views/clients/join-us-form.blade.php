@@ -4,6 +4,11 @@
 
 @section('content')
 
+<style>
+.invalid {
+ border: 2px solid red;
+}
+</style>
 
 
 
@@ -47,7 +52,7 @@
                             <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
                             
                         </div>
-                        <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on" enctype="multipart/form-data">
+              <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on" enctype="multipart/form-data">
                            @csrf
                             <div class="card-body pb-2">
                               
@@ -56,7 +61,7 @@
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
 											  Sélectionnez le poste auquel vous souhaiter postuler
 										</label>
-										<select name="job" class="form-control" aria-label="Default select example" required>
+										<select name="job"  class="form-control" required style="">
 											  <option value="" disabled selected>
 												Sélectionner dans la liste
 											</option>
@@ -330,6 +335,7 @@
                       <input class="form-control" type="file" id="formFile" name="cv">
 										</div>
 
+					<br>
                     <div class="form-group mb-0 mt-md-0 mt-4">
 															<label class="form-check-label" style="color:#1b138a; font-size:18px;">
                         Charger votre diplôme
@@ -342,32 +348,27 @@
 								
 								<div class="tab">
 								  <div class="row">
-									<div class="col-md-6">
+									<div class="form-group mb-0 mt-md-0 mt-4">
+											<label class="form-check-label" style="color:#1b138a; font-size:18px;">
+											  Civilité
+											  </label>
+										<select name="civilite" class="form-control form-select" aria-label="Default select example" required>
+												
 
-									<div class="input-group mb-4">
-									  Civilité
-									</div>
-									</div>
-									<div class="col-md-6 ps-md-2">
-										<fieldset>
-											<div class="form-check form-check-inline">
-												<input class="form-check-input" type="radio" name="civility" id="flexRadioDefault1" value="monsieur" checked>
-												<label class="form-check-label" for="flexRadioDefault1" style="color:#1b138a;">
+
+											  <option value="Monsieur">
 												Monsieur
-												</label>
-											  </div>
+											  </option>
 
-											  <div class="form-check form-check-inline">
-												<input class="form-check-input" type="radio" name="civility" id="flexRadioDefault2" value="madame">
-												<label class="form-check-label" for="flexRadioDefault2" style="color:#1b138a;">
+											  <option value="Madame">
 												Madame
-												</label>
-											  </div>
-										</fieldset>
+											  </option>
 
+										</select>
 
 									</div>
 									</div>
+									<br>
 									<div class="row">
 
 										<div class="col-md-6">
@@ -419,38 +420,7 @@
 								</div>
 
 
-								<div class="tab">
-									  <div class="form-group mb-0 mt-md-0 mt-4">
-															<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-										  Sélectionner votre diplôme
-										  </label>
-															<select name="diploma" class="form-control form-select" aria-label="Default select example" id="job">
-											<option value="">
-											  Sélectionner dans la liste
-										  </option>
-
-
-										  <option value="BTS économie sociale familiale (BTS ESF)">
-											BTS économie sociale familiale (BTS ESF)
-										  </option>
-
-										  <option value="Diplôme d’État accompagnement éducatif et social (DE AES)">
-											Diplôme d’État accompagnement éducatif et social (DE AES)
-										  </option>
-
-															</select>
-
-														</div>
-									  <br>
-									  <div class="form-group mb-0 mt-md-0 mt-4">
-															<label class="form-check-label" style="color:#1b138a; font-size:18px;">
-										  Charger votre CV
-										  </label>
-
-										<input class="form-control" type="file" id="formFile" name="cv">
-														</div>
-									  <br>
-								</div>
+							
 
 								<!-- unchange blocks for buttons -->
 								<div class="row">
@@ -498,6 +468,7 @@
             document.getElementById("nextBtn").innerHTML = "Suivant";
           }
           //... and run a function that will display the correct step indicator:
+          console.log(n);
           fixStepIndicator(n)
         }
 
@@ -511,8 +482,10 @@
           // Increase or decrease the current tab by 1:
           currentTab = currentTab + n;
           // if you have reached the end of the form...
+          console.log(currentTab);
           if (currentTab >= x.length) {
             // ... the form gets submitted:
+            console.log("submiting form");
             document.getElementById("join-us-form").submit();
             return false;
           }
@@ -525,6 +498,7 @@
           var x, y, i, valid = true;
           x = document.getElementsByClassName("tab");
           y = x[currentTab].getElementsByTagName("input");
+          z = x[currentTab].getElementsByTagName("select");
 
           // A loop that checks every input field in the current tab:
           for (i = 0; i < y.length; i++) {
@@ -536,6 +510,20 @@
               valid = false;
             }
           }
+
+           // A loop that checks every input field in the current tab:
+          for (i = 0; i < z.length; i++) {
+            // If a field is empty...
+            if (z[i].value == "") {
+              // add an "invalid" class to the field:
+              z[i].style.borderColor = 'red';
+              z[i].style.borderWidth = '2px solid';
+              console.log("in z loop");
+              // and set the current valid status to false
+              valid = false;
+            }
+          }
+
           // If the valid status is true, mark the step as finished and valid:
           if (valid) {
             document.getElementsByClassName("step")[currentTab].className += " finish";
