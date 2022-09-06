@@ -31,10 +31,9 @@ class JoinController extends Controller
         $join->agency_less_than=$request->agency_less_than;
         $join->agency_from=$request->agency_from;
         $join->year_of_experience=$request->year_of_experience;
-        $join->diploma_file=$request->diploma_file;
+        $join->diploma_file=$request->file('diploma_file')->store('public/diploma');
         $join->diploma=$request->diploma;
         $join->cv=$request->file('cv')->store('public/cv');
-         $join->cv=$request->file('diploma_file')->store('public/diploma');
 
         if($join->save()){
             return view('clients.join-confirm');
