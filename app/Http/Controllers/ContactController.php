@@ -35,13 +35,28 @@ class ContactController extends Controller
      */
     public function store(ContactRequest $request)
     {
-        //dd($request->civility);
         $validatedData = $request->validated();
+
+        $i =0;
+        foreach($request->type as $type){
+            if ($i==0)
+                $types = $type;
+            
+            else{
+               
+                $types .= ', '.$type;
+            }
+
+             $i++;
+                
+        }
+
+        //dd($types);
 
         Contact::create([
             'name'=>$request->name,
             'username'=>$request->username,
-            'type'=>json_encode($request->type),
+            'type'=>$types,
             'postal_code'=>$request->postal_code,
             'town'=>$request->town,
             'email'=>$request->email,
@@ -49,7 +64,7 @@ class ContactController extends Controller
             'message'=>$request->message
         ]);
 
-        return redirect()->route('contact.create')->with('update_success','Produit bien enregistré');
+        return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }
 
     /**

@@ -380,7 +380,7 @@
 
 										<div class="col-md-6">
 										<div class="input-group mb-4">
-										  <input class="form-control" placeholder="Nom" name="name" aria-label="Full Name" type="text" autofocus>
+										  <input class="form-control" placeholder="Nom" name="name" aria-label="Full Name" type="text" autofocus required>
 										</div>
 										</div>
 										<div class="col-md-6 ps-md-2">
