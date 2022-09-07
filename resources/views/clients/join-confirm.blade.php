@@ -29,7 +29,7 @@
                             Votre demande a été soumise avec succès, nous vous reviendrons. <br>
 								 <b>NB</b> : Lorsque vous intégrer la société, des indentifiants vous serons remis pour accèder à votre interface vous permettant de :
             <ul style="list-style: circle">
-              <li>Consulter ou modifier vos information</li>
+              <li>Consulter ou modifier vos informations</li>
               <li>Consulter ou télécharger vos fiches de paie</li>
             </ul>
                             </p>

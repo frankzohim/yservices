@@ -22,21 +22,21 @@
             <div class="container">
                 <div class="row">
                     @if (session('update_success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color:#1b138a; color: black">
+                        <div class="alert alert-success alert-dismissible show" role="alert" style="color: white">
                           <strong>Super !</strong> votre demande a été envoyé avec succès.
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
                 
                 @if (session('update_failure'))
-                  <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                  <div class="alert alert-danger alert-dismissible show" role="alert" style="color: white">
+                    <strong>Désolé!</strong> Une erreur s'est produite, veuillez réessayé plutard.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                 @endif
           
                 @if ($errors->any())
-                  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color:#1b138a; color: black">
+                  <div class="alert alert-danger alert-dismissible show" role="alert" style="color: white" >
                       <ul>
                           @foreach ($errors->all() as $error)
                               <li>{{ $error }}</li>
@@ -49,9 +49,7 @@
                     <div class="col-lg-7 d-flex justify-content-center flex-column">
                         <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                         <div class="text-center">
-                             @foreach ($errors->all() as $error)
-                              <li>{{ $error }}</li>
-                          @endforeach
+                           
                             <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
                             
                         </div>
