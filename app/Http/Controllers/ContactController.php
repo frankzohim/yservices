@@ -41,14 +41,14 @@ class ContactController extends Controller
         foreach($request->type as $type){
             if ($i==0)
                 $types = $type;
-            
+
             else{
-               
-                $types .= ', '.$type;
+
+                $types = ', '.$type;
             }
 
              $i++;
-                
+
         }
 
         //dd($types);
