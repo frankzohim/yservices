@@ -11,6 +11,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\JoinController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TypeAheadController;
 use App\Models\formfranchise;
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +60,13 @@ Route::get('contact', function () {
 Route::get('functioning', function () {
 	return view("functioning");
 })->name('functioning');
+
+Route::get('/autocomplete-search', [TypeAheadController::class, 'autocompleteSearch']);
+
+
+Route::get('autocomplete', [TypeAheadController::class, 'autocomplete'])->name('autocomplete');
+
+Route::get('/typeahead_autocomplete/action', [TypeAheadController::class, 'action'])->name('typeahead_autocomplete.action');
 
 
 Route::resources([

@@ -472,6 +472,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   <script src="{{ asset('assets/js/collapse.js') }}"></script>
 
 
+
    <!-- Loading js file write by me that enable bootstrap tap -->
 
   <script src="{{ asset('assets/js/bootstrap-tab-enable.js') }}"></script>
