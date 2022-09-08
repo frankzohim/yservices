@@ -22,7 +22,7 @@
             <div class="container">
                 <div class="row">
                     @if (session('update_success'))
-                        <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: white">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert" style="background-color:#1b138a; color: black">
                           <strong>Super !</strong> votre demande a été envoyé avec succès.
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
@@ -36,7 +36,7 @@
                 @endif
           
                 @if ($errors->any())
-                  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="color: white">
+                  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="background-color:#1b138a; color: black">
                       <ul>
                           @foreach ($errors->all() as $error)
                               <li>{{ $error }}</li>
@@ -49,6 +49,9 @@
                     <div class="col-lg-7 d-flex justify-content-center flex-column">
                         <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                         <div class="text-center">
+                             @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                          @endforeach
                             <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
                             
                         </div>
@@ -188,8 +191,12 @@
                          <label for="radius" style="color: #1b138a">À moins de</label> 
                       </div>
                       <div class="col-9">
-                        <select id="agenciesRadius" name="radius" class="form-control" class="selectmenu" required>
-                          <option value="">Distance *</option><option value="5">5 km</option><option value="10">10 km</option><option value="20">20 km</option><option value="30" selected="selected">30 km</option> </select> 
+                        <select id="agenciesRadius" name="agency_less_than" class="form-control" class="selectmenu" required>
+                          <option value="">Distance *</option>
+                          <option value="5">5 km</option>
+                          <option value="10">10 km</option>
+                          <option value="20">20 km</option><option value="30" selected="selected">30 km</option> 
+                      </select> 
                       </div>
                      
                   </div>
@@ -200,7 +207,7 @@
                            <label for="radius" style="color: #1b138a">À partir de</label> 
                       </div>
                       <div class="col-9">
-                           <input type="text" id="agenciesAddress" class="form-control" name="address" placeholder="Votre ville (Saisir les premières lettres) *" autocomplete="off" />
+                           <input type="text" id="agenciesAddress" class="form-control" name="agency_from" placeholder="Votre ville (Saisir les premières lettres) *" autocomplete="off" />
                       </div>
                   </div>
 									<br>
