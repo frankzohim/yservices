@@ -8,27 +8,29 @@
     <div class="row">
 
       @if (session('update_success'))
-         <div class="alert alert-success alert-dismissible fade show" role="alert" style="color: red; background-color:#1b138a">
+         <div class="alert alert-success alert-dismissible show" role="alert" style="color: white">
           <strong>Super !</strong> votre demande a été envoyé avec succès.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
 
       @if (session('update_failure'))
-        <div class="alert alert-danger alert-dismissible fade show" style="color: red; background-color:#1b138a" role="alert">
+        <div class="alert alert-danger alert-dismissible show"  role="alert">
           <strong>Holy guacamole!</strong> You should check in on some of those fields below.
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif
-
+     
       @if ($errors->any())
-        <div class="alert alert-danger alert-dismissible fade show" role="alert" style="color: red; background-color:#1b138a">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        <div class="alert alert-danger alert-dismissible show" role="alert">
+          <ul>
+            @foreach ($errors->all() as $error)
+                <li style="color: white">{{ $error }}</li>
+            @endforeach
+        </ul>
+         
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
         </div>
       @endif
 
@@ -40,6 +42,7 @@
                 @csrf
                 <div class="card-header px-4 py-sm-5 py-3" style="background-color: #1b138a; color:white">
                   <h2 style="color:white">Des Questions ?</h2>
+                 
                   <p class="lead"> Entrez en contact avec nous.</p>
                 </div>
                 <br>
@@ -76,22 +79,22 @@
 
                       </div>
                     <div class="col-md-6 pe-2 mb-3">
-                      <input class="form-control" placeholder="votre nom" name="name" type="text" value="{{ old('fullname') }}" required autofocus>
+                      <input class="form-control" placeholder="Votre nom" name="name" type="text" value="{{ old('name') }}" required>
 
                     </div>
                     <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="votre Prenom" name="username" type="text" value="{{ old('fullname') }}" required autofocus>
+                        <input class="form-control" placeholder="Votre Prenom" name="username" type="text" value="{{ old('username') }}" required >
 
                       </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
                     <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="Code Postal" name="postal_code" type="text" value="{{ old('fullname') }}" required autofocus>
+                        <input class="form-control" placeholder="Code Postal" name="postal_code" type="text" value="{{ old('postal_code') }}" required >
 
                       </div>
                       <div class="col-md-6 pe-2 mb-3">
-                          <input class="form-control" placeholder="Ville" name="town" type="text" value="{{ old('fullname') }}" required autofocus>
+                          <input class="form-control" placeholder="Ville" name="town" type="text" value="{{ old('town') }}" required>
 
                         </div>
                     <div class="col-md-12 pe-2 mb-3">

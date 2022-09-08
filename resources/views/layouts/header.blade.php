@@ -43,7 +43,7 @@
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us-content') }}">Nous rejoindre</a>
+										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Nous rejoindre</a>
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
 										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('devis.create') }}"> Demandez un devis</a>

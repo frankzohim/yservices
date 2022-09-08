@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('username');
-            $table->json('type')->nullable();
+            $table->string('type');
             $table->string('postal_code');
             $table->string('town');
             $table->string('email');
