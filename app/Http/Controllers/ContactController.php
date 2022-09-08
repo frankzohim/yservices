@@ -35,12 +35,36 @@ class ContactController extends Controller
      */
     public function store(ContactRequest $request)
     {
-        //dd($request->civility);
         $validatedData = $request->validated();
 
-        Contact::create($request->except('_token'));
+        $i =0;
+        foreach($request->type as $type){
+            if ($i==0)
+                $types = $type;
 
-        return redirect()->route('contact.create')->with('update_success','Produit bien enregistré');
+            else{
+
+                $types = ', '.$type;
+            }
+
+             $i++;
+
+        }
+
+        //dd($types);
+
+        Contact::create([
+            'name'=>$request->name,
+            'username'=>$request->username,
+            'type'=>$types,
+            'postal_code'=>$request->postal_code,
+            'town'=>$request->town,
+            'email'=>$request->email,
+            'phone'=>$request->phone,
+            'message'=>$request->message
+        ]);
+
+        return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }
 
     /**
