@@ -70,7 +70,7 @@ Route::resources([
 
     Route::group(['middleware'=>['guest']],function(){
 
-        Route::get('/form',[DevisController::class,'create'])->name('devis.form');
+        Route::get('/form/devis',[DevisController::class,'create'])->name('devis.form');
         Route::post('/form',[DevisController::class,'store'])->name('devis.send');
     });
 
