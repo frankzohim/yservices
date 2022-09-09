@@ -81,6 +81,7 @@
     </a>
     </li>
     <li class="nav-item">
+
     <a disabled="" href="{{ route('contact.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-file-empty"></i>
     <span> Contacts</span>
