@@ -203,8 +203,8 @@
               <div class="position-relative">
                 <img class="max-width-500 w-100 position-relative z-index-2" src="{{ asset('_next/static/media/chat.png') }}">
               </div>
-              <h4 class="mt-5 text-white font-weight-bolder">"Attention is the new currency"</h4>
-              <p class="text-white">The more effortless the writing looks, the more effort the writer actually put into the process.</p>
+              <h4 class="mt-5 text-white font-weight-bolder"></h4>
+              <p class="text-white"></p>
             </div>
           </div>
         </div>

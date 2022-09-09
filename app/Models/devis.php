@@ -18,3 +18,5 @@ class devis extends Model
         'code_postal'
     ];
 }
+
+

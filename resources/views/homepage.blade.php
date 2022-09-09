@@ -659,7 +659,7 @@ label img {
 						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
 							<div class="lp-banking-track-cashflow__image-wrap image">
 								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old-people.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
+								<img src="{{  asset('_next/static/media/old-people.png') }} " alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
 								</picture>
 							</div>
 							<div class="lp-banking-track-cashflow__content">
@@ -672,7 +672,7 @@ label img {
 										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Un conseiller dédié pour un service personnalisé.</li>
 										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Des prestations flexibles qui évoluent selon vos besoins.</li>
 									</ul>
-									<a href="#" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">En Savoir Plus</a></div>
+									<a href="{{ route('about') }}" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">En Savoir Plus</a></div>
 							</div>
 
 						</div>
@@ -785,7 +785,9 @@ label img {
 
 
 							<div class="main-cards__btn-wrap margin-top-default">
-								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div><a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more" href="cards/index.html">EN SAVOIR PLUS</a></div>
+								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div>
+									<a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more" 
+									href="{{ route('about') }}">EN SAVOIR PLUS</a></div>
 							</div>
 
 						</div>
@@ -796,7 +798,7 @@ label img {
 
 
 
-								<img src="{{  asset('_next/static/media/join-us.png') }}" srcSet="_next/static/media/main-ecard__simg_ver-2_visa@2x.e3f90129.png 2x" alt="" class="picture__image " width="592" />
+								<img src="{{  asset('_next/static/media/join-us.png') }}" alt="" class="picture__image " width="592" />
 
 							</picture>
 

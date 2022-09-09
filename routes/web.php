@@ -7,6 +7,7 @@ use App\Http\Controllers\NeedController;
 use App\Http\Controllers\DevisController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TypeAheadController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\Admin\FranchiseController;
@@ -61,6 +62,13 @@ Route::get('functioning', function () {
 	return view("functioning");
 })->name('functioning');
 
+Route::get('/autocomplete-search', [TypeAheadController::class, 'autocompleteSearch']);
+
+
+Route::get('autocomplete', [TypeAheadController::class, 'autocomplete'])->name('autocomplete');
+
+Route::get('/typeahead_autocomplete/action', [TypeAheadController::class, 'action'])->name('typeahead_autocomplete.action');
+
 
 Route::resources([
         'devis' => NeedController::class,
@@ -73,8 +81,6 @@ Route::resources([
         Route::get('/form/devis',[DevisController::class,'create'])->name('devis.form');
         Route::post('/form',[DevisController::class,'store'])->name('devis.send');
     });
-
-
 
 
 
