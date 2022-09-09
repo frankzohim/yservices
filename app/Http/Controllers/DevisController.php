@@ -17,7 +17,7 @@ class DevisController extends Controller
     public function store(DevisRequest $request){
 
         $devis=new devis;
-        $devis->civility==$request->civility;
+        $devis->civility=$request->civility;
         $devis->nom=$request->nom;
         $devis->prenom=$request->prenom;
         $devis->email=$request->email;
@@ -25,7 +25,7 @@ class DevisController extends Controller
         $devis->code_postal=$request->code_postal;
         $devis->save();
         if($devis->save()){
-            return to_route('devis.form');
+            return to_route('devis.form')->with('update_success','Message bien envoyé');
         }
         else{
             return 'erreur';
