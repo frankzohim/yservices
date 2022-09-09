@@ -78,7 +78,7 @@
               <input class="form-control" type="text" placeholder="Code Postal ou ville" aria-label="default input example" name="code_postal">
             </div>
           </div>
-          <div class="mb-3">
+          <div class="mb-3 text-start">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
 
               <span style="font-size:15px">
