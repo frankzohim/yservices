@@ -18,7 +18,7 @@ class AdminSeeder extends Seeder
     {
         User::create([
             'name'=>'Admin',
-            'email'=>'contact@youdom-care',
+            'email'=>'contact@youdom-care.com',
             'agency_id'=>1,
             'role_id'=>1,
             'email_verified_at' => now(),
