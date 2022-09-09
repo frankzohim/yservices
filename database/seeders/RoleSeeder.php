@@ -25,11 +25,12 @@ class RoleSeeder extends Seeder
         'id'=>2,
         'type'=>'intervenant'
     ],
-);
-role::create([
-    'id'=>3,
-    'type'=>'client'
-],
-);
+    );
+    
+    role::create([
+        'id'=>3,
+        'type'=>'client'
+    ],
+    );
     }
 }

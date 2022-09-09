@@ -1,6 +1,6 @@
 
 <div class="header__container">
-
+  <!--
 	<aside class="popup popup-promo Closepopup" data-test="popup-promo">
 
 		<div class="container"  id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -25,6 +25,8 @@
 
 		</div>
 		</aside>
+
+	-->
 
 			<aside class="popup popup-promo" style="margin-left:-85px; font-family:Montserrat, sans-serif; font-size:14px; background-color:white;"
 			data-test="popup-promo">
