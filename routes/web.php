@@ -1,17 +1,18 @@
 <?php
 
+use App\Models\formfranchise;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JoinController;
+use App\Http\Controllers\NeedController;
+use App\Http\Controllers\DevisController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Admin\ArticleController;
-use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\NeedController;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\formfranchiseController;
-use App\Http\Controllers\JoinController;
-use App\Http\Controllers\DashboardController;
-use App\Models\formfranchise;
+use App\Http\Controllers\Admin\ContactController as AdminContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -66,6 +67,12 @@ Route::resources([
         'contact' => ContactController::class,
         'partner_form'=> formfranchiseController::class,
     ]);
+
+    Route::group(['middleware'=>['guest']],function(){
+
+        Route::get('/form',[DevisController::class,'create'])->name('devis.form');
+        Route::post('/form',[DevisController::class,'store'])->name('devis.send');
+    });
 
 
 
