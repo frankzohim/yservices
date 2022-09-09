@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes des Besoins'))
+@section('title', __('Inscriptions'))
 
 @section('content')
 
@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Inscriptions
+    <div class="page-title-subheading">Listes Des Inscriptions </div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -68,11 +68,11 @@
     <th>Email</th>
      <th>Services souhaités</th>
 
-     <th>Date debut</th>
+     <th>Débute</th>
     <th>Telephone</th>
     <th>Adresse</th>
-    <th>Code Postal</th>
-    <th>town</th>
+    <th>Code</th>
+    <th>Ville</th>
     <th>Action</th>
     </tr>
     </thead>
@@ -103,11 +103,11 @@
             <th>Email</th>
              <th>Services souhaités</th>
 
-             <th>Date debut</th>
+             <th>Débute</th>
             <th>Telephone</th>
             <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>town</th>
+            <th>Code</th>
+            <th>Ville</th>
             <th>Action</th>
             </tr>
     </tfoot>

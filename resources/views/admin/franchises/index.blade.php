@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes des Besoins'))
+@section('title', __('Demande de franchise'))
 
 @section('content')
 
@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Franchise
+    <div class="page-title-subheading">Listes des demandes </div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -84,7 +84,7 @@
 
             <td>{{ $franchise->occupation }}</td>
             <td>{{ $franchise->phone }}</td>
-            <td>{{ $franchise->addresse }}</td>
+            <td>{{ $franchise->adresse }}</td>
             <td>{{ $franchise->postal_code }}</td>
             <td>{{ $franchise->town }}</td>
             <td><a href=""><i class="fa fa-trash-alt"></i></a>

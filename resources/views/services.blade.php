@@ -71,7 +71,7 @@
 
         <p class="lead mb-5">Découvrez nos services de maintien à domicile adaptés à vos besoins et sur-mesure. <br> Un accompagnement 24h/24 et 7J/7..</p>
 
-        	<a href="#" class="margin-top-default button button_w-m-full" style="margin-top:-15px; background-color:#DF034D" id="target-action-main-intro-all">
+        	<a href="{{ route('devis.form') }}" class="margin-top-default button button_w-m-full" style="margin-top:-15px; background-color:#DF034D" id="target-action-main-intro-all">
 									Demandez un devis
 								</a>
       </div>

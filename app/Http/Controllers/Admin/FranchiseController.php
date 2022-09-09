@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\formfranchise;
 use Illuminate\Http\Request;
+use App\Models\Join;
+use App\Models\Contact;
+use App\Models\Need;
 
 class FranchiseController extends Controller
 {
@@ -16,7 +19,6 @@ class FranchiseController extends Controller
     public function index()
     {
         $franchises=formfranchise::all();
-
         return view('admin.franchises.index',compact('franchises'));
     }
 
