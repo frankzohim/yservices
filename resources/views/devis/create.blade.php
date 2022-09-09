@@ -58,23 +58,23 @@
 
                       </div>
                     <div class="col-md-6 pe-2 mb-3">
-                      <input class="form-control" placeholder="Votre nom" name="nom" type="text" value="{{ old('name') }}" required>
+                      <input class="form-control" placeholder="Votre nom" name="nom" type="text" value="{{ old('nom') }}" required>
 
                     </div>
                     <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="Votre Prenom" name="prenom" type="text" value="{{ old('username') }}" required >
+                        <input class="form-control" placeholder="Votre Prenom" name="prenom" type="text" value="{{ old('prenom') }}" required >
 
                       </div>
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
                     <div class="col-md-12 pe-2 mb-3">
-                        <input class="form-control" placeholder="Code Postal ou ville" name="code_postal" type="text" value="{{ old('postal_code') }}" required >
+                        <input class="form-control" placeholder="Code Postal ou ville" name="code_postal" type="text" value="{{ old('code_postal') }}" required >
 
                       </div>
 
                     <div class="col-md-12 pe-2 mb-3">
-                      <input class="form-control" placeholder="Téléphone" name="numero" type="tel" value="{{ old('phone') }}" required>
+                      <input class="form-control" placeholder="Téléphone" name="numero" type="tel" value="{{ old('numero') }}" required>
                     </div>
 
                     <div class="col-md-12 pe-2 mb-3">
