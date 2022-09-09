@@ -34,10 +34,10 @@
 
 								<nav class="header__nav header-nav" >
 								<ul class="header-nav__list">
-
+									<!--
 									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Trouver un emploi</a>
 									</li>
-
+								-->
 								<li class="header-nav__item" style="color:#272854">
 									<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('become_partner') }}">Devenez partenaire</a>
 									</li>
