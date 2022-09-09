@@ -73,9 +73,9 @@
     </a>
     </li>
     <li class="nav-item">
-    <a disabled="" href="javascript:void(0);" class="nav-link disabled">
+    <a  href="{{ route('contacts.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-file-empty"></i>
-    <span> Intervenants</span>
+    <span>Contacts</span>
     </a>
     </li>
     </ul>
