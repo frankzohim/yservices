@@ -77,10 +77,7 @@
         <tr>
             <td>{{ $contact->name }} {{ $contact->username }} </td>
             <td>
-                @php $types= $contact->type ? json_decode($contact->type, true) : []; @endphp
-                    @foreach($types as $type)
-                        {{$type}},
-                    @endforeach
+                {{ $contact->type }}
 
 
             </td>
