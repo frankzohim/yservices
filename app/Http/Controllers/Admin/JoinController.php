@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\join;
+use App\Models\Join;
 use Illuminate\Http\Request;
+use App\Models\Contact;
+use App\Models\formfranchise;
+use App\Models\Need;
 
 class JoinController extends Controller
 {
@@ -15,8 +18,7 @@ class JoinController extends Controller
      */
     public function index()
     {
-        $joins=join::all();
-
+        $joins = Join::all();
         return view('admin.joins.index',compact('joins'));
     }
 

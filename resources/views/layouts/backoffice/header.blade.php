@@ -54,28 +54,40 @@
     <ul class="nav flex-column">
     <li class="nav-item-header nav-item"> Aide à la personne</li>
     <li class="nav-item">
-    <a href="admin/need" class="nav-link">
+    <a href="{{ route('need.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-inbox"></i>
-    <span> Devis</span>
+    <span> Inscription</span>
+     <div class="ml-auto badge badge-pill badge-success">
+        {{ session('numberOfNeeds')}}
+    </div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="admin/demandes" class="nav-link">
+    <a href="{{ route('demandes.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-book"></i>
-    <span> Emplois</span>
-    <div class="ml-auto badge badge-pill badge-danger">5</div>
+    <span> Demande Emplois</span>
+    <div class="ml-auto badge badge-pill badge-primary"> 
+        {{ session('numberOfJoins')}}
+    </div>
     </a>
     </li>
     <li class="nav-item">
-    <a href="admin/franchise" class="nav-link">
+    <a href="{{ route('franchise.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-picture"></i>
     <span> Franchises</span>
+    <div class="ml-auto badge badge-pill badge-warning">
+         {{ session('numberOfFranchise')}}
+    </div>
     </a>
     </li>
     <li class="nav-item">
-    <a  href="{{ route('contacts.index') }}" class="nav-link">
+
+    <a disabled="" href="{{ route('contact.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-file-empty"></i>
-    <span>Contacts</span>
+    <span> Contacts</span>
+    <div class="ml-auto badge badge-pill badge-danger">
+        {{ session('numberOfContacts')}}
+    </div>
     </a>
     </li>
     </ul>

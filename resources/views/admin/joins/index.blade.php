@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes des Besoins'))
+@section('title', __("Demandes d'emploi"))
 
 @section('content')
 
@@ -10,7 +10,7 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Contacts
+    <div>Nous Rejoindre
     <div class="page-title-subheading">Listes Des Personnes voulant rejoindre Youdom-Care</div>
     </div>
     </div>
@@ -106,7 +106,6 @@
             <th>Telephone</th>
             <th>Adresse</th>
             <th>Code Postal</th>
-            <th>town</th>
             <th>Action</th>
             </tr>
     </tfoot>

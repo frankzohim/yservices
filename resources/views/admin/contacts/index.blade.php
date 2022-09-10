@@ -77,8 +77,8 @@
         <tr>
             <td>{{ $contact->name }} {{ $contact->username }} </td>
             <td>
-                {{ $contact->type }}
 
+                {{ $contact->type }}
 
             </td>
             <td>{{ $contact->email }}</td>

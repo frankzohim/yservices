@@ -192,7 +192,7 @@
               <div class="card-footer text-center pt-0 px-lg-2 px-1">
                 <p class="mb-4 text-sm mx-auto" style="font-size:14px; color:#67748E; font-family:Open, sans-serif">
                   Pas de compte
-                  <a href="{{ route('register') }}" class="text-primary text-gradient font-weight-bold">Créer un compte</a>
+                  <a href="{{ route('devis.create') }}" class="text-primary text-gradient font-weight-bold">Créer un compte</a>
                 </p>
               </div>
             </div>

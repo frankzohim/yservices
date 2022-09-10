@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Need;
 use Illuminate\Http\Request;
+use App\Models\Join;
+use App\Models\Contact;
+use App\Models\formfranchise;
 
 class NeedController extends Controller
 {

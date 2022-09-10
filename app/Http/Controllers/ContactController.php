@@ -14,7 +14,9 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+         $contacts= Contact::all();
+        //dd($contacts);
+        return view('admin.contacts.index',compact('contacts'));
     }
 
     /**
@@ -38,13 +40,14 @@ class ContactController extends Controller
         $validatedData = $request->validated();
 
         $i =0;
+        $types ="";
         foreach($request->type as $type){
             if ($i==0)
                 $types = $type;
 
             else{
 
-                $types = ', '.$type;
+                $types .= ', '.$type;
             }
 
              $i++;

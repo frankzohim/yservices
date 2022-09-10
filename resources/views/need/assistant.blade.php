@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', __('Demande de devis – Aide à domicile sur mesure en Europe'))
+@section('title', __('Inscription – Aide à domicile sur mesure en Europe'))
 
 @section('content')
 	<style>
