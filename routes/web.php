@@ -62,12 +62,8 @@ Route::get('functioning', function () {
 	return view("functioning");
 })->name('functioning');
 
-Route::get('/autocomplete-search', [TypeAheadController::class, 'autocompleteSearch']);
-
-
-Route::get('autocomplete', [TypeAheadController::class, 'autocomplete'])->name('autocomplete');
-
-Route::get('/typeahead_autocomplete/action', [TypeAheadController::class, 'action'])->name('typeahead_autocomplete.action');
+Route::get('/welcome', [TypeaheadController::class, 'index']);
+Route::get('/autocomplete-search', [TypeaheadController::class, 'autocompleteSearch']);
 
 
 Route::resources([

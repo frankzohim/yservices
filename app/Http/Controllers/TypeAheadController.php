@@ -7,6 +7,19 @@ use App\Models\Code;
 use App\Models\User;
 class TypeAheadController extends Controller
 {
+
+    public function index()
+    {
+        return view('welcome');
+    }
+    
+    public function autocompleteSearch(Request $request)
+    {
+          $query = $request->get('query');
+          $filterResult = Code::where('Codepos', 'LIKE', $query. '%')->get();
+          return response()->json($filterResult);
+    }
+
     public function autocomplete(Request $request)
     {
         error_log('Some message here.');

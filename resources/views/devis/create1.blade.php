@@ -44,6 +44,7 @@
             @csrf
             <div class="mb-3">
               <label for="" style="color: black">votre civilité:</label>
+              
               <input type="radio" class="btn-check" name="civility" id="option2" value="Mr" autocomplete="off">
             <label class="btn btn-primary" for="option2">Monsieur</label>
 
