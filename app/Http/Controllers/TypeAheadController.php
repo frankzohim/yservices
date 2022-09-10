@@ -10,9 +10,18 @@ class TypeAheadController extends Controller
 
     public function index()
     {
-        return view('welcome');
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.', '.$code->Commune;
+            $i++;
+        }
+        //echo "<pre>";print_r($codes_array);
+        return view('welcome',compact('codes_array'));
+
     }
-    
+
     public function autocompleteSearch(Request $request)
     {
           $query = $request->get('query');
