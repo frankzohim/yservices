@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title', __('Formulaire - Devenir Partenaire'))
-
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
 @section('content')
     <header>
         <div class="page-header min-vh-85">
@@ -89,7 +89,7 @@
                                         <div class="col-md-6{{ $errors->has('name') ? ' has-danger' : '' }}">
                                             <div class="input-group mb-4">
                                                 <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                                                    placeholder="{{ __('Name') }}" aria-label="Full Name" type="text"
+                                                    placeholder="{{ __('Nom') }}" aria-label="Full Name" type="text"
                                                     value="{{ old('name') }}" name="name" required>
                                             </div>
                                             {{-- if ($errors->has('name'))
@@ -119,7 +119,7 @@
                                             <div class="input-group mb-4">
                                                 <input class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}"
                                                     placeholder="{{ __('Téléphone') }}" aria-label="Full Name"
-                                                    type="tel" name="phone" required>
+                                                    type="number" name="phone" required>
                                                 {{-- @if ($errors->has('phone'))
                                                         <span class="invalid-feedback" style="display: block;"
                                                             role="alert">
@@ -161,24 +161,17 @@
 
                                     <div class="row">
 
-                                        <div class="col-md-6{{ $errors->has('postal_code') ? ' has-danger' : '' }}">
+                                        <div class="col-md-12{{ $errors->has('postal_code') ? ' has-danger' : '' }}">
                                             <div class="input-group mb-4">
                                                 <input
                                                     class="form-control{{ $errors->has('postal_code') ? ' is-invalid' : '' }}"
                                                     placeholder="{{ __('Code postal') }}" aria-label="Full Name"
-                                                    name="postal_code" type="text" value="{{ old('postal_code') }}" id="searchI">
+                                                    id="postal_code" name="postal_code" type="text" value="{{ old('postal_code') }}" id="searchI">
                                                     <ul class="list-group" id="result"></ul>
                                             </div>
 
                                         </div>
-                                        <div class="col-md-6 ps-md-2{{ $errors->has('city') ? ' has-danger' : '' }}">
-                                            <div class="input-group">
-                                                <input type="text"
-                                                    class="form-control{{ $errors->has('city') ? ' is-invalid' : '' }}"
-                                                    placeholder="{{ __('ville') }}" value="{{ old('city') }}"
-                                                    name="city" required id="town">
-                                            </div>
-                                        </div>
+                                       
 
                                     </div>
 
@@ -268,8 +261,8 @@
                                         <div class="input-group">
                                             <input type="text"
                                                 class="form-control{{ $errors->has('town') ? ' is-invalid' : '' }}"
-                                                placeholder="{{ __('Dans quelle(s) villes souhaitez vous ouvrir une agence?') }}"
-                                                required name="town" value="{{ old('town') }}">
+                                                placeholder="{{ __('Dans quelle ville souhaitez vous ouvrir une agence?') }}"
+                                                required name="town" id='town' value="{{ old('town') }}">
                                         </div>
                                     </div>
 
@@ -436,5 +429,14 @@
         }
     </script>
 
+<script src="{{ asset('assets/js/typeahead.js') }}"></script>
+<script>
+    var codes = @json($codes_array);
+
+    autocomplete(document.getElementById("postal_code"), codes);
+    autocomplete(document.getElementById("town"), codes);
+    
+   
+</script>
 
 @endsection

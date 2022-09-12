@@ -9,6 +9,7 @@
  border: 2px solid red;
 }
 </style>
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
 
 
 
@@ -53,7 +54,7 @@
                             <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
                             
                         </div>
-              <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="on" enctype="multipart/form-data">
+              <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="off" enctype="multipart/form-data">
                            @csrf
                             <div class="card-body pb-2">
                               
@@ -405,18 +406,15 @@
 
 									  <div class="row">
 
-										<div class="col-md-6">
+										<div class="col-md-12">
 										<div class="input-group mb-4">
-										  <input class="form-control" placeholder="Code postal" aria-label="Full Name"  name="postal_code" id="searchI">
+										  <input class="form-control" placeholder="Code postal" aria-label="Full Name"  
+                      name="postal_code" id="postal_code">
 										</div>
 										<ul class="list-group" id="result"></ul>
 
 										</div>
-										<div class="col-md-6 ps-md-2">
-										<div class="input-group">
-										  <input type="text" class="form-control" placeholder="ville" name="town" id="town">
-										</div>
-										</div>
+									
 
 									  </div>
 									  <div class="form-group mb-0 mt-md-0 mt-4">
@@ -547,6 +545,13 @@
         }
         </script>
 
+<script src="{{ asset('assets/js/typeahead.js') }}"></script>
+<script>
+    var codes = @json($codes_array);
 
+    autocomplete(document.getElementById("postal_code"), codes);
+    
+   
+</script>
 
 @endsection

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 use App\Models\Contact;
-
+use App\Models\Code;
 class ContactController extends Controller
 {
     /**
@@ -26,7 +26,15 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contact');
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+        return view('contact',compact('codes_array'));
     }
 
     /**
@@ -56,12 +64,16 @@ class ContactController extends Controller
 
         //dd($types);
 
+        $data = explode(',',$request->postal_code);
+        $town = $data[1];
+        $postal_code = $data[0];
+
         Contact::create([
             'name'=>$request->name,
             'username'=>$request->username,
             'type'=>$types,
-            'postal_code'=>$request->postal_code,
-            'town'=>$request->town,
+            'postal_code'=>$postal_code,
+            'town'=>$town,
             'email'=>$request->email,
             'phone'=>$request->phone,
             'message'=>$request->message

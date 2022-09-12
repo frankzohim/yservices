@@ -30,7 +30,6 @@ class JoinRequest extends FormRequest
             'phone_number'=>['required'],
             'email'=>['required','email'],
             'postal_code'=>['required'],
-            'town'=>['required'],
             'informations'=>['required'],
             'job'=>['required'],
             'available'=>['required'],

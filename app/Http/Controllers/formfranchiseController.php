@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Code;
 use App\Models\formfranchise;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -18,7 +18,15 @@ class formfranchiseController extends Controller
 
     public function create()
     {
-        return view('clients.formfranchise');
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+        return view('clients.formfranchise', compact('codes_array'));
     }
 
     protected function validator(array $data)
@@ -40,7 +48,6 @@ class formfranchiseController extends Controller
             'email' => ['bail|required|email'],
             'adresse' => ['bail|required|max:250'],
             'postal_code'=> ['required|bail'],
-            'city' => ['required','string'],
             'occupation' => ['required|max:250'],
             'knowledge' => ['bail|required'],
             'town' => ['required'],
@@ -48,6 +55,10 @@ class formfranchiseController extends Controller
             'description' => ['bail|required|max:500'],
             'news' => ['required|string'],
         ]);
+
+        $data = explode(',',$request->postal_code);
+        $town = $data[1];
+        $postal_code = $data[0];
 
         $franchiseuser = formfranchise::create([
             'research'=>$request->research,
@@ -57,8 +68,8 @@ class formfranchiseController extends Controller
             'phone'=>$request->phone,
             'email' => $request->email,
             'adresse'=>$request->adresse,
-            'postal_code'=>$request->postal_code,
-            'city'=>$request->city,
+            'postal_code'=>$postal_code,
+            'city'=>$town,
             'occupation'=>$request->occupation,
             'knowledge'=>$request->knowledge,
             'town'=>$request->town,

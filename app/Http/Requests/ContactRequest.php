@@ -28,7 +28,6 @@ class ContactRequest extends FormRequest
             'username'=>['required','string'],
             'type'=>['required'],
             'postal_code'=>['required','string'],
-            'town'=>['required','string'],
             'email'=>['required','email'],
             'phone'=>['required','numeric'],
             'message'=>['required','string'],

@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Models\Code;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +28,15 @@ use App\Http\Controllers\Admin\ContactController as AdminContactController;
 
 
 Route::get('/', function () {
-    return view('homepage');
+    $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+    return view('homepage',compact('codes_array'));
 })->name('homepage');
 
 Route::get('about', function () {
@@ -62,12 +71,8 @@ Route::get('functioning', function () {
 	return view("functioning");
 })->name('functioning');
 
-Route::get('/autocomplete-search', [TypeAheadController::class, 'autocompleteSearch']);
-
-
-Route::get('autocomplete', [TypeAheadController::class, 'autocomplete'])->name('autocomplete');
-
-Route::get('/typeahead_autocomplete/action', [TypeAheadController::class, 'action'])->name('typeahead_autocomplete.action');
+Route::get('/welcome', [TypeaheadController::class, 'index']);
+Route::get('/autocomplete-search', [TypeaheadController::class, 'autocompleteSearch']);
 
 
 Route::resources([

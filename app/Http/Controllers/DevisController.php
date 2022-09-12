@@ -4,14 +4,24 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\DevisRequest;
 use App\Models\devis;
+use App\Models\Code;
 use Illuminate\Http\Request;
+
 
 class DevisController extends Controller
 {
 
     public function create(){
 
-        return view('devis.create');
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+        return view('devis.create', compact('codes_array'));
     }
 
     public function store(DevisRequest $request){
