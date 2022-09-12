@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Besoins'))
+@section('title', __('Besoins du client' ))
 
 @section('content')
 
@@ -13,8 +13,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Utilisateur
-    <div class="page-title-subheading">Infos utilisateurs</div>
+    <div>Besoin du client {{ $need->firstname }}
+    <div class="page-title-subheading">Infos</div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -129,11 +129,7 @@
 
 
 
-                  <div class="d-flex justify-content-start">
-                    <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                    <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-                  </div>
+
                 </div>
               </div>
             </div>
