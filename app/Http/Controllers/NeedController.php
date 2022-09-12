@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Need;
+
 use App\Models\Code;
+use App\Models\Need;
+use App\Mail\NeedEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class NeedController extends Controller
 {
@@ -26,7 +29,7 @@ class NeedController extends Controller
     {
         $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
@@ -74,9 +77,19 @@ class NeedController extends Controller
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;
-        $need->save();
 
-        return view('need.confirm');
+
+        if($need->save()){
+            //Sendig mail to admin
+            Mail::to('Bramslevel129@gmail.com')
+            ->send(new NeedEmail($need));
+            return view('need.confirm');
+        }else{
+            return 'Une erreur a ete produite';
+        }
+
+
+
     }
 
     /**
