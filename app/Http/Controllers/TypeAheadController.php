@@ -14,7 +14,7 @@ class TypeAheadController extends Controller
         $i=0;
         
         foreach($codes as $code){
-            $codes_array[$i] = ''.$code->Codepos.', '.$code->Commune;
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
         }
         //echo "<pre>";print_r($codes_array);
