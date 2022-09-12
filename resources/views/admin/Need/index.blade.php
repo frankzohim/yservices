@@ -90,7 +90,7 @@
             <td>{{ $need->address }}</td>
             <td>{{ $need->postal_code }}</td>
             <td>{{ $need->town }}</td>
-            <td style="display:flex;">
+            <td class="d-flex justify-content-evenly">
                <a href="{{ route('need.show', $need->id) }}" class="btn-blue"> <button class="btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button> </a>
                <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
                 @csrf

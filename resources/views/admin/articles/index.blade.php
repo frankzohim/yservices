@@ -86,7 +86,7 @@
                         <a href="{{ route('articles.edit',$article->id) }}"><button class="btn btn-primary" style="" ><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></button></a>
                     </div>
                     <div style="margin-right:5px">
-                        <a href=""><button class="btn btn-primary" ><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button></a>
+                        <a href="{{ route('articles.show',$article->id) }}"><button class="btn btn-primary" ><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button></a>
                     </div>
 
                     <div>
