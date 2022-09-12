@@ -91,11 +91,11 @@
             <td>{{ $need->postal_code }}</td>
             <td>{{ $need->town }}</td>
             <td style="display:flex;">
-               <a href="{{ route('need.show', $need->id) }}" class="btn-blue"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a>
+               <a href="{{ route('need.show', $need->id) }}" class="btn-blue"> <button class="btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button> </a>
                <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
                 @csrf
                 @method('delete')
-                <button type="submit"> ggf</button>
+                <button type="submit" class="btn btn-danger" ><i class="fa fa-fw" aria-hidden="true" title="Copy to use trash"></i></button>
 
                </form>
             </td>
