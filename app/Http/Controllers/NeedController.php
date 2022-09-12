@@ -81,7 +81,7 @@ class NeedController extends Controller
 
         if($need->save()){
             //Sendig mail to admin
-            Mail::to('Bramslevel129@gmail.com')
+            Mail::to('contact@youdom-care.com')
             ->send(new NeedEmail($need));
             return view('need.confirm');
         }else{
