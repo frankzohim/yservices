@@ -28,6 +28,8 @@ class DevisRequest extends FormRequest
             'nom'=>['required','string'],
             'prenom'=>['required','string'],
             'email'=>['required','email'],
+            'date'=>['required'],
+            'hour'=>['required','string'],
             'numero'=>['required','numeric'],
             'code_postal'=>['required','string']
         ];

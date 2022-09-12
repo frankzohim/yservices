@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('prenom');
             $table->string('nom');
             $table->string('email');
+            $table->string('date');
+            $table->string('hour');
             $table->integer('numero');
             $table->string('code_postal');
             $table->timestamps();

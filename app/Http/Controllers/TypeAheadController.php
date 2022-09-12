@@ -7,14 +7,13 @@ use App\Models\Code;
 use App\Models\User;
 class TypeAheadController extends Controller
 {
-<<<<<<< HEAD
-=======
+
 
     public function index()
     {
         $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.', '.$code->Commune;
             $i++;
@@ -31,7 +30,7 @@ class TypeAheadController extends Controller
           return response()->json($filterResult);
     }
 
->>>>>>> refs/remotes/origin/main
+
     public function autocomplete(Request $request)
     {
         error_log('Some message here.');

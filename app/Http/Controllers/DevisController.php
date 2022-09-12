@@ -22,6 +22,8 @@ class DevisController extends Controller
         $devis->prenom=$request->prenom;
         $devis->email=$request->email;
         $devis->numero=$request->numero;
+        $devis->date=$request->date;
+        $devis->hour=$request->hour;
         $devis->code_postal=$request->code_postal;
         $devis->save();
         if($devis->save()){
