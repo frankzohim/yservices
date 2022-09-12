@@ -30,13 +30,14 @@ use App\Models\Code;
 Route::get('/', function () {
     $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
         }
 
     return view('homepage',compact('codes_array'));
+
 })->name('homepage');
 
 Route::get('about', function () {

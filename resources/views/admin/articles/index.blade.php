@@ -80,15 +80,28 @@
                 @else
                 <td>Non Publié</td>
                 @endif
-            <td><form method="POST" action="{{ route('articles.destroy',$article->id) }}" class="px-4 py-2 bg-red-700 rounded-lg text-white" onsubmit="return confirm('Are you sure?')">
-                @csrf
-                @method('DELETE')
-                <button type="submit"><i class="fa fa-trash-alt"></i></button>
-            </form>
+            <td>
+                <div class="d-flex justify-content-evenly">
+                    <div style="margin-right:5px">
+                        <a href="{{ route('articles.edit',$article->id) }}"><button class="btn btn-primary" style="" ><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></button></a>
+                    </div>
+                    <div style="margin-right:5px">
+                        <a href=""><button class="btn btn-primary" ><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button></a>
+                    </div>
+
+                    <div>
+                        <form method="POST" action="{{ route('articles.destroy',$article->id) }}"  onsubmit="return confirm('Are you sure?')">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger" ><i class="fa fa-fw" aria-hidden="true" title="Suprimer"></i></button>
+                        </form>
+                    </div>
+
+                </div>
 
 
-                <a href="{{ route('articles.edit',$article->id) }}"><i class="fa fa-fw" aria-hidden="true" title="Editer"></i></a>
-                <a href=""><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a></td>
+
+                </td>
             </tr>
         @endforeach
 
