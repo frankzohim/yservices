@@ -63,8 +63,8 @@ class NeedController extends Controller
         }
 
         $data = explode(',',$request->postal_code);
-        $town = $data[1];
-        $postal_code = $data[0];
+        $town = "douala";
+        $postal_code = $request->postal_code;
 
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
