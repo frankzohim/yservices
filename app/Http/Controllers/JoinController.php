@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\JoinRequest;
-use App\Models\join;
+use App\Models\Join;
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
 
@@ -17,7 +17,7 @@ class JoinController extends Controller
 
         $validatedData = $request->validated();
 
-        $join=new join;
+        $join=new Join;
         $join->civility=$request->civility;
         $join->name=$request->name;
         $join->username=$request->username;
