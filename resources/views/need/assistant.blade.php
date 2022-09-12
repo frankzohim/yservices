@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title', __('Inscription – Aide à domicile sur mesure en Europe'))
-
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
 @section('content')
 	<style>
 			.content-wrap{position:relative;padding:80px 0;overflow:hidden}
@@ -111,7 +111,7 @@ label img {
 				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
 			</div>
 			
-			<form id="regForm" method="post" action="{{ route('devis.store') }}">
+			<form id="regForm" method="post" autocomplete="off" action="{{ route('devis.store') }}">
 					
 					@csrf
 				
@@ -542,7 +542,7 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="tel" name="phone" required>
+                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
@@ -561,16 +561,13 @@ label img {
 								  <br>
                                   <div class="row justify-content-center">
 
-                                    <div class="col-md-4">
+                                    <div class="col-md-8">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="number" name="postal_code" required>
+                                      <input class="form-control" placeholder="Code postal" 
+									  aria-label="Full Name" type="text" id="postal_code" name="postal_code" required>
                                     </div>
                                     </div>
-                                    <div class="col-md-4 ps-md-2">
-                                    <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="ville" name="town" required>
-                                    </div>
-                                    </div>
+                                  
 
                                   </div>			
 									
@@ -594,5 +591,14 @@ label img {
 			
 		</div>
 	</div>
-				<script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
+	<script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
+
+	<script src="{{ asset('assets/js/typeahead.js') }}"></script>
+	<script>
+		var codes = @json($codes_array);
+				
+		autocomplete(document.getElementById("postal_code"), codes);
+					
+				   
+	</script>
 @endsection

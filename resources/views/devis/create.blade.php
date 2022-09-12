@@ -2,6 +2,7 @@
 @section('title', __('Demande de devis-Youdom Care'))
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
 <style>
 
 .bg-image {
@@ -70,7 +71,7 @@
         <div class="card overflow-hidden mb-5">
           <div class="row">
             <div class="col-lg-7">
-              <form class="p-3" id="contact-form" method="post" action="{{ route('devis.send') }}">
+              <form class="p-3" id="contact-form" method="post" autocomplete="off" action="{{ route('devis.send') }}">
                 @csrf
                 <div class="card-header px-4 py-sm-5 py-3"
                 style="background-color:#DF034D; font-size:27px; font-weight:bold; color:white">
@@ -140,7 +141,7 @@
                     </div>
 
                     <div class="col-md-12 pe-2 mb-3">
-                        <input class="form-control" placeholder="Code Postal ou ville*" name="code_postal" type="text" value="{{ old('code_postal') }}" required >
+                        <input class="form-control" placeholder="Code Postal*" id="postal_code" name="code_postal" type="text" value="{{ old('code_postal') }}" required >
 
                       </div>
 
@@ -222,7 +223,14 @@
 
 
 
+<script src="{{ asset('assets/js/typeahead.js') }}"></script>
+<script>
+    var codes = @json($codes_array);
 
+    autocomplete(document.getElementById("postal_code"), codes);
+    
+   
+</script>
 
 
 

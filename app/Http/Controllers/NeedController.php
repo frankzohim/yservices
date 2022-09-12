@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Need;
+use App\Models\Code;
 use Illuminate\Http\Request;
 
 class NeedController extends Controller
@@ -23,7 +24,15 @@ class NeedController extends Controller
      */
     public function create()
     {
-        return view("need.assistant");
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+        return view("need.assistant",compact('codes_array'));
     }
 
     /**
@@ -50,14 +59,18 @@ class NeedController extends Controller
 
         }
 
+        $data = explode(',',$request->postal_code);
+        $town = $data[1];
+        $postal_code = $data[0];
+
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
         $need->for_who = $request->for_who;
         $need->gender = $request->gender;
         $need->firstname = $request->firstname;
         $need->lastname = $request->lastname;
-        $need->postal_code = $request->postal_code;
-        $need->town = $request->town;
+        $need->postal_code = $postal_code;
+        $need->town = $town;
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;

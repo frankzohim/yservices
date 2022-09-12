@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Code;
 use App\Http\Requests\JoinRequest;
 use App\Models\join;
 use Illuminate\Support\File;
@@ -10,21 +10,33 @@ use Illuminate\Http\Request;
 class JoinController extends Controller
 {
     public function create(){
-        return view('clients.join-us-form');
+
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+        //echo "<pre>";print_r($codes_array);
+        return view('clients.join-us-form',compact('codes_array'));
     }
 
     public function store(JoinRequest $request){
 
         $validatedData = $request->validated();
-
+        //dd($request->postal_code);
+        $data = explode(',',$request->postal_code);
+        $town = $data[1];
+        $postal_code = $data[0];
         $join=new join;
         $join->civility=$request->civility;
         $join->name=$request->name;
         $join->username=$request->username;
         $join->phone_number=$request->phone_number;
         $join->email=$request->email;
-        $join->postal_code=$request->postal_code;
-        $join->town=$request->town;
+        $join->postal_code=$postal_code;
+        $join->town=$town;
         $join->informations=$request->informations;
         $join->job=$request->job;
         $join->available=$request->available;

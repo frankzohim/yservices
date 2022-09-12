@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title', __('Contact - Youdom Services'))
-
-@section('content')
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">@section('content')
 
 <section class="py-lg-7">
   <div class="container">
@@ -38,7 +37,7 @@
         <div class="card overflow-hidden mb-5">
           <div class="row">
             <div class="col-lg-7">
-              <form class="p-3" id="contact-form" method="post" action="{{ route('contact.store') }}">
+              <form class="p-3" id="contact-form" method="post" autocomplete="off" action="{{ route('contact.store') }}">
                 @csrf
                 <div class="card-header px-4 py-sm-5 py-3" style="background-color: #1b138a; color:white">
                   <h2 style="color:white">Des Questions ?</h2>
@@ -89,14 +88,11 @@
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Email" name="email" type="email" value="{{ old('email') }}" required>
                     </div>
-                    <div class="col-md-6 pe-2 mb-3">
-                        <input class="form-control" placeholder="Code Postal" name="postal_code" type="text" value="{{ old('postal_code') }}" required >
+                    <div class="col-md-12 pe-2 mb-3">
+                        <input class="form-control" placeholder="Code Postal" id="postal_code" name="postal_code" type="text" value="{{ old('postal_code') }}" required >
 
                       </div>
-                      <div class="col-md-6 pe-2 mb-3">
-                          <input class="form-control" placeholder="Ville" name="town" type="text" value="{{ old('town') }}" required>
-
-                        </div>
+                     
                     <div class="col-md-12 pe-2 mb-3">
                       <input class="form-control" placeholder="Téléphone" name="phone" type="tel" value="{{ old('phone') }}" required>
                     </div>
@@ -173,10 +169,14 @@
 </section>
 
 
+<script src="{{ asset('assets/js/typeahead.js') }}"></script>
+<script>
+    var codes = @json($codes_array);
 
-
-
-
+    autocomplete(document.getElementById("postal_code"), codes);
+    
+   
+</script>
 
 
 

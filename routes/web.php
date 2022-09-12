@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Models\Code;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,7 +28,15 @@ use App\Http\Controllers\Admin\ContactController as AdminContactController;
 
 
 Route::get('/', function () {
-    return view('homepage');
+    $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+
+    return view('homepage',compact('codes_array'));
 })->name('homepage');
 
 Route::get('about', function () {
