@@ -95,7 +95,7 @@
                <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
                 @csrf
                 @method('delete')
-                <button type="submit" class="btn btn-danger" ><i class="fa fa-fw" aria-hidden="true" title="Copy to use trash"></i></button>
+                <button type="submit" class="btn btn-danger" ><i class="fa fa-fw" aria-hidden="true" title="Suprimer"></i></button>
 
                </form>
             </td>
