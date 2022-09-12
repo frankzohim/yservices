@@ -5,9 +5,6 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Need;
 use Illuminate\Http\Request;
-use App\Models\Join;
-use App\Models\Contact;
-use App\Models\formfranchise;
 
 class NeedController extends Controller
 {
@@ -30,6 +27,7 @@ class NeedController extends Controller
     public function create()
     {
         //
+        return view('admin.Need.create');
     }
 
     /**
@@ -52,6 +50,8 @@ class NeedController extends Controller
     public function show($id)
     {
         //
+        $need=Need::find($id);
+        return view('admin.Need.show', compact('need'));
     }
 
     /**
@@ -63,6 +63,8 @@ class NeedController extends Controller
     public function edit($id)
     {
         //
+        $need = Need::find($id);
+        return view('admin.Need.edit', compact('need'));
     }
 
     /**
@@ -86,5 +88,9 @@ class NeedController extends Controller
     public function destroy($id)
     {
         //
+        $needs= Need:: find($id);
+        $needs->delete();
+
+        return to_route('need.index');
     }
 }

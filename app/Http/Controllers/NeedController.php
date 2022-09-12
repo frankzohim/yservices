@@ -40,14 +40,14 @@ class NeedController extends Controller
         foreach($request->services as $service){
             if ($i==0)
                 $need->services = $service;
-            
+
             else{
-               
+
                 $need->services .= ', '.$service;
             }
 
              $i++;
-                
+
         }
 
         $need->start_at = $request->start_at;

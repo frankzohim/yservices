@@ -1,5 +1,5 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Inscriptions'))
+@section('title', __('Listes Des besoins'))
 
 @section('content')
 
@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Inscriptions
-    <div class="page-title-subheading">Listes Des Inscriptions </div>
+    <div>Besoins
+    <div class="page-title-subheading">Listes Des besoins </div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -60,6 +60,8 @@
     </div> <div class="main-card mb-3 card">
     <div class="card-body">
         <button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i> Excel</button>
+        {{--  <a class="mb-2 mr-2 btn btn-primary flex justify-end" href="{{ route('need.create') }}">Creer</a>  --}}
+
     <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
     <thead>
     <tr>
@@ -68,11 +70,11 @@
     <th>Email</th>
      <th>Services souhaités</th>
 
-     <th>Débute</th>
+     <th>Date debut</th>
     <th>Telephone</th>
     <th>Adresse</th>
-    <th>Code</th>
-    <th>Ville</th>
+    <th>Code Postal</th>
+    <th>town</th>
     <th>Action</th>
     </tr>
     </thead>
@@ -88,8 +90,15 @@
             <td>{{ $need->address }}</td>
             <td>{{ $need->postal_code }}</td>
             <td>{{ $need->town }}</td>
-            <td><a href=""><i class="fa fa-trash-alt"></i></a>
-                <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
+            <td style="display:flex;">
+               <a href="{{ route('need.show', $need->id) }}" class="btn-blue"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></a>
+               <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
+                @csrf
+                @method('delete')
+                <button type="submit"> ggf</button>
+
+               </form>
+            </td>
             </tr>
         @endforeach
 
@@ -103,11 +112,11 @@
             <th>Email</th>
              <th>Services souhaités</th>
 
-             <th>Débute</th>
+             <th>Date debut</th>
             <th>Telephone</th>
             <th>Adresse</th>
-            <th>Code</th>
-            <th>Ville</th>
+            <th>Code Postal</th>
+            <th>town</th>
             <th>Action</th>
             </tr>
     </tfoot>
