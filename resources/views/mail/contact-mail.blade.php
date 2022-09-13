@@ -1,11 +1,11 @@
 @component('mail::message')
-# Introduction
+# Contact
 
 <p style="font-size: 14px;">
     Un Nouveau Contact a été ajouté sur Youdom-care
   </p>
 
-  p>l'utilisateur {{ $contact->name }} {{ $contact->username }}</p> à fait une demande de prestation sur les
+  <p>l'utilisateur {{ $contact->name }} {{ $contact->username }}</p> à fait une demande de prestation sur les
   {{ $contact->type }}
 
   ##  Information D'utilisateur

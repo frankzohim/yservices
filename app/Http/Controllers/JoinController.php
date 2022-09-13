@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 use App\Models\Code;
 use App\Http\Requests\JoinRequest;
+use App\Mail\JoinMail;
 use App\Models\join;
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class JoinController extends Controller
 {
@@ -13,7 +15,7 @@ class JoinController extends Controller
 
         $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
@@ -48,6 +50,7 @@ class JoinController extends Controller
         $join->cv=$request->file('cv')->store('public/cv');
 
         if($join->save()){
+            Mail::to('contact@youdom-care.com')->send(new JoinMail($join));
             return view('clients.join-confirm');
         }else{
             return redirect()->back()->with('update_failure','Une erreur est survenue, veuillez réessayez plutard');

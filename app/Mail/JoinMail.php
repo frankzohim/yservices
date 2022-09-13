@@ -16,9 +16,11 @@ class JoinMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+
+     public $join;
+    public function __construct($join)
     {
-        //
+        $this->join=$join;
     }
 
     /**
@@ -28,6 +30,8 @@ class JoinMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('mail.join-mail');
+        return $this->subject("Youdom-Care:Rejoindre-nous")
+
+        ->markdown('mail.join-mail');
     }
 }
