@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
+use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Code;
+use Illuminate\Support\Facades\Mail;
+
 class ContactController extends Controller
 {
     /**
@@ -28,7 +31,7 @@ class ContactController extends Controller
     {
         $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
@@ -68,7 +71,7 @@ class ContactController extends Controller
         $town = $data[1];
         $postal_code = $data[0];
 
-        Contact::create([
+        $contact=Contact::create([
             'name'=>$request->name,
             'username'=>$request->username,
             'type'=>$types,
@@ -78,6 +81,8 @@ class ContactController extends Controller
             'phone'=>$request->phone,
             'message'=>$request->message
         ]);
+
+        Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }
