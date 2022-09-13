@@ -5,7 +5,7 @@
     Un Nouveau Besoin a été ajouté sur Youdom-care
   </p>
 
-  <p>lutilisateur {{ $need->firstname }} {{ $need->lastname }}</p> à fait une demande de services :
+  <p>l'utilisateur {{ $need->firstname }} {{ $need->lastname }}</p> à fait une demande de services :
         ###  Services
       -  {{ $need->services }}
 
