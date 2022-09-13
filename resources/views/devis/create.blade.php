@@ -228,8 +228,8 @@
     var codes = @json($codes_array);
 
     autocomplete(document.getElementById("postal_code"), codes);
-    
-   
+
+
 </script>
 
 
