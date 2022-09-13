@@ -16,7 +16,7 @@ class ContactMail extends Mailable
      *
      * @return void
      */
-    public $contact=[];
+    public $contact;
     public function __construct($contact)
     {
         $this->contact=$contact;
