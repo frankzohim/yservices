@@ -118,8 +118,9 @@
 
 						<div class="header__right" style="margin-bottom:15px;">
 
-								<img class="search-icon" src="_next/static/media/icones/search.svg" alt="">
-								</li></ul></div></aside>
+								<!-- <img class="search-icon" src="_next/static/media/icones/search.svg" alt=""> -->
+						</div>
+					</aside>
 						</div>
 					</div>
 				</div>
