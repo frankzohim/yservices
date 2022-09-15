@@ -83,8 +83,14 @@
             </td>
             <td>{{ $contact->email }}</td>
             <td>{{ $contact->phone }}</td>
-            <td><a href=""><i class="fa fa-trash-alt"></i></a>
-                <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
+            <td class="mr-3">
+                <form method="POST" action="{{ route('contacts.destroy', $contact->id) }}" class="w-4" onsubmit="return confirm('Are you sure?')">
+                @csrf
+                @method('delete')
+                <button class="btn btn-danger" type="submit" style="border: none; background:rgb(196, 33, 33); "><i class="fa fa-trash-alt"></i></button>
+                <a href="{{ route('contacts.show', $contact->id) }}" class="btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Consulter"></i></a></td>
+
+               </form>
             </tr>
         @endforeach
 
