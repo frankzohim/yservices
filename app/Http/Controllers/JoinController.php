@@ -8,6 +8,7 @@ use App\Models\Join;
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class JoinController extends Controller
 {
@@ -29,10 +30,15 @@ class JoinController extends Controller
 
         $validatedData = $request->validated();
         //dd($request->postal_code);
-        
+       
         $data = explode(',',$request->postal_code);
-        $town = $data[1];
-        $postal_code = $data[0];
+        if(count($data) == 2){
+            $town = $data[1];
+            $postal_code = $data[0];
+        }
+        else
+            return Redirect::back()->with('update_failure','Code postal invalide');
+
         $join=new Join;
         $join->civility=$request->civility;
         $join->name=$request->name;

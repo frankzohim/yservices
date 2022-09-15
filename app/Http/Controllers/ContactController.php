@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Code;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class ContactController extends Controller
 {
@@ -73,7 +74,7 @@ class ContactController extends Controller
             $postal_code = $data[0];
         }
         else
-            return redirect()->route('contact.create')->with('update_failure','Code postal invalide');
+             return Redirect::back()->with('update_failure','Code postal invalide')->withInput();
 
         $contact=Contact::create([
             'name'=>$request->name,
@@ -86,7 +87,7 @@ class ContactController extends Controller
             'message'=>$request->message
         ]);
 
-        Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
+        //Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }
