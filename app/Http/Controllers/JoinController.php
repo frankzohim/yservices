@@ -35,6 +35,7 @@ class JoinController extends Controller
 
         $validatedData = $request->validated();
         //dd($request->postal_code);
+        
         $data = explode(',',$request->postal_code);
         $town = $data[1];
         $postal_code = $data[0];

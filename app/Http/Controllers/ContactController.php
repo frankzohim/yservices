@@ -65,8 +65,12 @@ class ContactController extends Controller
         //dd($types);
 
         $data = explode(',',$request->postal_code);
-        $town = $data[1];
-        $postal_code = $data[0];
+        if(count($data) == 2){
+            $town = $data[1];
+            $postal_code = $data[0];
+        }
+        else
+            return redirect()->route('contact.create')->with('update_failure','Code postal invalide');
 
         Contact::create([
             'name'=>$request->name,
