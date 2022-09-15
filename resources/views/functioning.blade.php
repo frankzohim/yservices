@@ -126,7 +126,7 @@
 																							 <li> 50 % de réduction d’impôt </li> 
 																					 </ul>
                                         </p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@
                                         style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
                                        Nous déterminons ensemble la durée, la fréquence, les jours, les heures et le contenu des interventions. 
 																				</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
 									
@@ -212,7 +212,7 @@
                                         <p class="w-85 lg-w-100"
                                         style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
                                        Afin d’établir une relation de confiance et offrir un service sur-mesure et stable, la même personne interviendra à chaque fois (sauf absence)</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
                                 </div>
@@ -251,8 +251,9 @@
                                         <p class="w-85 lg-w-100"
                                         style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
                                        Avant le début des prestations, rencontre et présentation au domicile l’intervenant(e) sélectionné(e).</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
-                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px;
+                                         margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
 									
 									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
@@ -298,7 +299,7 @@
                                         <p class="w-85 lg-w-100"
                                         style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
                                        Le planning des interventions à votre domicile pourra s’adapter à l’évolution de vos besoins.</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
                                 </div>
@@ -344,7 +345,7 @@
 																				de la personne aidée, âgées ou en situation de handicap
 																				Ce qui signifie que nous pouvons, en cours de contrat, adapter la prestation initialement 
 																				mise en place : organisation des interventions, tâches à réaliser, qualification du personnel, etc</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
 									
@@ -390,7 +391,7 @@
                                         style="font-family:Robo, sans-serif; font-size:15px; margin-bottom: 25px;">
                                        Toutes les données concernant le ou la bénéficiaire font l’objet d’un traitement informatisé dans les conditions fixées par le 
 																			 règlement général de la protection des données(RGPD) Les données médicales sont soumises au secret professionnel, auquel est tenu l’ensemble du personnel</p>
-                                        <a href="{{ route('need.create') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
+                                        <a href="{{ route('devis.form') }}" class="btn btn-fancy btn-medium btn-dark-gray margin-20px-top"
                                         style="font-family:Roboto, sans-serif; padding:12px 28px; color:white; background-color:#232323; font-size:12px; margin: 20px 0px 0px;">Demandez un devis</a>
                                     </div>
                                 </div>
