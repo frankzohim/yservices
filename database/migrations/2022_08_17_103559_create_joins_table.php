@@ -24,12 +24,10 @@ return new class extends Migration
             $table->string("town");
             $table->text('informations');
             $table->string("job");
-            $table->string("agency_less_than");
-            $table->string("agency_from");
             $table->string("available");
             $table->string("diploma");
             $table->string("year_of_experience");
-            $table->string("cv"); 
+            $table->string("cv");
              $table->string("diploma_file");
             $table->timestamps();
         });

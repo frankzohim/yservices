@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\need;
+use App\Models\Need;
 use App\Models\worktime;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -17,7 +17,7 @@ return new class extends Migration
     {
         Schema::create('need_worktime', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(need::class)
+            $table->foreignIdFor(Need::class)
                 ->constrained()
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
