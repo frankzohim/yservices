@@ -51,7 +51,7 @@
                         <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                         <div class="text-center">
 
-                            <h2 class="text-gradient text-primary" style="font-size:28px;"> postule chez Youdom - CARE</h2>
+                            <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
 
                         </div>
               <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="off" enctype="multipart/form-data">
@@ -182,6 +182,7 @@
 									</div>
 									<br>
 
+									<br>
 
 
 									<br>
