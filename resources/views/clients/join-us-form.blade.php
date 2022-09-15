@@ -180,12 +180,7 @@
 										</select>
 
 									</div>
-									<br>
-
-									<br>
-
-
-									<br>
+									
 								</div>
 
 								<div class="tab">
@@ -525,7 +520,6 @@
 <script>
 
     var codes = @json($codes_array);
-    var communes = @json($communes_array)
 
     //console.log(communes);
     autocomplete(document.getElementById("postal_code"), codes);
