@@ -28,14 +28,14 @@
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                
+
                 @if (session('update_failure'))
                   <div class="alert alert-danger alert-dismissible show" role="alert" style="color: white">
                     <strong>Désolé!</strong> Une erreur s'est produite, veuillez réessayé plutard.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                 @endif
-          
+
                 @if ($errors->any())
                   <div class="alert alert-danger alert-dismissible show" role="alert" style="color: white" >
                       <ul>
@@ -50,14 +50,14 @@
                     <div class="col-lg-7 d-flex justify-content-center flex-column">
                         <div class="card d-flex blur justify-content-center p-4 shadow-lg my-sm-0 my-sm-6 mt-8 mb-5">
                         <div class="text-center">
-                           
-                            <h2 class="text-gradient text-primary" style="font-size:28px;">Je postule chez Youdom - CARE</h2>
-                            
+
+                            <h2 class="text-gradient text-primary" style="font-size:28px;"> postule chez Youdom - CARE</h2>
+
                         </div>
               <form id="join-us-form" method="post" action="{{ route('join.store') }}" autocomplete="off" enctype="multipart/form-data">
                            @csrf
                             <div class="card-body pb-2">
-                              
+
 								<div class="tab">
 									<div class="form-group mb-0 mt-md-0 mt-4">
 										<label class="form-check-label" style="color:#1b138a; font-size:18px;">
@@ -181,37 +181,12 @@
 
 									</div>
 									<br>
-									 <div class="text-center" >
-										<h2 class="text-gradient text-primary" style="font-size:22px;">Je postule dans des agences *</h2>
-									</div>
-									<br>
-                  <div class="row">
-                      <div class="col-3">
-                         <label for="radius" style="color: #1b138a">À moins de</label> 
-                      </div>
-                      <div class="col-9">
-                        <select id="agenciesRadius" name="agency_less_than" class="form-control" class="selectmenu" required>
-                          <option value="">Distance *</option>
-                          <option value="5">5 km</option>
-                          <option value="10">10 km</option>
-                          <option value="20">20 km</option><option value="30" selected="selected">30 km</option> 
-                      </select> 
-                      </div>
-                     
-                  </div>
-                  <br>
-                  <div class="row">
-                      
-                      <div class="col-3">
-                           <label for="radius" style="color: #1b138a">À partir de</label> 
-                      </div>
-                      <div class="col-9">
-                           <input type="text" id="agency_from" class="form-control" name="agency_from" placeholder="Votre ville (Saisir les premières lettres) *" autocomplete="off" />
-                      </div>
-                  </div>
+
+
+
 									<br>
 								</div>
-								
+
 								<div class="tab">
 									  <div class="form-group mb-0 mt-md-0 mt-4">
 															<label class="form-check-label" style="color:#1b138a; font-size:18px;">
@@ -268,7 +243,7 @@
                                                   Diplôme d'État d'assistant de service social (DEASS)</option>
                                                 <option value="Licence professionnelle Santé spécialité Cadres fonctionnels des établissements sociaux et médico-sociaux">
                                                   Licence professionnelle Santé spécialité Cadres fonctionnels des établissements sociaux et médico-sociaux</option>
-                                               
+
                         </optgroup>
 
                        <optgroup label="Assistant au responsable de secteur">
@@ -307,19 +282,19 @@
                                                 </option>
                                                 <option value="Baccalauréat professionnel Accompagnement, soins et services à la personne - option A : à domicile (Bac Pro ASSP)">
                                                   Baccalauréat professionnel Accompagnement, soins et services à la personne - option A : à domicile (Bac Pro ASSP)</option>
-                                               
-                                                 
+
+
                                                 <option value="Auxiliaire de gérontologie">
                                                    Auxiliaire de gérontologie</option>
-                                                
+
                                                <option value="Assistant(e) de vie dépendance">
                                                   Assistant(e) de vie dépendance</option>
-                                               
+
                                                   <option value="Diplôme d'État Auxiliaire de vie sociale (DEAVS) uniquement par la VAE">
                                                   Diplôme d'État Auxiliaire de vie sociale (DEAVS) uniquement par la VAE</option>
                         </optgroup>
 
-									
+
 
 															</select>
 
@@ -351,7 +326,7 @@
 										</div>
 									  <br>
 								</div>
-								
+
 								<div class="tab">
 								  <div class="row">
 									<div class="form-group mb-0 mt-md-0 mt-4">
@@ -359,7 +334,7 @@
 											  Civilité
 											  </label>
 										<select name="civility" class="form-control form-select" aria-label="Default select example" required>
-												
+
 
 
 											  <option value="Monsieur">
@@ -408,13 +383,13 @@
 
 										<div class="col-md-12">
 										<div class="input-group mb-4">
-										  <input class="form-control" placeholder="Code postal" aria-label="Full Name"  
+										  <input class="form-control" placeholder="Code postal" aria-label="Full Name"
                       name="postal_code" id="postal_code">
 										</div>
 										<ul class="list-group" id="result"></ul>
 
 										</div>
-									
+
 
 									  </div>
 									  <div class="form-group mb-0 mt-md-0 mt-4">
@@ -423,7 +398,7 @@
 								</div>
 
 
-							
+
 
 								<!-- unchange blocks for buttons -->
 								<div class="row">
@@ -550,11 +525,11 @@
 
     var codes = @json($codes_array);
     var communes = @json($communes_array)
-    
+
     //console.log(communes);
     autocomplete(document.getElementById("postal_code"), codes);
     autocomplete(document.getElementById("agency_from"), communes);
-   
+
 </script>
 
 @endsection

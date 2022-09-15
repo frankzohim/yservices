@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Code;
 use App\Http\Requests\JoinRequest;
-<<<<<<< HEAD
 use App\Mail\JoinMail;
-use App\Models\join;
-=======
 use App\Models\Join;
->>>>>>> refs/remotes/origin/main
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -27,7 +23,7 @@ class JoinController extends Controller
 
         $communes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($communes as $commune){
             $communes_array[$i] = ''.$commune->Commune.','.$commune->Codepos;
             $i++;
