@@ -46,9 +46,7 @@
 				font-weight: 500;
 			}
 
-			.footer-dark1 li{
-  			line-height: 0;
-			}
+		
 
 
 		</style>
@@ -153,12 +151,14 @@
 																Des véhicules TPMR adaptés à vos besoins</a></li>
 															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="{{ route('contact.create') }}">
 																Accompagnement par une aide à domicile</a></li>
-															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Location véhicules adaptés avec chauffeur</a></li>
+															 <li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">
+																Location véhicules adaptés avec chauffeur</a></li>
 															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
 																Transport de porte-à-porte</a></li>
 															
-																<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
+																<li class="text text_md color_grey"><a href="#" style="color: #232323;" data-target-action="true" class="link" target="_blank" rel="noopener">
 																Véhicules accessibles aux personnes à mobilité réduite sur demande au moment de réservation</a></li>
+
 															<li class="text text_md color_grey"><a href="#" style="color: #232323" data-target-action="true" class="link" target="_blank" rel="noopener">
 																Service assuré 7j :7 de 6 h à 21h</a></li>
                             </ul>

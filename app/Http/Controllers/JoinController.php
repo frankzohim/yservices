@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 use App\Models\Code;
 use App\Http\Requests\JoinRequest;
+<<<<<<< HEAD
 use App\Mail\JoinMail;
 use App\Models\join;
+=======
+use App\Models\Join;
+>>>>>>> refs/remotes/origin/main
 use Illuminate\Support\File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -20,8 +24,17 @@ class JoinController extends Controller
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
         }
-        //echo "<pre>";print_r($codes_array);
-        return view('clients.join-us-form',compact('codes_array'));
+
+        $communes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+        
+        foreach($communes as $commune){
+            $communes_array[$i] = ''.$commune->Commune.','.$commune->Codepos;
+            $i++;
+        }
+
+        //echo "<pre>";print_r($communes_array);
+        return view('clients.join-us-form',compact('codes_array', 'communes_array'));
     }
 
     public function store(JoinRequest $request){
@@ -31,7 +44,7 @@ class JoinController extends Controller
         $data = explode(',',$request->postal_code);
         $town = $data[1];
         $postal_code = $data[0];
-        $join=new join;
+        $join=new Join;
         $join->civility=$request->civility;
         $join->name=$request->name;
         $join->username=$request->username;

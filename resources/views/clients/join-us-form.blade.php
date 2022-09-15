@@ -206,7 +206,7 @@
                            <label for="radius" style="color: #1b138a">À partir de</label> 
                       </div>
                       <div class="col-9">
-                           <input type="text" id="agenciesAddress" class="form-control" name="agency_from" placeholder="Votre ville (Saisir les premières lettres) *" autocomplete="off" />
+                           <input type="text" id="agency_from" class="form-control" name="agency_from" placeholder="Votre ville (Saisir les premières lettres) *" autocomplete="off" />
                       </div>
                   </div>
 									<br>
@@ -547,10 +547,13 @@
 
 <script src="{{ asset('assets/js/typeahead.js') }}"></script>
 <script>
-    var codes = @json($codes_array);
 
-    autocomplete(document.getElementById("postal_code"), codes);
+    var codes = @json($codes_array);
+    var communes = @json($communes_array)
     
+    //console.log(communes);
+    autocomplete(document.getElementById("postal_code"), codes);
+    autocomplete(document.getElementById("agency_from"), communes);
    
 </script>
 

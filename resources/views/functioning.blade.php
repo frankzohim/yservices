@@ -111,7 +111,7 @@
                             <div id="planning-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/fonctionnement1.png') }}" alt="" />
+                                        <img src="{{ asset('_next/static/media/4136673.jpg') }}" alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6 text-center text-sm-start">
 
@@ -256,7 +256,7 @@
                                     </div>
 									
 									 <div class="col-12 col-md-6 text-end sm-margin-40px-bottom">
-                                        <img src="{{ asset('_next/static/media/fonctionnement5.png') }} " alt="" />
+                                        <img src="{{ asset('_next/static/media/3054191.jpg') }} " alt="" />
                                     </div>
                                 </div>
                             </div>
