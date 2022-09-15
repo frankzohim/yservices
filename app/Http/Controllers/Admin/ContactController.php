@@ -50,6 +50,9 @@ class ContactController extends Controller
     public function show($id)
     {
         //
+        $contact= Contact::find($id);
+
+        return view('admin.contacts.show', compact('contact'));
     }
 
     /**
@@ -84,5 +87,9 @@ class ContactController extends Controller
     public function destroy($id)
     {
         //
+        $contacts= Contact:: find($id);
+        $contacts->delete();
+
+        return to_route('contacts.index');
     }
 }
