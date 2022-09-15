@@ -35,8 +35,6 @@ class JoinRequest extends FormRequest
             'available'=>['required'],
             'diploma'=>['required'],
             'cv'=>['required','file'],
-            'agency_less_than'=>['required','string'],
-            'agency_from'=>['required','string'],
             'year_of_experience'=>['required','integer'],
             'diploma_file'=>['required','file'],
         ];
