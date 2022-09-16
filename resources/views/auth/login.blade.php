@@ -164,6 +164,18 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+             @if ($errors->any())
+
+                    <div class="alert alert-danger alert-dismissible show" role="alert">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li style="color: white">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+                    </div>
+                @endif
             <div class="card card-plain">
               <div class="card-header pb-0 text-left">
                 <h4 class="font-weight-bolder">Connexion</h4>

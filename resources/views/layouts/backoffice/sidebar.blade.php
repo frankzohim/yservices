@@ -39,7 +39,12 @@
         </li>
     <li>
 
-
+    <li>
+        <a href="{{ route('homepage') }}" target="_blank">
+        <i class="metismenu-icon pe-7s-home"></i>Visiter le site
+        </a>
+        </li>
+    <li>
 
 
 

@@ -11,6 +11,32 @@
                     src="{{ asset('third/assets/img/curved-images/curved-11.jpg') }}" alt="image">
             </div>
             <div class="container">
+                @if (session('update_success'))
+                    <div class="alert alert-success alert-dismissible show" role="alert" style="color: white">
+                    <strong>Super !</strong> votre demande a été envoyé avec succès.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+
+                @if (session('update_failure'))
+                    <div class="alert alert-danger alert-dismissible show"  role="alert" style="color: white">
+                    <strong>Désolé</strong> {{ session('update_failure') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+                
+                @if ($errors->any())
+
+                    <div class="alert alert-danger alert-dismissible show" role="alert">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li style="color: white">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+                    </div>
+                @endif
                 <div class="row">
 
                     <div class="col-lg-6 d-flex justify-content-center flex-column">
@@ -100,7 +126,7 @@
                                         </div>
                                         <div class="col-md-6 ps-md-2{{ $errors->has('surname') ? ' has-danger' : '' }}">
                                             <div class="input-group">
-                                                <input type="text"
+                                                <input type="text" value="{{ old('surname') }}"
                                                     class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}"
                                                     placeholder="Prénom" name="surname" required>
                                             </div>
@@ -119,7 +145,7 @@
                                             <div class="input-group mb-4">
                                                 <input class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}"
                                                     placeholder="{{ __('Téléphone') }}" aria-label="Full Name"
-                                                    type="number" name="phone" required>
+                                                    type="number" name="phone" value="{{ old('phone') }}" required>
                                                 {{-- @if ($errors->has('phone'))
                                                         <span class="invalid-feedback" style="display: block;"
                                                             role="alert">
@@ -298,7 +324,7 @@
                                     <div class="col-md-12{{ $errors->has('description') ? ' has-danger' : '' }}">
                                         <textarea name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}"
                                             id="message" rows="4" placeholder="{{ __('Parlez-nous de votre projet') }}"
-                                            value="{{ old('description') }}" required></textarea>
+                                            value="{{ old('description') }}" required> {{ old('description') }}</textarea>
                                     </div>
                                 </div>
                                 <br>

@@ -76,19 +76,6 @@ class ContactController extends Controller
         else
              return Redirect::back()->with('update_failure','Code postal invalide')->withInput();
 
-        $contact=Contact::create([
-            'name'=>$request->name,
-            'username'=>$request->username,
-            'type'=>$types,
-            'postal_code'=>$postal_code,
-            'town'=>$town,
-            'email'=>$request->email,
-            'phone'=>$request->phone,
-            'message'=>$request->message
-        ]);
-
-        //Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
-
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }
 
