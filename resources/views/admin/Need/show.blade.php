@@ -122,7 +122,7 @@
                       <p class="text-muted">{{ $need->postal_code }}</p>
                     </div>
                     <div class="col-6 mb-3">
-                        <h6>town</h6>
+                        <h6>Ville</h6>
                         <p class="text-muted">{{ $need->town }}</p>
                       </div>
                   </div>
