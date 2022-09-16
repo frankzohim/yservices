@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Models\Code;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class ContactController extends Controller
 {
@@ -87,8 +88,9 @@ class ContactController extends Controller
         ]);
 
 
-        //dd($contact);
+
         Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
+
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }

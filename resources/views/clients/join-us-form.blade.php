@@ -31,7 +31,7 @@
 
                 @if (session('update_failure'))
                   <div class="alert alert-danger alert-dismissible show" role="alert" style="color: white">
-                    <strong>Désolé!</strong> Une erreur s'est produite, veuillez réessayé plutard.
+                    <strong>Désolé!</strong> {{ session('update_failure') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
                 @endif
@@ -180,12 +180,7 @@
 										</select>
 
 									</div>
-									<br>
-
-									<br>
-
-
-									<br>
+									
 								</div>
 
 								<div class="tab">
@@ -525,7 +520,6 @@
 <script>
 
     var codes = @json($codes_array);
-    var communes = @json($communes_array)
 
     //console.log(communes);
     autocomplete(document.getElementById("postal_code"), codes);

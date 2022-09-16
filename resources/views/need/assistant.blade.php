@@ -106,7 +106,33 @@ label img {
 	<div class="section">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-				
+			
+			 @if (session('update_success'))
+         <div class="alert alert-success alert-dismissible show" role="alert" style="color: white">
+          <strong>Super !</strong> votre demande a été envoyé avec succès.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      @endif
+
+      @if (session('update_failure'))
+        <div class="alert alert-danger alert-dismissible show"  role="alert" style="color: white">
+          <strong>Désolé</strong> {{ session('update_failure') }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      @endif
+     
+      @if ($errors->any())
+
+        <div class="alert alert-danger alert-dismissible show" role="alert">
+          <ul>
+            @foreach ($errors->all() as $error)
+                <li style="color: white">{{ $error }}</li>
+            @endforeach
+        </ul>
+         
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
+        </div>
+      @endif
 			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span> 
 				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
 			</div>

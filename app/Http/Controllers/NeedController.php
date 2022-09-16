@@ -7,6 +7,7 @@ use App\Models\Need;
 use App\Mail\NeedEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class NeedController extends Controller
 {
@@ -63,8 +64,12 @@ class NeedController extends Controller
         }
 
         $data = explode(',',$request->postal_code);
-        $town = $data[1];
-        $postal_code = $data[0];
+        if(count($data) == 2){
+            $town = $data[1];
+            $postal_code = $data[0];
+        }
+        else
+             return Redirect::route('devis.create')->with('update_failure','Code postal invalide')->withInput();
 
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
@@ -81,8 +86,7 @@ class NeedController extends Controller
 
         if($need->save()){
             //Sendig mail to admin
-            Mail::to('contact@youdom-care.com')
-            ->send(new NeedEmail($need));
+            //Mail::to('contact@youdom-care.com')->send(new NeedEmail($need));
             return view('need.confirm');
         }else{
             return 'Une erreur a ete produite';

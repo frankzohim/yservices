@@ -14,8 +14,8 @@
       @endif
 
       @if (session('update_failure'))
-        <div class="alert alert-danger alert-dismissible show"  role="alert">
-          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <div class="alert alert-danger alert-dismissible show"  role="alert" style="color: white">
+          <strong>Désolé</strong> {{ session('update_failure') }}
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       @endif

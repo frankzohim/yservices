@@ -6,6 +6,7 @@ use App\Models\formfranchise;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class formfranchiseController extends Controller
 {
@@ -56,9 +57,14 @@ class formfranchiseController extends Controller
             'news' => ['required|string'],
         ]);
 
-        $data = explode(',',$request->postal_code);
-        $town = $data[1];
-        $postal_code = $data[0];
+      $data = explode(',',$request->postal_code);
+        if(count($data) == 2){
+            $town = $data[1];
+            $postal_code = $data[0];
+        }
+        else
+             return Redirect::back()->with('update_failure','Code postal invalide')->withInput();
+
 
         $franchiseuser = formfranchise::create([
             'research'=>$request->research,
