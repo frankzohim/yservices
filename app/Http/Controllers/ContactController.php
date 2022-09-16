@@ -86,6 +86,8 @@ class ContactController extends Controller
             'message'=>$request->message
         ]);
 
+
+        //dd($contact);
         Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
