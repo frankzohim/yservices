@@ -103,7 +103,7 @@ label img {
 }
 
 	</style>
-<section class="main-intro-all">
+    <section class="main-intro-all">
 					<div class="container">
 
 						<div class="section-body padding-top-sm main-intro-all__body">
@@ -159,7 +159,7 @@ label img {
 					</div>
 
 
-				</section>
+	</section>
 
 					<div class="section">
 		<div class="container content-wrap clearfix">
@@ -218,7 +218,7 @@ label img {
 
 						   </div>
 
-						
+
 
 							<div class="col-lg-3 col-md-6 bottommargin">
 
@@ -238,7 +238,7 @@ label img {
 								</div>
 
 							</div>
-							
+
 							<div class="col-lg-3 col-md-6 bottommargin">
 
 								<div class="team">
@@ -262,7 +262,7 @@ label img {
 
 					<div class="row">
 
-							
+
 
 							<div class="col-lg-3 col-md-6 bottommargin">
 
@@ -320,8 +320,8 @@ label img {
 								</div>
 
 							</div>
-							
-							
+
+
 							<div class="col-lg-3 col-md-6 bottommargin">
 
 								<div class="team">
@@ -342,7 +342,7 @@ label img {
 							</div>
 
 					</div>
-					
+
 					<div class="row">
 
 							<div class="col-lg-4 col-md-6 bottommargin">
@@ -402,7 +402,7 @@ label img {
 
 							</div>
 
-						
+
 
 					</div>
 
@@ -624,7 +624,7 @@ label img {
                                     </div>
                                     <ul class="list-group" id="result"></ul>
                                     </div>
-                                    
+
 
                                   </div>
 
@@ -782,7 +782,7 @@ label img {
 
 							<div class="main-cards__btn-wrap margin-top-default">
 								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div>
-									<a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more" 
+									<a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more"
 									href="{{ route('about') }}">EN SAVOIR PLUS</a></div>
 							</div>
 
@@ -848,9 +848,9 @@ label img {
 	<script src="{{ asset('assets/js/typeahead.js') }}"></script>
 	<script>
 		var codes = @json($codes_array);
-				
+
 		autocomplete(document.getElementById("postal_code"), codes);
-					
-				   
+
+
 	</script>
 @endsection
