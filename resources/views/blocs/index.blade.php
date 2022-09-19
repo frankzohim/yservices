@@ -15,33 +15,49 @@
   </div>
 
   <div class="container mt-5">
+    @if($articlesCount >= 3)
         <h1 style="font-size:30px;">Les plus recents</h1>
         <div class="border-bottom"></div>
 
         <div class="row mt-5">
 
+            @foreach ($articleRecents as $article)
                 <div class="col-lg-4 mt-3">
-                    <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="...">
-
+                    <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
+                    <div class="text-center">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusamus minima, deserunt vitae repellendus eveniet voluptates saepe aperiam quos prae
+                    </div>
                 </div>
-                <div class="col-lg-4 mt-3">
-                    <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="...">
-
-                </div>
-                <div class="col-lg-4 mt-3">
-                    <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="...">
-
-                </div>
-
+            @endforeach
         </div>
+    @endif
+
+
+
 
 
 
             <div class="container mt-5">
 
             </div>
-            <h1 style="font-size:30px;">Tout les Articles</h1>
+            @if($articlesCount > 0)
+                <h1 style="font-size:30px;">Tout les Articles</h1>
+            @endif
+
             <div class="border-bottom"></div>
+            @forelse ($articles as $article)
+                <div class="row mt-5">
+                    <div class="col-lg-4 mt-3">
+                        <img src="{{ Storage::url($article->image_path) }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
+                        <div class="text-center">
+                            {{ article->title}}
+                        </div>
+                    </div>
+                </div>
+            @empty
+                <div class="text-center mt-5" style="color:gray">Aucun Article</div>
+            @endforelse
+
 
   </div>
 @endsection
