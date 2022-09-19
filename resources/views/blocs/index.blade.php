@@ -55,7 +55,7 @@
                     </div>
                 </div>
             @empty
-                <div class="text-center mt-5" style="color:gray">Aucun Article</div>
+                <div class="text-center mt-5" style="color:gray">Aucun Article disponible</div>
             @endforelse
 
 
