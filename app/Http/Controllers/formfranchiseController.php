@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Code;
 use App\Models\formfranchise;
+use App\Mail\FranchiseMail;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
@@ -66,7 +68,7 @@ class formfranchiseController extends Controller
              return Redirect::back()->with('update_failure','Code postal invalide')->withInput();
 
 
-        $franchiseuser = formfranchise::create([
+        $franchise = formfranchise::create([
             'research'=>$request->research,
             'civility'=>$request->civility,
             'name' => $request->name,
@@ -84,6 +86,9 @@ class formfranchiseController extends Controller
             'news'=>$request->news,
         ]);
 
+        //Sendig mail to admin
+            Mail::to("delanofofe@gmail.com")->send(new FranchiseMail($franchise));
+            Mail::to("pauline.youdom@techwise.fr")->send(new FranchiseMail($franchise));
         return view('clients.confirmfranchise');
 
     }
