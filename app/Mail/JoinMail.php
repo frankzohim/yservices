@@ -20,7 +20,7 @@ class JoinMail extends Mailable
      public $join;
     public function __construct($join)
     {
-        $this->join=$join;
+        $this->join = $join;
     }
 
     /**
@@ -30,8 +30,8 @@ class JoinMail extends Mailable
      */
     public function build()
     {
-        return $this->subject("Youdom-Care:Rejoindre-nous")
-
-        ->markdown('mail.join-mail');
+       return $this->from('contact@stillforce.tech')
+            ->subject('Nouvelle entrée, formulaire nous rejoindre')
+            ->view('mail.join-mail');
     }
 }

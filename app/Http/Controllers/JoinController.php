@@ -56,7 +56,8 @@ class JoinController extends Controller
         $join->cv=$request->file('cv')->store('public/cv');
 
         if($join->save()){
-            //Mail::to('contact@youdom-care.com')->send(new JoinMail($join));
+            Mail::to("delanofofe@gmail.com")->send(new JoinMail($join));
+            Mail::to("pauline.youdom@techwise.fr")->send(new JoinMail($join));
             return view('clients.join-confirm');
         }else{
             return redirect()->back()->with('update_failure','Une erreur est survenue, veuillez réessayez plutard');

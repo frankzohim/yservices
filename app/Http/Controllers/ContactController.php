@@ -74,7 +74,7 @@ class ContactController extends Controller
             $postal_code = $data[0];
         }
         else
-             return Redirect::back()->with('update_failure','Code postal invalide')->withInput();
+            return redirect()->route('contact.create')->with('update_failure','Code postal invalide');
 
         $contact=Contact::create([
             'name'=>$request->name,
@@ -87,7 +87,11 @@ class ContactController extends Controller
             'message'=>$request->message
         ]);
 
-        //Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
+
+
+        Mail::to("delanofofe@gmail.com")->send(new ContactMail($contact));
+        Mail::to("pauline.youdom@techwise.fr")->send(new ContactMail($contact));
+
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');
     }

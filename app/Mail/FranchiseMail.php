@@ -7,8 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-
-class NeedEmail extends Mailable
+class FranchiseMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,15 +16,10 @@ class NeedEmail extends Mailable
      *
      * @return void
      */
-      /**
-     * Product Data as an Array
-     * @var array
-     */
-
-     public $need;
-    public function __construct($need)
+    public $franchise;
+    public function __construct($franchise)
     {
-        $this->need = $need;
+        $this->franchise = $franchise;
     }
 
     /**
@@ -35,8 +29,8 @@ class NeedEmail extends Mailable
      */
     public function build()
     {
-       return $this->from('contact@stillforce.tech')
-            ->subject('Nouvelle inscription Youdom Care')
-            ->view('mail.need-mail');
+        return $this->from('contact@stillforce.tech')
+            ->subject('Nouvelle demande de franchise, Youdom Care')
+            ->view('mail.franchise-mail');
     }
 }
