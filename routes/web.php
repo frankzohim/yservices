@@ -39,6 +39,12 @@ Route::get('/', function () {
     return view('homepage',compact('codes_array'));
 })->name('homepage');
 
+
+
+Route::get('mail', function () {
+    return view('mail.template');
+})->name('mail');
+
 Route::get('about', function () {
     return view('about');
 })->name('about');

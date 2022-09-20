@@ -285,6 +285,7 @@
 
                                     <div class="col-md-12{{ $errors->has('town') ? ' has-danger' : '' }}">
                                         <div class="input-group">
+                                            <label for="town" style="color: #1b138a; font-size:15px;">Saissisez les premiers chiffres du code postal</label>
                                             <input type="text"
                                                 class="form-control{{ $errors->has('town') ? ' is-invalid' : '' }}"
                                                 placeholder="{{ __('Dans quelle ville souhaitez vous ouvrir une agence?') }}"

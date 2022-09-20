@@ -29,7 +29,9 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Youdom care: Contact')
-        ->markdown('mail.contact-mail');
+        return $this->from('contact@stillforce.tech')
+            ->subject('Nouvelle entrée, formulaire de contact')
+            ->view('mail.contact-mail');
+
     }
 }

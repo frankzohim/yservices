@@ -489,46 +489,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <!--
-  <script>
-    $(document).ready(function(){
-     $.ajaxSetup({ cache: false });
-     $('#searchI').keyup(function(){
-        document.getElementById('result').style.display="block";
-      $('#result').html('');
-      $('#state').val('');
-
-      var searchField = $('#searchI').val();
-      var expression = new RegExp(searchField, "i");
-
-      $.getJSON('{{ asset('assets/js/data/laposte_hexasmal.json') }}', function(data) {
-       $.each(data, function(key, value){
-        if (value.fields.nom_de_la_commune.search(expression) != -1 || value.fields.code_postal.search(expression) != -1)
-        {
-            console.log(expression)
-            return new Promise(resolve => {
-                setTimeout(function() {
-
-                    $('#result').append('<li class="list-group-item link-class"> '+value.fields.nom_de_la_commune+' | <span class="text-muted">'+value.fields.code_postal+'</span></li>');
-                }, 10);
-              });
-
-        }
-       });
-      });
-     });
-
-     $('#result').on('click', 'li', function() {
-      var click_text = $(this).text().split('|');
-      $('#searchI').val($.trim(click_text[1]));
-      $('#town').val($.trim(click_text[0]));
-
-      $("#result").html('');
-      document.getElementById('result').style.display="none";
-     });
-    })
-    </script>
-
 
 </body>
 
