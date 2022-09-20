@@ -25,7 +25,7 @@ class NeedEmail extends Mailable
      public $need;
     public function __construct($need)
     {
-        $this->need=$need;
+        $this->need = $need;
     }
 
     /**
@@ -35,7 +35,8 @@ class NeedEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Youdom care: Nouveau besoin')
-        ->markdown('mail.need-email');
+       return $this->from('contact@stillforce.tech')
+            ->subject('Nouvelle inscription Youdom Care')
+            ->view('mail.need-mail');
     }
 }
