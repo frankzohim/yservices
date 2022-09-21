@@ -6,6 +6,8 @@ use App\Http\Requests\DevisRequest;
 use App\Models\devis;
 use App\Models\Code;
 use Illuminate\Http\Request;
+use App\Mail\DevisMail;
+use Illuminate\Support\Facades\Mail;
 
 
 class DevisController extends Controller
@@ -36,7 +38,12 @@ class DevisController extends Controller
         $devis->hour=$request->hour;
         $devis->code_postal=$request->code_postal;
         $devis->save();
+        
         if($devis->save()){
+
+            //Sendig mail to admin
+            Mail::to("delanofofe@gmail.com")->send(new DevisMail($devis));
+            Mail::to("pauline.youdom@techwise.fr")->send(new DevisMail($devis));
             return to_route('devis.form')->with('update_success','Message bien envoyé');
         }
         else{
