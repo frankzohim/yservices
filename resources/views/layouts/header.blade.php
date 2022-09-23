@@ -133,7 +133,7 @@
 
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="#">Blog</a>
+									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('bloc.index') }}">Blog</a>
 									</li>
 								</ul>
 						</nav>

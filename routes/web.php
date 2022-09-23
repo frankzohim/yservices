@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\BlocController;
 use App\Models\Code;
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,12 @@ Route::get('/', function () {
         }
     return view('homepage',compact('codes_array'));
 })->name('homepage');
+
+
+
+Route::get('mail', function () {
+    return view('mail.template');
+})->name('mail');
 
 Route::get('about', function () {
     return view('about');
@@ -141,7 +148,7 @@ Route::group(['prefix' => 'clients'], function () {
         Route::resource('articles', ArticleController::class);
     });
 
-
+Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])

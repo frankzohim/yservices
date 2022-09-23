@@ -7,8 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-
-class NeedEmail extends Mailable
+class DevisMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,15 +16,10 @@ class NeedEmail extends Mailable
      *
      * @return void
      */
-      /**
-     * Product Data as an Array
-     * @var array
-     */
-
-     public $need;
-    public function __construct($need)
+    public $devis;
+    public function __construct($devis)
     {
-        $this->need = $need;
+        $this->devis = $devis;
     }
 
     /**
@@ -35,8 +29,8 @@ class NeedEmail extends Mailable
      */
     public function build()
     {
-       return $this->from('contact@stillforce.tech')
-            ->subject('Nouvelle inscription Youdom Care')
-            ->view('mail.need-mail');
+        return $this->from('contact@stillforce.tech')
+            ->subject('Nouvelle demande de devis, Youdom Care')
+            ->view('mail.devis-mail');
     }
 }

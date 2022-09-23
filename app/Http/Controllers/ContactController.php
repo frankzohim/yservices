@@ -89,7 +89,8 @@ class ContactController extends Controller
 
 
 
-        Mail::to("contact@youdom-care.com")->send(new ContactMail($contact));
+        Mail::to("delanofofe@gmail.com")->send(new ContactMail($contact));
+        Mail::to("pauline.youdom@techwise.fr")->send(new ContactMail($contact));
 
 
         return redirect()->route('contact.create')->with('update_success','Message bien envoyé');

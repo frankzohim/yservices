@@ -487,6 +487,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+<<<<<<< HEAD
   <!--
   <script>
     $(document).ready(function(){
@@ -526,6 +527,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
      });
     })
     </script>
+=======
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+>>>>>>> 1029f536a40c7c1867f4849810338e2271ccb208
 
 
 </body>
