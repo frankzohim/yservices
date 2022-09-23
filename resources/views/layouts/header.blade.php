@@ -51,23 +51,47 @@
 										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('devis.form') }}"> Demandez un devis</a>
 									</li>
 
+
 									@auth
-										  <li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
+							<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help"> Mon Compte
+                                <ul >
+                                    <li><a href="#"><i data-feather="homepage"></i>Tableau de bord</a></li>
                             <form method="POST" action="{{ route('logout') }}" id="logout-form">
                               @csrf
                             </form>
-                            <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>Déconnexion</a>
+                           <li> <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>Déconnexion</a></li>
+                                </ul>
+                            </li>
 
-                    </li>
-									@endauth
+                            {{-- <ul class="header-dropdown">
+
+								<li class="onhover-dropdown mobile-account"> <i class="fa fa-user" aria-hidden="true"></i>
+									Mon Compte
+									<ul class="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
+										<li><a href="#"><i data-feather="user"></i>Editer le profil</a></li>
+										<li><a href="{{route('dashboard')}}"><i data-feather="home"></i>Tableau de Bord</a></li>
+										<form method="POST" action="{{ route('logout') }}" id="logout-form">
+										@csrf
+
+
+									</form>
+										<li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+									document.getElementById('logout-form').submit();"><i data-feather="log-out"></i>Déconnexion</a></li>
+									</ul>
+								</li>
+							</ul>--}}
+
+
+                            		@endauth
 									@guest
 										<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('login') }}">Mon Compte</a>
-									</li>
+									     </li>
 									@endguest
 
 								</ul>
 						</nav>
+
 
 					</div>
 

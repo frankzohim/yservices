@@ -152,8 +152,8 @@ color_1{
     :root {
         scroll-behavior: smooth
     }
-}
 
+}
 body {
     margin: 0;
     font-family: var(--bs-body-font-family);
