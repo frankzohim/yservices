@@ -40,6 +40,11 @@ Route::get('/', function () {
     return view('homepage',compact('codes_array'));
 })->name('homepage');
 
+Route::get('service/model', function () {
+    return view('services.service_model');
+})->name('service.model');
+
+
 
 
 Route::get('mail', function () {

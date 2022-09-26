@@ -73,6 +73,7 @@
 <meta name="description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 
 <meta name="keywords" content="Aide, aide à domicile, handicap, transport, personnes agées, youdom-care,  services à domicile, aide à domicile, aide aux repas, retour hospitalisation, voyage/evasion, aide à l'autonomie, Gardes non médicalisées, Accompagnements, Retour à domicile après hospitalisation, Aide-ménagère, Assistance administrative,Voyage & évasion,Aide et accompagnement des enfants malades ou handicapés,Transport et accompagnement de personnes handicapées et des PMR,Aide et accompagnement à domicile des personnes handicapées" />
+
 <meta name="og:title" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 <meta property="og:name" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 <meta property="og:description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
