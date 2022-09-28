@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\UserStoreRequest;
 
 class CreateController extends Controller
@@ -26,7 +27,7 @@ class CreateController extends Controller
             'email' => $request->email,
             'role_id' =>3,
             'agency_id' =>1,
-            'password'=>$password
+            'password'=>Hash::make($password)
         ]);
 
         return to_route('demandes.index');
