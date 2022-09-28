@@ -97,19 +97,20 @@
                     <div class="form-group has-danger">
                         <label class="sr-only" for="name">Nom</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
-                            <input type="text" name="name" class="form-control" id="name"
+                            <div class="input-group-addon" style="width: 2.6rem"></div>
+                            <input type="hidden" name="name" class="form-control" id="name"
                                    placeholder="" value="{{ $join->name ?? "none" }}" required autofocus>
                         </div>
                     </div>
                     <div class="form-group has-danger">
                         <label class="sr-only" for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
-                            <input type="text" name="email" class="form-control" id="email"
+                            <div class="input-group-addon" style="width: 2.6rem"></div>
+                            <input type="hidden" name="email" class="form-control" id="email"
                                    placeholder="" value="{{ $join->email ?? "none" }}" required autofocus>
                         </div>
                     </div>
+                    <p>Vous etes sur le point de créer un compte Intervenant de l'utilisateur {{ $join->name }}</p>
                 </div>
                 {{--  <div class="col-md-3">
                     <div class="form-control-feedback">

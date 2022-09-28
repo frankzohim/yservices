@@ -23,7 +23,7 @@ class CreateController extends Controller
 
     public function store(Request $request)
     {
-        $password = Str::random(3).''.rand( 10000, 99999 );
+        $password = Str::random(8).''.rand( 10000, 99999 );
 
         $user=User::create([
             'name' => $request->name,
