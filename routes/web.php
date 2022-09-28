@@ -158,6 +158,8 @@ Route::group(['prefix' => 'clients'], function () {
         //     return view('demandes.index');
         // }
         )->name('demande.CreateById');
+
+        Route::post("save",[CreateController::class,'store'])->name('demandes.store');
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');

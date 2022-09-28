@@ -88,7 +88,7 @@
             <td>{{ $join->postal_code }}</td>
 
             <td class="d-flex justify-content-evenly">
-                <a href="{{ route('demandes.create', $join->id) }}" class="btn-blue">
+                <a href="{{ route('demande.CreateById',$join->id) }}" class="btn-blue">
                     <button class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i></button>
                </a> &nbsp;
                 <a href="{{ route('demandes.show', $join->id) }}" class="btn-blue">

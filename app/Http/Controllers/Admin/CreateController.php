@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Join;
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserStoreRequest;
-use App\Models\User;
 
 class CreateController extends Controller
 {
@@ -19,11 +20,13 @@ class CreateController extends Controller
 
     public function store(Request $request)
     {
+        $password = Str::random(3).''.rand( 10000, 99999 );
         User::create([
             'name' => $request->name,
-            'email' => $request->description,
+            'email' => $request->email,
             'role_id' =>3,
-            'agency_id' =>1
+            'agency_id' =>1,
+            'password'=>$password
         ]);
 
         return to_route('demandes.index');
