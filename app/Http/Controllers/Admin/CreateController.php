@@ -50,7 +50,7 @@ class CreateController extends Controller
     {
         $password = Str::random(8).''.rand( 10000, 99999 );
 
-        $need=User::create([
+        $user=User::create([
             'name' => $request->name,
             'email' => $request->email,
             'role_id' =>2,
@@ -58,7 +58,7 @@ class CreateController extends Controller
             'password'=>Hash::make($password)
         ]);
 
-        //Mail::to("Bramslevel129@gmail.com")->send(new UserRegistration($user,$password));
+        Mail::to("Bramslevel129@gmail.com")->send(new UserRegistration($user,$password));
 
         return to_route('need.index');
     }
