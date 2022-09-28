@@ -164,6 +164,9 @@ Route::group(['prefix' => 'clients'], function () {
         )->name('demande.CreateById');
 
         Route::post("save",[CreateController::class,'store'])->name('demandes.store');
+
+        Route::get('needUser/{id}',[CreateController::class,'createUserById'])->name('need.createUser');
+        Route::get('need/store',[CreateController::class,'storeUser'])->name('need.storeUser');
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
