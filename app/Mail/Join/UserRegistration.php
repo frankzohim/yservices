@@ -16,9 +16,13 @@ class UserRegistration extends Mailable
      *
      * @return void
      */
-    public function __construct()
+
+     public $user;
+     public $password;
+    public function __construct($user,$password)
     {
-        //
+        $this->user=$user;
+        $this->password=$password;
     }
 
     /**
@@ -28,6 +32,8 @@ class UserRegistration extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->from('contact@stillforce.tech')
+        ->subject('Nouvel utilisateur créer')
+        ->view('mail.joins.UserRegistration');
     }
 }
