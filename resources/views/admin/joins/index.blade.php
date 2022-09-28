@@ -87,9 +87,20 @@
             <td>{{ $join->phone_number }}</td>
             <td>{{ $join->postal_code }}</td>
 
-            <td><a href=""><i class="fa fa-trash-alt"></i></a>
-                <a href=""><i class="fa fa-fw" aria-hidden="true" title="Copy to use info"></i></a></td>
-            </tr>
+            <td class="d-flex justify-content-evenly">
+                <a href="{{ route('demandes.create', $join->id) }}" class="btn-blue">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i></button>
+               </a> &nbsp;
+                <a href="{{ route('demandes.show', $join->id) }}" class="btn-blue">
+                     <button class="btn btn-primary btn-sm"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button>
+                </a> &nbsp;
+                <form method="POST" action="{{ route('demandes.destroy', $join->id) }}" onsubmit="return confirm('voulez-vous supprimer?')">
+                 @csrf
+                 @method('delete')
+                 <button type="submit" class="btn btn-danger btn-sm" ><i class="fa fa-fw" aria-hidden="true" title="Suprimer"></i></button>
+
+                </form>
+             </td>
         @endforeach
 
 
