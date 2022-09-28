@@ -44,6 +44,10 @@ Route::get('service/model', function () {
     return view('services.service_model');
 })->name('service.model');
 
+Route::get('garde-nuit', function () {
+    return view('services.garde-nuit');
+})->name('garde-nuit');
+
 
 
 
