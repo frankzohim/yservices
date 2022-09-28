@@ -17,7 +17,7 @@ class CreateController extends Controller
         return view('admin.joins.create', compact('join'));
     }
 
-    public function store(UserStoreRequest $request)
+    public function store(Request $request)
     {
         User::create([
             'name' => $request->name,
