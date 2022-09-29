@@ -97,9 +97,9 @@ class NeedController extends Controller
 
     public function listCustomers(){
 
-        $Customers=User::where('role_id',2)->get();
+        $customers=User::where('role_id',2)->get();
 
-
+        return view('admin.Need.listCustomers',compact('customers'));
     }
 }
 
