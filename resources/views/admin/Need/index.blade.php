@@ -91,8 +91,11 @@
             <td>{{ $need->postal_code }}</td>
             <td>{{ $need->town }}</td>
             <td class="d-flex justify-content-evenly">
-               <a href="{{ route('need.show', $need->id) }}" class="btn-blue"> 
-                    <button class="btn btn-primary btn-sm"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button> 
+                <a href="{{ route('need.createUser',$need->id) }}" class="btn-blue">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i></button>
+               </a> &nbsp;
+               <a href="{{ route('need.show', $need->id) }}" class="btn-blue">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button>
                </a> &nbsp;
                <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
                 @csrf
