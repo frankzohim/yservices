@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Planification;
 
-use App\Models\Need;
-use App\Models\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
-class NeedController extends Controller
+class PlanificationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +14,7 @@ class NeedController extends Controller
      */
     public function index()
     {
-        $needs=Need::all();
-        return view("admin.Need.index",compact('needs'));
+        //
     }
 
     /**
@@ -28,7 +25,6 @@ class NeedController extends Controller
     public function create()
     {
         //
-        return view('admin.Need.create');
     }
 
     /**
@@ -51,8 +47,6 @@ class NeedController extends Controller
     public function show($id)
     {
         //
-        $need=Need::find($id);
-        return view('admin.Need.show', compact('need'));
     }
 
     /**
@@ -64,8 +58,6 @@ class NeedController extends Controller
     public function edit($id)
     {
         //
-        $need = Need::find($id);
-        return view('admin.Need.edit', compact('need'));
     }
 
     /**
@@ -89,17 +81,5 @@ class NeedController extends Controller
     public function destroy($id)
     {
         //
-        $needs= Need:: find($id);
-        $needs->delete();
-
-        return to_route('need.index');
-    }
-
-    public function listCustomers(){
-
-        $Customers=User::where('role_id',2)->get();
-
-
     }
 }
-

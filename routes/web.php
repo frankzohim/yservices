@@ -17,6 +17,8 @@ use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\Planification\PlanificationController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -174,6 +176,6 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
-
-
+    Route::resources('/planifications',PlanificationController::class);
+    Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
 });
