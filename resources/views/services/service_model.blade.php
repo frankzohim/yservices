@@ -5,7 +5,8 @@
 <style>
 
 	.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{padding-right:15px;padding-left:15px}
-.row{margin-right:-15px;margin-left:-15px}.row>*{padding-right:15px;padding-left:15px}.row.g-0{margin-right:0;margin-left:0}.row.g-0>*{padding-right:0;padding-left:0}header [class^=container-] [class*=" col-"],header [class^=container-] [class^=col-]{position:relative;padding-left:15px;padding-right:15px}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:auto}}.alt-font{font-family:Poppins,sans-serif}
+.row{margin-right:-15px;margin-left:-15px}.row>*{padding-right:15px;padding-left:15px}.row.g-0{margin-right:0;margin-left:0}.row.g-0>*{padding-right:0;padding-left:0}header [class^=container-] [class*=" col-"],header [class^=container-] [class^=col-]{position:relative;padding-left:15px;padding-right:15px}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:auto}}
+.alt-font{font-family:Poppins,sans-serif}
 .main-font{font-family:Roboto,sans-serif!important}h1,h2,h3,h4,h5,h6{margin:0 0 25px 0;padding:0;letter-spacing:-.5px;font-weight:inherit}h1{font-size:5rem;line-height:5rem}h2{font-size:3.9rem;line-height:4.2rem}h3{font-size:3.4rem;line-height:3.9rem}h4{font-size:2.85rem;line-height:3.4rem}h5{font-size:2.3rem;line-height:3rem}h6{font-size:1.8rem;line-height:2.5rem}
 .content-wrap{position:relative;padding:80px 0;overflow:hidden; background-color: white;}
 	.blog-content,.blog-right-side-bar .blog-sidebar{float:right}
