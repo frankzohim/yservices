@@ -445,7 +445,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 		</main>
 
 		 @include('layouts.footer')
-
+    @if(session()->has('nos-cookies'))
+     <script>
+        console.log('hello cookiees');
+     </script>
+    @else
 		<div class="cookie-info cookie-info_hidden" data-test="cookie-info">
 
 				<aside class="cookie-info__card-full cookie-info_hidden" data-test="cookie-info-full">
@@ -459,7 +463,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 				<aside class="cookie-info__card" data-test="cookie-info-card">
 						<div class="cookie-info__card-top">
 							<div class=" hide-mobile" aria-label="youdom-care">
-								<img src="_next/static/media/logo.png"   />
+								<img src="{{ asset('_next/static/media/logo-care.png') }}"   />
 							</div>
 							<button class="button-clear link link_underline text_sm" data-accept-cookie="true" data-test="cookie-info-card-continue-without-accepting" data-inner-html="Continuer sans accepter">
 							</button>
@@ -476,6 +480,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 						</div>
 				</aside>
 		</div>
+		@endif
+
+	 
+	 	
 
 	</div>
 
@@ -510,6 +518,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+
+
+  	<script defer="" src="{{ asset('_next/static/chunks/UWd0_aoUPydEnjwz1DTpB-src-pages--locale--index-client.js') }}" type="text/javascript">
+	</script>
 
 
 </body>
