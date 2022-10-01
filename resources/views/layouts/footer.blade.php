@@ -414,8 +414,8 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-3 text-center text-md-start sm-margin-20px-bottom" style="margin-top: 20px">
                            <ul class="footer-links">
-															<li class="text  color_grey" style="white-space: nowrap"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Confidentialité</a></li>
-															<li class="text  color_grey"><a href="#" class="link" target="_blank" rel="noopener noreferrer">Cookies</a></li>
+															<li class="text  color_grey"><a href="{{ route('cgu') }}" class="link" rel="noopener noreferrer">CGU</a></li>
+															<li class="text  color_grey" style="white-space: nowrap"><a href="{{ route('confidentialite') }}" class="link"  rel="noopener noreferrer">Confidentialité</a></li>
 														</ul>
                         </div>
                         <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">

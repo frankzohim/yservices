@@ -1,21 +1,22 @@
 <?php
 
+use App\Models\Code;
 use App\Models\formfranchise;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlocController;
 use App\Http\Controllers\JoinController;
 use App\Http\Controllers\NeedController;
 use App\Http\Controllers\DevisController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TypeAheadController;
+use App\Http\Controllers\Admin\CreateController;
 use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\formfranchiseController;
 use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
-use App\Http\Controllers\BlocController;
-use App\Models\Code;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,8 +38,27 @@ Route::get('/', function () {
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
         }
+
+        session()->put('nos-cookies', true);
     return view('homepage',compact('codes_array'));
 })->name('homepage');
+
+Route::get('service/model', function () {
+    return view('services.service_model');
+})->name('service.model');
+
+Route::get('cgu', function () {
+    return view('cgu');
+})->name('cgu');
+
+Route::get('confidentialite', function () {
+    return view('confidentialite');
+})->name('confidentialite');
+
+Route::get('garde-nuit', function () {
+    return view('services.garde-nuit');
+})->name('garde-nuit');
+
 
 
 
@@ -146,6 +166,17 @@ Route::group(['prefix' => 'clients'], function () {
         Route::resource('/demandes',AdminJoinController::class);
         Route::resource('/contacts',AdminContactController::class);
         Route::resource('articles', ArticleController::class);
+        Route::get('/role', [RoleController::class, 'index'])->name('role.index');
+        Route::get('demande/{id}', [CreateController::class, 'CreateById']
+        // {
+        //     return view('demandes.index');
+        // }
+        )->name('demande.CreateById');
+
+        Route::post("save",[CreateController::class,'store'])->name('demandes.store');
+
+        Route::get('needUser/{id}',[CreateController::class,'createUserById'])->name('need.createUser');
+        Route::post('need/store',[CreateController::class,'storeUser'])->name('need.storeUser');
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
