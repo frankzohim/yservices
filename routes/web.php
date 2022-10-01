@@ -40,12 +40,22 @@ Route::get('/', function () {
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
         }
+
+        session()->put('nos-cookies', true);
     return view('homepage',compact('codes_array'));
 })->name('homepage');
 
 Route::get('service/model', function () {
     return view('services.service_model');
 })->name('service.model');
+
+Route::get('cgu', function () {
+    return view('cgu');
+})->name('cgu');
+
+Route::get('confidentialite', function () {
+    return view('confidentialite');
+})->name('confidentialite');
 
 Route::get('garde-nuit', function () {
     return view('services.garde-nuit');

@@ -445,13 +445,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 		</main>
 
 		 @include('layouts.footer')
-
+    @if(session()->has('nos-cookes'))
+     <script>
+        console.log('hello cookiees');
+     </script>
+    @else
 		<div class="cookie-info cookie-info_hidden" data-test="cookie-info">
 
 				<aside class="cookie-info__card-full cookie-info_hidden" data-test="cookie-info-full">
 
 					<div class="cookie-info__card-full-content">
-						<p class="heading cookie-info__heading" data-inner-html="Gestion cookies"></p><p class="text text_sm" data-inner-html="youdom-care uses cookies 🍪 to ensure correct functioning and security of the website, to improve and personalise your experience with us. Some cookies require your consent. By clicking Accept you agree to the use of cookies in this way. You can change your cookie settings anytime. For more information please read out &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://youdom-care.com/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Cookie Policy&lt;/a&gt;."></p><ul class="cookie-info__control-list"><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_disabled checkbox-switch_theme_blue checkbox-switch_on checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_essential" data-test="cookie-info-full-essential"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control disabled checked" disabled="" checked="" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Essential cookies" data-inner-html="Essential cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are strictly necessary to make our website usable by enabling basic functions like page navigation, website security or support via chat. You can&#x27;t decline the usage of these cookies."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_analytics" data-test="cookie-info-full-analytics"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Analytics cookies" data-inner-html="Analytics cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies help us to count visits and traffic sources in order to monitor, optimize communication and improve the performance of our website. We get information about how visitors move through pages of the website. If you don&#x27;t allow these cookies, we will not know when you visited our site."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_marketing" data-test="cookie-info-full-marketing"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Marketing cookies" data-inner-html="Marketing cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are used to serve ads that are relevant to you and to limit the number of times an ad is shown. We also share information about your use of our website with our social media partners. This data may be combined with other information about you."></p></li></ul><div class="cookie-info__buttons-wrap"><button class="cookie-info__btn" type="button" data-inner-html="Accept all" data-test="cookie-info-full-accept-all"></button><button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Confirm selection" data-accept-cookie="true" data-test="cookie-info-full-confirm-selection"></button></div>
+						<p class="heading cookie-info__heading" data-inner-html="BIENVENUE SUR LE SITE DE YOUDOM-CARE"></p>
+            
+            <p class="text text_sm" data-inner-html="En cliquant sur « j’accepte » vous autorisez l’installation de cookies et la collecte de vos données par l’ensemble des marques du groupe youdom-services ainsi que de services tiers à des fins de mesure d'audience, partage avec les réseaux sociaux, personnalisation des contenus, profilage et publicité ciblée. &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://youdom-care.com/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Cookie Policy&lt;/a&gt;."></p><ul class="cookie-info__control-list"><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_disabled checkbox-switch_theme_blue checkbox-switch_on checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_essential" data-test="cookie-info-full-essential"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control disabled checked" disabled="" checked="" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Essential cookies" data-inner-html="Essential cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are strictly necessary to make our website usable by enabling basic functions like page navigation, website security or support via chat. You can&#x27;t decline the usage of these cookies."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_analytics" data-test="cookie-info-full-analytics"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Analytics cookies" data-inner-html="Analytics cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies help us to count visits and traffic sources in order to monitor, optimize communication and improve the performance of our website. We get information about how visitors move through pages of the website. If you don&#x27;t allow these cookies, we will not know when you visited our site."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_marketing" data-test="cookie-info-full-marketing"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Marketing cookies" data-inner-html="Marketing cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are used to serve ads that are relevant to you and to limit the number of times an ad is shown. We also share information about your use of our website with our social media partners. This data may be combined with other information about you."></p></li></ul><div class="cookie-info__buttons-wrap"><button class="cookie-info__btn" type="button" data-inner-html="Accept all" data-test="cookie-info-full-accept-all"></button><button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Confirm selection" data-accept-cookie="true" data-test="cookie-info-full-confirm-selection"></button></div>
 					</div>
 
 				</aside>
@@ -459,13 +465,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 				<aside class="cookie-info__card" data-test="cookie-info-card">
 						<div class="cookie-info__card-top">
 							<div class=" hide-mobile" aria-label="youdom-care">
-								<img src="_next/static/media/logo.png"   />
+								<img src="{{ asset('_next/static/media/logo-care.png') }}"   />
 							</div>
 							<button class="button-clear link link_underline text_sm" data-accept-cookie="true" data-test="cookie-info-card-continue-without-accepting" data-inner-html="Continuer sans accepter">
 							</button>
 						</div>
 
-						<p class="text text_sm" data-inner-html="Youdom Services uses cookies 🍪 pour assurer le bon fonctionnement et la sécurité du site Web, pour améliorer et personnaliser votre expérience avec nous. Certains cookies nécessitent votre consentement. En cliquant sur Accepter, vous acceptez l'utilisation de cookies de cette manière. Vous pouvez modifier vos paramètres de cookies à tout moment. Pour plus d'informations, veuillez lire notre &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://youdom-care.com/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Politique Cookies&lt;/a&gt;.">
+						<p class="text text_sm" data-inner-html="<b>Ce site Web utilise des cookies </b> <br> Avec votre accord, nos partenaires et nous utilisons des cookies ou technologies similaires pour stocker et accéder à des informations personnelles comme votre visite sur ce site. Vous pouvez librement retirer votre consentement ou vous opposer aux traitements basés sur l'intérêt légitime à tout moment en cliquant sur <b>« Gérer les  cookies»</b> ou dans notre politique de confidentialité sur ce site. <br> <br>  <b>Avec nos partenaires, nous traitons les données suivantes :</b> <br>
+Données de géolocalisation précises et identification par analyse du terminal, Mesure d'audience, Publicités et contenu personnalisés, mesure de performance des publicités et du contenu, données d’audience et développement de produit, Statistiques d'audience anonymes, Stocker et/ou accéder à des informations sur un terminal.
+">
 						</p>
 
 						<div class="cookie-info__buttons-wrap">
@@ -476,6 +484,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 						</div>
 				</aside>
 		</div>
+		@endif
+
+	 
+	 	
 
 	</div>
 
@@ -510,6 +522,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+
+
+  	<script defer="" src="{{ asset('_next/static/chunks/UWd0_aoUPydEnjwz1DTpB-src-pages--locale--index-client.js') }}" type="text/javascript">
+	</script>
 
 
 </body>
