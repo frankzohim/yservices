@@ -176,6 +176,6 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
-    Route::resources('/planifications',PlanificationController::class);
+    Route::resource('/planifications',PlanificationController::class);
     Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
 });

@@ -4,6 +4,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use phpDocumentor\Reflection\Types\Nullable;
 
 return new class extends Migration
 {
@@ -29,11 +30,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('address');
-
-            $table->foreignIdFor(User::class)
-            ->constrained()
-            ->onUpdate('restrict')
-            ->onDelete('restrict');
+            $table->string('user_id')->nullable();
             $table->timestamps();
         });
     }
