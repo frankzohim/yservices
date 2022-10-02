@@ -100,8 +100,37 @@
                             <div class="input-group-addon" style="width: 2.6rem"></div>
                             <input type="hidden" name="name" class="form-control" id="name"
                                    placeholder="" value="{{ $need->lastname ?? "none" }}" required autofocus>
+
                         </div>
                     </div>
+                    <input type="hidden" name="town" class="form-control" id="name"
+                    placeholder="" value="{{ $need->town ?? "none" }}" required autofocus>
+                    <input type="hidden" name="firstname" class="form-control" id="name"
+                    placeholder="" value="{{ $need->firstname ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="start_at" class="form-control" id="name"
+                    placeholder="" value="{{ $need->start_at ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="services" class="form-control" id="name"
+                    placeholder="" value="{{ $need->services ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="data_times" class="form-control" id="name"
+                    placeholder="" value="{{ $need->data_times ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="for_who" class="form-control" id="name"
+                    placeholder="" value="{{ $need->for_who ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="gender" class="form-control" id="name"
+                    placeholder="" value="{{ $need->gender ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="postal_code" class="form-control" id="name"
+                    placeholder="" value="{{ $need->postal_code ?? "none" }}" required autofocus>
+                    <input type="hidden" name="phone" class="form-control" id="name"
+                    placeholder="" value="{{ $need->phone ?? "none" }}" required autofocus>
+                    <input type="hidden" name="address" class="form-control" id="name"
+                    placeholder="" value="{{ $need->address ?? "none" }}" required autofocus>
+                    <input type="hidden" name="id" class="form-control" id="name"
+                    placeholder="" value="{{ $need->id ?? "none" }}" required autofocus>
                     <div class="form-group has-danger">
                         <label class="sr-only" for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">

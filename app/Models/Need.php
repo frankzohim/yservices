@@ -23,7 +23,8 @@ class need extends Model
         'town',
         'email',
         'phone',
-        'address'
+        'address',
+        'user_id'
     ];
 
     public function users(): BelongsToMany
