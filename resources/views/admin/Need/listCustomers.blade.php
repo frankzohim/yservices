@@ -10,8 +10,8 @@
     <div class="page-title-icon">
     <i class="pe-7s-medal icon-gradient bg-tempting-azure"></i>
     </div>
-    <div>Besoins
-    <div class="page-title-subheading">Listes Des besoins </div>
+    <div>Planification
+    <div class="page-title-subheading">Liste des utilisateurs </div>
     </div>
     </div>
     <div class="page-title-actions">
@@ -59,50 +59,25 @@
     </div> </div>
     </div> <div class="main-card mb-3 card">
     <div class="card-body">
-        <button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i> Excel</button>
+
         {{--  <a class="mb-2 mr-2 btn btn-primary flex justify-end" href="{{ route('need.create') }}">Creer</a>  --}}
 
     <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
     <thead>
     <tr>
 
-    <th>Nom Complet</th>
+    <th>Nom</th>
     <th>Email</th>
-     <th>Services souhaités</th>
-
-     <th>Date debut</th>
-    <th>Telephone</th>
-    <th>Adresse</th>
-    <th>Code Postal</th>
-    <th>Ville</th>
     <th>Action</th>
     </tr>
     </thead>
     <tbody>
-        @foreach ($needs as $need  )
+        @foreach ($customers as $customer  )
         <tr>
-            <td>{{ $need->firstname }} {{ $need->lastname }}</td>
-            <td>{{ $need->email }}</td>
-            <td>{{ $need->services }}</td>
-
-            <td>{{ $need->start_at }}</td>
-            <td>{{ $need->phone }}</td>
-            <td>{{ $need->address }}</td>
-            <td>{{ $need->postal_code }}</td>
-            <td>{{ $need->town }}</td>
+            <td>{{ $customer->name }}</td>
+            <td>{{ $customer->email }}</td>
             <td class="d-flex justify-content-evenly">
-                <a href="{{ route('need.createUser',$need->id) }}" class="btn-blue">
-                    <button class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i></button>
-               </a> &nbsp;
-               <a href="{{ route('need.show', $need->id) }}" class="btn-blue">
-                    <button class="btn btn-primary btn-sm"><i class="fa fa-fw" aria-hidden="true" title="visualiser"></i></button>
-               </a> &nbsp;
-               <form method="POST" action="{{ route('need.destroy', $need->id) }}" onsubmit="return confirm('Are you sure?')">
-                @csrf
-                @method('delete')
-                <button type="submit" class="btn btn-danger btn-sm" ><i class="fa fa-fw" aria-hidden="true" title="Suprimer"></i></button>
-
-               </form>
+                <button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i>Planifier</button>
             </td>
             </tr>
         @endforeach
@@ -113,15 +88,8 @@
     <tfoot>
         <tr>
 
-            <th>Nom Complet</th>
+            <th>Nom</th>
             <th>Email</th>
-             <th>Services souhaités</th>
-
-             <th>Date debut</th>
-            <th>Telephone</th>
-            <th>Adresse</th>
-            <th>Code Postal</th>
-            <th>Ville</th>
             <th>Action</th>
             </tr>
     </tfoot>

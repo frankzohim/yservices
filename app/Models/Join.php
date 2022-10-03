@@ -21,6 +21,7 @@ class join extends Model
         'job',
         'available',
         'diploma',
-        'cv'
+        'cv',
+        'user_id'
     ];
 }

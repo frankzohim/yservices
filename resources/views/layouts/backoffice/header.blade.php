@@ -96,7 +96,7 @@
     <ul class="nav flex-column">
     <li class="nav-item-header nav-item"> Système</li>
     <li class="nav-item">
-    <a href="" class="nav-link">Planification</a>
+    <a href="{{ route('list.users') }}" class="nav-link">Planification</a>
     </li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link"> Rôles

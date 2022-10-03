@@ -188,4 +188,5 @@ Route::group(['middleware' => ['auth']], function () {
         ->name('dashboard');
     Route::resource('/planifications',PlanificationController::class);
     Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
+    Route::get('planification/chooseUser{id}',[AdminNeedController::class,'chooseplanification'])->name('choose.planification');
 });
