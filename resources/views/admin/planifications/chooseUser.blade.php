@@ -4,10 +4,13 @@
 <style>
     .choose:hover{
         background-color: blue;
+        color:white;
     }
     .choose{
         background-color: white;
     }
+
+
 </style>
 
 @section('content')
@@ -71,16 +74,93 @@
 
         {{--  <a class="mb-2 mr-2 btn btn-primary flex justify-end" href="{{ route('need.create') }}">Creer</a>  --}}
 
-        <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-            <div class="card-body choose">
-                dd
+        <h1 class="text-center">Choisir un intervenant</h1>
+
+        <div class="container text-center">
+            <div class="row g-2">
+              <div class="col-4 mt-3">
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4 mt-3">
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-4 mt-3">
+
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+
+
+              </div>
+              <div class="col-4 mt-5">
+
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+
+
+              </div>
+              <div class="col-4 mt-5">
+
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+
+
+              </div>
+
+              <div class="col-4 mt-3">
+
+                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                    <div class="card-body choose">
+                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                        <div>
+                            <h2 class="mt-3 color-white">Name</h2>
+                        </div>
+                    </div>
+                  </div>
+
+
+              </div>
             </div>
           </div>
-          <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-            <div class="card-body choose">
-                dd
-            </div>
-          </div>
+
+
     </div>
     </div>
     </div>
