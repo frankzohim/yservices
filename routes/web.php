@@ -179,6 +179,10 @@ Route::group(['prefix' => 'clients'], function () {
 
         Route::get('needUser/{id}',[CreateController::class,'createUserById'])->name('need.createUser');
         Route::post('need/store',[CreateController::class,'storeUser'])->name('need.storeUser');
+
+        Route::resource('/planifications',PlanificationController::class);
+        Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
+        Route::get('planification/chooseUser{id}',[AdminNeedController::class,'chooseplanification'])->name('choose.planification');
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
@@ -186,7 +190,5 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
-    Route::resource('/planifications',PlanificationController::class);
-    Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
-    Route::get('planification/chooseUser{id}',[AdminNeedController::class,'chooseplanification'])->name('choose.planification');
+
 });

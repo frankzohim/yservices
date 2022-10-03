@@ -101,5 +101,13 @@ class NeedController extends Controller
 
         return view('admin.Need.listCustomers',compact('customers'));
     }
+
+    public function chooseplanification(Request $request){
+
+        $intervenant=User::where('role_id',3)->get();
+
+        return view('admin.planifications.chooseUser');
+
+    }
 }
 

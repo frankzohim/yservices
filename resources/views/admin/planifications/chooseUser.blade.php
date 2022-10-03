@@ -1,5 +1,14 @@
 @extends('layouts.backoffice.app')
-@section('title', __('Listes Des clients'))
+@section('title', __('Listes Des Intervenants'))
+
+<style>
+    .choose:hover{
+        background-color: blue;
+    }
+    .choose{
+        background-color: white;
+    }
+</style>
 
 @section('content')
 
@@ -62,41 +71,16 @@
 
         {{--  <a class="mb-2 mr-2 btn btn-primary flex justify-end" href="{{ route('need.create') }}">Creer</a>  --}}
 
-    <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
-    <thead>
-    <tr>
-
-    <th>Nom</th>
-    <th>Email</th>
-    <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-        @foreach ($customers as $customer  )
-        <tr>
-            <form method="POST">
-                <input type="hidden" name="id" value="{{ $customer->id }}">
-            </form>
-            <td>{{ $customer->name }}</td>
-            <td>{{ $customer->email }}</td>
-            <td class="d-flex justify-content-evenly">
-               <a href="{{ route('choose.planification',$customer->id) }}"><button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i>Planifier</button></a>
-            </td>
-            </tr>
-        @endforeach
-
-
-
-    </tbody>
-    <tfoot>
-        <tr>
-
-            <th>Nom</th>
-            <th>Email</th>
-            <th>Action</th>
-            </tr>
-    </tfoot>
-    </table>
+        <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+            <div class="card-body choose">
+                dd
+            </div>
+          </div>
+          <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+            <div class="card-body choose">
+                dd
+            </div>
+          </div>
     </div>
     </div>
     </div>
