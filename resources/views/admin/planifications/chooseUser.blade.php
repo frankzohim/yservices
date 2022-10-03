@@ -78,85 +78,27 @@
 
         <div class="container text-center">
             <div class="row g-2">
-              <div class="col-4 mt-3">
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
 
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
+                @forelse ($intervenants as $intervenant)
+                    <div class="col-4 mt-3">
+                        <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+
+                            <div class="card-body choose">
+                                <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                                <div>
+                                    <h2 class="mt-3 color-white">{{ $intervenant->name }}</h2>
+                                    <h5 class="mt-3 color-white">{{ $intervenant->email }}</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  </div>
-              </div>
-              <div class="col-4 mt-3">
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
-                        </div>
+                @empty
+                    <div>
+                        <p>Aucun Intervenant n'est disponile</p>
+                        <a href="{{ route('demandes.index') }}"><button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i>Ajouter un intervenant</button></a>
                     </div>
-                  </div>
-              </div>
-              <div class="col-4 mt-3">
+                @endforelse
 
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
-                        </div>
-                    </div>
-                  </div>
-
-
-              </div>
-              <div class="col-4 mt-5">
-
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
-                        </div>
-                    </div>
-                  </div>
-
-
-              </div>
-              <div class="col-4 mt-5">
-
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
-                        </div>
-                    </div>
-                  </div>
-
-
-              </div>
-
-              <div class="col-4 mt-3">
-
-                <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
-
-                    <div class="card-body choose">
-                        <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-                        <div>
-                            <h2 class="mt-3 color-white">Name</h2>
-                        </div>
-                    </div>
-                  </div>
-
-
-              </div>
             </div>
           </div>
 

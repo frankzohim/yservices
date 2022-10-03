@@ -104,9 +104,9 @@ class NeedController extends Controller
 
     public function chooseplanification(Request $request){
 
-        $intervenant=User::where('role_id',3)->get();
+        $intervenants=User::where('role_id',3)->get();
 
-        return view('admin.planifications.chooseUser');
+        return view('admin.planifications.chooseUser',compact('intervenants'));
 
     }
 }
