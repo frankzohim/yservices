@@ -4,6 +4,7 @@ use App\Models\Code;
 use App\Models\formfranchise;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlocController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JoinController;
 use App\Http\Controllers\NeedController;
 use App\Http\Controllers\DevisController;
@@ -39,9 +40,13 @@ Route::get('/', function () {
             $i++;
         }
 
-        session()->put('nos-cookies', true);
+        //session()->put('nos-cookies', true);
     return view('homepage',compact('codes_array'));
 })->name('homepage');
+
+Route::get('set/cookies',[HomeController::class, 'cookies'])->name('setCookies');
+
+
 
 Route::get('service/model', function () {
     return view('services.service_model');
@@ -59,7 +64,9 @@ Route::get('garde-nuit', function () {
     return view('services.garde-nuit');
 })->name('garde-nuit');
 
-
+Route::get('nos-formations', function () {
+    return view('services.nos-formations');
+})->name('nos-formations');
 
 
 Route::get('mail', function () {

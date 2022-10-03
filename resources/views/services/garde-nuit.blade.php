@@ -83,7 +83,7 @@
 .alt-font strong{font-weight:600}
 
 </style>
-<section class="main-intro-all" style="background-color: white;">
+<section class="main-intro-all" style="background-color: white; margin-bottom:auto;">
 
 	  		<section>
 
@@ -178,7 +178,7 @@
     
     <!-- start section -->
         <section class="" style="margin-top: -75px;">
-            <div class="container" style="margin-left:340px;">
+            <div class="container" >
                 <div class="row ">
 						
 				</div>
@@ -250,7 +250,7 @@
         <br>
         <!-- start section -->
         <section class="">
-            <div class="container" style="margin-left:340px;">
+            <div class="container" >
                 <div class="row ">
 						
 				</div>
@@ -318,7 +318,7 @@
         <br>
         <!-- start section -->
         <section class="">
-            <div class="container" style="margin-left:340px;">
+            <div class="container" >
                 <div class="row ">
 						
 				</div>
@@ -376,10 +376,10 @@
         </section>
         <!-- end section -->
 
-                <br>
+        <br>
         <!-- start section -->
         <section class="">
-            <div class="container" style="margin-left:340px;">
+            <div class="container" >
                 <div class="row ">
 						
 				</div>
@@ -451,9 +451,451 @@
         </section>
         <!-- end section -->
 
+        <br>
+        <!-- start section -->
+        <section class="">
+            <div class="container" >
+                <div class="row ">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row">
+                                     <div class="col-12 col-lg-12 col-md-12  text-sm-start">
+
+                                        <h2 class="text-primary  mb-0" style="font-family: Open Sans; font-weight:bold; font-size:25px;">
+                                            <span class="alt-font first-letter first-letter-big text-fast-blue"> D </span>
+                                            <span style="color: #DF034D;"> ans quels cas faire appel à une garde de nuit ?</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 col-lg-12 col-md-12 text-center text-sm-start" style="margin-bottom: -70px;">
+
+                                        <p class="mb-5" >
+                                            L’anxiété des seniors a tendance à s’accroitre la nuit. 
+                                            En vieillissant la qualité du sommeil tend à se dégrader la nuit surtout
+                                             avec les troubles d’angoisses, l’insomnie, troubles d’anxiétés ; 
+                                             dépressions et palpitations… Les troubles de l’humeur qui surviennent 
+                                             pendant la phase nocturne sont bien souvent des éléments déclencheurs 
+                                             pour l’entourage en matière de placement en maison de 
+                                             retraite ou en EHPAD.
+                                        </p>
+
+                                    </div>
+
+                                   
+                                    <div class="col-12 col-lg-6 col-md-6  " >
+                                        <p class="mb-5" >
+                                            
+                                               
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row ">
+                                    
+                                 
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <br>
+        <!-- start section -->
+        <section class="">
+            <div class="container" >
+                <div class="row ">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row">
+                                     <div class="col-12 col-lg-12 col-md-12  text-sm-start">
+
+                                        <h2 class="text-primary  mb-0" style="font-family: Open Sans; font-weight:bold; font-size:25px;">
+                                            <span class="alt-font first-letter first-letter-big text-fast-blue"> P</span>
+                                            <span style="color: #DF034D;"> ourquoi se faire accompagner ou se faire assister à son domicile ?</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 col-lg-12 col-md-12 text-center text-sm-start" style="margin-bottom: -70px;">
+
+                                        <p class="mb-5" >
+                                            Se faire accompagner à son domicile permet d’assurer une présence 
+                                            permanente pour veiller sur une personne âgée vulnérable, malade ou 
+                                            personne en situation handicap. <br>
+                                            La garde de nuit est ainsi envisagée dans plusieurs cas :
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 col-md-6  text-sm-start">
+
+                                            <p class="mb-5">
+                                                <ul class="margin-top-sm list list_star">
+
+                                                            <li class="text"><b>Les troubles de l’humeur :</b> 
+                                                                anxiété qui apparait à la tombée du jour ou de 
+                                                                réveils nocturnes associés à des douleurs ou des 
+                                                                troubles du sommeil, l’agitation et le stress 
+                                                                pendant la nuit sont fréquents chez les seniors.
+                                                            </li>
+                                                            <li class="text"><b>Les troubles de démence :   </b> 
+                                                                Particulièrement chez les personnes touchées par une démence de type Alzheimer. 
+                                                                Le rôle de l’auxiliaire de vie ou aide à domicile consiste alors à rassurer et 
+                                                                à apaiser la personne âgée afin d’améliorer son confort.  
+                                                            </li>
+                                                            <li class="text"> <b>Les déambulations nocturnes :</b>  La déambulation nocturne, qui apparaît fréquemment en cas de maladie d'Alzheimer et d'autres types démences chez les personnes âgées peut conduire à de nombreuses situations dangereuses, puisque la personne est trop désorientée pour être parfaitement consciente de ce qu'elle fait.
+                                                                Concrètement, il s’agit d’aller-retours fréquents voire incessants pouvant conduire à l’épuisement du sujet ou de son aidant. Souvent associée à une pathologie neurodégénérative ainsi qu’à des troubles du rythme circadien, les déambulations peuvent conduire à une chute ou une fugue.
+                                                                </li>
+                                                           
+                                                </ul>
+                                            </p>
+                                           
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6  " >
+                                        <p class="mb-5" >
+                                            
+                                                <ul class="margin-top-sm list list_star">
+
+                                                    <li class="text"><b>Le retour à domicile après hospitalisation : </b> 
+                                                        Afin d’assister et de rassurer les personnes vulnérables 
+                                                        sortant de l’hôpital, d’une clinique ou d’une maison de 
+                                                        repos, il est fréquent de faire appel à une garde de nuit. 
+                                                        Requérant généralement des soins médicaux ainsi qu’une 
+                                                        assistance pour certains gestes du quotidien, ce service 
+                                                        permet de s’assurer du bon rétablissement du patient.
+                                                    </li>
+                                                    <li class="text"><b>Les chutes et accidents :    </b> 
+                                                        En France, les chutes des personnes âgées entraînent chaque année plus de 100 000 hospitalisations et plus de 10 000 décès. Ces chutes ont des conséquences physiques, psychologiques, sociales et marquent une rupture dans la vie des individus et une perte d'autonomie
+Les personnes âgées sont fréquemment touchées par les accidents domestiques, et en particulier par les chutes. Pouvant se révéler dramatique, notamment pour les seniors touchés par l’ostéoporose, ce type d’accident nécessite une prise en charge rapide, notamment pour aider la personne à se relever.
+
+                                                    </li>
+                                                </ul>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row ">
+                                    
+                                 
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <br>
+        <!-- start section -->
+        <section class="">
+            <div class="container" >
+                <div class="row ">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row">
+                                     <div class="col-12 col-lg-12 col-md-12  text-sm-start">
+
+                                        <h2 class="text-primary  mb-0" style="font-family: Open Sans; font-weight:bold; font-size:25px;">
+                                            <span class="alt-font first-letter first-letter-big text-fast-blue"> Q</span>
+                                            <span style="color: #DF034D;"> uels modes d’intervention et quels coûts pour une garde de nuit ?</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 col-lg-12 col-md-12 text-center text-sm-start" style="margin-bottom: -70px;">
+
+                                        <p class="mb-5" >
+                                            Comme toute prestation de service à domicile il existe différentes 
+                                            modalités d’intervention pour faire appel à un service de garde de nuit. <br>
+                                            La garde de nuit peut se faire :
+
+                                            
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 col-md-6  text-sm-start">
+
+                                            <p class="mb-5">
+                                                <ul class="margin-top-sm list list_star">
+
+                                                            <li class="text"><b>En emploi direct :</b> 
+                                                                le senior ou son aidant est l’employeur  de l’auxiliaire de vie ou du garde-malade. <br> 
+                                                                Celui-ci se charge de recruter le garde-malade qui intervient à domicile et assure l’entière 
+                                                                gestion administrative du salarié et la déclaration des charges. 
+                                                                Il peut pour se faire avoir recours à l’utilisation du CESU (Chèque Emploi Service Universel).
+                                                            </li>
+                                                            <li class="text"><b>En mode mandataire :   </b> 
+                                                                Le mandataire est chargé de l’ensemble des démarches administratives 
+                                                                et juridiques concernant 
+                                                                l’employé (recrutement, gestion de paie, licenciement…). 
+                                                                En revanche, l’employeur demeure la personne âgée qui assure la 
+                                                                rémunération de l’intervenant de nuit à son domicile. 
+                                                            </li>
+                                                           
+                                                           
+                                                </ul>
+                                            </p>
+                                           
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6  " >
+                                        <p class="mb-5" >
+                                            
+                                                <ul class="margin-top-sm list list_star">
+
+                                                    <li class="text"><b>En passant par un prestataire :  </b> 
+                                                        c’est alors une entreprise ou une association qui gère pour vous la partie administrative, voire salarie (prestataire) de l’auxiliaire ou garde-malade. 
+En qualité d’employeur, le prestataire du service se charge, contre rémunération, du recrutement, du suivi et de la gestion de l’intervenant de nuit. Et le senior règle chaque heure d’intervention de l’aidant auprès du prestataires du service.
+
+                                                    </li>
+                                                    
+                                                </ul>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row ">
+                                    
+                                 
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <br>
+        <!-- start section -->
+        <section class="">
+            <div class="container" >
+                <div class="row ">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row">
+                                     <div class="col-12 col-lg-12 col-md-12  text-sm-start">
+
+                                        <h2 class="text-primary  mb-0" style="font-family: Open Sans; font-weight:bold; font-size:25px;">
+                                            <span class="alt-font first-letter first-letter-big text-fast-blue"> C</span>
+                                            <span style="color: #DF034D;"> ombien coûte une garde de nuit pour personne âgée ?</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 col-lg-12 col-md-12 text-center text-sm-start" style="margin-bottom: -70px;">
+
+                                        <p class="mb-5" >
+                                            Proposés d’ordinaire sous forme de forfait, <b>les tarifs d’une intervention
+                                                de nuit varient en fonction du volume horaire couvert et du type de 
+                                                service proposé : présence de nuit ou garde de nuit.</b>  <br><br>
+
+                                               <span style="color: #DF034D;"> <b>Tarif pour une garde de nuit de personne âgée ou handicapée</b>  </span> <br>
+
+                                            Les tarifs en vigueur pour une garde de nuit sont élevés. 
+                                            Etant donné que le garde malade de nuit travaille en général de 20 heures à 8 heures le matin, ce type de prestation est sujette à une majoration pour travail de nuit variant de 9 à 12h, les heures travaillées de nuit ne peuvent dans ce cadre ni dépasser les 12h consécutives ni excéder 5 nuits consécutives (hors situation exceptionnelle). Au-delà de ce volume horaire, les heures sont alors rémunérées en horaires classiques.
+                                            <br> Le tarif d'une garde nuit en emploi direct est moins élevé. 
+                                            La Convention collective nationale des salariés du particulier 
+                                            employeur décide de ce tarif horaire. La convention fixe généralement 
+                                            les tarifs aux alentours de 10 euros brut.
+
+                                            <br> <br>
+
+                                           <span style="color:#DF034D;">  <b>Tarif pour une présence de nuit à domicile</b>   </span> <br>
+                                            Le coût d’une présence de nuit est moins chère qu’une garde de nuit car le personnel n'est 
+                                            pas qualifié ce type de prestation  ne nécessite pas toujours d’intervention active <br>
+                                            Une distinction est en effet opérée dans ce cas entre les heures dites de présence 
+                                            responsable –présence de nuit–, 
+                                            ne nécessitant pas toujours d’intervention, et les heures effectives –garde de nuit– impliquant 
+                                            une surveillance active. Ainsi, une heure de présence responsable est rémunérée à hauteur 
+                                            des 2/3 d’une heure travaillée. <br>
+                                            Une <b>fourchette de prix en fonction du service requis : garde de nuit ou 
+                                                présence de nuit </b> 
+                                             (il est bon de garder à l’esprit que le recours aux services de maintien
+                                              à domicile ouvre droit à un crédit d’impôt de 50 %) : <br> <br>                                    
+
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 col-md-6  text-sm-start">
+
+                                            <p class="mb-5">
+                                                <ul class="margin-top-sm list list_star">
+
+                                                            <li class="text"><b>Forfait présence de nuit </b> <br>
+                                                                hors aides Entre 80 et 100 € 
+                                                            </li>
+                                                            
+                                                </ul>
+                                            </p>
+                                           
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6  " >
+                                        <p class="mb-5" >
+                                            
+                                                <ul class="margin-top-sm list list_star">
+
+                                                    <li class="text"><b>Forfait garde de nuit  </b> <br>
+                                                        hors aides Entre 140 et 200 €
+
+                                                    </li>
+                                                    
+                                                </ul>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row ">
+                                    
+                                 
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
 
 
+        <br>
+        <!-- start section -->
+        <section class="">
+            <div class="container" >
+                <div class="row ">
+						
+				</div>
+                
+                <div class="row">
+                    <div class="col-12 tab-style-01 without-number wow animate__fadeIn">
+                        
+                        <div class="tab-content">
+                            <!-- start tab item -->
+                            <div id="planning-tab" class="tab-pane fade in active show">
+                                <div class="row">
+                                     <div class="col-12 col-lg-12 col-md-12  text-sm-start">
 
+                                        <h2 class="text-primary  mb-0" style="font-family: Open Sans; font-weight:bold; font-size:25px;">
+                                            <span class="alt-font first-letter first-letter-big text-fast-blue"> Q</span>
+                                            <span style="color: #DF034D;"> uelles aides pour financer une garde de nuit ?</span>
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 col-lg-12 col-md-12 text-center text-sm-start" style="margin-bottom: -70px;">
+
+                                        <p class="mb-5" >
+                                            Afin de supporter la charge que représente une garde de nuit, vous pouvez compter sur :
+                                        </p>
+
+                                    </div>
+
+                                    <div class="col-12 col-lg-6 col-md-6  text-sm-start">
+
+                                            <p class="mb-5">
+                                                <ul class="margin-top-sm list list_star">
+
+                                                            <li class="text"><b>Le crédit d’impôt :</b> <br>
+                                                                Le recours à un service d’aide à la personne ou à une auxiliaire de vie en emploi direct ouvre droit 
+                                                                à un crédit d’impôt de 50 % des sommes versées dans la limite de 12 000 € par an avec une majoration 
+                                                                de 1 500 € par personne âgée de plus de 65 ans. Il s’agit d’un véritable soutien financier pour un 
+                                                                service essentiel au maintien à domicile.	
+                                                            </li>
+                                                            <li class="text"><b>L’APA (Allocation Personnalisée d’Autonomie) :   </b> <br>
+                                                                la principale aide financière pour les personnes de plus de 60 ans en perte d’autonomie.
+                                                            </li>
+                                                            <li class="text"><b>La PCH (Prestation Compensatoire du Handicap)   </b> <br>
+                                                                si votre proche présente un handicap important
+                                                            </li>
+                                                           
+                                                </ul>
+                                            </p>
+                                           
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6  " >
+                                        <p class="mb-5" >
+                                            
+                                                <ul class="margin-top-sm list list_star">
+
+                                                    <li class="text"><b>Les caisses de retraite  </b> <br>
+                                                        Destinées aux personnes âgées non éligibles à l’APA, les caisses de retraite, et notamment la CNAV et la MSA, permettent de financer de manière ponctuelle ou régulière les services à la personne tels que la garde de nuit. <br>
+                                                        Autre aide financée par la caisse de retraite : l’ARDH (Aide au Retour à Domicile après Hospitalisation) permet d’accompagner le retour des seniors chez eux après un séjour hospitalier, en participant notamment au financement de l’aide à domicile.
+                                                    </li>
+                                                    <li class="text"><b>L’assurance maladie et les complémentaires santé  </b> <br>
+                                                        Des aides, voire une prise en charge (dans des situations d’urgence et temporaires) de l’Assurance Maladie.
+                                                    </li>
+                                                    
+                                                </ul>
+
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row ">
+                                    
+                                 
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
 
 </section>
 
