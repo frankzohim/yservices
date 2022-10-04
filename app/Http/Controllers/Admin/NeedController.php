@@ -111,11 +111,17 @@ class NeedController extends Controller
     }
 
     public function chooseHours(Request $request){
-
+        $arrayIntervenant=array();
         $intervenantIds=$request->IntervenantId;
         $customerId=$request->id;
+        foreach($intervenantIds as $id){
+            $ids=User::find($id);
 
-        return view('admin.planifications.chooseHour',compact('intervenantIds','customerId'));
+            array_push($arrayIntervenant,$ids);
+        }
+        dd($arrayIntervenant);
+
+        //return view('admin.planifications.chooseHour',compact('intervenantIds','customerId'));
     }
 }
 
