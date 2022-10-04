@@ -22,4 +22,14 @@ class Calendar extends Component
         }
         $e->save();
     }
+
+    public function eventAdd($event)
+{
+    Planification::create($event);
+}
+
+public function eventRemove($id)
+{
+    Planification::destroy($id);
+}
 }
