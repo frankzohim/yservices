@@ -102,7 +102,7 @@
 	        </section>
 
         <!-- start section -->
-        <section class="" style="margin-top: -75px;">
+        <section class="" style="margin-top: -35px;">
             <div class="container">
                 <div class="row justify-content-center">
 						
@@ -116,7 +116,7 @@
                             <div id="planning-tab" class="tab-pane fade in active show">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-6 text-end sm-margin-40px-bottom" style="margin-right: -60px;">
-                                        <img class="img-rounded" src="{{ asset('_next/static/media/garde-nuit.jpg') }}" alt="" />
+                                        <img class="img-rounded" src="{{ asset('_next/static/media/traning.jpg') }}" alt="" />
                                     </div>
                                     <div class="col-12 col-lg-5 offset-lg-1 col-md-6 text-center text-sm-start">
 

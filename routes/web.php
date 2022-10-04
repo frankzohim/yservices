@@ -68,6 +68,14 @@ Route::get('nos-formations', function () {
     return view('services.nos-formations');
 })->name('nos-formations');
 
+Route::get('nos-metiers', function () {
+    return view('services.nos-metiers');
+})->name('nos-metiers');
+
+Route::get('accompagnement', function () {
+    return view('services.accompagnement');
+})->name('accompagnement');
+
 
 Route::get('mail', function () {
     return view('mail.template');
@@ -93,9 +101,7 @@ Route::get('services', function () {
     return view('services');
 })->name('services');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
 
 Route::get('contact', function () {
 	return view("contact");
