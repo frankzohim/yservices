@@ -37,6 +37,9 @@
                 right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
             },
             locale: '{{ config('app.locale') }}',
+            editable: true,
+            eventResize: info => @this.eventChange(info.event),
+            events: JSON.parse(@this.events)
         });
         calendar.render();
 

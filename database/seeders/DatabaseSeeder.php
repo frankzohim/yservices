@@ -8,6 +8,7 @@ use Database\Seeders\RoleSeeder;
 use Database\Seeders\UserSeeder;
 use Database\Seeders\AdminSeeder;
 use Database\Seeders\AgencySeeder;
+use Database\Seeders\PlanificationSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,10 +25,11 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        $this->call(AgencySeeder::class);
-        $this->call(RoleSeeder::class);
+        //$this->call(AgencySeeder::class);
+        //$this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(AdminSeeder::class);
+        //$this->call([PlanificationSeeder::class,]);
 
     }
 }
