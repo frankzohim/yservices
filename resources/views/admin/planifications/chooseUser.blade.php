@@ -2,13 +2,15 @@
 @section('title', __('Listes Des Intervenants'))
 
 <style>
-    .choose:hover{
+    .choose:hover .choosebody:hover{
         background-color: blue;
         color:white;
     }
     .choose{
         background-color: white;
     }
+
+
 
 
 </style>
@@ -69,29 +71,36 @@
     </div>
     </div>
     </div> </div>
-    </div> <div class="main-card mb-3 card">
-    <div class="card-body">
-
+    </div> <div class="main-card mb-3 card" style="height: 100%;">
+    <div class="card-body" >
+        <form action="{{ route('choose.hours') }}" method="post">
+            @csrf
         {{--  <a class="mb-2 mr-2 btn btn-primary flex justify-end" href="{{ route('need.create') }}">Creer</a>  --}}
 
         <h1 class="text-center">Choisir un intervenant</h1>
+
+
 
         <div class="container text-center">
             <div class="row g-2">
 
                 @forelse ($intervenants as $intervenant)
                     <div class="col-4 mt-3">
-                        <div class="card choose" style="width: 18rem;height:10rem;cursor: pointer;">
+                        <div class="card choose" style="width: 18rem;height:15rem;cursor: pointer;">
 
-                            <div class="card-body choose">
+                            <div class="" id="list">
+                                <input type="checkbox" class="ischeck" onclick="list()"  name="IntervenantId[]" value="{{ $intervenant->id }}"/>
                                 <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
                                 <div>
-                                    <h2 class="mt-3 color-white">{{ $intervenant->name }}</h2>
+                                    <h2 class="mt-3 color-white hour" data-hours="">{{ $intervenant->name }}</h2>
                                     <h5 class="mt-3 color-white">{{ $intervenant->email }}</h5>
+                                    <input type="hidden" value="{{ $intervenant->id }}" class="hidden">
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                 @empty
                     <div>
                         <p>Aucun Intervenant n'est disponile</p>
@@ -104,6 +113,9 @@
 
 
     </div>
+    <button type="submit" class="btn btn-success"><i class="fa fa-sign-in"></i>Suivant</button>
+
+</form>
     </div>
     </div>
 
