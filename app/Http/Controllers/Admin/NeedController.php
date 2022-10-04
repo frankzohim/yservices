@@ -113,8 +113,9 @@ class NeedController extends Controller
     public function chooseHours(Request $request){
 
         $intervenantIds=$request->IntervenantId;
+        $customerId=$request->id;
 
-        dd($intervenantIds);
+        return view('admin.planifications.chooseHour',compact('intervenantIds','customerId'));
     }
 }
 

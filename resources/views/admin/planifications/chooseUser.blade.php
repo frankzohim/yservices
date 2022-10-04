@@ -94,7 +94,7 @@
                                 <div>
                                     <h2 class="mt-3 color-white hour" data-hours="">{{ $intervenant->name }}</h2>
                                     <h5 class="mt-3 color-white">{{ $intervenant->email }}</h5>
-                                    <input type="hidden" value="{{ $intervenant->id }}" class="hidden">
+                                    <input type="hidden" value="{{ $customerId }}" class="hidden" name="id">
                                 </div>
                             </div>
                         </div>
