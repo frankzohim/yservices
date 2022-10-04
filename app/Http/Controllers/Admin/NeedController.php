@@ -119,9 +119,9 @@ class NeedController extends Controller
 
             array_push($arrayIntervenant,$ids);
         }
-        dd($arrayIntervenant);
+        //dd($arrayIntervenant);
 
-        //return view('admin.planifications.chooseHour',compact('intervenantIds','customerId'));
+        return view('admin.planifications.chooseHour',compact('arrayIntervenant','customerId'));
     }
 }
 

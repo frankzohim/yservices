@@ -73,13 +73,115 @@
     </div> </div>
     </div> <div class="main-card mb-3 card" style="height: 100%;">
     <div class="card-body" >
-        <div class="d-flex justify-content-between">
-            <img style="width:10%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
-        </div>
+        @foreach ($arrayIntervenant as $intervenant)
+
+                <div class="text-center mt-5">
+                    <img style="width:10%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
+                <h5 class="">{{ $intervenant->name }}</h5>
+                </div>
+
+                <table class="table table-bordered table-sm mt-5">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                        <th>Samedi</th>
+                        <th>Dimanche</th>
+                        <th class="allDays">Tous les jours</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th id="morning">Matin</th>
+                        <td class="inJourney everyday whole all" data-time="Lundi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Mardi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Mercredi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Jeudi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Vendredi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Samedi - Matin"></td>
+                        <td class="inJourney everyday whole all" data-time="Dimanche - Matin"></td>
+                        <td class="allDays whole all" data-time="Tout les jours-Matin"></td>
+                      </tr>
+                      <tr>
+                        <th id="midday">Midi</th>
+                        <td class="inJourney everyday whole all" data-time="Lundi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Mardi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Mercredi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Jeudi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Vendredi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Samedi - Midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Dimanche - Midi"></td>
+                        <td class="allDays whole all" data-time="Tout les jours-Midi"></td>
+                      </tr>
+                      <tr>
+                        <th id="afternoon">Après-Midi</th>
+                        <td class="inJourney everyday whole all" data-time="Lundi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Mardi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Mercredi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Jeudi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Vendredi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Samedi - Après-midi"></td>
+                        <td class="inJourney everyday whole all" data-time="Dimanche - Après-midi"></td>
+                        <td class="allDays whole all" data-time="Tout les jours-Apres-Midi"></td>
+                      </tr>
+                      <tr>
+                        <th id="night">Soir</th>
+                        <td class="inJourney everyday whole all" data-time="Lundi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Mardi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Mercredi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Jeudi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Vendredi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Samedi - Soir"></td>
+                        <td class="inJourney everyday whole all" data-time="Dimanche - Soir"></td>
+                        <td class="allDays whole all" data-time="Tout les jours-Soir"></td>
+                      </tr>
+                      <tr>
+                        <th>Journée entière (8h > 20h)</th>
+                        <td class="allJourney everyday whole all" data-time="Lundi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Mardi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Mercredi - Journée"></td>
+                        <td class="allJourney everyday whole all" data-time="Jeudi - Journée"></td>
+    <td class="allJourney everyday whole all" data-time="Vendredi - Journée"></td>
+    <td class="allJourney everyday whole all" data-time="Samedi - Journée"></td>
+    <td class="allJourney everyday whole all" data-time="Dimanche - Journée"></td>
+    <td id="wholeday" class="all" data-time="Tout les jours-Journée "></td>
+  </tr>
+  <tr>
+    <th>Nuit (20h > 8h)</th>
+    <td class="night everyday all" data-time="Lundi - Nuit"></td>
+    <td class="night everyday all" data-time="Mardi - Nuit"></td>
+    <td class="night everyday all" data-time="Mercredi - Nuit"></td>
+    <td class="night everyday all" data-time="Jeudi - Nuit"></td>
+    <td class="night everyday all" data-time="Vendredi - Nuit"></td>
+    <td class="night everyday all" data-time="Samedi - Nuit"></td>
+    <td class="night everyday all" data-time="Dimanche - Nuit"></td>
+    <td class="allDays all" data-time="Tout les jours-Nuit"></td>
+  </tr>
+  <tr>
+    <th>24h/24</th>
+    <td class="allDay all" data-time="lundi-24/24"></td>
+    <td class="allDay all" data-time="mardi-24/24"></td>
+    <td class="allDay all" data-time="mercredi-24/24"></td>
+    <td class="allDay all" data-time="jeudi-24/24"></td>
+    <td class="allDay all" data-time="vendredi-24/24"></td>
+    <td class="allDay all" data-time="samedi-24/24"></td>
+    <td class="allDay all" data-time="dimanche-24/24"></td>
+    <td id="wholeAll" data-time="Tout les jours"></td>
+  </tr>
+</tbody>
+</table>
+
+<input type="hidden" name="data_times" id ="dataTimes" value="" >
+        @endforeach
+
 
     </div>
     </div>
 
 
-
+    <script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
 @endsection
