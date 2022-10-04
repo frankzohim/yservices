@@ -192,4 +192,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
 
+        Route::get('/calender', function () {
+            return view('calender');
+        });
+
 });
