@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Planification;
 
 use App\Http\Controllers\Controller;
+use App\Models\Planification;
 use Illuminate\Http\Request;
 
 class PlanificationController extends Controller
@@ -35,7 +36,13 @@ class PlanificationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Planification::create([
+            'date_times'=>$request->data_times,
+            'intervenant_id'=>$request->intervenant_id,
+            'customer_id'=>$request->customer_id,
+        ]);
+
+        return to_route('planifications.index');
     }
 
     /**

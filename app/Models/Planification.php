@@ -9,8 +9,6 @@ class Planification extends Model
 {
     use HasFactory;
 
-public $timestamps = false;
-public $incrementing = false;
-protected $keyType = 'string';
-protected $fillable = ['id', 'title', 'start', 'end',];
+
+protected $fillable = ['id','date_times','intervenant_id','customer_id'];
 }

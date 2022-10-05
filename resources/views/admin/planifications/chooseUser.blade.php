@@ -89,7 +89,7 @@
                         <div class="card choose" style="width: 18rem;height:15rem;cursor: pointer;">
 
                             <div class="" id="list">
-                                <input type="checkbox" class="ischeck" onclick="list()"  name="IntervenantId[]" value="{{ $intervenant->id }}"/>
+                                <input type="checkbox" class="ischeck" onclick="list()"  name="IntervenantId" value="{{ $intervenant->id }}"/>
                                 <img style="width:30%" src="{{ asset('assets/backoffice/assets/images/user.png') }}" alt="">
                                 <div>
                                     <h2 class="mt-3 color-white hour" data-hours="">{{ $intervenant->name }}</h2>

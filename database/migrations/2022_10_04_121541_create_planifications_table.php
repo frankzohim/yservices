@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -14,10 +15,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('planifications', function (Blueprint $table) {
-            $table->uuid('id')->primary();
-            $table->string('title');
-            $table->string('start');
-            $table->string('end')->nullable();
+            $table->id();
+            $table->string('date_times');
+            $table->string('intervenant_id')->nullable();
+            $table->string('customer_id')->nullable();
+            $table->timestamps();
         });
     }
 

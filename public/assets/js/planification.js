@@ -3,6 +3,9 @@
 					document.querySelectorAll('.allDays').forEach((item,index,items)=>{
                         let parel =item.parentElement;
 
+                        let dataTimes = document.getElementById('dataTimes');
+
+                        let dataAll=document.querySelectorAll('.allDays');
 
                             item.addEventListener('click',()=>{
                                 //console.log(item.getAttribute('data-time'));
@@ -11,18 +14,29 @@
 
 
 
-                                if(item.style.backgroundColor == 'blue')
+                                if(item.style.backgroundColor == 'blue'){
 
 
                                           item.style.backgroundColor = 'white';
 
+                                }
+
+
 
                                 else
 
-                                item.style.backgroundColor = 'blue'
+                                    item.style.backgroundColor = 'blue'
+                                    dataAll.forEach((el,i)=>{
+                                        if(index==i){
+                                            console.log(el.dataset.time);
+                                            dataTimes.value +=","+item.getAttribute('data-time');
+                                        }
+
+                                    })
 
 
-                                console.log('djjj')
+
+
                                 console.log(item.parentElement.id);
 
                                               //console.log(parel.children)
@@ -187,136 +201,37 @@
 
                                 })
 
-				  var currentTab = 0; // Current tab is set to be the first tab (0)
-				  showTab(currentTab); // Display the current tab
 
-				  function showTab(n) {
 
-					// This function will display the specified tab of the form...
-					var x = document.getElementsByClassName("tab");
-					x[n].style.display = "block";
-					//... and fix the Previous/Next buttons:
-					if (n == 0) {
-					  document.getElementById("prevBtn").style.display = "none";
-					} else {
-					  document.getElementById("prevBtn").style.display = "inline";
-					}
-					if (n == (x.length - 1)) {
-					  document.getElementById("nextBtn").innerHTML = "Valider ma demande";
-					} else {
-					  document.getElementById("nextBtn").innerHTML = "Suivant";
-					}
-					//... and run a function that will display the correct step indicator:
-					fixStepIndicator(n)
-				  }
+                  let items = document.getElementsByTagName('td');
+                  let dataTimes = document.getElementById('dataTimes');
 
-				  function nextPrev(n) {
+                  const betterItems = [...items];
 
-                    var isChecked=document.querySelectorAll('.chkbox');
-                    var isCheckedArray=Array.from(isChecked);
+                  betterItems.forEach(function(item){
+                    if(item.style.backgroundColor=="blue")
+                     dataTimes.value += " "+ item.getAttribute('data-time');
+                    console.log(dataTimes.value);
+                  });
 
-                    isCheckedArray.forEach((curr)=>{
-                        if(curr.checked==true){
+                  console.log(dataTimes.value);
+                  console.log(items);
+                  console.log("level");
 
-                        }else{
-                            //alert("la case n'a pas ete coché")
-                        }
-                    })
 
-				  // This function will figure out which tab to display
-				  var x = document.getElementsByClassName("tab");
-				  // Exit the function if any field in the current tab is invalid:
-				  if (n == 1 && !validateForm()) return false;
-				  // Hide the current tab:
-				  x[currentTab].style.display = "none";
-				  // Increase or decrease the current tab by 1:
-				  currentTab = currentTab + n;
-				  // if you have reached the end of the form...
 
-				  if (currentTab >= x.length) {
-					// ... the form gets submitted:
-					document.getElementById("regForm").submit();
 
-					return false;
-				  }
-				  // Otherwise, display the correct tab:
-				  showTab(currentTab);
-          }
-
-				  function validateForm() {
-
-					let dataTimes;
 					//checking if at least one checkbox if checked
-					if(currentTab == 0){
-					   const form = document.querySelector('#regForm');
-					   const checkboxes = form.querySelectorAll('input[type=checkbox]');
-					   const checkboxLength = checkboxes.length;
-					   const firstCheckbox = checkboxLength > 0 ? checkboxes[0] : null;
-					   const service = document.getElementById('serviceForm');
-					   //console.log(service);
-					   let getTrue = false;
-					   for (let i = 0; i < checkboxLength; i++) {
-								if (checkboxes[i].checked) {
-									valid = true;
-									getTrue = true
-									break;
-								}
 
-							}
 
-					   if(!getTrue)
-						 valid = false;
 
-					   return valid;
-					}
-
-					if(currentTab==1){
-					  const items = document.getElementsByTagName('td');
-					  let dataTimes = document.getElementById('dataTimes');
-
-					  const betterItems = [...items];
-
-					  betterItems.forEach(function(item){
-						if(item.style.backgroundColor=="blue")
-						 dataTimes.value += " "+ item.getAttribute('data-time');
-					  });
-
-					  console.log(dataTimes.value);
 					   //console.log(item.getAttribute('data-time'));
-					}
 
 
 
 
-					// This function deals with validation of the form fields
-					var x, y, i, valid = true;
-					x = document.getElementsByClassName("tab");
-					y = x[currentTab].getElementsByTagName("input");
-					// A loop that checks every input field in the current tab:
-					for (i = 0; i < y.length; i++) {
-					  // If a field is empty...
-					  if (y[i].value == "") {
-						// add an "invalid" class to the field:
-						y[i].className += " invalid";
-						// and set the current valid status to false
-						valid = false;
-					  }
-					}
 
-					// If the valid status is true, mark the step as finished and valid:
-					if (valid) {
-					  document.getElementsByClassName("step")[currentTab].className += " finish";
-					}
 
-					return valid; // return the valid status
-				  }
 
-				  function fixStepIndicator(n) {
-					// This function removes the "active" class of all steps...
-					var i, x = document.getElementsByClassName("step");
-					for (i = 0; i < x.length; i++) {
-					  x[i].className = x[i].className.replace(" active", "");
-					}
-					//... and adds the "active" class on the current step:
-					x[n].className += " active";
-				  }
+
+

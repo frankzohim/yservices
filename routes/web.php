@@ -184,6 +184,7 @@ Route::group(['prefix' => 'clients'], function () {
         Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
         Route::get('planification/chooseUser{id}',[AdminNeedController::class,'chooseplanification'])->name('choose.planification');
         Route::post('/ChooseHours',[AdminNeedController::class,'chooseHours'])->name('choose.hours');
+
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
