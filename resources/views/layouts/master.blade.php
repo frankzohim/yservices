@@ -25,7 +25,7 @@
 
 <!---------------Third Party import  -->
 <!--     Fonts and icons     -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
 
 <!-- Nucleo Icons -->
 <link href="{{ asset('third/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
@@ -62,6 +62,8 @@
 
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('_next/static/media/icones/favicon.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
 
 <link rel="manifest" href="#" />
@@ -363,7 +365,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 <link rel="stylesheet" href="{{ asset('assets/css/collapse.css') }}">
 
-
+    <link href="http://techwise.fr/css/app.css?v=4.2" rel="stylesheet"/>
 
 <noscript data-n-css="">
 </noscript>
@@ -556,7 +558,8 @@ Données de géolocalisation précises et identification par analyse du terminal
   	<script defer="" src="{{ asset('_next/static/chunks/UWd0_aoUPydEnjwz1DTpB-src-pages--locale--index-client.js') }}" type="text/javascript">
 	</script>
  
-
+ <script src="http://techwise.fr/js/app.js?v=4.2"> </script>
+    <script src="http://techwise.fr/js/script.js?v=1.4"> </script>
 </body>
 
 </html>

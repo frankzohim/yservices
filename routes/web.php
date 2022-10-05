@@ -44,6 +44,11 @@ Route::get('/', function () {
     return view('homepage',compact('codes_array'));
 })->name('homepage');
 
+
+Route::get('/maintech', function(){
+    return view('main');
+});
+
 Route::get('set/cookies',[HomeController::class, 'cookies'])->name('setCookies');
 
 
