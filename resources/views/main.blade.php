@@ -75,20 +75,43 @@
             <div class="w-full md:w-1/2 mx-auto relative" x-data="Contact">
                 <img src="http://techwise.fr/img/blob.svg" class=" md:block text-yellow-300 absolute z-0 top-[-200px] left-[-150px]">
                 <div class="p-4 md:p-12 shadow-xl relative bg-white rounded-lg">
-                    <article x-show="display.contactSuccess" x-transition.duration.500ms >
-                        <div class="bg-primary p-4 rounded-md text-white">
-                            <i class="flex justify-center">
-                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            </i>
-                            <p class="text-center mt-4 font-semibold">
-                                Merci !<br>
-                                Votre demande a bien été recu. Nous allons vous repondre dans les meilleurs délais
-                            </p>
-                        </div>
-                    </article>
+                   
+				<form  method="post" autocomplete="off" action="{{ route('contact.store') }}">
+					@csrf
                     <div x-show="!display.contactSuccess">
+					
                         <div class="flex flex-wrap md:flex-nowrap md:space-x-2">
+							 <div class="col-md-12 pe-2 mb-3">
+								<fieldset>
+									<legend class="  md:text-left  text-2xl  font-bold text-indigo-800">Type de Prestation *:</legend>
+									 <div class="col-md-6 pe-2 mb-3">
+										<input type="checkbox" id="music" name="type[]" value="Presse">
+										<label for="music" style="color: black">Presse</label>
+									  </div>
+									<div class="col-md-6 pe-2 mb-3">
+									  <input type="checkbox" id="music" name="type[]" value="Demande d’information">
+									  <label for="music" style="color: black">Demande d’information</label>
+									</div>
+									<div class="col-md-6 pe-2 mb-3">
+										<input type="checkbox" id="music" name="type[]" value="Offre de Bienvenue">
+										<label for="music" style="color: black">Offre de Bienvenue</label>
+									  </div>
+									  <div class="col-md-6 pe-2 mb-3">
+										<input type="checkbox" id="music" name="type[]" value="Partenariat">
+										<label for="music" style="color: black">Partenariat</label>
+									  </div>
+									 <div class="col-md-6 pe-2 mb-3">
+										<input type="checkbox" id="music" name="type[]" value="Recrutement">
+										<label for="music" style="color: black">Recrutement</label>
+									  </div>
+                                      <div class="col-md-6 pe-2 mb-3">
+									  <input type="checkbox" id="type" name="type[]" value="Souhaite être rappelé">
+									  <label for="coding" style="color: black; white-space:nowrap;">&Ecirc;tre rappelé</label>
+									</div>
+									  
+								  </fieldset>
 
+							  </div>
                             <div class="row">
                                <div class="col-md-6">
 										 <div class="w-full mt-4">
@@ -166,7 +189,8 @@
                         <div class="mt-3 text-gray-700 font-semibold">
                             <button x-on:click="submitContact" class="px-8 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> Envoyer </button>
                         </div>
-                    </div>                    
+                    </div>   
+				</form>					
                 </div>
             </div>
         </div>
