@@ -60,8 +60,8 @@
 
 												 <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
-														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Garde de nuit</span>
+                            <a href="{{ route('garde-nuit') }}"> <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="white-space: nowrap; 
+														text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">Garde de nuit</span></a>
                             <ul class=" " style="">                           
                                	<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Présence de nuits pour personnes âgées  </a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Garde de nuit pour personnes âgées et personnes en situation d’handicap</a></li>
@@ -391,7 +391,7 @@
                             <ul>                           
                                <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('quality') }}">Qualité</a></li>
 															 <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('contact.create') }}">Contactez-Nous</a></li>
-															 <li class="text  color_grey"><a class="link" data-inner-link="true" href="#">Formations</a></li>
+															 <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('nos-formations') }}">Nos Formations</a></li>
 															<li class="text  color_grey"><a href="#" data-target-action="true" class="link" target="_blank" rel="noopener">Nos métiers</a></li>
                             </ul>
                         </div>
