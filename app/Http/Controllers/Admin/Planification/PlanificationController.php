@@ -42,7 +42,7 @@ class PlanificationController extends Controller
             'customer_id'=>$request->customer_id,
         ]);
 
-        return to_route('planifications.index');
+        return "save";
     }
 
     /**

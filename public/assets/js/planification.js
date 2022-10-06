@@ -6,7 +6,6 @@
                         let dataTimes = document.getElementById('dataTimes');
 
                         let dataAll=document.querySelectorAll('.allDays');
-
                             item.addEventListener('click',()=>{
                                 //console.log(item.getAttribute('data-time'));
                                 //let parent = item.parentElement;
@@ -29,8 +28,10 @@
                                     dataAll.forEach((el,i)=>{
                                         if(index==i){
                                             console.log(el.dataset.time);
-                                            dataTimes.value +=","+item.getAttribute('data-time');
+                                            dataTimes.value +=" "+el.dataset.time;
                                         }
+
+
 
                                     })
 
@@ -59,6 +60,10 @@
 
 
 					  document.querySelectorAll('.allJourney').forEach((curr,index,arrays)=>{
+
+                        let dataTimesJourney = document.getElementById('dataTimes');
+
+                        let dataAll=document.querySelectorAll('.allJourney');
 
 									curr.addEventListener('click',()=>{
 						  //initialize document
@@ -91,6 +96,14 @@
 											ArrayMidday[index].style.backgroundColor="blue";
 											ArrayAfternoon[index].style.backgroundColor="blue";
 											ArrayNight[index].style.backgroundColor="blue";
+
+                                            dataAll.forEach((el,i)=>{
+                                                if(index==i){
+                                                    console.log(el.dataset.time);
+                                                    dataTimesJourney.value =" "+curr.getAttribute('data-time');
+                                                }
+
+                                            })
 
 										}
 

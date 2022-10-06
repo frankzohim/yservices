@@ -169,7 +169,7 @@
 <td class="allDay all" data-time="vendredi-24/24"></td>
 <td class="allDay all" data-time="samedi-24/24"></td>
 <td class="allDay all" data-time="dimanche-24/24"></td>
-<td id="wholeAll" data-time="Tout les jours"></td>
+<td id="wholeAll"  data-time="Tout les jours"></td>
 </tr>
 </tbody>
           </table>
