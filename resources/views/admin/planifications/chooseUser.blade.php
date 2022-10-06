@@ -103,7 +103,7 @@
 
                 @empty
                     <div>
-                        <p>Aucun Intervenant n'est disponile</p>
+                        <p>Aucun Intervenant n'est disponible</p>
                         <a href="{{ route('demandes.index') }}"><button class="mb-2 mr-2 btn btn-primary"><i class="fa fa-fw" aria-hidden="true" title="Copy to use upload"></i>Ajouter un intervenant</button></a>
                     </div>
                 @endforelse
