@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Need;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class NeedController extends Controller
 {
@@ -93,4 +94,29 @@ class NeedController extends Controller
 
         return to_route('need.index');
     }
+
+    public function listCustomers(){
+
+        $customers=User::where('role_id',2)->get();
+
+        return view('admin.Need.listCustomers',compact('customers'));
+    }
+
+    public function chooseplanification(Request $request){
+
+        $intervenants=User::where('role_id',3)->get();
+        $customerId=$request->id;
+        return view('admin.planifications.chooseUser',compact('intervenants','customerId'));
+
+    }
+
+    public function chooseHours(Request $request){
+
+        $intervenant_id=$request->IntervenantId;
+        $customer_id=$request->id;
+        //dd($arrayIntervenant);
+
+        return view('admin.planifications.chooseHour',compact('intervenant_id','customer_id'));
+    }
 }
+

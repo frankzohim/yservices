@@ -66,7 +66,7 @@
     <a href="{{ route('demandes.index') }}" class="nav-link">
     <i class="nav-link-icon lnr-book"></i>
     <span> Demande Emplois</span>
-    <div class="ml-auto badge badge-pill badge-primary"> 
+    <div class="ml-auto badge badge-pill badge-primary">
         {{ session('numberOfJoins')}}
     </div>
     </a>
@@ -96,7 +96,7 @@
     <ul class="nav flex-column">
     <li class="nav-item-header nav-item"> Système</li>
     <li class="nav-item">
-    <a href="javascript:void(0);" class="nav-link"> Configurations </a>
+    <a href="{{ route('list.users') }}" class="nav-link">Planification</a>
     </li>
     <li class="nav-item">
     <a href="javascript:void(0);" class="nav-link"> Rôles

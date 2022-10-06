@@ -25,7 +25,7 @@
 
 <!---------------Third Party import  -->
 <!--     Fonts and icons     -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
 
 <!-- Nucleo Icons -->
 <link href="{{ asset('third/assets/css/nucleo-icons.css') }}" rel="stylesheet" />
@@ -62,6 +62,8 @@
 
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('_next/static/media/icones/favicon.png') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 
 
 <link rel="manifest" href="#" />
@@ -73,11 +75,33 @@
 <meta name="description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 
 <meta name="keywords" content="Aide, aide à domicile, handicap, transport, personnes agées, youdom-care,  services à domicile, aide à domicile, aide aux repas, retour hospitalisation, voyage/evasion, aide à l'autonomie, Gardes non médicalisées, Accompagnements, Retour à domicile après hospitalisation, Aide-ménagère, Assistance administrative,Voyage & évasion,Aide et accompagnement des enfants malades ou handicapés,Transport et accompagnement de personnes handicapées et des PMR,Aide et accompagnement à domicile des personnes handicapées" />
+
 <meta name="og:title" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 <meta property="og:name" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
 <meta property="og:description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
+<meta property="og:image" content="https://youdom-care.co/social-thumb.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:image" content="https://youdom-care.co/social-thumb.png" />
+<meta name="twitter:title" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@youdom-carehq" />
+<meta name="twitter:site" content="https://youdom-care.co/" />
+<meta name="twitter:description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." />
+<meta name="data" data-locale="en-it" data-language="en" data-country="it" data-mrterms="1642" content="text" />
+<meta name="data-translates" data-browser-update="Update your browser for enhanced security, speed and the best user experience on this site." content="text" />
 
-<meta property="og:image" content="https://youdom-care.co/social-thumb.png" /><meta property="og:type" content="website" /><meta name="twitter:image" content="https://youdom-care.co/social-thumb.png" /><meta name="twitter:title" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:creator" content="@youdom-carehq" /><meta name="twitter:site" content="https://youdom-care.co/" /><meta name="twitter:description" content="L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie." /><meta name="data" data-locale="en-it" data-language="en" data-country="it" data-mrterms="1642" content="text" /><meta name="data-translates" data-browser-update="Update your browser for enhanced security, speed and the best user experience on this site." content="text" /><link rel="alternate" hrefLang="en-de" href="https://youdom-care.co/en-de/" /><link rel="alternate" hrefLang="en-fr" href="https://youdom-care.co/en-fr/" /><link rel="alternate" hrefLang="en-it" href="index.html" /><link rel="alternate" hrefLang="de-de" href="https://youdom-care.co/de-de/" /><link rel="alternate" hrefLang="fr-fr" href="https://youdom-care.co/fr-fr/" /><link rel="alternate" hrefLang="it-it" href="https://youdom-care.co/it-it/" /><link rel="alternate" hrefLang="x-default" href="https://youdom-care.co/" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Semibold-6c6a3d305974e17323e4aa789640cb69.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Regular-9575681a0079b0c88e019c4639c776d8.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Bold-1a8a77c77c9fbe42e707dd2d8a0cbf5e.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-ExtraBold-cbe704f89866b58389151db256e3e2d1.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-Bold-71040a256e051ffde6540e8f16a10433.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-Semibold-c2d3f77afdc603dce79b2e5525950d8a.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><template id="browser-update"><div class="browser-update"><div class="browser-update__body"><p class="browser-update__text"></p></div></div></template><meta name="next-head-count" content="52" />
+<!--
+<link rel="alternate" hrefLang="en-de" href="https://youdom-care.co/en-de/" />
+<link rel="alternate" hrefLang="en-fr" href="https://youdom-care.co/en-fr/" />
+<link rel="alternate" hrefLang="en-it" href="index.html" />
+<link rel="alternate" hrefLang="de-de" href="https://youdom-care.co/de-de/" />
+<link rel="alternate" hrefLang="fr-fr" href="https://youdom-care.co/fr-fr/" />
+<link rel="alternate" hrefLang="it-it" href="https://youdom-care.co/it-it/" />
+<link rel="alternate" hrefLang="x-default" href="https://youdom-care.co/" />
+
+-->
+
+<link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Semibold-6c6a3d305974e17323e4aa789640cb69.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Regular-9575681a0079b0c88e019c4639c776d8.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Lato-Bold-1a8a77c77c9fbe42e707dd2d8a0cbf5e.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-ExtraBold-cbe704f89866b58389151db256e3e2d1.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-Bold-71040a256e051ffde6540e8f16a10433.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="http://youdom-care.com/_next/static/chunks/fonts/Metropolis-Semibold-c2d3f77afdc603dce79b2e5525950d8a.woff2" as="font" type="font/woff2" crossorigin="anonymous" /><template id="browser-update"><div class="browser-update"><div class="browser-update__body"><p class="browser-update__text"></p></div></div></template><meta name="next-head-count" content="52" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -341,7 +365,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 <link rel="stylesheet" href="{{ asset('assets/css/collapse.css') }}">
 
-
+    <link href="http://techwise.fr/css/app.css?v=4.2" rel="stylesheet"/>
 
 <noscript data-n-css="">
 </noscript>
@@ -423,13 +447,39 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 		</main>
 
 		 @include('layouts.footer')
-
+    
+    @if(session()->has('nos-cookies'))
+     <script>
+        console.log('hello cookiees, cookies already exists');
+     </script>
+    @else
+    
 		<div class="cookie-info cookie-info_hidden" data-test="cookie-info">
-
+      
 				<aside class="cookie-info__card-full cookie-info_hidden" data-test="cookie-info-full">
 
 					<div class="cookie-info__card-full-content">
-						<p class="heading cookie-info__heading" data-inner-html="Gestion cookies"></p><p class="text text_sm" data-inner-html="youdom-care uses cookies 🍪 to ensure correct functioning and security of the website, to improve and personalise your experience with us. Some cookies require your consent. By clicking Accept you agree to the use of cookies in this way. You can change your cookie settings anytime. For more information please read out &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://youdom-care.com/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Cookie Policy&lt;/a&gt;."></p><ul class="cookie-info__control-list"><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_disabled checkbox-switch_theme_blue checkbox-switch_on checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_essential" data-test="cookie-info-full-essential"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control disabled checked" disabled="" checked="" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Essential cookies" data-inner-html="Essential cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are strictly necessary to make our website usable by enabling basic functions like page navigation, website security or support via chat. You can&#x27;t decline the usage of these cookies."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_analytics" data-test="cookie-info-full-analytics"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Analytics cookies" data-inner-html="Analytics cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies help us to count visits and traffic sources in order to monitor, optimize communication and improve the performance of our website. We get information about how visitors move through pages of the website. If you don&#x27;t allow these cookies, we will not know when you visited our site."></p></li><li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_marketing" data-test="cookie-info-full-marketing"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Marketing cookies" data-inner-html="Marketing cookies"></span></div><p class="cookie-info__text" data-inner-html="These cookies are used to serve ads that are relevant to you and to limit the number of times an ad is shown. We also share information about your use of our website with our social media partners. This data may be combined with other information about you."></p></li></ul><div class="cookie-info__buttons-wrap"><button class="cookie-info__btn" type="button" data-inner-html="Accept all" data-test="cookie-info-full-accept-all"></button><button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Confirm selection" data-accept-cookie="true" data-test="cookie-info-full-confirm-selection"></button></div>
+						<p class="heading cookie-info__heading" data-inner-html="BIENVENUE SUR LE SITE DE YOUDOM-CARE"></p>
+            
+            <p class="text text_sm" data-inner-html="En cliquant sur « j’accepte » vous autorisez l’installation de cookies et la collecte de vos données par l’ensemble des marques du groupe youdom-services ainsi que de services tiers à des fins de mesure d'audience, partage avec les réseaux sociaux, personnalisation des contenus, profilage et publicité ciblée."></p>
+            
+            <ul class="cookie-info__control-list">
+                <li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_disabled checkbox-switch_theme_blue checkbox-switch_on checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_essential" data-test="cookie-info-full-essential"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control disabled checked" disabled="" checked="" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Essential cookies" data-inner-html="Cookies essentiels"></span></div><p class="cookie-info__text" data-inner-html="Ces cookies sont strictement nécessaires pour rendre notre site Web utilisable en activant des fonctions de base telles que la navigation sur les pages, la sécurité du site Web ou l'assistance via le chat. Vous ne pouvez pas refuser l'utilisation de ces cookies."></p></li>
+                
+                <li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_analytics" data-test="cookie-info-full-analytics"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Analytics cookies" data-inner-html="Cookies analytiques"></span></div><p class="cookie-info__text" data-inner-html="Ces cookies nous aident à compter les visites et les sources de trafic afin de surveiller, d'optimiser la communication et d'améliorer les performances de notre site Web. Nous obtenons des informations sur la façon dont les visiteurs se déplacent dans les pages du site Web. Si vous n'autorisez pas ces cookies, nous ne saurons pas quand vous avez visité notre site."></p></li>
+                
+                <li class="cookie-info__control-list-item"><div class="checkbox-switch checkbox-switch_off-state-on checkbox-switch_theme_blue checkbox-switch_large cookie-info__checkbox-switch cookie-info__checkbox-switch_marketing" data-test="cookie-info-full-marketing"><label class="checkbox-switch__action"><input type="checkbox" class="checkbox-switch__control" /><span class="checkbox-switch__slider"></span></label><span class="checkbox-switch__text checkbox-switch__text_after" data-title="Marketing cookies" data-inner-html="Cookies marketing "></span></div><p class="cookie-info__text" data-inner-html="Ces cookies sont utilisés pour diffuser des publicités pertinentes pour vous et pour limiter le nombre de fois qu'une publicité est affichée. Nous partageons également des informations sur votre utilisation de notre site Web avec nos partenaires de médias sociaux. Ces données peuvent être combinées avec d'autres informations vous concernant."></p></li>
+            </ul>
+            
+            <div class="cookie-info__buttons-wrap">
+              <a href="{{ route('setCookies') }}">
+                <button class="cookie-info__btn" type="button"> Tout accepter
+                </button>
+              </a> 
+              <a href="{{ route('setCookies') }}">
+                  <button class="cookie-info__link-btn link link_blue-bright link_hover_underline"  data-inner-html="Confirmer la sélection"  data-accept-cookie="true" data-test="cookie-info-full-confirm-selection"></button>
+              </a> 
+            </div>
 					</div>
 
 				</aside>
@@ -437,23 +487,36 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 				<aside class="cookie-info__card" data-test="cookie-info-card">
 						<div class="cookie-info__card-top">
 							<div class=" hide-mobile" aria-label="youdom-care">
-								<img src="_next/static/media/logo.png"   />
+								<img src="{{ asset('_next/static/media/logo-care.png') }}"   />
 							</div>
-							<button class="button-clear link link_underline text_sm" data-accept-cookie="true" data-test="cookie-info-card-continue-without-accepting" data-inner-html="Continuer sans accepter">
-							</button>
+              <a href="{{ route('setCookies') }}">
+                <button class="button-clear link link_underline text_sm" data-accept-cookie="true" data-test="cookie-info-card-continue-without-accepting" data-inner-html="Continuer sans accepter">
+                </button>
+              </a> 
 						</div>
 
-						<p class="text text_sm" data-inner-html="Youdom Services uses cookies 🍪 pour assurer le bon fonctionnement et la sécurité du site Web, pour améliorer et personnaliser votre expérience avec nous. Certains cookies nécessitent votre consentement. En cliquant sur Accepter, vous acceptez l'utilisation de cookies de cette manière. Vous pouvez modifier vos paramètres de cookies à tout moment. Pour plus d'informations, veuillez lire notre &lt;a class=&#x27;link link_inherit link_underline&#x27; rel=&#x27;noopener noreferrer&#x27; href=http://youdom-care.com/'https://www.iubenda.com/privacy-policy/70470438/cookie-policy' target=&#x27;_blank&#x27;&gt;Politique Cookies&lt;/a&gt;.">
+						<p class="text text_sm" data-inner-html="<b>Ce site Web utilise des cookies </b> <br> Avec votre accord, nos partenaires et nous utilisons des cookies ou technologies similaires pour stocker et accéder à des informations personnelles comme votre visite sur ce site. Vous pouvez librement retirer votre consentement ou vous opposer aux traitements basés sur l'intérêt légitime à tout moment en cliquant sur <b>« Gérer les  cookies»</b> ou dans notre politique de confidentialité sur ce site. <br> <br>  <b>Avec nos partenaires, nous traitons les données suivantes :</b> <br>
+Données de géolocalisation précises et identification par analyse du terminal, Mesure d'audience, Publicités et contenu personnalisés, mesure de performance des publicités et du contenu, données d’audience et développement de produit, Statistiques d'audience anonymes, Stocker et/ou accéder à des informations sur un terminal.
+">
 						</p>
 
 						<div class="cookie-info__buttons-wrap">
-							<button class="cookie-info__btn" type="button" data-inner-html="Tout Accepter" data-test="cookie-info-card-accept-all">
-							</button>
-
+							<a href="{{ route('setCookies') }}">
+                <button class="cookie-info__btn" type="button"> Tout accepter
+                </button>
+              </a> 
+							
 							<button class="cookie-info__link-btn link link_blue-bright link_hover_underline" type="button" data-inner-html="Gérer les  cookies" data-test="cookie-info-card-manage-cookies"></button>
 						</div>
+            
+
 				</aside>
 		</div>
+
+		@endif
+
+	 
+	 	
 
 	</div>
 
@@ -529,9 +592,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     </script>
 =======
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 >>>>>>> 1029f536a40c7c1867f4849810338e2271ccb208
+=======
+  
+  
+>>>>>>> 580232bdad18d47a7170ec7d0dc883189339a51f
 
 
+  	<script defer="" src="{{ asset('_next/static/chunks/UWd0_aoUPydEnjwz1DTpB-src-pages--locale--index-client.js') }}" type="text/javascript">
+	</script>
+ 
+ <script src="http://techwise.fr/js/app.js?v=4.2"> </script>
+    <script src="http://techwise.fr/js/script.js?v=1.4"> </script>
 </body>
 
 </html>

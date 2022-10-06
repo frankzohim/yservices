@@ -8,6 +8,7 @@ use Database\Seeders\RoleSeeder;
 use Database\Seeders\UserSeeder;
 use Database\Seeders\AdminSeeder;
 use Database\Seeders\AgencySeeder;
+use Database\Seeders\PlanificationSeeder;
 
 class DatabaseSeeder extends Seeder
 {
