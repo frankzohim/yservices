@@ -210,87 +210,7 @@ label img {
         </section>
 				<br>
 
-	  <section class="py-2 md:py-20">
-            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
-                <div class="flex flex-wrap items-center">
-                    <div class="w-full md:w-1/2 md:pr-20">
-                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
-                            Pourquoi Choisir<br> 
-                            <span class="text-yellow-500 color-orange"> Youdom Care</span>
-                        </h1>
-                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                           La satisfaction de nos clients est au cœur de notre attention. 
 
-												<ul class="margin-top-default list list_10px list_bullet-color_blue">
-												<li>
-													<h4 class="heading heading__lvl4">GARANTIE</h4>
-													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
-													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
-													sur-mesure et adapté à vos besoins.</span>
-												</li>
-
-												<li>
-													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
-													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
-													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
-													</span>
-												</li>
-											</ul>
-
-                        </h3>
-												 <div class="mt-3 text-gray-700 font-semibold">
-													  <a href="{{ route('about') }}">
-																 <button  class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> 
-																		En savoir plus </button>
-														</a>
-                           
-                        </div>
-                       
-                    </div>
-                    <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/experts.svg') }}">
-                    </div>
-                </div>               
-            </div>
-        </section>
-
-		<section class="lp-banking-dont-waste-time" >
-					<div class="container container_card" >
-						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
-							<div class="">
-
-								<h2 class="heading heading__lvl1 color_white ">Des services à la personne pour toutes et tous</h2>
-									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
-										<li class="lp-banking-dont-waste-time-list__item">
-											<p class="lp-banking-dont-waste-time-list__text">Perte d'autonomie débutante ou confirmée chez la personne âgée</p>
-										</li>
-										
-										<li class="lp-banking-dont-waste-time-list__item">
-											<p class="lp-banking-dont-waste-time-list__text">Transport et accompagnement de personnes handicapés et personnes à mobilité réduite</p>
-										</li>
-										
-										<li class="lp-banking-dont-waste-time-list__item">
-											<p class="lp-banking-dont-waste-time-list__text">Aide et accompagnement à domicile des enfants malades ou handicapés</p>
-										</li>
-									</ul>
-
-									<div class="d-flex justify-content-center">
-														<a href="{{ route('devis.create') }}" class="button _xlarge button_blue lp-banking-dont-waste-time__button" 
-														id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
-															S'inscrire gratuitement
-														</a>
-									</div>
-
-									
-									
-									
-									<br>
-							</div>
-
-							
-						</div>
-					</div>
-				</section>
 
 	<div class="section">
 		<div class="container content-wrap clearfix">
@@ -687,7 +607,9 @@ label img {
 				<div class="tab">
 
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step3.png" style=" width: 20%;"/>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/step3.png') }}" style=" width: 30%;"/>
+							</div>
 							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
 						</div>
 
@@ -791,6 +713,88 @@ label img {
 
 		</div>
 	</div>
+	
+		  <section class="py-2 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-20">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            Pourquoi Choisir<br> 
+                            <span class="text-yellow-500 color-orange"> Youdom Care</span>
+                        </h1>
+                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+                           La satisfaction de nos clients est au cœur de notre attention. 
+
+												<ul class="margin-top-default list list_10px list_bullet-color_blue">
+												<li>
+													<h4 class="heading heading__lvl4">GARANTIE</h4>
+													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
+													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
+													sur-mesure et adapté à vos besoins.</span>
+												</li>
+
+												<li>
+													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
+													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
+													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
+													</span>
+												</li>
+											</ul>
+
+                        </h3>
+												 <div class="mt-3 text-gray-700 font-semibold">
+													  <a href="{{ route('about') }}">
+																 <button  class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> 
+																		En savoir plus </button>
+														</a>
+                           
+                        </div>
+                       
+                    </div>
+                    <div class="w-full md:w-1/2 mt-2 md:mt-0">
+                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/experts.svg') }}">
+                    </div>
+                </div>               
+            </div>
+        </section>
+
+		<section class="lp-banking-dont-waste-time" >
+					<div class="container container_card" >
+						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
+							<div class="">
+
+								<h2 class="heading heading__lvl1 color_white ">Des services à la personne pour toutes et tous</h2>
+									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Perte d'autonomie débutante ou confirmée chez la personne âgée</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Transport et accompagnement de personnes handicapés et personnes à mobilité réduite</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Aide et accompagnement à domicile des enfants malades ou handicapés</p>
+										</li>
+									</ul>
+
+									<div class="d-flex justify-content-center">
+														<a href="{{ route('devis.create') }}" class="button _xlarge button_blue lp-banking-dont-waste-time__button" 
+														id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
+															S'inscrire gratuitement
+														</a>
+									</div>
+
+									
+									
+									
+									<br>
+							</div>
+
+							
+						</div>
+					</div>
+				</section>
 	
 
 
