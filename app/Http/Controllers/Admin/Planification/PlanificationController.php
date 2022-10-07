@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\Admin\Planification;
 
-use App\Models\Need;
-use App\Models\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Planification;
+use Illuminate\Http\Request;
 
-class NeedController extends Controller
+class PlanificationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +15,7 @@ class NeedController extends Controller
      */
     public function index()
     {
-        $needs=Need::all();
-        return view("admin.Need.index",compact('needs'));
+        //
     }
 
     /**
@@ -28,7 +26,6 @@ class NeedController extends Controller
     public function create()
     {
         //
-        return view('admin.Need.create');
     }
 
     /**
@@ -39,7 +36,13 @@ class NeedController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Planification::create([
+            'date_times'=>$request->data_times,
+            'intervenant_id'=>$request->intervenant_id,
+            'customer_id'=>$request->customer_id,
+        ]);
+
+        return "save";
     }
 
     /**
@@ -51,8 +54,6 @@ class NeedController extends Controller
     public function show($id)
     {
         //
-        $need=Need::find($id);
-        return view('admin.Need.show', compact('need'));
     }
 
     /**
@@ -64,8 +65,6 @@ class NeedController extends Controller
     public function edit($id)
     {
         //
-        $need = Need::find($id);
-        return view('admin.Need.edit', compact('need'));
     }
 
     /**
@@ -89,34 +88,5 @@ class NeedController extends Controller
     public function destroy($id)
     {
         //
-        $needs= Need:: find($id);
-        $needs->delete();
-
-        return to_route('need.index');
-    }
-
-    public function listCustomers(){
-
-        $customers=User::where('role_id',2)->get();
-
-        return view('admin.Need.listCustomers',compact('customers'));
-    }
-
-    public function chooseplanification(Request $request){
-
-        $intervenants=User::where('role_id',3)->get();
-        $customerId=$request->id;
-        return view('admin.planifications.chooseUser',compact('intervenants','customerId'));
-
-    }
-
-    public function chooseHours(Request $request){
-
-        $intervenant_id=$request->IntervenantId;
-        $customer_id=$request->id;
-        //dd($arrayIntervenant);
-
-        return view('admin.planifications.chooseHour',compact('intervenant_id','customer_id'));
     }
 }
-

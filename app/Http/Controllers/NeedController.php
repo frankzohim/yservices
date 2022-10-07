@@ -82,6 +82,7 @@ class NeedController extends Controller
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;
+        $need->user_id=null;
 
 
         if($need->save()){

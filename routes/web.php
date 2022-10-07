@@ -18,6 +18,8 @@ use App\Http\Controllers\Admin\FranchiseController;
 use App\Http\Controllers\Admin\JoinController as AdminJoinController;
 use App\Http\Controllers\Admin\NeedController as AdminNeedController;
 use App\Http\Controllers\Admin\ContactController as AdminContactController;
+use App\Http\Controllers\Admin\Planification\PlanificationController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -195,6 +197,12 @@ Route::group(['prefix' => 'clients'], function () {
 
         Route::get('needUser/{id}',[CreateController::class,'createUserById'])->name('need.createUser');
         Route::post('need/store',[CreateController::class,'storeUser'])->name('need.storeUser');
+
+        Route::resource('/planifications',PlanificationController::class);
+        Route::get('chooseUser',[AdminNeedController::class,'listCustomers'])->name('list.users');
+        Route::get('planification/chooseUser{id}',[AdminNeedController::class,'chooseplanification'])->name('choose.planification');
+        Route::post('/ChooseHours',[AdminNeedController::class,'chooseHours'])->name('choose.hours');
+
     });
 
 Route::get('/blocs',[BlocController::class,'index'])->name('bloc.index');
@@ -203,5 +211,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
 
+        Route::get('/calender', function () {
+            return view('calender');
+        });
 
 });

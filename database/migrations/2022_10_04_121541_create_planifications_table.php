@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\need;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,17 +14,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users_needs', function (Blueprint $table) {
+        Schema::create('planifications', function (Blueprint $table) {
             $table->id();
-
-            $table->foreignIdFor(User::class)
-                ->constrained()
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
-            $table->foreignIdFor(need::class)
-                ->constrained()
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+            $table->string('date_times');
+            $table->string('intervenant_id')->nullable();
+            $table->string('customer_id')->nullable();
             $table->timestamps();
         });
     }
@@ -37,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users_needs');
+        Schema::dropIfExists('planifications');
     }
 };

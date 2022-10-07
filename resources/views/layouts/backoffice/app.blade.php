@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    @livewireStyles
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Language" content="en">
@@ -442,5 +443,6 @@
 <script type="text/javascript" src="{{ asset('assets/backoffice/assets/scripts/main.d810cf0ae7f39f28f336.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
 <script src="https://cdn.jsdelivr.net/npm/metismenu"></script>
+<script src="{{ asset('assets/backoffice/assets/js/chooseUser.js') }}"></script>
 </body>
 </html>

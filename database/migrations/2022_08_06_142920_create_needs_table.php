@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use App\Models\User;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+use phpDocumentor\Reflection\Types\Nullable;
 
 return new class extends Migration
 {
@@ -13,6 +15,7 @@ return new class extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('needs', function (Blueprint $table) {
             $table->id();
             $table->string('services');
@@ -27,6 +30,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('phone');
             $table->string('address');
+            $table->string('user_id')->nullable();
             $table->timestamps();
         });
     }

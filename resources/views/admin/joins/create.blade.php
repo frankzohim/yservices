@@ -102,6 +102,49 @@
                                    placeholder="" value="{{ $join->name ?? "none" }}" required autofocus>
                         </div>
                     </div>
+
+                    <input type="hidden" name="civility" class="form-control" id="name"
+                    placeholder="" value="{{ $join->civility ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="username" class="form-control" id="name"
+                    placeholder="" value="{{ $join->username ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="phone_number" class="form-control" id="name"
+                    placeholder="" value="{{ $join->phone_number ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="email" class="form-control" id="name"
+                    placeholder="" value="{{ $join->email ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="postal_code" class="form-control" id="name"
+                    placeholder="" value="{{ $join->postal_code ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="town" class="form-control" id="name"
+                    placeholder="" value="{{ $join->town ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="informations" class="form-control" id="name"
+                    placeholder="" value="{{ $join->informations ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="job" class="form-control" id="name"
+                    placeholder="" value="{{ $join->job ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="available" class="form-control" id="name"
+                    placeholder="" value="{{ $join->available ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="diploma" class="form-control" id="name"
+                    placeholder="" value="{{ $join->diploma ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="year_of_experience" class="form-control" id="name"
+                    placeholder="" value="{{ $join->year_of_experience ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="cv" class="form-control" id="name"
+                    placeholder="" value="{{ $join->cv ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="diploma_file" class="form-control" id="name"
+                    placeholder="" value="{{ $join->diploma_file ?? "none" }}" required autofocus>
+
+                    <input type="hidden" name="id" class="form-control" id="name"
+                    placeholder="" value="{{ $join->id ?? "none" }}" required autofocus>
+
                     <div class="form-group has-danger">
                         <label class="sr-only" for="email">E-Mail Address</label>
                         <div class="input-group mb-2 mr-sm-2 mb-sm-0">
