@@ -25,7 +25,7 @@
                 <div class="col-lg-4 mt-3">
                     <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
                     <div class="text-center">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusamus minima, deserunt vitae repellendus eveniet voluptates saepe aperiam quos prae
+                        {{ $article->title}}
                     </div>
                 </div>
             @endforeach
