@@ -39,7 +39,7 @@
 .team .si-share{margin-top:30px;text-align:left}
 .team .si-share .social-icon{font-size:14px;width:34px}
 .team-title{position:relative;padding-top:20px}
-.team-title h4{display:block;margin-bottom:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;font-weight:700; color: rgb(68,68,68)}
+.team-title h4{display:block;margin-bottom:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;font-weight:700;}
 .team-title span{display:block;color:#1abc9c;font-weight:400;font-family:'pt serif',serif;font-style:italic;font-size:16px;margin-top:5px}
 .team-content{margin-top:1rem;color:#777}
 .team-content p:last-child{margin-bottom:0}
@@ -102,6 +102,13 @@ label img {
   z-index: -1;
 }
 
+ .color-text{
+        color: #5f00f5;
+    }
+    .color-orange{
+        color:#F54749;
+    }
+
 	</style>
     <section class="main-intro-all">
 					<div class="container">
@@ -112,32 +119,38 @@ label img {
 
 								<div style="margin-bottom:55px;">
 
-									<h1 class="heading heading__lvl1 stillforce-heading-blue-medium" >
-
-									<h1 class="heading heading__lvl1 stillforce-heading-blue" style="">L'aide à domicile</h1>
-									<h1 class="heading heading__lvl1" style="color: #E84347; font-weight:700; font-size:70px; line-height:59.5px;">Sur-mesure</h1>
-
-									</h1>
+									<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            L'aide à domicile<br> 
+                            <span class="text-yellow-500 color-orange"> Sur-mesure</span>
+                        </h1>
 
 								</div>
 
 								<div style="margin-bottom:30px;">
 
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aide à domicile pour :</p>
+							
 
-									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
+									
+									 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 text-justify" style="line-height: 1.5">
+													
+										<!-- <p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm text-indigo-800 color-text font-bold" >Aide à domicile pour :</p> -->
+										<p class="margin-top-xs text text_lg color_grey  text-indigo-800 color-text font-bold" >Aide à domicile pour :</p>
+										
+                           <ul class="margin-top-xs list list_10px  main-intro-all__list">
 
-										<li class="text"><b>Les personnes âgées</b> </li>
-										<li class="text"><b>Les personnes en situation handicap  </b> </li>
-										<li class="text"><b>Les personnes en perte d’autonomie   </b> </li>
+															<li class="text "><b>Les personnes âgées</b> </li>
+															<li class="text "><b>Les personnes en situation handicap  </b> </li>
+															<li class="text"><b>Les personnes en perte d’autonomie   </b> </li>
 
-									</ul>
+														</ul>
+                        </h3>
 								</div>
-								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
+								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all" style="background-color:#F54749; border-radius:25px;">
 									En Savoir Plus
 								</a>
 
-								<a href="{{ route('join-us') }}" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
+								<a href="{{ route('join-us') }}" class="margin-top-default button button_w-m-full" style="background-color:#5f00f5; border-radius:25px;" 
+								id="target-action-main-intro-all">
 									Nous Rejoindre
 								</a>
 
@@ -161,22 +174,145 @@ label img {
 
 	</section>
 
-					<div class="section">
+		  <section class="py-2 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+                <div class="flex flex-wrap items-center">
+										 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
+                        <img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+												src="{{ asset('_next/static/media/aide-personne-agee-domicile-livraison-repas-courses.jpg') }}">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            Vivre serein 
+                            <span class="text-yellow-500 color-orange"> chez-soi</span>
+                        </h1>
+                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+                           Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie. <br>
+												</h3>
+													<h5 class="heading ">L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!</h5>
+													
+													<br>
+											
+													<h4 class="heading ">Vivre sereinement chez toi avec une aide de maintien à domicile</h4>
+													<span class="text" style="color:black;">YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en perte d’autonomie, 
+														pour les personnes handicapées, pour les enfants malades et pour les personnes en situation handicap , fragilisées qui souhaitent vivre à leur domicile, 
+														dans les meilleures conditions de bien-être et de sécurité.
+													</span>
+											
+
+                        
+												 
+                       
+                    </div>
+                    
+                </div>               
+            </div>
+        </section>
+				<br>
+
+	  <section class="py-2 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-20">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            Pourquoi Choisir<br> 
+                            <span class="text-yellow-500 color-orange"> Youdom Care</span>
+                        </h1>
+                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+                           La satisfaction de nos clients est au cœur de notre attention. 
+
+												<ul class="margin-top-default list list_10px list_bullet-color_blue">
+												<li>
+													<h4 class="heading heading__lvl4">GARANTIE</h4>
+													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
+													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
+													sur-mesure et adapté à vos besoins.</span>
+												</li>
+
+												<li>
+													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
+													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
+													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
+													</span>
+												</li>
+											</ul>
+
+                        </h3>
+												 <div class="mt-3 text-gray-700 font-semibold">
+													  <a href="{{ route('about') }}">
+																 <button  class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> 
+																		En savoir plus </button>
+														</a>
+                           
+                        </div>
+                       
+                    </div>
+                    <div class="w-full md:w-1/2 mt-2 md:mt-0">
+                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/experts.svg') }}">
+                    </div>
+                </div>               
+            </div>
+        </section>
+
+		<section class="lp-banking-dont-waste-time" >
+					<div class="container container_card" >
+						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
+							<div class="">
+
+								<h2 class="heading heading__lvl1 color_white ">Des services à la personne pour toutes et tous</h2>
+									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Perte d'autonomie débutante ou confirmée chez la personne âgée</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Transport et accompagnement de personnes handicapés et personnes à mobilité réduite</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Aide et accompagnement à domicile des enfants malades ou handicapés</p>
+										</li>
+									</ul>
+
+									<div class="d-flex justify-content-center">
+														<a href="{{ route('devis.create') }}" class="button _xlarge button_blue lp-banking-dont-waste-time__button" 
+														id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
+															S'inscrire gratuitement
+														</a>
+									</div>
+
+									
+									
+									
+									<br>
+							</div>
+
+							
+						</div>
+					</div>
+				</section>
+
+	<div class="section">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span>
-				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
+			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> Quels sont vos besoins</span>
+				<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span>
+				
+			 </h3>
 			</div>
 
 			<form id="regForm" method="post" action="{{ route('devis.store') }}" autocomplete="off">
 
 					@csrf
 
-				<!-- One "tab" for each step in the form: -->
+				
 				<div class="tab">
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step1.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez sur un service pour sélectionner</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/step1.png') }}" style=" width: 30%;"/>
+							</div>
+							
+							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Cliquez sur un service pour sélectionner</h5>
 						</div>
 						<div class="row">
 
@@ -192,7 +328,10 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4></div>
+									<div class="team-title">
+										<h4  style="" class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4>
+										
+									</div>
 
 									</div>
 								</div>
@@ -211,7 +350,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
 
 									</div>
 								</div>
@@ -232,7 +371,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ACCOMPAGNEMENTS</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">ACCOMPAGNEMENTS</h4></div>
 
 									</div>
 								</div>
@@ -251,7 +390,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE AUX REPAS</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE AUX REPAS</h4></div>
 
 									</div>
 								</div>
@@ -276,7 +415,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
 
 									</div>
 								</div>
@@ -295,7 +434,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE-MÉNAGÈRE</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE-MÉNAGÈRE</h4></div>
 
 									</div>
 								</div>
@@ -314,7 +453,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ASSISTANCE ADMINISTRATIVE</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">ASSISTANCE ADMINISTRATIVE</h4></div>
 
 									</div>
 								</div>
@@ -334,7 +473,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">VOYAGE & EVASION</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">VOYAGE & EVASION</h4></div>
 
 									</div>
 								</div>
@@ -357,7 +496,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
 
 									</div>
 								</div>
@@ -376,7 +515,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
 
 									</div>
 								</div>
@@ -395,7 +534,7 @@ label img {
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
 
 									</div>
 								</div>
@@ -411,25 +550,27 @@ label img {
 				<div class="tab">
 
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step2.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Dites nous plus sur le planning</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/step2.png') }}" style=" width: 30%;"/>
+							</div>
+							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Dites nous plus sur le planning</h5>
 						</div>
 
 							<div class="row">
 
-								<div class="form-group col-md-4 col-lg-4 mb-0 mt-md-0 mt-4 center" >
-										<label class="form-check-label" style="color:#1b138a; font-size:18px; font-weight:700;">
+								<div class="form-group col-md-7 col-lg-7 mb-0 mt-md-0 mt-4 center" >
+										<label style="font-weight:700; font-size:22px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
 											  A Partir de quand peut-on commencer?
 											  </label>
 
 
 								</div>
 
-								<div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
+								<div class="form-group col-md-5 col-lg-5 mb-0 mt-md-0 mt-4">
 
 										<select name="start_at" class="form-control form-select" aria-label="Default select example" >
 
-											<option value="Immédiatement" >Immédiatement</option>
+											<option value="Immédiatement" > Immédiatement </option>
 											<option value="Dans 1 mois" >Dans 1 mois</option>
 											<option value="Dans 2 mois" >Dans 2 mois</option>
 											<option value="Dans 3 mois" >Dans 3 mois</option>
@@ -443,7 +584,7 @@ label img {
 
 
 						    <div class="heading-block topmargin-sm center">
-								<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Cliquez pour sélectionner vos horaires</h5>
+								<h5 class="text-yellow-500 color-orange" style="font-weight:700; font-size:30px; line-height:59.5px;"> Cliquez pour sélectionner vos horaires</h5>
 							</div>
 
 							<table class="TimetableDesign PFTimetableDesktop">
@@ -632,12 +773,14 @@ label img {
 
 				<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
-										<button type="button" class="margin-top-default button button_w-m-full" style="background-color:#DF034D;" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #F54749" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #5f00f5"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
 									</div>
 								</div>
-								<!-- Circles which indicates the steps of the form: -->
-								<div style="text-align:center;margin-top:40px;">
+								
+								<div style="text-align:center;margin-top:-20px;">
 									<span class="step"></span>
 									<span class="step"></span>
 									<span class="step"></span>
@@ -648,201 +791,86 @@ label img {
 
 		</div>
 	</div>
-
-				<br>
-				<section class="lp-banking-track-cashflow">
-					<div class="container">
-						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
-							<div class="lp-banking-track-cashflow__image-wrap image">
-								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old-people.png') }} " alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
-								</picture>
-							</div>
-							<div class="lp-banking-track-cashflow__content">
-								<h2 class="heading heading__lvl1 stillforce-heading-red">Pourquoi Choisir <span style="color:#594EE6;">Youdom Services</span></h2>
-									<p class="text text_lg margin-top-default">
-										La satisfaction de nos clients est au cœur de notre attention
-									</p>
-									<ul class="margin-top-default">
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Nous vous garantissons toujours le même auxiliaire de vie</li>
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Un conseiller dédié pour un service personnalisé.</li>
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Des prestations flexibles qui évoluent selon vos besoins.</li>
-									</ul>
-									<a href="{{ route('about') }}" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">En Savoir Plus</a></div>
-							</div>
-
-						</div>
-					</div>
-				</section>
-				<section class="main-invoicing" >
-
-					<div class="container container_card" >
-
-						<div class="section-body section-body_card
-						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
-
-							<h2 class="heading heading__lvl1 color_blue" style="color: white;">Des services à la personne pour toutes et tous
-							</h2>
-							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
-								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et
-									vous permet une déduction d'impôt</span></b></p>
-
-								<p class="margin-top-xs text" style="color: white;">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
-									<a href="{{ route('services') }}" style="color: white;">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
-
-							<div class="margin-top-lg main-invoicing__content-wrap">
-
-								<div class="main-invoicing__info">
-
-									<ul class="main-invoicing__list">
-
-										<li><div class="">
-
-											<img src="{{ asset('_next/static/media/icones/numbers/number-one.png') }}" width="15%" alt="">
-
-										</div>
-											<p class="margin-top-xs text" style="color: white;">
-
-												<b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-2.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-3.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
-										</li>
-
-										<li>
-										<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-four.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
-										</li>
-
-									</ul>
+	
 
 
 
-								</div>
-
-								<div class="main-invoicing__simg-wrap">
-
-									<picture class="picture__image-container ">
-
-										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
-									</picture>
-
-								</div>
-							</div>
-					    </div>
-					</div>
-
-				</section>
-
-			<!--
-				<section class="lp-banking-track-cashflow">
-					<div class="container">
-						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
-							<div class="image lp-banking-track-cashflow__image-wrap">
-								<picture class="picture__image-container ">
-
-									<img src="{{  asset('_next/static/media/lp-banking-track-cashflow__simg_1_fr.def2e41c.webp') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_fr@2x.de21b672.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div><div class="lp-banking-track-cashflow__content"><h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading">Suivez vos flux financiers actuels et futurs à l&#x27;aide du nouveau tableau de bord intelligent</h2><p class="margin-top-default text text_lg">Recherchez, catégorisez et filtrez toutes vos factures:</p><ul class="margin-top-default list list_10px list_bullet-color_blue"><li><h4 class="heading heading__lvl4">Par type</h4><span class="text">(logistique, marketing, personnel, un projet spécifique, etc.)</span></li><li><h4 class="heading heading__lvl4">Sur n&#x27;importe quelle période</h4></li><li><h4 class="heading heading__lvl4">Pour un client ou un fournisseur spécifique</h4></li></ul></div>
-						</div>
-					</div>
-				</section>
-			-->
 
 
-				<section class="main-cards color_white"><div class="container container_card">
+				<section class="py-8 md:py-16 bg-[#ffffff]" style="color: #1b138a">
+            <div class="max-w-7xl mx-auto px-4 ">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-20">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold color-text" style="line-height: 1.2">
+                            Notre mission <br> 
+                            <span class="text-yellow-500 color-orange"> à Youdom-care</span>
+                        </h1>
+                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 " style="line-height: 1.5">
+                           Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne :
+													<span class="color-orange">Youdom-Care</span> accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et vous 
+													permet une déduction d'impôt.
 
-					<div class="section-body section-body_card section-body_card_dark section-body_card_margin-top main-cards__body">
+													Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile.
+													Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins 
+                        </h3>
+                    </div>    
+                    <div class="w-full md:w-1/2">
+                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/applications.svg') }}">
+                    </div>
+                </div>               
+            </div>
+        </section>
 
-						<div class="main-cards__info">
-
-							<h2 class="heading heading__lvl1">
-								<span class="stillforce-heading-blue"> Rejoindre</span> <span class="stillforce-heading-red">Youdom Services </span>
-							</h2>
-							<br>
-
-							<p class="">
-								Découvrez toutes les offres d’emplois
-								du Réseau Youdom Services
-							</p>
-
-
-							<div class="main-cards__btn-wrap margin-top-default">
-								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div>
-									<a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more"
-									href="{{ route('about') }}">EN SAVOIR PLUS</a></div>
-							</div>
-
-						</div>
-
-						<div class="image main-cards__simg-wrap">
-
-							<picture class="picture__image-container ">
-
-
-
-								<img src="{{  asset('_next/static/media/join-us.png') }}" alt="" class="picture__image " width="592" />
-
-							</picture>
-
-						</div>
-
-					</div>
-				</div>
-
-				</section>
 				<!--
+        <section class="py-2 md:py-20">
+					<div class="max-w-7xl mx-auto rounded-md bg-primary p-4 md:p-8">
+							<div class="flex justify-center items-center">
+									<div class="w-full md:w-3/5 text-white">
+											<h1 class="text-xl md:text-4xl font-bold">
+													Rejoindre Youdom Care ?
+											</h1>
+											<h3 class="mt-4 text md:text-2xl">
+													Postulez en 5 minutes et obtenez une offre d’emploi du Réseau Youdom Care                
+											</h3>
+											<div class="mt-4">
+												  <a href="{{ route('join-us') }}">
+														<button class="px-3 py-3 bg-white text-primary text-lg  font-bold rounded-full ">
+															Nous Rejoindre
+														</button>
+													</a>
+													
+											</div>
+									</div>
+									<div class="md:block w-2/5">
+											<img data-animate="animate-right" class="md:w-3/5 animated-item" src="{{ asset("_next/static/media/contactez-nous.svg") }}">
+									</div>
+							</div>
+					</div>
+			</section> 
+		-->
+
+			
 				<section class="lp-banking-invite-team">
 					<div class="container container_card">
 						<div class="section-body section-body_card section-body_card_pink section-body_margin-top lp-banking-invite-team__body ">
 							<div class="image lp-banking-invite-team__img-wrap">
 								<picture class="picture__image-container ">
 
-								<img src="{{  asset('_next/static/media/lp-banking-invite-team__simg_ver-2_fr.301d3092.webp') }} " srcSet="/_next/static/media/lp-banking-invite-team__simg_ver-2_fr@2x.7788242e.png 2x" alt="" class="picture__image " loading="eager" /></picture>
-							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte FINOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p>
+								<img src="{{  asset('_next/static/media/about.png') }} " 
+								srcSet="{{  asset('_next/static/media/about.png') }}" alt="" class="picture__image " width="75%" loading="eager" />
+							</picture>
+							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">
+								Notre fonctionnement</h2><p class="margin-top-default text text_lg">
+									Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie professionnelles. </p>
 
-							<a href="#" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
+							<a href="{{ route('functioning') }}" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" 
+							data-target-action="data-target-action">En savoir plus</a></div>
 						</div>
 					</div>
 				</section>
 
-				<section class="lp-banking-dont-waste-time">
-					<div class="container container_card">
-						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
-							<div class="lp-banking-dont-waste-time__content">
-
-								<h2 class="heading heading__lvl1 color_white lp-banking-dont-waste-time__heading">Gagnez du temps grâce à l&#x27;automatisation et aux fonctions intelligentes</h2>
-									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
-										<li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Reliez votre compte bancaire professionnel ou personnel à FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Consultez toutes vos transactions sur le tableau de bord FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Associez facilement vos factures aux paiements entrants</p></li>
-									</ul>
-
-									<a href="#" class="button _xlarge button_blue lp-banking-dont-waste-time__button" id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
-									Essayer gratuitement</a>
-							</div>
-
-							<div class="image lp-banking-dont-waste-time__image-wrap">
-								<picture class="picture__image-container ">
-
-									<img src="{{  asset('_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.webp') }} " srcSet="_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div>
-						</div>
-					</div>
-				</section>
-			-->
+				
+	
 
 	<script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
 	<script src="{{ asset('assets/js/typeahead.js') }}"></script>

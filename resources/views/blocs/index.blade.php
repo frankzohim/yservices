@@ -50,7 +50,7 @@
                     <div class="col-lg-4 mt-3">
                         <img src="{{ Storage::url($article->image_path) }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
                         <div class="text-center">
-                            {{ article->title}}
+                            {{ $article->title}}
                         </div>
                     </div>
                 </div>

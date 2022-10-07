@@ -38,7 +38,7 @@ class ContactController extends Controller
             $i++;
         }
 
-        return view('contact',compact('codes_array'));
+        return view('main',compact('codes_array'));
     }
 
     /**

@@ -126,21 +126,21 @@
 //timetable css
 .TimetableDesign{width:100%;font-size:14px;font-weight:700;margin-top:20px;}
 
-.TimetableDesign thead tr th{font-family: Lato, Arial, Sans-serif; background:#282828;color:#fff;text-align:center;vertical-align:middle;height:50px;white-space:nowrap;padding:0 5px}
+.TimetableDesign thead tr th{font-family: Montserrat, sans-serif; background:#5f00f5;color:#fff;text-align:center;vertical-align:middle;height:50px;white-space:nowrap;padding:0 5px}
 
-.TimetableDesign thead tr th.hover{color:#1b138a}
+.TimetableDesign thead tr th.hover{color:#5f00f5}
 
-.TimetableDesign tbody tr th,.TimetableDesign tbody tr td{font-family: Lato, Arial, Sans-serif; border-top:5px solid #ebf7fe;vertical-align:middle;height:50px;background:#fff;text-align:center}
+.TimetableDesign tbody tr th,.TimetableDesign tbody tr td{font-family:  Montserrat, sans-serif; border-top:5px solid #ebf7fe;vertical-align:middle;height:50px;background:#fff;text-align:center}
 
 .TimetableDesign tbody tr th{border-top:5px solid #ebf7fe;}
 
-.TimetableDesign tbody tr th{background:#282828; color:#fff;font-weight:600;white-space:nowrap;width:21.74%;text-align:left;padding:0 15px}
+.TimetableDesign tbody tr th{background:#5f00f5; color:#fff;font-weight:600;white-space:nowrap;width:21.74%;text-align:left;padding:0 15px}
 
-.TimetableDesign tbody tr th.hover{color:#1b138a}
+.TimetableDesign tbody tr th.hover{color:#5f00f5}
 
 .TimetableDesign tbody tr td{width:9.32%;cursor:pointer;border-left:5px solid #ebf7fe;-webkit-transition:all .05s ease-out;-moz-transition:all .05s ease-out;-o-transition:all .05s ease-out;transition:all .05s ease-out}
 
-.TimetableDesign tbody tr td:hover{background:#1b138a}
+.TimetableDesign tbody tr td:hover{background:#5f00f5}
 
 .TimetableDesign tbody tr td.selected{background:#ef7d00}
 
@@ -313,7 +313,7 @@ button:hover {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbbbbb;
+  background-color: #5f00f5;
   border: none;
   border-radius: 50%;
   display: inline-block;
@@ -364,8 +364,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 </style>
 
 <link rel="stylesheet" href="{{ asset('assets/css/collapse.css') }}">
+<link rel="stylesheet" href="{{ asset('css/app.css?v=4.2') }}" rel="stylesheet">
 
-    <link href="http://techwise.fr/css/app.css?v=4.2" rel="stylesheet"/>
+
 
 <noscript data-n-css="">
 </noscript>
