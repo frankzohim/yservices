@@ -759,11 +759,11 @@ label img {
         </section>
 
 		<section class="lp-banking-dont-waste-time" >
-					<div class="container container_card" >
-						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
+					<div class="container container_card"  >
+						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body " style="background-color: #5f00f5">
 							<div class="">
 
-								<h2 class="heading heading__lvl1 color_white ">Des services à la personne pour toutes et tous</h2>
+								<h2 class="heading heading__lvl1 color_white ">Des services à la personne pour tous</h2>
 									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
 										<li class="lp-banking-dont-waste-time-list__item">
 											<p class="lp-banking-dont-waste-time-list__text">Perte d'autonomie débutante ou confirmée chez la personne âgée</p>
@@ -777,9 +777,9 @@ label img {
 											<p class="lp-banking-dont-waste-time-list__text">Aide et accompagnement à domicile des enfants malades ou handicapés</p>
 										</li>
 									</ul>
-
+									<br>
 									<div class="d-flex justify-content-center">
-														<a href="{{ route('devis.create') }}" class="button _xlarge button_blue lp-banking-dont-waste-time__button" 
+														<a href="{{ route('devis.create') }}" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #F54749" 
 														id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
 															S'inscrire gratuitement
 														</a>
