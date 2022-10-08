@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('title', __('Contact - Youdom Services'))
-<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">@section('content')
+<link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
+
+@section('content')
 
 <section class="py-lg-7">
   <div class="container">

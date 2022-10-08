@@ -10,7 +10,7 @@
 			footer .instagram-follow-api ul li{margin-bottom:0}
 			footer .footer-horizontal-link li{margin-right:35px;list-style:none;margin-bottom:0}
 			footer .footer-horizontal-link li:last-child{margin-right:0}
-			.footer-dark,.footer-dark a{color:#fff; font-family: Lato, Arial, sans-serif; line-height: 30px; }
+			.footer-dark,.footer-dark a{color:#fff; font-family: Montserrat, sans-serif; line-height: 30px; }
 			.footer-dark a:hover{color:#E84347}
 			.footer-dark .footer-social a{color:#fff}
 			.footer-dark .footer-social a:hover{color:#8890a4}
@@ -42,9 +42,11 @@
 			.footer-dark1 .link{
 				color:#8191A0;
 				font-size:14px;
-				font-family: 'Open Sans', 'sans-serif', 'Arial';
+				font-family: 'Montserrat', 'sans-serif';
 				font-weight: 500;
 			}
+
+	
 
 		
 
@@ -363,7 +365,8 @@
                     <div class="row">
                         <!-- start footer column -->
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
-                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="color:#232323">QUI SOMMES NOUS?</span>
+                            <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom" style="color:#232323;
+														font-family:'Montserrat', 'sans-serif';">QUI SOMMES NOUS?</span>
                             <ul>
                                <li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('about') }}">A propos </a></li>
 															<li class="text  color_grey"><a class="link" data-inner-link="true" href="{{ route('commitment') }}">Nos engagements</a></li>
