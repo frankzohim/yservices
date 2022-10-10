@@ -82,22 +82,24 @@
 		</div>               
 	</div>
 </section>
+<br>
+<div class="d-flex justify-content-center">
+	<h1  class=" text-xl md:text-5xl font-bold text-yellow-500 color-orange" style="line-height: 1.2">
+		Des services à la personne pour tous
+	</h1>
+</div>
+<br>
 
-<section class="py-1 md:py-20">
+<section class="py-2 md:py-20">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
 
-    <div class="max-w-7xl mx-auto px-4 animated-content">
-        
-        <h1  class=" text-xl md:text-5xl font-bold text-yellow-500 color-orange" style="line-height: 1.2">
-            Des services à la personne pour tous
-        </h1>
-
-        <!-- sous titre -->
-        <div class="flex flex-wrap items-center mt-0 md:mt-8">
-            <div class="w-full md:w-3/5 md:pr-20">
-                <h2 class="mt-4 text-indigo-800  text-lg md:text-2xl font-bold">
+			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+				
+				<h2 class="mt-4 text-indigo-800  text-lg md:text-2xl font-bold">
                     La mission de Youdom-Care : 
                 </h2>
-                <h3  class=" md:text-xl mt-4 text-gray-700" style="line-height: 1.5">
+                <h3  class=" md:text-xl mt-2 text-gray-700" style="line-height: 1.5">
                     Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne:
 					Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en 
 					situation de handicap et vous permet une déduction d'impôt. <br>
@@ -106,183 +108,46 @@
 						Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins :
 
                 </h3>
-            </div>
-            <div class="w-full md:w-2/5 mt-8 md:mt-0">
-                <img  class="w-full md:w-4/5 " 
-				src="{{ asset('_next/static/media/service-retour-hospitalisation.jpg') }}" style="border-radius: 15px;">
-            </div>
-        </div>   
+			</div>
 
+			<div class="w-full md:w-1/2 mt-2 md:mt-0" >
+				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+										src="{{ asset('_next/static/media/lien-social.jpg') }}">
+			</div>
+			
+		</div>               
+	</div>
+</section>
 
+<section class="py-1 md:py-20">
 
+    <div class="max-w-7xl mx-auto px-1 animated-content">  
         <div class="mt-4 md:mt-12">
-            <p class="mt-4 text-gray-700">
-                Notre agence vous accompagne dans la mise en place de campagnes d'influence :
-            </p>
-            <ul class="mt-4 space-y-2 text-gray-700">
-                                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
+            <ul class="mt-4 space-y-2 text-gray-700 list list_10px list_bullet-color_blue">
+                <li class=" space-x-2 flex">
+                  
                     <span>
-                         <strong>Identification  </strong>des influenceurs en fonction de votre localité.                    </span>
+                         <strong>Perte d'autonomie   </strong>débutante ou confirmée chez la personne âgée.                    </span>
                 </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
+                <li class=" space-x-2 flex">
+                    
                     <span>
-                         <strong>Prise de contact </strong> personnalisée et suivi de la relation                    </span>
+                         <strong>Sortie d'hospitalisation </strong>                   
+					</span>
                 </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
+                <li class=" space-x-2 flex">
+                   
                     <span>
-                         <strong>Organisation </strong> d’événements en étroite collaboration avec l’influenceur                    </span>
+                         <strong>Situation de handicap </strong> 
+					</span>
                 </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         <strong>Mise en place </strong> de partenariats gagnant-gagnant                    </span>
-                </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         <strong>Suivi des publications </strong>, mesure des retombées et du ROI                    </span>
-                </li>
-                            </ul>
-        </div>
-
-        <div class="mt-4 md:mt-12">
-           
-            <h2 class="text-indigo-800 text-lg md:text-3xl font-bold" style="line-height: 1.4">
-                Objectifs et importance d'une campagne d'influence
-            </h2>
-
-            <h3 class="text-indigo-800 text-lg md:text-xl font-bold mt-4" style="line-height: 1.4">
-                Développer votre notoriété n’a jamais été aussi simple
-            </h3>
-
-            <p class="mt-4 text-gray-700">
-                Nos influenceurs sélectionnés sur mesure pour vous généreront du trafic de leurs comptes média sociaux et leurs sites web afin d’améliorer votre visibilité auprès de votre audience cible (très bénéfique pour le référencement naturel)
-            </p>
-            <p class="mt-4 text-gray-700">
-                Notre agence vous accompagne dans la mise en place de campagnes d'influence :
-            </p>
-            <ul class="mt-4 space-y-2 text-gray-700">
-                                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         Crédibiliser et améliorer vos offres                    </span>
-                </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         Bénéficier de l’appui d’experts reconnus et de leur retour d’expérience                    </span>
-                </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         Générer de nouvelles ventes                    </span>
-                </li>
-                                <li class=" space-x-2 flex">
-                    <i>
-                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                    </i>
-                    <span>
-                         Trouver de nouveaux clients grâce à la recommandation                    </span>
-                </li>
-                            </ul>
+                               
+            </ul>
         </div>
 
     </div>
 </section>
 <section class="main-intro-all">
-
-				<section class="main-invoicing" >
-
-					<div class="container container_card" >
-
-						<div class="section-body section-body_card 
-						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
-
-							<h2 class="heading heading__lvl1 color_blue" style="color: white;">
-								Des services à la personne pour toutes et tous
-							</h2>
-							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
-								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et
-									vous permet une déduction d'impôt</span></b></p>
-
-								<p class="margin-top-xs text" style="color: white;">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
-									<a href="{{ route('services') }}" style="color: white;">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
-
-							<div class="margin-top-lg main-invoicing__content-wrap">
-
-								<div class="main-invoicing__info">
-
-									<ul class="main-invoicing__list">
-
-										<li><div class="">
-											
-											<img src="{{ asset('_next/static/media/icones/numbers/number-one.png') }}" width="15%" alt="">
-											
-										</div>
-											<p class="margin-top-xs text" style="color: white;"> 
-												
-												<b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-2.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-3.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
-										</li>
-
-										<li>
-										<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-four.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
-										</li>
-
-									</ul>
-
-
-
-								</div>
-
-								<div class="main-invoicing__simg-wrap">
-
-									<picture class="picture__image-container ">
-
-										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
-									</picture>
-
-								</div>
-							</div>
-					    </div>
-					</div>
-
-				</section>
 
 				<section class="lp-banking-track-cashflow">
 					<div class="container">
