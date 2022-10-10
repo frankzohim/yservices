@@ -147,134 +147,127 @@
 
     </div>
 </section>
-<section class="main-intro-all">
 
-				<section class="lp-banking-track-cashflow">
-					<div class="container">
+<section class="py-6 md:py-20">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
+			<div class="w-full md:w-1/2 md:pr-20">
+				<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+					Pourquoi Choisir<br> 
+					<span class="text-yellow-500 color-orange"> Youdom Care</span>
+				</h1>
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+				   La satisfaction de nos clients est au cœur de notre attention. 
 
-						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
-							<div class="image lp-banking-track-cashflow__image-wrap">
-								<picture class="picture__image-container ">
+										<ul class="margin-top-default list list_10px list_bullet-color_blue">
+										<li>
+											<h4 class="font-bold color-orange">GARANTIE</h4>
+											<span 
+											style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">Un(e) auxiliaire de vie unique et adapté à vos besoins
+											C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
+											sur-mesure et adapté à vos besoins.</span>
+										</li>
 
-									<img src="{{  asset('_next/static/media/why-us-2.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_fr@2x.de21b672.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div>
-
-							<div class="lp-banking-track-cashflow__content">
-
-									<h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading">
-										Pourquoi choisir YOUDOM-CARE ?
-									</h2>
-									<p class="margin-top-default text text_lg">
-										La satisfaction de nos clients est au cœur de notre attention
-									</p>
-									<ul class="margin-top-default list list_10px list_bullet-color_blue">
-												<li>
-													<h4 class="heading heading__lvl4">GARANTIE</h4>
-													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
-													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
-													sur-mesure et adapté à vos besoins.</span>
-												</li>
-
-												<li>
-													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
-													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
-													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
-													</span>
-												</li>
-											</ul>
-								</div>
-						</div>
-					</div>
-
-				</section>
-
-				<section class="lp-banking-track-cashflow" style="margin-top:-10%">
-					<div class="container">
-
-						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
-							
-
-							<div class="lp-banking-track-cashflow__content">
-
-									<ul class="margin-top-default list list_10px list_bullet-color_blue">
-												<li>
-													<h4 class="heading heading__lvl4">PROFESSIONNALISME</h4>
-													<span class="text" style="color:black;">Nos intervenants sont hautement qualifiés 
-														pour vous apporter un service de très haute qualité. Professionnalisme, 
-														confidentialité et respect sont les valeurs fondamentales de chaque service 
-														que nous offrons.</span>
-												</li>
-
-												<li>
-													<h4 class="heading heading__lvl4">UN SERVICE SUR MESURE</h4>
-													<span class="text" style="color:black;">
-														Chez YOUDOM-CARE, nous savons que les soins complets aux personnes âgées vont bien 
-														au-delà de la simple assistance aux besoins de base. A cet effet, nous concevons 
-														un plan de soins adapté aux besoins de chaque client.
-													</span>
-												</li>
-
-												<li>
-													<h4 class="heading heading__lvl4">ÉCONOMIE</h4>
-													<span class="text" style="color:black;">
-														Crédit d’impôt de 50%* des sommes versées.
-													</span>
-												</li>
-
-												<li>
-													<h4 class="heading heading__lvl4">Formation</h4>
-													<span class="text" style="color:black;">
-														Formation continue de nos intervenants, auxiliaires de vie 
-													</span>
-												</li>
-
-												
+										<li>
+											<h4 class="font-bold color-orange">TRANQUILLITÉ D’ESPRIT</h4>
+											<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
+											Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
+											</span>
+										</li>
 									</ul>
-							</div>
 
-							<div class="image lp-banking-track-cashflow__image-wrap">
-								<ul class="margin-top-default list list_10px list_bullet-color_blue">
-									<li>
-										<h4 class="heading heading__lvl4">PRIVILÈGES</h4>
-										<span class="text" style="color:black;">
-											Un suivi d’exception au quotidien et un diagnostic renforcé qui font la différence !
-										</span>
-									</li>
+				</h3>
+										 
+			   
+			</div>
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
+				src="{{ asset('_next/static/media/our-mission.jpg') }}">
+			</div>
+		</div>               
+	</div>
+</section>
 
-									<li>
-										<h4 class="heading heading__lvl4">Des intervenants fiables </h4>
-										<span class="text" style="color:black;">Nous vous garantissons toujours la même aide à 
-											domicile ou auxiliaire de vie, formée et sélectionnée pour ses qualités humaines qui 
-											interviendra auprès de votre proche.
-										</span>
-									</li>
+<section class="py-2 md:py-20" style="margin-top:-50px;">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
+			<div class="w-full md:w-1/2 md:pr-20">
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
 
-									<li>
-										<h4 class="heading heading__lvl4">Ambiance familiale </h4>
-										<span class="text" style="color:black;">Nous traitons vos proches comme les membres de 
-											notre famille. Nous abordons tous les aspects de la vie d’une personne âgée, malade, 
-											en situation d’handicap en nous efforçant d’enrichir sa journée de toutes les manières
-											 possibles !
-										</span>
-									</li>
-									<li>
-										<h4 class="heading heading__lvl4">Coordination de soin</h4>
-										<span class="text" style="color:black;">
-											Coordination avec les intervenants médicaux et paramédicaux
-										</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+										<ul class="margin-top-default list list_10px list_bullet-color_blue">
+										<li>
+											<h4 class="font-bold color-orange">PROFESSIONNALISME</h4>
+											<span 
+											style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+											Nos intervenants sont hautement qualifiés pour vous apporter un service de très 
+											haute qualité. Professionnalisme, confidentialité et respect sont les valeurs fondamentales 
+											de chaque service que nous offrons.</span>
+										</li>
 
-				</section>
+										<li>
+											<h4 class="font-bold color-orange">UN SERVICE SUR MESURE</h4>
+											<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												Chez YOUDOM-CARE, nous savons que les soins complets aux personnes âgées 
+												vont bien au-delà de la simple assistance aux besoins de base. 
+												A cet effet, nous concevons un plan de soins adapté aux besoins de 
+												chaque client.
+											</span>
+										</li>
+										<li>
+											<h4 class="font-bold color-orange">ÉCONOMIE</h4>
+											<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												CCrédit d’impôt de 50%* des sommes versé
+											</span>
+										</li>
+										<li>
+											<h4 class="font-bold color-orange">FORMATION</h4>
+											<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												Formation continue de nos intervenants, auxiliaires de vie
+											</span>
+										</li>
+									</ul>
 
-
-
-
-
+				</h3>
+			   
+			</div>
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+ 
+										 <ul class="margin-top-default list list_10px list_bullet-color_blue">
+										 <li>
+											 <h4 class="font-bold color-orange">PRIVILÈGES</h4>
+											 <span 
+											 style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+											 Un suivi d’exception au quotidien et un diagnostic renforcé qui font la différence !
+											 </span>
+										 </li>
+ 
+										 <li>
+											 <h4 class="font-bold color-orange">Des intervenants fiables</h4>
+											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												Nous vous garantissons toujours la même aide à domicile ou auxiliaire de vie, formée 
+												et sélectionnée pour ses qualités humaines qui interviendra auprès de votre proche.
+											 </span>
+										 </li>
+										 <li>
+											 <h4 class="font-bold color-orange">Ambiance familiale</h4>
+											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												Nous traitons vos proches comme les membres de notre famille. Nous abordons tous 
+												les aspects de la vie d’une personne âgée, malade, en situation d’handicap en nous 
+												efforçant d’enrichir sa journée de toutes les manières possibles !
+											 </span>
+										 </li>
+										 <li>
+											 <h4 class="font-bold color-orange">Coordination de soin</h4>
+											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+												Coordination avec les intervenants médicaux et paramédicaux
+											 </span>
+										 </li>
+									 </ul>
+				 </h3>
+			</div>
+		</div>               
+	</div>
 </section>
 
 @endsection
