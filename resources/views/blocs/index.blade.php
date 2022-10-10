@@ -25,7 +25,7 @@
                 <div class="col-lg-4 mt-3">
                     <img src="{{ asset('assets/img/help.jpg') }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
                     <div class="text-center">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus accusamus minima, deserunt vitae repellendus eveniet voluptates saepe aperiam quos prae
+                        {{ $article->title}}
                     </div>
                 </div>
             @endforeach
@@ -45,19 +45,20 @@
             @endif
 
             <div class="border-bottom"></div>
+            <div class="row mt-5">
             @forelse ($articles as $article)
-                <div class="row mt-5">
+
                     <div class="col-lg-4 mt-3">
                         <img src="{{ Storage::url($article->image_path) }}" class="rounded float-start w-90" alt="..." style="margin-bottom: 25px">
                         <div class="text-center">
                             {{ $article->title}}
                         </div>
                     </div>
-                </div>
+
             @empty
                 <div class="text-center mt-5" style="color:gray">Aucun Article disponible</div>
             @endforelse
-
+        </div>
 
   </div>
 @endsection
