@@ -1,54 +1,214 @@
 @extends('layouts.master')
 @section('title', __('A Propos de Nous'))
-
 @section('content')
+<style>
 
+    .color-text{
+        color: #5f00f5;
+    }
+    .color-orange{
+        color:#F54749;
+    }
+    .input-size{
+      width:269px; 
+      height:45px
+    }
+
+</style>
+
+<section class="py-8 md:py-20">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
+			<div class="w-full md:w-1/2 md:pr-20">
+				<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+					Qui sommes-nous?<br> 
+					
+				</h1>
+				<br>
+				<span class="text-xl md:text-5xl font-bold color-orange" style="font-size: 18px"> 
+					L’aide à domicile sur- mesure pour les personnes âgées, en 
+					situation d'handicap ou en perte d’autonomie.
+				</span>
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+					Spécialistes du services à la personne et du grand âge, les conseillers de YOUDOM-CARE identifient, 
+					pour vous ou l’un de vos proches en perte d’autonomie, des solutions pour bien vieillir chez soi : 
+					services à domicile (ménage, téléassistance, garde de nuit…), adaptation du logement, transport médicalisé …
+
+				</h3>
+
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+					<span class="font-bold color-orange">YOUDOM-CARE</span> - est la première entreprise au service des seniors et des proches aidants. 
+					Gage de qualité, sa raison d’être est d’offrir à chacun des solutions de confiance pour bien 
+					vivre et bien vieillir à domicile.
+
+										
+
+				</h3>
+										 
+			   
+			</div>
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
+				src="{{ asset('_next/static/media/who-we-are-1.jpg') }}">
+			</div>
+		</div>               
+	</div>
+</section>
+
+<section class="py-2 md:py-20">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
+								 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
+				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+										src="{{ asset('_next/static/media/lien-social.jpg') }}">
+			</div>
+			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+				
+				
+				<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+					La construction du modèle innovant <span class="font-bold color-orange">YOUDOM-CARE</span> repose sur une conviction forte : 
+					<span class="color-text">le maintien du lien social </span>  pour permettre à la personne âgée ou handicapée de bien 
+					vivre chez soi . <br> Cette originalité repose sur une approche humaine de l’aide à domicile où 
+					l’intervenant est avant tout une sentinelle bienveillante qui accompagne la personne âgée dans 
+					les différentes phases de la vieillesse de manière conviviale et positive.
+				 </span>
+									
+
+				
+										 
+			   
+			</div>
+			
+		</div>               
+	</div>
+</section>
+
+<section class="py-1 md:py-20">
+
+    <div class="max-w-7xl mx-auto px-4 animated-content">
+        
+        <h1  class=" text-xl md:text-5xl font-bold text-yellow-500 color-orange" style="line-height: 1.2">
+            Des services à la personne pour tous
+        </h1>
+
+        <!-- sous titre -->
+        <div class="flex flex-wrap items-center mt-0 md:mt-8">
+            <div class="w-full md:w-3/5 md:pr-20">
+                <h2 class="mt-4 text-indigo-800  text-lg md:text-2xl font-bold">
+                    La mission de Youdom-Care : 
+                </h2>
+                <h3  class=" md:text-xl mt-4 text-gray-700" style="line-height: 1.5">
+                    Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne:
+					Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en 
+					situation de handicap et vous permet une déduction d'impôt. <br>
+
+						Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
+						Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins :
+
+                </h3>
+            </div>
+            <div class="w-full md:w-2/5 mt-8 md:mt-0">
+                <img  class="w-full md:w-4/5 " 
+				src="{{ asset('_next/static/media/service-retour-hospitalisation.jpg') }}" style="border-radius: 15px;">
+            </div>
+        </div>   
+
+
+
+        <div class="mt-4 md:mt-12">
+            <p class="mt-4 text-gray-700">
+                Notre agence vous accompagne dans la mise en place de campagnes d'influence :
+            </p>
+            <ul class="mt-4 space-y-2 text-gray-700">
+                                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         <strong>Identification  </strong>des influenceurs en fonction de votre localité.                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         <strong>Prise de contact </strong> personnalisée et suivi de la relation                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         <strong>Organisation </strong> d’événements en étroite collaboration avec l’influenceur                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         <strong>Mise en place </strong> de partenariats gagnant-gagnant                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         <strong>Suivi des publications </strong>, mesure des retombées et du ROI                    </span>
+                </li>
+                            </ul>
+        </div>
+
+        <div class="mt-4 md:mt-12">
+           
+            <h2 class="text-indigo-800 text-lg md:text-3xl font-bold" style="line-height: 1.4">
+                Objectifs et importance d'une campagne d'influence
+            </h2>
+
+            <h3 class="text-indigo-800 text-lg md:text-xl font-bold mt-4" style="line-height: 1.4">
+                Développer votre notoriété n’a jamais été aussi simple
+            </h3>
+
+            <p class="mt-4 text-gray-700">
+                Nos influenceurs sélectionnés sur mesure pour vous généreront du trafic de leurs comptes média sociaux et leurs sites web afin d’améliorer votre visibilité auprès de votre audience cible (très bénéfique pour le référencement naturel)
+            </p>
+            <p class="mt-4 text-gray-700">
+                Notre agence vous accompagne dans la mise en place de campagnes d'influence :
+            </p>
+            <ul class="mt-4 space-y-2 text-gray-700">
+                                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         Crédibiliser et améliorer vos offres                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         Bénéficier de l’appui d’experts reconnus et de leur retour d’expérience                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         Générer de nouvelles ventes                    </span>
+                </li>
+                                <li class=" space-x-2 flex">
+                    <i>
+                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </i>
+                    <span>
+                         Trouver de nouveaux clients grâce à la recommandation                    </span>
+                </li>
+                            </ul>
+        </div>
+
+    </div>
+</section>
 <section class="main-intro-all">
-
-				<section class="lp-banking-track-cashflow" style="margin-top: 50px">
-					<div class="container">
-						<div style="display: flex">
-								<div style="flex: 1">
-										<div class="">
-												<h2 class="heading heading__lvl1 stillforce-heading-red">Qui sommes-nous ?</span></h2> <br>
-													<p class="heading heading__lvl1 stillforce-heading-blue " style="font-size: 25px">
-														L’aide à domicile sur- mesure pour les personnes âgées, en situation d'handicap ou en perte d’autonomie.
-													</p>
-													<p class="text text_lg margin-top-default" style="font-size: 19px">
-													Spécialistes du services à la personne et  du grand âge, les conseillers de <span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span>    identifient,
-													pour vous ou l’un de vos proches en perte d’autonomie, des solutions pour bien vieillir chez soi :
-													services à domicile (ménage, téléassistance, garde de nuit…), adaptation du logement, transport médicalisé …
-													</p>
-
-													<p class="text text_lg margin-top-default" style="font-size: 19px">
-
-															<span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span> - est la première entreprise au service des seniors et des proches aidants.
-															Gage de qualité, sa raison d’être est d’offrir à chacun des solutions de confiance pour bien
-															vivre et bien vieillir à domicile.
-
-													</p>
-
-														<p class="text text_lg margin-top-default" style="font-size: 19px">
-
-															La construction du modèle innovant <span style="color: #E84347; font-weight:700;">YOUDOM-CARE </span> repose sur une conviction forte :
-															<span style="color: #E84347; font-weight:400;"> le maintien du lien social</span> pour permettre à la personne âgée ou handicapée de bien vivre chez soi .
- 															Cette originalité repose sur une <span style="color: #E84347; font-weight:400;"> approche humaine de l’aide à domicile</span> où l’intervenant est avant tout
-															 une sentinelle bienveillante qui accompagne la personne âgée dans les différentes phases de la vieillesse de manière conviviale et positive.
-
-
-													</p>
-
-
-											</div>
-								</div>
-								<div style="flex:1"><div class="">
-								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/about.png') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_en@2x.95edf884.png 2x" alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
-								</picture>
-							</div></div>
-						</div>
-					</div>
-				</section>
 
 				<section class="main-invoicing" >
 
@@ -57,7 +217,8 @@
 						<div class="section-body section-body_card 
 						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
 
-							<h2 class="heading heading__lvl1 color_blue" style="color: white;">Des services à la personne pour toutes et tous
+							<h2 class="heading heading__lvl1 color_blue" style="color: white;">
+								Des services à la personne pour toutes et tous
 							</h2>
 							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
 								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et

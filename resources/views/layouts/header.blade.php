@@ -34,7 +34,7 @@
 				<div class="container" style="margin-left: 32%">
 					<div class="">
 
-								<nav class="header__nav header-nav" >
+								<nav class="header__nav header-nav">
 								<ul class="header-nav__list">
 									<!--
 									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Trouver un emploi</a>
@@ -119,9 +119,65 @@
 
 						</div>
 
-						<div class="header__right" style="margin-bottom:15px;">
+						<div class="header__right">
+
+							
+							<a href="{{ route('devis.create') }}" 
+							class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #F54749" 
+							id="target-action-header" data-f-btn-signup="true">Inscription</a>
 
 								<!-- <img class="search-icon" src="_next/static/media/icones/search.svg" alt=""> -->
+								<aside class="burger-menu header__burger-menu">
+									<div class="burger-menu__header">
+										<div class="header__actions">
+											<div class="burger-menu__close">
+												<span></span><span></span><span></span>
+											</div>
+										</div>
+									</div>
+									
+									<div class="burger-menu__content" style="background-color: #F54749; color:white;">
+									
+										<ul class="" >
+										
+											<li class="burger-menu__nav-item">
+												<div class="burger-menu__nav-heading">
+													<a class="link_inherit" data-inner-link="true" 
+													href="{{ route('homepage') }}">
+														Accueil<svg class="icon burger-menu__nav-arrow"></svg>
+													</a>
+												</div>
+											
+											</li>
+											
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true" 
+												href="{{ route('services') }}">Nos Services</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true" 
+												href="{{ route('functioning') }}">Notre fonctionnement</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true" 
+												href="{{ route('about') }}">Qui sommes-nous</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true" 
+												href="{{ route('contact.create') }}">Contact</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true" 
+												href="{{ route('bloc.index') }}">Blog</a>
+											</li>
+										</ul>
+									
+										
+
+									</div>
+								
+								</aside>
 						</div>
 					</aside>
 						</div>

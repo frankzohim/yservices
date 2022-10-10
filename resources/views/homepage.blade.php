@@ -32,14 +32,14 @@
 .team-image:hover .middle {
   opacity: 1;
 }
-.team-image img,.team-image>a{display:block;width:40%;   margin-left: auto;
+.team-image img,.team-image>a{display:block;   margin-left: auto;
   margin-right: auto;}
 .team-desc{text-align:center}
-.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 30px}
+.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 0px}
 .team .si-share{margin-top:30px;text-align:left}
 .team .si-share .social-icon{font-size:14px;width:34px}
-.team-title{position:relative;padding-top:20px}
-.team-title h4{display:block;margin-bottom:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;font-weight:700;}
+.team-title{position:relative;padding-top:0px}
+.team-title h4{display:block;margin-bottom:0;font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:600;color:#F54749;}
 .team-title span{display:block;color:#1abc9c;font-weight:400;font-family:'pt serif',serif;font-style:italic;font-size:16px;margin-top:5px}
 .team-content{margin-top:1rem;color:#777}
 .team-content p:last-child{margin-bottom:0}
@@ -51,7 +51,7 @@
 .team:not(.team-list) .social-icon{display:inline-block!important;vertical-align:middle;float:none;margin-left:4px;margin-right:4px}
 
 input[type="checkbox"][id^="cb"] {
-  display: none;
+  margin-top:-5px;
 }
 
 label {
@@ -111,6 +111,7 @@ label img {
 
 	</style>
     <section class="main-intro-all">
+
 					<div class="container">
 
 						<div class="section-body padding-top-sm main-intro-all__body">
@@ -174,7 +175,7 @@ label img {
 
 	</section>
 
-		  <section class="py-2 md:py-20">
+	<section class="py-2 md:py-20">
             <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
                 <div class="flex flex-wrap items-center">
 										 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
@@ -182,22 +183,34 @@ label img {
 												src="{{ asset('_next/static/media/aide-personne-agee-domicile-livraison-repas-courses.jpg') }}">
                     </div>
                     <div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+
                         <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
                             Vivre serein 
                             <span class="text-yellow-500 color-orange"> chez-soi</span>
                         </h1>
-                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                           Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie. <br>
-												</h3>
-													<h5 class="heading ">L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!</h5>
+                        
+                        <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+						   Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie.
+						</span> <br>
+												
+						<h5 class="font-bold color-orange ">
+							L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!
+						</h5>
 													
-													<br>
+						<br>
 											
-													<h4 class="heading ">Vivre sereinement chez toi avec une aide de maintien à domicile</h4>
-													<span class="text" style="color:black;">YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en perte d’autonomie, 
-														pour les personnes handicapées, pour les enfants malades et pour les personnes en situation handicap , fragilisées qui souhaitent vivre à leur domicile, 
-														dans les meilleures conditions de bien-être et de sécurité.
-													</span>
+						<h4 class="font-bold color-orange ">
+							Vivre sereinement chez toi avec une <br> 
+							aide de maintien à domicile
+						</h4>
+
+						
+						<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+							YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en 
+							perte d’autonomie, pour les personnes handicapées, pour les enfants malades et pour les 
+							personnes en situation handicap , fragilisées qui souhaitent vivre à leur domicile, 
+							dans les meilleures conditions de bien-être et de sécurité.
+						 </span>
 											
 
                         
@@ -215,8 +228,8 @@ label img {
 	<div class="section">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> Quels sont vos besoins</span>
-				<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span>
+			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> De quels services</span>
+				<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> avez-vous besoin ?</span>
 				
 			 </h3>
 			</div>
@@ -241,15 +254,21 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb1" name="services[]" value="Aide à l'autonomie"/>
+										
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/n1.png') }}" alt="AIDE À L’AUTONOMIE">
+											<img src="{{ asset('_next/static/media/services-autonomie.png') }}" alt="AIDE À L’AUTONOMIE">
 										</label>
+										
+										
 									</div>
 
 									<div class="team-desc team-desc-bg">
 									<div class="team-title">
-										<h4  style="" class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb1" name="services[]" value="Aide à l'autonomie"/>
+											<h4  style="" class="text-xl md:text-5xl font-bold" >AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4>
+										</div>
+										
 										
 									</div>
 
@@ -263,14 +282,18 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb2" name="services[]" value="Gardes non médicalisées"/>
+										
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/n2.png') }}"  alt="GARDES NON MÉDICALISÉES">
+											<img src="{{ asset('_next/static/media/s-garde-nuit.png') }}"  alt="GARDES NON MÉDICALISÉES">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
+										<div class="d-flex justify-content-space-between">
+											<input type="checkbox" id="cb2" name="services[]" value="Gardes non médicalisées"/>
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -284,14 +307,18 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb4" name="services[]" value="Accompagnements"/>
+										
 										<label for="cb4">
-											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="Accompagnements">
+											<img src="{{ asset('_next/static/media/s-accompagner-1.png') }}"  alt="Accompagnements">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">ACCOMPAGNEMENTS</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb4" name="services[]" value="Accompagnements"/>&nbsp;
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold" >ACCOMPAGNEMENTS</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -303,14 +330,21 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb5" name="services[] " value="Aide aux repas"/>
+										
 										<label for="cb5">
-											<img src="{{ asset('_next/static/media/n5.png') }}" alt="AIDE AUX REPAS">
+											<img src="{{ asset('_next/static/media/services-repas.png') }}" 
+											alt="AIDE AUX REPAS">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE AUX REPAS</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb5" name="services[] " value="Aide aux repas"/>&nbsp;
+											<div class="team-title">
+												<h4  class="text-xl md:text-5xl font-bold">
+													AIDE AUX REPAS</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -328,14 +362,19 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>
+										
 										<label for="cb6">
-											<img src="{{ asset('_next/static/media/nn1.png') }}" alt="RETOUR A DOMICILE APRES HOSPITALISATION">
+											<img src="{{ asset('_next/static/media/retour-hopital-s.png') }}" alt="RETOUR A DOMICILE APRES HOSPITALISATION">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>&nbsp;
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
+										</div>
+
+									
 
 									</div>
 								</div>
@@ -347,14 +386,18 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb7" name="services[]" value="Aide-ménagère"/>
+										
 										<label for="cb7">
-											<img src="{{ asset('_next/static/media/nn5.png') }}" alt="AIDE-MÉNAGÈRE">
+											<img src="{{ asset('_next/static/media/s-menage-1.png') }}" alt="AIDE-MÉNAGÈRE">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE-MÉNAGÈRE</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb7" name="services[]" value="Aide-ménagère"/>&nbsp;
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">AIDE-MÉNAGÈRE</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -366,14 +409,20 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb8" name="services[]" value="Assistance administrative"/>
+										
 										<label for="cb8">
-											<img src="{{ asset('_next/static/media/n8.png') }}" alt="ASSISTANCE ADMINISTRATIVE">
+											<img src="{{ asset('_next/static/media/services-personn-administratif.png') }}" 
+											alt="ASSISTANCE ADMINISTRATIVE">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">ASSISTANCE ADMINISTRATIVE</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb8" name="services[]" 
+										value="Assistance administrative"/> &nbsp;
+										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">ASSISTANCE ADMINISTRATIVE</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -386,14 +435,17 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb9" name="services[]" value="Voyage & évasion"/>
+										
 										<label for="cb9">
-											<img src="{{ asset('_next/static/media/n10.png') }}" alt="VOYAGE & EVASION">
+											<img src="{{ asset('_next/static/media/s-voyage.png') }}" alt="VOYAGE & EVASION">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">VOYAGE & EVASION</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb9" name="services[]" value="Voyage & évasion"/>&nbsp;
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">VOYAGE & EVASION</h4></div>
+										</div>
 
 									</div>
 								</div>
@@ -409,14 +461,20 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb10" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
+										
 										<label for="cb10">
-											<img src="{{ asset('_next/static/media/nn6.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
+											<img src="{{ asset('_next/static/media/s-enfant.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb10" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
+											<div class="team-title">
+												<h4  class="text-xl md:text-5xl font-bold" >
+													AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -428,14 +486,17 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb11" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
+										
 										<label for="cb11">
-											<img src="{{ asset('_next/static/media/nn2.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
+											<img src="{{ asset('_next/static/media/services-transport-1.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb11" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
+										</div>
 
 									</div>
 								</div>
@@ -447,14 +508,19 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb12" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
+										
 										<label for="cb12">
-											<img src="{{ asset('_next/static/media/nn4.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
+											<img src="{{ asset('_next/static/media/s-aide-handicape-1.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  class="text-xl md:text-5xl font-bold  color-orange" style="font-size: 17px;">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" id="cb12" name="services[]" 
+										value="Aide et accompagnement à domicile des personnes handicapées"/>
+										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+										</div>
+									
 
 									</div>
 								</div>
@@ -714,7 +780,7 @@ label img {
 		</div>
 	</div>
 	
-		  <section class="py-2 md:py-20">
+	<section class="py-2 md:py-20">
             <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
                 <div class="flex flex-wrap items-center">
                     <div class="w-full md:w-1/2 md:pr-20">
@@ -727,15 +793,16 @@ label img {
 
 												<ul class="margin-top-default list list_10px list_bullet-color_blue">
 												<li>
-													<h4 class="heading heading__lvl4">GARANTIE</h4>
-													<span class="text" style="color:black;">Un(e) auxiliaire de vie unique et adapté à vos besoins
+													<h4 class="font-bold color-orange">GARANTIE</h4>
+													<span 
+													style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">Un(e) auxiliaire de vie unique et adapté à vos besoins
 													C’est pourquoi, nous sélectionnons des hommes et des femmes professionnels, diplômés avec des références vérifiées pour un service
 													sur-mesure et adapté à vos besoins.</span>
 												</li>
 
 												<li>
-													<h4 class="heading heading__lvl4">TRANQUILLITÉ D’ESPRIT</h4>
-													<span class="text" style="color:black;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
+													<h4 class="font-bold color-orange">TRANQUILLITÉ D’ESPRIT</h4>
+													<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">Fini les rendez-vous manqués ou les congés pour le suivi médical de votre proche.
 													Vous pouvez désormais travailler en toute quiétude sachant que votre proche est  entre de bonnes mains.
 													</span>
 												</li>
@@ -752,7 +819,8 @@ label img {
                        
                     </div>
                     <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/experts.svg') }}">
+                        <img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
+						src="{{ asset('_next/static/media/our-mission.jpg') }}">
                     </div>
                 </div>               
             </div>
@@ -801,7 +869,7 @@ label img {
 
 
 
-				<section class="py-8 md:py-16 bg-[#ffffff]" style="color: #1b138a">
+			<section class="py-8 md:py-16 bg-[#ffffff]" >
             <div class="max-w-7xl mx-auto px-4 ">
                 <div class="flex flex-wrap items-center">
                     <div class="w-full md:w-1/2 md:pr-20">
@@ -809,17 +877,33 @@ label img {
                             Notre mission <br> 
                             <span class="text-yellow-500 color-orange"> à Youdom-care</span>
                         </h1>
-                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 " style="line-height: 1.5">
-                           Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne :
-													<span class="color-orange">Youdom-Care</span> accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et vous 
-													permet une déduction d'impôt.
+						<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+							Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne : 
+ 
+							<ul class="margin-top-default list list_10px list_bullet-color_blue">
+									<li>
+													 
+										<span class="font-bold color-orange">Youdom-Care</span> accompagne pour le maintien à
+										 domicile d'une personne âgée, en perte d'autonomie ou en situation de 
+										 handicap et vous permet une déduction d'impôt.
+									</li>
 
-													Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile.
-													Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins 
-                        </h3>
+									<li>
+													 
+										<span class="font-bold color-orange">Nos coordinateurs</span> vous accompagnent 
+										pour vos besoins ponctuels ou permanents d'aide à domicile.
+										Nos services d'aide à la personne s'adressent à tous, quels que 
+										soient vos besoins.
+									</li>
+							</ul>
+ 
+						 </h3>
+                      
+						
                     </div>    
                     <div class="w-full md:w-1/2">
-                        <img data-animate="animate-right" class="w-full " src="{{ asset('_next/static/media/applications.svg') }}">
+                        <img data-animate="animate-right" class="w-full " style="border-radius: 15px;"
+						src="{{ asset('_next/static/media/why-choose-us1.jpg') }}">
                     </div>
                 </div>               
             </div>
@@ -863,12 +947,21 @@ label img {
 								<img src="{{  asset('_next/static/media/about.png') }} " 
 								srcSet="{{  asset('_next/static/media/about.png') }}" alt="" class="picture__image " width="75%" loading="eager" />
 							</picture>
-							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">
-								Notre fonctionnement</h2><p class="margin-top-default text text_lg">
-									Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie professionnelles. </p>
-
-							<a href="{{ route('functioning') }}" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" 
-							data-target-action="data-target-action">En savoir plus</a></div>
+							</div>
+							<div class="">
+								<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold color-text" style="line-height: 1.2">
+									Notre 
+									<span class="text-yellow-500 color-orange"> fonctionnement</span>
+								</h1>
+								<p class="margin-top-default text text_lg">
+									Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie 
+									professionnelles. </p>
+								<br>
+							<a href="{{ route('functioning') }}" 
+							class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+							style="background-color: #5f00f5" id="target-action-lp-banking-invite-team" 
+							data-target-action="data-target-action">En savoir plus</a>
+						</div>
 						</div>
 					</div>
 				</section>
