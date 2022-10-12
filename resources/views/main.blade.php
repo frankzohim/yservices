@@ -107,8 +107,9 @@
             </div>
             
             <div class="w-full md:w-1/2 mx-auto relative" x-data="Contact">
-                <img src="{{ asset('_next/static/media/blob.svg') }}" class=" md:block text-yellow-300 absolute z-0 top-[-200px] left-[-150px]">
-                <div class="p-4 md:p-12 shadow-xl relative bg-white rounded-lg">
+                <img src="{{ asset('_next/static/media/blob1.svg') }}" class=" md:block text-yellow-300 absolute z-0 top-[-200px] left-[-150px]">
+                
+				<div class="p-4 md:p-12 shadow-xl relative bg-white rounded-lg">
                    
 				<form  method="post"  action="{{ route('contact.store') }}">
 					@csrf

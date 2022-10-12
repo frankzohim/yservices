@@ -24,14 +24,18 @@ class DevisRequest extends FormRequest
     public function rules()
     {
         return [
+            'for_who'=>['required'],
+            'type'=>['required'],
+            'start_time'=>['required','string'],
             'civility'=>['required'],
-            'nom'=>['required','string'],
-            'prenom'=>['required','string'],
+            'firstname'=>['required','string'],
+            'lastname'=>['required','string'],
             'email'=>['required','email'],
-            'date'=>['required'],
-            'hour'=>['required','string'],
-            'numero'=>['required','numeric'],
-            'code_postal'=>['required','string']
+            'phone'=>['required','numeric'],
+            'postal_code'=>['required','string'],
+            'comments'=>['required','string'],
+            'news'=>['required','boolean'],
+            'accept_cgu'=>['required']
         ];
     }
 }

@@ -175,57 +175,7 @@ label img {
 
 	</section>
 
-	<section class="py-2 md:py-20">
-            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
-                <div class="flex flex-wrap items-center">
-										 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
-                        <img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
-												src="{{ asset('_next/static/media/aide-personne-agee-domicile-livraison-repas-courses.jpg') }}">
-                    </div>
-                    <div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
-
-                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
-                            Vivre serein 
-                            <span class="text-yellow-500 color-orange"> chez-soi</span>
-                        </h1>
-                        
-                        <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
-						   Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie.
-						</span> <br>
-												
-						<h5 class="font-bold color-orange ">
-							L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!
-						</h5>
-													
-						<br>
-											
-						<h4 class="font-bold color-orange ">
-							Vivre sereinement chez toi avec une <br> 
-							aide de maintien à domicile
-						</h4>
-
-						
-						<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
-							YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en 
-							perte d’autonomie, pour les personnes handicapées, pour les enfants malades et pour les 
-							personnes en situation handicap , fragilisées qui souhaitent vivre à leur domicile, 
-							dans les meilleures conditions de bien-être et de sécurité.
-						 </span>
-											
-
-                        
-												 
-                       
-                    </div>
-                    
-                </div>               
-            </div>
-        </section>
-				<br>
-
-
-
-	<div class="section">
+	<div class="section" style="margin-top:-50px;">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
 			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> De quels services</span>
@@ -779,7 +729,53 @@ label img {
 
 		</div>
 	</div>
-	
+	<section class="py-2 md:py-20">
+		<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+			<div class="flex flex-wrap items-center">
+									 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
+					<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+											src="{{ asset('_next/static/media/aide-personne-agee-domicile-livraison-repas-courses.jpg') }}">
+				</div>
+				<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+
+					<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+						Vivre serein 
+						<span class="text-yellow-500 color-orange"> chez-soi</span>
+					</h1>
+					
+					<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+					   Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie.
+					</span> <br>
+											
+					<h5 class="font-bold color-orange ">
+						L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!
+					</h5>
+												
+					<br>
+										
+					<h4 class="font-bold color-orange ">
+						Vivre sereinement chez toi avec une <br> 
+						aide de maintien à domicile
+					</h4>
+
+					
+					<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+						YOUDOM-CARE est un service d’aide à domicile pour les personnes âgées, pour les personnes en 
+						perte d’autonomie, pour les personnes handicapées, pour les enfants malades et pour les 
+						personnes en situation handicap , fragilisées qui souhaitent vivre à leur domicile, 
+						dans les meilleures conditions de bien-être et de sécurité.
+					 </span>
+										
+
+					
+											 
+				   
+				</div>
+				
+			</div>               
+		</div>
+	</section>
+			<br>
 	<section class="py-2 md:py-20">
             <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
                 <div class="flex flex-wrap items-center">
@@ -875,7 +871,7 @@ label img {
                     <div class="w-full md:w-1/2 md:pr-20">
                         <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold color-text" style="line-height: 1.2">
                             Notre mission <br> 
-                            <span class="text-yellow-500 color-orange"> à Youdom-care</span>
+                            <span class="text-yellow-500 color-orange"> chez Youdom-care</span>
                         </h1>
 						<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
 							Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne : 

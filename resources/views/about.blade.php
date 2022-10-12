@@ -112,7 +112,7 @@
 
 			<div class="w-full md:w-1/2 mt-2 md:mt-0" >
 				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
-										src="{{ asset('_next/static/media/lien-social.jpg') }}">
+										src="{{ asset('_next/static/media/mission-about.PNG') }}">
 			</div>
 			
 		</div>               
