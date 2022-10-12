@@ -238,8 +238,9 @@
 							</div>
 						</div>
 						<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
-						  VOS INFORMATIONS PERSONNELLES </legend>
-										<div class="row">
+						  VOS INFORMATIONS PERSONNELLES 
+						</legend>
+					<div class="row">
                       <div class="col-md-12 pe-2 mb-3">
 
                         <label class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
@@ -270,7 +271,7 @@
 												</div>
 											</div>
 
-										</div>
+					</div>
 									</div>
 									   
 									</div>                        
@@ -324,7 +325,7 @@
 							<div class="col-md-12">
 								
 							  <textarea name="comments" class="mt-4 block w-full border-gray-300 px-4 py-2 rounded-md"  
-							  placeholder="Ajouter un commentaire" rows="4" 
+							   rows="4" 
 							  cols="4" required style="color: #5f00f5"> {{ old('comments') }}
 							  </textarea>
 							</div>
@@ -361,6 +362,30 @@
               <span style="font-size:16px; margin-right:15px;">J'accepte les Conditions Générales d'Utilisation</span>     
               <input type="checkbox" class="form-check-input" name="accept_cgu" required>
             </div>
+			
+			<div class="d-flex justify-content-start" style="margin-top: 10px;">
+									
+										
+				<span style="color:#374151; font-size:14px; font-family: Montserrat, 
+									sans-serif;">  
+										Youdom-care vous informe que vos données seront traitées afin de 
+										répondre à votre demande de devis et vous envoyer des offres liées à 
+										celle-ci. Conformément à la loi « Informatique et libertés » 
+										du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, 
+										rectification, suppression, portabilité et limitation du traitement vous 
+										concernant. Pour de plus amples informations et exercer vos droits, 
+										vous pouvez contacter notre DPO à l’adresse 
+										<a href="mailto:dpo@youdom-care.com" class="color-orange">
+											 dpo@youdom-care.com
+										</a>
+											  ou <a class="color-orange" href="{{ route('confidentialite') }}">
+												consulter notre politique de confidentialité
+											</a> .
+											
+									 </span> 
+									
+									
+								  </div>
 										
 						  </div>
 									<div class="mt-3 text-gray-700 font-semibold">

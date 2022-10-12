@@ -62,6 +62,19 @@ class NeedController extends Controller
              $i++;
 
         }
+        $i = 0;
+        foreach($request->complement as $complement){
+            if ($i==0)
+                $need->complement = $complement;
+
+            else{
+
+                $need->complement .= ', '.$complement;
+            }
+
+             $i++;
+
+        }
 
         $data = explode(',',$request->postal_code);
         if(count($data) == 2){
@@ -74,6 +87,9 @@ class NeedController extends Controller
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
         $need->for_who = $request->for_who;
+        $need->comments = $request->comments;
+        $need->news = $request->news;
+        $need->accpet_cgu = 1;
         $need->gender = $request->gender;
         $need->firstname = $request->firstname;
         $need->lastname = $request->lastname;
@@ -82,7 +98,7 @@ class NeedController extends Controller
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;
-        $need->user_id=null;
+        //$need->user_id=null;
 
 
         if($need->save()){

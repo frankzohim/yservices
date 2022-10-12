@@ -84,16 +84,16 @@ label img {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
-
+.before-heading
 :checked + label {
   border-color: #ddd;
 }
 
-:checked + label:before {
+/*:checked + label:before {
   content: "✓";
   background-color: green;
   transform: scale(1);
-}
+}*/
 
 :checked + label img {
   transform: scale(1);
@@ -184,7 +184,7 @@ label img {
 			 </h3>
 			</div>
 
-			<form id="regForm" method="post" action="{{ route('devis.store') }}" autocomplete="off">
+			<form id="regForm" method="post" action="{{ route('devis.store') }}" >
 
 					@csrf
 
@@ -626,7 +626,9 @@ label img {
 							<div class="d-flex justify-content-center">
 									<img src="{{ asset('_next/static/media/step3.png') }}" style=" width: 30%;"/>
 							</div>
-							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
+							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">
+								Laissez-nous vos coordonnées et nous vous 
+								rappellerons dans les 2 heures ouvrables!</h5>
 						</div>
 
 						    <div class="row justify-content-center">
@@ -635,7 +637,8 @@ label img {
 
 									  Civilité
 
-										<select name="gender" class="form-control form-select" aria-label="Default select example">
+										<select name="gender" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
 											<option value="Monsieur" >Monsieur</option>
 											<option value="Madame" >Madame</option>
@@ -650,10 +653,11 @@ label img {
 
 									  A qui est destinée notre aide?
 
-										<select name="for_who" class="form-control form-select" aria-label="Default select example">
+										<select name="for_who" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
-											<option value="Vous même" >Vous même</option>
-											<option value="Quelqu'un d'autre" >Quelqu'un d'autre</option>
+											<option value="Vous même" >Pour vous-même</option>
+											<option value="Quelqu'un d'autre" >Pour quelqu’un autre ou proche</option>
 										</select>
 
                             </div>
@@ -663,12 +667,14 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									  placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Prénom" name="lastname" required>
+                                      <input type="text" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									   placeholder="Prénom" name="lastname" required>
                                     </div>
                                     </div>
 
@@ -678,12 +684,14 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                      <input type="email" class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Email" name="email" required>
                                     </div>
                                     </div>
 
@@ -691,7 +699,8 @@ label img {
 
 								  <div class="row justify-content-center">
 									<div class="col-md-8">
-										<input type="text" name="address" class="form-control" id="message" rows="6" placeholder="Votre adresse">
+										<input type="text" name="address" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+										 id="message" rows="6" placeholder="Votre adresse">
 									 </div>
                                   </div>
 								  <br>
@@ -699,13 +708,130 @@ label img {
 
                                     <div class="col-md-8">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="text" id="postal_code" name="postal_code" required id="searchI">
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									   placeholder="Code postal" aria-label="Full Name" type="text" id="postal_code" name="postal_code" required id="searchI" autocomplete="off">
                                     </div>
                                     <ul class="list-group" id="result"></ul>
                                     </div>
 
 
                                   </div>
+								  <div class="row justify-content-center">
+									<div class="col-md-8">
+										<div class="input-group mb-4">
+										<fieldset >
+											<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+												Besoin  d’un complément de garde ?</legend>
+												<div class="col-md-1 pe-2 mb-3 form-check">
+
+												</div>
+												<div class="col-md-5 pe-2 mb-3 form-check">
+														<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]"  value="Téléassistance">
+														<label for="music" style="color: black">Téléassistance</label>
+												</div>
+												<div class="col-md-6 pe-2 mb-3 form-check">
+													<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]" value="Télésurveillance personnes âgées à domicile">
+													<label for="music" style="color: black">Télésurveillance personnes âgées à domicile</label>
+												</div>
+										</fieldset>
+									    </div>
+									</div>
+								</div>
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-8">
+                                    <div class="input-group mb-4">
+										<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+								Commentaires</legend>
+										<textarea name="comments" class="mt-4 block w-full border-gray-300 px-4 py-2 rounded-md"  
+										rows="4" placeholder="Commentaires" 
+									   cols="4" required style="color: #5f00f5"> {{ old('comments') }}
+									   </textarea>
+                                    </div>
+                                    <ul class="list-group" id="result"></ul>
+                                    </div>
+
+
+                                  </div>
+
+
+
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-4">
+										<span style="font-size:16px">Je souhaite recevoir des communications <br> sur les offres du réseau youdom-care</span>
+										
+                                    </div>
+
+									<div class="col-md-4">
+										<div class="{{ $errors->has('news') ? ' has-danger' : '' }}" class="row">
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="1" checked>
+											<label class="form-check-label" for="news" style="color:#5f00f5;">
+												{{ __('Oui') }}
+											</label>
+											</div>
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="0">
+											<label class="form-check-label" for="news" style="color:#5f00f5;">
+												{{ __('Non') }}
+											</label>
+											</div>
+												
+												
+										</div>
+										
+                                    </div>
+
+
+                                  </div>
+
+								  <div class="d-flex justify-content-center">
+									<div class="col-md-8">
+										<div class="col-md-7">
+											<span style="font-size:16px; margin-left:-22px;">J'accepte les Conditions Générales d'Utilisation</span>     
+										</div>
+
+										<div class="col-md-5">
+											<input type="checkbox" class="form-check-input" name="accept_cgu" 
+											required>
+										</div>
+										
+
+									</div>
+								
+								  </div>
+								  <div class="d-flex justify-content-center" style="margin-left: -10px;">
+									
+									<div class="col-md-8">
+										<br>
+										<span style="color:#374151; font-size:14px; font-family: Montserrat, 
+									sans-serif;">  
+										Youdom-care vous informe que vos données seront traitées afin de 
+										répondre à votre demande de devis et vous envoyer des offres liées à 
+										celle-ci. Conformément à la loi « Informatique et libertés » 
+										du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, 
+										rectification, suppression, portabilité et limitation du traitement vous 
+										concernant. Pour de plus amples informations et exercer vos droits, 
+										vous pouvez contacter notre DPO à l’adresse 
+										<a href="mailto:dpo@youdom-care.com" class="color-orange">
+											 dpo@youdom-care.com
+										</a>
+											  ou <a class="color-orange" href="{{ route('confidentialite') }}">
+												consulter notre politique de confidentialité
+											</a> .
+									 </span> 
+									</div>
+									
+								  </div>
+								 
+								  
 
 				</div>
 
