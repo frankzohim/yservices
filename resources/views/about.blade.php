@@ -4,10 +4,10 @@
 <style>
 
     .color-text{
-        color: #5f00f5;
+        color: #30005B;
     }
     .color-orange{
-        color:#F54749;
+        color:#D9644A;
     }
     .input-size{
       width:269px; 

@@ -76,14 +76,6 @@ class NeedController extends Controller
 
         }
 
-        $data = explode(',',$request->postal_code);
-        if(count($data) == 2){
-            $town = $data[1];
-            $postal_code = $data[0];
-        }
-        else
-             return Redirect::route('devis.create')->with('update_failure','Code postal invalide')->withInput();
-
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
         $need->for_who = $request->for_who;
@@ -93,8 +85,8 @@ class NeedController extends Controller
         $need->gender = $request->gender;
         $need->firstname = $request->firstname;
         $need->lastname = $request->lastname;
-        $need->postal_code = $postal_code;
-        $need->town = $town;
+        $need->postal_code = $request->postal_code;
+        $need->town = $request->town;
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;

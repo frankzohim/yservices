@@ -2,6 +2,16 @@
 @section('title', __('Nos metiers'))
 @section('content')
 
+<style>
+
+    .color-text{
+        color: #30005B;
+    }
+    .color-orange{
+        color:#D9644A;
+    }
+
+</style>
     <!-- CONTENT -->
     <div class="page-content">
         <div class="container">

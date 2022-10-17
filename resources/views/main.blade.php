@@ -7,10 +7,10 @@
 <style>
 
     .color-text{
-        color: #5f00f5;
+        color: #30005B;
     }
     .color-orange{
-        color:#F54749;
+        color:#D9644A;
     }
     .input-size{
       width:269px; 
@@ -118,7 +118,7 @@
                         <div class="flex flex-wrap md:flex-nowrap md:space-x-2">
 							 <div class="col-md-12 pe-2 mb-3">
 								<fieldset>
-									<legend class="  md:text-left  text-2xl  font-bold text-indigo-800">Type de Prestation *:</legend>
+									<legend class="  md:text-left  text-2xl  font-bold text-indigo-800 color-text">Type de Prestation *:</legend>
 									 <div class="col-md-6 pe-2 mb-3">
 										<input type="checkbox" id="music" name="type[]" value="Presse">
 										<label for="music" style="color: black">Presse</label>
@@ -176,44 +176,44 @@
 
                             <div class="row">
                                <div class="col-md-6">
-										 <div class="w-full mt-4">
-                                    <input type="email" name="email" class="mt-2 block w-full border border-gray-300  px-4 py-2 rounded-md input-size" value="{{ old('email') }}"
+										              <div class="w-full mt-4">
+                                    <input type="email" name="email" class="mt-2 block w-full 
+                                    border border-gray-300  px-4 py-2 rounded-md input-size" value="{{ old('email') }}"
                                     placeholder="Adresse email" required >
-                                        </div>
-								</div>
+                                  </div>
+								                </div>
 
                                 <div class="col-md-6">
-										 <div class="w-full mt-4">
-                                           
-                                            <input type="tel" name="phone" placeholder="Numero de téléphone" class="mt-2 block w-full border border-gray-300  
+										              <div class="w-full mt-4">
+                                      <input type="tel" name="phone" placeholder="Numero de téléphone"
+                                       class="mt-2 block w-full border border-gray-300  
                                             px-4 py-2 rounded-md input-size" value="{{ old('phone') }}" required>
-                                            
-                                        </div>
-								</div>
+                                  </div>
+								              </div>
 
                             </div>
-
-                            
-                           
                         </div>
-						
-						<div class="flex flex-wrap md:flex-nowrap md:space-x-2">
 
-                            <div class="row">
-                               <div class="col-md-12">
-										 <div class="mt-4">
-										  <input type="text" name="postal_code" id="postal_code" class="mt-4 block w-full border border-gray-300  px-4 py-2 rounded-md "  size="100px"
-										  placeholder="Code postal" value="{{ old('postal_code') }}" required>
-										</div>
-								</div>
+                        <div class="flex flex-wrap md:flex-nowrap md:space-x-2">
 
-                               
+                          <div class="row">
+                             <div class="col-md-6">
+                                <div class="w-full mt-4">
+                                  <input type="text" name="postal_code" id="postal_code" class="mt-4 block w-full border border-gray-300  px-4 py-2 rounded-md "  size="100px"
+										                placeholder="Code postal" value="{{ old('postal_code') }}" required>
+                                </div>
+                              </div>
 
+                              <div class="col-md-6">
+                                <div class="w-full mt-4">
+                                    <input type="tel" name="town" id="town" placeholder="Ville"
+                                     class="mt-2 block w-full border border-gray-300  
+                                          px-4 py-2 rounded-md input-size" value="{{ old('town') }}" required>
+                                </div>
                             </div>
 
-                            
-                           
-                        </div>
+                          </div>
+                      </div>
                     
 						
                         <div>
@@ -223,7 +223,7 @@
                             
                         </div>
                         <div class="mt-3 text-gray-700 font-semibold">
-                            <button x-on:click="submitContact" class="px-8 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> Envoyer </button>
+                            <button x-on:click="submitContact" class="px-8 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #30005B"> Envoyer </button>
                         </div>
                     </div>   
 				</form>					

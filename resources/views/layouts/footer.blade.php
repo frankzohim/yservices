@@ -11,8 +11,8 @@
 			footer .footer-horizontal-link li{margin-right:35px;list-style:none;margin-bottom:0}
 			footer .footer-horizontal-link li:last-child{margin-right:0}
 			.footer-dark,.footer-dark a{color:#fff; font-family: Montserrat, sans-serif; line-height: 30px; }
-			.footer-dark a:hover{color:#5f00f5; font-weight:bold;}
-			.bottom-footer-frank : {color:#5f00f5; font-weight:bold;}
+			.footer-dark a:hover{color:#30005B; font-weight:bold;}
+			.bottom-footer-frank : {color:#30005B; font-weight:bold;}
 			.footer-dark .footer-social a{color:#fff}
 			.footer-dark .footer-social a:hover{color:#8890a4}
 			.footer-sticky{position:fixed;width:100%;bottom:0;left:0;right:0;z-index:0}
@@ -24,8 +24,8 @@
 			footer .instafeed-grid.gutter-large{margin-left:-10px;margin-right:-10px}
 			footer .instafeed-grid.gutter-extra-large{margin-left:-15px;margin-right:-15px}
 			footer .instafeed-grid.gutter-double-extra-large{margin-left:-20px;margin-right:-20px}
-			.bg-slate-blue{background-color:#594EE6}
-			.bg-frank-blue{background-color:#F54749}
+			.bg-slate-blue{background-color:#30005b}
+			.bg-frank-blue{background-color:#d9644a}
 			.padding-five-tb{padding-top:5%;padding-bottom:5%}
 			.footer-bottom,.footer-consulting.footer-dark .footer-bottom a,.footer-consulting.footer-dark .footer-top,.footer-consulting.footer-dark .footer-top a{color:#828282}
 			.footer-consulting.footer-dark .footer-bottom a:hover,.footer-consulting.footer-dark .footer-top a:hover{color:#fff}
@@ -101,7 +101,7 @@
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide à la toilette, coiffure,  maquillage, habillage</a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Aide-ménagère</a></li>
 								</ul>
-															 <hr style="color:#594EE6">
+															 <hr style="color:#30005b">
 															 <span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 															 text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 																Aide-ménagère</span>
@@ -128,7 +128,7 @@
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Prise de médicament</a></li>
 																<li class="text text_md color_grey"><a class="link" style="color: #232323" data-inner-link="true" href="#">Alimentation-Surveillance des régimes</a></li>
 								</ul>
-															<hr style="color:#594EE6">
+															<hr style="color:#30005b">
 															<span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
 															text-transform:uppercase; color: #E84347; font-weight: 700; font-size: 15px;">
 																Retour d’hospitalisation
@@ -141,7 +141,7 @@
 							</div>
 							<!-- end footer column -->
 	
-													<hr style="color: #594EE6">
+													<hr style="color: #30005b">
 													
 													
 	
@@ -200,11 +200,11 @@
 							</div>
 							<!-- end footer column -->
 	
-													<hr style="color: #594EE6">
+													<hr style="color: #30005b">
 													<!-- start footer column -->
 							<div class="col-12 col-lg-12 col-sm-12 md-margin-40px-bottom xs-margin-25px-bottom">
 								<span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
-															text-transform:uppercase; color: #594EE6;; font-weight: 700; font-size: 15px;">
+															text-transform:uppercase; color: #30005b;; font-weight: 700; font-size: 15px;">
 																Aide et accompagnement à domicile des enfants malades ou handicapés</span>
 								
 							</div>
@@ -275,11 +275,11 @@
 							</div>
 							<!-- end footer column -->
 	
-													<hr style="color: #594EE6">
+													<hr style="color: #30005b">
 													<!-- start footer column -->
 							<div class="col-12 col-lg-12 col-sm-12 md-margin-40px-bottom xs-margin-25px-bottom">
 								<span class="alt-font font-weight-500 d-block  margin-20px-bottom xs-margin-10px-bottom" style="color:#232323; 
-															text-transform:uppercase; color: #594EE6; font-weight: 700; font-size: 15px;">
+															text-transform:uppercase; color: #30005b; font-weight: 700; font-size: 15px;">
 																Aide et accompagnement à domicile des personnes handicapées</span>
 								
 							</div>

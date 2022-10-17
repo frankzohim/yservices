@@ -1,6 +1,14 @@
 @extends('layouts.master')
 @section('title', __('Youdom Services – Aide à domicile sur mesure en Europe'))
 
+<style>
+    .color-text{
+        color: #30005B;
+    }
+    .color-orange{
+        color:#D9644A;
+    }
+</style>
 @section('content')
     <section class="lp-banking-track-cashflow">
         <div class="container">

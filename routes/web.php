@@ -51,6 +51,18 @@ Route::get('/maintech', function(){
     return view('main');
 });
 
+Route::get('/homepage', function(){
+    $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+    return view('homepageblade',compact('codes_array'));
+});
+
+
 Route::get('set/cookies',[HomeController::class, 'cookies'])->name('setCookies');
 
 

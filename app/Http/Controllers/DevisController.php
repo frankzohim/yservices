@@ -53,6 +53,7 @@ class DevisController extends Controller
         $devis->email=$request->email;
         $devis->phone=$request->phone;
         $devis->postal_code=$request->postal_code;
+        $devis->town=$request->town;
         $devis->comments=$request->comments; 
         $devis->news=$request->news;
         $devis->accept_cgu = 1;

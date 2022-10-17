@@ -7,10 +7,10 @@
 <style>
 
     .color-text{
-        color: #5f00f5;
+        color: #30005B;
     }
     .color-orange{
-        color:#F54749;
+        color:#D9644A;
     }
     .input-size{
       width:335px; 
@@ -248,10 +248,10 @@
                         <br>
                         <input type="radio" class="btn-check"   name="civility" id="option2" 
                         value="Mr" checked autocomplete="off">
-                        <label class="btn btn-primary" style="background-color:#5f00f5" for="option2">Monsieur</label>
+                        <label class="btn btn-primary" style="background-color:#30005B" for="option2">Monsieur</label>
 
                         <input type="radio" class="btn-check" name="civility" id="option4" value="Mme" autocomplete="off">
-                        <label class="btn btn-primary" style="background-color:#5f00f5" for="option4">Madame</label>
+                        <label class="btn btn-primary" style="background-color:#30005B" for="option4">Madame</label>
                       </div>
 											<div class="col-md-6">
 												<div class="w-full mt-4">				   
@@ -302,18 +302,32 @@
 									   
 									</div>
 									
-									<div class="flex flex-wrap md:flex-nowrap md:space-x-2">
+						<div class="flex flex-wrap md:flex-nowrap md:space-x-2">
 
 						  <div class="row">
 								<div class="col-md-12">
-													 <div class="mt-4">
-														<input type="text" name="postal_code" id="postal_code" class="mt-4 block w-full 
+									<div class="mt-4">
+										<input type="text" name="postal_code" id="postal_code" class="mt-4 block w-full 
 										border border-gray-300  px-4 py-2 rounded-md "  size="100px"
 														  placeholder="Code postal" value="{{ old('postal_code') }}" required>
-													 </div>
-												</div>
+									</div>
+								</div>
 
 						  </div>
+
+						  <div class="flex flex-wrap md:flex-nowrap md:space-x-2">
+							<div class="row">
+								<div class="col-md-12">
+													<div class="mt-4">
+														<input type="text" name="town" 
+														id="town" class="mt-4 block w-full 
+										border border-gray-300  px-4 py-2 rounded-md "  size="100px"
+														placeholder="ville" value="{{ old('town') }}" required>
+													</div>
+								</div>
+							</div>
+
+					  </div>
 
 										
 									   
@@ -326,7 +340,7 @@
 								
 							  <textarea name="comments" class="mt-4 block w-full border-gray-300 px-4 py-2 rounded-md"  
 							   rows="4" 
-							  cols="4" required style="color: #5f00f5"> {{ old('comments') }}
+							  cols="4" required style="color: #30005B"> {{ old('comments') }}
 							  </textarea>
 							</div>
               <br>
@@ -342,14 +356,14 @@
                           <input
                                   class="form-check-input{{ $errors->has('news') ? ' is-invalid' : '' }}"
                                   type="radio" name="news" id="news" value="1" checked>
-                              <label class="form-check-label" for="news" style="color:#5f00f5;">
+                              <label class="form-check-label" for="news" style="color:#30005B;">
                                   {{ __('Oui') }}
                               </label>
 
                               <input
                               class="form-check-input{{ $errors->has('news') ? ' is-invalid' : '' }}"
                               type="radio" name="news" id="news" value="0">
-                          <label class="form-check-label" for="news" style="color:#5f00f5;">
+                          <label class="form-check-label" for="news" style="color:#30005B;">
                               {{ __('Non') }}
                           </label>
                       </div>
@@ -389,7 +403,7 @@
 										
 						  </div>
 									<div class="mt-3 text-gray-700 font-semibold">
-										<button x-on:click="submitContact" class="px-8 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #5f00f5"> Envoyer </button>
+										<button x-on:click="submitContact" class="px-8 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #30005B"> Envoyer </button>
 									</div>
 						  
 					</div>
@@ -405,11 +419,11 @@
     </main>
 
     <script src="{{ asset('assets/js/typeahead.js') }}"></script>
-<script>
-    var codes = @json($codes_array);
+	<script>
+		var codes = @json($codes_array);
 
-    autocomplete(document.getElementById("postal_code"), codes);
-    
-   
-</script>
+		autocomplete(document.getElementById("postal_code"), codes);
+		
+	
+	</script>
 @endsection

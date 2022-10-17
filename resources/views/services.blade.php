@@ -1,8 +1,14 @@
 @extends('layouts.master')
-@section('title', __('Youdom Services – Aide à domicile sur mesure en Europe'))
+@section('title', __('Nos services – Youdom Care'))
 
 @section('content')
 <style>
+	.color-text{
+        color: #30005B;
+    }
+    .color-orange{
+        color:#D9644A;
+    }
 	.content-wrap{position:relative;padding:80px 0;overflow:hidden}
 
 	.feature-box{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.75rem;margin-right:-.75rem}
@@ -45,38 +51,46 @@
 
 </style>
 
-	<section>
+<section class="py-6 md:py-20">
+	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+		<div class="flex flex-wrap items-center">
+								 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
+				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+										src="{{ asset('_next/static/media/services/slide-service.jpg') }}">
+			</div>
+			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
 
-		<div class="container content-wrap">
-				<div class="row justify-content-center">
-
-					<div class="col-md-8" >
-						<h2 class="heading heading__lvl1 stillforce-heading-red">Nos Services <span style="color:#594EE6;">d'aide à domicile</span></h2>
-					</div>
-						
-				</div>
-				
-		</div>
+				<h3 data-animate="animate-left" class=" text-xl md:text-4xl font-bold 
+						text-indigo-800 color-text" style="line-height: 1.2">
+					Nos Services   
+					<span class="text-yellow-500 color-orange"> d'aide à domicile</span>
+				</h3>
 			
-	</section>
-	<section class="fdb-block content-wrap" style="margin-bottom: -80px" >
-  <div class="container">
-    <div class="row ">
-			
+											
 				<br>
-      <div class="col-6 col-md-6 m-auto ml-lg-auto mr-lg-0 col-lg-6 pt-5 pt-lg-0">
-        <img alt="image" class="img-fluid" src="{{ asset("_next/static/media/documentation.png") }}">
-      </div>
-			<div class="col-6 col-md-6 col-lg-6 col-xl-5">
 
-        <p class="lead mb-5">Découvrez nos services de maintien à domicile adaptés à vos besoins et sur-mesure. <br> Un accompagnement 24h/24 et 7J/7..</p>
+				
+				<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+					Découvrez nos services de maintien à domicile sur mesure et adapté à vos besoins.
+					Un accompagnement garanti 24h/24 et 7 jours /7
+				 </span>
+									
 
-        	<a href="{{ route('devis.form') }}" class="margin-top-default button button_w-m-full" style="margin-top:-15px; background-color:#DF034D" id="target-action-main-intro-all">
-									Demandez un devis
-								</a>
-      </div>
-    </div>
-  </div>
+				 <div class="mt-3 text-gray-700 font-semibold">
+					<a href="{{ route('devis.form') }}">
+							   <button  class="px-3 py-3 text-lg bg-yellow-500 
+							   font-bold text-white rounded-full" 
+							   style="background-color: #30005B"> 
+							   Demandez un devis </button>
+					  </a>
+
+		  </div>
+										 
+			   
+			</div>
+			
+		</div>               
+	</div>
 </section>
 
 
@@ -117,34 +131,21 @@
 							<ul class="margin-top-sm list list_star">
 
 										<li class="text">Présence de nuits pour personnes âgées</li>
-										<li class="text">Garde de nuit pour personnes âgées et personnes en situation d’handicap  </li>
+										<li class="text">Garde de jour  </li>
 										<li class="text">Présence de nuits auprès des enfants malades   </li>
 
 									</ul>
-									<!-- start accordion item -->
-									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
-										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-01" aria-expanded="false">
-												<div class="panel-title">
-													<span class="see-more">
-														Voir Plus
-																						</span>
-													<i class="indicator fas fa-angle-down"></i>
-													</div>
-													</a>
-										</div>
-										<div id="accordion-style-01" class="panel-collapse collapse" data-bs-parent="#accordion3">
-													<div class="panel-body">
-																						<ul class="margin-top-sm list list_star">
+									<br>
+									<button class="btn btn-primary rounded-full" id="btn1" style="background-color: #30005B" type="button" onclick="openclose('btn1','accordion-style-01')">
+										Voir plus
+									</button>
+									<div id="accordion-style-01" style="display: none">
+										<ul class="margin-top-sm list list_star" >
 
-																							<li class="text">Garde de jour </li>
-																							<li class="text">Garde 24h sur 24  </li>
-																							
-																						</ul>
-												</div>
-										 </div>
-									 </div>
-									<!-- end accordion item -->
+											<li class="text">Garde de nuit pour personnes âgées et personnes en situation d’handicap </li>
+											<li class="text">Garde 24h sur 24  </li>
+										</ul>
+									</div>
 						</p>
 						</div>
 						</div>
@@ -163,33 +164,22 @@
 										<li class="text">Accompagnements aux courses</li>
 										<li class="text">Accompagnement culturel </li>
 										<li class="text">Compagnies et stimulation  </li>
-										<li class="text">Promenades et loisirs  </li>
+										
 									</ul>
-									<!-- start accordion item -->
-									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
-										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-02" aria-expanded="false">
-												<div class="panel-title">
-													<span class="see-more">
-														Voir Plus
-																						</span>
-													<i class="indicator fas fa-angle-down"></i>
-													</div>
-													</a>
-										</div>
-										<div id="accordion-style-02" class="panel-collapse collapse" data-bs-parent="#accordion3">
-													<div class="panel-body">
-																						<ul class="margin-top-sm list list_star">
-
-																							<li class="text">Aide à la mobilité </li>
-																							<li class="text">Sorties véhiculées  </li>
-																							<li class="text">Lecture, discussion  </li>
-																							<li class="text">RDV médicaux  </li>
-																						</ul>
-												</div>
-										 </div>
-									 </div>
-									<!-- end accordion item -->
+									<br>
+									<button class="btn btn-primary rounded-full" id="btn2" style="background-color: #30005B" type="button" onclick="openclose('btn2','accordion-style-02')">
+										Voir plus
+									</button>
+									<div id="accordion-style-02" style="display: none">
+										<ul class="margin-top-sm list list_star" >
+											<li class="text">Promenades et loisirs  </li>
+											<li class="text">Aide à la mobilité </li>
+											<li class="text">Sorties véhiculées  </li>
+											<li class="text">Lecture, discussion  </li>
+											<li class="text">RDV médicaux  </li>
+										</ul>
+									</div>
+									
 						</p>
 						</div>
 						</div>
@@ -289,34 +279,24 @@
 						<p>
 							<ul class="margin-top-sm list list_star">
 
-										<li class="text">Gestion du courrier </li>
-										<li class="text">Classement des documents </li>
-										<li class="text">Prise de rendez-vous  </li>
+								<li class="text">Gestion du courrier </li>
+								<li class="text">Classement des documents </li>
+								<li class="text">Prise de rendez-vous  </li>
 										
-									</ul>
-									<!-- start accordion item -->
-									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
-										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-03" aria-expanded="false">
-												<div class="panel-title">
-													<span class="see-more">
-														Voir Plus
-																						</span>
-													<i class="indicator fas fa-angle-down"></i>
-													</div>
-													</a>
-										</div>
-										<div id="accordion-style-03" class="panel-collapse collapse" data-bs-parent="#accordion3">
-													<div class="panel-body">
-																						<ul class="margin-top-sm list list_star">
+							</ul>
+							<br>
+							<button class="btn btn-primary rounded-full" id='btn3' 
+							style="background-color: #30005B" type="button" onclick="openclose('btn3','accordion-style-03')">
+								Voir plus
+							</button>
+							<div id="accordion-style-03" style="display: none">
+								<ul class="margin-top-sm list list_star" >
 
-																							<li class="text">Démarches administrative</li>
-																							<li class="text">Loyer , factures   </li>
-																						</ul>
-												</div>
-										 </div>
-									 </div>
-									<!-- end accordion item -->
+									<li class="text">Démarches administrative</li>
+									<li class="text">Loyer , factures   </li>
+								</ul>
+							</div>
+							
 						</p>
 						</div>
 						</div>
@@ -325,41 +305,32 @@
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/voyage.png') }}" alt="Why choose Us?">
+						<img src="{{ asset('_next/static/media/services/voyage.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
 						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Voyage & Evasion <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
-							<ul class="margin-top-sm list list_star">
+									<ul class="margin-top-sm list list_star">
 
 										<li class="text">Sport, loisirs, vacances et handicap </li>
 										<li class="text">Les vacances organisés  </li>
 										<li class="text">Voyage organisé pour handicapé  </li>
 										
 									</ul>
-									<!-- start accordion item -->
-									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
-										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-08" aria-expanded="false">
-												<div class="panel-title">
-													<span class="see-more">
-														Voir Plus
-																						</span>
-													<i class="indicator fas fa-angle-down"></i>
-													</div>
-													</a>
-										</div>
-										<div id="accordion-style-08" class="panel-collapse collapse" data-bs-parent="#accordion3">
-													<div class="panel-body">
-																						<ul class="margin-top-sm list list_star">
+									<br>
+									<button class="btn btn-primary rounded-full" id='btn8' 
+									style="background-color: #30005B" type="button" onclick="openclose('btn8','accordion-style-08')">
+										Voir plus
+									</button>
+									<div id="accordion-style-08" style="display: none">
+										<ul class="margin-top-sm list list_star" >
 
-																							<li class="text">Sorties organisées pour handicapés</li>
-																							<li class="text">Tourisme pour handicap   </li>
-																						</ul>
-												</div>
-										 </div>
-									 </div>
-									<!-- end accordion item -->
+											<li class="text">Sorties organisées pour handicapés</li>
+											<li class="text">Tourisme pour handicap   </li>
+										</ul>
+									</div>
+									
+									  
 						</p>
 						</div>
 						</div>
@@ -380,29 +351,20 @@
 										<li class="text">Location véhicules adaptés avec chauffeur   </li>
 										
 									</ul>
-									<!-- start accordion item -->
-									<div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeIn" data-wow-delay="0.2s" style="margin-top:5px">
-										<div class="panel-heading active-accordion">
-											<a class="accordion-toggle collapsed see-more-a" data-bs-toggle="collapse" data-bs-parent="#accordion3" href="#accordion-style-09" aria-expanded="false">
-												<div class="panel-title">
-													<span class="see-more">
-														Voir Plus
-																						</span>
-													<i class="indicator fas fa-angle-down"></i>
-													</div>
-													</a>
-										</div>
-										<div id="accordion-style-09" class="panel-collapse collapse" data-bs-parent="#accordion3">
-													<div class="panel-body">
-																						<ul class="margin-top-sm list list_star">
-																							<li class="text">Transport de porte-à-porte  </li>
-																							<li class="text">Véhicules accessibles aux personnes à mobilité réduite sur demande au moment de réservation  </li>
-																							<li class="text">Service assuré 7j :7 de 6 h à 21h  </li>
-																						</ul>
-												</div>
-										 </div>
-									 </div>
-									<!-- end accordion item -->
+									<br>
+									<button class="btn btn-primary rounded-full" id='btn9' 
+									style="background-color: #30005B" type="button" onclick="openclose('btn9','accordion-style-09')">
+										Voir plus
+									</button>
+									<div id="accordion-style-09" style="display: none">
+										<ul class="margin-top-sm list list_star" >
+
+											<li class="text">Transport de porte-à-porte  </li>
+											<li class="text">Véhicules accessibles aux personnes à mobilité réduite sur demande au moment de réservation  </li>
+											<li class="text">Service assuré 7j :7 de 6 h à 21h  </li>
+										</ul>
+									</div>
+								
 						</p>
 						</div>
 						</div>
@@ -459,7 +421,23 @@
 		
 	</section>
 	
+	<script>
+		function openclose(btn,id){
+			console.log('here in openclose');
+			console.log(document.getElementById(id).style.display);
+			if(document.getElementById(id).style.display  == "none"){
+				document.getElementById(id).style.display  = "block";
+				document.getElementById(btn).innerHTML = 'Voir moins';
+			}
 				
+			else{
+				document.getElementById(id).style.display  = "none"
+				document.getElementById(btn).innerHTML = 'Voir plus';
+			}
+				
+
+		}
+	</script>
 
 
 

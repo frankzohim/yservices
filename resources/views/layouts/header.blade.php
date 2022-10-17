@@ -84,7 +84,7 @@
 
 							<div class="header__logo-wrap">
 								<a class="" aria-label="Youdom" data-inner-link="true" href="{{ route('homepage') }}">
-									<img src="{{  asset('_next/static/media/logo-care.png') }}"   />
+									<img src="{{  asset('_next/static/media/logo-color-new.png') }}"   />
 								</a>
 							</div>
 
@@ -124,7 +124,7 @@
 							
 							<a href="{{ route('devis.create') }}" 
 							class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
-										style="background-color: #F54749" 
+										style="background-color: #D9644A" 
 							id="target-action-header" data-f-btn-signup="true">Inscription</a>
 
 								<!-- <img class="search-icon" src="_next/static/media/icones/search.svg" alt=""> -->
@@ -137,7 +137,7 @@
 										</div>
 									</div>
 									
-									<div class="burger-menu__content" style="background-color: #F54749; color:white;">
+									<div class="burger-menu__content" style="background-color: #D9644A; color:white;">
 									
 										<ul class="" >
 										
