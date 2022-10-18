@@ -25,23 +25,26 @@
 					
 				</h1>
 				<br>
-				<span class="text-xl md:text-5xl font-bold color-orange" style="font-size: 18px"> 
-					L’aide à domicile sur- mesure pour les personnes âgées, en 
-					situation d'handicap ou en perte d’autonomie.
-				</span>
+			
 				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-					Spécialistes du services à la personne et du grand âge, les conseillers de YOUDOM-CARE identifient, 
-					pour vous ou l’un de vos proches en perte d’autonomie, des solutions pour bien vieillir chez soi : 
-					services à domicile (ménage, téléassistance, garde de nuit…), adaptation du logement, transport médicalisé …
+					Spécialisé dans le service à la personne, l’aide et le maintien à domicile, Youdom care a pour 
+					souhait principal de travailler en collaboration avec les personnes en besoin d’accompagnement 
+					afin de répondre entièrement à leur perte d’autonomie en proposant des services étudiés et 
+					personnalisés en fonction de chaque profil. 
 
 				</h3>
 
 				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-					<span class="font-bold color-orange">YOUDOM-CARE</span> - est la première entreprise au service des seniors et des proches aidants. 
-					Gage de qualité, sa raison d’être est d’offrir à chacun des solutions de confiance pour bien 
-					vivre et bien vieillir à domicile.
+					Nos conseillers identifient pour vous ou vos proches des solutions aménagées pour 
+					garantir la sécurité et le bien-être chez soi. 
+					Nos services s’adaptent à vos besoins : services à domicile (ménage, téléassistance, garde de nuit…), 
+					adaptation du logement, transport médicalisé, nous sommes à votre écoute !
 
-										
+				</h3>
+
+				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+					Gage de qualité, notre raison d’être est de pouvoir vous accompagner et entretenir une relation de confiance dans 
+					le respect de votre intégrité physique et morale. Vous pouvez compter sur nous !
 
 				</h3>
 										 
@@ -49,7 +52,11 @@
 			</div>
 			<div class="w-full md:w-1/2 mt-2 md:mt-0">
 				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
-				src="{{ asset('_next/static/media/who-we-are-1.jpg') }}">
+				src="{{ asset('_next/static/media/about/intro.jpg') }}">
+				<span class="text-xl md:text-5xl font-bold color-orange" style="font-size: 18px"> 
+					L’aide à domicile personnalisée pour les personnes âgées, 
+					en situation d'handicap ou en perte d’autonomie 
+				</span>
 			</div>
 		</div>               
 	</div>
@@ -60,17 +67,21 @@
 		<div class="flex flex-wrap items-center">
 								 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
 				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
-										src="{{ asset('_next/static/media/lien-social.jpg') }}">
+										src="{{ asset('_next/static/media/about/1.jpg') }}">
 			</div>
 			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
 				
 				
 				<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
-					La construction du modèle innovant <span class="font-bold color-orange">YOUDOM-CARE</span> repose sur une conviction forte : 
-					<span class="color-text">le maintien du lien social </span>  pour permettre à la personne âgée ou handicapée de bien 
-					vivre chez soi . <br> Cette originalité repose sur une approche humaine de l’aide à domicile où 
-					l’intervenant est avant tout une sentinelle bienveillante qui accompagne la personne âgée dans 
-					les différentes phases de la vieillesse de manière conviviale et positive.
+					 La construction de notre modèle innovant repose sur l’étude d’une conviction forte :
+					<span class="color-text">le besoin d’un maintien du lien social </span>  
+					permettant à la personne âgée ou handicapée, en perte d’autonomie, ayant fait le choix de rester vivre 
+					à son domicile, de bénéficier d’un accompagnement en douceur tout en gardant le confort et la sérénité 
+					du « bien vivre chez soi ».  <br> 
+					Cette originalité repose sur une approche humaine et même simplifiée de l’aide à domicile où 
+					l’intervenant est avant tout une sentinelle bienveillante qui prend en compte les besoins de 
+					la personne aidée dans les différentes phases de la perte d’autonomie et de la vieillesse de 
+					manière chaleureuse et positive.
 				 </span>
 									
 
@@ -94,19 +105,20 @@
 	<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
 		<div class="flex flex-wrap items-center">
 
-			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
+			<div class="w-full md:w-1/2 md:pr-20" style="">
 				
 				<h2 class="mt-4 text-indigo-800  text-lg md:text-2xl font-bold">
-                    La mission de Youdom-Care : 
+                    Notre mission 
                 </h2>
                 <h3  class=" md:text-xl mt-2 text-gray-700" style="line-height: 1.5">
-                    Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne:
-					Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en 
-					situation de handicap et vous permet une déduction d'impôt. <br>
+					C’est d’accompagner les personnes en perte d'autonomie dans leurs tâches quotidiennes devenues compliquées à réaliser.
+					C’est évaluer vos besoins et vous aider personnellement dans votre souhait de maintien à domicile. 
+				   C’est de choisir vos intervenants uniques, adaptés à votre situation et à l’écoute de vos besoins ponctuels ou permanents d'aide à domicile. 
+				   C’est également vous permettre de bénéficier d’une déduction d’impôts.				   
 
-						Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
-						Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins :
-
+                </h3>
+				<h3  class=" md:text-xl mt-2 text-gray-700" style="line-height: 1.5">
+					Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins :			   
                 </h3>
 			</div>
 
@@ -159,7 +171,8 @@
 				<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
 				   La satisfaction de nos clients est au cœur de notre attention. 
 
-										<ul class="margin-top-default list list_10px list_bullet-color_blue">
+										<ul class="margin-top-default list list_10px list_bullet-color_blue" 
+										style="list-style:none;">
 										<li>
 											<h4 class="font-bold color-orange">GARANTIE</h4>
 											<span 
@@ -182,7 +195,7 @@
 			</div>
 			<div class="w-full md:w-1/2 mt-2 md:mt-0">
 				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
-				src="{{ asset('_next/static/media/our-mission.jpg') }}">
+				src="{{ asset('_next/static/media/about/2.jpg') }}">
 			</div>
 		</div>               
 	</div>
@@ -243,14 +256,14 @@
 										 </li>
  
 										 <li>
-											 <h4 class="font-bold color-orange">Des intervenants fiables</h4>
+											 <h4 class="font-bold color-orange" style="text-transform: uppercase;">Des intervenants fiables</h4>
 											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
 												Nous vous garantissons toujours la même aide à domicile ou auxiliaire de vie, formée 
 												et sélectionnée pour ses qualités humaines qui interviendra auprès de votre proche.
 											 </span>
 										 </li>
 										 <li>
-											 <h4 class="font-bold color-orange">Ambiance familiale</h4>
+											 <h4 class="font-bold color-orange" style="text-transform: uppercase;">Ambiance familiale</h4>
 											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
 												Nous traitons vos proches comme les membres de notre famille. Nous abordons tous 
 												les aspects de la vie d’une personne âgée, malade, en situation d’handicap en nous 
@@ -258,7 +271,7 @@
 											 </span>
 										 </li>
 										 <li>
-											 <h4 class="font-bold color-orange">Coordination de soin</h4>
+											 <h4 class="font-bold color-orange" style="text-transform: uppercase;">Coordination de soin</h4>
 											 <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
 												Coordination avec les intervenants médicaux et paramédicaux
 											 </span>

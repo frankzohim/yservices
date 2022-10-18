@@ -146,7 +146,7 @@ label img {
 															<li class="color-grey "><b>Les personnes âgées</b> </li>
 															<li class="text color-grey"><b>Les personnes en situation handicap  </b> </li>
 															<li class="text color-grey"><b>Les personnes en perte d’autonomie   </b> </li>
-
+															<li class="text color-grey"><b>Les enfants handicapés ou malades   </b> </li>
 														</ul>
                         </h3>
 								</div>
@@ -196,7 +196,7 @@ label img {
 				<div class="tab">
 						<div class="heading-block topmargin-sm center">
 							<div class="d-flex justify-content-center">
-									<img src="{{ asset('_next/static/media/step1.png') }}" style=" width: 30%;"/>
+									<img src="{{ asset('_next/static/media/assistant/steps/step1-1.png') }}" style=" width: 30%;"/>
 							</div>
 							
 							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Sélectionnez un service </h5>
@@ -210,7 +210,8 @@ label img {
 									<div class="team-image">
 										
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/services/1.png') }}" alt="AIDE À L’AUTONOMIE">
+											<img src="{{ asset('_next/static/media/services/1.png') }}" 
+											alt="LEVER/COUCHER">
 										</label>
 										
 										
@@ -219,8 +220,9 @@ label img {
 									<div class="team-desc team-desc-bg">
 									<div class="team-title">
 										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb1" name="services[]" value="Aide à l'autonomie"/>
-											<h4  style="" class="text-xl md:text-5xl font-bold" >AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4>
+											<input type="checkbox" class="form-check-input" id="cb1" 
+											name="services[]" value="Aide à l'autonomie"/>&nbsp;
+											<h4  style="" class="text-xl md:text-5xl font-bold" >LEVER/COUCHER</h4>
 										</div>
 										
 										
@@ -238,14 +240,17 @@ label img {
 									<div class="team-image">
 										
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/services/2.png') }}"  alt="GARDES NON MÉDICALISÉES">
+											<img src="{{ asset('_next/static/media/services/2.png') }}"  
+											alt="PRESENCE NUIT">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-space-between">
-											<input type="checkbox" class="form-check-input"  id="cb2" name="services[]" value="Gardes non médicalisées"/>
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
+										<div class="d-flex justify-content-center">
+											<input type="checkbox" class="form-check-input"  
+											id="cb2" name="services[]" value="Gardes non médicalisées"/>&nbsp;
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
+											  PRÉSENCE DE NUIT</h4></div>
 										</div>
 									
 
@@ -269,8 +274,10 @@ label img {
 
 									<div class="team-desc team-desc-bg">
 										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb4" class="form-check-input"  name="services[]" value="Accompagnements"/>&nbsp;
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold" >ACCOMPAGNEMENTS</h4></div>
+											<input type="checkbox" id="cb4" class="form-check-input"  
+											name="services[]" value="Accompagnements"/>&nbsp;
+											<div class="team-title">
+												<h4  class="text-xl md:text-5xl font-bold" >ACCOMPAGNEMENTS</h4></div>
 										</div>
 									
 
@@ -447,14 +454,15 @@ label img {
 										
 										<label for="cb11">
 											<img src="{{ asset('_next/static/media/services/10.png') }}"  
-											alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
+											alt="TRANSPORT VEHICULE (PMR)">
 										</label>
 									</div>
 
 									<div class="team-desc team-desc-bg">
 										<div class="d-flex justify-content-center">
 											<input type="checkbox" id="cb11" class="form-check-input" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
+											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
+												TRANSPORT VEHICULE (PMR)</h4></div>
 										</div>
 
 									</div>
@@ -476,8 +484,9 @@ label img {
 									<div class="team-desc team-desc-bg">
 										<div class="d-flex justify-content-center">
 											<input type="checkbox" class="form-check-input" id="cb12" name="services[]" 
-										value="Aide et accompagnement à domicile des personnes handicapées"/>
-										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+										value="Aide à domicile des personnes handicapées"/>
+										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
+											AIDE A DOMICILE DES PERSONNES HANDICAPEES</h4></div>
 										</div>
 									
 
@@ -496,7 +505,7 @@ label img {
 
 						<div class="heading-block topmargin-sm center">
 							<div class="d-flex justify-content-center">
-									<img src="{{ asset('_next/static/media/step2.png') }}" style=" width: 30%;"/>
+									<img src="{{ asset('_next/static/media/assistant/steps/step2-2.png') }}" style=" width: 30%;"/>
 							</div>
 							<h5 style="font-weight:700; font-size:30px;" 
 							class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
@@ -638,7 +647,7 @@ label img {
 
 						<div class="heading-block topmargin-sm center">
 							<div class="d-flex justify-content-center">
-									<img src="{{ asset('_next/static/media/step3.png') }}" style=" width: 30%;"/>
+									<img src="{{ asset('_next/static/media/assistant/steps/step3-3.png') }}" style=" width: 30%;"/>
 							</div>
 							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">
 								Afin d’établir votre devis, entrez vos coordonnées, nous nous engageons 

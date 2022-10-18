@@ -423,7 +423,8 @@
             <div class="footer-bottom padding-40px-tb border-top border-color-white-transparent" 
 			style="background-color: #fff">
 				<div class="d-flex justify-content-center">
-						<img src="{{ asset('_next/static/media/Traceur_SAP_web_rvb_jpg.jpg') }}" alt="">
+						<img src="{{ asset('_next/static/media/traceur.jpg') }}"
+						 alt="">
 				</div>
                 <div class="container" > 
                     <div class="row align-items-center">
