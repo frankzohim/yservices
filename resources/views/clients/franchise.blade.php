@@ -20,6 +20,12 @@
         .w-90{width:90%}
         .btn .btn-white{background-color:#232323;border-color:#232323;color:#fff}
         .btn-fancy{padding:6px 16px;font-size:12px}
+        .color-text{
+        color: #30005B;
+    }
+.color-orange{
+        color:#D9644A;
+    }
     </style>
 
     <!-- start section -->

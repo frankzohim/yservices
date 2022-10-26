@@ -39,6 +39,25 @@ class NeedController extends Controller
         return view("need.assistant",compact('codes_array'));
     }
 
+
+    /**
+     * Make the transition between  home assistant and assistant page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function transition(Request $request)
+    {
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+        $services = $request->services;
+        return view("need.assistant",compact('codes_array','services'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *

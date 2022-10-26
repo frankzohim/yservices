@@ -378,7 +378,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .styleDone{
   background-color: #04AA6D;
 }
-
+    .floating-whatsapp{
+            font-size: 30px;
+            position: fixed;
+            right: 10px;
+            bottom: 40%;
+			z-index: 2147483647;
+            color:#30005B;
+    }
+    .dot-circle{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background-color: #30005B;
+    }
 
 
 </style>
@@ -392,6 +405,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 </noscript>
 </head>
 <body class="no-js locale-switcher_loading _lang-en country-it">
+  <div class="d-flex flex-column floating-whatsapp justify-content-space-between">
+
+
+    
+
+      <a href="http://wa.link/q7wxrt" class="p-2"><i class="fa fa-whatsapp "></i></a>
+
+      <a href="http://wa.link/q7wxrt" class="p-2"><i class="fa fa-phone "></i></a>
+    
+      <a href="{{ route('devis.form') }}" class="p-2">
+        <i class="fa fa-envelope " ></i>
+      <a>
+
+    
+    
+  </div>
+
 	<div id="__next"><script type="text/javascript">(function root() {
     function removeNoJS1() {
         document.body.classList.remove('no-js');
@@ -469,6 +499,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 		 @include('layouts.footer')
     
+ 
     @if(session()->has('nos-cookies'))
      <script>
         console.log('hello cookiees, cookies already exists');

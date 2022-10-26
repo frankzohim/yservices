@@ -56,7 +56,7 @@
 		<div class="flex flex-wrap items-center">
 								 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
 				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
-										src="{{ asset('_next/static/media/services/slide-service.jpg') }}">
+										src="{{ asset('_next/static/media/services/slide-service-2.jpg') }}">
 			</div>
 			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
 
@@ -126,7 +126,8 @@
 						<img src="{{ asset('_next/static/media/garde-precense.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Gardes non médicalisées / Présence de nuit<span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">
+							Présence de nuit<span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
@@ -305,16 +306,16 @@
 					<div class="col-md-4">
 						<div class="feature-box media-box">
 						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/services/voyage.png') }}" alt="Why choose Us?">
+						<img src="{{ asset('_next/static/media/services/tele-assistance-personnes-agees.png') }}" alt="Téléassistance personnes âgées ">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Voyage & Evasion <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Téléassistance personnes âgées <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 									<ul class="margin-top-sm list list_star">
 
-										<li class="text">Sport, loisirs, vacances et handicap </li>
-										<li class="text">Les vacances organisés  </li>
-										<li class="text">Voyage organisé pour handicapé  </li>
+										<li class="text">Détecteur de chute et géolocalisation </li>
+										<li class="text">Livré configuré et prêt à l'emploi </li>
+										<li class="text">Mise en haut parleur automatique sur le médaillon  </li>
 										
 									</ul>
 									<br>
@@ -325,8 +326,11 @@
 									<div id="accordion-style-08" style="display: none">
 										<ul class="margin-top-sm list list_star" >
 
-											<li class="text">Sorties organisées pour handicapés</li>
-											<li class="text">Tourisme pour handicap   </li>
+											<li class="text">Modification facile des paramétrages sur l'espace client</li>
+											<li class="text">Fonctionne à l'intérieur du domicile et à l'extérieur  </li>
+											<li class="text">Se porte au choix en médaillon, bracelet, clip ceinture ou brassard  </li>
+											<li class="text">Alerte en temps réel les contacts d'urgences par appel téléphonique (rappel si pas décroché)  </li>
+											<li class="text">Totalement autonome grâce à sa carte SIM. Pas besoin de téléphone portable ou fixe ni de Wi-Fi  </li>
 										</ul>
 									</div>
 									
@@ -342,7 +346,8 @@
 						<img src="{{ asset('_next/static/media/transport-des-handicapes.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Transport et accompagnement de personnes handicapées et de personnes à mobilité réduite (PMR) <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">
+							TRANSPORT VEHICULE (PMR) <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
@@ -377,7 +382,8 @@
 						<img src="{{ asset('_next/static/media/aide-enfant.png') }}" alt="Why choose Us?">
 						</div>
 						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide et accompagnement à domicile des enfants malades ou handicapés <span class="subtitle" style="color:#1b138a"></span></h3>
+						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">
+							Aide aux enfants handicapés ou malades <span class="subtitle" style="color:#1b138a"></span></h3>
 						<p>
 							<ul class="margin-top-sm list list_star">
 
@@ -394,28 +400,57 @@
 
 					<div class="col-md-4">
 						<div class="feature-box media-box">
-						<div class="fbox-media">
-						<img src="{{ asset('_next/static/media/aide-handicap-domicile.png') }}" alt="Why choose Us?">
-						</div>
-						<div class="fbox-content px-0">
-						<h3 style="color: #E84347; font-weight:700; font-size:15px; ">Aide et accompagnement à domicile des personnes handicapées <span class="subtitle" style="color:#1b138a"></span></h3>
-						<p>
-							<ul class="margin-top-sm list list_star">
+							<div class="fbox-media">
+							<img src="{{ asset('_next/static/media/aide-handicap-domicile.png') }}" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3 style="color: #E84347; font-weight:700; font-size:15px; ">
+									Aide à la mobilité <span class="subtitle" style="color:#1b138a"></span></h3>
+								<p>
+									<ul class="margin-top-sm list list_star">
 
-										<li class="text">Aider aux actes du quotidien </li>
-										<li class="text">Aider pour les repas et les courses  </li>
-										<li class="text">Aider pour l'entretien du domicile   </li>
-										<li class="text">Accompagner à la vie sociale   </li>
+												<li class="text">Aider aux actes du quotidien </li>
+												<li class="text">Aider pour les repas et les courses  </li>
+												<li class="text">Aider pour l'entretien du domicile   </li>
+												<li class="text">Accompagner à la vie sociale   </li>
 									</ul>
-
-							
-								
-						   
-						</p>
+								</p>
+							</div>
 						</div>
 					</div>
 					
-				</div>
+					<div class="col-md-4">
+						<div class="feature-box media-box">
+							<div class="fbox-media">
+							<img src="{{ asset('_next/static/media/services/assistance-informatique.png') }}" alt="Why choose Us?">
+							</div>
+							<div class="fbox-content px-0">
+								<h3 style="color: #E84347; font-weight:700; font-size:15px; ">
+									Assistance Informatique <span class="subtitle" style="color:#1b138a"></span></h3>
+								<p>
+									<ul class="margin-top-sm list list_star">
+
+												<li class="text">Assistance et dépannage informatique </li>
+												<li class="text">Aide à l’utilisation des outils informatique  </li>
+												
+												
+									</ul>
+									<br>
+									<button class="btn btn-primary rounded-full" id='btn10' 
+									style="background-color: #30005B" type="button" onclick="openclose('btn10','accordion-style-10')">
+										Voir plus
+									</button>
+									<div id="accordion-style-10" style="display: none">
+										<ul class="margin-top-sm list list_star" >
+											<li class="text">Installation et configuration de vos ordinateurs   </li>
+											<li class="text">Installation de box et applications  </li>
+											<li class="text">S’initier, se former à l’utilisation d’un ordinateur, tablette, smartphone </li>
+										</ul>
+									</div>
+								</p>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 		

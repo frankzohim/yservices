@@ -52,7 +52,7 @@
 			</div>
 			<div class="w-full md:w-1/2 mt-2 md:mt-0">
 				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
-				src="{{ asset('_next/static/media/about/intro.jpg') }}">
+				src="{{ asset('_next/static/media/about/intro-1.jpg') }}">
 				<span class="text-xl md:text-5xl font-bold color-orange" style="font-size: 18px"> 
 					L’aide à domicile personnalisée pour les personnes âgées, 
 					en situation d'handicap ou en perte d’autonomie 
@@ -67,7 +67,7 @@
 		<div class="flex flex-wrap items-center">
 								 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
 				<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
-										src="{{ asset('_next/static/media/about/1.jpg') }}">
+										src="{{ asset('_next/static/media/about/1.webp') }}">
 			</div>
 			<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
 				
@@ -195,7 +195,7 @@
 			</div>
 			<div class="w-full md:w-1/2 mt-2 md:mt-0">
 				<img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
-				src="{{ asset('_next/static/media/about/2.jpg') }}">
+				src="{{ asset('_next/static/media/about/nurse-care-worker-with-older-man.webp') }}">
 			</div>
 		</div>               
 	</div>

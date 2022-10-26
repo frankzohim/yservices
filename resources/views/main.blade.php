@@ -65,7 +65,7 @@
         <div class="max-w-7xl px-4 mx-auto flex w-full flex-wrap">   
             
             <div class="w-full md:w-1/2 md:pr-20">
-                <h1 class="main-title  md:text-left  text-3xl xl:text-4xl font-bold text-indigo-800" style="line-height: 1.3"> 
+                <h1 class="main-title  md:text-left  text-3xl xl:text-4xl font-bold text-indigo-800 color-text" style="line-height: 1.3"> 
 					Contactez-nous 
 					<div class="w-48  border-b-4 mx-auto md:mx-0 border-yellow-500 mt-4"></div>
 				</h1>
@@ -79,13 +79,13 @@
 
                          <li class="flex items-center space-x-2">
                              <i class="fas fa-phone text-sm"></i>
-                            <span class="font-bold  text-indigo-900">
+                            <span class="font-bold  text-indigo-900 color-text">
                                 +33 6.87.26.38.65
                             </span>
                         </li>
                                                 <li class="flex items-center space-x-2">
                            <i class="fas fa-envelope text-sm"></i>
-                            <span class="font-bold  text-indigo-900">
+                            <span class="font-bold  text-indigo-900 color-text">
                                 contact@youdom-care.com
                             </span>
                         </li>

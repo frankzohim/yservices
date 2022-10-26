@@ -104,10 +104,6 @@ Route::get('about', function () {
     return view('about');
 })->name('about');
 
-Route::get('metiers', function () {
-    return view('metiers');
-})->name('metiers');
-
 Route::get('commitment', function () {
     return view('our-commitment');
 })->name('commitment');
@@ -136,13 +132,14 @@ Route::get('/autocomplete-search', [TypeAheadController::class, 'autocompleteSea
 Route::get('autocomplete', [TypeAheadController::class, 'autocomplete'])->name('autocomplete');
 
 Route::get('/typeahead_autocomplete/action', [TypeAheadController::class, 'action'])->name('typeahead_autocomplete.action');
-
+Route::post('/transition', [NeedController::class, 'transition'])->name('devis.transition');
 
 Route::resources([
         'devis' => NeedController::class,
         'contact' => ContactController::class,
         'partner_form'=> formfranchiseController::class,
     ]);
+
 
     Route::group(['middleware'=>['guest']],function(){
 

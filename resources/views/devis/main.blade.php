@@ -67,7 +67,7 @@
         <div class="max-w-7xl px-4 mx-auto flex w-full flex-wrap">   
             
             <div class="w-full md:w-2/5 md:pr-20">
-                <h1 class="main-title  md:text-left  text-3xl xl:text-4xl font-bold text-indigo-800" style="line-height: 1.3"> 
+                <h1 class="main-title  md:text-left  text-3xl xl:text-4xl font-bold text-indigo-800 color-text" style="line-height: 1.3"> 
                   Contactez-nous pour une demande de devis personnalisé
 					<div class="w-48  border-b-4 mx-auto md:mx-0 border-yellow-500 mt-4"></div>
 				</h1>
@@ -86,13 +86,13 @@
 
                          <li class="flex items-center space-x-2">
                              <i class="fas fa-phone text-sm"></i>
-                            <span class="font-bold  text-indigo-900">
+                            <span class="font-bold  text-indigo-900 color-text">
                                 +33 6.87.26.38.65
                             </span>
                         </li>
                                                 <li class="flex items-center space-x-2">
                            <i class="fas fa-envelope text-sm"></i>
-                            <span class="font-bold  text-indigo-900">
+                            <span class="font-bold  text-indigo-900 color-text">
                                 contact@youdom-care.com
                             </span>
                         </li>
@@ -125,7 +125,7 @@
 						<div class="flex flex-wrap md:flex-nowrap md:space-x-2">
 										 <div class="col-md-12 pe-2 mb-3">
 							 <div class="d-flex justify-content-center">
-								<span class="  md:text-left  text-2xl  font-bold text-indigo-800"> Un conseiller vous contactera sous 24h </span>  
+								<span class="  md:text-left  text-2xl  font-bold text-indigo-800 color-text"> Un conseiller vous contactera sous 24h </span>  
 							 </div>
 
 							 <div class="flex flex-wrap md:flex-nowrap md:space-x-2">
@@ -145,7 +145,7 @@
 							  </div>
 
 											<fieldset>
-												<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+												<legend class="  md:text-left  text-2xl  font-bold text-indigo-800 color-orange" style="font-size: 15px;">
 								QUELS SONT VOS BESOINS ?  *:</legend>
 												 <div class="col-md-4 pe-2 mb-3 form-check">
 													<input type="checkbox" class="form-check-input" id="music" name="type[]" 
@@ -237,13 +237,13 @@
 								</div>
 							</div>
 						</div>
-						<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+						<legend class="  md:text-left  text-2xl  font-bold text-indigo-800 color-text" style="font-size: 15px;">
 						  VOS INFORMATIONS PERSONNELLES 
 						</legend>
 					<div class="row">
                       <div class="col-md-12 pe-2 mb-3">
 
-                        <label class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+                        <label class="  md:text-left  text-2xl  font-bold text-indigo-800 color-text" style="font-size: 15px;">
                           Civilité *</label>
                         <br>
                         <input type="radio" class="btn-check"   name="civility" id="option2" 

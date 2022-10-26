@@ -113,6 +113,8 @@ label img {
 	color:#585956;
 }
 
+.portlet{margin-bottom:10px;position:relative}.portlet>.portlet-content-editable{border-color:transparent}.portlet>.portlet-topper{display:none}
+
 	</style>
     <section class="main-intro-all" style="background-color: #F2DCC2;">
 
@@ -182,13 +184,24 @@ label img {
 	<div class="section" style="margin-top:-50px;">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> De quels services</span>
-				<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> avez-vous besoin ?</span>
-				
-			 </h3>
-			</div>
+				<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> 
+					Besoin d'un intervenant</span>
+					<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> 
+						à domicile ?</span>
+					
+				 </h3>
+				 <div class="mt-3 text-gray-700 font-semibold">
+					<a href="{{ route('devis.create') }}">
+							   <button  class="px-3 py-3 text-lg bg-yellow-500 
+							   font-bold text-white rounded-full" 
+							   style="background-color: #30005B"> 
+									  CLIQUEZ ICI </button>
+					  </a>
 
-			<form id="regForm" method="post" action="{{ route('devis.store') }}" >
+				</div>
+			</div>
+			<!--
+			<form id="regForm" method="post" action="" >
 
 					@csrf
 
@@ -199,273 +212,57 @@ label img {
 									<img src="{{ asset('_next/static/media/assistant/steps/step1-1.png') }}" style=" width: 30%;"/>
 							</div>
 							
-							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Sélectionnez un service </h5>
+							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Sélectionnez un ou plusieurs service </h5>
 						</div>
+						
 						<div class="row">
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
 										
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/services/1.png') }}" 
-											alt="LEVER/COUCHER">
+											<img src="{{ asset('_next/static/media/services/70/13.png') }}" 
+											alt="TOILETTE/HABILLAGE">
 										</label>
-										
-										
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb1" 
-											name="services[]" value="Aide à l'autonomie"/>&nbsp;
-											<h4  style="" class="text-xl md:text-5xl font-bold" >LEVER/COUCHER</h4>
-										</div>
+									<div class="form-check d-flex justify-content-center">
 										
-										
-									</div>
+										<input type="checkbox" class="form-check-input" id="cb1" name="services[]" 
+										value="TOILETTE/HABILLAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TOILETTE/HABILLAGE
+										</label>
 
 									</div>
 								</div>
 
 							</div>
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
 										
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/services/2.png') }}"  
-											alt="PRESENCE NUIT">
+											<img src="{{ asset('_next/static/media/services/70/9.png') }}"  
+											alt="LEVER/COUCHER">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input"  
-											id="cb2" name="services[]" value="Gardes non médicalisées"/>&nbsp;
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
-											  PRÉSENCE DE NUIT</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-						   </div>
-
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
+									<div class="form-check d-flex justify-content-center">
 										
-										<label for="cb4">
-											<img src="{{ asset('_next/static/media/services/3.png') }}"  alt="Accompagnements">
+										<input type="checkbox" class="form-check-input" id="cb2" name="services[]" 
+										value="LEVER/COUCHER"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LEVER/COUCHER
 										</label>
-									</div>
 
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb4" class="form-check-input"  
-											name="services[]" value="Accompagnements"/>&nbsp;
-											<div class="team-title">
-												<h4  class="text-xl md:text-5xl font-bold" >ACCOMPAGNEMENTS</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb5">
-											<img src="{{ asset('_next/static/media/services/4.png') }}" 
-											alt="AIDE AUX REPAS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb5" class="form-check-input" name="services[] " value="Aide aux repas"/>&nbsp;
-											<div class="team-title">
-												<h4  class="text-xl md:text-5xl font-bold">
-													AIDE AUX REPAS</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-
-					<div class="row">
-
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb6">
-											<img src="{{ asset('_next/static/media/services/5.png') }}" 
-											alt="RETOUR A DOMICILE APRES HOSPITALISATION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>&nbsp;
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
-										</div>
-
-									
-
-									</div>
-								</div>
-
-						   </div>
-
-						   <div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb7">
-											<img src="{{ asset('_next/static/media/services/6.png') }}" 
-											alt="AIDE-MÉNAGÈRE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb7" name="services[]" value="Aide-ménagère"/>&nbsp;
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">AIDE-MÉNAGÈRE</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb8">
-											<img src="{{ asset('_next/static/media/services/7.png') }}" 
-											alt="ASSISTANCE ADMINISTRATIVE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb8" name="services[]" 
-										value="Assistance administrative"/> &nbsp;
-										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">ASSISTANCE ADMINISTRATIVE</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-							</div>
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb9">
-											<img src="{{ asset('_next/static/media/services/8.png') }}" alt="VOYAGE & EVASION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb9" class="form-check-input" name="services[]" value="Voyage & évasion"/>&nbsp;
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">VOYAGE & EVASION</h4></div>
-										</div>
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-
-					<div class="row">
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb10">
-											<img src="{{ asset('_next/static/media/services/9.png') }}" 
-											alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb10" class="form-check-input" 
-											name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
-											<div class="team-title">
-												<h4  class="text-xl md:text-5xl font-bold" >
-													AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
-										</div>
-									
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										
-										<label for="cb11">
-											<img src="{{ asset('_next/static/media/services/10.png') }}"  
-											alt="TRANSPORT VEHICULE (PMR)">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" id="cb11" class="form-check-input" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
-											<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
-												TRANSPORT VEHICULE (PMR)</h4></div>
-										</div>
-
-									</div>
+									</div>									
 								</div>
 
 						   </div>
@@ -476,26 +273,358 @@ label img {
 
 									<div class="team-image">
 										
-										<label for="cb12">
-											<img src="{{ asset('_next/static/media/services/11.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
+										<label for="cb3">
+											<img src="{{ asset('_next/static/media/services/70/5.png') }}" 
+											alt="PRESENCE NUIT">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-										<div class="d-flex justify-content-center">
-											<input type="checkbox" class="form-check-input" id="cb12" name="services[]" 
-										value="Aide à domicile des personnes handicapées"/>
-										<div class="team-title"><h4  class="text-xl md:text-5xl font-bold">
-											AIDE A DOMICILE DES PERSONNES HANDICAPEES</h4></div>
-										</div>
 									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb3" name="services[]" 
+										value="PRESENCE NUIT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											PRESENCE NUIT
+										  </label>
 
 									</div>
 								</div>
 
 							</div>
 
+					</div>
+					
+					<div class="row">
 
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb4">
+											<img src="{{ asset('_next/static/media/services/70/2.png') }}" 
+											alt="ACCOMPAGNEMENT">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb4" name="services[]" 
+										value="ACCOMPAGNEMENT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ACCOMPAGNEMENT
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb5">
+											<img src="{{ asset('_next/static/media/services/70/10.png') }}"  
+											alt="GARDE JOUR ET GARDE 24/24">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb5" name="services[]" 
+										value="GARDE JOUR ET GARDE 24/24"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											GARDE JOUR ET GARDE 24/24
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb6">
+											<img src="{{ asset('_next/static/media/services/70/15.png') }}" 
+											alt="AIDE AU REPAS">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb6" name="services[]" 
+										value="AIDE AU REPAS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											AIDE AUX REPAS
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb7">
+											<img src="{{ asset('_next/static/media/services/70/4.png') }}" 
+											alt="AIDE À LA MOBILITÉ">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb7" name="services[]" 
+										value="AIDE À LA MOBILITÉ"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE À LA MOBILITÉ
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb8">
+											<img src="{{ asset('_next/static/media/services/70/12.png') }}" 
+											alt="RAPPEL DE LA PRISE DE MEDICAMENTS">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb8" name="services[]" 
+										value="RAPPEL DE LA PRISE DE MEDICAMENTS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											RAPPEL DE LA PRISE DE MEDICAMENTS
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb9">
+											<img src="{{ asset('_next/static/media/services/70/1.png') }}"  
+											alt="COURSES/LIVRAISON">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb9" name="services[]" 
+										value="COURSES/LIVRAISON"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											COURSES/LIVRAISON
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb10">
+											<img src="{{ asset('_next/static/media/services/70/13.png') }}" 
+											alt="RETOUR D’HOSPITALISATION">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb10" name="services[]" 
+										value="RETOUR D’HOSPITALISATION"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												RETOUR D’HOSPITALISATION
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb11">
+											<img src="{{ asset('_next/static/media/services/70/14.png') }}" 
+											alt="MENAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb11" name="services[]" 
+										value="MENAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											MENAGE
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb12">
+											<img src="{{ asset('_next/static/media/services/70/11.png') }}"  
+											alt="LESSIVE/REPASSAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb12" name="services[]" 
+										value="LESSIVE/REPASSAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LESSIVE/REPASSAGE
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+				
+
+					<div class="row">
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb13">
+											<img src="{{ asset('_next/static/media/services/70/6.png') }}" 
+											alt="ENFANTS HANDICAPES OU MALADES">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb13" name="services[]" 
+										value="ENFANTS HANDICAPES OU MALADES"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ENFANTS HANDICAPES OU MALADES
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb14">
+											<img src="{{ asset('_next/static/media/services/70/17.png') }}"  
+											alt="TRANSPORT VEHICULE (PMR)">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb14" name="services[]" 
+										value="TRANSPORT VEHICULE (PMR)"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TRANSPORT VEHICULE (PMR)
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb15">
+											<img src="{{ asset('_next/static/media/services/70/3.png') }}" 
+											alt="AIDE ADMINISTRATIVE">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb15" name="services[]" 
+										value="AIDE ADMINISTRATIVE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE ADMINISTRATIVE
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
 
 					</div>
 
@@ -867,10 +996,11 @@ label img {
 
 				<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
-										style="background-color: #D9644A" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+										
 										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
 										style="background-color: #30005B"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										
+										
 									</div>
 								</div>
 								
@@ -881,7 +1011,7 @@ label img {
 								</div>
 
 			</form>
-
+		-->
 
 		</div>
 	</div>
@@ -978,7 +1108,7 @@ label img {
                     </div>
                     <div class="w-full md:w-1/2 mt-2 md:mt-0">
                         <img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
-						src="{{ asset('_next/static/media/our-mission.jpg') }}">
+						src="{{ asset('_next/static/media/home/aide-domicile-personnes-agees.jpeg') }}">
                     </div>
                 </div>               
             </div>
@@ -1064,7 +1194,7 @@ label img {
                     </div>    
                     <div class="w-full md:w-1/2">
                         <img data-animate="animate-right" class="w-full " style="border-radius: 15px;"
-						src="{{ asset('_next/static/media/home/our-mission.jpg') }}">
+						src="{{ asset('_next/static/media/home/our-mission-1.jpg') }}">
                     </div>
                 </div>               
             </div>
@@ -1102,13 +1232,13 @@ label img {
 				<section class="lp-banking-invite-team">
 					<div class="container container_card">
 						<div class="section-body section-body_card section-body_card_pink section-body_margin-top 
-						lp-banking-invite-team__body " style="padding: 20px;">
+						lp-banking-invite-team__body " style="padding: 10px;">
 							<div class="image lp-banking-invite-team__img-wrap">
 								<picture class="picture__image-container ">
 
-								<img src="{{  asset('_next/static/media/home/our-functionning.png') }} " 
-								srcSet="{{  asset('_next/static/media/home/our-functionning.png') }}" alt="" 
-								class="picture__image " loading="eager" style="margin-top:-15px;"/>
+								<img src="{{  asset('_next/static/media/home/our-functionning-2.png') }} " 
+								srcSet="{{  asset('_next/static/media/home/our-functionning-2.png') }}" alt="" 
+								class="picture__image " loading="eager" style="margin-right:10px;"/>
 							</picture>
 							</div>
 							<div class="">
@@ -1130,11 +1260,97 @@ label img {
 					</div>
 				</section>
 
-				
+				<section class="w-100 p-3" style="margin-left:10px; "> 
+					<div class="py-3 w-100"> 
+					 <div class="row w-100" > 
+					  <div class="col-lg-12"> 
+					   <div id="fragment-0-ifao"> 
+						<div class=""> 
+						 <span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Qf6B3Goj5057"></span> 
+						 <section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Qf6B3Goj5057"> 
+						  <div class="portlet-content"> 
+						   <div class="autofit-float autofit-row portlet-header"> 
+							<div class="autofit-col autofit-col-end"> 
+							 <div class="autofit-section"> 
+							  <div class="visible-interaction"> 
+							  </div> 
+							 </div> 
+							</div> 
+						   </div> 
+						   <div class=" portlet-content-container w-100" > 
+							<div class="portlet-body w-100" > 
+							 <div class="" > 
+							  <div class="journal-content-article " data-analytics-asset-id="114851" data-analytics-asset-title="Youdom Care Recrute !" data-analytics-asset-type="web-content"> 
+							   <div class="container-fluid external-site-bloc-container" 
+							   style="background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0, 0, 0, 0)) , 
+							   url('{{ asset('_next/static/media/home-business-tab-img04.jpg') }}'); background-repeat: no-repeat;
+  background-size: cover; "> 
+								<div class="external-site-bloc row d-flex flex-row" style="padding:50px 20px;"> 
+								 <div class="col-lg-8 col-12 align-self-end align-self-lg-center pb-30"> 
+								  <h2 class="mb-3 text-white color-text font-bold">
+									Youdom-care recrute <br> 
+									Rejoignez-nous
+								  </h2> 
+								  <h3 class="mb-4 text-white">
+									Faites partie d’un groupe en croissance <br> qui offre à chacun l’opportunité <br>
+									 d’être acteur de sa carrière. <br>
+									 Bénéficier d’un parcours de formation <br>
+									  sur mesure tout au long de votre aventure.
+								  </h3> 
+								  <ul class="list-unstyled"> 
+								   <li class="text-medium text-white">
+										Auxiliaire de vie 
+								   </li> 
+								   <li class="text-medium text-white">
+										Aide-ménagère 
+								   </li> 
+								   <li class="text-medium text-white">
+										Garde nuit 
+								   </li> 
+								   <li class="text-medium text-white">
+										Aide médico-psychologique 
+								   </li> 
+								   <li class="text-medium text-white">
+										Responsable de secteur 
+								   </li> 
+								   <li class="text-medium text-white">
+									Directeur d'agence 
+								   </li> 
+
+								  </ul> 
+								 </div> 
+								 
+								 
+								 <div class="col-lg-4 col-12 align-self-end"> 
+									<span class="text-white center">
+										 <span style="white-space: nowrap"> A la recherche d'un emploi à domicile ?</span> <br> Youdom-care recrute 
+									</span>
+									<br> <br>
+								  <a class="btn btn-outline btn-outline-primary btn-filled-primary 
+									d-flex align-items-center justify-content-center w-100 bg-yellow-500 
+									font-bold text-white rounded-full" 
+									href="{{ route('join-us-content') }}" title="" 
+									style="padding:20px 10px; background-color: #30005B"> 
+										<span class="d-block text-small font-weight-bold font-nexabold">Rejoignez-nous </span> 
+								  </a> 
+								 </div> 
+								</div> 
+							   </div> 
+							  </div> 
+							 </div> 
+							</div> 
+						   </div> 
+						  </div> 
+						 </section> 
+						</div> 
+					   </div> 
+					  </div> 
+					 </div> 
+					</div> 
+				   </section> 
 	
 
 	<script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
-	<script src="{{ asset('assets/js/typeahead.js') }}"></script>
 	<script>
 		var codes = @json($codes_array);
 
@@ -1142,4 +1358,26 @@ label img {
 
 
 	</script>
+	<script>
+
+		 function nextPrev(n) {
+
+			var isChecked=document.querySelectorAll('.form-check-input');
+			var isCheckedArray=Array.from(isChecked);
+			
+			isCheckedArray.forEach((curr)=>{
+				if(curr.checked==true){
+					document.getElementById("regForm").submit();
+				}else{
+					//alert("la case n'a pas ete coché")
+				}
+			})
+
+			
+
+			
+		}
+
+	</script>
+
 @endsection

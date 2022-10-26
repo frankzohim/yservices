@@ -78,22 +78,21 @@
 
   </style>
 
-<section class="py-0 md:py-20 bg-gray-100">
+<section class="py-0 md:py-15 bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 animated-content">
         <div class="flex flex-wrap md:flex-col-reverse items-center">
             <div class="w-full md:w-1/2 md:pl-10">
-                
+                <br>
                 <h3 data-animate="animate-right" class=" md:text-xl mt-0 md:mt-8 text-gray-700" 
                 style="line-height: 1.5">
                 Youdom Care s’engage à rendre votre quotidien plus simple, en adaptant nos services à vos besoins. 
                 Nous sommes disponibles à tout moment afin d’organiser au mieux les prestations proposées.
-                 Nous proposons des services à domicile personnalisés, et sélectionnons soigneusement les 
-                 auxiliaires de vie professionnels et les aides-soignants qui vous accompagneront tout au 
-                 long du processus de maintien à domicile.
-                
+                Nous proposons des services à domicile personnalisés, et sélectionnons soigneusement les auxiliaires 
+                de vie professionnels et les aides-soignants qui vous accompagneront tout au long du 
+                processus de maintien à domicile.
                 </h3>
             </div>   
-            <div class="w-full md:w-1/2 mt-8 md:mt-0">
+            <div class="w-full md:w-1/2 mt-4 md:mt-0">
                 <h1 data-animate="animate-right" class=" text-xl md:text-5xl font-bold text-indigo-800" 
                 style="line-height: 1.2">
                     
@@ -104,13 +103,40 @@
                     </span>
                 </h1>
                 <img data-animate="animate-left" class="w-full " 
-                src="{{ asset('_next/static/media/functioning.jpg') }}" style="border-radius: 15px;">
+                src="{{ asset('_next/static/media/functioning/intro.jpeg') }}" style="border-radius: 15px;">
             </div>
                            
         </div>               
     </div>
 </section>
 	
+<section class="py-0 md:py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 animated-content">
+        <div class="flex flex-wrap md:flex-col-reverse items-center">
+            <div class="w-full md:w-1/2 md:pl-10">
+                <br>
+                <h3 data-animate="animate-right" class=" md:text-xl mt-0 md:mt-8 text-gray-700" 
+                style="line-height: 1.5">
+                Parlez-nous de vous ou de votre proche, de vos attentes.
+                </h3>
+            </div>   
+            <div class="w-full md:w-1/2 mt-4 md:mt-0">
+                <h1 data-animate="animate-right" class=" text-xl md:text-5xl font-bold text-indigo-800" 
+                style="line-height: 1.2">
+                    
+                    <span class="text-yellow-500" style="font-size:40px;">
+                        <span class="color-text"> Projet </span> 
+                        <span class="color-orange">de vie
+                            </span>  
+                    </span>
+                </h1>
+                <img data-animate="animate-left" class="w-full " 
+                src="{{ asset('_next/static/media/functioning/projet-vie.webp') }}" style="border-radius: 15px;">
+            </div>
+                           
+        </div>               
+    </div>
+</section>
 
 
 <section class="py-2 md:py-20">
@@ -118,7 +144,7 @@
         <div class="flex flex-wrap items-center">
             <div class="w-full md:w-1/2 mt-2 md:mt-0">
                 <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/4136673.jpg') }}">
+                src="{{ asset('_next/static/media/fonctionnement4.png') }}">
             </div>
 
             <div class="w-full md:w-1/2 md:pr-20" >
@@ -128,30 +154,9 @@
                     <span class="text-yellow-500 color-orange">des besoins</span>
                 </h1>
                 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                                        <ul class="margin-top-default list list_10px list_bullet-color_blue">
-                                        <li>
-                                            
-                                            <span 
-                                            style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
-                                            Ecoute de la demande et explication des missions à réaliser</span>
-                                        </li>
+                                        Ecoute de la demande et explication des missions à réaliser.
+										Déterminons ensemble les services qui vous correspondent.
 
-                                        <li>
-                                            <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
-                                                Rencontre au domicile avec les bénéficiaires pour identifier les besoins gratuitement
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
-                                                Présentation des aides financières et aide au montage des dossiers
-                                            </span>
-                                        </li>
-                                        <li>
-                                            <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
-                                                50 % de réduction d’impôt
-                                            </span>
-                                        </li>
-                                    </ul>
 
                 </h3>
                                          <div class="mt-3 text-gray-700 font-semibold">
@@ -176,12 +181,32 @@
             <div class="w-full md:w-1/2 md:pr-20" >
                 <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
                 style="line-height: 1.2; font-size:25px;">
-                Elaboration d’un devis
-                    <span class="text-yellow-500 color-orange">personnalisé</span>
+                Visite à 
+                    <span class="text-yellow-500 color-orange">domicile</span>
                 </h1>
                 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                    Déterminons ensemble la durée, la fréquence, les jours, les heures et 
-                    le contenu des interventions
+                    <ul class="margin-top-default list list_10px list_bullet-color_blue">
+                                        <li>
+                                            
+                                            <span 
+                                            style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+                                            Rencontre au domicile par un conseiller Youdom-Care avec les bénéficiaires pour 
+											identifier les besoins  et envies gratuitement.
+											</span>
+                                        </li>
+
+                                        <li>
+                                            <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+                                                Présentation des aides financières et aide au montage des dossiers
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+                                                50 % de réduction d’impôt
+                                            </span>
+                                        </li>
+                                      
+                                    </ul>
 
                 </h3>
                
@@ -189,35 +214,7 @@
 
             <div class="w-full md:w-1/2 mt-2 md:mt-0">
                 <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/fonctionnement4.png') }}">
-            </div>
-           
-        </div>               
-    </div>
-</section>
-
-<section class="py-2 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
-        <div class="flex flex-wrap items-center">
-            <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/fonctionnement3.png') }}">
-            </div>
-
-            <div class="w-full md:w-1/2 md:pr-20" style="text-align:center">
-                <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
-                style="line-height: 1.2; font-size:25px;">
-                &nbsp; Sélection d’un(e) intervenant (e)
-                    <span class="text-yellow-500 color-orange">,formé(e) et dédié(e) à vos attentes</span>
-                </h1>
-                <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " 
-                style="text-align: right" >
-                    Afin d’établir une relation de confiance et offrir un service 
-                    sur-mesure et stable, la même personne 
-                    interviendra à chaque fois (sauf absence)
-
-                </h3>
-               
+                src="{{ asset('_next/static/media/4136673.jpg') }}">
             </div>
            
         </div>               
@@ -229,6 +226,67 @@
         <div class="flex flex-wrap items-center">
             
 
+			 <div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/fonctionnement4.png') }}">
+            </div>
+			
+            <div class="w-full md:w-1/2 md:pr-20" >
+                <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
+                style="line-height: 1.2; font-size:25px;">
+                Elaboration d’un devis
+                    <span class="text-yellow-500 color-orange">personnalisé</span>
+                </h1>
+                <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+                    Déterminons ensemble la durée, la fréquence, les jours, les heures et le contenu des interventions.
+                </h3>
+               
+            </div>
+
+           
+           
+        </div>               
+    </div>
+</section>
+
+<section class="py-2 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+        <div class="flex flex-wrap items-center">
+            
+
+            <div class="w-full md:w-1/2 md:pr-20" >
+                <h1 data-animate="animate-right" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
+                style="line-height: 1.2; font-size:25px;">
+                &nbsp; Sélection d’un(e) intervenant (e)
+                    <span class="text-yellow-500 color-orange">,formé(e) et dédié(e) à vos attentes</span>
+                </h1>
+                <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " 
+                 >
+                 Afin d’établir une relation de confiance et offrir un service sur-mesure et stable, la même personne 
+                 interviendra à chaque fois (sauf absence).
+
+                </h3>
+               
+            </div>
+			
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/fonctionnement3.png') }}">
+            </div>
+           
+        </div>               
+    </div>
+</section>
+
+<section class="py-0 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+        <div class="flex flex-wrap items-center">
+            
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/3054191.jpg') }}">
+            </div>
+			
             <div class="w-full md:w-1/2 md:pr-20" >
                 <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
                 style="line-height: 1.2; font-size:25px;">
@@ -236,15 +294,9 @@
                     <span class="text-yellow-500 color-orange">convivialité</span>
                 </h1>
                 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                    Avant le début des prestations, rencontre et présentation au domicile 
-                    l’intervenant(e) sélectionné(e)
+                    Avant le début des prestations, rencontre et présentation au domicile l’intervenant(e) sélectionné(e).
                 </h3>
                
-            </div>
-
-            <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/3054191.jpg') }}">
             </div>
            
         </div>               
@@ -255,10 +307,7 @@
 <section class="py-2 md:py-20">
     <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
         <div class="flex flex-wrap items-center">
-            <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/fonctionnement1.png') }}">
-            </div>
+           
 
             <div class="w-full md:w-1/2 md:pr-20" style="text-align:left">
                 <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
@@ -272,6 +321,11 @@
                 </h3>
                
             </div>
+			
+			 <div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/fonctionnement1.png') }}">
+            </div>
            
         </div>               
     </div>
@@ -283,7 +337,12 @@
     <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
         <div class="flex flex-wrap items-center">
             
-
+			
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/fonctionnement6.png') }}">
+            </div>
+			
             <div class="w-full md:w-1/2 md:pr-20" >
                 <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
                 style="line-height: 1.2; font-size:25px;">
@@ -291,22 +350,13 @@
                     <span class="text-yellow-500 color-orange">qualité régulier</span>
                 </h1>
                 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
-                    Afin de garantir un service conforme aux attentes de nos bénéficiaires, des 
-                    enquêtes de satisfaction et des visites régulières sont réalisées.
-                    Un interlocuteur unique, de la prise de contact à la fin de la durée du contrat, 
-                    s’informe régulièrement de l’évolution des besoins de la personne aidée, âgées ou en 
-                    situation de handicap. Il est donc possible, en cours de contrat, d’adapter la prestation 
-                    initialement mise en place : organisation des interventions, tâches à réaliser, qualification 
-                    du personnel (…)
+                    Afin de garantir un service conforme aux attentes de nos bénéficiaires, des enquêtes de satisfaction et des visites régulières sont réalisées. Un interlocuteur unique, de la prise de contact à la fin de la durée du contrat, s’informe régulièrement de l’évolution des besoins de la personne aidée, âgées ou en situation de handicap. Il est donc possible, en cours de contrat, d’adapter la prestation initialement mise en place : organisation des interventions, tâches à réaliser, qualification du personnel.
                     
                 </h3>
                
             </div>
 
-            <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/fonctionnement6.png') }}">
-            </div>
+            
            
         </div>               
     </div>
@@ -315,25 +365,26 @@
 <section class="py-2 md:py-20">
     <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
         <div class="flex flex-wrap items-center">
-            <div class="w-full md:w-1/2 mt-2 md:mt-0">
-                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
-                src="{{ asset('_next/static/media/fonctionnement2.png') }}">
-            </div>
+            
 
-            <div class="w-full md:w-1/2 md:pr-20" style="text-align:right">
+            <div class="w-full md:w-1/2 md:pr-20" >
                 <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" 
                 style="line-height: 1.2; font-size:25px;">
                 La protection des 
                     <span class="text-yellow-500 color-orange">données (RGPD) </span>
                 </h1>
                 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " 
-                style="text-align: right" >
-                    Toutes les données concernant le ou la bénéficiaire font l’objet d’un traitement informatisé 
-                    dans les conditions fixées par le règlement général de la protection des données( RGPD) Les
-                     données médicales sont soumises au secret professionnel, auquel est tenu l’ensemble du 
-                     personnel 
+                >
+                    Toutes les données concernant le ou la bénéficiaire font l’objet d’un traitement 
+					informatisé dans les conditions fixées par le règlement général de la protection des 
+					données( RGPD) Les données médicales sont soumises au secret professionnel, auquel est tenu l’ensemble du personnel.
                 </h3>
                                     
+            </div>
+			
+			<div class="w-full md:w-1/2 mt-2 md:mt-0">
+                <img data-animate="animate-right" class="w-full "  style="border-radius: 10px;"
+                src="{{ asset('_next/static/media/fonctionnement2.png') }}">
             </div>
            
         </div>               

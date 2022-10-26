@@ -40,13 +40,15 @@
 									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Trouver un emploi</a>
 									</li>
 								-->
-								<li class="header-nav__item" style="">
-									<a class="link_inherit text-xl  font-bold text-indigo-800 color-orange " style="font-size: 15px;" data-test="header_nav__pricing" 
+								
+
+									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
+										<a class="link_inherit text-xl  font-bold text-indigo-800 color-orange " style="font-size: 15px;" data-test="header_nav__pricing" 
 									href="{{ route('become_partner') }}">Devenez partenaire</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										<a class="link_inherit font-bold text-indigo-800 color-orange" style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('join-us') }}">Nous rejoindre</a>
+										<a class="link_inherit font-bold text-indigo-800 color-orange" style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('join-us-content') }}">Nous rejoindre</a>
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
 										<a class="link_inherit font-bold text-indigo-800 color-orange" style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('devis.form') }}"> Demandez un devis</a>
