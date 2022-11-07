@@ -23,20 +23,40 @@ class DevisController extends Controller
             $i++;
         }
 
-        return view('devis.create', compact('codes_array'));
+        return view('devis.main', compact('codes_array'));
     }
 
     public function store(DevisRequest $request){
 
+        $i =0;
+        $services ="";
+        foreach($request->type as $type){
+            if ($i==0)
+                $services = $type;
+
+            else{
+
+                $services .= ', '.$type;
+            }
+
+             $i++;
+
+        }
+
         $devis=new devis;
+        $devis->for_who=$request->for_who;
+        $devis->services=$services;
+        $devis->start_time=$request->start_time;
         $devis->civility=$request->civility;
-        $devis->nom=$request->nom;
-        $devis->prenom=$request->prenom;
+        $devis->firstname=$request->firstname;
+        $devis->lastname=$request->lastname;
         $devis->email=$request->email;
-        $devis->numero=$request->numero;
-        $devis->date=$request->date;
-        $devis->hour=$request->hour;
-        $devis->code_postal=$request->code_postal;
+        $devis->phone=$request->phone;
+        $devis->postal_code=$request->postal_code;
+        $devis->town=$request->town;
+        $devis->comments=$request->comments; 
+        $devis->news=$request->news;
+        $devis->accept_cgu = 1;
         $devis->save();
 
         if($devis->save()){

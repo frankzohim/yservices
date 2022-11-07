@@ -4,6 +4,16 @@
 @section('content')
 	<style>
 
+>
+
+    .color-text{
+        color: #30005B;
+    }
+    .color-orange{
+        color:#D9644A;
+    }
+
+
     .content-wrap{position:relative;padding:80px 0;overflow:hidden}
 
     .nav-tabs{border:none}

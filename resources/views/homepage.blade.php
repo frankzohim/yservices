@@ -32,14 +32,14 @@
 .team-image:hover .middle {
   opacity: 1;
 }
-.team-image img,.team-image>a{display:block;width:40%;   margin-left: auto;
+.team-image img,.team-image>a{display:block;   margin-left: auto;
   margin-right: auto;}
 .team-desc{text-align:center}
-.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 30px}
+.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 0px}
 .team .si-share{margin-top:30px;text-align:left}
 .team .si-share .social-icon{font-size:14px;width:34px}
-.team-title{position:relative;padding-top:20px}
-.team-title h4{display:block;margin-bottom:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;font-weight:700; color: rgb(68,68,68)}
+.team-title{position:relative;padding-top:0px}
+.team-title h4{display:block;margin-bottom:0;font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:600;color:#D9644A;}
 .team-title span{display:block;color:#1abc9c;font-weight:400;font-family:'pt serif',serif;font-style:italic;font-size:16px;margin-top:5px}
 .team-content{margin-top:1rem;color:#777}
 .team-content p:last-child{margin-bottom:0}
@@ -51,7 +51,7 @@
 .team:not(.team-list) .social-icon{display:inline-block!important;vertical-align:middle;float:none;margin-left:4px;margin-right:4px}
 
 input[type="checkbox"][id^="cb"] {
-  display: none;
+  margin-top:-5px;
 }
 
 label {
@@ -84,16 +84,16 @@ label img {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
-
+.before-heading
 :checked + label {
   border-color: #ddd;
 }
 
-:checked + label:before {
+/*:checked + label:before {
   content: "✓";
   background-color: green;
   transform: scale(1);
-}
+}*/
 
 :checked + label img {
   transform: scale(1);
@@ -102,9 +102,23 @@ label img {
   z-index: -1;
 }
 
+ .color-text{
+        color: #30005B;
+    }
+.color-orange{
+        color:#D9644A;
+    }
+
+.color-grey{
+	color:#585956;
+}
+
+.portlet{margin-bottom:10px;position:relative}.portlet>.portlet-content-editable{border-color:transparent}.portlet>.portlet-topper{display:none}
+
 	</style>
-    <section class="main-intro-all">
-					<div class="container">
+    <section class="main-intro-all" style="background-color: #F2DCC2;">
+
+					<div class="container" >
 
 						<div class="section-body padding-top-sm main-intro-all__body">
 
@@ -112,32 +126,38 @@ label img {
 
 								<div style="margin-bottom:55px;">
 
-									<h1 class="heading heading__lvl1 stillforce-heading-blue-medium" >
-
-									<h1 class="heading heading__lvl1 stillforce-heading-blue" style="">L'aide à domicile</h1>
-									<h1 class="heading heading__lvl1" style="color: #E84347; font-weight:700; font-size:70px; line-height:59.5px;">Sur-mesure</h1>
-
-									</h1>
+									<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            L'aide à domicile<br> 
+                            <span class="text-yellow-500 color-orange"> Sur-mesure</span>
+                        </h1>
 
 								</div>
 
 								<div style="margin-bottom:30px;">
 
-									<p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm" style="color: #E84347;">Aide à domicile pour :</p>
+							
 
-									<ul class="margin-top-xs list list_10px list_bullet-color_black main-intro-all__list">
+									
+									 <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 text-justify" style="line-height: 1.5">
+													
+										<!-- <p class="margin-top-xs text text_lg color_grey hide-mobile hide-tablet-sm text-indigo-800 color-text font-bold" >Aide à domicile pour :</p> -->
+										<p class="margin-top-xs text text_lg color_grey  text-indigo-800 color-text font-bold" >Aide à domicile pour :</p>
+										
+                           <ul class="margin-top-xs list list_10px  main-intro-all__list">
 
-										<li class="text"><b>Les personnes âgées</b> </li>
-										<li class="text"><b>Les personnes en situation handicap  </b> </li>
-										<li class="text"><b>Les personnes en perte d’autonomie   </b> </li>
-
-									</ul>
+															<li class="color-grey "><b>Les personnes âgées</b> </li>
+															<li class="text color-grey"><b>Les personnes en situation handicap  </b> </li>
+															<li class="text color-grey"><b>Les personnes en perte d’autonomie   </b> </li>
+															<li class="text color-grey"><b>Les enfants handicapés ou malades   </b> </li>
+														</ul>
+                        </h3>
 								</div>
-								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all">
+								<a href="{{ route('about') }}" class="margin-top-default button button_w-m-full" id="target-action-main-intro-all" style="background-color:#D9644A; border-radius:25px;">
 									En Savoir Plus
 								</a>
 
-								<a href="{{ route('join-us') }}" class="margin-top-default button button_w-m-full" style="background-color:#594EE6" id="target-action-main-intro-all">
+								<a href="{{ route('join-us') }}" class="margin-top-default button button_w-m-full" style="background-color:#30005B; border-radius:25px;" 
+								id="target-action-main-intro-all">
 									Nous Rejoindre
 								</a>
 
@@ -161,224 +181,88 @@ label img {
 
 	</section>
 
-					<div class="section">
+	<div class="section" style="margin-top:-50px;">
 		<div class="container content-wrap clearfix">
 			<div class="heading-block topmargin-sm center">
-			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span>
-				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
-			</div>
+				<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> 
+					Besoin d'un intervenant</span>
+					<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> 
+						à domicile ?</span>
+					
+				 </h3>
+				 <div class="mt-3 text-gray-700 font-semibold">
+					<a href="{{ route('devis.create') }}">
+							   <button  class="px-3 py-3 text-lg bg-yellow-500 
+							   font-bold text-white rounded-full" 
+							   style="background-color: #30005B"> 
+									  CLIQUEZ ICI </button>
+					  </a>
 
-			<form id="regForm" method="post" action="{{ route('devis.store') }}" autocomplete="off">
+				</div>
+			</div>
+			<!--
+			<form id="regForm" method="post" action="" >
 
 					@csrf
 
-				<!-- One "tab" for each step in the form: -->
+				
 				<div class="tab">
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step1.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez sur un service pour sélectionner</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step1-1.png') }}" style=" width: 30%;"/>
+							</div>
+							
+							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Sélectionnez un ou plusieurs service </h5>
 						</div>
+						
 						<div class="row">
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb1" name="services[]" value="Aide à l'autonomie"/>
+										
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/n1.png') }}" alt="AIDE À L’AUTONOMIE">
+											<img src="{{ asset('_next/static/media/services/70/13.png') }}" 
+											alt="TOILETTE/HABILLAGE">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4></div>
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb1" name="services[]" 
+										value="TOILETTE/HABILLAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TOILETTE/HABILLAGE
+										</label>
 
 									</div>
 								</div>
 
 							</div>
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb2" name="services[]" value="Gardes non médicalisées"/>
+										
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/n2.png') }}"  alt="GARDES NON MÉDICALISÉES">
+											<img src="{{ asset('_next/static/media/services/70/9.png') }}"  
+											alt="LEVER/COUCHER">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
-
-									</div>
-								</div>
-
-						   </div>
-
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb4" name="services[]" value="Accompagnements"/>
-										<label for="cb4">
-											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="Accompagnements">
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb2" name="services[]" 
+										value="LEVER/COUCHER"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LEVER/COUCHER
 										</label>
-									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ACCOMPAGNEMENTS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb5" name="services[] " value="Aide aux repas"/>
-										<label for="cb5">
-											<img src="{{ asset('_next/static/media/n5.png') }}" alt="AIDE AUX REPAS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE AUX REPAS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-
-					<div class="row">
-
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>
-										<label for="cb6">
-											<img src="{{ asset('_next/static/media/nn1.png') }}" alt="RETOUR A DOMICILE APRES HOSPITALISATION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
-
-									</div>
-								</div>
-
-						   </div>
-
-						   <div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb7" name="services[]" value="Aide-ménagère"/>
-										<label for="cb7">
-											<img src="{{ asset('_next/static/media/nn5.png') }}" alt="AIDE-MÉNAGÈRE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE-MÉNAGÈRE</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb8" name="services[]" value="Assistance administrative"/>
-										<label for="cb8">
-											<img src="{{ asset('_next/static/media/n8.png') }}" alt="ASSISTANCE ADMINISTRATIVE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ASSISTANCE ADMINISTRATIVE</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb9" name="services[]" value="Voyage & évasion"/>
-										<label for="cb9">
-											<img src="{{ asset('_next/static/media/n10.png') }}" alt="VOYAGE & EVASION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">VOYAGE & EVASION</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-
-					<div class="row">
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb10" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
-										<label for="cb10">
-											<img src="{{ asset('_next/static/media/nn6.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb11" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
-										<label for="cb11">
-											<img src="{{ asset('_next/static/media/nn2.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
-
-									</div>
+									</div>									
 								</div>
 
 						   </div>
@@ -388,21 +272,359 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb12" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
-										<label for="cb12">
-											<img src="{{ asset('_next/static/media/nn4.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
+										
+										<label for="cb3">
+											<img src="{{ asset('_next/static/media/services/70/5.png') }}" 
+											alt="PRESENCE NUIT">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb3" name="services[]" 
+										value="PRESENCE NUIT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											PRESENCE NUIT
+										  </label>
 
 									</div>
 								</div>
 
 							</div>
 
+					</div>
+					
+					<div class="row">
 
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb4">
+											<img src="{{ asset('_next/static/media/services/70/2.png') }}" 
+											alt="ACCOMPAGNEMENT">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb4" name="services[]" 
+										value="ACCOMPAGNEMENT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ACCOMPAGNEMENT
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb5">
+											<img src="{{ asset('_next/static/media/services/70/10.png') }}"  
+											alt="GARDE JOUR ET GARDE 24/24">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb5" name="services[]" 
+										value="GARDE JOUR ET GARDE 24/24"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											GARDE JOUR ET GARDE 24/24
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb6">
+											<img src="{{ asset('_next/static/media/services/70/15.png') }}" 
+											alt="AIDE AU REPAS">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb6" name="services[]" 
+										value="AIDE AU REPAS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											AIDE AUX REPAS
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb7">
+											<img src="{{ asset('_next/static/media/services/70/4.png') }}" 
+											alt="AIDE À LA MOBILITÉ">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb7" name="services[]" 
+										value="AIDE À LA MOBILITÉ"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE À LA MOBILITÉ
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb8">
+											<img src="{{ asset('_next/static/media/services/70/12.png') }}" 
+											alt="RAPPEL DE LA PRISE DE MEDICAMENTS">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb8" name="services[]" 
+										value="RAPPEL DE LA PRISE DE MEDICAMENTS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											RAPPEL DE LA PRISE DE MEDICAMENTS
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb9">
+											<img src="{{ asset('_next/static/media/services/70/1.png') }}"  
+											alt="COURSES/LIVRAISON">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb9" name="services[]" 
+										value="COURSES/LIVRAISON"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											COURSES/LIVRAISON
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb10">
+											<img src="{{ asset('_next/static/media/services/70/13.png') }}" 
+											alt="RETOUR D’HOSPITALISATION">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb10" name="services[]" 
+										value="RETOUR D’HOSPITALISATION"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												RETOUR D’HOSPITALISATION
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb11">
+											<img src="{{ asset('_next/static/media/services/70/14.png') }}" 
+											alt="MENAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb11" name="services[]" 
+										value="MENAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											MENAGE
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb12">
+											<img src="{{ asset('_next/static/media/services/70/11.png') }}"  
+											alt="LESSIVE/REPASSAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb12" name="services[]" 
+										value="LESSIVE/REPASSAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LESSIVE/REPASSAGE
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+				
+
+					<div class="row">
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb13">
+											<img src="{{ asset('_next/static/media/services/70/6.png') }}" 
+											alt="ENFANTS HANDICAPES OU MALADES">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb13" name="services[]" 
+										value="ENFANTS HANDICAPES OU MALADES"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ENFANTS HANDICAPES OU MALADES
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb14">
+											<img src="{{ asset('_next/static/media/services/70/17.png') }}"  
+											alt="TRANSPORT VEHICULE (PMR)">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb14" name="services[]" 
+										value="TRANSPORT VEHICULE (PMR)"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TRANSPORT VEHICULE (PMR)
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb15">
+											<img src="{{ asset('_next/static/media/services/70/3.png') }}" 
+											alt="AIDE ADMINISTRATIVE">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb15" name="services[]" 
+										value="AIDE ADMINISTRATIVE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE ADMINISTRATIVE
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
 
 					</div>
 
@@ -411,25 +633,31 @@ label img {
 				<div class="tab">
 
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step2.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Dites nous plus sur le planning</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step2-2.png') }}" style=" width: 30%;"/>
+							</div>
+							<h5 style="font-weight:700; font-size:30px;" 
+							class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
+							À propos du planning</h5>
 						</div>
 
 							<div class="row">
 
-								<div class="form-group col-md-4 col-lg-4 mb-0 mt-md-0 mt-4 center" >
-										<label class="form-check-label" style="color:#1b138a; font-size:18px; font-weight:700;">
-											  A Partir de quand peut-on commencer?
+								<div class="form-group col-md-7 col-lg-7 mb-0 mt-md-0 mt-4 center" >
+										<label style="font-weight:700; font-size:22px;" 
+										class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
+											Quand est ce que nous commençons ?
 											  </label>
 
 
 								</div>
 
-								<div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
+								<div class="form-group col-md-5 col-lg-5 mb-0 mt-md-0 mt-4">
 
-										<select name="start_at" class="form-control form-select" aria-label="Default select example" >
+										<select name="start_at" class="form-control form-select" 
+										aria-label="Default select example" >
 
-											<option value="Immédiatement" >Immédiatement</option>
+											<option value="Immédiatement" > Immédiatement </option>
 											<option value="Dans 1 mois" >Dans 1 mois</option>
 											<option value="Dans 2 mois" >Dans 2 mois</option>
 											<option value="Dans 3 mois" >Dans 3 mois</option>
@@ -443,7 +671,8 @@ label img {
 
 
 						    <div class="heading-block topmargin-sm center">
-								<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Cliquez pour sélectionner vos horaires</h5>
+								<h5 class="text-yellow-500 color-orange" style="font-weight:700; 
+								font-size:30px; line-height:59.5px;"> Sélectionnez les jours et horaires qui vous conviennent le mieux</h5>
 							</div>
 
 							<table class="TimetableDesign PFTimetableDesktop">
@@ -546,8 +775,13 @@ label img {
 				<div class="tab">
 
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step3.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step3-3.png') }}" style=" width: 30%;"/>
+							</div>
+							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">
+								Afin d’établir votre devis, entrez vos coordonnées, nous nous engageons 
+								à vous rappeler au cours des 
+								deux prochaines heures (heures et jours ouvrables)</h5>
 						</div>
 
 						    <div class="row justify-content-center">
@@ -556,7 +790,8 @@ label img {
 
 									  Civilité
 
-										<select name="gender" class="form-control form-select" aria-label="Default select example">
+										<select name="gender" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
 											<option value="Monsieur" >Monsieur</option>
 											<option value="Madame" >Madame</option>
@@ -571,10 +806,11 @@ label img {
 
 									  A qui est destinée notre aide?
 
-										<select name="for_who" class="form-control form-select" aria-label="Default select example">
+										<select name="for_who" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
-											<option value="Vous même" >Vous même</option>
-											<option value="Quelqu'un d'autre" >Quelqu'un d'autre</option>
+											<option value="Vous même" >Pour vous-même</option>
+											<option value="Quelqu'un d'autre" >Pour quelqu’un autre ou proche</option>
 										</select>
 
                             </div>
@@ -584,12 +820,14 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									  placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Prénom" name="lastname" required>
+                                      <input type="text" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									   placeholder="Prénom" name="lastname" required>
                                     </div>
                                     </div>
 
@@ -599,12 +837,14 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                      <input type="email" class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Email" name="email" required>
                                     </div>
                                     </div>
 
@@ -612,15 +852,62 @@ label img {
 
 								  <div class="row justify-content-center">
 									<div class="col-md-8">
-										<input type="text" name="address" class="form-control" id="message" rows="6" placeholder="Votre adresse">
+										<input type="text" name="address" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+										 id="message" rows="6" placeholder="Votre adresse">
 									 </div>
                                   </div>
 								  <br>
-                                  <div class="row justify-content-center">
+
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-4">
+                                    <div class="input-group mb-4">
+										<input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+										placeholder="Code postal" aria-label="Full Name" type="text" id="postal_code" name="postal_code" required id="searchI" autocomplete="off">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 ps-md-2">
+                                    <div class="input-group">
+                                      <input type="text" class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Ville" name="town" id="town" required>
+                                    </div>
+                                    </div>
+
+                                  </div>
+
+								  <div class="row justify-content-center">
+									<div class="col-md-8">
+										<div class="input-group mb-4">
+										<fieldset >
+											<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+												Besoin  d’un complément de garde ?</legend>
+												<div class="col-md-1 pe-2 mb-3 form-check">
+
+												</div>
+												<div class="col-md-5 pe-2 mb-3 form-check">
+														<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]"  value="Téléassistance">
+														<label for="music" style="color: black">Téléassistance</label>
+												</div>
+												<div class="col-md-6 pe-2 mb-3 form-check">
+													<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]" value="Télésurveillance personnes âgées à domicile">
+													<label for="music" style="color: black">Télésurveillance personnes âgées à domicile</label>
+												</div>
+										</fieldset>
+									    </div>
+									</div>
+								</div>
+								  <div class="row justify-content-center">
 
                                     <div class="col-md-8">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" aria-label="Full Name" type="text" id="postal_code" name="postal_code" required id="searchI">
+										<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+								Commentaires</legend>
+										<textarea name="comments" class="mt-4 block w-full border-gray-300 px-4 py-2 rounded-md"  
+										rows="4" placeholder="Commentaires" 
+									   cols="4" required style="color: #30005B"> {{ old('comments') }}
+									   </textarea>
                                     </div>
                                     <ul class="list-group" id="result"></ul>
                                     </div>
@@ -628,224 +915,442 @@ label img {
 
                                   </div>
 
+
+
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-4">
+										<span style="font-size:16px">Je souhaite recevoir des communications <br> sur les offres du réseau youdom-care</span>
+										
+                                    </div>
+
+									<div class="col-md-4">
+										<div class="{{ $errors->has('news') ? ' has-danger' : '' }}" class="row">
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="1" checked>
+											<label class="form-check-label" for="news" style="color:#30005B;">
+												{{ __('Oui') }}
+											</label>
+											</div>
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="0">
+											<label class="form-check-label" for="news" style="color:#30005B;">
+												{{ __('Non') }}
+											</label>
+											</div>
+												
+												
+										</div>
+										
+                                    </div>
+
+
+                                  </div>
+
+								  <div class="d-flex justify-content-center">
+									<div class="col-md-8">
+										<div class="col-md-7">
+											<span style="font-size:16px; margin-left:-22px;">J'accepte les Conditions Générales d'Utilisation</span>     
+										</div>
+
+										<div class="col-md-5">
+											<input type="checkbox" class="form-check-input" name="accept_cgu" 
+											required>
+										</div>
+										
+
+									</div>
+								
+								  </div>
+								  <div class="d-flex justify-content-center" style="margin-left: -10px;">
+									
+									<div class="col-md-8">
+										<br>
+										<span style="color:#374151; font-size:14px; font-family: Montserrat, 
+									sans-serif;">  
+										Youdom-care vous informe que vos données seront traitées afin de 
+										répondre à votre demande de devis et vous envoyer des offres liées à 
+										celle-ci. Conformément à la loi « Informatique et libertés » 
+										du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, 
+										rectification, suppression, portabilité et limitation du traitement vous 
+										concernant. Pour de plus amples informations et exercer vos droits, 
+										vous pouvez contacter notre DPO à l’adresse 
+										<a href="mailto:dpo@youdom-care.com" class="color-orange">
+											 dpo@youdom-care.com
+										</a>
+											  ou <a class="color-orange" href="{{ route('confidentialite') }}">
+												consulter notre politique de confidentialité
+											</a> .
+									 </span> 
+									</div>
+									
+								  </div>
+								 
+								  
+
 				</div>
 
 				<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
-										<button type="button" class="margin-top-default button button_w-m-full" style="background-color:#DF034D;" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										
+										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #30005B"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										
+										
 									</div>
 								</div>
-								<!-- Circles which indicates the steps of the form: -->
-								<div style="text-align:center;margin-top:40px;">
+								
+								<div style="text-align:center;margin-top:-20px;">
 									<span class="step"></span>
 									<span class="step"></span>
 									<span class="step"></span>
 								</div>
 
 			</form>
-
+		-->
 
 		</div>
 	</div>
-
-				<br>
-				<section class="lp-banking-track-cashflow">
-					<div class="container">
-						<div class="lp-banking-track-cashflow__body section-body section-body_margin-top padding-top-sm padding-bottom-sm section-body_card_margin-top">
-							<div class="lp-banking-track-cashflow__image-wrap image">
-								<picture class="picture__image-container ">
-								<img src="{{  asset('_next/static/media/old-people.png') }} " alt="" class="picture__image lp-banking-track-cashflow__picture" loading="lazy" />
-								</picture>
-							</div>
-							<div class="lp-banking-track-cashflow__content">
-								<h2 class="heading heading__lvl1 stillforce-heading-red">Pourquoi Choisir <span style="color:#594EE6;">Youdom Services</span></h2>
-									<p class="text text_lg margin-top-default">
-										La satisfaction de nos clients est au cœur de notre attention
-									</p>
-									<ul class="margin-top-default">
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Nous vous garantissons toujours le même auxiliaire de vie</li>
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Un conseiller dédié pour un service personnalisé.</li>
-										<li class="lp-banking-track-cashflow__item heading heading__lvl4">Des prestations flexibles qui évoluent selon vos besoins.</li>
-									</ul>
-									<a href="{{ route('about') }}" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">En Savoir Plus</a></div>
-							</div>
-
-						</div>
-					</div>
-				</section>
-				<section class="main-invoicing" >
-
-					<div class="container container_card" >
-
-						<div class="section-body section-body_card
-						section-body_card_pink section-body_card_margin-top main-invoicing__body" style="background-color: #E84347">
-
-							<h2 class="heading heading__lvl1 color_blue" style="color: white;">Des services à la personne pour toutes et tous
-							</h2>
-							<p class="margin-top-xs text" style="color: white;">La mission de Youdom-Care :  <br> Accompagner les particuliers en perte d'autonomie dans leurs besoins de personne: <br>
-								<span class=""> Youdom-Care accompagne pour le maintien à domicile d'une personne âgée, en perte d'autonomie ou en situation de handicap et
-									vous permet une déduction d'impôt</span></b></p>
-
-								<p class="margin-top-xs text" style="color: white;">Nos coordinateurs vous accompagnent pour vos besoins ponctuels ou permanents d'aide à domicile. <br>
-									<a href="{{ route('services') }}" style="color: white;">Nos services</a>  d'aide à la personne s'adressent à tous, quels que soient vos besoins :</p>
-
-							<div class="margin-top-lg main-invoicing__content-wrap">
-
-								<div class="main-invoicing__info">
-
-									<ul class="main-invoicing__list">
-
-										<li><div class="">
-
-											<img src="{{ asset('_next/static/media/icones/numbers/number-one.png') }}" width="15%" alt="">
-
-										</div>
-											<p class="margin-top-xs text" style="color: white;">
-
-												<b>Perte d'autonomie</b>  débutante ou confirmée chez la <b>personne âgée </b> </p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-2.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Sortie d'hospitalisation</p>
-										</li>
-
-										<li>
-											<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-3.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Situation de handicap</p>
-										</li>
-
-										<li>
-										<div class="">
-												 <img src="{{ asset('_next/static/media/icones/numbers/number-four.png') }}" width="15%" alt="">
-											</div>
-											<p class="margin-top-xs text" style="color: white;">Et bien plus encore !</p>
-										</li>
-
-									</ul>
-
-
-
-								</div>
-
-								<div class="main-invoicing__simg-wrap">
-
-									<picture class="picture__image-container ">
-
-										<img src="{{  asset('_next/static/media/fonctionnment.png') }} " srcSet="_next/static/media/main-invoicing__simg_en_it@2x.7fe58826.png 2x" alt="" class="picture__image " loading="lazy" />
-									</picture>
-
-								</div>
-							</div>
-					    </div>
-					</div>
-
-				</section>
-
-			<!--
-				<section class="lp-banking-track-cashflow">
-					<div class="container">
-						<div class="padding-top-sm padding-bottom-sm section-body_margin-top lp-banking-track-cashflow__body">
-							<div class="image lp-banking-track-cashflow__image-wrap">
-								<picture class="picture__image-container ">
-
-									<img src="{{  asset('_next/static/media/lp-banking-track-cashflow__simg_1_fr.def2e41c.webp') }} " srcSet="/_next/static/media/lp-banking-track-cashflow__simg_1_fr@2x.de21b672.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div><div class="lp-banking-track-cashflow__content"><h2 class="heading heading__lvl1 lp-banking-track-cashflow__heading">Suivez vos flux financiers actuels et futurs à l&#x27;aide du nouveau tableau de bord intelligent</h2><p class="margin-top-default text text_lg">Recherchez, catégorisez et filtrez toutes vos factures:</p><ul class="margin-top-default list list_10px list_bullet-color_blue"><li><h4 class="heading heading__lvl4">Par type</h4><span class="text">(logistique, marketing, personnel, un projet spécifique, etc.)</span></li><li><h4 class="heading heading__lvl4">Sur n&#x27;importe quelle période</h4></li><li><h4 class="heading heading__lvl4">Pour un client ou un fournisseur spécifique</h4></li></ul></div>
-						</div>
-					</div>
-				</section>
-			-->
-
-
-				<section class="main-cards color_white"><div class="container container_card">
-
-					<div class="section-body section-body_card section-body_card_dark section-body_card_margin-top main-cards__body">
-
-						<div class="main-cards__info">
-
-							<h2 class="heading heading__lvl1">
-								<span class="stillforce-heading-blue"> Rejoindre</span> <span class="stillforce-heading-red">Youdom Services </span>
-							</h2>
-							<br>
-
-							<p class="">
-								Découvrez toutes les offres d’emplois
-								du Réseau Youdom Services
-							</p>
-
-
-							<div class="main-cards__btn-wrap margin-top-default">
-								<a href="{{ route('join-us') }}" class="button button_w-m-full" id="target-action-main-cards-business">ACCEDER A L'ESPACE RH</a><div>
-									<a class="link link_underline link_white main-cards__btn-learn-more" data-inner-link="true" data-test="header_nav__main-cards-learn-more"
-									href="{{ route('about') }}">EN SAVOIR PLUS</a></div>
-							</div>
-
-						</div>
-
-						<div class="image main-cards__simg-wrap">
-
-							<picture class="picture__image-container ">
-
-
-
-								<img src="{{  asset('_next/static/media/join-us.png') }}" alt="" class="picture__image " width="592" />
-
-							</picture>
-
-						</div>
-
-					</div>
+	<section class="py-2 md:py-20">
+		<div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+			<div class="flex flex-wrap items-center">
+									 <div class="w-full md:w-1/2 mt-2 md:mt-0" >
+					<img data-animate="animate-right"  style="border-radius: 15px;" width="95%" 
+											src="{{ asset('_next/static/media/aide-personne-agee-domicile-livraison-repas-courses.jpg') }}">
 				</div>
+				<div class="w-full md:w-1/2 md:pr-20" style="text-align: center">
 
+					<h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+						Vivre sereinement   
+						<span class="text-yellow-500 color-orange"> chez soi</span>
+					</h1>
+					<!--
+					<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+					   Maintien à domicile pour les personnes âgées, en situation handicap ou en perte d’autonomie.
+					</span> <br>
+											
+					<h5 class="font-bold color-orange ">
+						L'accompagnement personnalisé pour les personnes en perte d'autonomie ou en situation de handicap!
+					</h5>
+				-->
+												
+					<br>
+										
+					<h4 class="font-bold color-orange ">
+						Vivez sereinement chez vous en optant pour une aide au maintien à domicile !
+					</h4>
+
+					
+					<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">  
+						YOUDOM-CARE prend soin de vous et vous propose un service d’aide à domicile destiné aux personnes 
+						âgées, aux personnes en perte d’autonomie, aux personnes handicapées, aux enfants malades et aux 
+						personnes en situation de handicap, fragilisées, qui souhaitent vivre à leur domicile, dans 
+						les meilleures conditions. Nous nous occupons de votre bien-être et votre sécurité.
+					 </span>
+										
+
+					
+											 
+				   
+				</div>
+				
+			</div>               
+		</div>
+	</section>
+			<br>
+	<section class="py-2 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 animated-content" id="demo-test">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-20">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text" style="line-height: 1.2">
+                            Pourquoi Choisir <br> 
+                            <span class="text-yellow-500 color-orange"> Youdom Care?</span>
+                        </h1>
+                        <h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+							Votre satisfaction, c’est le cœur de notre attention. 
+
+												<ul class="margin-top-default list list_10px list_bullet-color_blue">
+												<li>
+													<h4 class="font-bold color-orange">GARANTIE</h4>
+													<span 
+													style="color:#374151; font-size:20px; font-family: 
+													Montserrat, sans-serif;">
+													Hommes ou femmes, nous sélectionnons avec soin, l’auxiliaire de vie unique, 
+													adapté à vos besoins. Diplômes, qualifications et références sont vérifiés afin de 
+													répondre au mieux à vos attentes</span>
+												</li>
+
+												<li>
+													<h4 class="font-bold color-orange">TRANQUILLITÉ D’ESPRIT</h4>
+													<span style="color:#374151; font-size:20px; font-family: Montserrat, sans-serif;">
+														Fini les rendez-vous manqués ou les prises de congés pour le suivi médical de votre proche. 
+														Vous pouvez désormais travailler en toute quiétude sachant que votre proche est entre de 
+														bonnes mains.
+													</span>
+												</li>
+											</ul>
+
+                        </h3>
+											<div class="mt-3 text-gray-700 font-semibold">
+													  <a href="{{ route('about') }}">
+																 <button  class="px-3 py-3 text-lg bg-yellow-500 
+																 font-bold text-white rounded-full" 
+																 style="background-color: #30005B"> 
+																		En savoir plus </button>
+														</a>
+                           
+                        					</div>
+                       
+                    </div>
+                    <div class="w-full md:w-1/2 mt-2 md:mt-0">
+                        <img data-animate="animate-right" class="w-full "  style="border-radius: 10px; width:100%"
+						src="{{ asset('_next/static/media/home/aide-domicile-personnes-agees.jpeg') }}">
+                    </div>
+                </div>               
+            </div>
+        </section>
+
+		<section class="lp-banking-dont-waste-time" >
+					<div class="container container_card"  >
+						<div class="section-body section-body_card section-body_card_red section-body_margin-top 
+						lp-banking-dont-waste-time__body " style="background-color: #30005B; padding:15px 15px;">
+							<div class="">
+
+								<h2 class="heading heading__lvl1 color_white ">Des services personnalisés pour tous !</h2>
+									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Perte d'autonomie débutante ou confirmée chez la personne âgée</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">Transport et accompagnement de personnes handicapés et personnes à mobilité réduite</p>
+										</li>
+										
+										<li class="lp-banking-dont-waste-time-list__item">
+											<p class="lp-banking-dont-waste-time-list__text">
+												Aide et accompagnement à domicile des enfants malades ou en situation de handicap</p>
+										</li>
+									</ul>
+									<br>
+									<div class="d-flex justify-content-center">
+														<a href="{{ route('devis.create') }}" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" style="background-color: #D9644A" 
+														id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
+															S'inscrire gratuitement
+														</a>
+									</div>
+
+									
+									
+									
+									<br>
+							</div>
+
+							
+						</div>
+					</div>
 				</section>
+	
+
+
+
+
+
+			<section class="py-8 md:py-16 bg-[#ffffff]" >
+            <div class="max-w-7xl mx-auto px-4 ">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2 md:pr-20">
+                        <h1 data-animate="animate-left" class=" text-xl md:text-5xl font-bold color-text" style="line-height: 1.2">
+                            NOTRE 
+                            <span class="text-yellow-500 color-orange">MISSION</span>
+                        </h1>
+						<h3 data-animate="animate-left" class=" md:text-xl mt-4 md:mt-8 text-gray-700 " >
+							Vous accompagner et vos proches dans la perte 
+							d’autonomie en proposant nos services personnalisés adaptés à vos besoins
+ 
+							<ul class="margin-top-default list list_10px list_bullet-color_blue">
+									<li>
+													 
+										<span class="font-bold color-orange">Youdom-Care</span> 
+										s’engage à vous fournir le meilleur accompagnement pour le maintien à domicile 
+										d'une personne âgée, en perte d'autonomie ou en situation de handicap en assurant 
+										une qualité de service garantie 
+									</li>
+
+									<li>
+													 
+										<span class="font-bold color-orange">Nos coordinateurs</span> 
+										sont à votre disposition pour vos besoins ponctuels ou permanents d'aide à domicile. 
+										Nos services d'aide à la personne s'adressent à tous, quels que soient vos besoins.
+									</li>
+							</ul>
+ 
+						 </h3>
+                      
+						
+                    </div>    
+                    <div class="w-full md:w-1/2">
+                        <img data-animate="animate-right" class="w-full " style="border-radius: 15px;"
+						src="{{ asset('_next/static/media/home/our-mission-1.jpg') }}">
+                    </div>
+                </div>               
+            </div>
+        </section>
+
 				<!--
+        <section class="py-2 md:py-20">
+					<div class="max-w-7xl mx-auto rounded-md bg-primary p-4 md:p-8">
+							<div class="flex justify-center items-center">
+									<div class="w-full md:w-3/5 text-white">
+											<h1 class="text-xl md:text-4xl font-bold">
+													Rejoindre Youdom Care ?
+											</h1>
+											<h3 class="mt-4 text md:text-2xl">
+													Postulez en 5 minutes et obtenez une offre d’emploi du Réseau Youdom Care                
+											</h3>
+											<div class="mt-4">
+												  <a href="{{ route('join-us') }}">
+														<button class="px-3 py-3 bg-white text-primary text-lg  font-bold rounded-full ">
+															Nous Rejoindre
+														</button>
+													</a>
+													
+											</div>
+									</div>
+									<div class="md:block w-2/5">
+											<img data-animate="animate-right" class="md:w-3/5 animated-item" src="{{ asset("_next/static/media/contactez-nous.svg") }}">
+									</div>
+							</div>
+					</div>
+			</section> 
+		-->
+
+			
 				<section class="lp-banking-invite-team">
 					<div class="container container_card">
-						<div class="section-body section-body_card section-body_card_pink section-body_margin-top lp-banking-invite-team__body ">
+						<div class="section-body section-body_card section-body_card_pink section-body_margin-top 
+						lp-banking-invite-team__body " style="padding: 10px;">
 							<div class="image lp-banking-invite-team__img-wrap">
 								<picture class="picture__image-container ">
 
-								<img src="{{  asset('_next/static/media/lp-banking-invite-team__simg_ver-2_fr.301d3092.webp') }} " srcSet="/_next/static/media/lp-banking-invite-team__simg_ver-2_fr@2x.7788242e.png 2x" alt="" class="picture__image " loading="eager" /></picture>
-							</div><div class="lp-banking-invite-team__content"><h2 class="heading heading__lvl2 color_blue lp-banking-invite-team__heading">Invitez vos employés, vos collègues et votre comptable à accéder à votre compte FINOM en toute sécurité</h2><p class="margin-top-default text text_lg">Invitez de nouveaux utilisateurs à rejoindre votre compte. Attribuez-leur un accès complet ou limité pour consulter, créer ou télécharger des factures.</p>
-
-							<a href="#" class="button button_blue button_margin-default button_w-m-full" id="target-action-lp-banking-invite-team" data-target-action="data-target-action">Essayer gratuitement</a></div>
+								<img src="{{  asset('_next/static/media/home/our-functionning-2.png') }} " 
+								srcSet="{{  asset('_next/static/media/home/our-functionning-2.png') }}" alt="" 
+								class="picture__image " loading="eager" style="margin-right:10px;"/>
+							</picture>
+							</div>
+							<div class="">
+								<h1 data-animate="animate-left" 
+								class="text-xl md:text-5xl font-bold color-text" style="line-height: 1.2">
+									Notre 
+									<span class="text-yellow-500 color-orange"> fonctionnement</span>
+								</h1>
+								<p class="margin-top-default text text_lg">
+									Nous proposons des services à domicile sur mesure, assurés par des auxiliaires de vie 
+									professionnelles. </p>
+								<br>
+							<a href="{{ route('functioning') }}" 
+							class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+							style="background-color: #30005B" id="target-action-lp-banking-invite-team" 
+							data-target-action="data-target-action">En savoir plus</a>
+						</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="lp-banking-dont-waste-time">
-					<div class="container container_card">
-						<div class="section-body section-body_card section-body_card_red section-body_margin-top lp-banking-dont-waste-time__body ">
-							<div class="lp-banking-dont-waste-time__content">
+				<section class="w-100 p-3" style="margin-left:10px; "> 
+					<div class="py-3 w-100"> 
+					 <div class="row w-100" > 
+					  <div class="col-lg-12"> 
+					   <div id="fragment-0-ifao"> 
+						<div class=""> 
+						 <span id="p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Qf6B3Goj5057"></span> 
+						 <section class="portlet" id="portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_Qf6B3Goj5057"> 
+						  <div class="portlet-content"> 
+						   <div class="autofit-float autofit-row portlet-header"> 
+							<div class="autofit-col autofit-col-end"> 
+							 <div class="autofit-section"> 
+							  <div class="visible-interaction"> 
+							  </div> 
+							 </div> 
+							</div> 
+						   </div> 
+						   <div class=" portlet-content-container w-100" > 
+							<div class="portlet-body w-100" > 
+							 <div class="" > 
+							  <div class="journal-content-article " data-analytics-asset-id="114851" data-analytics-asset-title="Youdom Care Recrute !" data-analytics-asset-type="web-content"> 
+							   <div class="container-fluid external-site-bloc-container" 
+							   style="background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0, 0, 0, 0)) , 
+							   url('{{ asset('_next/static/media/home-business-tab-img04.jpg') }}'); background-repeat: no-repeat;
+  background-size: cover; "> 
+								<div class="external-site-bloc row d-flex flex-row" style="padding:50px 20px;"> 
+								 <div class="col-lg-8 col-12 align-self-end align-self-lg-center pb-30"> 
+								  <h2 class="mb-3 text-white color-text font-bold">
+									Youdom-care recrute <br> 
+									Rejoignez-nous
+								  </h2> 
+								  <h3 class="mb-4 text-white">
+									Faites partie d’un groupe en croissance <br> qui offre à chacun l’opportunité <br>
+									 d’être acteur de sa carrière. <br>
+									 Bénéficier d’un parcours de formation <br>
+									  sur mesure tout au long de votre aventure.
+								  </h3> 
+								  <ul class="list-unstyled"> 
+								   <li class="text-medium text-white">
+										Auxiliaire de vie 
+								   </li> 
+								   <li class="text-medium text-white">
+										Aide-ménagère 
+								   </li> 
+								   <li class="text-medium text-white">
+										Garde nuit 
+								   </li> 
+								   <li class="text-medium text-white">
+										Aide médico-psychologique 
+								   </li> 
+								   <li class="text-medium text-white">
+										Responsable de secteur 
+								   </li> 
+								   <li class="text-medium text-white">
+									Directeur d'agence 
+								   </li> 
 
-								<h2 class="heading heading__lvl1 color_white lp-banking-dont-waste-time__heading">Gagnez du temps grâce à l&#x27;automatisation et aux fonctions intelligentes</h2>
-									<ul class="lp-banking-dont-waste-time__list lp-banking-dont-waste-time-list">
-										<li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Reliez votre compte bancaire professionnel ou personnel à FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Consultez toutes vos transactions sur le tableau de bord FINOM</p></li><li class="lp-banking-dont-waste-time-list__item"><p class="lp-banking-dont-waste-time-list__text">Associez facilement vos factures aux paiements entrants</p></li>
-									</ul>
-
-									<a href="#" class="button _xlarge button_blue lp-banking-dont-waste-time__button" id="target-action-lp-banking-dont-waste-time" data-target-action="data-target-action">
-									Essayer gratuitement</a>
-							</div>
-
-							<div class="image lp-banking-dont-waste-time__image-wrap">
-								<picture class="picture__image-container ">
-
-									<img src="{{  asset('_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.webp') }} " srcSet="_next/static/media/lp-banking-dont-waste-time__simg_1_fr.8d2f9482.png 2x" alt="" class="picture__image " loading="eager" />
-								</picture>
-							</div>
-						</div>
-					</div>
-				</section>
-			-->
+								  </ul> 
+								 </div> 
+								 
+								 
+								 <div class="col-lg-4 col-12 align-self-end"> 
+									<span class="text-white center">
+										 <span style="white-space: nowrap"> A la recherche d'un emploi à domicile ?</span> <br> Youdom-care recrute 
+									</span>
+									<br> <br>
+								  <a class="btn btn-outline btn-outline-primary btn-filled-primary 
+									d-flex align-items-center justify-content-center w-100 bg-yellow-500 
+									font-bold text-white rounded-full" 
+									href="{{ route('join-us-content') }}" title="" 
+									style="padding:20px 10px; background-color: #30005B"> 
+										<span class="d-block text-small font-weight-bold font-nexabold">Rejoignez-nous </span> 
+								  </a> 
+								 </div> 
+								</div> 
+							   </div> 
+							  </div> 
+							 </div> 
+							</div> 
+						   </div> 
+						  </div> 
+						 </section> 
+						</div> 
+					   </div> 
+					  </div> 
+					 </div> 
+					</div> 
+				   </section> 
+	
 
 	<script src="{{ asset('assets/js/form-multiple-step.js') }}"></script>
-	<script src="{{ asset('assets/js/typeahead.js') }}"></script>
 	<script>
 		var codes = @json($codes_array);
 
@@ -853,4 +1358,26 @@ label img {
 
 
 	</script>
+	<script>
+
+		 function nextPrev(n) {
+
+			var isChecked=document.querySelectorAll('.form-check-input');
+			var isCheckedArray=Array.from(isChecked);
+			
+			isCheckedArray.forEach((curr)=>{
+				if(curr.checked==true){
+					document.getElementById("regForm").submit();
+				}else{
+					//alert("la case n'a pas ete coché")
+				}
+			})
+
+			
+
+			
+		}
+
+	</script>
+
 @endsection

@@ -4,6 +4,12 @@
 @section('content')
 	<style>
 
+.color-text{
+        color: #30005B;
+    }
+    .color-orange{
+        color:#D9644A;
+    }
     .content-wrap{position:relative;padding:80px 0;overflow:hidden}
     section.big-section{padding:160px 0}
     .bg-light-gray{background-color:#f7f7f7}

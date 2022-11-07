@@ -16,6 +16,7 @@ function autocomplete(inp, arr) {
       /*append the DIV element as a child of the autocomplete container:*/
       this.parentNode.appendChild(a);
       /*for each item in the array...*/
+	  
       for (i = 0; i < arr.length; i++) {
         /*check if the item starts with the same letters as the text field value:*/
         if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
@@ -30,9 +31,12 @@ function autocomplete(inp, arr) {
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
               inp.value = this.getElementsByTagName("input")[0].value;
-              //console.log('hili');
-              //console.log(inp.value);
-              //console.log(document.getElementById('hiddenElement').value);
+              console.log(inp.value);
+              const myArray = inp.value.split(',');
+              console.log(myArray);
+              inp.value = myArray[0];
+              document.getElementById('town').value = myArray[1];
+              console.log(document.getElementById('town').value);
               //document.getElementById('myInput').value = this.getElementsByTagName("input")[0].value;
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/

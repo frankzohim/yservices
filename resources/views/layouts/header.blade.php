@@ -34,21 +34,24 @@
 				<div class="container" style="margin-left: 32%">
 					<div class="">
 
-								<nav class="header__nav header-nav" >
+								<nav class="header__nav header-nav">
 								<ul class="header-nav__list">
 									<!--
 									<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Trouver un emploi</a>
 									</li>
 								-->
-								<li class="header-nav__item" style="color:#272854">
-									<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('become_partner') }}">Devenez partenaire</a>
+
+
+									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
+										<a class="link_inherit text-xl  font-bold text-indigo-800 color-orange " style="font-size: 15px;" data-test="header_nav__pricing"
+									href="{{ route('become_partner') }}">Devenez partenaire</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('join-us') }}">Nous rejoindre</a>
+										<a class="link_inherit font-bold text-indigo-800 color-orange" style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('join-us-content') }}">Nous rejoindre</a>
 									</li>
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854" data-test="header_nav__help">
-										<a class="link_inherit" data-test="header_nav__pricing" href="{{ route('devis.form') }}"> Demandez un devis</a>
+										<a class="link_inherit font-bold text-indigo-800 color-orange" style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('devis.form') }}"> Demandez un devis</a>
 									</li>
 
 
@@ -85,8 +88,9 @@
 
                             		@endauth
 									@guest
-										<li class="header-nav__item" style="color:#272854"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('login') }}">Mon Compte</a>
-									     </li>
+										<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" style="color:#272854"><a class="link_inherit font-bold text-indigo-800 color-orange"
+											style="font-size: 15px;" data-test="header_nav__pricing" href="{{ route('login') }}">Mon Compte</a>
+									</li>
 									@endguest
 
 								</ul>
@@ -106,43 +110,100 @@
 
 							<div class="header__logo-wrap">
 								<a class="" aria-label="Youdom" data-inner-link="true" href="{{ route('homepage') }}">
-									<img src="{{  asset('_next/static/media/logo-care.png') }}"   />
+									<img src="{{  asset('_next/static/media/logo-color-new.png') }}"   />
 								</a>
 							</div>
 
 							<nav class="header__nav header-nav">
 								<ul class="header-nav__list">
 
-										<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('homepage') }}">Accueil</a>
+										<li class="header-nav__item"><a class="link_inherit text-xl  font-bold text-indigo-800 color-text" style="font-size: 17px;" data-test="header_nav__blog" href="{{ route('homepage') }}">Accueil</a>
 									</li>
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route("services") }}">Nos Services</a>
+									<li class="header-nav__item"><a class="link_inherit text-xl  font-bold text-indigo-800 color-text" style="font-size: 17px;" data-test="header_nav__blog" href="{{ route("services") }}">Nos Services</a>
 									</li>
 
 									<li class="dropdown dropdown_hover-drop dropdown_theme_arrow header-nav__item header-nav__dropdown" data-test="header_nav__help">
-										<a class="link_inherit" data-test="header_nav__blog" href="{{ route('functioning') }}"> Fonctionnement</a>
+										<a class="link_inherit text-xl  font-bold text-indigo-800 color-text" style="font-size: 17px;" data-test="header_nav__blog" href="{{ route('functioning') }}"> Fonctionnement</a>
 
 									</li>
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('about') }}">Qui Sommes-nous</a>
+									<li class="header-nav__item"><a class="link_inherit text-xl  font-bold text-indigo-800 color-text" style="font-size: 17px;" data-test="header_nav__blog" href="{{ route('about') }}">Qui Sommes-nous</a>
 									</li>
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__pricing" href="{{ route('contact.create') }}">Contact</a>
+									<li class="header-nav__item"><a class="link_inherit text-xl  font-bold text-indigo-800 color-text" style="font-size: 17px;" data-test="header_nav__pricing" href="{{ route('contact.create') }}">Contact</a>
 									</li>
 
 
 
-									<li class="header-nav__item"><a class="link_inherit" data-test="header_nav__blog" href="{{ route('bloc.index') }}">Blog</a>
+									<li class="header-nav__item"><a class="link_inherit text-xl  font-bold text-indigo-800 color-text"
+										style="font-size: 17px;" data-test="header_nav__blog" href="{{ route('bloc.index') }}">Blog</a>
 									</li>
 								</ul>
 						</nav>
 
 						</div>
 
-						<div class="header__right" style="margin-bottom:15px;">
+						<div class="header__right">
+
+
+							<a href="{{ route('devis.create') }}"
+							class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full"
+										style="background-color: #D9644A"
+							id="target-action-header" data-f-btn-signup="true">Inscription</a>
 
 								<!-- <img class="search-icon" src="_next/static/media/icones/search.svg" alt=""> -->
+								<aside class="burger-menu header__burger-menu">
+									<div class="burger-menu__header">
+										<div class="header__actions">
+											<div class="burger-menu__close">
+												<span></span><span></span><span></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="burger-menu__content" style="background-color: #D9644A; color:white;">
+
+										<ul class="" >
+
+											<li class="burger-menu__nav-item">
+												<div class="burger-menu__nav-heading">
+													<a class="link_inherit" data-inner-link="true"
+													href="{{ route('homepage') }}">
+														Accueil<svg class="icon burger-menu__nav-arrow"></svg>
+													</a>
+												</div>
+
+											</li>
+
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true"
+												href="{{ route('services') }}">Nos Services</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true"
+												href="{{ route('functioning') }}">Notre fonctionnement</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true"
+												href="{{ route('about') }}">Qui sommes-nous</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true"
+												href="{{ route('contact.create') }}">Contact</a>
+											</li>
+											<li class="burger-menu__nav-item ">
+												<a class="link_inherit" data-inner-link="true"
+												href="{{ route('bloc.index') }}">Blog</a>
+											</li>
+										</ul>
+
+
+
+									</div>
+
+								</aside>
 						</div>
 					</aside>
 						</div>

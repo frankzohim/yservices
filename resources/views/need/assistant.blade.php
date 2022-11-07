@@ -2,8 +2,8 @@
 @section('title', __('Inscription – Aide à domicile sur mesure en Europe'))
 <link rel="stylesheet" href="{{ asset('assets/css/autocomplete.css') }}">
 @section('content')
-	<style>
-			.content-wrap{position:relative;padding:80px 0;overflow:hidden}
+<style>
+					.content-wrap{position:relative;padding:80px 0;overflow:hidden}
 			.center{text-align:center!important}
 			.heading-block{margin-bottom:50px}
 .emphasis-title h1,.emphasis-title h2,.heading-block h1,.heading-block h2,.heading-block h3,.heading-block h4{margin-bottom:0;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#333}
@@ -32,14 +32,14 @@
 .team-image:hover .middle {
   opacity: 1;
 }
-.team-image img,.team-image>a{display:block;width:40%;   margin-left: auto;
+.team-image img,.team-image>a{display:block;   margin-left: auto;
   margin-right: auto;}
 .team-desc{text-align:center}
-.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 30px}
+.team-desc.team-desc-bg{background-color:#fff;padding:10px 0 0px}
 .team .si-share{margin-top:30px;text-align:left}
 .team .si-share .social-icon{font-size:14px;width:34px}
-.team-title{position:relative;padding-top:20px}
-.team-title h4{display:block;margin-bottom:0;font-size:20px;text-transform:uppercase;letter-spacing:1px;font-weight:700; color: rgb(68,68,68)}
+.team-title{position:relative;padding-top:0px}
+.team-title h4{display:block;margin-bottom:0;font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:600;color:#D9644A;}
 .team-title span{display:block;color:#1abc9c;font-weight:400;font-family:'pt serif',serif;font-style:italic;font-size:16px;margin-top:5px}
 .team-content{margin-top:1rem;color:#777}
 .team-content p:last-child{margin-bottom:0}
@@ -51,7 +51,7 @@
 .team:not(.team-list) .social-icon{display:inline-block!important;vertical-align:middle;float:none;margin-left:4px;margin-right:4px}
 
 input[type="checkbox"][id^="cb"] {
-  display: none;
+  margin-top:-5px;
 }
 
 label {
@@ -84,16 +84,16 @@ label img {
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
 }
-
+.before-heading
 :checked + label {
   border-color: #ddd;
 }
 
-:checked + label:before {
+/*:checked + label:before {
   content: "✓";
   background-color: green;
   transform: scale(1);
-}
+}*/
 
 :checked + label img {
   transform: scale(1);
@@ -102,6 +102,16 @@ label img {
   z-index: -1;
 }
 
+ .color-text{
+        color: #30005B;
+    }
+.color-orange{
+        color:#D9644A;
+    }
+
+.color-grey{
+	color:#585956;
+}
 	</style>
 	<div class="section">
 		<div class="container content-wrap clearfix">
@@ -133,221 +143,75 @@ label img {
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" ></button>
         </div>
       @endif
-			<h3><span class="heading heading__lvl1 stillforce-heading-blue" style="font-size:40px;"> Quels sont vos besoins</span> 
-				<span style="color: #E84347; font-weight:700; font-size:40px; line-height:59.5px;"> d'aide à domicile ?</span> </h3>
+			<h3><span class="text-xl md:text-5xl font-bold text-indigo-800 color-text" style="font-size:40px;"> 
+				De quels services</span>
+				<span class="text-yellow-500 color-orange" style="font-weight:700; font-size:40px; line-height:59.5px;"> 
+					avez-vous besoin ?</span>
+				
+			 </h3>
 			</div>
 			
 			<form id="regForm" method="post" autocomplete="off" action="{{ route('devis.store') }}">
 					
 					@csrf
-				
-				<!-- One "tab" for each step in the form: -->
-				<div class="tab">
+					
+					<div class="tab">
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step1.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez sur un service pour sélectionner</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step1-1.png') }}" style=" width: 30%;"/>
+							</div>
+							
+							<h5 style="font-weight:700; font-size:30px;" class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">Sélectionnez un ou plusieurs service </h5>
 						</div>
+						
 						<div class="row">
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb1" name="services[]" value="Aide à l'autonomie"/>
+										
 										<label for="cb1">
-											<img src="{{ asset('_next/static/media/n1.png') }}" alt="AIDE À L’AUTONOMIE">
+											<img src="{{ asset('_next/static/media/services/70/18.png') }}" 
+											alt="TOILETTE/HABILLAGE">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE À L’AUTONOMIE / GESTE DU QUOTIDIEN</h4></div>
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb1" name="services[]" 
+										value="TOILETTE/HABILLAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TOILETTE/HABILLAGE
+										</label>
 
 									</div>
 								</div>
 
 							</div>
 
-							<div class="col-lg-3 col-md-6 bottommargin">
+							<div class="col-lg-4 col-md-6 bottommargin">
 
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb2" name="services[]" value="Gardes non médicalisées"/>
+										
 										<label for="cb2">
-											<img src="{{ asset('_next/static/media/n2.png') }}"  alt="GARDES NON MÉDICALISÉES">
+											<img src="{{ asset('_next/static/media/services/70/9.png') }}"  
+											alt="LEVER/COUCHER">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">GARDES NON MÉDICALISÉES / PRÉSENCE DE NUIT</h4></div>
-
-									</div>
-								</div>
-
-						   </div>
-
-						
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb4" name="services[]" value="Accompagnements"/>
-										<label for="cb4">
-											<img src="{{ asset('_next/static/media/n4.png') }}" width="100%" alt="Accompagnements">
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb2" name="services[]" 
+										value="LEVER/COUCHER"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LEVER/COUCHER
 										</label>
-									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ACCOMPAGNEMENTS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-							
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb5" name="services[] " value="Aide aux repas"/>
-										<label for="cb5">
-											<img src="{{ asset('_next/static/media/n5.png') }}" alt="AIDE AUX REPAS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE AUX REPAS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-
-					<div class="row">
-
-							
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb6" name="services[]" value="Retour à domicile après hospitalisation"/>
-										<label for="cb6">
-											<img src="{{ asset('_next/static/media/nn1.png') }}" alt="RETOUR A DOMICILE APRES HOSPITALISATION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">RETOUR À DOMICILE APRÈS HOSPITALISATION</h4></div>
-
-									</div>
-								</div>
-
-						   </div>
-
-						   <div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb7" name="services[]" value="Aide-ménagère"/>
-										<label for="cb7">
-											<img src="{{ asset('_next/static/media/nn5.png') }}" alt="AIDE-MÉNAGÈRE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE-MÉNAGÈRE</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb8" name="services[]" value="Assistance administrative"/>
-										<label for="cb8">
-											<img src="{{ asset('_next/static/media/n8.png') }}" alt="ASSISTANCE ADMINISTRATIVE">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">ASSISTANCE ADMINISTRATIVE</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-							
-							
-							<div class="col-lg-3 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb9" name="services[]" value="Voyage & évasion"/>
-										<label for="cb9">
-											<img src="{{ asset('_next/static/media/n10.png') }}" alt="VOYAGE & EVASION">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">VOYAGE & EVASION</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-					</div>
-					
-					<div class="row">
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb10" name="services[] " value="Aide et accompagnement des enfants malades ou handicapés"/>
-										<label for="cb10">
-											<img src="{{ asset('_next/static/media/nn6.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES ENFANTS MALADES OU HANDICAPÉS</h4></div>
-
-									</div>
-								</div>
-
-							</div>
-
-							<div class="col-lg-4 col-md-6 bottommargin">
-
-								<div class="team">
-
-									<div class="team-image">
-										<input type="checkbox" id="cb11" name="services[]" value="Transport et accompagnement de personnes handicapées et des PMR"/>
-										<label for="cb11">
-											<img src="{{ asset('_next/static/media/nn2.png') }}"  alt="TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)">
-										</label>
-									</div>
-
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">TRANSPORT ET ACCOMPAGNEMENT DE PERSONNES HANDICAPÉES ET DE PERSONNES À MOBILITÉ RÉDUITE (PMR)</h4></div>
-
-									</div>
+									</div>									
 								</div>
 
 						   </div>
@@ -357,62 +221,407 @@ label img {
 								<div class="team">
 
 									<div class="team-image">
-										<input type="checkbox" id="cb12" name="services[]" value="Aide et accompagnement à domicile des personnes handicapées"/>
-										<label for="cb12">
-											<img src="{{ asset('_next/static/media/nn4.png') }}" alt="AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES">
+										
+										<label for="cb3">
+											<img src="{{ asset('_next/static/media/services/70/5.png') }}" 
+											alt="PRESENCE NUIT">
 										</label>
 									</div>
 
-									<div class="team-desc team-desc-bg">
-									<div class="team-title"><h4  style="color: #E84347; font-weight:700; font-size:15px; ">AIDE ET ACCOMPAGNEMENT À DOMICILE DES PERSONNES HANDICAPÉES</h4></div>
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb3" name="services[]" 
+										value="PRESENCE NUIT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											PRESENCE NUIT
+										  </label>
 
 									</div>
 								</div>
 
 							</div>
 
-						
+					</div>
+					
+					<div class="row">
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb4">
+											<img src="{{ asset('_next/static/media/services/70/2.png') }}" 
+											alt="ACCOMPAGNEMENT">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb4" name="services[]" 
+										value="ACCOMPAGNEMENT"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ACCOMPAGNEMENT
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb5">
+											<img src="{{ asset('_next/static/media/services/70/10.png') }}"  
+											alt="GARDE JOUR ET GARDE 24/24">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb5" name="services[]" 
+										value="GARDE JOUR ET GARDE 24/24"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											GARDE JOUR ET GARDE 24/24
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb6">
+											<img src="{{ asset('_next/static/media/services/70/15.png') }}" 
+											alt="AIDE AU REPAS">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb6" name="services[]" 
+										value="AIDE AU REPAS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											AIDE AUX REPAS
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb7">
+											<img src="{{ asset('_next/static/media/services/70/4.png') }}" 
+											alt="AIDE À LA MOBILITÉ">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb7" name="services[]" 
+										value="AIDE À LA MOBILITÉ"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE À LA MOBILITÉ
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb8">
+											<img src="{{ asset('_next/static/media/services/70/19.png') }}" 
+											alt="RAPPEL DE LA PRISE DE MEDICAMENTS">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb8" name="services[]" 
+										value="RAPPEL DE LA PRISE DE MEDICAMENTS"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											RAPPEL DE LA PRISE DE MEDICAMENTS
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb9">
+											<img src="{{ asset('_next/static/media/services/70/20.png') }}"  
+											alt="COURSES/LIVRAISON">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb9" name="services[]" 
+										value="COURSES/LIVRAISON"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											COURSES/LIVRAISON
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+					
+					<div class="row">
+
+							  <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb10">
+											<img src="{{ asset('_next/static/media/services/70/16.png') }}" 
+											alt="RETOUR D’HOSPITALISATION">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb10" name="services[]" 
+										value="RETOUR D’HOSPITALISATION"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												RETOUR D’HOSPITALISATION
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
+							
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb11">
+											<img src="{{ asset('_next/static/media/services/70/14.png') }}" 
+											alt="MENAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb11" name="services[]" 
+										value="MENAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											MENAGE
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb12">
+											<img src="{{ asset('_next/static/media/services/70/11.png') }}"  
+											alt="LESSIVE/REPASSAGE">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb12" name="services[]" 
+										value="LESSIVE/REPASSAGE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											LESSIVE/REPASSAGE
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						 
+
+					</div>
+				
+
+					<div class="row">
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb13">
+											<img src="{{ asset('_next/static/media/services/70/6.png') }}" 
+											alt="ENFANTS HANDICAPES OU MALADES">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb13" name="services[]" 
+										value="ENFANTS HANDICAPES OU MALADES"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											ENFANTS HANDICAPES OU MALADES
+										</label>
+
+									</div>
+								</div>
+
+							</div>
+
+							<div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb14">
+											<img src="{{ asset('_next/static/media/services/70/17.png') }}"  
+											alt="TRANSPORT VEHICULE (PMR)">
+										</label>
+									</div>
+
+									<div class="form-check d-flex justify-content-center">
+										
+										<input type="checkbox" class="form-check-input" id="cb14" name="services[]" 
+										value="TRANSPORT VEHICULE (PMR)"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+											TRANSPORT VEHICULE (PMR)
+										</label>
+
+									</div>
+
+									
+								</div>
+
+						   </div>
+
+						   <div class="col-lg-4 col-md-6 bottommargin">
+
+								<div class="team">
+
+									<div class="team-image">
+										
+										<label for="cb15">
+											<img src="{{ asset('_next/static/media/services/70/3.png') }}" 
+											alt="AIDE ADMINISTRATIVE">
+										</label>
+									</div>
+
+									
+									<div class="form-check d-flex justify-content-center">
+										
+											<input type="checkbox" class="form-check-input" id="cb15" name="services[]" 
+										value="AIDE ADMINISTRATIVE"/> &nbsp;
+										<label class="form-check-label font-bold color-text" for="flexCheckDefault">
+												AIDE ADMINISTRATIVE
+										  </label>
+
+									</div>
+								</div>
+
+							</div>
 
 					</div>
 
 				</div>
 				
 				<div class="tab">
-				
+
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step2.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Dites nous plus sur le planning</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step2-2.png') }}" style=" width: 30%;"/>
+							</div>
+							<h5 style="font-weight:700; font-size:30px;" 
+							class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
+							À propos du planning</h5>
 						</div>
 
 							<div class="row">
-							
-								<div class="form-group col-md-4 col-lg-4 mb-0 mt-md-0 mt-4 center" >
-										<label class="form-check-label" style="color:#1b138a; font-size:18px; font-weight:700;">
-											  A Partir de quand peut-on commencer?
+
+								<div class="form-group col-md-7 col-lg-7 mb-0 mt-md-0 mt-4 center" >
+										<label style="font-weight:700; font-size:22px;" 
+										class=" text-xl md:text-5xl font-bold text-indigo-800 color-text">
+											Quand est ce que nous commençons ?
 											  </label>
-										
+
 
 								</div>
-								
-								<div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
-										<select name="start_at" class="form-control form-select" aria-label="Default select example" >
 
-											<option value="Immédiatement" >Immédiatement</option>
+								<div class="form-group col-md-5 col-lg-5 mb-0 mt-md-0 mt-4">
+
+										<select name="start_at" class="form-control form-select" 
+										aria-label="Default select example" >
+
+											<option value="Immédiatement" > Immédiatement </option>
 											<option value="Dans 1 mois" >Dans 1 mois</option>
 											<option value="Dans 2 mois" >Dans 2 mois</option>
 											<option value="Dans 3 mois" >Dans 3 mois</option>
 											<option value="Dans plus de 3 mois" >Dans plus de 3 mois</option>
-                                      
+
 										</select>
 
 								</div>
-								
-							</div>		
-								
+
+							</div>
+
 
 						    <div class="heading-block topmargin-sm center">
-								<h5 style="color: #6105F5; font-weight:700; font-size:20px;">Cliquez pour sélectionner vos horaires</h5>
+								<h5 class="text-yellow-500 color-orange" style="font-weight:700; 
+								font-size:30px; line-height:59.5px;"> Sélectionnez les jours et horaires qui vous conviennent le mieux</h5>
 							</div>
 
 							<table class="TimetableDesign PFTimetableDesktop">
@@ -510,42 +719,50 @@ label img {
                     </tbody>
                   </table>
 									<input type="hidden" name="data_times" id ="dataTimes" value="" >
-					
+
 				</div>
-				<div class="tab">
 				
+					<div class="tab">
+
 						<div class="heading-block topmargin-sm center">
-							<img src="/_next/static/media/step3.png" style=" width: 20%;"/>
-							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">Laissez-nous vos coordonnées et nous vous rappellerons dans les 2 heures ouvrables.!</h5>
+							<div class="d-flex justify-content-center">
+									<img src="{{ asset('_next/static/media/assistant/steps/step3-3.png') }}" style=" width: 30%;"/>
+							</div>
+							<h5 style="color: #6105F5;font-weight:700; font-size:20px;">
+								Afin d’établir votre devis, entrez vos coordonnées, nous nous engageons 
+								à vous rappeler au cours des 
+								deux prochaines heures (heures et jours ouvrables)</h5>
 						</div>
-									
+
 						    <div class="row justify-content-center">
-                               
+
                                <div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
+
 									  Civilité
 
-										<select name="gender" class="form-control form-select" aria-label="Default select example">
+										<select name="gender" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
 											<option value="Monsieur" >Monsieur</option>
 											<option value="Madame" >Madame</option>
 										</select>
 
 								</div>
-								
+
                             </div>
 							<br>
 							<div class="row justify-content-center">
 							 <div class="form-group col-md-8 col-lg-8 mb-0 mt-md-0 mt-4" >
-										
+
 									  A qui est destinée notre aide?
 
-										<select name="for_who" class="form-control form-select" aria-label="Default select example">
+										<select name="for_who" class="mt-4 block w-full border 
+										border-gray-300  px-4 py-2 rounded-md " aria-label="Default select example">
 
-											<option value="Vous même" >Vous même</option>
-											<option value="Quelqu'un d'autre" >Quelqu'un d'autre</option>
+											<option value="Vous même" >Pour vous-même</option>
+											<option value="Quelqu'un d'autre" >Pour quelqu’un autre ou proche</option>
 										</select>
-								
+
                             </div>
 							 </div>
 							<br>
@@ -553,12 +770,14 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									  placeholder="Nom" name="firstname" aria-label="Full Name" type="text" autofocus required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="text" class="form-control" placeholder="Prénom" name="lastname" required>
+                                      <input type="text" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+									   placeholder="Prénom" name="lastname" required>
                                     </div>
                                     </div>
 
@@ -568,50 +787,177 @@ label img {
 
                                     <div class="col-md-4">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
+                                      <input class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Téléphone" aria-label="Full Name" type="number" name="phone" required>
                                     </div>
                                     </div>
                                     <div class="col-md-4 ps-md-2">
                                     <div class="input-group">
-                                      <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                      <input type="email" class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Email" name="email" required>
                                     </div>
                                     </div>
 
                                   </div>
-								  
+
 								  <div class="row justify-content-center">
 									<div class="col-md-8">
-										<input type="text" name="address" class="form-control" id="message" rows="6" placeholder="Votre adresse">
+										<input type="text" name="address" class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+										 id="message" rows="6" placeholder="Votre adresse">
 									 </div>
                                   </div>
 								  <br>
-                                  <div class="row justify-content-center">
+
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-4">
+                                    <div class="input-group mb-4">
+										<input class="mt-2 block w-full border border-gray-300  px-4  rounded-md"
+										placeholder="Code postal" aria-label="Full Name" type="text" id="postal_code" name="postal_code" required id="searchI" autocomplete="off">
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 ps-md-2">
+                                    <div class="input-group">
+                                      <input type="text" class="mt-2 block w-full border border-gray-300  px-4  rounded-md" 
+									  placeholder="Ville" name="town" id="town" required>
+                                    </div>
+                                    </div>
+
+                                  </div>
+
+								  <div class="row justify-content-center">
+									<div class="col-md-8">
+										<div class="input-group mb-4">
+										<fieldset >
+											<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+												Besoin  d’un complément de garde ?</legend>
+												<div class="col-md-1 pe-2 mb-3 form-check">
+
+												</div>
+												<div class="col-md-5 pe-2 mb-3 form-check">
+														<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]"  value="Téléassistance">
+														<label for="music" style="color: black">Téléassistance</label>
+												</div>
+												<div class="col-md-6 pe-2 mb-3 form-check">
+													<input type="checkbox" class="form-check-input" 
+														id="music" name="complement[]" value="Télésurveillance personnes âgées à domicile">
+													<label for="music" style="color: black">Télésurveillance personnes âgées à domicile</label>
+												</div>
+										</fieldset>
+									    </div>
+									</div>
+								</div>
+								  <div class="row justify-content-center">
 
                                     <div class="col-md-8">
                                     <div class="input-group mb-4">
-                                      <input class="form-control" placeholder="Code postal" 
-									  aria-label="Full Name" type="text" id="postal_code" name="postal_code" required>
+										<legend class="  md:text-left  text-2xl  font-bold text-indigo-800" style="font-size: 15px;">
+								Commentaires</legend>
+										<textarea name="comments" class="mt-4 block w-full border-gray-300 px-4 py-2 rounded-md"  
+										rows="4" placeholder="Commentaires" 
+									   cols="4" required style="color: #30005B"> {{ old('comments') }}
+									   </textarea>
                                     </div>
+                                    <ul class="list-group" id="result"></ul>
                                     </div>
-                                  
 
-                                  </div>			
+
+                                  </div>
+
+
+
+								  <div class="row justify-content-center">
+
+                                    <div class="col-md-4">
+										<span style="font-size:16px">Je souhaite recevoir des communications <br> sur les offres du réseau youdom-care</span>
+										
+                                    </div>
+
+									<div class="col-md-4">
+										<div class="{{ $errors->has('news') ? ' has-danger' : '' }}" class="row">
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="1" checked>
+											<label class="form-check-label" for="news" style="color:#30005B;">
+												{{ __('Oui') }}
+											</label>
+											</div>
+											<div class="col-md-3">
+												<input
+												class="form-check-input"
+												type="radio" name="news" id="news" value="0">
+											<label class="form-check-label" for="news" style="color:#30005B;">
+												{{ __('Non') }}
+											</label>
+											</div>
+												
+												
+										</div>
+										
+                                    </div>
+
+
+                                  </div>
+
+								  <div class="d-flex justify-content-center">
+									<div class="col-md-8">
+										<div class="col-md-7">
+											<span style="font-size:16px; margin-left:-22px;">J'accepte les Conditions Générales d'Utilisation</span>     
+										</div>
+
+										<div class="col-md-5">
+											<input type="checkbox" class="form-check-input" name="accept_cgu" 
+											required>
+										</div>
+										
+
+									</div>
+								
+								  </div>
+								  <div class="d-flex justify-content-center" style="margin-left: -10px;">
 									
+									<div class="col-md-8">
+										<br>
+										<span style="color:#374151; font-size:14px; font-family: Montserrat, 
+									sans-serif;">  
+										Youdom-care vous informe que vos données seront traitées afin de 
+										répondre à votre demande de devis et vous envoyer des offres liées à 
+										celle-ci. Conformément à la loi « Informatique et libertés » 
+										du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès, 
+										rectification, suppression, portabilité et limitation du traitement vous 
+										concernant. Pour de plus amples informations et exercer vos droits, 
+										vous pouvez contacter notre DPO à l’adresse 
+										<a href="mailto:dpo@youdom-care.com" class="color-orange">
+											 dpo@youdom-care.com
+										</a>
+											  ou <a class="color-orange" href="{{ route('confidentialite') }}">
+												consulter notre politique de confidentialité
+											</a> .
+									 </span> 
+									</div>
+									
+								  </div>
+								 
+								  
+
 				</div>
 				
 				<div style="overflow:auto;">
 									<div style="float:right;">
-										<button type="button" class="margin-top-default button button_w-m-full" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
-										<button type="button" class="margin-top-default button button_w-m-full" style="background-color:#DF034D;" id="nextBtn" onclick="nextPrev(1)">Suivant</button>
+										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #D9644A" id="prevBtn" onclick="nextPrev(-1)">Précedent</button>
+										<button type="button" class="px-3 py-3 text-lg bg-yellow-500 font-bold text-white rounded-full" 
+										style="background-color: #30005B"  id="nextBtn" onclick="nextPrev(1)">Suivant</button>
 									</div>
 								</div>
-								<!-- Circles which indicates the steps of the form: -->
-								<div style="text-align:center;margin-top:40px;">
+								
+								<div style="text-align:center;margin-top:-20px;">
 									<span class="step"></span>
 									<span class="step"></span>
 									<span class="step"></span>
 								</div>
-				
 			</form>
 
 			

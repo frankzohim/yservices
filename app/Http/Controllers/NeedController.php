@@ -39,6 +39,25 @@ class NeedController extends Controller
         return view("need.assistant",compact('codes_array'));
     }
 
+
+    /**
+     * Make the transition between  home assistant and assistant page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function transition(Request $request)
+    {
+        $codes = Code::select('Commune', 'Codepos')->get();
+        $i=0;
+
+        foreach($codes as $code){
+            $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
+            $i++;
+        }
+        $services = $request->services;
+        return view("need.assistant",compact('codes_array','services'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -62,27 +81,35 @@ class NeedController extends Controller
              $i++;
 
         }
+        $i = 0;
+        foreach($request->complement as $complement){
+            if ($i==0)
+                $need->complement = $complement;
 
-        $data = explode(',',$request->postal_code);
-        if(count($data) == 2){
-            $town = $data[1];
-            $postal_code = $data[0];
+            else{
+
+                $need->complement .= ', '.$complement;
+            }
+
+             $i++;
+
         }
-        else
-             return Redirect::route('devis.create')->with('update_failure','Code postal invalide')->withInput();
 
         $need->start_at = $request->start_at;
         $need->data_times = $request->data_times;
         $need->for_who = $request->for_who;
+        $need->comments = $request->comments;
+        $need->news = $request->news;
+        $need->accpet_cgu = 1;
         $need->gender = $request->gender;
         $need->firstname = $request->firstname;
         $need->lastname = $request->lastname;
-        $need->postal_code = $postal_code;
-        $need->town = $town;
+        $need->postal_code = $request->postal_code;
+        $need->town = $request->town;
         $need->email = $request->email;
         $need->phone = $request->phone;
         $need->address = $request->address;
-        $need->user_id=null;
+        //$need->user_id=null;
 
 
         if($need->save()){
