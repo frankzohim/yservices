@@ -17,7 +17,7 @@ class DevisController extends Controller
 
         $codes = Code::select('Commune', 'Codepos')->get();
         $i=0;
-        
+
         foreach($codes as $code){
             $codes_array[$i] = ''.$code->Codepos.','.$code->Commune;
             $i++;
@@ -38,12 +38,14 @@ class DevisController extends Controller
         $devis->hour=$request->hour;
         $devis->code_postal=$request->code_postal;
         $devis->save();
-        
+
         if($devis->save()){
 
             //Sendig mail to admin
             Mail::to("delanofofe@gmail.com")->send(new DevisMail($devis));
             Mail::to("pauline.youdom@techwise.fr")->send(new DevisMail($devis));
+
+            Mail::to($request->use()->email)->send(new DevisMail($devis));
             return to_route('devis.form')->with('update_success','Message bien envoyé');
         }
         else{
